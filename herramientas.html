@@ -287,15 +287,20 @@
         </section>
 
         <section>
+            <img class="noBorder" src="img/Fire-commit-push.jpg" style="height: 650px"/>
+        </section>
+
+        <section>
             <h2>Documentación de Código</h2>
 
             <p>
                 Permite:
             <ul>
-                <li>Entener que se está haciendo y porqué</li>
+                <li>Entender que se está haciendo y porqué</li>
                 <li>Mantener el código</li>
             </ul>
             </p>
+            <img class="noBorder" src="img/jsdoc.png" style="height: 350px"/>
         </section>
 
         <section>
@@ -303,8 +308,8 @@
 
             <p>
             <ul>
-                <li><b>por clase:</b>descripcion,autor,fecha y ultima modificacion</li>
-                <li><b>por método:</b>descricpion del objeto, funcionalidades, parametros y resultados</li>
+                <li><b>por clase:</b> descripción,autor,fecha y ultima modificación</li>
+                <li><b>por método:</b> descripción del objeto, funcionalidades, parámetros y resultados</li>
                 <li><b>de variables:</b> que sean importantes o difíciles de entender</li>
                 <li><b>de limitaciones</b></li>
                 <li><b>de algoritmos implementados</b></li>
@@ -313,42 +318,46 @@
         </section>
 
         <section>
-            <h2>Formato de Documentación</h2>
+            <h2>Formato de Documentación (JSDoc)</h2>
 
-            <p style="text-align: left; font-size: 34px">
-                /** <br>
-                * @fileoverview Libreria con funciones de utilidad <br>
-                * @author jose <br>
-                * @version 0.1 <br>
-                */ <br>
-                /** <br>
-                * Muestra un mensaje de texto <br>
-                * @param {String} metodo nombre del metodo <br>
-                * @param {String} mensaje mensaje a mostrar <br>
-                * @returns {integer} el codigo de retorno 0 <br>
-                */ <br>
-                function trazas(metodo,mensaje){ <br>
-                alert("["+metodo+"]:"+mensaje); <br>
-                return 0; <br>
-                } <br>
-            </p>
+            <pre><code class="javascript">/**
+* @fileoverview Librería con funciones de utilidad <br>
+* @author Jose
+* @version 0.1
+*/
+
+/**
+* Muestra un mensaje de texto
+* @param {String} método nombre del método
+* @param {String} mensaje mensaje a mostrar
+* @returns {integer} el codigo de retorno 0
+*/
+function trazas(metodo, mensaje){
+    alert("["+metodo+"]:"+mensaje);
+    return 0;
+}</code></pre>
         </section>
 
         <section>
             <h2>Documentación...A tener en cuenta</h2>
-
             <p>
             <ul>
-                <li>No uses solo una linea, dividela en parrafos para que sea mas legible</li>
+                <li>No uses solo una linea, divídela en párrafos para que sea mas legible</li>
                 <li>Tabular los comentarios de lineas consecutivas</li>
                 <li>No comentar obviedades</li>
                 <li>Se profesional (No insultes o coloques frases fuera de contexto)</li>
-                <li>Revisa la ortografia</li>
+                <li>Revisa la ortografía</li>
                 <li>No comentes si no es necesario</li>
                 <li>Comentarios simple y directo</li>
                 <li>Documenta mientras desarrollas</li>
                 <li>Manten los comentarios actualizados</li>
             </ul>
+            </p>
+        </section>
+        <section>
+            <h2>IDE WebStorm</h2>
+            <p>
+                <img class="noBorder" src="img/Webstorm.png"/>
             </p>
         </section>
 
