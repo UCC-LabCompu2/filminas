@@ -12,7 +12,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/black.css" id="theme">
@@ -44,6 +45,10 @@
             border-radius: 50px;
             box-shadow: 10px 10px 5px rgba(100, 100, 100, 0.4)
         }
+
+        .stroke {
+            text-shadow: -1px -1px 1px #73a4f6, 1px 1px 1px #000, -1px 1px 1px #c1ebeb, 1px -1px 1px #000;
+        }
     </style>
 </head>
 
@@ -53,21 +58,148 @@
 
     <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides">
-        <section>
-            <h1>Diseño de Interfaz de Usuario</h1>
-            <h3>Conceptos básicos</h3>
-            <p>
-                <small>Created by <a href="http://twitter.com/edme88">@edme88</a></small>
+        <section data-background="img/interfazUsuario/intUsuario.jpg">
+            <h1 style="text-shadow: -1px -1px 1px #73a4f6, 1px 1px 1px #000, -1px 1px 1px #c1ebeb, 1px -1px 1px #000;">
+                Diseño de Interfaz de Usuario</h1>
+            <h3 style="text-shadow: -1px -1px 1px #73a4f6, 1px 1px 1px #000, -1px 1px 1px #c1ebeb, 1px -1px 1px #000;">
+                Conceptos básicos</h3>
+            <p class="stroke">
+                <small>Created by @edme88 & rmarku</small>
             </p>
         </section>
 
         <section>
             <h2>Interfaz de Usuario</h2>
             <p>
-                Es el medio con que el usuario puede comunicarse con una máquina, equipo, computadora o dispositivo, y comprende todos los puntos de contacto entre el usuario y el equipo.
+                Es el medio con que el usuario puede comunicarse con una máquina, equipo, computadora o dispositivo, y
+                comprende todos los puntos de contacto entre el usuario y el equipo.
                 <br>
                 <br>
                 Incluyen elementos como menús, ventanas, contenido gráfico, cursor, etc.
+            </p>
+        </section>
+
+        <section>
+            <h2>Proceso de Diseño de Interfaz de Usuario</h2>
+            <p>
+                Proceso iterativo donde los usuarios interactúan con los diseñadores y prototipados de la interfaz para
+                decidir las características, organización, apariencia y funcionamiento de la interfaz de usurio del
+                sistema.
+            </p>
+        </section>
+
+        <section>
+            <h2>Proceso de Diseño de Interfaz de Usuario</h2>
+            <p>
+                Actividades para el proceso de Diseño de Interfaz de Usuario:
+            <ul>
+                <li>
+                    Análisis del usuario
+                </li>
+                <ul>
+                    <li>
+                        Análisis de Tareas (HTA, tarea de alto nivel dividida en subtareas)
+                    </li>
+                    <li>
+                        Estudios Etnográficos
+                    </li>
+                    <li>
+                        Entrevistas de Usuarios
+                    </li>
+                    <li>
+                        Observaciones
+                    </li>
+                </ul>
+                <li>
+                    Prototipado del sistema
+                </li>
+                <li>
+                    Evaluación de la Interfaz
+                </li>
+            </ul>
+            </p>
+        </section>
+
+        <section>
+            <h2>Análisis Jerárquico de Tareas</h2>
+            <p>
+                <img class="noBorder" src="img/ejHTA.png"/>
+            </p>
+        </section>
+
+        <section>
+            <h2>Proceso de Diseño de Interfaz de Usuario</h2>
+            <p>
+                <img class="noBorder" src="img/procesoDiseñoUI.png"/>
+            </p>
+        </section>
+
+        <section>
+            <h2>Evaluación de la Interfaz</h2>
+            <p>
+                Proceso de evaluar la forma en que se utiliza una interfaz y verificar que cumple los requerimientos del
+                usuario.
+                <br>
+                <br>
+                Es parte del proceso de verificación y validación de los sistemas software.
+            </p>
+        </section>
+
+        <section>
+            <h2>Prototipo</h2>
+            <p>
+                Un prototipo es una representación de un sistema, aunque no es un sistema completo, posee las
+                características del sistema final o parte de ellas.
+                <br>
+                <br>
+                Un prototipo en software es un modelo del comportamiento del sistema que puede ser usado para entenderlo
+                completamente o ciertos aspectos de él y así clarificar los requerimientos.
+            </p>
+        </section>
+
+        <section>
+            <h2>Prototipado</h2>
+            <p>
+                Ventajas:
+            <ul>
+                <li>
+                    Permite mostrar al usuario el sistema y recibir un feedback temprano
+                </li>
+                <li>
+                    Método intuitivo para identificar características y requerimientos
+                </li>
+            </ul>
+            </p>
+        </section>
+
+        <section>
+            <h2>Proceso de Prototipado de la IU</h2>
+            <p>
+            <ol>
+                <li>
+                    <b>Prototipo en papel:</b> Maquetas de los diseños de pantalla
+                </li>
+                <li>
+                    <b>Prototipo Automatizado:</b> Permite al usuario realizar pruebas y simulación
+                </li>
+            </ol>
+            </p>
+        </section>
+
+        <section>
+            <h2>Técnicas para Prototipado</h2>
+            <p>
+            <ol>
+                <li>
+                    Enfoque dirigido por secuencias de comandos
+                </li>
+                <li>
+                    Lenguaje de Programación Visual
+                </li>
+                <li>
+                    Prototipado basado en Internet
+                </li>
+            </ol>
             </p>
         </section>
 
@@ -130,7 +262,8 @@
                     <b>Recuperabulidad:</b> Mecanismos de recuración de errores
                 </li>
                 <li>
-                    <b>Guía de Usuario:</b> Retroalimentación significativa frente a errores. Asesoramiento y características.
+                    <b>Guía de Usuario:</b> Retroalimentación significativa frente a errores. Asesoramiento y
+                    características.
                 </li>
                 <li>
                     <b>Diversidad de Usuarios:</b> Interacción para diferentes tipos de usuario. (Casuales, Potenciales)
@@ -352,7 +485,8 @@
                     <b>Nivel de Habilidad:</b> El mensaje se debe adaptar a diferentes clases de usuarios.
                 </li>
                 <li>
-                    <b>Estilo:</b> Los mensajes deben ser: positivos y activos, fomales, concisos, uniformes y constructivos. Nunca: negativos, pasivos, insultantes.
+                    <b>Estilo:</b> Los mensajes deben ser: positivos y activos, fomales, concisos, uniformes y
+                    constructivos. Nunca: negativos, pasivos, insultantes.
                 </li>
                 <li>
                     <b>Cultura:</b> Adaptado a la cultura del país donde se utilizará el sistema.
@@ -373,125 +507,6 @@
                 </li>
             </ul>
             <img src="img/mensajeError.png"/>
-            </p>
-        </section>
-
-        <section>
-            <h2>Proceso de Diseño de Interfaz de Usuario</h2>
-            <p>
-                Proceso iterativo donde los usuarios interactúan con los diseñadores y prototipados de la interfaz para decidir las características, organización, apariencia y funcionamiento de la interfaz de usurio del sistema.
-            </p>
-        </section>
-
-        <section>
-            <h2>Proceso de Diseño de Interfaz de Usuario</h2>
-            <p>
-                Actividades para el proceso de Diseño de Interfaz de Usuario:
-            <ul>
-                <li>
-                    Análisis del usuario
-                </li>
-                <ul>
-                    <li>
-                        Análisis de Tareas (HTA, tarea de alto nivel dividida en subtareas)
-                    </li>
-                    <li>
-                        Estudios Etnográficos
-                    </li>
-                    <li>
-                        Entrevistas de Usuarios
-                    </li>
-                    <li>
-                        Observaciones
-                    </li>
-                </ul>
-                <li>
-                    Prototipado del sistema
-                </li>
-                <li>
-                    Evaluación de la Interfaz
-                </li>
-            </ul>
-            </p>
-        </section>
-
-        <section>
-            <h2>Análisis Jerárquico de Tareas</h2>
-            <p>
-                <img class="noBorder" src="img/ejHTA.png"/>
-            </p>
-        </section>
-
-        <section>
-            <h2>Proceso de Diseño de Interfaz de Usuario</h2>
-            <p>
-                <img class="noBorder" src="img/procesoDiseñoUI.png"/>
-            </p>
-        </section>
-
-        <section>
-            <h2>Prototipo</h2>
-            <p>
-                Un prototipo es una representación de un sistema, aunque no es un sistema completo, posee las características del sistema final o parte de ellas.
-                <br>
-                <br>
-                Un prototipo en software es un modelo del comportamiento del sistema que puede ser usado para entenderlo completamente o ciertos aspectos de él y así clarificar los requerimientos.
-            </p>
-        </section>
-
-        <section>
-            <h2>Prototipado</h2>
-            <p>
-                Ventajas:
-            <ul>
-                <li>
-                    Permite mostrar al usuario el sistema y recibir un feedback temprano
-                </li>
-                <li>
-                    Método intuitivo para identificar características y requerimientos
-                </li>
-            </ul>
-            </p>
-        </section>
-
-        <section>
-            <h2>Proceso de Prototipado de la IU</h2>
-            <p>
-            <ol>
-                <li>
-                    <b>Prototipo en papel:</b> Maquetas de los diseños de pantalla
-                </li>
-                <li>
-                    <b>Prototipo Automatizado:</b> Permite al usuario realizar pruebas y simulación
-                </li>
-            </ol>
-            </p>
-        </section>
-
-        <section>
-            <h2>Técnicas para Prototipado</h2>
-            <p>
-            <ol>
-                <li>
-                    Enfoque dirigido por secuencias de comandos
-                </li>
-                <li>
-                    Lenguaje de Programación Visual
-                </li>
-                <li>
-                    Prototipado basado en Internet
-                </li>
-            </ol>
-            </p>
-        </section>
-
-        <section>
-            <h2>Evaluación de la Interfaz</h2>
-            <p>
-                Proceso de evaluar la forma en que se utiliza una interfaz y verificar que cumple los requerimientos del usuario.
-                <br>
-                <br>
-                Es parte del proceso de verificación y validación de los sistemas software.
             </p>
         </section>
 
