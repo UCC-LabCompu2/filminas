@@ -28,7 +28,34 @@
         link.type = 'text/css';
         link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
         document.getElementsByTagName('head')[0].appendChild(link);
+
+        toHour = 0;
+        toMinute = 20;
+        toSecond = 0;
+        function countDown() {
+            toSecond = toSecond - 1;
+            if (toSecond < 0) {
+                toSecond = 59;
+                toMinute = toMinute - 1;
+            }
+            form.second.value = toSecond;
+            if (toMinute < 0) {
+                toMinute = 59;
+                toHour = toHour - 1;
+            }
+            form.minute.value = toMinute;
+            form.hour.value = toHour;
+            if (toHour < 0) {
+                //final
+                form.second.value = 0;
+                form.minute.value = 0;
+                form.hour.value = 0;
+            } else {
+                setTimeout("countDown()", 1000);
+            }
+        }
     </script>
+
 
     <style>
         .noBorder {
@@ -48,6 +75,15 @@
 
         .stroke {
             text-shadow: -1px -1px 1px #73a4f6, 1px 1px 1px #000, -1px 1px 1px #c1ebeb, 1px -1px 1px #000;
+        }
+
+        .form_input {
+            font-family: Verdana;
+            font-size: 30px;
+            color: #ffffff;
+            border-width: 0;
+            background-color: #000077;
+            text-align: center;
         }
     </style>
 </head>
@@ -191,6 +227,31 @@
                 </ol>
                 </p>
             </section>
+
+            <section>
+                <h2>Actividad 5</h2>
+                <p>
+                    Realice la maquetación en papel (un prototipado de una interfaz de usuario del sistema).
+                    Debe tener en cuenta:
+                    <br>
+                <ul>
+                    <li>¿Qué opciones debe ofrecer al usuario?</li>
+                    <li>¿Qué gama de colores utilizaría?</li>
+                    <li>¿Para qué tipo de usuarios está destinado?</li>
+                    <li>Sistemas similares.</li>
+                    <li>¿Qué acciones le permiten al usuario realizar?</li>
+                </ul>
+
+                <form name="form" onclick="countDown()">
+                    Tiempo restante...:
+                    <input type="text" size="5" class="form_input" name="hour" disabled>:
+                    <input type="text" size="5" class="form_input" name="minute" disabled>:
+                    <input type="text" size="5" class="form_input" name="second" disabled>
+                </form>
+                </p>
+            </section>
+
+
         </section>
 
         <section>
