@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Laboratorio de Computación II</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <style>
+        .noBorder {
+            background: none !important;
+            box-shadow: none !important;
+            border: none !important;
+        }
+
+        .cuadroBlanco {
+            color: black;
+            background: rgba(255, 255, 255, 0.7) !important;
+            display: inline-block;
+            padding: 20px !important;
+            border-radius: 50px;
+            box-shadow: 10px 10px 5px rgba(100, 100, 100, 0.4)
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <div class="slides">
+
+        <section>
+            <h1>TUTORIAL DE CSS</h1>
+            <h3>con CSS (que recursivo xD) </h3>
+            <p>
+                <small>Created by <!--a href="http://steamcommunity.com/id/edme88"--><i class="fa fa-twitter"></i>@edme88<!--/a--> & <!--a href="http://steamcommunity.com/id/rmarku"--><i class="fa fa-github"></i>rmarku<!--/a--></small>
+            </p>
+        </section>
+
+        <section>
+            <h2>CCS3: Cascading Style Sheets</h2>
+            Estilos visual del documento.
+
+            <ul>
+                <li>
+                    Selectores
+                </li>
+                <li>
+                    Modelos de Caja
+                </li>
+                <li>
+                    Fondos y Bordes
+                </li>
+                <li>
+                    Valores de imagenes y Remplazo de contenido
+                </li>
+                <li>
+                    Efectos de texto
+                </li>
+                <li>
+                    Transformaciones 2D/3D
+                </li>
+                <li>
+                    Animaciones
+                </li>
+                <li>
+                    Multiples columnas
+                </li>
+                <li>
+                    Interfaz de Usuario
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>CCS3</h2>
+            Buenas Practicas:
+
+            <ul>
+                <li>
+                    Comprobar el diseño en varios navegadores
+                </li>
+                <li>
+                    Depuracion (Ej. firebug)
+                </li>
+                <li>
+                    Comentar el código
+                </li>
+                <li>
+                    Identar y hacer el código fácil de leer
+                </li>
+                <li>
+                    Usar sistema comun de nombrado
+                </li>
+                <li>
+                    Evitar tamaños absolutos en fuentes o elementos
+                </li>
+                <li>
+                    Utilizar notación de colores en hexadecimal
+                </li>
+                <li>
+                    Ordenar los elementos según pertenezcan a cabecera, contenido principal o pie de página
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>CSS</h2>
+            ¿Porque una Web no funciona igual en diferentes navegadores?
+            <ul>
+                <li style="list-style-image: url('img/chrome.png');" >
+                    <b> Google Chrome </b>
+                    utiliza para interpretar JavaScript un motor <b>V8</b>, y para el renderizado <b>WebKit</b>.
+                </li>
+                <li style="list-style-image: url('img/firefox.png');">
+                    <b>Firefox </b>
+                    emplea <b>JagerMonkey </b> para JavaScript y para el renderizado <b>Gecko </b>.
+                </li>
+                <li style="list-style-image: url('img/explorer.png');">
+                    <b>Internet Explore</b>
+                    emplea <b>Chakra</b> para JavaScript y <b>Trident</b> para renderizado.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>CSS: ¿Como Usarlo?</h2>
+
+            Para incluir una hoja de estilo, arriba de <b> &lt /head &gt </b>
+            <br>
+            <pre><code><link rel="stylesheet" href="estilos.css" type="text/css"></code></pre>
+            <br>
+            Las <b> REGLAS </b> en CSS se componen de:
+            <br>
+
+            <pre><code>Selector{propiedad: valor;}</code></pre>
+
+            <br>
+            Ej.
+            <pre><code>h1{color:#333333; font-weight:bold; margin-left:15px; }</code></pre>
+
+            <br/>
+        </section>
+        <section>
+            <h2> ¿Como Escribir un Estilo? </h2>
+
+            Obviamente, con el teclado xD. Bue, hablando en serio, hay 3 formas:
+            <br>
+            <ol style="width:80%;">
+                <li>
+                    <b>por Tag</b>
+                    <pre><code class="css">{nombreEstilo: valor;}</code></pre>
+                </li>
+                <li>
+                    <b>por ID</b>
+                    <pre><code class="css">#nombreID {nombreEstilo: valor;}</code></pre>
+                </li>
+                <li>
+                    <b>por Clase</b>
+                    <pre><code class="css">.nombreClass {nombreEstilo: valor;}</code></pre>
+                </li>
+            </ol>
+
+        </section>
+        <!--section>
+            <h2> CSS: Recomendación </h2>
+            <p>
+                Revisar documentación:
+                <br>
+                <a href="http://www.w3schools.com/css/default.asp">http://www.w3schools.com/css/default.asp</a>
+                <br>
+                EJ. Box Model - Try it YourSelf
+                <br>
+                <br>
+                Autogenerar algunos estilos complicados:
+                <br>
+                <a href="http://css3generator.com/">http://css3generator.com/</a>
+                <br>
+                <a href="http://www.css3.me/">http://www.css3.me/</a>
+                <br>
+                <a href="http://westciv.com/tools/shadows/">http://westciv.com/tools/shadows/</a>
+                <br>
+                <br>
+                Escribir los colores en hexadecimal:
+                <br>
+                <a href="http://html-color-codes.info/codigos-de-colores-hexadecimales/"> http://html-color-codes.info/codigos-de-colores-hexadecimales/ </a>
+                <br/>
+        </section-->
+
+        <section>
+            <h2>Ejemplo CCS3</h2>
+            <iframe width="1200" height="500" src="ejemplos/css/index2.html"></iframe>
+        </section>
+
+        <section>
+            <h2>Ejemplo CCS3</h2>
+            <iframe width="1200" height="500" src="ejemplos/css/index.html"></iframe>
+        </section>
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [{
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+        }]
+    });
+
+</script>
+
+</body>
+</html>
