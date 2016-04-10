@@ -6,7 +6,8 @@
     <title>Laboratorio de Computación II</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/black.css" id="theme">
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -33,6 +34,10 @@
             border-radius: 50px;
             box-shadow: 10px 10px 5px rgba(100, 100, 100, 0.4)
         }
+
+        .stroke {
+            text-shadow: -1px -1px 1px #73a4f6, 1px 1px 1px #000, -1px 1px 1px #c1ebeb, 1px -1px 1px #000;
+        }
     </style>
 </head>
 
@@ -43,276 +48,216 @@
     <div class="slides">
 
         <section>
-            <h1>TUTORIAL DE HTML</h1>
+            <h1 >TUTORIAL DE HTML</h1>
             <h3>en HTML (que recursivo :P) </h3>
             <p>
-                <small>Created by <!--a href="http://steamcommunity.com/id/edme88"--><i class="fa fa-twitter"></i>@edme88<!--/a--> & <!--a href="http://steamcommunity.com/id/rmarku"--><i class="fa fa-github"></i>rmarku<!--/a--></small>
+                <small>Created by <!--a href="http://steamcommunity.com/id/edme88"--><i class="fa fa-twitter"></i>@edme88
+                    <!--/a--> & <!--a href="http://steamcommunity.com/id/rmarku"--><i class="fa fa-github"></i>rmarku
+                    <!--/a--></small>
+            </p>
+            <img src="img/html/html5dev.png" class="noBorder">
+        </section>
+
+        <section>
+            <h2>¿Cómo Comenzar?</h2>
+            <p>
+                <img src="img/html/code1.png" class="noBorder">
             </p>
         </section>
 
         <section>
-            <h2>HTML5</h2>
+            <h2>Etiquetas</h2>
+            <ul>
+                <li><b> &lt;title&gt; y &lt;/title&gt;:</b> Se muestra en la barra de título
+                    del navegador, al hacer un marcador a la página o en los buscadores de Internet.
+                </li>
+                <li>
+                    <b> &lt;meta&gt; y &lt;/meta&gt;: </b> No son imprescindibles, pero permiten identificar algunos
+                    parámetros de la web, como autores,
+                    codificación de caracteres, etc.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Para realizar pruebas...</h2>
             <p>
-                HTML5 es la última evolución de la norma que define HTML (HyperText Markup Language)
+                <a href="https://jsfiddle.net/" target="_blank">
+                    <img src="img/html/JSfiddle.png" class="noBorder">
+                </a>
             </p>
-            <img class="noBorder cuadroBlanco" style="width: 600px" src="img/html5jscss.png">
         </section>
 
         <section>
-            <h2>Características</h2>
-            <img class="noBorder" src="img/html5-areas.png"/>
+            <h2>Cuerpo de la Página</h2>
+            &lt;body&gt;
+            <pre><code>
+    <header>Logo de la Página + Titulo de la Página</header>
+    <footer></footer>
+            </code></pre>
+            &lt;/body&gt;
         </section>
 
         <section>
-            <h2>Características</h2>
+            <h2>CABECERA</h2>
+            &lt;header&gt;
+            <pre><code>
+    <img src="img/html/logo.png">
+    <h1>NOMBRE DE LA PAGINA</h1>
+            </code></pre>
+            &lt;/header&gt;
+            <br>
+            <img src="img/html/logo.png" class="noBorder">
+            <h1>NOMBRE DE LA PAGINA</h1>
+        </section>
+
+        <section>
+            <h2>ELEMENTOS para el BODY</h2>
+            <pre><code>
+    <div>
+        Contenido de la Caja
+    </div>
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>DIV</h2>
             <ul>
                 <li>
-                    <em><b>Semántica</b></em>:
-                    lo que le permite describir con mayor precisión cuál es su contenido.
-                </li>
-                <li>
-                    <em><b>Conectividad</b></em>:
-                    lo que le permite comunicarse con el servidor de formas nuevas e innovadoras.
-                </li>
-                <li>
-                    <em><b>Desconectado y almacenamiento</b></em>:
-                    permite a páginas web almacenar datos, localmente, en el lado del cliente y operar fuera de línea de manera más eficiente.
-                </li>
-                <li>
-                    <em><b>Multimedia</b></em>:
-                    permite hacer vídeo y audio de ciudadanos de primera clase en la Web abierta.
+                    <b>&lt;div&gt;:</b> Define un bloque de contenido o sección de la página,
+                    para poder aplicarle diferentes estilos o para realizar operaciones sobre ese bloque específico.
                 </li>
             </ul>
         </section>
 
+
+    <section>
+        <h2>ELEMENTOS de FORMULARIOS</h2>
+            <pre><code>
+    <input type="text" name="nombre" />
+    <input type="password" name="psw">
+    <input type="email" name="email">
+            </code></pre>
+    <input type="text" name="nombre" />
+    <input type="password" name="psw">
+    <input type="email" name="email">
+    </section>
+
+    <section>
+        <h2>ELEMENTOS de FORMULARIOS</h2>
+        <pre><code>
+<input type="radio" name="gender" value="male" checked> Male<br>
+<input type="radio" name="gender" value="female"> Female
+        </code></pre>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female
+    </section>
+
+    <section>
+        <h2>ELEMENTOS de FORMULARIOS</h2>
+        <pre><code>
+    <select name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+        </code></pre>
+        <select name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+    </section>
+
+    <section>
+        <h2>ELEMENTOS de FORMULARIOS</h2>
+    <pre><code>
+    <button type="button">Click Me!</button>
+    </code></pre>
+    <button type="button">Click Me!</button>
+    </section>
+
+    <section>
+        <h2>ELEMENTOS de FORMULARIOS</h2>
+    <pre><code>
+        <input type="range"  id="a" name="a" value="50">
+    </code></pre>
+        <input type="range"  id="a" name="a" value="50">
+    </section>
+
+    <section>
+            <h2>ELEMENTOS de FORMULARIOS</h2>
+    <pre><code>
+    <input type="checkbox" name="materia1" value="Matematica"> Matematica<br>
+    <input type="checkbox" name="materia2" value="Lengua"> Lengua
+    </code></pre>
+    <input type="checkbox" name="materia1" value="Matematica"> Matematica<br>
+    <input type="checkbox" name="materia2" value="Lengua"> Lengua
+    </section>
+
+    <section>
+        <h2>ELEMENTOS de FORMULARIOS</h2>
+<pre><code>
+    <input type="number" name="points" min="0" max="100" step="10" value="30">
+</code></pre>
+        <input type="number" name="points" min="0" max="100" step="10" value="30">
+    </section>
+
         <section>
-            <section>
-                <h2>Características</h2>
-                <ul>
-                    <li>
-                        <em><b>Gráficos y efectos 2D/3D</b></em>:
-                        permite una gama mucho más amplia de opciones de presentación.
-                    </li>
-                    <li>
-                        <em><b>Rendimiento e Integración</b></em>:
-                        proporcionar una mayor optimización de la velocidad y un mejor uso del hardware del equipo.
-                    </li>
-                    <li>
-                        <em><b>Dispositivo de Acceso</b></em>:
-                        admite el uso de varios dispositivos de entrada y salida.
-                    </li>
-                    <li>
-                        <em><b>Styling</b></em>:
-                        deja a los autores escribir temas más sofisticados.
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h2>SEMÁNTICA</h2>
-                <b> &lt;section&gt;
-                    <br/>
-                    &lt;article&gt;
-                    <br/>
-                    &lt;nav&gt;
-                    <br/>
-                    &lt;header&gt;
-                    <br/>
-                    &lt;footer&gt;
-                    <br/>
-                    &lt;aside&gt;
-                    <br/>
-                    &lt;hgroup&gt;
-                    <br/>
-                </b>
-            </section>
-            <section>
-                <h2>SEMÁNTICA</h2>
-                <h3>Formularios</h3>
-                <b>&lt;mark&gt;
-                    <br/>
-                    &lt;figure&gt;
-                    <br/>
-                    &lt;figcaption&gt;
-                    <br/>
-                    &lt;data&gt;
-                    <br/>
-                    &lt;time&gt;
-                    <br/>
-                    &lt;output&gt;
-                    <br/>
-                    &lt;progress&gt;
-                    <br/>
-                    <progress max="100" value="50"></progress>
-                </b>
-            </section>
+            <h2>Tipos de Texto</h2>
+<pre><code>
+    <p>Esto es un parrafo</p>
+    <b>Esto es negrita</b> <br>
+    <i>Esto es cursiva</i>
+</code></pre>
+    <p>Esto es un parrafo</p>
+    <b>Esto es negrita</b> <br>
+    <i>Esto es cursiva</i>
         </section>
 
         <section>
-            <h2>Como comenzar con HTML5!</h2>
-            <iframe width="1200" height="500" src="ejemplos/html/index.html"></iframe>
-        </section>
-        <section>
-            <img src="img/tags.png" style="width: 600px;">
-        </section>
-        <section>
-            <h2>CCS3: Cascading Style Sheets</h2>
-            Estilos visual del documento.
+            <h2>Tablas</h2>
+<pre><code>
+    <table>
+        <thead>
+        <tr>
+            <th>Unidad</th>
+            <th>Elemento</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>10</td>
+            <td>Manzanas</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Kiwis</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Naranjas</td>
+        </tr>
+        </tbody>
+    </table>
+</code></pre>
 
-            <ul>
-                <li>
-                    Selectores
-                </li>
-                <li>
-                    Modelos de Caja
-                </li>
-                <li>
-                    Fondos y Bordes
-                </li>
-                <li>
-                    Valores de imagenes y Remplazo de contenido
-                </li>
-                <li>
-                    Efectos de texto
-                </li>
-                <li>
-                    Transformaciones 2D/3D
-                </li>
-                <li>
-                    Animaciones
-                </li>
-                <li>
-                    Multiples columnas
-                </li>
-                <li>
-                    Interfaz de Usuario
-                </li>
-            </ul>
         </section>
 
         <section>
-            <h2>CCS3</h2>
-            Buenas Practicas:
-
-            <ul>
-                <li>
-                    Comprobar el diseño en varios navegadores
-                </li>
-                <li>
-                    Depuracion (Ej. firebug)
-                </li>
-                <li>
-                    Comentar el código
-                </li>
-                <li>
-                    Identar y hacer el código fácil de leer
-                </li>
-                <li>
-                    Usar sistema comun de nombrado
-                </li>
-                <li>
-                    Evitar tamaños absolutos en fuentes o elementos
-                </li>
-                <li>
-                    Utilizar notación de colores en hexadecimal
-                </li>
-                <li>
-                    Ordenar los elementos según pertenezcan a cabecera, contenido principal o pie de página
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>CSS</h2>
-            ¿Porque una Web no funciona igual en diferentes navegadores?
-            <ul>
-                <li style="list-style-image: url('img/chrome.png');" >
-                    <b> Google Chrome </b>
-                    utiliza para interpretar JavaScript un motor <b>V8</b>, y para el renderizado <b>WebKit</b>.
-                </li>
-                <li style="list-style-image: url('img/firefox.png');">
-                    <b>Firefox </b>
-                    emplea <b>JagerMonkey </b> para JavaScript y para el renderizado <b>Gecko </b>.
-                </li>
-                <li style="list-style-image: url('img/explorer.png');">
-                    <b>Internet Explore</b>
-                    emplea <b>Chakra</b> para JavaScript y <b>Trident</b> para renderizado.
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>CSS: ¿Como Usarlo?</h2>
-
-            Para incluir una hoja de estilo, arriba de <b> &lt /head &gt </b>
+            <h1>Bibliografia xD</h1>
+            <a href="http://www.w3schools.com/html/" target="_blank">
+                <img src="img/html/logo_w3schoolscom.png" class="noBorder">
+            </a>
             <br>
-            <pre><code><link rel="stylesheet" href="estilos.css" type="text/css"></code></pre>
-            <br>
-            Las <b> REGLAS </b> en CSS se componen de:
-            <br>
-
-            <pre><code>Selector{propiedad: valor;}</code></pre>
-
-            <br>
-            Ej.
-            <pre><code>h1{color:#333333; font-weight:bold; margin-left:15px; }</code></pre>
-
-            <br/>
-        </section>
-        <section>
-            <h2> ¿Como Escribir un Estilo? </h2>
-
-            Obviamente, con el teclado xD. Bue, hablando en serio, hay 3 formas:
-            <br>
-            <ol style="width:80%;">
-                <li>
-                    <b>por Tag</b>
-                    <pre><code class="css">{nombreEstilo: valor;}</code></pre>
-                </li>
-                <li>
-                    <b>por ID</b>
-                    <pre><code class="css">#nombreID {nombreEstilo: valor;}</code></pre>
-                </li>
-                <li>
-                    <b>por Clase</b>
-                    <pre><code class="css">.nombreClass {nombreEstilo: valor;}</code></pre>
-                </li>
-            </ol>
-
-        </section>
-        <!--section>
-            <h2> CSS: Recomendación </h2>
-            <p>
-                Revisar documentación:
-                <br>
-                <a href="http://www.w3schools.com/css/default.asp">http://www.w3schools.com/css/default.asp</a>
-                <br>
-                EJ. Box Model - Try it YourSelf
-                <br>
-                <br>
-                Autogenerar algunos estilos complicados:
-                <br>
-                <a href="http://css3generator.com/">http://css3generator.com/</a>
-                <br>
-                <a href="http://www.css3.me/">http://www.css3.me/</a>
-                <br>
-                <a href="http://westciv.com/tools/shadows/">http://westciv.com/tools/shadows/</a>
-                <br>
-                <br>
-                Escribir los colores en hexadecimal:
-                <br>
-                <a href="http://html-color-codes.info/codigos-de-colores-hexadecimales/"> http://html-color-codes.info/codigos-de-colores-hexadecimales/ </a>
-                <br/>
-        </section-->
-
-        <section>
-            <h2>Ejemplo CCS3</h2>
-            <iframe width="1200" height="500" src="ejemplos/css/index2.html"></iframe>
+            <a href="https://developer.mozilla.org/es/" target="_blank">
+                <img src="img/html/logo_MDN.png" class="noBorder" width="40%">
+            </a>
         </section>
 
-        <section>
-            <h2>Ejemplo CCS3</h2>
-            <iframe width="1200" height="500" src="ejemplos/css/index.html"></iframe>
-        </section>
+
     </div>
 </div>
 
