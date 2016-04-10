@@ -40,6 +40,29 @@
             border-radius: 50px;
             box-shadow: 10px 10px 5px rgba(100, 100, 100, 0.4)
         }
+
+        .divTran {
+            width: 100px; height: 100px; background: red; -webkit-transition: width 2s; transition: width 2s;
+        }
+
+        .divTran:hover {
+            width: 300px;
+        }
+
+        .divTran2 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+            transition: width 2s, height 2s, transform 2s;
+        }
+
+        .divTran2:hover {
+            width: 200px;
+            height: 200px;
+            -webkit-transform: rotate(180deg); /* Safari */
+            transform: rotate(180deg);
+        }
     </style>
 </head>
 
@@ -151,7 +174,7 @@
             Para incluir una hoja de estilo, arriba de <b> &lt /head &gt </b>
             <br>
             <pre><code>
-                <link rel="stylesheet" href="estilos.css" type="text/css">
+<link rel="stylesheet" href="estilos.css" type="text/css">
             </code></pre>
             <br>
             Las <b> REGLAS </b> en CSS se componen de:
@@ -219,6 +242,82 @@
         <section>
             <h2>Ejemplo CCS3</h2>
             <iframe width="1200" height="500" src="ejemplos/css/index.html"></iframe>
+        </section>
+
+        <section data-background="linear-gradient(to right, red , yellow)">
+            <h2>Gradientes</h2>
+            <pre><code>
+background: red; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(left, red , yellow); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(right, red, yellow); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(right, red, yellow); /* For Firefox 3.6 to 15 */
+background: linear-gradient(to right, red , yellow); /* Standard syntax */
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Pseudo Clases</h2>
+            <pre><code>
+    /* unvisited link */
+    a:link {
+    color: #FF0000;
+    }
+
+    /* visited link */
+    a:visited {
+    color: #00FF00;
+    }
+
+    /* mouse over link */
+    a:hover {
+    color: #FF00FF;
+    }
+
+    /* selected link */
+    a:active {
+    color: #0000FF;
+    }
+            </code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Transitions</h2>
+            <pre><code>
+    div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+    }
+
+    div:hover {
+    width: 300px;
+    }
+            </code></pre>
+     <div class="divTran"></div>
+        </section>
+
+        <section>
+            <h2>Transitions 2</h2>
+            <pre><code>
+div {
+width: 100px;
+height: 100px;
+background: red;
+-webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+transition: width 2s, height 2s, transform 2s;
+}
+
+div:hover {
+width: 200px;
+height: 200px;
+-webkit-transform: rotate(180deg); /* Safari */
+transform: rotate(180deg);
+}
+            </code></pre>
+            <div class="divTran2"></div>
         </section>
     </div>
 </div>
