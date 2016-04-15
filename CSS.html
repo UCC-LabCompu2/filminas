@@ -243,20 +243,65 @@
             <h2>Ejemplo CCS3</h2>
             <iframe width="1200" height="500" src="ejemplos/css/index.html"></iframe>
         </section>
-        
+
+
+        <section>
+            <h2>Position</h2>
+            <p>Como posicionar elementos dentro de la pagina.</p>
+            <ul>
+                <li>static</li>
+                <li>relative</li>
+                <li>fixed</li>
+                <li>absolute</li>
+            </ul>
+            </section>
+        <section>
+            <h2>position: static;</h2>
+            <p>
+                Los elementos posicionados con "Static" no son afectados por las propiedades
+                top, bottom, left y right.
+            </p>
+            <p>
+                Por defecto, todos los elementos HTML son Static.
+            </p>
+        </section>
+        <section>
+            <h2>position: relative;</h2>
+            <p> El elemento es posicionado relativo respecto a su posición normal.</p>
+            <p>Los valores top, left, right, bottom lo mueven respecto a su posición original</p>
+        </section>
+        <section>
+            <h2>position: fixed;</h2>
+            <p> El elemento "fixed" es posicionado respecto al area visible</p>
+            <p>Los valores top, left, right, bottom lo mueven respecto a su posición original</p>
+        </section>
+        <section>
+            <h2>position: absoluto;</h2>
+            <p>Los elementos con position: absolute; son posicionados mediante
+                top, left... respecto a su ancestro mas secano que este posicionado.</p>
+            <p>Un elemento posicionado es aquel que tenga en su propiedad position algo
+            distinto a static
+            </p>
+        </section>
+        <section>
+            <h2>superposición con z-index</h2>
+            <p>Los elementos con position: absolute; son posicionados mediante
+                top, left... respecto a su ancestro mas secano que este posicionado.</p>
+            <p>Un elemento posicionado es aquel que tenga en su propiedad position algo
+                distinto a static
+            </p>
+        </section>
         <section>
             <h2>Margenes</h2>
             <img src="img/html/pading_margin.gif" class="noBorder">
         </section>
 
         <section data-background="linear-gradient(to right, red , yellow)">
-            <h2>Gradientes</h2>
+            <h2>Fondo y Gradientes</h2>
             <pre><code>
-background: red; /* For browsers that do not support gradients */
-background: -webkit-linear-gradient(left, red , yellow); /* For Safari 5.1 to 6.0 */
-background: -o-linear-gradient(right, red, yellow); /* For Opera 11.1 to 12.0 */
-background: -moz-linear-gradient(right, red, yellow); /* For Firefox 3.6 to 15 */
-background: linear-gradient(to right, red , yellow); /* Standard syntax */
+background: red; /* solo color */
+background: linear-gradient(to right, red , yellow); /* gradiente */
+background: url("fondo.png"); /* imagen de <fondo></fondo> */
             </code></pre>
         </section>
 
@@ -265,22 +310,22 @@ background: linear-gradient(to right, red , yellow); /* Standard syntax */
             <pre><code>
     /* unvisited link */
     a:link {
-    color: #FF0000;
+        color: #FF0000;
     }
 
     /* visited link */
     a:visited {
-    color: #00FF00;
+        color: #00FF00;
     }
 
     /* mouse over link */
     a:hover {
-    color: #FF00FF;
+        color: #FF00FF;
     }
 
     /* selected link */
     a:active {
-    color: #0000FF;
+        color: #0000FF;
     }
             </code>
             </pre>
@@ -290,15 +335,15 @@ background: linear-gradient(to right, red , yellow); /* Standard syntax */
             <h2>Transitions</h2>
             <pre><code>
     div {
-    width: 100px;
-    height: 100px;
-    background: red;
-    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-    transition: width 2s;
+        width: 100px;
+        height: 100px;
+        background: red;
+        -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+        transition: width 2s;
     }
 
     div:hover {
-    width: 300px;
+        width: 300px;
     }
             </code></pre>
      <div class="divTran"></div>
@@ -308,30 +353,30 @@ background: linear-gradient(to right, red , yellow); /* Standard syntax */
             <h2>Transitions 2</h2>
             <pre><code>
 div {
-width: 100px;
-height: 100px;
-background: red;
--webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
-transition: width 2s, height 2s, transform 2s;
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
 }
 
 div:hover {
-width: 200px;
-height: 200px;
--webkit-transform: rotate(180deg); /* Safari */
-transform: rotate(180deg);
+    width: 200px;
+    height: 200px;
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
 }
             </code></pre>
             <div class="divTran2"></div>
         </section>
-        
+
         <section>
             <h2>FavIcon</h2>
 <pre><code>
     <link rel="shortcut icon" href="/favicon.ico">
 </code></pre>
         </section>
-        
+
     </div>
 </div>
 
