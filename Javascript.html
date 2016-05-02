@@ -6,7 +6,8 @@
     <title>Laboratorio de Computación II</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/black.css" id="theme">
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -43,267 +44,217 @@
     <div class="slides">
 
         <section>
-            <h1>TUTORIAL DE HTML</h1>
-            <h3>en HTML (que recursivo :P) </h3>
+            <h1>Orientación a Eventos</h1>
+            <h3>JavaScript </h3>
             <p>
-                <small>Created by <a href="http://twitter.com/edme88">@edme88</a></small>
+                <small>Created by edme88 & rmarku</small>
             </p>
         </section>
 
+
         <section>
-            <h2>HTML5</h2>
+            <h2>Programación Dirigida por eventos</h2>
+            <p>Paradigma de programación en el que la estructura y la ejecución de los programas van
+                determinados por los sucesos que ocurran en el sistema, definidos por el usuario o que ellos mismos
+                provoquen.</p>
+        </section>
+
+        <section>
+            <h2>Lenguajes</h2>
             <p>
-                HTML5 es la última evolución de la norma que define HTML (HyperText Markup Language)
-            </p>
-        </section>
-
-        <section>
-            <h2>Características</h2>
-            <img class="noBorder" src="img/html5-areas.png"/>
-        </section>
-
-        <section>
-            <h2>Características</h2>
             <ul>
-                <li>
-                    <em><b>Semántica</b></em>:
-                    lo que le permite describir con mayor precisión cuál es su contenido.
-                </li>
-                <li class="fragment">
-                    <em><b>Conectividad</b></em>:
-                    lo que le permite comunicarse con el servidor de formas nuevas e innovadoras.
-                </li>
-                <li class="fragment">
-                    <em><b>Desconectado y almacenamiento</b></em>:
-                    permite a páginas web almacenar datos, localmente, en el lado del cliente y operar fuera de línea de manera más eficiente.
-                </li>
-                <li class="fragment">
-                    <em><b>Multimedia</b></em>:
-                    permite hacer vídeo y audio de ciudadanos de primera clase en la Web abierta.
-                </li>
+                <li>JavaScript</li>
+                <li>ActionScript</li>
+                <li>Visual Basic</li>
+                <li>C#</li>
+                <li>Visual C++</li>
             </ul>
+            </p>
         </section>
 
         <section>
-            <section>
-                <h2>Características</h2>
+            <h2>Eventos</h2>
+            <p>
+                Todo aquello que puede ser detectado y que pueda producir una reacción.
+                <br><br>
+                Ej. Hacer click en un botón, mover el puntero sobre un enlace, seleccionar un elemento de una lista
+                desplegable, etc.
+            </p>
+        </section>
+
+        <section>
+            <h2>Tipos de Eventos</h2>
+            <p>
+            <ul>
+                <li>Eventos de Usuario</li>
                 <ul>
-                    <li>
-                        <em><b>Gráficos y efectos 2D/3D</b></em>:
-                        permite una gama mucho más amplia de opciones de presentación.
-                    </li>
-                    <li class="fragment">
-                        <em><b>Rendimiento e Integración</b></em>:
-                        proporcionar una mayor optimización de la velocidad y un mejor uso del hardware del equipo.
-                    </li>
-                    <li class="fragment">
-                        <em><b>Dispositivo de Acceso</b></em>:
-                        admite el uso de varios dispositivos de entrada y salida.
-                    </li>
-                    <li class="fragment">
-                        <em><b>Styling</b></em>:
-                        deja a los autores escribir temas más sofisticados.
-                    </li>
+                    <li>Eventos del ratón</li>
+                    <li>Eventos del teclado</li>
                 </ul>
-            </section>
-            <section>
-                <h2>SEMÁNTICA</h2>
-                <b> &lt;section&gt;
-                    <br/>
-                    &lt;article&gt;
-                    <br/>
-                    &lt;nav&gt;
-                    <br/>
-                    &lt;header&gt;
-                    <br/>
-                    &lt;footer&gt;
-                    <br/>
-                    &lt;aside&gt;
-                    <br/>
-                    &lt;hgroup&gt;
-                    <br/>
-                </b>
-            </section>
-            <section>
-                <h2>SEMÁNTICA</h2>
-                <h3>Formularios</h3>
-                <b>&lt;mark&gt;
-                    <br/>
-                    &lt;figure&gt;
-                    <br/>
-                    &lt;figcaption&gt;
-                    <br/>
-                    &lt;data&gt;
-                    <br/>
-                    &lt;time&gt;
-                    <br/>
-                    &lt;output&gt;
-                    <br/>
-                    &lt;progress&gt;
-                    <br/>
-                    <progress max="100" value="50"></progress>
-                </b>
-            </section>
-        </section>
-
-        <section>
-            <h2>Como comenzar con HTML5!</h2>
-            <iframe width="1200" height="500" src="ejemplos/html/index.html"></iframe>
-        </section>
-        <section>
-            <h2>CCS3: Cascading Style Sheets</h2>
-            Estilos visual del documento.
-
-            <ul>
-                <li>
-                    Selectores
-                </li>
-                <li class="fragment">
-                    Modelos de Caja
-                </li>
-                <li class="fragment">
-                    Fondos y Bordes
-                </li>
-                <li class="fragment">
-                    Valores de imagenes y Remplazo de contenido
-                </li>
-                <li class="fragment">
-                    Efectos de texto
-                </li>
-                <li class="fragment">
-                    Transformaciones 2D/3D
-                </li>
-                <li class="fragment">
-                    Animaciones
-                </li>
-                <li class="fragment">
-                    Multiples columnas
-                </li>
-                <li class="fragment">
-                    Interfaz de Usuario
-                </li>
+                <li>Eventos del navegador</li>
+                <ul>
+                    <li>Manipulación de las ventanas del navegador</li>
+                    <li>Comunicaicón con el servidor</li>
+                </ul>
+                <li>Eventos generados desde código</li>
+                <ul>
+                    <li>Cambios en el contenido, aspecto o estructura</li>
+                    <li>Especificación DOM</li>
+                </ul>
             </ul>
-        </section>
-
-        <section>
-            <h2>CCS3</h2>
-            Buenas Practicas:
-
-            <ul>
-                <li>
-                    Comprobar el diseño en varios navegadores
-                </li>
-                <li class="fragment">
-                    Depuracion (Ej. firebug)
-                </li>
-                <li class="fragment">
-                    Comentar el código
-                </li>
-                <li class="fragment">
-                    Identar y hacer el código fácil de leer
-                </li>
-                <li class="fragment">
-                    Usar sistema comun de nombrado
-                </li>
-                <li class="fragment">
-                    Evitar tamaños absolutos en fuentes o elementos
-                </li>
-                <li class="fragment">
-                    Utilizar notación de colores en hexadecimal
-                </li>
-                <li class="fragment">
-                    Ordenar los elementos según pertenezcan a cabecera, contenido principal o pie de página
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>CSS</h2>
-            ¿Porque una Web no funciona igual en diferentes navegadores?
-            <br>
-            <br>
-            <p>
-                <b> Google Chrome </b> utiliza para interpretar JavaScript un motor <b> V8</b>, y para el renderizado <b> WebKit </b>.
-                <br>
-                <br>
-                <b> Firefox </b> emplea <b>JagerMonkey </b> para JavaScript y para el renderizado <b>Gecko </b>.
-                <br>
-                <br>
-                <b>Internet Explore</b> emplea <b>Chakra</b> para JavaScript y <b>Trident</b> para renderizado.
             </p>
         </section>
 
         <section>
-            <h2>CSS: ¿Como Usarlo?</h2>
+            <h2>Event Handler</h2>
             <p>
-                Para incluir una hoja de estilo, arriba de <b> &lt /head &gt </b>
-                <br>
-                &lt link rel="stylesheet" href="estilos.css" type="text/css" &gt
-                <br>
-                <br>
-                Las <b> REGLAS </b> en CSS se componen de:
-                <br>
-                Selector{propiedad: valor;}
-                <br>
-                Ej. h1{color:#333333; font-weight:bold; margin-left:15px; }
+                El manejador de eventos contiene instrucciones acerca de que hacer cuando una clase particular de evento
+                se dispara.
             </p>
-            <br/>
         </section>
+
         <section>
-            <h2> ¿Como Escribir un Estilo? </h2>
+            <h2>Eventos y objetos</h2>
             <p>
-                Obviamente, con el teclado xD. Bue, hablando en serio, hay 3 formas:
-                <br>
-                <br>
-
-                1) nombreTag {nombreEstilo: valor;}
-                <br>
-                nombreTag= Body, Table, div
-                <br>
-                <br>
-                2) #nombreID {nombreEstilo: valor;}
-                <br>
-                #nombreID = &lt p id="pepe" &gt
-                <br>
-                <br>
-                3) .nombreClass {nombreEstilo: valor;}
-                <br>
-                .nombreClass = &lt p class="pepe" &gt
-                <br/>
+            <ul>
+                <li>Los eventos estan asociados a un objeto.</li>
+                <li>Los eventos se producen porque sobre un objeto se produce alguna acción</li>
+            </ul>
+            </p>
         </section>
+
         <section>
-            <h2> CSS: Recomendación </h2>
+            <h2>Eventos de elementos de Formularios</h2>
             <p>
-                Revisar documentación:
-                <br>
-                <a href="http://www.w3schools.com/css/default.asp">http://www.w3schools.com/css/default.asp</a>
-                <br>
-                EJ. Box Model - Try it YourSelf
-                <br>
-                <br>
-                Autogenerar algunos estilos complicados:
-                <br>
-                <a href="http://css3generator.com/">http://css3generator.com/</a>
-                <br>
-                <a href="http://www.css3.me/">http://www.css3.me/</a>
-                <br>
-                <a href="http://westciv.com/tools/shadows/">http://westciv.com/tools/shadows/</a>
-                <br>
-                <br>
-                Escribir los colores en hexadecimal:
-                <br>
-                <a href="http://html-color-codes.info/codigos-de-colores-hexadecimales/"> http://html-color-codes.info/codigos-de-colores-hexadecimales/ </a>
-                <br/>
+                Se producen durante el uso de campos de formulario, como cajas de texto, listas desplegables, etc.
+                <br><br>
+                Se producen cuando un elemento recibe foco,lo pierde o se cambia el contenido.
+            </p>
         </section>
 
         <section>
-            <h2>Ejemplo CCS3</h2>
-            <iframe width="1200" height="500" src="ejemplos/css/index2.html"></iframe>
+            <h2>Eventos de elementos de Formularios</h2>
+            <p>
+            <ul>
+                <li><b>OnSelect:</b> Se produce cuando se selecciona texto en un campo</li>
+                <li><b>OnChange:</b> Se produce cuando se cambia algo en un elemento de formulario, y se pierde foco.
+                </li>
+            </ul>
+            <pre><code>
+                <input type="text" onselect="alert('Se ejecuto onSelect')">
+                <input type="text" value="Cambiar Valor" onchange="alert('Se ejecuto onChange')">
+            </code></pre>
+            <input type="text" onselect="alert('Se ejecuto onSelect')">
+            <input type="text" value="Cambiar Valor" onchange="alert('Se ejecuto onChange')">
+
+            </p>
         </section>
 
         <section>
-            <h2>Ejemplo CCS3</h2>
-            <iframe width="1200" height="500" src="ejemplos/css/index.html"></iframe>
+            <h2>Eventos de Formularios</h2>
+            <p>
+            <ul>
+            <li><b>OnReset:</b> Al hacer click en el botón de rest de un formulario</li>
+            </ul>
+<pre><code>
+<form name="formulario1">
+    <input type="reset" value="borrar contenido" onreset="miFuncion">
+</form>
+<script>
+    function miFuncion() {
+        alert("Se borrara el contenido del formulario")
+    }
+</script>
+</code></pre>
+            </p>
+        </section>
+
+        <section>
+            <h2>Eventos de Formularios</h2>
+            <p>
+            <ul>
+                <li><b>OnSubmit:</b> Al presionar el botón de enviar el formulario</li>
+            </ul>
+<pre><code>
+    <form name="formulario1" onsubmit="miFuncion(nombre)">
+        <input type="text" name="nombre">
+        <input type="submit" value="Enviar Datos">
+    </form>
+    <script>
+        function miFuncion(nombre) {
+            alert("Su nombre es: "+nombre)
+        }
+    </script>
+</code></pre>
+            </p>
+        </section>
+
+        <section>
+            <h2>Eventos de Mouse</h2>
+            <p>
+            <ul>
+                <li><b>onMouseDown:</b> Pulsar sobre un elemento de la página.</li>
+                <li><b>OnMouseMove:</b> Al mover el puntero por la página</li>
+                <li><b>onMouseOut:</b> Al salir del área ocupada por un elemento de la página</li>
+                <li><b>onMouseOver:</b> Al entrar el úntero en el área ocupada por un elemento de la pagina</li>
+                <li><b>onMouseUp:</b> AL soltar el botón del mouse que anteriormente se habia presionado</li>
+            </ul>
+            </p>
+        </section>
+
+        <section>
+            <h2>Eventos de Teclado</h2>
+            <p>
+            <ul>
+                <li><b>onKeyDown:</b> Al pulsar una tecla.</li>
+                <li><b>onKeyPress:</b> Dejar pulsada una tecla un tiempo determinado.</li>
+                <li><b>onKeyUp:</b> Al liberar la tecla presionada</li>
+            </ul>
+            </p>
+        </section>
+
+        <section>
+            <h2>Objeto: Event</h2>
+            <p>
+                function miFuncion(event){}
+                <br>
+                Permite recibir propiedades del evento: elemento en el que ocurre, el estado de las teclas, la posición
+                del mouse, estado de lso botones.
+            <ul>
+                <li><b>altKey:</b> Devuelve si se ha precionado la techa ALT</li>
+                <li><b>button:</b> Se presionó el botón del mouse</li>
+                <li><b>ClientX:</b> coordenada X del mouse</li>
+                <li><b>clientY:</b> coordenada Y del mouse</li>
+                <li><b>keyIdentifier:</b> identifica la letra que se presiono</li>
+                <li><b>keyLocation:</b> devuelve la posición de la tecla</li>
+                <li><b>relatedTarget:</b> Devuelve el elemento relacionado con el elemento sobre el que se ejecuta el
+                    evento.
+                </li>
+                <li><b>screenX:</b> Devuelve la posición X del cursor relativa a la página</li>
+                <li><b>screenY:</b> Devuelve la posición Y del cursor relativa a la página</li>
+                <li><b>shoftKey:</b> devuelve si se presionó Shift</li>
+            </ul>
+            </p>
+        </section>
+
+        <section>
+            <h2>Eventos de Enfoque</h2>
+            <p>
+            <ul>
+                <li><b>onBlur:</b> Cuando un elemento pierde el foco de la aplicación.</li>
+                <li><b>onFocus:</b> Cuando un elemento de la página o la ventana gana el foco de la aplicación</li>
+            </ul>
+            </p>
+        </section>
+
+        <section>
+            <h2>Eventos de Ventana</h2>
+            <p>
+            <ul>
+                <li><b>onMove:</b> Al mover la ventana del navegador</li>
+                <li><b>onResize:</b> Al redimensionar la ventana del navegador</li>
+            </ul>
+            </p>
         </section>
 
         <section>
@@ -594,10 +545,12 @@
             <h4>Bibliografia</h4>
             <ul>
                 <li>
-                    <a src="https://developer.mozilla.org/es/docs/HTML/HTML5">HTML5 - HTML | Mozilla Development Network</a>
+                    <a src="https://developer.mozilla.org/es/docs/HTML/HTML5">HTML5 - HTML | Mozilla Development
+                        Network</a>
                 </li>
                 <li>
-                    <a src="https://developer.mozilla.org/es/docs/Introducci%C3%B3n_a_JavaScript_orientado_a_objetos">Introducción a JavaScript orientado a objetosk</a>
+                    <a src="https://developer.mozilla.org/es/docs/Introducci%C3%B3n_a_JavaScript_orientado_a_objetos">Introducción
+                        a JavaScript orientado a objetosk</a>
                 </li>
                 <li>
                     <a src="http://www.w3schools.com/css/css3_intro.asp">CSS3 Introduction</a>
