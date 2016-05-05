@@ -37,4 +37,11 @@ function seMuestra(nombre) {
     }
 }
 
+function sumaN() {
+    num1=document.getElementById("num1").value;
+    alert(num1);
+    num2=document.getElementById("num2").value;
+    alert(num2);
+    document.getElementById("resultado").value=Number(num1) + Number(num2);
+}
 
