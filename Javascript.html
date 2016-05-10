@@ -471,7 +471,7 @@
         </section>
 
         <section>
-            <h2>Canvas</h2>
+            <h2> <a href="http://www.w3schools.com/tags/ref_canvas.asp" target="_blank"> Canvas </a> </h2>
 <pre><code>
     function dibujo() {
     var canvas = document.getElementById("canvas");
@@ -556,6 +556,31 @@
     ctx.beginPath();
     //ctx.arc(X, Y, radio, angulo inicial, angulo final);
     ctx.arc(300, 250, 200, 1* Math.PI, 2 * Math.PI);
+    ctx.stroke();
+    }
+</code></pre>
+        </section>
+
+        </section>
+
+        <section>
+            <h2>Canvas: arcTo()</h2>
+            <canvas id="canvas4" width="600" height="300" style="background-color: #8dcffc" onclick="dibujoArcT()">
+                Su navegador no soporta HTML5
+            </canvas>
+        </section>
+
+        <section>
+            <h2>Canvas: Parabola</h2>
+<pre><code>
+    function dibujoArcT() {
+    var c = document.getElementById("canvas4");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.moveTo(20, 120);
+    ctx.lineTo(100, 40);
+    ctx.arcTo(130, 10, 150, 40, 20);
+    ctx.lineTo(220, 120);
     ctx.stroke();
     }
 </code></pre>

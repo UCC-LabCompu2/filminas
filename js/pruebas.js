@@ -131,3 +131,14 @@ function dibujoParabola() {
   ctx.arc(300, 250, 200, 1* Math.PI, 2 * Math.PI);
   ctx.stroke();
 }
+
+function dibujoArcT() {
+  var c = document.getElementById("canvas4");
+  var ctx = c.getContext("2d");
+  ctx.beginPath();
+  ctx.moveTo(20, 120);
+  ctx.lineTo(100, 40);
+  ctx.arcTo(130, 10, 150, 40, 20);
+  ctx.lineTo(220, 120);
+  ctx.stroke();
+}
