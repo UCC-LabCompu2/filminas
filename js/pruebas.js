@@ -142,3 +142,44 @@ function dibujoArcT() {
   ctx.lineTo(220, 120);
   ctx.stroke();
 }
+
+function dibujoArcT() {
+  var c = document.getElementById("canvas4");
+  var ctx = c.getContext("2d");
+  ctx.beginPath();
+  ctx.moveTo(20, 120);
+  ctx.lineTo(100, 40);
+  ctx.arcTo(130, 10, 150, 40, 20);
+  ctx.lineTo(220, 120);
+  ctx.stroke();
+}
+
+function calculoFun(numDist, numAng, longi, angul) {
+
+  if(isNaN(numDist) || isNaN(numAng)){
+    alert("Los valores ingresados no son numeros");
+  }
+  else{
+      if(longi=="pulgadas")
+          numDist=convertMetros(numDist);
+
+      if(angul=="radianes")
+          numAng=convertGrados(numAng);
+
+      document.getElementById("distR").value=numDist;
+      document.getElementById("angR").value=numAng;
+      document.getElementById("result").value=numDist*Math.sin(numAng*Math.PI/180);
+  }
+}
+
+function convertMetros(distPulgadas) {
+    var enMetros=distPulgadas*0.0254;
+    enMetros=Math.round(enMetros*10000)/10000;
+  return enMetros;
+}
+
+function convertGrados(radianes) {
+  var enGrados=radianes*180/Math.PI;
+  enGrados=Math.round(enGrados*10000)/10000;
+  return enGrados;
+}
