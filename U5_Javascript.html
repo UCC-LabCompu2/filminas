@@ -42,7 +42,7 @@
 
 <div class="reveal">
 
-    <div class="slides">
+    <section class="slides">
 
         <section data-background="img/html/js_wallpaper.jpg">
             <h1 style="text-shadow: -1px -1px 1px #73a4f6, 1px 1px 1px #000, -1px 1px 1px #c1ebeb, 1px -1px 1px #000;">
@@ -130,6 +130,39 @@
         </section>
 
         <section>
+            <h2>JavaScript</h2>
+            <p>
+                Es un lenguaje de scripting multiplataforma y orientado a objetos.
+                Se usa principalmente del lado del cliente implementado como parte de un navegador web permitiendo
+                mejoras en la interfaz de usuario y páginas web dinámicas.
+            </p>
+        </section>
+
+        <section>
+            <h2>Características</h2>
+            <p>
+            <ul>
+                <li>Orientado a Objetos</li>
+                <li>Lenguaje Interpretado</li>
+                <li>Tipado dinámico</li>
+            </ul>
+            </p>
+        </section>
+
+        <section>
+            <h2>Sintaxis</h2>
+            <p>
+                Conjunto de reglas que deben seguirse al escribir el código:
+            <ul>
+                <li>No se tienen en cuenta los espacios en blanco y las nuevas líneas.</li>
+                <li>Se distinguen las mayúsculas y minúsculas.</li>
+                <li>No se define el tipo de las variables.</li>
+                <li>Se pueden incluir comentarios.</li>
+            </ul>
+            </p>
+        </section>
+
+        <section>
             <h1>Variables</h1>
 <pre><code>
     var num;
@@ -145,19 +178,20 @@
         <section>
             <h1>Funciones</h1>
 <pre><code>
-function miFuncion(parametro1, parametro2){
+    function miFuncion(parametro1, parametro2){
     var res;
     res = parametro1 + parametro2;
     return res;
-}
+    }
 </code></pre>
         </section>
+
         <section>
             <h1>Condicionales</h1>
 <pre><code>
-if(saludo == "Whatsup!"){
+    if(saludo == "Whatsup!"){
     console.log("Whatsup!");
-}
+    }
 </code></pre>
             <ul>
                 <li><b>==</b> iguales</li>
@@ -169,45 +203,45 @@ if(saludo == "Whatsup!"){
                 <li><b>===</b> exactamente igual</li>
             </ul>
         </section>
+
         <section>
             <h1>Bucles</h1>
 <pre><code>
-for(var i=0; i<20;i++){
+    for(var i=0; i<20;i++){
     console.log("El valor es " + i);
-}
+    }
 </code></pre>
     <pre><code>
-var i = 0;
-while(i < 20){
-    console.log("El valor es " + i);
-    i++;
-}
+        var i = 0;
+        while(i < 20){
+        console.log("El valor es " + i);
+        i++;
+        }
     </code></pre>
-
         </section>
+
         <section>
             <h1>Switch Case</h1>
 <pre><code>
-switch(nombre){
+    switch(nombre){
     case "Juan":
-        console.log("Se llama Juan");
-        break;
+    console.log("Se llama Juan");
+    break;
     case "Pedro":
     console.log("Se llama Pedro");
-        break;
-        case "Pancracio":
+    break;
+    case "Pancracio":
     console.log("Se llama Pancracio");
-        break;
-}
+    break;
+    }
 </code></pre>
-
         </section>
+
         <section>
             <h1>Funciones Callback</h1>
 <pre><code>
     setInterval(function(){ alert("Hello"); }, 3000);
 </code></pre>
-
         </section>
 
         <section>
@@ -242,46 +276,7 @@ switch(nombre){
             <input type="text" value="Cambiar Valor" onchange="alert('Se ejecuto onChange')">
 
         </section>
-        <!--
-                <section>
-                    <h2>Eventos de Formularios</h2>
 
-                    <ul>
-                        <li><b>OnReset:</b> Al hacer click en el botón de rest de un formulario</li>
-                    </ul>
-        <pre style="width: 112%;"><code>
-        <form name="formulario1">
-            <input type="reset" value="borrar contenido" onreset="miFuncion">
-        </form>
-        <script>
-            function miFuncion() {
-                alert("Se borrara el contenido del formulario")
-            }
-        </script>
-        </code></pre>
-
-                </section>
-
-                <section>
-                    <h2>Eventos de Formularios</h2>
-                    <p>
-                    <ul>
-                        <li><b>OnSubmit:</b> Al presionar el botón de enviar el formulario</li>
-                    </ul>
-        <pre style="width: 112%;"><code>
-            <form name="formulario1" onsubmit="miFuncion(nombre)">
-                <input type="text" name="nombre">
-                <input type="submit" value="Enviar Datos">
-            </form>
-            <script>
-                function miFuncion(nombre) {
-                    alert("Su nombre es: " + nombre)
-                }
-            </script>
-        </code></pre>
-                    </p>
-                </section>
-        -->
         <section>
             <h2>Eventos de Mouse</h2>
             <ul>
@@ -367,7 +362,7 @@ switch(nombre){
 
 <pre style="width: 113%"><code>function numAleatorio(a,b) {
     document.prueba1.textoP.value = Math.round(Math.random()*(b-a)+parseInt(a));
-}
+    }
 </code></pre>
             <form name="prueba1">
                 <input style="font-size: 48px;text-align: center;" type="text" size="1" onclick="numAleatorio(1,10)"
@@ -385,30 +380,73 @@ switch(nombre){
         <section>
             <h2>Ejemplo Conversion de Unidades</h2>
             <form name="lasUnidades" style="text-align: right; width: 450px; margin:auto;">
-                metro=<input style="font-size: 22px" type="text" name="metro" onchange="cambioUnidades(this.value,this.name)">
+                metro=<input style="font-size: 22px" type="text" name="metro"
+                             onchange="cambioUnidades(this.value,this.name)">
                 <br>
-                pulgada=<input style="font-size: 22px" type="text" name="pulgada" onchange="cambioUnidades(this.value,this.name)">
+                pulgada=<input style="font-size: 22px" type="text" name="pulgada"
+                               onchange="cambioUnidades(this.value,this.name)">
                 <br>
-                pie=<input style="font-size: 22px" type="text" name="pie" onchange="cambioUnidades(this.value,this.name)">
+                pie=<input style="font-size: 22px" type="text" name="pie"
+                           onchange="cambioUnidades(this.value,this.name)">
                 <br>
-                yarda=<input style="font-size: 22px" type="text" name="yarda" onchange="cambioUnidades(this.value,this.name)">
+                yarda=<input style="font-size: 22px" type="text" name="yarda"
+                             onchange="cambioUnidades(this.value,this.name)">
                 <br>
             </form>
+        </section>
 
+        <section>
+            <h2>Ejemplo Conversion de Unidades</h2>
+<pre><code>
+    function cambioUnidades(valor, unidad) {
+    if(isNaN(valor)){
+    alert("Se ingreso un valor invalido en " + unidad);
+    document.lasUnidades.yarda.value = "";
+    document.lasUnidades.metro.value = "";
+    document.lasUnidades.pulgada.value = "";
+    document.lasUnidades.pie.value = "";
+    }
+    else if (unidad == "metro") {
+    document.lasUnidades.pulgada.value = valor * 39.3701;
+    document.lasUnidades.pie.value = valor * 3.28084;
+    document.lasUnidades.yarda.value = valor * 1.09361;
+    }
+    else if (unidad == "pulgada") {
+    document.lasUnidades.metro.value = valor * 0.0254;
+    document.lasUnidades.pie.value = valor * 0.08333;
+    document.lasUnidades.yarda.value = valor * 0.027778;
+    }
+    else if (unidad == "pie") {
+    document.lasUnidades.metro.value = valor * 0.3048;
+    document.lasUnidades.pulgada.value = valor * 12;
+    document.lasUnidades.yarda.value = valor * 0.333333;
+    }
+    else if (unidad == "yarda") {
+    document.lasUnidades.metro.value = valor * 0.9144;
+    document.lasUnidades.pulgada.value = valor * 36;
+    document.lasUnidades.pie.value = valor * 3;
+    }
+    }
+</code></pre>
         </section>
 
         <section>
             <h2>Ejemplo JavaScript</h2>
             <div style="text-align: left; display: inline-block; margin: auto;">
-                <input style="width: 30px;height: 30px" type="radio" name="velocidad" value="Vinicial" onclick="seMuestra(this.value)">Velocidad Inicial
+                <input style="width: 30px;height: 30px" type="radio" name="velocidad" value="Vinicial"
+                       onclick="seMuestra(this.value)">Velocidad Inicial
                 <br>
-                <input style="width: 30px;height: 30px" type="radio" name="velocidad" value="Vfinal" onclick="seMuestra(this.value)">Velocidad Final
+                <input style="width: 30px;height: 30px" type="radio" name="velocidad" value="Vfinal"
+                       onclick="seMuestra(this.value)">Velocidad Final
                 <br>
-                <input style="width: 30px;height: 30px" type="radio" name="velocidad" value="NingunaV" onclick="seMuestra(this.value)">Ninguna Velocidad
+                <input style="width: 30px;height: 30px" type="radio" name="velocidad" value="NingunaV"
+                       onclick="seMuestra(this.value)">Ninguna Velocidad
                 <br>
-                <input style="width: 30px;height: 30px" type="radio" name="distancia" value="Dinicial" onclick="seMuestra(this.value)">Distancia Inicial
+                <input style="width: 30px;height: 30px" type="radio" name="distancia" value="Dinicial"
+                       onclick="seMuestra(this.value)">Distancia Inicial
                 <br>
-                <input style="width: 30px;height: 30px" type="radio" name="distancia" value="Dfinal" onclick="seMuestra(this.value)">Distancia FInal
+                <input style="width: 30px;height: 30px" type="radio" name="distancia" value="Dfinal"
+                       onclick="seMuestra(this.value)">Distancia FInal
                 <br>
             </div>
             <div id="variasCosas1" style="display: none; background-color: #0d99a5">
@@ -428,13 +466,13 @@ switch(nombre){
             <h2>JavaScript: Displayed</h2>
 <pre><code>function seMuestra(nombre) {
     if (nombre == "Vinicial" || nombre == "Vfinal") {
-        document.getElementById('variasCosas1').style.display = 'block';
+    document.getElementById('variasCosas1').style.display = 'block';
     } else if (nombre == "NingunaV") {
-        document.getElementById('variasCosas1').style.display = 'none';
+    document.getElementById('variasCosas1').style.display = 'none';
     } else if (nombre == "Dinicial" || nombre == "Dfinal") {
-        document.getElementById('variasCosas2').style.display = 'block';
+    document.getElementById('variasCosas2').style.display = 'block';
     }
-}</code></pre>
+    }</code></pre>
         </section>
 
         <section>
@@ -450,7 +488,7 @@ switch(nombre){
     var num2 = document.getElementById("num2").value;
     var resultado = Number(num1) + Number(num2);
     document.getElementById("resultado").value = resultado;
-}</code></pre>
+    }</code></pre>
         </section>
 
         <section>
@@ -460,22 +498,22 @@ switch(nombre){
             <form name="sumaNum">
                 <input size="1" style="font-size: 28px" type="text" id="num3">
                 <button style="font-size: 28px" onclick="potenciaN();raizN()"> Calcular</button>
+            </form>
 <pre><code>
-function potenciaN() {
+    function potenciaN() {
     var numP = document.getElementById("num3").value;
     numP = Math.pow(numP,3);
     alert("El cubo del numero ingresado es "+numP);
-}
+    }
 </code></pre>
 
 <pre><code>
-function raizN() {
+    function raizN() {
     var numP = document.getElementById("num3").value;
     numP = Math.pow(numP,1/3);
     alert("La raiz cubica del numero ingresado es "+numP);
-}
+    }
 </code></pre>
-            </form>
         </section>
 
         <section>
@@ -485,15 +523,15 @@ function raizN() {
             <form name="sumaNum">
                 <input size="1" style="font-size: 28px" type="text" id="num4">
                 <button style="font-size: 28px" onclick="senN()"> Calcular</button>
+            </form>
 <pre><code>
-function senN() {
+    function senN() {
     var senNum = document.getElementById("num4").value;
     //Math.sin(x) donde x en radianes
     var valorSen = Math.sin(senNum*Math.PI/180);
     alert("El seno de "+ senNum +" = "+ Math.round(valorSen*100)/100);
-}
+    }
 </code></pre>
-            </form>
         </section>
 
         <section>
@@ -515,60 +553,58 @@ function senN() {
                         onclick="calculoFun(dist2.value, ang2.value, longitud.value, angulo2.value)"> Calcular
                 </button>
                 <br><br>
-                calculo=<input size="1" style="font-size: 28px" type="text" id="distR" disabled>*Sen<input size="1"
-                                                                                                           style="font-size: 28px"
-                                                                                                           type="text"
-                                                                                                           id="angR"
-                                                                                                           disabled>=<input
-                    size="1" style="font-size: 28px" type="text" id="result" disabled>
+                calculo=
+                <input size="1" style="font-size: 28px" type="text" id="distR" disabled>*Sen
+                <input size="1" style="font-size: 28px" id="angR" disabled>=
+                <input size="1" style="font-size: 28px" type="text" id="result" disabled>
             </form>
         </section>
 
         <section>
             <h2>JavaScript: Formulas</h2>
 <pre><code>
-function calculoFun(numDist, numAng, longi, angul) {
+    function calculoFun(numDist, numAng, longi, angul) {
     if(isNaN(numDist) || isNaN(numAng)){
-        alert("Los valores ingresados no son numeros");
+    alert("Los valores ingresados no son numeros");
     } else {
     if(longi=="pulgadas")
-        numDist=convertMetros(numDist);
+    numDist=convertMetros(numDist);
 
     if(angul=="radianes")
-        numAng=convertGrados(numAng);
+    numAng=convertGrados(numAng);
 
     document.getElementById("distR").value=numDist;
     document.getElementById("angR").value=numAng;
     document.getElementById("result").value=numDist*Math.sin(numAng*Math.PI/180);
     }
-}
+    }
 
-function convertMetros(distPulgadas) {
+    function convertMetros(distPulgadas) {
     var enMetros=distPulgadas*0.0254;
     enMetros=Math.round(enMetros*10000)/10000;
     return enMetros;
-}
+    }
 
-function convertGrados(radianes) {
+    function convertGrados(radianes) {
     var enGrados=radianes*180/Math.PI;
     enGrados=Math.round(enGrados*10000)/10000;
     return enGrados;
-}
+    }
 </code></pre>
-            </form>
         </section>
 
         <section>
-            <h2>Canvas</h2>
-            <canvas id="canvas" width="600" height="300" style="background-color: #8dcffc" onclick="dibujo()">
-                Su navegador no soporta HTML5
-            </canvas>
-        </section>
+            <section>
+                <h2>Canvas</h2>
+                <canvas id="canvas" width="600" height="300" style="background-color: #8dcffc" onclick="dibujo()">
+                    Su navegador no soporta HTML5
+                </canvas>
+            </section>
 
-        <section>
-            <h2><a href="http://www.w3schools.com/tags/ref_canvas.asp" target="_blank"> Canvas </a></h2>
+            <section>
+                <h2><a href="http://www.w3schools.com/tags/ref_canvas.asp" target="_blank"> Canvas </a></h2>
 <pre><code>
-function dibujo() {
+    function dibujo() {
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
     ctx.fillStyle = "#000";
@@ -581,40 +617,40 @@ function dibujo() {
     ctx.lineTo(100,75);
     ctx.lineTo(100,25);
     ctx.fill();
-}
+    }
 </code></pre>
-        </section>
+            </section>
 
-        <section>
-            <h2>Canvas: Cuadriculado</h2>
-            <canvas id="canvas2" width="600" height="300" style="background-color: #8dcffc" onclick="dibujo2()">
-                Su navegador no soporta HTML5
-            </canvas>
-        </section>
+            <section>
+                <h2>Canvas: Cuadriculado</h2>
+                <canvas id="canvas2" width="600" height="300" style="background-color: #8dcffc" onclick="dibujo2()">
+                    Su navegador no soporta HTML5
+                </canvas>
+            </section>
 
-        <section>
-            <h2>Canvas: Cuadriculado</h2>
+            <section>
+                <h2>Canvas: Cuadriculado</h2>
 <pre><code>
-function dibujo2() {
+    function dibujo2() {
     var canvas = document.getElementById("canvas2");
     var ctx = canvas.getContext("2d");
 
     //Dibuja lineas horizontales
     for(var i=0; i<300;){
-        ctx.moveTo(0,i);
-        ctx.lineTo(600,i);
-        ctx.strokeStyle = "#D8D8D8";
-        ctx.stroke();
-        i=i+20;
+    ctx.moveTo(0,i);
+    ctx.lineTo(600,i);
+    ctx.strokeStyle = "#D8D8D8";
+    ctx.stroke();
+    i=i+20;
     }
 
     //Dibuja lineas verticales
     for(var i=0; i<600;){
-        ctx.moveTo(i,0);
-        ctx.lineTo(i,600);
-        ctx.strokeStyle = "#D8D8D8";
-        ctx.stroke();
-        i=i+20;
+    ctx.moveTo(i,0);
+    ctx.lineTo(i,600);
+    ctx.strokeStyle = "#D8D8D8";
+    ctx.stroke();
+    i=i+20;
     }
 
     //Eje X
@@ -630,21 +666,22 @@ function dibujo2() {
     ctx.lineTo(300,300);
     ctx.strokeStyle = "#FA5858";
     ctx.stroke();
-}
+    }
 </code></pre>
-        </section>
+            </section>
 
-        <section>
-            <h2>Canvas: Parabola</h2>
-            <canvas id="canvas3" width="600" height="300" style="background-color: #8dcffc" onclick="dibujoParabola()">
-                Su navegador no soporta HTML5
-            </canvas>
-        </section>
+            <section>
+                <h2>Canvas: Parabola</h2>
+                <canvas id="canvas3" width="600" height="300" style="background-color: #8dcffc"
+                        onclick="dibujoParabola()">
+                    Su navegador no soporta HTML5
+                </canvas>
+            </section>
 
-        <section>
-            <h2>Canvas: Parabola</h2>
+            <section>
+                <h2>Canvas: Parabola</h2>
 <pre><code>
-function dibujoParabola() {
+    function dibujoParabola() {
     var canvas = document.getElementById("canvas3");
     var ctx = canvas.getContext("2d");
 
@@ -652,23 +689,21 @@ function dibujoParabola() {
     //ctx.arc(X, Y, radio, angulo inicial, angulo final);
     ctx.arc(300, 250, 200, 1* Math.PI, 2 * Math.PI);
     ctx.stroke();
-}
+    }
 </code></pre>
-        </section>
+            </section>
 
-        </section>
+            <section>
+                <h2>Canvas: arcTo()</h2>
+                <canvas id="canvas4" width="600" height="300" style="background-color: #8dcffc" onclick="dibujoArcT()">
+                    Su navegador no soporta HTML5
+                </canvas>
+            </section>
 
-        <section>
-            <h2>Canvas: arcTo()</h2>
-            <canvas id="canvas4" width="600" height="300" style="background-color: #8dcffc" onclick="dibujoArcT()">
-                Su navegador no soporta HTML5
-            </canvas>
-        </section>
-
-        <section>
-            <h2>Canvas: arcTo()</h2>
+            <section>
+                <h2>Canvas: arcTo()</h2>
 <pre><code>
-function dibujoArcT() {
+    function dibujoArcT() {
     var c = document.getElementById("canvas4");
     var ctx = c.getContext("2d");
     ctx.beginPath();
@@ -677,10 +712,10 @@ function dibujoArcT() {
     ctx.arcTo(130, 10, 150, 40, 20);
     ctx.lineTo(220, 120);
     ctx.stroke();
-}
+    }
 </code></pre>
+            </section>
         </section>
-
 
         <section>
             <h1>Bibliografia xD</h1>
@@ -696,16 +731,18 @@ function dibujoArcT() {
 
         <section>
             <h2>Cursos Online</h2>
-            <a href="https://www.codecademy.com/" target="_blank"> <img src="img/Eventos/codecademy.png" style="width:30%;border-radius: 50px;"> </a>
+            <a href="https://www.codecademy.com/" target="_blank"> <img src="img/Eventos/codecademy.png"
+                                                                        style="width:30%;border-radius: 50px;"> </a>
             <br>
-            <a href="https://www.acamica.com/" target="_blank"><img src="img/Eventos/acamica.jpg" style="border-radius: 50px"> </a>
+            <a href="https://www.acamica.com/" target="_blank"><img src="img/Eventos/acamica.jpg"
+                                                                    style="border-radius: 50px"> </a>
         </section>
 
         <section>
             <h2>¿Dudas, Preguntas, Comentarios?</h2>
             <img class="noBorder" src="img/pregunta.gif" style="width:30%;border-radius: 20%;">
         </section>
-    </div>
+</div>
 </div>
 
 <script src="lib/js/head.min.js"></script>
