@@ -42,7 +42,11 @@
         }
 
         .divTran {
-            width: 100px; height: 100px; background: red; -webkit-transition: width 2s; transition: width 2s;
+            width: 100px;
+            height: 100px;
+            background: red;
+            -webkit-transition: width 2s;
+            transition: width 2s;
         }
 
         .divTran:hover {
@@ -84,8 +88,15 @@
 
         <section>
             <h2>CCS3: Cascading Style Sheets</h2>
-            Estilos visual del documento.
+            <p>
+                <b>Hoja de estilo en cascada</b> es un lenguaje usado para
+                definir y crear la presentación de un documento estructurado escrito en HTML o XML.
+            </p>
+        </section>
 
+        <section>
+            <h2>CCS3: Cascading Style Sheets</h2>
+            Estilos visual del documento.
             <ul>
                 <li>
                     Selectores
@@ -118,9 +129,12 @@
         </section>
 
         <section>
+            <img src="img/html/css3_historia.png">
+        </section>
+
+        <section>
             <h2>CCS3</h2>
             Buenas Practicas:
-
             <ul>
                 <li>
                     Comprobar el diseño en varios navegadores
@@ -173,9 +187,9 @@
 
             Para incluir una hoja de estilo, arriba de <b> &lt /head &gt </b>
             <br>
-            <pre><code>
-<link rel="stylesheet" href="estilos.css" type="text/css">
-            </code></pre>
+<pre><code>
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+</code></pre>
             <br>
             Las <b> REGLAS </b> en CSS se componen de:
             <br>
@@ -254,7 +268,7 @@
                 <li>fixed</li>
                 <li>absolute</li>
             </ul>
-            </section>
+        </section>
         <section>
             <h2>position: static;</h2>
             <p>
@@ -280,7 +294,7 @@
             <p>Los elementos con position: absolute; son posicionados mediante
                 top, left... respecto a su ancestro mas secano que este posicionado.</p>
             <p>Un elemento posicionado es aquel que tenga en su propiedad position algo
-            distinto a static
+                distinto a static
             </p>
         </section>
         <section>
@@ -298,35 +312,37 @@
 
         <section data-background="linear-gradient(to right, red , yellow)">
             <h2>Fondo y Gradientes</h2>
-            <pre><code>
+<pre><code>
 background: red; /* solo color */
 background: linear-gradient(to right, red , yellow); /* gradiente */
-background: url("fondo.png"); /* imagen de <fondo></fondo> */
-            </code></pre>
+background: url("fondo.png"); /* imagen de
+<fondo></fondo>
+*/
+</code></pre>
         </section>
 
         <section>
             <h2>Pseudo Clases</h2>
             <pre><code>
-    /* unvisited link */
-    a:link {
-        color: #FF0000;
-    }
+                /* unvisited link */
+                a:link {
+                color: #FF0000;
+                }
 
-    /* visited link */
-    a:visited {
-        color: #00FF00;
-    }
+                /* visited link */
+                a:visited {
+                color: #00FF00;
+                }
 
-    /* mouse over link */
-    a:hover {
-        color: #FF00FF;
-    }
+                /* mouse over link */
+                a:hover {
+                color: #FF00FF;
+                }
 
-    /* selected link */
-    a:active {
-        color: #0000FF;
-    }
+                /* selected link */
+                a:active {
+                color: #0000FF;
+                }
             </code>
             </pre>
         </section>
@@ -334,38 +350,38 @@ background: url("fondo.png"); /* imagen de <fondo></fondo> */
         <section>
             <h2>Transitions</h2>
             <pre><code>
-    div {
-        width: 100px;
-        height: 100px;
-        background: red;
-        -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-        transition: width 2s;
-    }
+                div {
+                width: 100px;
+                height: 100px;
+                background: red;
+                -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+                transition: width 2s;
+                }
 
-    div:hover {
-        width: 300px;
-    }
+                div:hover {
+                width: 300px;
+                }
             </code></pre>
-     <div class="divTran"></div>
+            <div class="divTran"></div>
         </section>
 
         <section>
             <h2>Transitions 2</h2>
             <pre><code>
-div {
-    width: 100px;
-    height: 100px;
-    background: red;
-    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
-    transition: width 2s, height 2s, transform 2s;
-}
+                div {
+                width: 100px;
+                height: 100px;
+                background: red;
+                -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+                transition: width 2s, height 2s, transform 2s;
+                }
 
-div:hover {
-    width: 200px;
-    height: 200px;
-    -webkit-transform: rotate(180deg); /* Safari */
-    transform: rotate(180deg);
-}
+                div:hover {
+                width: 200px;
+                height: 200px;
+                -webkit-transform: rotate(180deg); /* Safari */
+                transform: rotate(180deg);
+                }
             </code></pre>
             <div class="divTran2"></div>
         </section>

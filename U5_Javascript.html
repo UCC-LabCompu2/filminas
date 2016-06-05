@@ -269,12 +269,11 @@
                 </li>
             </ul>
 <pre style="width: 112%;"><code>
-    <input type="text" onselect="alert('Se ejecuto onSelect')">
-    <input type="text" value="Cambiar Valor" onchange="alert('Se ejecuto onChange')">
+<input type="text" onselect="alert('Se ejecuto onSelect')">
+<input type="text" value="Cambiar Valor" onchange="alert('Se ejecuto onChange')">
 </code></pre>
             <input type="text" onselect="alert('Se ejecuto onSelect')">
             <input type="text" value="Cambiar Valor" onchange="alert('Se ejecuto onChange')">
-
         </section>
 
         <section>
@@ -353,7 +352,7 @@
         <section>
             <h2>Definir JavaScript desde un archivo Externo</h2>
 <pre><code>
-    <script type="text/javascript" src="miCodigo.js"></script>
+    &lt;script type="text/javascript" src="miCodigo.js"&gt;&lt;/script&gt;
 </code></pre>
         </section>
 
@@ -465,14 +464,14 @@
         <section>
             <h2>JavaScript: Displayed</h2>
 <pre><code>function seMuestra(nombre) {
-    if (nombre == "Vinicial" || nombre == "Vfinal") {
-    document.getElementById('variasCosas1').style.display = 'block';
-    } else if (nombre == "NingunaV") {
-    document.getElementById('variasCosas1').style.display = 'none';
-    } else if (nombre == "Dinicial" || nombre == "Dfinal") {
-    document.getElementById('variasCosas2').style.display = 'block';
-    }
-    }</code></pre>
+if (nombre == "Vinicial" || nombre == "Vfinal") {
+document.getElementById('variasCosas1').style.display = 'block';
+} else if (nombre == "NingunaV") {
+document.getElementById('variasCosas1').style.display = 'none';
+} else if (nombre == "Dinicial" || nombre == "Dfinal") {
+document.getElementById('variasCosas2').style.display = 'block';
+}
+}</code></pre>
         </section>
 
         <section>
@@ -525,12 +524,12 @@
                 <button style="font-size: 28px" onclick="senN()"> Calcular</button>
             </form>
 <pre><code>
-    function senN() {
-    var senNum = document.getElementById("num4").value;
-    //Math.sin(x) donde x en radianes
-    var valorSen = Math.sin(senNum*Math.PI/180);
-    alert("El seno de "+ senNum +" = "+ Math.round(valorSen*100)/100);
-    }
+function senN() {
+var senNum = document.getElementById("num4").value;
+//Math.sin(x) donde x en radianes
+var valorSen = Math.sin(senNum*Math.PI/180);
+alert("El seno de "+ senNum +" = "+ Math.round(valorSen*100)/100);
+}
 </code></pre>
         </section>
 
