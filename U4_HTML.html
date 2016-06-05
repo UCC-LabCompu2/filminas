@@ -52,14 +52,20 @@
     <div class="slides">
 
         <section>
-            <h1 >TUTORIAL DE HTML</h1>
+            <h1>TUTORIAL DE HTML</h1>
             <h3>en HTML (que recursivo :P) </h3>
             <p>
-                <small>Created by <!--a href="http://steamcommunity.com/id/edme88"--><i class="fa fa-twitter"></i>@edme88
-                    <!--/a--> & <!--a href="http://steamcommunity.com/id/rmarku"--><i class="fa fa-github"></i>rmarku
-                    <!--/a--></small>
+                <small>
+                    Created by <i class="fa fa-twitter"></i>@edme88
+                    & <i class="fa fa-github"></i>rmarku
+                </small>
             </p>
             <img src="img/html/html5dev.png" class="noBorder">
+        </section>
+
+        <section>
+            <h2>Estructura Básica</h2>
+            <img src="img/html/estructurabasica.png" style="border-radius: 20px">
         </section>
 
         <section>
@@ -84,6 +90,29 @@
         </section>
 
         <section>
+            <h2>Estructura Semántica</h2>
+            <img src="img/html/estructura-HTML5.png" style="border-radius: 20px" class="noBorder">
+        </section>
+
+        <section>
+            <h2>Estructura Semántica</h2>
+            <p>
+            <ul>
+                <li><b>Header:</b> Especifica un encabezado de un documento o sección.</li>
+                <li><b>Nav:</b> Define un conjunto de enlaces de navegación.</li>
+                <li><b>Aside:</b> Define un contenido que se coloca como una barra lateral.</li>
+                <li><b>Section:</b> Define una sección de un documento. (Ejemplo, introducción, contenido, contacto)
+                </li>
+                <li><b>Article:</b> Especifica contenido independiente. Debe tener sentido por sí mismo. (Ejemplo
+                    mensaje
+                    foro, entrada blog, articulo periodico)
+                </li>
+                <li><b>Footer:</b> Especifica un pie de página de un documento o sección.</li>
+            </ul>
+            </p>
+        </section>
+
+        <section>
             <h2>Para realizar pruebas...</h2>
             <p>
                 <a href="https://jsfiddle.net/" target="_blank">
@@ -95,10 +124,10 @@
         <section>
             <h2>Cuerpo de la Página</h2>
             &lt;body&gt;
-            <pre><code>
-    <header>Logo de la Página + Titulo de la Página</header>
-    <footer></footer>
-            </code></pre>
+<pre><code>
+    &lt;header&gt;Logo de la Página + Titulo de la Página&lt;/header&gt;
+    &lt;footer&gt; Este es el pie de Pagina &lt;/footer&gt;
+</code></pre>
             &lt;/body&gt;
         </section>
 
@@ -106,8 +135,8 @@
             <h2>CABECERA</h2>
             &lt;header&gt;
             <pre><code>
-    <img src="img/html/logo.png">
-    <h1>NOMBRE DE LA PAGINA</h1>
+                <img src="img/html/logo.png">
+                <h1>NOMBRE DE LA PAGINA</h1>
             </code></pre>
             &lt;/header&gt;
             <br>
@@ -118,9 +147,9 @@
         <section>
             <h2>ELEMENTOS para el BODY</h2>
             <pre><code>
-    <div>
-        Contenido de la Caja
-    </div>
+                <div>
+                    Contenido de la Caja
+                </div>
             </code></pre>
         </section>
 
@@ -132,82 +161,93 @@
                     para poder aplicarle diferentes estilos o para realizar operaciones sobre ese bloque específico.
                 </li>
             </ul>
+            <img src="img/html/3divs.png" class="noBorder">
         </section>
 
+        <section>
+            <section>
+                <h2>Elementos para Formularios</h2>
+<pre><code>
+    <form id="form1">
 
-    <section>
-        <h2>ELEMENTOS de FORMULARIOS</h2>
-            <pre><code>
-    <input type="text" name="nombre" />
+    </form>
+</code></pre>
+            </section>
+
+            <section>
+                <h2>Input Text</h2>
+<pre><code>
+    <input type="text" name="nombre"/>
     <input type="password" name="psw">
     <input type="email" name="email">
-            </code></pre>
-    <input type="text" name="nombre" /> <br>
-    <input type="password" name="psw"> <br>
-    <input type="email" name="email">
-    </section>
+</code></pre>
+                <input type="text" name="nombre"/> <br>
+                <input type="password" name="psw"> <br>
+                <input type="email" name="email">
+            </section>
 
-    <section>
-        <h2>ELEMENTOS de FORMULARIOS</h2>
-        <pre><code>
+            <section>
+                <h2>Input Radio</h2>
+<pre><code>
 <input type="radio" name="gender" value="male" checked> Male<br>
 <input type="radio" name="gender" value="female"> Female
-        </code></pre>
-        <input type="radio" name="gender" value="male" checked> Male<br>
-        <input type="radio" name="gender" value="female"> Female
-    </section>
+</code></pre>
+                <input type="radio" name="gender" value="male" checked> Male<br>
+                <input type="radio" name="gender" value="female"> Female
+            </section>
 
-    <section>
-        <h2>ELEMENTOS de FORMULARIOS</h2>
-        <pre><code>
+            <section>
+                <h2>Input Select</h2>
+<pre><code>
     <select name="cars">
         <option value="volvo">Volvo</option>
         <option value="saab">Saab</option>
         <option value="fiat">Fiat</option>
         <option value="audi">Audi</option>
     </select>
-        </code></pre>
-        <select name="cars">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="fiat">Fiat</option>
-            <option value="audi">Audi</option>
-        </select>
-    </section>
-
-    <section>
-        <h2>ELEMENTOS de FORMULARIOS</h2>
-    <pre><code>
-    <button type="button">Click Me!</button>
-    </code></pre>
-    <button type="button">Click Me!</button>
-    </section>
-
-    <section>
-        <h2>ELEMENTOS de FORMULARIOS</h2>
-    <pre><code>
-        <input type="range"  id="a" name="a" value="50">
-    </code></pre>
-        <input type="range"  id="a" name="a" value="50">
-    </section>
-
-    <section>
-            <h2>ELEMENTOS de FORMULARIOS</h2>
-    <pre><code>
-    <input type="checkbox" name="materia1" value="Matematica"> Matematica<br>
-    <input type="checkbox" name="materia2" value="Lengua"> Lengua
-    </code></pre>
-    <input type="checkbox" name="materia1" value="Matematica"> Matematica<br>
-    <input type="checkbox" name="materia2" value="Lengua"> Lengua
-    </section>
-
-    <section>
-        <h2>ELEMENTOS de FORMULARIOS</h2>
-<pre><code>
-    <input type="number" name="points" min="0" max="100" step="10" value="30">
 </code></pre>
-        <input type="number" name="points" min="0" max="100" step="10" value="30">
-    </section>
+                <select name="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </section>
+
+            <section>
+                <h2>Input Button</h2>
+    <pre><code>
+        <button type="button">Click Me!</button>
+    </code></pre>
+                <button type="button">Click Me!</button>
+            </section>
+
+            <section>
+                <h2>Input Range</h2>
+<pre><code>
+    <input type="range" id="a" name="a" value="50">
+</code></pre>
+                <input type="range" id="a" name="a" value="50">
+            </section>
+
+            <section>
+                <h2>Input Checkbbox</h2>
+<pre><code>
+<input type="checkbox" name="materia1" value="Matematica"> Matematica<br>
+<input type="checkbox" name="materia2" value="Lengua"> Lengua
+</code></pre>
+                <input type="checkbox" name="materia1" value="Matematica"> Matematica<br>
+                <input type="checkbox" name="materia2" value="Lengua"> Lengua
+            </section>
+
+            <section>
+                <h2>Input Number</h2>
+<pre><code>
+<input type="number" name="points" min="0" max="100" step="10" value="30">
+</code></pre>
+                <input type="number" name="points" min="0" max="100" step="10" value="30">
+            </section>
+        </section>
 
         <section>
             <h2>Tipos de Texto</h2>
@@ -216,9 +256,9 @@
     <b>Esto es negrita</b> <br>
     <i>Esto es cursiva</i>
 </code></pre>
-    <p>Esto es un parrafo</p>
-    <b>Esto es negrita</b> <br>
-    <i>Esto es cursiva</i>
+            <p>Esto es un parrafo</p>
+            <b>Esto es negrita</b> <br>
+            <i>Esto es cursiva</i>
         </section>
 
         <section>
@@ -252,38 +292,40 @@
 
         <section>
             <h2>Tablas</h2>
-    <table>
-        <thead>
-        <tr>
-            <th>Unidad</th>
-            <th>Elemento</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>10</td>
-            <td>Manzanas</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>Kiwis</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Naranjas</td>
-        </tr>
-        </tbody>
-    </table>
+            <table>
+                <thead>
+                <tr>
+                    <th>Unidad</th>
+                    <th>Elemento</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>10</td>
+                    <td>Manzanas</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Kiwis</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Naranjas</td>
+                </tr>
+                </tbody>
+            </table>
         </section>
 
         <section>
             <h2>Lienzo Canvas</h2>
 <pre><code>
     <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
-        Your browser does not support the HTML5 canvas tag.</canvas>
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
 </code></pre>
             <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
-                Your browser does not support the HTML5 canvas tag.</canvas>
+                Your browser does not support the HTML5 canvas tag.
+            </canvas>
         </section>
 
         <section>
