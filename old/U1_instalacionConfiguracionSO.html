@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title> Instalación y Configuración de Sistemas Operativos</title>
+
+    <meta name="description" content="Instalación y Configuración de Sistemas Operativos">
+    <meta name="author" content="Agus Edme Aliciardi | Ricardo Martin Marcucci">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <style>
+        .noBorder {
+            background: none !important;
+            box-shadow: none !important;
+            border: none !important;
+        }
+
+        .cuadroBlanco {
+            color: black;
+            background: rgba(255, 255, 255, 0.7);
+            display: inline-block;
+            padding: 20px !important;
+            border-radius: 50px;
+            box-shadow: 10px 10px 5px rgba(100, 100, 100, 0.4)
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section>
+            <h1>Instalación y Configuración de Sistemas Operativos</h1>
+            <h3>Conceptos básicos</h3>
+            <p>
+                <small>Created by <!--a href="http://steamcommunity.com/id/edme88"--><i class="fa fa-twitter"></i>@edme88<!--/a--> & <!--a href="http://steamcommunity.com/id/rmarku"--><i class="fa fa-github"></i>rmarku<!--/a--></small>
+            </p>
+        </section>
+
+        <section>
+            <h2>Sistema Operativo</h2>
+            <p>
+                Es un programa que administra el Hardware de una computadora. Proporciona las bases para los programas de aplicación y actúa como un intermediario entre el usuario y el hardware.
+            </p>
+        </section>
+
+        <section>
+            <section data-background="img/configSO/OtrosOS.png" data-background-size="50%">
+                <h2 style="background-color: rgba(34, 34, 34, 0.5);">Ejemplos de Sistema Operativo</h2>
+                <p>
+                <div style="position: relative;  float: left">
+                    Para PC:
+                    <br>
+                    <ul>
+                        <li>
+                            Solaris
+                        </li>
+                        <li>
+                            Linux
+                        </li>
+                        <li>
+                            Windows 7
+                        </li>
+                        <li>
+                            Mac OS X
+                        </li>
+                        <li style="background-color: rgba(34, 34, 34, 0.5);">
+                            FreeBSD
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    Para dispositivos móviles:
+                    <br>
+                    <ul>
+                        <li>
+                            Android
+                        </li>
+                        <li>
+                            Windows phone
+                        </li>
+                        <li>
+                            iOS
+                        </li>
+                        <li>
+                            Blackberry
+                        </li>
+                    </ul>
+                </div>
+                </p>
+            </section>
+        </section>
+
+        <section>
+            <h2>Recursos de Hardware</h2>
+            <p>
+                Los SO requieren ciertos recursos de Hardware para funcionar:
+                <br>
+            <ol>
+                <li>
+                    Memoria RAM
+                </li>
+                <li>
+                    Espacio disponible en Disco Duro
+                </li>
+                <li>
+                    Tipo y velocidad del procesador
+                </li>
+                <li>
+                    Resolución de video
+                </li>
+            </ol>
+            <img class="noBorder" src="img/configSO/hardware.png" style="height: 300px;margin: auto">
+            </p>
+        </section>
+
+        <section>
+            <h2>Hardware: Mínimo y Recomendado</h2>
+            <p>
+                Con la configuración del hardware <b>mínima</b> el rendimiento del sistema suele ser pobre, ya que el SO sólo podrá ejecutar funciones básicas.
+                <br>
+                <br>
+                Con la configuración de hardware <b>recomendada</b> el SO funciona a una velocidad adecuada.
+            </p>
+        </section>
+
+        <section>
+            <h2>Requisitos mínimos de <br> Windows XP</h2>
+            <p>
+            <ol>
+                <li>
+                    Procesador Pentium 233 MHz o superior (de preferencia de 300 HMz)
+                </li>
+                <li>
+                    Mínimo 64 MB de RAM (de preferencia 128 MB)
+                </li>
+                <li>
+                    Mínimo 1,5 GB de espacio disponible en disco duro
+                </li>
+                <li>
+                    Tarjeta gráfica y monitor de resolución Súper VGA (800x600) o superior
+                </li>
+            </ol>
+            <img class="noBorder" src="img/configSO/winXP.png" style="height: 150px;margin: auto">
+            </p>
+        </section>
+
+        <section>
+            <h2>Requisitos mínimos de <br> Windows 7</h2>
+            <p>
+            <ol>
+                <li>
+                    Procesador de 32bit o 64bits a 1GHz o más
+                </li>
+                <li>
+                    1GB de RAM para 32bits, o 2GB de RAM para 64bits
+                </li>
+                <li>
+                    16GB de espacio disponible en disco duro para 32bits, o 20GB para 64bits
+                </li>
+                <li>
+                    Dispositivo gráfico DirectX9.
+                </li>
+            </ol>
+            <img class="noBorder" src="img/configSO/win7.png" style="height: 300px;margin: auto;border-radius: 30px">
+            </p>
+        </section>
+
+        <section>
+            <h2>Requisitos mínimos de Ubuntu 11.10</h2>
+            <p>
+            <ol>
+                <li>
+                    Procesador de 32bits a 1GHz
+                </li>
+                <li>
+                    1Gb de Memoria RAM
+                </li>
+                <li>
+                    15Gb de espacio disponible en Disco Duro
+                </li>
+                <li>
+                    Tarjetagráfica y monitor que soporte una resolución de 800x600
+                </li>
+            </ol>
+            <img class="noBorder" src="img/configSO/ubuntu.png" style="height: 300px;margin: auto;border-radius: 30px">
+            </p>
+        </section>
+
+        <section>
+            <h2>Basic Input/Output System</h2>
+            <p>
+                La BIOS es el software que localiza y reconoce los dispositivos necesarios para cargar el Sistema Operativo en la memoria RAM.
+                <br>
+                <br>
+                La secuencia de arranque indica a la Bios que unidad debe buscar al arrancar el equipo.
+            </p>
+            <img class="noBorder" src="img/configSO/BIOS.jpg" style="height: 300px;margin: auto;border-radius: 30px">
+        </section>
+
+        <section>
+            <h2>Formateado de Discos</h2>
+            <p>
+                <b>Formatear</b> un disco duro consiste en restablecer a este a su estado original para ser reutilizado o reescrito con una nueva información.
+                <br>
+                <br>
+                Al realizar esta operación se elimina toda la información contenida en el.
+            </p>
+        </section>
+
+        <section data-background="img/herramientas/Busydesk-desarrollo.png">
+            <h2>IMPORTANTE!!!</h2>
+            <p>
+                Recuerda ANTES de formatear hacer backup de tus datos, así evitas perder información.
+            </p>
+        </section>
+
+        <section>
+            <h2>Particionado de Discos</h2>
+            <p>
+                Una <b>partición</b> es la división de espacio que se le asigna a un disco duro.
+                <br>
+                <br>
+                Un disco duro puede tener varias particiones, que son de cierto modo independientes entre si, dado que cada una de ellas tiene su propio sistema de archivos o formato, y el SO lo reconoce como un disco independiente (aunque físicamente sea uno).
+                <br>
+                <br>
+                Se puede formatear una partición sin necesidad de formatear todo el disco.
+            </p>
+        </section>
+
+        <section>
+            <h2>Tipos de Particiones</h2>
+            <p>
+            <ul>
+                <li>
+                    <b>Partición Primaria:</b> Se encarga de iniciar la carga del SO
+                </li>
+                <li>
+                    <b>Partición Extendida o Secundaria:</b> Almacenan información
+                </li>
+            </ul>
+            <img class="noBorder" src="img/configSO/partitions.png" style="height: 300px;margin: auto;border-radius: 30px">
+            </p>
+        </section>
+
+        <section>
+            <img src="img/configSO/whenIinstallAsoftware.png"/>
+        </section>
+
+        <section>
+            <h2>¿Dudas, Preguntas, Comentarios?</h2>
+            <img class="noBorder" src="img/pregunta.gif" style="width:30%;border-radius: 20%;">
+        </section>
+
+
+        <!--section>
+            <h2>Restauración de una Imagen</h2>
+            <p>
+                Se utiliza para <b>restaurar el equipo</b> cuando la unidad de disco duro no funciona correctamente.
+                <br>
+                <br>
+                Una <b>imagen</b> del sistema consiste en uan copia de las unidades necesarias para que se ejecute el SO.
+                <br>
+                <br>
+                La restauración de una imagen NO afecta a los documentos, pero si pueden desaparecer programas o controladores.
+            </p>
+        </section-->
+
+    </div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+                return !document.body.classList;
+            }
+        }, {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+        }, {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+        }, {
+            src: 'plugin/notes/notes.js',
+            async: true
+        }]
+    });
+
+</script>
+
+</body>
+</html>

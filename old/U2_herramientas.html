@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title> Herramientas de Desarrollo </title>
+
+    <meta name="description" content="Herramientas de desarrollo">
+    <meta name="author" content="Agus Edme Aliciardi | Ricardo Martin Marcucci">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <style>
+        .noBorder {
+            background: none !important;
+            box-shadow: none !important;
+            border: none !important;
+        }
+
+        .cuadroBlanco {
+            color: black;
+            background: rgba(255, 255, 255, 0.7);
+            display: inline-block;
+            padding: 20px !important;
+            border-radius: 50px;
+            box-shadow: 10px 10px 5px rgba(100, 100, 100, 0.4)
+        }
+
+        .stroke {
+            text-shadow: -1px -1px 1px #73a4f6, 1px 1px 1px #000, -1px 1px 1px #c1ebeb, 1px -1px 1px #000;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section data-background="img/herramientas/herramientas-618x315.png">
+            <h1 style="text-shadow: -1px -1px 1px #73a4f6, 1px 1px 1px #000, -1px 1px 1px #c1ebeb, 1px -1px 1px #000;">
+                HERRAMIENTAS DE DESARROLLO</h1>
+            <h3 style="text-shadow: -1px -1px 1px #73a4f6, 1px 1px 1px #000, -1px 1px 1px #c1ebeb, 1px -1px 1px #000;">
+                Conceptos básicos</h3>
+            <p class="stroke">
+                <small>Created by @edme88 & rmarku</small>
+            </p>
+        </section>
+
+        <!--section>
+            <h2>Herramientas de Desarrollo</h2>
+            <p>
+                Permiten agilizar el proceso de desarrollo de Software.
+            </p>
+        </section-->
+
+        <section>
+            <h2>Tipos de Herramientas</h2>
+            <p>
+            <ul>
+                <li>IDE</li>
+                <li>Sistema de Control de Versiones</li>
+                <li>Bug Tracker</li>
+                <li>Pruebas de desempeño, carga, stress</li>
+                <li>Documentación</li>
+            </ul>
+            </p>
+            <img class="noBorder" src="img/herramientas/herramientas.png" style="position: absolute; float: bottom"/>
+        </section>
+
+        <section>
+            <h2>Ambiente de Desarrollo Integrado o IDE</h2>
+
+            <p>
+                Es un software que proporciona servicios integrales para facilitarle al programador el desarrollo de
+                software.
+            </p>
+        </section>
+
+        <section>
+            <h2>Ambiente de Desarrollo Integrado o IDE</h2>
+
+            <p>
+                Normalmente, un IDE consiste de:
+            <ul>
+                <li>Editor de código fuente</li>
+                <li>Herramientas de construcción automáticas</li>
+                <li>Depurador</li>
+                <li>Compilador</li>
+                <li>Intérprete</li>
+            </ul>
+            </p>
+        </section>
+
+        <section data-background="img/herramientas/IDES.png">
+            <h2>IDE's</h2>
+
+            <p>
+                Ejemplos de IDE's para desarrollo Web:
+            <ul>
+                <li>Eclipse</li>
+                <li>Net Beans</li>
+                <li>JetBrains Web Storm</li>
+                <li>Aptana</li>
+                <li>Dreamweaber</li>
+                <li>Microsoft Visual Studio Express for Web</li>
+                <li>Sublime Text</li>
+                <li>NotePad ++</li>
+            </ul>
+            </p>
+        </section>
+
+        <section data-background="img/herramientas/Busydesk-desarrollo.png">
+            <h2>IDE's</h2>
+            <p>
+                No hay mejor IDE que aquel que cumpla con tus expectativas y supla tus necesidades y requerimientos.
+            </p>
+        </section>
+
+        <section>
+            <h2>Gestión de Versiones o VCS</h2>
+            <p>
+                Permiten gestionarlos archivos de un proyecto (y sus versiones) y que sus integrantes puedan acceder
+                remotamente a ellos.
+            </p>
+        </section>
+
+        <section>
+            <section>
+                <h2>Gestión de Versiones o VCS</h2>
+
+                <p>
+                    Los usuarios pueden:
+                <ul>
+                    <li>Descargar los archivos</li>
+                    <li>modificar archivos</li>
+                    <li>Publicar cambios</li>
+                    <li>Volver a versiones anteriores</li>
+                    <li>Ramificar a partir de una versión</li>
+                    <li>Aplicar cambios de distintas versiones</li>
+                </ul>
+                </p>
+            </section>
+        </section>
+
+        <section>
+            <h2>Ventajas de VCS:</h2>
+
+            <p>
+            <ul>
+                <li>Permite llevar cuenta de los cambios de un conjunto de archivos digitales en el tiempo</li>
+                <li>Cada versión registrada en el tiempo es una revisión</li>
+                <li>Permite tanto a un desarrollador como a un grupo de desarrolladores, gestionar el código del
+                    proyecto.
+                </li>
+            </ul>
+            </p>
+        </section>
+
+        <section data-background="img/herramientas/subversionado.png">
+            <h2>Herramientas de VCS</h2>
+
+            <p>
+            <ul>
+                <li>Git</li>
+                <li>SVN</li>
+                <li>Mercurial</li>
+                <li>Bazaar</li>
+            </ul>
+            </p>
+        </section>
+
+        <section>
+            <h2>Git</h2>
+            <p>
+            <ul>
+                <li>Sistema distribuido de control de versiones</li>
+                <li>Libre</li>
+                <li>Crea branches y hace merge rapido y facil</li>
+                <li>Cada "Clón" es un repositorio completo</li>
+            </ul>
+            </p>
+            <a href="https://git-scm.com/" target="_blank"><img class="noBorder" src="img/herramientas/git.png" height="40%"/></a>
+        </section>
+
+        <section data-background="img/herramientas/servidoresGIT.png">
+            <h2>Git: Servidores</h2>
+            <p>
+            <ul>
+                <li>Github</li>
+                <li>Bitbucket</li>
+            </ul>
+            </p>
+        </section>
+
+        <section>
+            <h2>Creación de Cuenta en GitHub</h2>
+            <a href="https://www.github.com" target="_blank">
+                <img class="noBorder" src="img/herramientas/gitHub.png" height="40%"/></a>
+        </section>
+
+        <section>
+            <h2>Los 3 estados + Untraking</h2>
+            <p>
+            <ul>
+                <li><b>Unmodified(confirmado)</b> los datos estan almacenados de manera segura en el repositorio</li>
+                <li><b>Modified(modificado)</b> Se ha modificado el archivo pero todavía no se ha confirmado</li>
+                <li><b>Staged(preparado)</b>se ha marcado para confirmación el archivo en su version actual</li>
+            </ul>
+            </p>
+        </section>
+
+        <section>
+            <h2>Los 3 estados + Untraking</h2>
+            <img class="noBorder" src="img/herramientas/git_fileStatus_lifecycle.png" width="70%"/>
+        </section>
+
+        <section>
+            <h2>Commit</h2>
+            <p>
+            <ul>
+                <li> Identificadores numéricos de 40bytes</li>
+                <li> Identificación de la persona que realizo el commit (nombre y mail)</li>
+                <li> Fecha del commit</li>
+                <li> Mensaje de texto asociado al commit (comentario personal de los cambios)</li>
+            </ul>
+            </p>
+            <img class="noBorder" src="img/herramientas/git_commit.png"/>
+        </section>
+
+        <section>
+            <img src="img/herramientas/branches.png"/>
+        </section>
+
+        <section>
+            <h2>Terminología</h2>
+
+            <p>
+            <ul>
+                <li><b>Repositorio:</b> Colección de todas las referencias, base de datos, objetos y una copia de
+                    trabajo.
+                </li>
+                <li><b>Commit:</b> Es una foto del proyecto en un tiempo determinado.</li>
+                <li><b>Branch (rama):</b> Linea de desarrollo del proyecto</li>
+                <li><b>Tag (etiqueta):</b> Una etiqueta a un commit en particular</li>
+                <li><b>Ref o referencia:</b> Cadena de 40 bytes que representa una version/commit.</li>
+                <li><b>Merge:</b> Mezcla codigo de 2 ramas</li>
+            </ul>
+            </p>
+        </section>
+
+        <section data-background="img/herramientas/SOFTsubversionado.png">
+            <h2>Software para VCS</h2>
+            <p>
+            <ul>
+                <li>GitHub for windows</li>
+                <li>Tortoise</li>
+                <li>SourceTree (BitBucket)</li>
+                <li>Linea de Comandos</li>
+            </ul>
+            </p>
+        </section>
+
+        <section>
+            <img src="img/herramientas/comicVersionado.png"/>
+        </section>
+        <section>
+            <h4>http://labcompu2-ucc.github.io/filminas</h4>
+        </section>
+        <section>
+            <img class="noBorder" src="img/herramientas/Fire-commit-push.jpg" style="height: 650px"/>
+        </section>
+
+        <section>
+            <img src="img/herramientas/stackoverflow.png"/><br>
+            http://stackoverflow.com/
+        </section>
+
+        <section>
+            <h2>Documentación de Código</h2>
+
+            <p>
+                Permite:
+            <ul>
+                <li>Entender que se está haciendo y porqué</li>
+                <li>Mantener el código</li>
+            </ul>
+            </p>
+            <img class="noBorder" src="img/html/jsdoc.png" style="height: 350px"/>
+        </section>
+
+        <section>
+            <h2>Niveles de Documentación</h2>
+
+            <p>
+            <ul>
+                <li><b>por clase:</b> descripción,autor,fecha y ultima modificación</li>
+                <li><b>por método:</b> descripción del objeto, funcionalidades, parámetros y resultados</li>
+                <li><b>de variables:</b> que sean importantes o difíciles de entender</li>
+                <li><b>de limitaciones</b></li>
+                <li><b>de algoritmos implementados</b></li>
+            </ul>
+            </p>
+        </section>
+
+        <section>
+            <h2>Formato de Documentación (JSDoc)</h2>
+
+            <pre><code class="javascript">/**
+* @fileoverview Librería con funciones de utilidad <br>
+* @author Jose
+* @version 0.1
+*/
+
+/**
+* Muestra un mensaje de texto
+* @param {String} método nombre del método
+* @param {String} mensaje mensaje a mostrar
+* @returns {integer} el codigo de retorno 0
+*/
+function trazas(metodo, mensaje){
+    alert("["+metodo+"]:"+mensaje);
+    return 0;
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>Documentación...A tener en cuenta</h2>
+            <p>
+            <ul>
+                <li>No uses solo una linea, divídela en párrafos para que sea mas legible</li>
+                <li>Tabular los comentarios de lineas consecutivas</li>
+                <li>No comentar obviedades</li>
+                <li>Se profesional (No insultes o coloques frases fuera de contexto)</li>
+                <li>Revisa la ortografía</li>
+                <li>No comentes si no es necesario</li>
+                <li>Comentarios simple y directo</li>
+                <li>Documenta mientras desarrollas</li>
+                <li>Manten los comentarios actualizados</li>
+            </ul>
+            </p>
+        </section>
+
+        <section>
+            <h2>IDE WebStorm</h2>
+            <p>
+                <a href="https://www.jetbrains.com/webstorm/"><img class="noBorder" src="img/herramientas/Webstorm.png"/></a>
+            </p>
+            <b>Empresa: </b>JetBrains<br>
+
+            Pago pero gratuito para Alumnos
+        </section>
+
+
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'lib/js/classList.js',
+                condition: function () {
+                    return !document.body.classList;
+                }
+            },
+            {
+                src: 'plugin/markdown/marked.js',
+                condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            },
+            {
+                src: 'plugin/markdown/markdown.js',
+                condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            },
+            {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            },
+            {
+                src: 'plugin/zoom-js/zoom.js',
+                async: true
+            },
+            {
+                src: 'plugin/notes/notes.js',
+                async: true
+            }
+        ]
+    });
+
+</script>
+
+</body>
+</html>

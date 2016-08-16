@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+
+    <title> Prototipado y Proceso de Diseño </title>
+
+    <meta name="description" content="Prototipado y Proceso de Diseño">
+    <meta name="author" content="Agus Edme Aliciardi | Ricardo Martin Marcucci">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.countdown.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        /*Por referencias http://www.ajaxshake.com/es/JS/238631/reloj-de-cuenta-regresiva-con-jquery-countdown.html*/
+        $(function () {
+            $('#counter').countdown({
+                image: 'img/digits.png',
+                startTime: '01:12:12:00'
+            });
+
+            $("#tmp2").click(function () {
+                $('#counter_2').countdown({
+                    image: 'img/digits.png',
+                    startTime: '20:00',
+                    format: 'mm:ss'
+                });
+            });
+
+            $("#tmp3").click(function () {
+                $('#counter_3').countdown({
+                    image: 'img/digits.png',
+                    startTime: '10:00',
+                    format: 'mm:ss'
+                });
+            });
+
+            $("#tmp4").click(function () {
+                $('#counter_4').countdown({
+                    image: 'img/digits.png',
+                    startTime: '40:00',
+                    format: 'mm:ss'
+                });
+            });
+        });
+
+    </script>
+
+
+    <style>
+        .noBorder {
+            background: none !important;
+            box-shadow: none !important;
+            border: none !important;
+        }
+
+        .cuadroBlanco {
+            color: black;
+            background: rgba(255, 255, 255, 0.7);
+            display: inline-block;
+            padding: 20px !important;
+            border-radius: 50px;
+            box-shadow: 10px 10px 5px rgba(100, 100, 100, 0.4)
+        }
+
+        .stroke {
+            text-shadow: -1px -1px 1px #73a4f6, 1px 1px 1px #000, -1px 1px 1px #c1ebeb, 1px -1px 1px #000;
+        }
+
+        br {
+            clear: both;
+        }
+
+        .cntSeparator {
+            font-size: 54px;
+            margin: 10px 7px;
+            color: #000;
+        }
+
+        .desc {
+            margin: 7px 3px;
+        }
+
+        .desc div {
+            float: left;
+            font-family: Arial;
+            width: 70px;
+            font-size: 13px;
+            font-weight: bold;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section data-background="img/interfazUsuario/intUsuario.jpg">
+            <h1 style="text-shadow: -1px -1px 1px #73a4f6, 1px 1px 1px #000, -1px 1px 1px #c1ebeb, 1px -1px 1px #000;">
+                Prototipado y Proceso de Diseño</h1>
+            <h3 style="text-shadow: -1px -1px 1px #73a4f6, 1px 1px 1px #000, -1px 1px 1px #c1ebeb, 1px -1px 1px #000;">
+                Conceptos básicos</h3>
+            <p class="stroke">
+                <small>Created by @edme88</small>
+            </p>
+        </section>
+
+        <section>
+            <h2>Libros:</h2>
+            <p>
+                <img class="noBorder" src="img/book.png" style="float:left;"/>
+                “Ingeniería del software” séptima edición de Ian Sommervill
+                (Capítulo N°16: Diseño de Interfaces de Usuario)
+                <br>
+                <br>
+                <img class="noBorder" src="img/book.png" style="float:left;"/>
+                “Ingeniería del Software: Un enfoque práctico 6ta ed.” de Roger Pressman
+                (Capítulo N°11: Diseño de la Interfaz de Usuario)
+            </p>
+        </section>
+
+        <section>
+            <h2>Interfaz de Usuario</h2>
+            <p>
+                Es el medio con que el usuario puede comunicarse con una máquina, equipo, computadora o dispositivo, y
+                comprende todos los puntos de contacto entre el usuario y el equipo.
+                <br>
+                <br>
+                Incluyen elementos como menús, ventanas, contenido gráfico, cursor, etc.
+            </p>
+        </section>
+
+        <section>
+            <h2>Proceso de Diseño de Interfaz de Usuario</h2>
+            <p>
+                Proceso iterativo donde los usuarios interactúan con los diseñadores y prototipados de la interfaz para
+                decidir las características, organización, apariencia y funcionamiento de la interfaz de usurio del
+                sistema.
+            </p>
+        </section>
+
+        <section>
+            <h2>Proceso de Diseño de Interfaz de Usuario</h2>
+            <p>
+                <img style="border: 0px; padding: 35px; border-radius: 45px" src="img/interfazUsuario/procesoDiseñoUI.png"/>
+            </p>
+        </section>
+
+        <section>
+            <section>
+                <h2>Proceso de Diseño de Interfaz de Usuario</h2>
+                <p>
+                    Actividades para el proceso de Diseño de Interfaz de Usuario:
+                <ul>
+                    <li>
+                        Análisis del usuario
+                    </li>
+                    <ul>
+                        <li>
+                            Análisis Jerárquico de Tareas (HTA)
+                        </li>
+                        <li>
+                            Estudios Etnográficos
+                        </li>
+                        <li>
+                            Entrevistas de Usuarios
+                        </li>
+                    </ul>
+                    <li>
+                        Prototipado del sistema
+                    </li>
+                    <li>
+                        Evaluación de la Interfaz
+                    </li>
+                </ul>
+                </p>
+            </section>
+
+            <section>
+                <h2>Análisis Jerárquico de Tareas</h2>
+                <p>
+                    <img style="border-radius: 45px" src="img/interfazUsuario/HTA.png"/>
+                </p>
+            </section>
+
+            <section>
+                <h2>Estudio Etnográfico</h2>
+                <p>
+                    Observación de los usuarios en su contexto y dentro de su entorno, tratando de no interferir en sus
+                    acciones, usos y costumbres para determinar los requerimientos de usabilidad.
+                </p>
+            </section>
+
+            <section>
+                <h2>Entrevistas de Usuarios</h2>
+                <p>
+                    Reunirse con los usuarios para entender mejor sus necesidades, motivaciones, cultura laboral y
+                    otros aspectos. Pueden ser reuniones individuales o a través de grupos de enfoque.
+                </p>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2>Tipos de Diseño</h2>
+                <p>
+                <ul>
+                    <li>Sketch</li>
+                    <li>Wireframe</li>
+                    <li>Mockup</li>
+                    <li>Prototipo</li>
+                </ul>
+                </p>
+            </section>
+
+            <section>
+                <h2>Sketch</h2>
+                <img src="img/interfazUsuario/sketch.jpg" class="noBorder">
+            </section>
+
+            <section>
+                <h2>Sketch</h2>
+                <p>
+                <ul>
+                    <li>Es un bosquejo o dibujo rápido en baja calidad de un diseño</li>
+                    <li>No tiene muchos detalles</li>
+                    <li>Guía general que reproduce un conceptoo o idea de un proyecto de una manera sencilla</li>
+                    <li>Se realiza a mano con lápiz y borrador</li>
+                </ul>
+                </p>
+            </section>
+
+            <section>
+                <h2>Wireframe</h2>
+                <img src="img/interfazUsuario/wireframe.jpg" class="noBorder">
+            </section>
+
+            <section>
+                <h2>Wireframe</h2>
+                <p>
+                <ul>
+                    <li>Es una representación estática en baja calidad de un diseño</li>
+                    <li>Esta representación muestra:
+                        <ul>
+                            <li>Principales grupos de contenido</li>
+                            <li>Estructura de la información</li>
+                            <li>Descripción y visualización básica del usuario</li>
+                            <li>Interacción de la interfaz</li>
+                        </ul>
+                    </li>
+                    <li><b>Representación de cada parte importante del producto final</b></li>
+                    <li>El entregable es una imagen</li>
+                </ul>
+                </p>
+            </section>
+
+            <section>
+                <h2>Mockup</h2>
+                <img src="img/interfazUsuario/mockup2.png" class="noBorder">
+            </section>
+
+            <section>
+                <h2>Mockup</h2>
+                <img src="img/interfazUsuario/mockup.png" class="noBorder">
+            </section>
+
+            <section>
+                <h2>Mockup</h2>
+                <p>
+                <ul>
+                    <li>Representación estática de un diseño en calidad media o alta</li>
+                    <li>Representa la estructura de la información</li>
+                    <li>Visualiza el contenido</li>
+                    <li>Demuestra las funcionalidades básicas de una manera estática</li>
+                    <li>El entregable es una imagen.</li>
+                </ul>
+                </p>
+            </section>
+
+            <section>
+                <h2>Prototipo</h2>
+                <img src="img/interfazUsuario/prototipo.png" class="noBorder">
+            </section>
+
+            <section>
+                <h2>Prototipo</h2>
+                <p>
+                <ul>
+                    <li>La calidad pueda variar entre media y alta</li>
+                    <li>Representación navegable del producto final</li>
+                    <li>Simula la interacción interfaz de usuario</li>
+                    <li>Permitir que el usuario:
+                        <ul>
+                            <li>Experimente interactuando con la interfaz y contenido del proyecto</li>
+                            <li>Pruebe las principales interacciones de una manera similar al producto final</li>
+                        </ul>
+                    </li>
+                    <li>El entregable es un HTML, PPT, Animación o formato navegable.</li>
+                </ul>
+                </p>
+            </section>
+
+            <section>
+                <h2>Utilización de Técnicas de Diseño</h2>
+                <p>
+                    Ventajas:
+                <ul>
+                    <li>Definir funcionalidades del proyecto</li>
+                    <li>Definir el recorrido del usuario (work flow)</li>
+                    <li>Permite mostrar al usuario el sistema y recibir un feedback temprano</li>
+                    <li>Método intuitivo para identificar características y requerimientos</li>
+                </ul>
+                </p>
+            </section>
+
+            <section>
+                <h2>Proceso de Prototipado de la IU</h2>
+                <p>
+                <ol>
+                    <li>
+                        <b>Prototipo en papel:</b> Maquetas de los diseños de pantalla
+                    </li>
+                    <li>
+                        <b>Prototipo Automatizado:</b> Permite al usuario realizar pruebas y simulación
+                    </li>
+                </ol>
+                </p>
+            </section>
+
+            <section>
+                <h2>Comparación</h2>
+                <p>
+                    <img src="img/interfazUsuario/comparacion.png" class="noBorder">
+                </p>
+            </section>
+
+            <section>
+                <h2>Actividad 5</h2>
+                <p>
+                    Realice un Sketch de la interfaz de usuario del sistema en papel.
+                    Debe tener en cuenta:
+                    <br>
+                <ul>
+                    <li>¿Qué opciones debe ofrecer al usuario?</li>
+                    <li>¿Qué campos hay para ingresar datos?</li>
+                    <li>¿Hay ejercicios de ejemplo?</li>
+                    <li>¿Hay una introducción teorica?</li>
+                    <li><a href="img/interfazUsuario/tiroOblicuo.jpg" target="_blank">Sistemas similares. </a></li>
+                    <li>¿Qué acciones le permiten al usuario realizar?</li>
+                    <li>Mensajes de Error</li>
+                </ul>
+
+                <div id="tmp2">
+                    <div id="counter_2" style="width: 222px; margin: 0px auto"></div>
+                    <div class="desc" style="width: 222px; margin: 0px auto">
+                        <div>Minutos</div>
+                        <div style="float: right">Segundos</div>
+                    </div>
+                </div>
+                </p>
+            </section>
+
+
+        </section>
+
+        <section>
+            <section>
+                <h2>Evaluación de la Interfaz</h2>
+                <p>
+                    Proceso de evaluar la forma en que se utiliza una interfaz y verificar que cumple los requerimientos
+                    del
+                    usuario.
+                    <br>
+                    <br>
+                    Es parte del proceso de verificación y validación de los sistemas software.
+                </p>
+            </section>
+
+            <section>
+                <h2>Evaluación de la Interfaz</h2>
+                <p>
+                    <img style="border-radius: 50px" src="img/interfazUsuario/evaluacion.png"/>
+                </p>
+            </section>
+
+            <section>
+                <h2>Actividad 6</h2>
+                <p>
+                    Intercambie su diseño de interfaz con otro grupo:
+                    <br>
+                <ul>
+                    <li>¿Qué opciones tiene
+                        este sistema que no estén disponibles en el propio?
+                    </li>
+                    <li>¿Es deseable introducir en un futuro rediseño
+                        del sistema estas características?
+                    </li>
+                    <li>¿Qué ventajas y desventajas presenta el otro sistema con respecto
+                        al propio?
+                    </li>
+                </ul>
+                <div id="tmp3">
+                    <div id="counter_3" style="width: 222px; margin: 0px auto"></div>
+                    <div class="desc" style="width: 222px; margin: 0px auto">
+                        <div>Minutos</div>
+                        <div style="float: right">Segundos</div>
+                    </div>
+                </div>
+                <br>
+                Presente un documento al otro equipo con el análisis realizado.
+                </p>
+            </section>
+        </section>
+
+        <section>
+            <h2>Actividad 8</h2>
+            <p>
+                Realice un rediseño del sistema teniendo en cuenta el documento de sugerencias recibido.
+                <br>
+                Emplee algún programa para diseñar un mockup.
+                <br>
+
+                <a href="https://moqups.com/" target="_blank">
+                    <img class="noBorder" src="img/interfazUsuario/mockUps-icon.png"/>
+                </a>
+                <br>
+                <a href="https://ninjamock.com/Designer/NewWorkplace/WebProject/napkin/0/Page1" target="_blank">
+                    <img class="noBorder" src="img/interfazUsuario/ninjamock-icon.png">
+                </a>
+
+            <div id="tmp4">
+                <div id="counter_4" style="width: 222px; margin: 0px auto"></div>
+                <div class="desc" style="width: 222px; margin: 0px auto">
+                    <div>Minutos</div>
+                    <div style="float: right">Segundos</div>
+                </div>
+            </div>
+            </p>
+        </section>
+
+        <section data-background="img/interfazUsuario/prototipado-de-paginas-web.jpg">
+            <h3 style="text-shadow: -1px -1px 1px #73a4f6, 1px 1px 1px #000, -1px 1px 1px #c1ebeb, 1px -1px 1px #000;">
+                “Es mejor diseñar la experiencia del usuario que rectificarla.”</h3>
+        </section>
+
+        <section>
+            <h2>¿Dudas, Preguntas, Comentarios?</h2>
+            <img class="noBorder" src="img/pregunta.gif" style="width:30%;border-radius: 20%;">
+        </section>
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+                return !document.body.classList;
+            }
+        }, {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+        }, {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+        }, {
+            src: 'plugin/notes/notes.js',
+            async: true
+        }]
+    });
+
+</script>
+
+</body>
+</html>

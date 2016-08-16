@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+
+    <title> Diseño de Juegos</title>
+
+    <meta name="description" content="Prototipado y Proceso de Diseño">
+    <meta name="author" content="Agus Edme Aliciardi | Ricardo Martin Marcucci">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.countdown.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <style>
+        img {
+            background: none !important;
+            box-shadow: none !important;
+            border: none !important;
+        }
+
+        .cuadroBlanco {
+            color: black;
+            background: rgba(255, 255, 255, 0.7);
+            display: inline-block;
+            padding: 20px !important;
+            border-radius: 50px;
+            box-shadow: 10px 10px 5px rgba(100, 100, 100, 0.4)
+        }
+
+        br {
+            clear: both;
+        }
+
+        .cntSeparator {
+            font-size: 54px;
+            margin: 10px 7px;
+            color: #000;
+        }
+
+        @font-face {
+            font-family: Zerovelo;
+            src: url('fonts/zerovelo.ttf');
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <section class="slides">
+        <section data-background="img/juegos/pacman.jpg">
+            <h2 style="font-family: ZeroVelo; color: #beff48">Desarrollo de VideoJuegos</h2>
+            <p>
+                <small>Created by
+                    <a href="http://steamcommunity.com/id/edme88" target="_blank">
+                    <img src="img/html/logo_stm.png" style="margin-top: 8px"> edme88</a> &
+                    <a href="http://steamcommunity.com/id/rmarku" target="_blank">
+                        <img src="img/html/logo_stm.png" style="margin-top: 8px">rmarku</a>
+                </small>
+            </p>
+        </section>
+
+        <section>
+            <h2>Libro:</h2>
+            <img class="noBorder" src="img/html/libro.png"/>
+            <p>
+                “Desarrollo de Videojuegos: Un enfoque Práctico” <br>
+                Universidad de Castilla
+            </p>
+        </section>
+
+        <section>
+            <h2>¿Qué es un videojuego?</h2>
+            <p>
+                Un VJ es una aplicación gráfica en tiempo real en la que existe una interacción explícita entre el
+                usuario y el videojuego.
+                <br> <br>
+                Un VJ está asociado al concepto de evolución, un personaje pretende alcanzar objetivos en un universo
+                acotado que tiene ciertas reglas.
+            </p>
+        </section>
+
+        <section>
+            <h2>¿Hay equipo?</h2>
+            <p>
+                El desarrollo de VJ requiere de un equipo MULTIDISCIPLINARIO de personas:
+            <ul>
+                <li>Programadores</li>
+                <li>Sonisdistas</li>
+                <li>Dibujantes</li>
+                <li>Diseñadores Gráficos</li>
+                <li>Testers :P</li>
+            </ul>
+            </p>
+        </section>
+
+        <section>
+            <h2>Equipo de Desarrollo</h2>
+            <div class="cuadroBlanco"><img src="img/juegos/equipoDes.svg"></div>
+        </section>
+
+        <section>
+            <h2>Ciclo de Vida</h2>
+            <div class="cuadroBlanco"><img src="img/juegos/cicloDelJuego.svg"></div>
+        </section>
+
+        <section>
+            <section>
+                <h2 style="font-family: ZeroVelo; color: #beff48">Tipos de Juegos</h2>
+            </section>
+
+            <section>
+                <h2>Tipos de Juegos</h2>
+                <p>
+                <ul>
+                    <li>Acción</li>
+                    <li>Educativos</li>
+                    <li>Carreras</li>
+                    <li>Estrategia</li>
+                    <li>Puzzle</li>
+                    <li>Aventuras</li>
+                    <li>Disparos</li>
+                    <li>Deporte</li>
+                    <li>Musicales</li>
+                    <li>Rol</li>
+                    <li>Sandbox</li>
+                    <li>Simulación</li>
+                </ul>
+                </p>
+            </section>
+
+            <section>
+                <h2>Accion</h2>
+                <p>
+                <ul>
+                    <li>Lucha</li>
+                    <li>Beat Em Up</li>
+                    <li>Arcade</li>
+                    <li>Plataformas</li>
+                </ul>
+                <img src="img/juegos/accion.png">
+                </p>
+            </section>
+
+            <section>
+                <h2>Disparos o Shooters</h2>
+                <p>
+                <ul>
+                    <li>Primera Persona</li>
+                    <li>Tercera Persona</li>
+                    <li>Shoot Em Up</li>
+                </ul>
+                <img src="img/juegos/shooter.png">
+                </p>
+            </section>
+
+            <section>
+                <h2>Estrategia</h2>
+                <p>
+                <ul>
+                    <li>Tiempo Real</li>
+                    <li>Por Turnos</li>
+                </ul>
+                <img src="img/juegos/estrategia.png">
+                </p>
+            </section>
+
+            <section>
+                <h2>Simulación</h2>
+                <p>
+                <ul>
+                    <li>Vuelo</li>
+                    <li>Construcción</li>
+                    <li>Vida</li>
+                    <li>Deporte</li>
+                </ul>
+                <img src="img/juegos/construccion.png">
+                </p>
+            </section>
+
+            <section>
+                <h2>Deporte</h2>
+                <p>
+                <ul>
+                    <li>Tenis</li>
+                    <li>Basquet</li>
+                    <li>Golf</li>
+                    <li>Skate</li>
+                </ul>
+                <img src="img/juegos/deportes.png">
+                </p>
+            </section>
+
+            <section>
+                <h2>Carreras</h2>
+                <p>
+                <ul>
+                    <li>Arcade</li>
+                    <li>Simuladores</li>
+                </ul>
+                <img src="img/juegos/carreras.png">
+                </p>
+            </section>
+
+            <section>
+                <h2>Aventura</h2>
+                <p>
+                <ul>
+                    <li>Conversacional</li>
+                    <li>Acción-Aventura</li>
+                </ul>
+                <img src="img/juegos/aventura.png">
+                </p>
+            </section>
+
+            <section>
+                <h2>Rol Player Game</h2>
+                <p>
+                <ul>
+                    <li>RPG</li>
+                    <li>MMORPG</li>
+                </ul>
+                <img src="img/juegos/rol.png">
+                </p>
+            </section>
+
+            <section>
+                <h2>Musical</h2>
+                <p>
+                <ul>
+                    <li>Karaoke</li>
+                    <li>Baile</li>
+                    <li>Instrumentos</li>
+                </ul>
+                <img src="img/juegos/musical.png">
+                </p>
+            </section>
+
+            <section>
+                <h2>Puzzle</h2>
+                <p>
+                    <img src="img/juegos/puzzle.png">
+                </p>
+            </section>
+
+            <section>
+                <h2>Educativo</h2>
+                <p>
+                    <img src="img/juegos/educativo.png">
+                </p>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2>Diferente tipos de juegos requieren diferents</h2>
+                <h1 style="font-family: ZeroVelo; color: #beff48">MOTORES</h1>
+            </section>
+
+            <section>
+                <h2>¿Motor?</h2>
+                <p>
+                    Es una serie de rutinas de programación que permiten el diseño, la creación y la representación de
+                    un VJ.
+                    <br><br>
+                    Proveen al VJ de capacidad para:
+                <ul>
+                    <li>Renderizado de gráficos 2D y 3D</li>
+                    <li>Detección de Colisiones</li>
+                    <li>Reproducción de sonidos</li>
+                    <li>Ejecución de Scripts</li>
+                    <li>Renderizado de animaciones</li>
+                    <li>Inteligencia Artificial</li>
+                    <li>Administración de memoria, etc</li>
+                </ul>
+                </p>
+            </section>
+
+            <section>
+                <h2>Motores de VJ</h2>
+                <p>
+                <ul>
+                    <li>Cocos 2D</li>
+                    <li>Unity</li>
+                    <li>Godot</li>
+                    <li>Unreal Engine</li>
+                    <li>GameMaker</li>
+                    <li>RPG Maker</li>
+                </ul>
+                </p>
+            </section>
+
+            <section>
+                <img src="img/juegos/cocos.png">
+                <p>
+                <ul>
+                    <li>Open Source</li>
+                    <li>2D</li>
+                    <li>Lenguaje Nativo</li>
+                    <li>Multiplataforma</li>
+                    <li>Gran Comunidad</li>
+                </ul>
+                </p>
+            </section>
+
+            <section>
+                <img src="img/juegos/unity.jpg" width="60%">
+                <p>
+                <ul>
+                    <li>Versión Personal</li>
+                    <li>Gran Comunidad</li>
+                    <li>C#</li>
+                    <li>Diversidad de Plataformas</li>
+                    <li>Multiplataforma</li>
+                    <li>Difícil Optimizar</li>
+                </ul>
+                </p>
+            </section>
+
+            <section>
+                <img src="img/juegos/Godot.png" width="60%">
+                <p>
+                <ul>
+                    <li>Open Source</li>
+                    <li>2D / 3D</li>
+                    <li>PC / Android / iOS</li>
+                    <li>Actualizacion frecuente</li>
+                    <li>Comunidad Pequeña</li>
+                    <li>Python</li>
+                </ul>
+                </p>
+            </section>
+
+            <section>
+                <h2>Librerias JavaScript</h2>
+                <p>
+                <ul>
+                    <li>MelonJS</li>
+                    <li>KiwiJS</li>
+                    <li>Impact</li>
+                    <li>Phaser</li>
+                    <li>Game</li>
+                </ul>
+                <br><br>
+                Para más info: <br>
+                <a href="https://html5gameengine.com/">https://html5gameengine.com/</a>
+                </p>
+            </section>
+        </section>
+
+        <section>
+            <h2>Plataformas</h2>
+            <p>
+            <ul>
+                <li>Mobile</li>
+                <li>PC</li>
+                <li>Web</li>
+                <li>Consolas</li>
+            </ul>
+            </p>
+        </section>
+
+        <section>
+            <h2 style="font-family: Zerovelo; color: #beff48">Melon.JS</h2>
+            <a href="http://melonjs.github.io/tutorial-platformer/">Tutorial: Plataforma</a>
+            <br>
+            <a href="http://melonjs.github.io/tutorial-platformer/tutorial_step8/index.html">Ejemplo</a>
+            <br><br>
+            <a href="http://melonjs.github.io/tutorial-space-invaders/">Tutorial: Space Invaders</a>
+            <br>
+            <a href="http://edme88.github.io/melonSpace/index.html">Ejemplo</a>
+
+        </section>
+
+        <section>
+            <a href="clasav.com" target="_blank"><img src="img/juegos/init.png"></a>
+        </section>
+
+
+        <section data-background="img/juegos/game_over.jpg">
+            <img src="img/juegos/game_over.jpg">
+        </section>
+</div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+                return !document.body.classList;
+            }
+        }, {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+        }, {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+        }, {
+            src: 'plugin/notes/notes.js',
+            async: true
+        }]
+    });
+
+</script>
+
+</body>
+</html>
