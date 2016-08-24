@@ -16,7 +16,7 @@ gulp.task('html-include', function () {
 
 gulp.task('watch', ['html-include', 'mover'], function () {
     return gulp.watch([
-        './slides/*.html',
+        './src/slides/*.html',
         './templates/*.html',
         './assets/**/*'
     ], ['html-include', 'mover']);
