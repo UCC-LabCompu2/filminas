@@ -11,9 +11,12 @@
   "dependencies": {
     "gulp-gh-pages": "^0.5.4",
     "gulp-html-tag-include": "^1.0.1",
+    "gulp-install": "^0.6.0",
     "reveal.js": "^3.3.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "grunt": "^1.0.1",
+    "gulp": "^3.9.1",
+    "gulp-install": "^0.6.0"
   }
 }
