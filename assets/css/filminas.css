@@ -39,3 +39,9 @@
     -webkit-transform: rotate(180deg); /* Safari */
     transform: rotate(180deg);
 }
+
+.h2ej{
+    background: url(../images/code.png) no-repeat;
+    vertical-align: middle;
+    padding: 15px;
+}
