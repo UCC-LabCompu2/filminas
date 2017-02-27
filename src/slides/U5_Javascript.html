@@ -104,6 +104,21 @@
 </section>
 
 <section>
+    <h2>Incluir JavaScript</h2>
+    <p>
+    <ul>
+        <li>En el mismo documento, agregando &lt;script</li>
+        <li>En un archivo externo <br>
+            <pre><code>
+    <script type="text/javascript" src="/js/codigo.js"></script>
+</code></pre>
+        </li>
+        <li>En linea</li>
+    </ul>
+    </p>
+</section>
+
+<section>
     <h2>Sintaxis</h2>
     <p>
         Conjunto de reglas que deben seguirse al escribir el código:
@@ -230,16 +245,57 @@
     <input type="text" value="Cambiar Valor" onchange="alert('Se ejecuto onChange')">
 </section>
 
+<section>
+    <h2>Ejercicio: Hola Mundo!</h2>
+    <p>
+        Mostrar un “alert()” con el texto “Hola Mundo!” que se ejecute en el onload del body.
+    </p>
+</section>
+
 <section style="font-size: 0.8em">
     <h2>Ejercicio: Conversor de Unidades</h2>
     <p>
-        Escribir funciones JavaScript para que, al escribir un número en cualquiera de los inputs, 
+        Escribir funciones JavaScript para que, al escribir un número en cualquiera de los inputs,
         la unidad sea convertida.
     </p>
     <ul>
         <li>Emplear <b>OnChange</b> en los campos</li>
         <li>Los campos deben contener un nombre</li>
         <li>La función debe enviar el valor y el nombre del campo cambiado</li>
+    </ul>
+    <img src="images/html/conversorUnidades.png" style="height: 300px">
+</section>
+
+<section>
+    <h2>Documentar Código</h2>
+    <pre><code>
+    /**
+    * Descripción
+    * @method Nombre de la función
+    * @param Parámetro A
+    * @param Parámetro B
+    * @return Valor que retorna
+    */
+</code></pre>
+</section>
+
+<section style="font-size: 0.8em">
+    <h2>Ejercicio: Documentación</h2>
+    <p>
+        Documentar las funciones del “Conversor de Unidades” adecuadamente,  indicando que hacen las funciones,
+        el nombre del método, que parámetros se le envía y que valor retorna.
+    </p>
+</section>
+
+<section style="font-size: 0.8em">
+    <h2>Ejercicio: Grados a Radianes</h2>
+    <p>
+        Cree una web con 2 inputs para convertir de grados a radianes.
+    </p>
+    <ul>
+        <li>Emplear <b>OnChange</b> en los campos</li>
+        <li>Los campos deben contener un id</li>
+        <li>Se debe emplear Math.PI</li>
     </ul>
     <img src="images/html/conversorUnidades.png" style="height: 300px">
 </section>
@@ -861,20 +917,6 @@
         realice una animación que mueva la imagen desde el borde izquierdo al derecho del canvas.
     </p>
 </section>
-
-<section>
-    <h2>Documentar Código</h2>
-    <pre><code>
-    /**
-    * Descripción
-    * @method Nombre de la función
-    * @param Parámetro A
-    * @param Parámetro B
-    * @return Valor que retorna
-    */
-</code></pre>
-</section>
-
 
 <section>
     <h1>Bibliografia xD</h1>
