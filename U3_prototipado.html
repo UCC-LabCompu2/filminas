@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+
+    <title>Prototipado y Proceso de Diseño</title>
+    <meta name="description" content="Prototipado y Proceso de Diseño">
+    <meta name="author" content="
+    Agus Edme Aliciardi | Ricardo Martin Marcucci
+">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/filminas.css">
+    <script type="text/javascript" src="js/pruebas.js"></script>
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+<section>
+    <h1>Prototipado y Proceso de Diseño</h1>
+    
+    <h3>Conceptos básicos</h3>
+
+    <p>
+        <small>Created by
+            <a href="https://t.me/edme88" target="_blank">
+            <i class="fa fa-telegram"></i>edme88
+            </a> &
+            <a href="https://t.me/rmarku" target="_blank">
+            <i class="fa fa-telegram"></i>rmarku
+            </a>
+        </small>
+    </p>
+</section>
+
+<section>
+    <h2>Libros:</h2>
+    <p>
+        <img class="noBorder" src="images/book.png" style="float:left;"/>
+        “Ingeniería del software” séptima edición de Ian Sommervill
+        (Capítulo N°16: Diseño de Interfaces de Usuario)
+        <br>
+        <br>
+        <img class="noBorder" src="images/book.png" style="float:left;"/>
+        “Ingeniería del Software: Un enfoque práctico 6ta ed.” de Roger Pressman
+        (Capítulo N°11: Diseño de la Interfaz de Usuario)
+    </p>
+</section>
+
+<section>
+    <h2>Interfaz de Usuario</h2>
+    <p>
+        Es el medio con que el usuario puede comunicarse con una máquina, equipo, computadora o dispositivo, y
+        comprende todos los puntos de contacto entre el usuario y el equipo.
+        <br>
+        <br>
+        Incluyen elementos como menús, ventanas, contenido gráfico, cursor, etc.
+    </p>
+</section>
+
+<section>
+    <h2>Arquitectura de Información</h2>
+    <p>
+        El Arquitecto define la organización, etiquetado, navegación y sistema de búsqueda de un sitio web,
+        elementos que ayudan a los usuarios a encontrar y gestionar la información de manera efectiva.
+    </p>
+</section>
+
+<section>
+    <h2>Proceso de Diseño de Interfaz de Usuario</h2>
+    <p>
+        Proceso iterativo donde los usuarios interactúan con los diseñadores y prototipados de la interfaz para
+        decidir las características, organización, apariencia y funcionamiento de la interfaz de usurio del
+        sistema.
+    </p>
+</section>
+
+<section>
+    <h2>Proceso de Diseño de Interfaz de Usuario</h2>
+    <p>
+        <img style="border: 0px; padding: 35px; border-radius: 45px" src="images/interfazUsuario/procesoDiseñoUI.png"/>
+    </p>
+</section>
+
+<section>
+    <section>
+        <h2>Proceso de Diseño de Interfaz de Usuario</h2>
+        <p>
+            Actividades para el proceso de Diseño de Interfaz de Usuario:
+        <ul>
+            <li>
+                Análisis del usuario
+            </li>
+            <ul>
+                <li>
+                    Análisis Jerárquico de Tareas (HTA)
+                </li>
+                <li>
+                    Estudios Etnográficos
+                </li>
+                <li>
+                    Entrevistas de Usuarios
+                </li>
+            </ul>
+            <li>
+                Prototipado del sistema
+            </li>
+            <li>
+                Evaluación de la Interfaz
+            </li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Análisis Jerárquico de Tareas</h2>
+        <p>
+            <img style="border-radius: 45px" src="images/interfazUsuario/HTA.png"/>
+        </p>
+    </section>
+
+    <section>
+        <h2>Estudio Etnográfico</h2>
+        <p>
+            Observación de los usuarios en su contexto y dentro de su entorno, tratando de no interferir en sus
+            acciones, usos y costumbres para determinar los requerimientos de usabilidad.
+        </p>
+    </section>
+
+    <section>
+        <h2>Entrevistas de Usuarios</h2>
+        <p>
+            Reunirse con los usuarios para entender mejor sus necesidades, motivaciones, cultura laboral y
+            otros aspectos. Pueden ser reuniones individuales o a través de grupos de enfoque.
+        </p>
+    </section>
+</section>
+
+<section>
+    <section>
+        <h2>Tipos de diagramas</h2>
+        <p>
+        <ul>
+            <li><b>Planos:</b> Blueprints, architecture map <br>
+                Diagramas de organización y funcionamiento
+            </li>
+            <li><b>Maquetas:</b> wireframe, mockup, prototype <br>
+                Diagramas de presentación
+            </li>
+        </ul>
+        <img src="images/interfazUsuario/diagramas.png" class="noBorder" style="width: 50%">
+        </p>
+    </section>
+
+    <section>
+        <h2>Blueprint o Architecture Map</h2>
+        <p>
+            Son diagramas de organización y funcionamiento. <br><br>
+            También se denominan diagramas de contenido o flujoo o mapa web. <br><br>
+            El objetivo de estos diagramas es mostrar la estructura del sitio y su flujo de navegación.
+        </p>
+    </section>
+
+    <section>
+        <h2>Blueprint o Architecture Map</h2>
+        <p>
+            <img src="images/interfazUsuario/blueprint_sencillo.png">
+            <img src="images/interfazUsuario/blueprint_elaborado.png">
+        </p>
+    </section>
+
+    <section>
+        <h2>Maquetas: Diagramas de Presentación</h2>
+        <p>
+            El objetivo es mostrar el contenido de las páginas, mostrando los elementos que se plantearon
+            en los primeros planos (blueprints) y ubicándolos en las páginas o pantallas del producto final.
+        </p>
+    </section>
+
+    <section>
+        <h2>Tipos de Prototipo</h2>
+        <p>
+        <ul>
+            <li>Baja Fidelidad: Conjunto de dibujos que representan cómo estarán organizados los elementos
+                en las páginas en aspectos generales, sin entrar en detalle.
+                <ul>
+                    <li>Sketch</li>
+                    <li>Wireframa</li>
+                    <li>StoryBoard</li>
+                </ul>
+            </li>
+            <li>Alta Fidelidad: Se representan aspectos más precisos. Sirven para detallar el proceso interactivo
+                de una o varias tareas.
+                <ul>
+                    <li>Mockup</li>
+                    <li>Prototipo</li>
+                </ul>
+            </li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Tipos de Diseño</h2>
+        <p>
+        <ul>
+            <li>Sketch</li>
+            <li>Thumbnail Sketches</li>
+            <li>Wireframe</li>
+            <li>StoryBoard</li>
+            <li>Mockup</li>
+            <li>Prototipo</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Sketch</h2>
+        <img src="images/interfazUsuario/sketch.jpg" class="noBorder">
+    </section>
+
+    <section>
+        <h2>Sketch</h2>
+        <p>
+        <ul>
+            <li>Es un bosquejo o dibujo rápido e informal</li>
+            <li>No tiene muchos detalles</li>
+            <li>Guía general que reproduce un conceptoo o idea de un proyecto de una manera sencilla</li>
+            <li>Se realiza a mano con lápiz y borrador</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Thumbnail Sketches</h2>
+        <p>
+        <ul>
+            <li>Secuencia de Sketchs que muestran cómo se realiza una tarea.</li>
+        </ul>
+        <img src="images/interfazUsuario/thumbnail_sketch.jpg" class="noBorder">
+        </p>
+    </section>
+
+    <section>
+        <h2>Wireframe</h2>
+        <img src="images/interfazUsuario/wireframe.jpg" class="noBorder">
+    </section>
+
+    <section>
+        <h2>Wireframe</h2>
+        <p>
+        <ul>
+            <li>Es una representación estática en baja calidad de un diseño</li>
+            <li>Esta representación muestra:
+                <ul>
+                    <li>Principales grupos de contenido</li>
+                    <li>Estructura de la información</li>
+                    <li>Descripción y visualización básica del usuario</li>
+                    <li>Interacción de la interfaz</li>
+                </ul>
+            </li>
+            <li><b>Representación de cada parte importante del producto final</b></li>
+            <li>El entregable es una imagen</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>StoryBoard o WireFlows</h2>
+        <p>
+        <ul>
+            <li>Secuencia de wireframes que muestran cómo se realiza una tarea.</li>
+        </ul>
+        <img src="images/interfazUsuario/wireflow.png" class="noBorder">
+        </p>
+    </section>
+
+    <section>
+        <h2>Mockup</h2>
+        <img src="images/interfazUsuario/mockup2.png" class="noBorder">
+    </section>
+
+    <section>
+        <h2>Mockup</h2>
+        <img src="images/interfazUsuario/mockup.png" class="noBorder">
+    </section>
+
+    <section>
+        <h2>Mockup</h2>
+        <p>
+        <ul>
+            <li>Representación estática de un diseño en calidad media o alta</li>
+            <li>Representa la estructura de la información</li>
+            <li>Visualiza el contenido</li>
+            <li>Demuestra las funcionalidades básicas de una manera estática</li>
+            <li>El entregable es una imagen.</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Prototipo</h2>
+        <img src="images/interfazUsuario/prototipo.png" class="noBorder">
+    </section>
+
+    <section>
+        <h2>Prototipo</h2>
+        <p>
+        <ul>
+            <li>La calidad pueda variar entre media y alta</li>
+            <li>Representación navegable del producto final</li>
+            <li>Simula la interacción interfaz de usuario</li>
+            <li>Permitir que el usuario:
+                <ul>
+                    <li>Experimente interactuando con la interfaz y contenido del proyecto</li>
+                    <li>Pruebe las principales interacciones de una manera similar al producto final</li>
+                </ul>
+            </li>
+            <li>El entregable es un HTML, PPT, Animación o formato navegable.</li>
+        </ul>
+        </p>
+    </section>
+
+    <!--section>
+        <h2>Utilización de Técnicas de Diseño</h2>
+        <p>
+            Ventajas:
+        <ul>
+            <li>Definir funcionalidades del proyecto</li>
+            <li>Mejora la comunicación entre el equipo de desarrollo y los usuarios </li>
+            <li>Definir el recorrido del usuario (work flow)</li>
+            <li>Permite mostrar al usuario el sistema y recibir un feedback temprano</li>
+            <li>Método intuitivo para identificar características y requerimientos</li>
+            <li>Mejoran la calidad y la completitud de las especificaciones funcionales del sistema. </li>
+        </ul>
+        </p>
+    </section!-->
+
+    <section>
+        <h2>Ventajas del Pre-Diseño</h2>
+        <p>
+        <ul>
+            <li>El equipo y el cliente se centran en el diseño de contenidos e interacción y no en el diseño visual.</li>
+            <li>El cliente ve y comprende cómo será la aplicación, mucho mejor que si se ofrece descrita en un documento.</li>
+            <li>Evita malentendidos entre el equipo de desarrollo y el cliente.</li>
+            <li>Ayuda a especificar los requerimientos y a detectar inconsistencias o falta de funcionalidad.</li>
+            <li>Complemento para el análisis.</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Ventajas del Pre-Diseño</h2>
+        <p>
+        <ul>
+            <li>Se puede modificar el diseño con facilidad y rapidez.</li>
+            <li>Se evitan modificaciones posteriores mucho más costosas cuando la aplicación ya está implementada.</li>
+            <li>Se reduce costo y tiempo.</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Ventajas del Pre-Diseño</h2>
+        <p>
+        <ul>
+            <li>Permite realizar pruebas de usabilidad, como test con usuarios, en etapas tempranas del proyecto.</li>
+            <li>Se detectan y solucionan los problemas antes de comenzar su implementación.</li>
+            <li>El resultado son aplicaciones web más fáciles de entender, de usar
+                y se ajustan mejor a las necesidades de los usuarios.</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Proceso de Prototipado de la IU</h2>
+        <p>
+        <ol>
+            <li>
+                <b>Prototipo en papel:</b> Maquetas de los diseños de pantalla
+            </li>
+            <li>
+                <b>Prototipo Automatizado:</b> Permite al usuario realizar pruebas y simulación
+            </li>
+        </ol>
+        </p>
+    </section>
+
+    <section>
+        <h2>Comparación</h2>
+        <p>
+            <img src="images/interfazUsuario/comparacion.png" class="noBorder">
+        </p>
+    </section>
+
+    <section>
+        <h2>Antes de dibujar...</h2>
+        <p>
+        <ul>
+            <li>Realizar entrevistas con el cliente y el equipo de desarrollo para definir los requisitos,
+                los objetivos y el público objetivo.
+            </li>
+            <li>Analizar la web actual (si existe): problemas de usabilidad y accesibilidad, estadísticas de acceso,
+                test con usuarios y encuestas.
+            </li>
+            <li>Benchmarking, estudio comparativo de la competencia.</li>
+            <li>Definir de la arquitectura de informacón y mapa web.</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Ejercicio: Sketch</h2>
+        <p>
+            Realice Sketchs formando un 'Thumbnail Skeths' de la interfaz de usuario del sistema en papel.
+            Debe tener en cuenta:
+            <br>
+        <ul>
+            <li>¿Qué opciones debe ofrecer al usuario?</li>
+            <li>¿Qué campos hay para ingresar datos?</li>
+            <li>¿Hay ejercicios de ejemplo?</li>
+            <li>¿Hay una introducción teorica?</li>
+            <li><a href="images/interfazUsuario/tiroOblicuo.jpg" target="_blank">Sistemas similares. </a></li>
+            <li>¿Qué acciones le permiten al usuario realizar?</li>
+            <li>Mensajes de Error</li>
+        </ul>
+
+        <!--div id="tmp2">
+            <div id="counter_2" style="width: 222px; margin: 0px auto"></div>
+            <div class="desc" style="width: 222px; margin: 0px auto">
+                <div>Minutos</div>
+                <div style="float: right">Segundos</div>
+            </div>
+        </div-->
+        </p>
+    </section>
+
+
+</section>
+
+<section>
+    <section>
+        <h2>Evaluación de la Interfaz</h2>
+        <p>
+            Proceso de evaluar la forma en que se utiliza una interfaz y verificar que cumple los requerimientos
+            del
+            usuario.
+            <br>
+            <br>
+            Es parte del proceso de verificación y validación de los sistemas software.
+        </p>
+    </section>
+
+    <section>
+        <h2>Evaluación de la Interfaz</h2>
+        <p>
+            <img style="border-radius: 50px" src="images/interfazUsuario/evaluacion.png"/>
+        </p>
+    </section>
+
+    <section>
+        <h2>Ejercicio: Evaluacion de Interfaz</h2>
+        <p>
+            Intercambie su diseño de interfaz con otro grupo:
+            <br>
+        <ul>
+            <li>¿Qué opciones tiene
+                este sistema que no estén disponibles en el propio?
+            </li>
+            <li>¿Es deseable introducir en un futuro rediseño
+                del sistema estas características?
+            </li>
+            <li>¿Qué ventajas y desventajas presenta el otro sistema con respecto
+                al propio?
+            </li>
+        </ul>
+        <!--div id="tmp3">
+            <div id="counter_3" style="width: 222px; margin: 0px auto"></div>
+            <div class="desc" style="width: 222px; margin: 0px auto">
+                <div>Minutos</div>
+                <div style="float: right">Segundos</div>
+            </div>
+        </div-->
+        <br>
+        Presente un documento al otro equipo con el análisis realizado.
+        </p>
+    </section>
+</section>
+
+<section>
+    <h2>Ejercicio: Rediseño</h2>
+    <p>
+        Realice un rediseño del sistema teniendo en cuenta el documento de sugerencias recibido.
+        <br>
+        Si son pocas modificaciones, puede marcarlas con un color diferente sobre los sketches. <br> <br>
+        En caso de ser varias modificaciones, se sugiere dibujar el sketch nuevamente.
+        <br>
+
+        <!--a href="https://moqups.com/" target="_blank">
+            <img class="noBorder" src="images/interfazUsuario/mockUps-icon.png"/>
+        </a>
+        <br>
+        <a href="https://ninjamock.com/Designer/NewWorkplace/WebProject/napkin/0/Page1" target="_blank">
+            <img class="noBorder" src="images/interfazUsuario/ninjamock-icon.png">
+        </a>
+
+        <div id="tmp4">
+            <div id="counter_4" style="width: 222px; margin: 0px auto"></div>
+            <div class="desc" style="width: 222px; margin: 0px auto">
+                <div>Minutos</div>
+                <div style="float: right">Segundos</div>
+            </div>
+        </div-->
+    </p>
+</section>
+
+
+<section>
+    <h2>Información en un wireframe</h2>
+    <p>
+    <ul>
+        <li><b>Inventario de contenido: </b> Contenido que debe estar presente en cada página </li>
+        <li><b>Elementos de la página:</b> Cabeceras, enlaces, listas, imágenes, formularios, etc.</li>
+        <li><b>Etiquetado:</b> De vínculos, títulos, etc. </li>
+        <li><b>Layout:</b> Ubicación, colocación y agrupación de los elementos de la página
+            cabeceras, pies, navegación, áreas de contenido, titulares, etc.)
+        <li><b>Comportamiento:</b> Notas asociadas a los elementos para indicar cómo se deben mostrar
+            o el comportamiento funcional cuando se activa.
+        </li>
+    </ul>
+    </p>
+</section>
+
+<section>
+    <h2>Ejemplo de  wireframe</h2>
+    <p>
+        <img class="noBorder" src="images/interfazUsuario/ejemploWireframe.png">
+    </p>
+</section>
+
+<section>
+    <h2>Ejercicio: Wireframe</h2>
+    <p>
+        Emplee algún programa para confeccionar Wireframes y generar un wireflow.
+        <br>
+
+        <a href="https://moqups.com/" target="_blank">
+            <img class="noBorder" src="images/interfazUsuario/mockUps-icon.png"/>
+        </a>
+        <br>
+        <a href="https://ninjamock.com/Designer/NewWorkplace/WebProject/napkin/0/Page1" target="_blank">
+            <img class="noBorder" src="images/interfazUsuario/ninjamock-icon.png">
+        </a>
+    </p>
+</section>
+
+<section data-background="images/interfazUsuario/prototipado-de-paginas-web.jpg">
+    <h3 style="text-shadow: -1px -1px 1px #73a4f6, 1px 1px 1px #000, -1px 1px 1px #c1ebeb, 1px -1px 1px #000;">
+        “Es mejor diseñar la experiencia del usuario que rectificarla.”</h3>
+</section>
+
+<section>
+    <h2>¿Dudas, Preguntas, Comentarios?</h2>
+    <img class="noBorder" src="images/pregunta.gif" style="width:30%;border-radius: 20%;">
+</section>
+
+</div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+	// More info https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		history: true,
+
+		// More info https://github.com/hakimel/reveal.js#dependencies
+		dependencies: [
+			{src: 'plugin/markdown/marked.js'},
+			{src: 'plugin/markdown/markdown.js'},
+			{src: 'plugin/notes/notes.js', async: true},
+			{
+				src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+				hljs.initHighlightingOnLoad();
+			}
+			}
+		]
+	});
+</script>
+</body>
+</html>
