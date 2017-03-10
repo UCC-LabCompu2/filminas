@@ -7,64 +7,109 @@
 <include src="../templates/slide1.html" titulo="Drivers">
 </include>
 
-        <section>
-            <h2>Driver o Controlador de Dispositivo</h2>
-            <p>
-                Es un programa que permite al SO interaccionar con un periférico, haciendo una abstracción del hardware y proporcionando una interfaz para utilizar el dispositivo. <br><br>
-                Le indica al SO como controlar y comunicarse con un dispositivo particular.<br>
-            </p>
-        </section>
+<section>
+    <h2>Driver o Controlador de Dispositivo</h2>
+    <p>
+        Es un programa que permite al SO interaccionar con un periférico, haciendo una abstracción del hardware
+        y proporcionando una interfaz para utilizar el dispositivo. <br><br>
+        Le indica al SO como controlar y comunicarse con un dispositivo particular.<br>
+    </p>
+</section>
 
-        <section>
+<section>
 
-            <img class="noBorder" src="images/configSO/drivers.png" style="margin: auto">
-        </section>
+    <img class="noBorder" src="images/configSO/drivers.png" style="margin: auto">
+</section>
 
 
-        <section>
-            <h2>Tipos de Drivers</h2>
-            <ul>
-                <li>Existen tantos tipos de controladores como tipos de periféricos</li>
-                <li>Puede haber más de un controlador para un mismo dispositivo</li>
-            </ul>
-        </section>
-        <section>
-            <section>
-                <h2>Windows</h2>
-                <h2>Administrador de Dispositivos</h2>
-                <p>
-                    El usuario puede:
-                <ul>
-                    <li>Comprobar si el funcionamiento de los dispositivos es correcto</li>
-                    <li>Actualizar el software de controlador o Driver</li>
-                    <li>Modificar o establecer propiedades a un dispositivo</li>
-                    <li>Habilitar o deshabilitar dispositivos</li>
-                </ul>
-                </p>
-            </section>
-            <section>
-                <h2>Administrador de Dispositivos</h2>
-                <p>
-                <img src="images/configSO/admDispositivos.jpg" class="noBorder">
-                </p>
-            </section>
-        </section>
-        <section>
-            <section>
-                <h2>Linux</h2>
-                <h2>Administrador de Dispositivos</h2>
-                <ul>
-                    <li>Los drivers son módulos del <b>Kernel</b></li>
-                    <li>Con el comando lsmod</li>
-                    <li>Desde el visor de hardware del entorno gráfico</li>
-                </ul>
-            </section>
-        </section>
+<section>
+    <h2>Tipos de Drivers</h2>
+    <ul>
+        <li>Existen tantos tipos de controladores como tipos de periféricos</li>
+        <li>Puede haber más de un controlador para un mismo dispositivo</li>
+    </ul>
+</section>
 
-        <section>
-            <h2>¿Dudas, Preguntas, Comentarios?</h2>
-            <img class="noBorder" src="images/pregunta.gif" style="width:30%;border-radius: 20%;">
-        </section>
-        <!--http://support.hp.com/es-es/document/c00374631 Simbolos de Error de Administrador de dispositivos-->
+<section>
+    <h2>Drivers: Actualización</h2>
+    <p>
+        Los fabricantes de hardware suelen actualizar los drivers para otorgar más funcionalidades,
+        mejorar el rendimiento o aumentar las medidas de seguridad con la finalidad de corregir errores
+        o vulnerabilidades que podrían comprometer el equipo de los usuarios.
+    </p>
+</section>
+
+<section>
+    <section>
+        <h2>Windows</h2>
+        <h2>Administrador de Dispositivos</h2>
+        <p>
+            El usuario puede:
+        <ul>
+            <li>Comprobar si el funcionamiento de los dispositivos es correcto</li>
+            <li>Actualizar el software de controlador o Driver</li>
+            <li>Modificar o establecer propiedades a un dispositivo</li>
+            <li>Habilitar o deshabilitar dispositivos</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Administrador de Dispositivos</h2>
+        <p>
+            <img src="images/configSO/admDispositivos2.jpg" class="noBorder">
+        </p>
+    </section>
+
+    <section>
+        <h2>Administrador de Dispositivos</h2>
+        <p>
+        <table style="font-size: 0.6em; tr td:first-child: white">
+            <tr>
+                <th>Simbolo</th>
+                <th>Definición</th>
+            </tr>
+            <tr>
+                <td><img src="images/configSO/driver_simbolo1.png" class="noBorder"></td>
+                <td>Ocurrió un problema. Muestra un código de error del dispositivo.</td>
+            </tr>
+            <tr>
+                <td><img src="images/configSO/driver_simbolo2.png" class="noBorder"></td>
+                <td>El dispositivo está desactivado (está presente físicamente, consume recursos,
+                    pero no tiene un controlador cargado en modo protegido.
+                </td>
+            </tr>
+            <tr>
+                <td><img src="images/configSO/driver_simbolo3.png" class="noBorder"></td>
+                <td>Configuración manual en lugar de automática.</td>
+            </tr>
+            <tr>
+                <td><img src="images/configSO/driver_simbolo4.png" class="noBorder"></td>
+                <td>El controlador específico del dispositivo no está disponible y se
+                    instalo un controlador compatible.
+                </td>
+            </tr>
+        </table>
+
+        </p>
+    </section>
+</section>
+<section>
+    <section>
+        <h2>Linux</h2>
+        <h2>Administrador de Dispositivos</h2>
+        <ul>
+            <li>Los drivers son módulos del <b>Kernel</b></li>
+            <li>Con el comando lsmod</li>
+            <li>Desde el visor de hardware del entorno gráfico</li>
+        </ul>
+    </section>
+</section>
+
+<section>
+    <h2>¿Dudas, Preguntas, Comentarios?</h2>
+    <img class="noBorder" src="images/pregunta.gif" style="width:30%;border-radius: 20%;">
+</section>
+<!--http://support.hp.com/es-es/document/c00374631 Simbolos de Error de Administrador de dispositivos-->
 
 <include src="../templates/footer.html"></include>
