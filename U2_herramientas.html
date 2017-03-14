@@ -72,7 +72,6 @@
 
 <section>
     <h2>Tipos de Herramientas</h2>
-    <p>
     <ul>
         <li>IDE</li>
         <li>Sistema de Control de Versiones</li>
@@ -80,7 +79,6 @@
         <li>Pruebas de desempeño, carga, stress</li>
         <li>Documentación</li>
     </ul>
-    </p>
     <img class="noBorder" src="images/herramientas/herramientas.png" style="position: absolute; float: bottom"/>
 </section>
 
@@ -96,8 +94,7 @@
     <section>
         <h2>Ambiente de Desarrollo Integrado o IDE</h2>
 
-        <p>
-            Normalmente, un IDE consiste de:
+        Normalmente, un IDE consiste de:
         <ul>
             <li>Editor de código fuente</li>
             <li>Herramientas de construcción automáticas</li>
@@ -105,7 +102,6 @@
             <li>Compilador</li>
             <li>Intérprete</li>
         </ul>
-        </p>
     </section>
     <section>
         <h2>Editor de código fuente</h2>
@@ -130,19 +126,18 @@
         <p>
             El depurador permite detener el programa en un punto determinado o en un momento determinado
             para que el usuario pueda examinar y modificar la memoria y las variables del programa,
-            cambiar punto de ejecucion, ejecutar una instruccion o partes determinadas de codigo.
+            cambiar punto de ejecución, ejecutar una instrucción o partes determinadas de código.
         </p>
     </section>
     <section>
         <h2>Compilador</h2>
-
         <p>
-            Traduce del lenguaje de programacion al lenguaje maquina, codigo intermedio o texto.
+            Traduce del lenguaje de programación al lenguaje maquina, código intermedio o texto.
         </p>
-        <p>
-        <li>Lenguajes compilados: C, C++, Fortran, Pascal, Visual Basic.</li>
-        <li>Lenguajes interpretados: Python, JavaScript, HTML, Ruby, PHP.</li>
-        </p>
+        <ul>
+            <li>Lenguajes compilados: C, C++, Fortran, Pascal, Visual Basic.</li>
+            <li>Lenguajes interpretados: Python, JavaScript, HTML, Ruby, PHP.</li>
+        </ul>
     </section>
     <section>
         <h2>Interprete</h2>
@@ -165,8 +160,7 @@
 <section data-background="images/herramientas/IDES.png">
     <h2>IDE's</h2>
 
-    <p>
-        Ejemplos de IDE's para desarrollo Web:
+    Ejemplos de IDE's para desarrollo Web:
     <ul>
         <li>Eclipse</li>
         <li>Net Beans</li>
@@ -177,7 +171,6 @@
         <li>Sublime Text</li>
         <li>NotePad ++</li>
     </ul>
-    </p>
 </section>
 
 <section data-background="images/herramientas/Busydesk-desarrollo.png">
@@ -185,7 +178,6 @@
     <p>
         No hay mejor IDE que aquel que cumpla con tus expectativas y supla tus necesidades y requerimientos.
     </p>
-</section>
 </section>
 
 <section>
@@ -198,27 +190,21 @@
     </section>
 
     <section>
-        <section>
-            <h2>Gestión de Versiones o VCS</h2>
+        <h2>Gestión de Versiones o VCS</h2>
 
-            <p>
-                Los usuarios pueden:
-            <ul>
-                <li>Descargar los archivos</li>
-                <li>modificar archivos</li>
-                <li>Publicar cambios</li>
-                <li>Volver a versiones anteriores</li>
-                <li>Ramificar a partir de una versión</li>
-                <li>Aplicar cambios de distintas versiones</li>
-            </ul>
-            </p>
-        </section>
+        Los usuarios pueden:
+        <ul>
+            <li>Descargar los archivos</li>
+            <li>modificar archivos</li>
+            <li>Publicar cambios</li>
+            <li>Volver a versiones anteriores</li>
+            <li>Ramificar a partir de una versión</li>
+            <li>Aplicar cambios de distintas versiones</li>
+        </ul>
     </section>
 
     <section data-background="images/herramientas/subversionado.png">
         <h2>Ventajas de VCS:</h2>
-
-        <p>
         <ul>
             <li>Permite llevar cuenta de los cambios de un conjunto de archivos digitales en el tiempo</li>
             <li>Cada versión registrada en el tiempo es una revisión</li>
@@ -226,45 +212,36 @@
                 proyecto.
             </li>
         </ul>
-        </p>
     </section>
 
     <section>
         <h2>Herramientas de VCS</h2>
 
-        <p>
         <ul>
             <li>Git</li>
             <li>SVN</li>
             <li>Mercurial</li>
             <li>Bazaar</li>
         </ul>
-        </p>
     </section>
 
-    <section>
-        <img class="noBorder" src="images/herramientas/Fire-commit-push.jpg" style="height: 650px"/>
-    </section>
 </section>
 
 <section>
     <section>
         <h2>Documentación de Código</h2>
 
-        <p>
-            Permite:
+        Permite:
         <ul>
             <li>Entender que se está haciendo y porqué</li>
             <li>Mantener el código</li>
         </ul>
-        </p>
         <img class="noBorder" src="images/html/jsdoc.png" style="height: 350px"/>
     </section>
 
     <section>
         <h2>Niveles de Documentación</h2>
 
-        <p>
         <ul>
             <li><b>por clase:</b> descripción,autor,fecha y ultima modificación</li>
             <li><b>por método:</b> descripción del objeto, funcionalidades, parámetros y resultados</li>
@@ -272,45 +249,67 @@
             <li><b>de limitaciones</b></li>
             <li><b>de algoritmos implementados</b></li>
         </ul>
-        </p>
     </section>
 
     <section>
         <h2>Formato de Documentación (JSDoc)</h2>
-
+        <!--@formatter:off-->
         <pre><code class="javascript">/**
-                * @fileoverview Librería con funciones de utilidad <br>
-                * @author Jose
-                * @version 0.1
-                */
+* @fileoverview Librería con funciones de utilidad
+* @author Jose
+* @version 0.1
+*/
+/**
+* Muestra un mensaje de texto
+* @param {String} método nombre del método
+* @param {String} mensaje mensaje a mostrar
+* @returns {integer} el codigo de retorno 0
+*/
+function trazas(metodo, mensaje){
+    alert("["+metodo+"]:"+mensaje);
+    return 0;
+}</code></pre>
 
-                /**
-                * Muestra un mensaje de texto
-                * @param {String} método nombre del método
-                * @param {String} mensaje mensaje a mostrar
-                * @returns {integer} el codigo de retorno 0
-                */
-                function trazas(metodo, mensaje){
-                alert("["+metodo+"]:"+mensaje);
-                return 0;
-                }</code></pre>
+<!--@formatter:on-->
     </section>
 
     <section>
         <h2>Documentación...A tener en cuenta</h2>
-        <p>
         <ul>
             <li>No uses solo una linea, divídela en párrafos para que sea mas legible</li>
             <li>Tabular los comentarios de lineas consecutivas</li>
             <li>No comentar obviedades</li>
             <li>Se profesional (No insultes o coloques frases fuera de contexto)</li>
             <li>Revisa la ortografía</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Documentación...A tener en cuenta</h2>
+        <ul>
             <li>No comentes si no es necesario</li>
             <li>Comentarios simple y directo</li>
             <li>Documenta mientras desarrollas</li>
             <li>Manten los comentarios actualizados</li>
         </ul>
-        </p>
+    </section>
+    <section>
+        <!--@formatter:off-->
+        <pre><code class="javascript">return 1; # returns 1</code></pre>
+        <pre><code class="javascript">stop(); // Hammertime!</code></pre>
+        <pre><code class="c++">long long ago; /* in a galaxy far far away */</code></pre>
+        <pre><code class="javascript">//This code sucks, you know it and I know it.
+//Move on and call me an idiot later.</code></pre>
+        <pre><code class="javascript">/////////////////////////////// this is a well commented line</code></pre>
+        <pre><code class="javascript">// I don't know why I need this,
+//but it stops the people being upside-down
+
+x = -x;</code></pre>
+<!--@formatter:on-->
+        <a href="http://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered%3E">más ejemplos</a>
+    </section>
+    <section>
+        <img style="height: 600px" src="images/herramientas/autocomentario.jpg" alt="">
     </section>
 </section>
 
@@ -325,22 +324,20 @@
     </section>
     <section>
         <h2>Ejemplos de Bug Tracker</h2>
-        <p>
         <ul>
             <li>Jira</li>
             <li>Bugzilla</li>
             <li>Flyspray</li>
             <li>Trac</li>
             <li>The bug Genie</li>
+            <li>MantisBT</li>
         </ul>
-        </p>
     </section>
 </section>
 
 <section>
     <section>
         <h2>Prueba de Desempeño o Performance</h2>
-        <p>
         <ul>
             <li><b>Load Test:</b> Simular la realidad a la que esta expuesto el sistema cuando este en produccion.</li>
             <li><b>Stress Test:</b> Simula mas carga de la esperada.</li>
@@ -348,13 +345,50 @@
                 tiempo largo.
             </li>
         </ul>
-        </p>
     </section>
     <section>
         <h2>Herramienta para Stress Test</h2>
         <ul>
             <li>JMeter</li>
         </ul>
+    </section>
+</section>
+
+<section>
+    <section>
+        <h2>Integración Continua</h2>
+       <p>Es una buena practica generar tests para verificar el correcto funcionamiento de las partes del software.
+       Estos test pueden ser manuales (los realiza una persona según un documento) o automáticos (código que prueba
+       otro código).<br>
+       En el caso de los test automatizados, se recurre muchas veces a servidores que corran los test, para poder
+       correrlos en distintos ambientes. A estos servidores se les llama de Integración Continua.</p>
+    </section>
+    <section>
+        <h2>Herramienta para Integración Continua</h2>
+        <h3>Propio servidor</h3>
+        <ul>
+            <li>GitLab CI</li>
+            <li>Jenkins</li>
+            <li>Drone.io</li>
+        </ul>
+        <h3>Cloud</h3>
+        <ul>
+            <li>Travis.ci</li>
+            <li>Codeship</li>
+            <li>CircleCI</li>
+        </ul>
+    </section>
+    <section>
+        <img src="images/herramientas/ci-flujo.png" alt="" style="width: 800px">
+    </section>
+    <section>
+        <img src="images/herramientas/Git-CI.png" alt="" style="width: 800px">
+    </section>
+    <section>
+        <img src="images/herramientas/ci-laba.jpg" alt="" style="width: 800px">
+    </section>
+    <section>
+        <a href="https://en.wikipedia.org/wiki/Build_light_indicator"><img src="images/herramientas/ci-build.jpg" alt="" style="height: 600px"></a>
     </section>
 </section>
 
