@@ -1,0 +1,181 @@
+<include src="../templates/header.html"
+         titulo="Git"
+         descripcion="Git">
+    Agus Edme Aliciardi | Ricardo Martin Marcucci
+</include>
+
+<include src="../templates/slide1.html" titulo="Git: Sistema de Control de Versiones">
+    <h3>Conceptos básicos</h3>
+</include>
+
+<section>
+    <h2>Git</h2>
+    <p>
+    <ul>
+        <li>Sistema distribuido de control de versiones</li>
+        <li>Libre</li>
+        <li>Crea branches y hace merge rapido y facil</li>
+        <li>Cada "Clón" es un repositorio completo</li>
+    </ul>
+    </p>
+    <a href="https://git-scm.com/" target="_blank"><img class="noBorder" src="images/herramientas/git.png"
+                                                        height="40%"/></a>
+</section>
+
+<section>
+    <h2>Ejercicio: Repositorio local</h2>
+    <p>
+        Desde la consola de comandos:
+    <ul>
+        <li>Inicializar un repositorio</li>
+        <li>Crear un archivo y agurdarlo -</li>
+        <li>Mostrar situacion actual del repositorio</li>
+        <li>Registrar los cambios (añadir el archivo) </li>
+        <li>Incluir el archivo en el repositorio local</li>
+        <li>Mostrar los commits realizados</li>
+        <li>Modificar nuevamente el archivo -</li>
+        <li>Registrar los cambios e incluirlos</li>
+        <li>Mostrar los commits realizados</li>
+    </ul>
+    </p>
+
+</section>
+
+<section data-background="images/herramientas/servidoresGIT.png">
+    <h2>Git: Servidores</h2>
+    <p>
+    <ul>
+        <li>Github</li>
+        <li>Bitbucket</li>
+    </ul>
+    </p>
+</section>
+
+<section>
+    <h2>Ejercicio: Creación de Cuenta en GitHub</h2>
+    <a href="https://www.github.com" target="_blank">
+        <img class="noBorder" src="images/herramientas/gitHub.png" height="40%"/></a>
+</section>
+
+<section>
+    <h2>Los 3 estados + Untraking</h2>
+    <p>
+    <ul>
+        <li><b>Unmodified(confirmado)</b> los datos estan almacenados de manera segura en el repositorio</li>
+        <li><b>Modified(modificado)</b> Se ha modificado el archivo pero todavía no se ha confirmado</li>
+        <li><b>Staged(preparado)</b>se ha marcado para confirmación el archivo en su version actual</li>
+    </ul>
+    </p>
+</section>
+
+<section>
+    <h2>Los 3 estados + Untraking</h2>
+    <img class="noBorder" src="images/herramientas/git_fileStatus_lifecycle.png" width="70%"/>
+</section>
+
+<section>
+    <h2>Commit</h2>
+    <p>
+    <ul>
+        <li> Identificadores numéricos de 40bytes</li>
+        <li> Identificación de la persona que realizo el commit (nombre y mail)</li>
+        <li> Fecha del commit</li>
+        <li> Mensaje de texto asociado al commit (comentario personal de los cambios)</li>
+    </ul>
+    </p>
+    <img class="noBorder" src="images/herramientas/git_commit.png"/>
+</section>
+
+<section>
+    <h2>Ejercicio: Github I</h2>
+    <p>
+    <ul>
+        <li>Crear un repositorio compartido sin inicializarlo</li>
+        <li>Configurar la información de usuario</li>
+        <li>Guardar el commit en el repositorio remoto</li>
+        <li>En el navegador, visualizar los commits realizados</li>
+    </ul>
+    </p>
+</section>
+
+<section>
+    <h2>Ejercicio: Github II</h2>
+    <p>
+    <ul>
+        <li>Crear un repositorio e Inicializarlo. Agregar una descripción. </li>
+        <li>Configurar el repositorio para trabajar de manera colaborativa con un compañero. (Setting->Collaborators).</li>
+        <li>Clonar el repositorio.</li>
+        <li>Crear un archivo dentro del repositorio.</li>
+        <li>Verificar el estado del repositorio. De ser necesario, agregar el archivo y guardar los cambios de forma local.</li>
+        <li>Guardar los archivos en el repositorio remoto (GitHub).</li>
+        <li>Si el compañero ha realizado un cambio (si está trabajando de manera individual, realizar un cambio desde el navegador, y realizar un commit desde el mismo), actualizar el repositorio local.</li>
+    </ul>
+    </p>
+</section>
+
+<section>
+    <img src="images/herramientas/branches.png"/>
+</section>
+
+<section>
+    <h2>Terminología</h2>
+
+    <p>
+    <ul>
+        <li><b>Repositorio:</b> Colección de todas las referencias, base de datos, objetos y una copia de
+            trabajo.
+        </li>
+        <li><b>Commit:</b> Es una foto del proyecto en un tiempo determinado.</li>
+        <li><b>Branch (rama):</b> Linea de desarrollo del proyecto</li>
+        <li><b>Tag (etiqueta):</b> Una etiqueta a un commit en particular</li>
+        <li><b>Ref o referencia:</b> Cadena de 40 bytes que representa una version/commit.</li>
+        <li><b>Merge:</b> Mezcla codigo de 2 ramas</li>
+    </ul>
+    </p>
+</section>
+
+<section>
+    <h2>Ejercicio: Github III</h2>
+    <p> Hacer un fork de las filminas de clases: <br>
+        <a href="https://github.com/UCC-LabCompu2/filminas"> https://github.com/UCC-LabCompu2/filminas </a></p>
+</section>
+
+<section>
+    <h2>Ejercicio: Github IV</h2>
+    <p> Configurar WebStorm para clonar el repositorio al que se le realizo el Fork <br>
+        https://github.com/UCC-LabCompu2/filminas.git</p>
+</section>
+
+<section data-background="images/herramientas/SOFTsubversionado.png">
+    <h2>Software para VCS</h2>
+    <p>
+    <ul>
+        <li>GitHub for windows</li>
+        <li>Tortoise</li>
+        <li>SourceTree (BitBucket)</li>
+        <li>Linea de Comandos</li>
+        <li>GitKraken</li>
+    </ul>
+    </p>
+</section>
+
+<section>
+    <img src="images/herramientas/gitCommands.jpg"/>
+</section>
+
+<section>
+    <img src="images/herramientas/comicVersionado.png"/>
+</section>
+<section>
+    <h4>http://ucc-labcompu2.github.io/filminas/</h4>
+</section>
+<section>
+    <img class="noBorder" src="images/herramientas/Fire-commit-push.jpg" style="height: 650px"/>
+</section>
+
+<section>
+    <h2>¿Dudas, Preguntas, Comentarios?</h2>
+    <img class="noBorder" src="images/pregunta.gif" style="width:30%;border-radius: 20%;">
+</section>
+
+<include src="../templates/footer.html"></include>
