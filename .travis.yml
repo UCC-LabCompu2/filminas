@@ -13,4 +13,5 @@ script:
   - chmod 600 /tmp/deploy_key
   - eval "$(ssh-agent -s)"
   - ssh-add /tmp/deploy_key
-  - node ./node_modules/gulp/bin/gulp.js deploy
+  - git remote set-url origin git@github.com:UCC-LabCompu2/filminas.git
+  - gulp deploy
