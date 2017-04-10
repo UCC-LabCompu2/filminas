@@ -58,6 +58,102 @@
 </section>
 
 <section>
+    <h2>CSS: Sintaxis</h2>
+    <img src="images/html/css-sintaxis.png" class="noBorder">
+</section>
+
+<section>
+    <h2>Formar de Agregar Stylos</h2>
+    <ul>
+        <li>Estilo en Linea</li>
+        <li>Incrustando una Hoja de Estilo</li>
+        <li>Enlazando una hoja de Estilo Externa</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Estilo en Linea</h2>
+    <ul>
+        <li>Se usa el atributo "style" para definir como la etiqueta debe mostrarse.</li>
+        <li>Ejemplo: <br>
+            &lt;h1 style="color: red; font-type: helvetica; font-size: 2em"&gt;
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2>Hoja de Estilo Incrustada</h2>
+    <ul>
+        <li>Se incorpora en &lt;head&gt;</li>
+        <li> Se describe: <br>
+<pre><code><style>
+    Selector{propiedad: valor;}
+    </style>
+</code></pre>
+    <br>
+            Ejemplo:
+<pre><code><style>
+    h1{color:#333333; font-weight:bold; margin-left:15px; }</style>
+</code></pre></li>
+    </ul>
+</section>
+
+<section>
+    <h2>Propiedades tipográficas</h2>
+    <ul style="font-size: 0.8em">
+        <li><b>font-family:</b> se define tipografía por orden de prioridad</li>
+        <li><b>font-size:</b> Se define tamano</li>
+        <li><b>font-style:</b> italic, normal </li>
+        <li><b>font-weight:</b> bold, normal, ultrabold, o números 100,200,300 </li>
+        <li><b>color:</b> nombre, hexadecimal, rgb </li>
+        <li><b>letter-spacing:</b> interletrado </li>
+        <li><b>world-spacing:</b> espacio entre palabras </li>
+        <li><b>line-height:</b> tamano del renglon (altura de línea)</li>
+        <li><b>text-align:</b> right, left, center </li>
+        <li><b>text-decoration:</b> underline, line-through, none </li>
+        <li><b>text-indent:</b> sangria </li>
+        <li><b>text-transform:</b> uppercase, lowercase </li>
+    </ul>
+</section>
+
+<section>
+    <h2>Colores</h2>
+    <ul>
+        <li>Por nombre: <br>
+            &lt;h1 style="color: red&gt;
+        </li>
+        <li>Hexadecimal: <br>
+            &lt;h1 style="color: #CA98E3&gt; <br>
+            <a href="http://html-color-codes.info/codigos-de-colores-hexadecimales" target="_blank"> Colores Hexadecimales</a>
+        </li>
+        <li>RGB: <br>
+            &lt;h1 style="color: rgb(205, 92, 92)&gt;
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2> ¿Como Escribir un Estilo? </h2>
+
+    Obviamente, con el teclado xD. Bue, hablando en serio, hay 3 formas:
+    <br>
+    <ol style="width:80%;">
+        <li>
+            <b>por Tag</b>
+            <pre><code class="css">{nombreEstilo: valor;}</code></pre>
+        </li>
+        <li>
+            <b>por ID</b>
+            <pre><code class="css">#nombreID {nombreEstilo: valor;}</code></pre>
+        </li>
+        <li>
+            <b>por Clase</b>
+            <pre><code class="css">.nombreClass {nombreEstilo: valor;}</code></pre>
+        </li>
+    </ol>
+</section>
+
+<section>
     <h2>CCS3</h2>
     Buenas Practicas:
     <ul>
@@ -88,57 +184,6 @@
     </ul>
 </section>
 
-<section>
-    <h2>Formar de Agregar Stylos</h2>
-    <ul>
-        <li>Estilo en Linea</li>
-        <li>Incrustando una Hoja de Estilo</li>
-        <li>Enlazando una hoja de Estilo Externa</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Estilo en Linea</h2>
-    <ul>
-        <li>Se usa el atributo "style" para definir como la etiqueta debe mostrarse.</li>
-        <li>Ejemplo: <br>
-            &lt;h1 style="color: red; font-type: helvetica; font-size: 2em"&gt;
-        </li>
-    </ul>
-</section>
-
-<section>
-    <h2>Colores</h2>
-    <ul>
-        <li>Por nombre: <br>
-            &lt;h1 style="color: red&gt;
-        </li>
-        <li>Hexadecimal: <br>
-            &lt;h1 style="color: #CA98E3&gt; <br>
-            <a href="http://html-color-codes.info/codigos-de-colores-hexadecimales" target="_blank"> Colores Hexadecimales</a>
-        </li>
-        <li>RGB: <br>
-            &lt;h1 style="color: rgb(205, 92, 92)&gt;
-        </li>
-    </ul>
-</section>
-
-<section>
-    <h2>Hoja de Estilo Incrustada</h2>
-    <ul>
-        <li>Se incorpora en &lt;head&gt;</li>
-        <li> Se describe: <br>
-            <pre><code>Selector{propiedad: valor;}</code></pre>
-            <br>
-            Ejemplo:
-            <pre><code>h1{color:#333333; font-weight:bold; margin-left:15px; }</code></pre></li>
-    </ul>
-</section>
-
-<section>
-    <h2>CSS: Sintaxis</h2>
-    <img src="images/html/css-sintaxis.png" class="noBorder">
-</section>
 
 <section>
     <h2>Ejercicio: CV</h2>
@@ -180,27 +225,6 @@
 </code></pre>
         </li>
     </ul>
-</section>
-
-<section>
-    <h2> ¿Como Escribir un Estilo? </h2>
-
-    Obviamente, con el teclado xD. Bue, hablando en serio, hay 3 formas:
-    <br>
-    <ol style="width:80%;">
-        <li>
-            <b>por Tag</b>
-            <pre><code class="css">{nombreEstilo: valor;}</code></pre>
-        </li>
-        <li>
-            <b>por ID</b>
-            <pre><code class="css">#nombreID {nombreEstilo: valor;}</code></pre>
-        </li>
-        <li>
-            <b>por Clase</b>
-            <pre><code class="css">.nombreClass {nombreEstilo: valor;}</code></pre>
-        </li>
-    </ol>
 </section>
 
 <section>
