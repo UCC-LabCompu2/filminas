@@ -194,17 +194,36 @@
 </section>
 
 <section>
+    <h2>Ejercicio: Propiedades tipográficas</h2>
+    <p>Escribe un código con la siguiente estructura:</p>
+<pre><code><h1>Titulo 1</h1>
+<p>Este es el primer párrafo</p>
+<h1>Titulo 2</h1>
+<p>Este es el SeGuNdO PáRRaFo</p>
+</code></pre>
+    <p>Empleando estilo en línea</p>
+    <ul style="font-size: 0.8em">
+        <li>Utilice <b>font-family</b>, <b>font-size</b> y <b>font-style</b> para el primer titulo </li>
+        <li>Utilice <b>font-weight</b>, <b>text-decoration</b> y <b>color</b> para el segundo titulo </li>
+        <li>Emplee <b>letter-spacing</b>, <b>line-height</b> y <b>text-align</b> para el primer párrafo</li>
+        <li>Emplee <b>world-spacing</b>, <b>text-indent</b> y <b>text-transform</b> para el segundo párrafo</li>
+        <li> underline, line-through, none </li>
+        <li>
+    </ul>
+</section>
+
+<section>
     <h2> ¿Como Escribir un Estilo? </h2>
 
     Obviamente, con el teclado xD. Bue, hablando en serio, hay 3 formas:
     <br>
     <ol style="width:80%;">
         <li>
-            <b>por Tag</b>
-            <pre><code class="css">{nombreEstilo: valor;}</code></pre>
+            <b>por Tag</b> (se aplica a TODOS los selectores)
+            <pre><code class="css">selector{nombreEstilo: valor;}</code></pre>
         </li>
         <li>
-            <b>por ID</b>
+            <b>por ID</b> (para identificar elementos unívocos)
             <pre><code class="css">#nombreID {nombreEstilo: valor;}</code></pre>
         </li>
         <li>
@@ -212,6 +231,66 @@
             <pre><code class="css">.nombreClass {nombreEstilo: valor;}</code></pre>
         </li>
     </ol>
+</section>
+
+<section>
+    <h2>Ejercicio: Selectores</h2>
+    <p>Escribe un código con la siguiente estructura:</p>
+    <pre><code><h1 id="principal">Titulo 1</h1>
+<p>Este es el primer párrafo</p>
+<h1 class="mi-titulo">Titulo 2</h1>
+<p>Este es el SeGuNdO PáRRaFo</p>
+</code></pre>
+    <p>Empleando una hoja de estilo incrustada</p>
+    <ul style="font-size: 0.8em">
+        <li>A todas las etiquetas &lt;p&gt; aplicar el mismo tipo de tipografía y color.</li>
+        <li>Para el titulo <b>#principal</b> emplear un font-size</li>
+        <li>A la clase <b>.mi-titulo</b> emplee un text-decortation</li>
+    </ul>
+</section>
+
+<section>
+    <h2> Descendientes </h2>
+    <ul>
+        <li>
+            <b>selectores:</b> <br> Ej.
+<pre><code class="css">ul li{nombreEstilo: valor;}</code></pre>
+        </li>
+        <li>
+            <b>de ID:</b> Ej.
+<pre><code class="css">#nombreID h1{nombreEstilo: valor;}</code></pre>
+        </li>
+        <li>
+            <b>de Clase:</b>
+<pre><code class="css">.nombreClass p{nombreEstilo: valor;}</code></pre>
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2>Pseudo Clases</h2>
+    <pre><code>
+                /* unvisited link */
+                a:link {
+                color: #FF0000;
+                }
+
+                /* visited link */
+                a:visited {
+                color: #00FF00;
+                }
+
+                /* mouse over link */
+                a:hover {
+                color: #FF00FF;
+                }
+
+                /* selected link */
+                a:active {
+                color: #0000FF;
+                }
+            </code>
+            </pre>
 </section>
 
 <section>
@@ -245,6 +324,10 @@
     </ul>
 </section>
 
+<section>
+    <h2>Margenes</h2>
+    <img src="images/html/pading_margin.gif" class="noBorder">
+</section>
 
 <section>
     <h2>Ejercicio: CV</h2>
@@ -406,10 +489,6 @@
         distinto a static
     </p>
 </section>
-<section>
-    <h2>Margenes</h2>
-    <img src="images/html/pading_margin.gif" class="noBorder">
-</section>
 
 <section data-background="linear-gradient(to right, red , yellow)">
     <h2>Fondo y Gradientes</h2>
@@ -420,32 +499,6 @@
     <fondo></fondo>
     */
 </code></pre>
-</section>
-
-<section>
-    <h2>Pseudo Clases</h2>
-    <pre><code>
-                /* unvisited link */
-                a:link {
-                color: #FF0000;
-                }
-
-                /* visited link */
-                a:visited {
-                color: #00FF00;
-                }
-
-                /* mouse over link */
-                a:hover {
-                color: #FF00FF;
-                }
-
-                /* selected link */
-                a:active {
-                color: #0000FF;
-                }
-            </code>
-            </pre>
 </section>
 
 <section>
