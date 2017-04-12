@@ -61,7 +61,7 @@
 </section>
 
 <section>
-    <img src="images/html/css3_historia.png" class="noBorder">
+    <img src="images/html/CSS3_historia.png" class="noBorder">
 </section>
 
 <section>
@@ -83,7 +83,10 @@
     <ul>
         <li>Se usa el atributo "style" para definir como la etiqueta debe mostrarse.</li>
         <li>Ejemplo: <br>
-            &lt;h1 style="color: red; font-type: helvetica; font-size: 2em"&gt;
+            <pre><code>
+&lt;h1 style="color: red; font-type: helvetica; font-size: 2em"&gt;
+            </code></pre>
+
         </li>
     </ul>
 </section>
@@ -307,9 +310,16 @@
         <li><b>ex:</b> la altura de la letra x de la fuente del elemento contenedor </li>
         <li><b>ch:</b> la altura de la cifra 0 (cero) de la fuente del elemento contenedor </li>
         <li><b>rem:</b> el tamaño de la fuente del elemento raíz de la página</li>
+        <li><b>vw:</b> % del ancho visible</li>
+        <li><b>vh:</b>  % del alto visible</li>
+        <li><b>vmin:</b>  % del valor menor entre ancho y alto visible</li>
+        <li><b>vmax:</b> % del valor mayor entre ancho y alto visible</li>
     </ul>
-    En la práctica, las unidades relativas más utilizadas son em y rem.
-<br><br>
+    <br>
+    <h3>En la práctica, las unidades relativas más utilizadas son em y rem, y vw y vh.</h3>
+</section>
+
+<section style="font-size: 0.7em">
     Las unidades absolutas disponibles son:
     <ul>
         <li><b>px:</b> píxeles</li>
@@ -441,17 +451,14 @@ lineas */
 </section>
 <section>
     <h2>superposición con z-index</h2>
-    <p>Los elementos con position: absolute; son posicionados mediante
-        top, left... respecto a su ancestro mas secano que este posicionado.</p>
-    <p>Un elemento posicionado es aquel que tenga en su propiedad position algo
-        distinto a static
-    </p>
+    <p>La propiedad z-index indica que elemento va estar posicionado sobre otro elemento.</p>
+    <p>Los elementos con z-index mayor tapan a los elementos con z-index menor   </p>
 </section>
 
 <section>
     <h2>Ejercicio: 2 Columnas</h2>
     <p>Emplear &lt;div&gt; con style para lograr que el estilo del texto quede en 2 columnas fluidas.</p>
-    <ul>
+    <ul style="font-size: 0.9em">
         <li>En la clase <b>WRAP</b>, emplear overflow para indicar al navegador qué es lo que debe hacer
             con el contenido que no cabe dentro de una capa, según las dimensiones que se le han asignado. (visible, hidden, scroll,auto)
         </li>
