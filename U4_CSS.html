@@ -146,13 +146,13 @@
     <ul>
         <li>Se incorpora en &lt;head&gt;</li>
         <li> Se describe: <br>
-<pre><code><style>
+            <pre><code><style>
     Selector{propiedad: valor;}
 </style>
 </code></pre>
-    <br>
+            <br>
             Ejemplo:
-<pre><code><style>
+            <pre><code><style>
     h1{color:#333333; font-weight:bold; margin-left:15px;}
 </style>
 </code></pre></li>
@@ -196,7 +196,7 @@
 <section>
     <h2>Ejercicio: Propiedades tipográficas</h2>
     <p>Escribe un código con la siguiente estructura:</p>
-<pre><code><h1>Titulo 1</h1>
+    <pre><code><h1>Titulo 1</h1>
 <p>Este es el primer párrafo</p>
 <h1>Titulo 2</h1>
 <p>Este es el SeGuNdO PáRRaFo</p>
@@ -254,15 +254,15 @@
     <ul>
         <li>
             <b>selectores:</b> <br> Ej.
-<pre><code class="css">ul li{nombreEstilo: valor;}</code></pre>
+            <pre><code class="css">ul li{nombreEstilo: valor;}</code></pre>
         </li>
         <li>
             <b>de ID:</b> Ej.
-<pre><code class="css">#nombreID h1{nombreEstilo: valor;}</code></pre>
+            <pre><code class="css">#nombreID h1{nombreEstilo: valor;}</code></pre>
         </li>
         <li>
             <b>de Clase:</b>
-<pre><code class="css">.nombreClass p{nombreEstilo: valor;}</code></pre>
+            <pre><code class="css">.nombreClass p{nombreEstilo: valor;}</code></pre>
         </li>
     </ul>
 </section>
@@ -339,12 +339,12 @@
     <img src="images/html/pading_margin.gif" class="noBorder">
 </section>
 
-<section>
+<section style="font-size: 0.7em">
     <h2> Margin & Padding </h2>
     <ol style="width:80%;">
         <li>
             Establecerlos por separado
-<pre><code class="css">div{
+            <pre><code class="css">div{
     margin-top: 15px;
     margin-right: 20px;
     margin-bottom: 10px;
@@ -353,24 +353,32 @@
         </li>
         <li>
             Establecer top-bottom & right-left:
-<pre><code class="css">div{margin: 15px 20px;}</code></pre>
+            <pre><code class="css">div{margin: 15px 20px;}</code></pre>
         </li>
         <li>
             Establecer todo junto:
-<pre><code class="css">div{margin: 15px 20px 10px 5px;}</code></pre>
+            <pre><code class="css">div{margin: 15px 20px 10px 5px;}</code></pre>
+        </li>
+        <li>
+            Margenes iguales:
+            <pre><code class="css">div{margin: 15px;}</code></pre>
+        </li>
+        <li>
+            Establecer top, right/left, bottom:
+            <pre><code class="css">div{margin: 15px 20px 5px;}</code></pre>
         </li>
     </ol>
 </section>
 
 <section>
-    <h2> Borde </h2>
-    <ol style="width:80%;">
-        <li>
-            .estilo-borde {border: grosor tipo color}
-            <pre><code class="css">.estilo-borde{2px solid blue;}
+<h2> Borde </h2>
+<ul>
+    <li>
+    .estilo-borde {border: grosor tipo color}
+    <pre><code class="css">.estilo-borde{2px solid blue;}
 /*dotted, dashed, solid, double, groove, ridge, inset, outset*/</code></pre>
-        </li>
-    </ol>
+    </li>
+</ul>
 </section>
 
 <section data-background="linear-gradient(to right, red , yellow)">
