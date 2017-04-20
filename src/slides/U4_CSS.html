@@ -61,7 +61,7 @@
 </section>
 
 <section>
-    <img src="images/html/css3_historia.png" class="noBorder">
+    <img src="images/html/CSS3_historia.png" class="noBorder">
 </section>
 
 <section>
@@ -70,7 +70,7 @@
 </section>
 
 <section>
-    <h2>Formar de Agregar Stylos</h2>
+    <h2>Formar de Agregar Estilos</h2>
     <ul>
         <li>Estilo en Linea</li>
         <li>Incrustando una Hoja de Estilo</li>
@@ -83,7 +83,10 @@
     <ul>
         <li>Se usa el atributo "style" para definir como la etiqueta debe mostrarse.</li>
         <li>Ejemplo: <br>
-            &lt;h1 style="color: red; font-type: helvetica; font-size: 2em"&gt;
+            <pre><code>
+&lt;h1 style="color: red; font-type: helvetica; font-size: 2em"&gt;
+            </code></pre>
+
         </li>
     </ul>
 </section>
@@ -94,15 +97,22 @@
         <li>Se incorpora en &lt;head&gt;</li>
         <li> Se describe: <br>
             <pre><code><style>
-    Selector{propiedad: valor;}
+    Selector {
+        propiedad: valor;
+    }
 </style>
 </code></pre>
             <br>
             Ejemplo:
             <pre><code><style>
-    h1{color:#333333; font-weight:bold; margin-left:15px;}
+    h1 {
+        color: #333333;
+        font-weight: bold;
+        margin-left: 15px;
+    }
 </style>
-</code></pre></li>
+</code></pre>
+        </li>
     </ul>
 </section>
 
@@ -111,16 +121,16 @@
     <ul style="font-size: 0.8em">
         <li><b>font-family:</b> se define tipografía por orden de prioridad</li>
         <li><b>font-size:</b> Se define tamaño</li>
-        <li><b>font-style:</b> italic, normal </li>
-        <li><b>font-weight:</b> bold, normal, ultrabold, o números 100,200,300 </li>
-        <li><b>color:</b> nombre, hexadecimal, rgb </li>
-        <li><b>letter-spacing:</b> interletrado </li>
-        <li><b>world-spacing:</b> espacio entre palabras </li>
+        <li><b>font-style:</b> italic, normal</li>
+        <li><b>font-weight:</b> bold, normal, ultrabold, o números 100,200,300</li>
+        <li><b>color:</b> nombre, hexadecimal, rgb</li>
+        <li><b>letter-spacing:</b> interletrado</li>
+        <li><b>world-spacing:</b> espacio entre palabras</li>
         <li><b>line-height:</b> tamaño del renglon (altura de línea)</li>
-        <li><b>text-align:</b> right, left, center </li>
-        <li><b>text-decoration:</b> underline, line-through, none </li>
-        <li><b>text-indent:</b> sangria </li>
-        <li><b>text-transform:</b> uppercase, lowercase </li>
+        <li><b>text-align:</b> right, left, center</li>
+        <li><b>text-decoration:</b> underline, line-through, none</li>
+        <li><b>text-indent:</b> sangria</li>
+        <li><b>text-transform:</b> uppercase, lowercase</li>
     </ul>
 </section>
 
@@ -132,7 +142,8 @@
         </li>
         <li>Hexadecimal: <br>
             &lt;h1 style="color: #CA98E3&gt; <br>
-            <a href="http://html-color-codes.info/codigos-de-colores-hexadecimales" target="_blank"> Colores Hexadecimales</a>
+            <a href="http://html-color-codes.info/codigos-de-colores-hexadecimales" target="_blank"> Colores
+                Hexadecimales</a>
         </li>
         <li>RGB: <br>
             &lt;h1 style="color: rgb(205, 92, 92)&gt;
@@ -150,11 +161,11 @@
 </code></pre>
     <p>Empleando estilo en línea</p>
     <ul style="font-size: 0.8em">
-        <li>Utilice <b>font-family</b>, <b>font-size</b> y <b>font-style</b> para el primer titulo </li>
-        <li>Utilice <b>font-weight</b>, <b>text-decoration</b> y <b>color</b> para el segundo titulo </li>
+        <li>Utilice <b>font-family</b>, <b>font-size</b> y <b>font-style</b> para el primer titulo</li>
+        <li>Utilice <b>font-weight</b>, <b>text-decoration</b> y <b>color</b> para el segundo titulo</li>
         <li>Emplee <b>letter-spacing</b>, <b>line-height</b> y <b>text-align</b> para el primer párrafo</li>
         <li>Emplee <b>world-spacing</b>, <b>text-indent</b> y <b>text-transform</b> para el segundo párrafo</li>
-        <li> underline, line-through, none </li>
+        <li> underline, line-through, none</li>
         <li>
     </ul>
 </section>
@@ -216,38 +227,34 @@
 
 <section>
     <h2>Ejercicio: Estilo de Listas</h2>
-    <p>
     <ul>
-        <li>Cree 2 listas no ordenadas y agregue estilos para visualizarla con círculos y con cuadrados. </li>
+        <li>Cree 2 listas no ordenadas y agregue estilos para visualizarla con círculos y con cuadrados.</li>
         <li>Cree 2 listas ordenadas y agregue estilos para visualizarla con números romanos y letras griegas.</li>
     </ul>
-    </p>
 </section>
 
 <section>
     <h2>Pseudo Clases</h2>
-    <pre><code>
-                /* unvisited link */
-                a:link {
-                color: #FF0000;
-                }
+    <pre><code>/* unvisited link */
+a:link {
+    color: #FF0000;
+}
 
-                /* visited link */
-                a:visited {
-                color: #00FF00;
-                }
+/* visited link */
+a:visited {
+    color: #00FF00;
+}
 
-                /* mouse over link */
-                a:hover {
-                color: #FF00FF;
-                }
+/* mouse over link */
+a:hover {
+    color: #FF00FF;
+}
 
-                /* selected link */
-                a:active {
-                color: #0000FF;
-                }
-            </code>
-            </pre>
+/* selected link */
+a:active {
+    color: #0000FF;
+}
+</code></pre>
 </section>
 
 <section>
@@ -304,12 +311,19 @@
     Las unidades relativas disponibles son:
     <ul>
         <li><b>em:</b> el tamaño de fuente del elemento contenedor</li>
-        <li><b>ex:</b> la altura de la letra x de la fuente del elemento contenedor </li>
-        <li><b>ch:</b> la altura de la cifra 0 (cero) de la fuente del elemento contenedor </li>
+        <li><b>ex:</b> la altura de la letra x de la fuente del elemento contenedor</li>
+        <li><b>ch:</b> la altura de la cifra 0 (cero) de la fuente del elemento contenedor</li>
         <li><b>rem:</b> el tamaño de la fuente del elemento raíz de la página</li>
+        <li><b>vw:</b> % del ancho visible</li>
+        <li><b>vh:</b> % del alto visible</li>
+        <li><b>vmin:</b> % del valor menor entre ancho y alto visible</li>
+        <li><b>vmax:</b> % del valor mayor entre ancho y alto visible</li>
     </ul>
-    En la práctica, las unidades relativas más utilizadas son em y rem.
-<br><br>
+    <br>
+    <h3>En la práctica, las unidades relativas más utilizadas son em y rem, y vw y vh.</h3>
+</section>
+
+<section style="font-size: 0.7em">
     Las unidades absolutas disponibles son:
     <ul>
         <li><b>px:</b> píxeles</li>
@@ -354,30 +368,30 @@
 </section>
 
 <section>
-<h2> Borde </h2>
-<ul>
-    <li>
-    .estilo-borde {border: grosor tipo color}
-    <pre><code class="css">.estilo-borde{2px solid blue;}
+    <h2> Borde </h2>
+    <ul>
+        <li>
+            .estilo-borde {border: grosor tipo color}
+            <pre><code class="css">.estilo-borde{2px solid blue;}
 /*dotted, dashed, solid, double, groove, ridge, inset, outset*/</code></pre>
-    </li>
-</ul>
+        </li>
+    </ul>
 </section>
 
 <section data-background="linear-gradient(to right, red , yellow)">
     <h2>Fondo y Gradientes</h2>
-    <pre><code>
-    background: red; /* solo color */
-    background: linear-gradient(to right, red , yellow); /* gradiente */
-    background: url("fondo.png"); /* imagen de
-    <fondo></fondo>
-    */
+    <pre><code>/* solo color */
+background: red;
+/* gradiente */
+background: linear-gradient(to right, red , yellow);
+/* imagen de fondo    */
+background: url("fondo.png");
 </code></pre>
 </section>
 
 <section>
     <h2>Comentario</h2>
-<pre><code>
+    <pre><code data-trim data-noescape class="css">
 /* Este es un
 comentario CSS de varias
 lineas */
@@ -387,16 +401,20 @@ lineas */
 <section>
     <h2>Ejercicio: CV</h2>
     <p>Diseñe un CV y agregue estilos empleando una hoja de estilo incrustada:</p>
-    <ul>
-        <li>Emplear &lt;div&gt; para la estructura de la página. Agregue atributos de margin y padding. </li>
+    <ul style="font-size: 0.7em">
+        <li>Emplear &lt;div&gt; para la estructura de la página. Agregue atributos de margin y padding.</li>
         <li>Agregar una imagen en el primer &lt;div&gt; y alinee a la izquierda</li>
-        <li>Emplear &lt;h1&gt; para el nombre y &lt;h2&gt; para la ocupación </li>
+        <li>Emplear &lt;h1&gt; para el nombre y &lt;h2&gt; para la ocupación</li>
         <li>Dentro de los &lt;div&gt;, utilizar &lt;h3&gt; para cada título y &lt;p&gt; para la descripción</li>
-        <li>Centrar todo el contenido del body. </li>
-        <li>Agregar <a href="https://fonts.google.com/" target="_blank"> fuentes de google </a> para personalizar la página </li>
-        <li>Agregar background al body, que posea <a href="https://www.w3schools.com/csS/css3_gradients.asp" target="_blank">gradiente</a> </li>
+        <li>Centrar todo el contenido del body.</li>
+        <li>Agregar <a href="https://fonts.google.com/" target="_blank"> fuentes de google </a> para personalizar la
+            página
+        </li>
+        <li>Agregar background al body, que posea <a href="https://www.w3schools.com/csS/css3_gradients.asp"
+                                                     target="_blank">gradiente</a></li>
         <li>Redondear las esquinas de la imagen para dejarla circular. Redondear las esquinas de los &lt;div&gt;
-            y elegir un color y un estilo </li>
+            y elegir un color y un estilo
+        </li>
         <li>Cambiar el favicon</li>
     </ul>
 </section>
@@ -441,21 +459,20 @@ lineas */
 </section>
 <section>
     <h2>superposición con z-index</h2>
-    <p>Los elementos con position: absolute; son posicionados mediante
-        top, left... respecto a su ancestro mas secano que este posicionado.</p>
-    <p>Un elemento posicionado es aquel que tenga en su propiedad position algo
-        distinto a static
-    </p>
+    <p>La propiedad z-index indica que elemento va estar posicionado sobre otro elemento.</p>
+    <p>Los elementos con z-index mayor tapan a los elementos con z-index menor </p>
 </section>
 
 <section>
     <h2>Ejercicio: 2 Columnas</h2>
     <p>Emplear &lt;div&gt; con style para lograr que el estilo del texto quede en 2 columnas fluidas.</p>
-    <ul>
+    <ul style="font-size: 0.9em">
         <li>En la clase <b>WRAP</b>, emplear overflow para indicar al navegador qué es lo que debe hacer
-            con el contenido que no cabe dentro de una capa, según las dimensiones que se le han asignado. (visible, hidden, scroll,auto)
+            con el contenido que no cabe dentro de una capa, según las dimensiones que se le han asignado. (visible,
+            hidden, scroll,auto)
         </li>
-        <li>En la clase <b>SIDEBAR</b>, se determinara el ancho y el float (para posicionar los elementos de forma flotante)
+        <li>En la clase <b>SIDEBAR</b>, se determinara el ancho y el float (para posicionar los elementos de forma
+            flotante)
         </li>
         <li>En la clase <b>MAIN</b>, se determinara el ancho y el float hacia la derecha.
         </li>
@@ -466,8 +483,7 @@ lineas */
     <h2>Hoja de Estilo Externa</h2>
     <ul>
         <li>En el &lt;head&gt; se emplea un link a un archivo externo<br>
-            <pre><code>
-    <link rel="stylesheet" href="estilos.css" type="text/css">
+            <pre><code><link rel="stylesheet" href="estilos.css" type="text/css">
 </code></pre>
         </li>
     </ul>
@@ -536,46 +552,46 @@ lineas */
 
 <section>
     <h2>Transitions</h2>
-    <pre><code>
-                div {
-                width: 100px;
-                height: 100px;
-                background: red;
-                -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-                transition: width 2s;
-                }
+    <pre><code data-trim data-noescape>
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+}
 
-                div:hover {
-                width: 300px;
-                }
+    div:hover {
+    width: 300px;
+}
             </code></pre>
     <div class="divTran"></div>
 </section>
 
 <section>
     <h2>Transitions 2</h2>
-    <pre><code>
-                div {
-                width: 100px;
-                height: 100px;
-                background: red;
-                -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
-                transition: width 2s, height 2s, transform 2s;
-                }
+    <pre><code data-trim data-noescape>
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
 
-                div:hover {
-                width: 200px;
-                height: 200px;
-                -webkit-transform: rotate(180deg); /* Safari */
-                transform: rotate(180deg);
-                }
+div:hover {
+    width: 200px;
+    height: 200px;
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
+}
             </code></pre>
     <div class="divTran2"></div>
 </section>
 
 <section>
     <h2>FavIcon</h2>
-    <pre><code>
+    <pre><code data-trim>
     <link rel="shortcut icon" href="/favicon.ico">
 </code></pre>
 </section>
