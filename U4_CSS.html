@@ -480,6 +480,7 @@ lineas */
         <li>relative</li>
         <li>fixed</li>
         <li>absolute</li>
+        <li>inherit</li>
     </ul>
 </section>
 <section>
@@ -492,16 +493,28 @@ lineas */
         Por defecto, todos los elementos HTML son Static.
     </p>
 </section>
+
 <section>
     <h2>Position: relative;</h2>
     <p> El elemento es posicionado relativo respecto a su posición normal.</p>
-    <p>Los valores top, left, right, bottom lo mueven respecto a su posición original</p>
+    <p> Los valores top, left, right, bottom lo mueven respecto a su posición original</p>
+    <p> Permite que un elemento se desplace respecto a lo que hubiera sido su posición normal;
+        el resto de elementos continúan en su posición ignorando al que se desplaza,
+        lo que puede crear superposiciones; el espacio libre que deja el elemento queda libre.
+    </p>
 </section>
+
 <section>
-    <h2>position: fixed;</h2>
-    <p> El elemento "fixed" es posicionado respecto al area visible</p>
+    <h2>Position: fixed;</h2>
+    <p> El elemento "fixed" es posicionado respecto al area visible.</p>
     <p>Los valores top, left, right, bottom lo mueven respecto a su posición original</p>
+    <p> Permite que un elemento se desplace respecto al origen de coordenadas del primer elemento
+        contenedor posicionado ó respecto a la esquina superior izquierda de la ventana de visualización;
+        el resto de elementos actúan como si el desplazado no existiera,
+        por lo que su espacio será ocupado por otros elementos; puede crear superposiciones.
+    </p>
 </section>
+
 <section>
     <h2>position: absoluto;</h2>
     <p>Los elementos con position: absolute; son posicionados mediante
@@ -509,7 +522,20 @@ lineas */
     <p>Un elemento posicionado es aquel que tenga en su propiedad position algo
         distinto a static
     </p>
+    <p>
+    Permite fijar un elemento en una posición respecto al origen de coordenadas del primer elemento
+    contenedor posicionado ó respecto a la esquina superior de la ventana de visualización;
+    el elemento se mantendrá en la ventana de visualización o viewport,
+    siempre en una misma posición aunque el usuario se desplace por la web haciendo scroll.
+    </p>
 </section>
+
+<section>
+    <h2>position: inherit;</h2>
+    <p> Se heredan las características del elemento padre.</p>
+</section>
+
+
 <section>
     <h2>superposición con z-index</h2>
     <p>La propiedad z-index indica que elemento va estar posicionado sobre otro elemento.</p>
@@ -530,6 +556,11 @@ lineas */
         <li>En la clase <b>MAIN</b>, se determinara el ancho y el float hacia la derecha.
         </li>
     </ul>
+</section>
+
+<section>
+    <h2>Ejercicio: 2 Columnas</h2>
+    <img src="images/html/2columnas.png">
 </section>
 
 <section>
