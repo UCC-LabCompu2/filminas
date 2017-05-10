@@ -147,33 +147,28 @@
 
 <section>
     <h2>Características</h2>
-    <p>
     <ul>
         <li>Orientado a Objetos</li>
         <li>Lenguaje Interpretado</li>
         <li>Tipado dinámico</li>
     </ul>
-    </p>
 </section>
 
 <section>
     <h2>Incluir JavaScript</h2>
-    <p>
     <ul>
         <li>En el mismo documento, agregando &lt;script</li>
         <li>En un archivo externo <br>
-            <pre><code>
-    <script type="text/javascript" src="/js/codigo.js"></script>
+            <pre><code data-trim >
+<script type="text/javascript" src="/js/codigo.js"></script>
 </code></pre>
         </li>
         <li>En linea</li>
     </ul>
-    </p>
 </section>
 
 <section>
     <h2>Sintaxis</h2>
-    <p>
         Conjunto de reglas que deben seguirse al escribir el código:
     <ul>
         <li>No se tienen en cuenta los espacios en blanco y las nuevas líneas.</li>
@@ -181,12 +176,11 @@
         <li>No se define el tipo de las variables.</li>
         <li>Se pueden incluir comentarios.</li>
     </ul>
-    </p>
 </section>
 
 <section>
     <h1>Variables</h1>
-    <pre><code>
+    <pre><code data-trim>
     var num;
     var texto = "hola";
     num = 5;
@@ -199,21 +193,21 @@
 
 <section>
     <h1>Funciones</h1>
-    <pre><code>
-    function miFuncion(parametro1, parametro2){
+    <pre><code data-trim>
+function miFuncionSuma(parametro1, parametro2){
     var res;
     res = parametro1 + parametro2;
     return res;
-    }
+}
 </code></pre>
 </section>
 
 <section>
     <h1>Condicionales</h1>
-    <pre><code>
-    if(saludo == "Whatsup!"){
+    <pre><code data-trim>
+if(saludo == "Whatsup!"){
     console.log("Whatsup!");
-    }
+}
 </code></pre>
     <ul>
         <li><b>==</b> iguales</li>
@@ -228,42 +222,49 @@
 
 <section>
     <h1>Bucles</h1>
-    <pre><code>
-    for(var i=0; i<20;i++){
+    <pre><code data-trim>
+for(var i=0; i<20;i++){
     console.log("El valor es " + i);
-    }
+}
 </code></pre>
-    <pre><code>
-        var i = 0;
-        while(i < 20){
-        console.log("El valor es " + i);
-        i++;
-        }
+    <pre><code data-trim>
+var i = 0;
+while(i < 20){
+    console.log("El valor es " + i);
+    i++;
+}
     </code></pre>
 </section>
 
 <section>
     <h1>Switch Case</h1>
-    <pre><code>
-    switch(nombre){
+    <pre><code data-trim>
+switch(nombre){
     case "Juan":
-    console.log("Se llama Juan");
-    break;
+        console.log("Se llama Juan");
+        break;
     case "Pedro":
-    console.log("Se llama Pedro");
-    break;
+        console.log("Se llama Pedro");
+        break;
     case "Pancracio":
-    console.log("Se llama Pancracio");
-    break;
-    }
+        console.log("Se llama Pancracio");
+        break;
+}
 </code></pre>
 </section>
 
 <section>
     <h1>Funciones Callback</h1>
-    <pre><code>
-    setInterval(function(){ alert("Hello"); }, 3000);
+    <pre><code data-trim>
+setInterval(function(){ alert("Hello"); }, 3000);
 </code></pre>
+    <br> o <br>
+    <pre><code data-trim>
+function miFunc(){
+    alert("Hello");
+}
+setInterval(miFunc, 3000);
+    </code></pre>
 </section>
 
 <section>
@@ -290,7 +291,7 @@
         <li><b>OnChange:</b> Se produce cuando se cambia algo en un elemento de formulario, y se pierde foco.
         </li>
     </ul>
-    <pre style="width: 112%;"><code>
+    <pre style="width: 112%;"><code data-trim>
     <input type="text" onselect="alert('Se ejecuto onSelect')">
     <input type="text" value="Cambiar Valor" onchange="alert('Se ejecuto onChange')">
 </code></pre>
@@ -321,7 +322,7 @@
 
 <section>
     <h2>Documentar Código</h2>
-    <pre><code>
+    <pre><code data-trim>
     /**
     * Descripción
     * @method Nombre de la función
@@ -427,7 +428,7 @@
 
 <section>
     <h2>Objeto: Event</h2>
-    <pre><code>function miFuncion(event){}</code></pre>
+    <pre><code data-trim>function miFuncion(event){}</code></pre>
     <br>
     Permite recibir propiedades del evento:<br> elemento en el que ocurre, el estado de las teclas, la posición
     del mouse, estado de los botones.
@@ -480,7 +481,7 @@
 
 <section>
     <h2>Definir JavaScript desde un archivo Externo</h2>
-    <pre><code>
+    <pre><code data-trim>
     &lt;script type="text/javascript" src="miCodigo.js"&gt;&lt;/script&gt;
 </code></pre>
 </section>
@@ -488,9 +489,10 @@
 <section>
     <h2>Ejemplo Funcion JavaScript</h2>
 
-    <pre style="width: 113%"><code>function numAleatorio(a,b) {
+    <pre style="width: 113%"><code data-trim>
+function numAleatorio(a,b) {
     document.prueba1.textoP.value = Math.round(Math.random()*(b-a)+parseInt(a));
-    }
+}
 </code></pre>
     <form name="prueba1">
         <input style="font-size: 48px;text-align: center;" type="text" size="1" onclick="numAleatorio(1,10)"
@@ -525,36 +527,32 @@
 
 <section>
     <h2>Ejemplo Conversion de Unidades</h2>
-    <pre><code>
-    function cambioUnidades(valor, unidad) {
+    <pre><code data-trim>
+function cambioUnidades(valor, unidad) {
     if(isNaN(valor)){
-    alert("Se ingreso un valor invalido en " + unidad);
-    document.lasUnidades.yarda.value = "";
-    document.lasUnidades.metro.value = "";
-    document.lasUnidades.pulgada.value = "";
-    document.lasUnidades.pie.value = "";
+        alert("Se ingreso un valor invalido en " + unidad);
+        document.lasUnidades.yarda.value = "";
+        document.lasUnidades.metro.value = "";
+        document.lasUnidades.pulgada.value = "";
+        document.lasUnidades.pie.value = "";
+    } else if (unidad == "metro") {
+        document.lasUnidades.pulgada.value = valor * 39.3701;
+        document.lasUnidades.pie.value = valor * 3.28084;
+        document.lasUnidades.yarda.value = valor * 1.09361;
+    } else if (unidad == "pulgada") {
+        document.lasUnidades.metro.value = valor * 0.0254;
+        document.lasUnidades.pie.value = valor * 0.08333;
+        document.lasUnidades.yarda.value = valor * 0.027778;
+    } else if (unidad == "pie") {
+        document.lasUnidades.metro.value = valor * 0.3048;
+        document.lasUnidades.pulgada.value = valor * 12;
+        document.lasUnidades.yarda.value = valor * 0.333333;
+    } else if (unidad == "yarda") {
+        document.lasUnidades.metro.value = valor * 0.9144;
+        document.lasUnidades.pulgada.value = valor * 36;
+        document.lasUnidades.pie.value = valor * 3;
     }
-    else if (unidad == "metro") {
-    document.lasUnidades.pulgada.value = valor * 39.3701;
-    document.lasUnidades.pie.value = valor * 3.28084;
-    document.lasUnidades.yarda.value = valor * 1.09361;
-    }
-    else if (unidad == "pulgada") {
-    document.lasUnidades.metro.value = valor * 0.0254;
-    document.lasUnidades.pie.value = valor * 0.08333;
-    document.lasUnidades.yarda.value = valor * 0.027778;
-    }
-    else if (unidad == "pie") {
-    document.lasUnidades.metro.value = valor * 0.3048;
-    document.lasUnidades.pulgada.value = valor * 12;
-    document.lasUnidades.yarda.value = valor * 0.333333;
-    }
-    else if (unidad == "yarda") {
-    document.lasUnidades.metro.value = valor * 0.9144;
-    document.lasUnidades.pulgada.value = valor * 36;
-    document.lasUnidades.pie.value = valor * 3;
-    }
-    }
+}
 </code></pre>
 </section>
 
@@ -592,15 +590,17 @@
 
 <section>
     <h2>JavaScript: Displayed</h2>
-    <pre><code>function seMuestra(nombre) {
+    <pre><code data-trim>
+function seMuestra(nombre) {
     if (nombre == "Vinicial" || nombre == "Vfinal") {
-    document.getElementById('variasCosas1').style.display = 'block';
+        document.getElementById('variasCosas1').style.display = 'block';
     } else if (nombre == "NingunaV") {
-    document.getElementById('variasCosas1').style.display = 'none';
+        document.getElementById('variasCosas1').style.display = 'none';
     } else if (nombre == "Dinicial" || nombre == "Dfinal") {
-    document.getElementById('variasCosas2').style.display = 'block';
+        document.getElementById('variasCosas2').style.display = 'block';
     }
-    }</code></pre>
+}
+    </code></pre>
 </section>
 
 <section>
@@ -611,12 +611,14 @@
         <input size="1" style="font-size: 28px" type="text" id="resultado" disabled>
         <button style="font-size: 28px" onclick="sumaN()"> Calcular</button>
     </form>
-    <pre><code>function sumaN() {
+    <pre><code data-trim>
+function sumaN() {
     var num1 = document.getElementById("num1").value;
     var num2 = document.getElementById("num2").value;
     var resultado = Number(num1) + Number(num2);
     document.getElementById("resultado").value = resultado;
-    }</code></pre>
+}
+    </code></pre>
 </section>
 
 <section>
@@ -627,20 +629,20 @@
         <input size="1" style="font-size: 28px" type="text" id="num3">
         <button style="font-size: 28px" onclick="potenciaN();raizN()"> Calcular</button>
     </form>
-    <pre><code>
-    function potenciaN() {
+    <pre><code data-trim>
+function potenciaN() {
     var numP = document.getElementById("num3").value;
     numP = Math.pow(numP,3);
     alert("El cubo del numero ingresado es "+numP);
-    }
+}
 </code></pre>
 
-    <pre><code>
-    function raizN() {
+    <pre><code data-trim>
+function raizN() {
     var numP = document.getElementById("num3").value;
     numP = Math.pow(numP,1/3);
     alert("La raiz cubica del numero ingresado es "+numP);
-    }
+}
 </code></pre>
 </section>
 
@@ -652,13 +654,13 @@
         <input size="1" style="font-size: 28px" type="text" id="num4">
         <button style="font-size: 28px" onclick="senN()"> Calcular</button>
     </form>
-    <pre><code>
-    function senN() {
+    <pre><code data-trim>
+function senN() {
     var senNum = document.getElementById("num4").value;
     //Math.sin(x) donde x en radianes
     var valorSen = Math.sin(senNum*Math.PI/180);
     alert("El seno de "+ senNum +" = "+ Math.round(valorSen*100)/100);
-    }
+}
 </code></pre>
 </section>
 
@@ -690,33 +692,33 @@
 
 <section>
     <h2>JavaScript: Formulas</h2>
-    <pre><code>
+    <pre><code data-trim>
     function calculoFun(numDist, numAng, longi, angul) {
-    if(isNaN(numDist) || isNaN(numAng)){
-    alert("Los valores ingresados no son numeros");
-    } else {
-    if(longi=="pulgadas")
-    numDist=convertMetros(numDist);
+        if (isNaN(numDist) || isNaN(numAng)) {
+            alert("Los valores ingresados no son numeros");
+        } else {
+            if (longi == "pulgadas")
+                numDist = convertMetros(numDist);
 
-    if(angul=="radianes")
-    numAng=convertGrados(numAng);
+            if (angul == "radianes")
+                numAng = convertGrados(numAng);
 
-    document.getElementById("distR").value=numDist;
-    document.getElementById("angR").value=numAng;
-    document.getElementById("result").value=numDist*Math.sin(numAng*Math.PI/180);
-    }
+            document.getElementById("distR").value = numDist;
+            document.getElementById("angR").value = numAng;
+            document.getElementById("result").value = numDist * Math.sin(numAng * Math.PI / 180);
+        }
     }
 
     function convertMetros(distPulgadas) {
-    var enMetros=distPulgadas*0.0254;
-    enMetros=Math.round(enMetros*10000)/10000;
-    return enMetros;
+        var enMetros = distPulgadas * 0.0254;
+        enMetros = Math.round(enMetros * 10000) / 10000;
+        return enMetros;
     }
 
     function convertGrados(radianes) {
-    var enGrados=radianes*180/Math.PI;
-    enGrados=Math.round(enGrados*10000)/10000;
-    return enGrados;
+        var enGrados = radianes * 180 / Math.PI;
+        enGrados = Math.round(enGrados * 10000) / 10000;
+        return enGrados;
     }
 </code></pre>
 </section>
@@ -735,8 +737,7 @@
 
     <section>
         <h2>Canvas: Métodos</h2>
-        <p>
-        <ul>
+        <ul style="font-size: 0.6em;">
             <li>fillRect(x, y, width, height) <br>
                 Dibuja un rectángulo relleno usando el color/estilo del atributo fillStyle. Las coordenadas x e y empiezan en la esquina superior izquierda.
             </li>
@@ -762,45 +763,42 @@
                 Crea un arco entre dos puntos.
             </li>
         </ul>
-        </p>
     </section>
 
     <section>
         <h2>Canvas: Propiedades</h2>
-        <p>
-        <ul>
-            <li>fillStyle = color|style <br>
+        <ul style="font-size: 0.6em;" class="bigB">
+            <li><b>fillStyle = color|style </b>
                 El color|estilo de relleno del dibujo.
             </li>
-            <li>strokeStyle = color|style <br>
+            <li><b>strokeStyle = color|style </b>
                 El color|estilo del contorno del dibujo.
             </li>
-            <li>lineCap = butt|round|square <br>
+            <li><b>lineCap = butt|round|square </b>
                 El estilo del acabado de linea.
             </li>
-            <li>lineJoin = bevel|round|miter <br>
+            <li><b>lineJoin = bevel|round|miter </b>
                 El estilo de las esquinas de las líneas.
             </li>
-            <li>lineWidth = number <br>
+            <li><b>lineWidth = number </b>
                 El grosor de las lineasThe width of the drawing stroke.
             </li>
-            <li>miterLimit = number <br>
+            <li><b>miterLimit = number </b>
                 El limite de esquinas en una línea.
             </li>
-            <li>shadowColor = color <br>
+            <li><b>shadowColor = color </b>
                 El color de la sombra.
             </li>
-            <li>shadowOffsetX = number <br>
+            <li><b>shadowOffsetX = number </b>
                 La distancia horizontal de la sombra.
             </li>
-            <li>shadowOffsetY = number <br>
+            <li><b>shadowOffsetY = number </b>
                 La distancia vertical de la sombra.
             </li>
-            <li>shadowBlur = number <br>
+            <li><b>shadowBlur = number </b>
                 El tamaño del efecto de desenfoque.
             </li>
         </ul>
-        </p>
     </section>
 
 
@@ -813,8 +811,8 @@
 
     <section>
         <h2><a href="http://www.w3schools.com/tags/ref_canvas.asp" target="_blank"> Canvas </a></h2>
-        <pre><code>
-    function dibujo() {
+        <pre><code data-trim>
+function dibujo() {
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
     ctx.fillStyle = "#000";
@@ -827,7 +825,7 @@
     ctx.lineTo(100,75);
     ctx.lineTo(100,25);
     ctx.fill();
-    }
+}
 </code></pre>
     </section>
 
@@ -840,27 +838,27 @@
 
     <section>
         <h2>Canvas: Cuadriculado</h2>
-        <pre><code>
-    function dibujo2() {
+        <pre><code data-trim>
+function dibujo2() {
     var canvas = document.getElementById("canvas2");
     var ctx = canvas.getContext("2d");
 
     //Dibuja lineas horizontales
     for(var i=0; i<300;){
-    ctx.moveTo(0,i);
-    ctx.lineTo(600,i);
-    ctx.strokeStyle = "#D8D8D8";
-    ctx.stroke();
-    i=i+20;
+        ctx.moveTo(0,i);
+        ctx.lineTo(600,i);
+        ctx.strokeStyle = "#D8D8D8";
+        ctx.stroke();
+        i=i+20;
     }
 
     //Dibuja lineas verticales
     for(var i=0; i<600;){
-    ctx.moveTo(i,0);
-    ctx.lineTo(i,600);
-    ctx.strokeStyle = "#D8D8D8";
-    ctx.stroke();
-    i=i+20;
+        ctx.moveTo(i,0);
+        ctx.lineTo(i,600);
+        ctx.strokeStyle = "#D8D8D8";
+        ctx.stroke();
+        i=i+20;
     }
 
     //Eje X
@@ -876,12 +874,12 @@
     ctx.lineTo(300,300);
     ctx.strokeStyle = "#FA5858";
     ctx.stroke();
-    }
+}
 </code></pre>
     </section>
 
     <section>
-        <h2>Canvas: Parabola</h2>
+        <h2>Canvas: Arco</h2>
         <canvas id="canvas3" width="600" height="300" style="background-color: #8dcffc"
                 onclick="dibujoParabola()">
             Su navegador no soporta HTML5
@@ -889,9 +887,9 @@
     </section>
 
     <section>
-        <h2>Canvas: Parabola</h2>
-        <pre><code>
-    function dibujoParabola() {
+        <h2>Canvas: Arco</h2>
+        <pre><code data-trim>
+function dibujoArco() {
     var canvas = document.getElementById("canvas3");
     var ctx = canvas.getContext("2d");
 
@@ -899,7 +897,7 @@
     //ctx.arc(X, Y, radio, angulo inicial, angulo final);
     ctx.arc(300, 250, 200, 1* Math.PI, 2 * Math.PI);
     ctx.stroke();
-    }
+}
 </code></pre>
     </section>
 
@@ -912,8 +910,8 @@
 
     <section>
         <h2>Canvas: arcTo()</h2>
-        <pre><code>
-    function dibujoArcT() {
+        <pre><code data-trim>
+function dibujoArcT() {
     var c = document.getElementById("canvas4");
     var ctx = c.getContext("2d");
     ctx.beginPath();
@@ -922,7 +920,7 @@
     ctx.arcTo(130, 10, 150, 40, 20);
     ctx.lineTo(220, 120);
     ctx.stroke();
-    }
+}
 </code></pre>
     </section>
 </section>
