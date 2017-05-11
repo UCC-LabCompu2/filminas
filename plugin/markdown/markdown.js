@@ -31,8 +31,7 @@
 	 */
 	function getMarkdownFromSlide( section ) {
 
-		// look for a <script> or <textarea data-template> wrapper
-		var template = section.querySelector( '[data-template]' ) || section.querySelector( 'script' );
+		var template = section.querySelector( 'script' );
 
 		// strip leading whitespace so it isn't evaluated as code
 		var text = ( template || section ).textContent;
