@@ -159,7 +159,7 @@
     <ul>
         <li>En el mismo documento, agregando &lt;script</li>
         <li>En un archivo externo <br>
-<pre><code data-trim><script type="text/javascript" src="/js/codigo.js"></script>
+            <pre><code data-trim><script type="text/javascript" src="/js/codigo.js"></script>
 </code></pre>
         </li>
         <li>En linea</li>
@@ -168,7 +168,7 @@
 
 <section>
     <h2>Sintaxis</h2>
-        Conjunto de reglas que deben seguirse al escribir el código:
+    Conjunto de reglas que deben seguirse al escribir el código:
     <ul>
         <li>No se tienen en cuenta los espacios en blanco y las nuevas líneas.</li>
         <li>Se distinguen las mayúsculas y minúsculas.</li>
@@ -390,30 +390,106 @@ function cambioUnidades(valor, unidad) {
 </section>
 
 <section>
-    <h2>Get element By</h2>
-    <p>
-        Cree una web con 2 inputs para convertir de grados a radianes.
-    </p>
-    <ul>
-        <li>document.getElementById('id_del_elemento');</li>
-        <li>document.getElementsByName('name_del_elemento');</li>
-        <li>document.getElementsByTagName('elemento')[índice_del_elemento]; (Ej. document.getElementsByTagName('p')[3];)</li>
-    </ul>
-    <p>
-        Para más Info ver <a href="http://www.codexexempla.org/curso/curso_4_3_a.php" target="_blank"> Ejemplos</a> </p>
+    <section>
+        <h2>Get element By</h2>
+        <p>
+            Cree una web con 2 inputs para convertir de grados a radianes.
+        </p>
+        <ul>
+            <li>document.getElementById('id_del_elemento');</li>
+            <li>document.getElementsByName('name_del_elemento');</li>
+            <li>document.getElementsByTagName('elemento')[índice_del_elemento]; (Ej. document.getElementsByTagName('p')[3];)</li>
+        </ul>
+        <p>
+            Para más Info ver <a href="http://www.codexexempla.org/curso/curso_4_3_a.php" target="_blank"> Ejemplos</a> </p>
+    </section>
+
+    <section>
+        <h2>JavaScript: Leer Inputs</h2>
+        <form name="sumaNum">
+            <input size="1" style="font-size: 28px" type="text" id="num1">+
+            <input size="1" style="font-size: 28px" type="text" id="num2">=
+            <input size="1" style="font-size: 28px" type="text" id="resultado" disabled>
+            <button style="font-size: 28px" onclick="sumaN()"> Calcular</button>
+        </form>
+        <pre><code data-trim>
+function sumaN() {
+    var num1 = document.getElementById("num1").value;
+    var num2 = document.getElementById("num2").value;
+    var resultado = Number(num1) + Number(num2);
+    document.getElementById("resultado").value = resultado;
+}
+    </code></pre>
+    </section>
 </section>
 
-<section style="font-size: 0.8em">
-    <h2>Ejercicio: Grados a Radianes</h2>
-    <p>
-        Cree una web con 2 inputs para convertir de grados a radianes.
-    </p>
-    <ul>
-        <li>Emplear <b>OnChange</b> en los campos</li>
-        <li>Los campos deben contener un id</li>
-        <li>Se debe emplear Math.PI</li>
-    </ul>
-    <img src="images/html/gradosRadianes.png">
+<section>
+    <section style="font-size: 0.8em">
+        <h2>Objeto Math</h2>
+        <p>
+            Math es un objeto incorporado por javascript que posee propiedades y métodos creados por constantes y
+            funciones matemáticas.
+        </p>
+        <p>
+            Todas las propiedades y métodos de Math son estáticos y no se pueden modificar.
+        </p>
+    </section>
+
+    <section style="font-size: 0.8em">
+        <h2>Ejercicio: Grados a Radianes</h2>
+        <p>
+            Cree una web con 2 inputs para convertir de grados a radianes.
+        </p>
+        <ul>
+            <li>Emplear <b>OnChange</b> en los campos</li>
+            <li>Los campos deben contener un id</li>
+            <li>Se debe emplear Math.PI</li>
+        </ul>
+        <img src="images/html/gradosRadianes.png">
+    </section>
+
+    <section>
+        <h2>Ejemplo: Potencias</h2>
+        X<sup>n</sup>
+        <br>
+        <form name="sumaNum">
+            <input size="1" style="font-size: 28px" type="text" id="num3">
+            <button style="font-size: 28px" onclick="potenciaN();raizN()"> Calcular</button>
+        </form>
+        <pre><code data-trim>
+function potenciaN() {
+    var numP = document.getElementById("num3").value;
+    numP = Math.pow(numP,3);
+    alert("El cubo del numero ingresado es "+numP);
+}
+</code></pre>
+
+        <pre><code data-trim>
+function raizN() {
+    var numP = document.getElementById("num3").value;
+    numP = Math.pow(numP,1/3);
+    alert("La raiz cubica del numero ingresado es "+numP);
+}
+</code></pre>
+    </section>
+
+    <section>
+        <h2>Ejemplo: Sen y Cos</h2>
+        Sen(ang)
+        <br>
+        <form name="sumaNum">
+            <input size="1" style="font-size: 28px" type="text" id="num4">
+            <button style="font-size: 28px" onclick="senN()"> Calcular</button>
+        </form>
+        <pre><code data-trim>
+function senN() {
+    var senNum = document.getElementById("num4").value;
+    //Math.sin(x) donde x en radianes
+    var valorSen = Math.sin(senNum*Math.PI/180);
+    alert("El seno de "+ senNum +" = "+ Math.round(valorSen*100)/100);
+}
+</code></pre>
+    </section>
 </section>
 
 <section style="font-size: 0.8em">
@@ -481,12 +557,8 @@ function seMuestra(nombre) {
     <p>
         Escribir funciones JavaScript para resolver las operaciones matemáticas una vez que el usuario ingresa
         un valor numérico en ambos inputs. <br>
-        El valor del resultado no debe poder ser modificado por el usuario. <br>
-        Asegúrese de castear los valores de ser necesario.
     </p>
     <ul>
-        <li>Emplear <b>OnChange</b> en los inputs</li>
-        <li>Los campos deben contener un nombre u ID</li>
         <li>Se debe castear de tipo String a tipo Number</li>
         <li>Los resultados deben contener el atributo disabled</li>
     </ul>
@@ -500,6 +572,7 @@ function seMuestra(nombre) {
     </p>
     <ul>
         <li>Emplear <b>Math.Round</b> antes de asignar el resultado</li>
+        <li>Reemplace ',' por '.' para evitar errores</li>
     </ul>
     <img src="images/html/conversorUnidades.png" style="height: 300px">
 </section>
@@ -621,68 +694,7 @@ function numAleatorio(a,b) {
     </p>
 </section>
 
-<section>
-    <h2>JavaScript: Leer Inputs</h2>
-    <form name="sumaNum">
-        <input size="1" style="font-size: 28px" type="text" id="num1">+
-        <input size="1" style="font-size: 28px" type="text" id="num2">=
-        <input size="1" style="font-size: 28px" type="text" id="resultado" disabled>
-        <button style="font-size: 28px" onclick="sumaN()"> Calcular</button>
-    </form>
-    <pre><code data-trim>
-function sumaN() {
-    var num1 = document.getElementById("num1").value;
-    var num2 = document.getElementById("num2").value;
-    var resultado = Number(num1) + Number(num2);
-    document.getElementById("resultado").value = resultado;
-}
-    </code></pre>
-</section>
-
-<section>
-    <h2>JavaScript: Potencias</h2>
-    X<sup>n</sup>
-    <br>
-    <form name="sumaNum">
-        <input size="1" style="font-size: 28px" type="text" id="num3">
-        <button style="font-size: 28px" onclick="potenciaN();raizN()"> Calcular</button>
-    </form>
-    <pre><code data-trim>
-function potenciaN() {
-    var numP = document.getElementById("num3").value;
-    numP = Math.pow(numP,3);
-    alert("El cubo del numero ingresado es "+numP);
-}
-</code></pre>
-
-    <pre><code data-trim>
-function raizN() {
-    var numP = document.getElementById("num3").value;
-    numP = Math.pow(numP,1/3);
-    alert("La raiz cubica del numero ingresado es "+numP);
-}
-</code></pre>
-</section>
-
-<section>
-    <h2>JavaScript: Sen y Cos</h2>
-    Sen(ang)
-    <br>
-    <form name="sumaNum">
-        <input size="1" style="font-size: 28px" type="text" id="num4">
-        <button style="font-size: 28px" onclick="senN()"> Calcular</button>
-    </form>
-    <pre><code data-trim>
-function senN() {
-    var senNum = document.getElementById("num4").value;
-    //Math.sin(x) donde x en radianes
-    var valorSen = Math.sin(senNum*Math.PI/180);
-    alert("El seno de "+ senNum +" = "+ Math.round(valorSen*100)/100);
-}
-</code></pre>
-</section>
-
-<section>
+<!--section>
     <h2>JavaScript: Formulas</h2>
     <form name="formulas">
         distancia=<input size="1" style="font-size: 28px" type="text" id="dist2">
@@ -739,18 +751,23 @@ function senN() {
         return enGrados;
     }
 </code></pre>
-</section>
+</section-->
 
 <section>
 
     <section>
-        <h2>Canvas</h2>
+        <h2><a href="http://www.w3schools.com/tags/ref_canvas.asp" target="_blank"> Canvas </a></h2>
         <p>
             Es un elemento incorporado en HTML5 que permite la generación de gráficos estáticos, dinámicos y
             animaciones por medio del scripting.
             <br><br>
             El potencial de canvas reside en su habilidad para actualizar su contenido en tiempo real.
         </p>
+    </section>
+
+    <section>
+        <h2>Canvas: Coordenadas</h2>
+        <img src="images/Eventos/coordenadas-canvas.gif">
     </section>
 
     <section>
