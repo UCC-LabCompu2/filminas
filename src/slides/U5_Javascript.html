@@ -703,6 +703,53 @@ function numAleatorio(a,b) {
 <section>
 
     <section>
+        <h2>Gráficos en HTML5</h2>
+        <p>
+            Existen 2 elementos dentro de HTML5 que permiten la generación de gráficos:
+        <ul>
+            <li><b>Canvas:</b> Dibuja objetos como un mapa de bits en un lienzo.</li>
+            <li> <b>SVG (Scalable Vector Graphics):</b> Dibuja vectores sobre un lienzo.</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Canvas vs. SVG</h2>
+        <p>
+        <table>
+            <thead>
+            <tr>
+                <th>Canvas</th>
+                <th>SVG</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Basado en píxeles (.png dinámico)</td>
+                <td>Basado en forma</td>
+            </tr>
+            <tr>
+                <td>Elemento HTML único</td>
+                <td>Múltiples elementos gráficos, que forman parte de DOM</td>
+            </tr>
+            <tr>
+                <td>Modificado mediante script solamente</td>
+                <td>Modificado mediante script y CSS</td>
+            </tr>
+            <tr>
+                <td>La interacción de usuario/modelo de eventos es pormenorizada (x,y)</td>
+                <td>La interacción de usuario/modelo de eventos es resumida (rect, ruta)</td>
+            </tr>
+            <tr>
+                <td>El rendimiento es mejor con una superficie menor, un número más grande de objetos (>10 k) o ambos</td>
+                <td>El rendimiento es mejor con un número menor de objetos (<10 k), una superficie más grande o ambos</td>
+            </tr>
+            </tbody>
+        </table>
+        </p>
+    </section>
+
+    <section>
         <h2><a href="http://www.w3schools.com/tags/ref_canvas.asp" target="_blank"> Canvas </a></h2>
         <p>
             Es un elemento incorporado en HTML5 que permite la generación de gráficos estáticos, dinámicos y
@@ -813,6 +860,15 @@ function dibujo() {
 </section>
 
 <section>
+    <h2>Ejercicio-Canvas: Eventos y Canvas</h2>
+    <ul>
+        <li>Utilizar el evento onmousemove para disparar la función de dibujo</li>
+        <li>En la función, obtener la posición x e y del ratón y dibujar un punto en el canvas</li>
+        <li>Agregar una variable "bandera" que indique si el botón del ratón se presionó (onmousedown, onmouseup)</li>
+    </ul>
+</section>
+
+<section>
     <h2>Canvas: arc(x,y,ap,af,cR)</h2>
     <ul>
         <li>Define un segmento circular</li>
@@ -823,14 +879,6 @@ function dibujo() {
     <img src="images/Eventos/arc.png">
 </section>
 
-<section>
-    <h2>Ejercicio-Canvas: Eventos y Canvas</h2>
-    <ul>
-        <li>Utilizar el evento onmousemove para disparar la función de dibujo</li>
-        <li>En la función, obtener la posición x e y del ratón y dibujar un punto en el canvas</li>
-        <li>Agregar una variable "bandera" que indique si el botón del ratón se presionó (onmousedown, onmouseup)</li>
-    </ul>
-</section>
 <section>
     <h2>Ejercicio-Canvas: Dibujar cuadrado y circulo</h2>
     <ul>
