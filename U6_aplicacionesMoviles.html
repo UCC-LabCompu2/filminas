@@ -328,6 +328,43 @@
             APIs nativas del dispositivo.
         </p>
     </section>
+
+    <section>
+        <h2>Ejecución de Cordova</h2>
+        <p>
+        <ol>
+            <li>Instalar cordova <pre><code>npm install -g cordova</code></pre> </li>
+            <li>Crear nuevo proyecto <pre><code>cordova create MyApp</code></pre> </li>
+            <li>Agregar tipo de plataforma <pre><code>cd MyApp
+cordova platform add android</code></pre> </li>
+            <li>Conectar un celular con Android (opciones de desarrollador-Depuración de USB) <pre><code>cordova run android</code></pre> </li>
+        </ol>
+        </p>
+    </section>
+
+    <section>
+        <h2>Ejecución de Cordova 2</h2>
+        <p>
+        <ol>
+            <li>Abrir el proyecto, y reemplazar el contenido de la carpeta 'www' por un proyecto web</li>
+            <li>Abrir el Android Studio</li>
+            <li>Crear un dispositivo para emular desde 'Tools > Android > AVD Manager'</li>
+            <li>Correr la aplicación en el emulador <pre><code>cordova emulate andorid</code></pre> </li>
+        </ol>
+        </p>
+    </section>
+
+    <section>
+        <h2>Por qué Android?</h2>
+        <p>
+        <ol>
+            <li>Para generar la APP es necesario contar con el Software Development Kit o SDK instalado.</li>
+            <li>Android Studio es libre y funciona sobre cualquier SO.</li>
+            <li>Para desarrollar APK para iOS se debe emplear MacOS./li>
+            <li>Para desarrollar APP para Windows Phone se requiere Windows.</li>
+        </ol>
+        </p>
+    </section>
 </section>
 
 <section>
@@ -375,11 +412,12 @@
         <p>
             La etiqueta viewport permite definir el ancho, alto y escala del área usada por el navegador
             para mostrar contenido.
-        <!--Sino por defecto una web tiene siempre 980px de ancho
-        Se le puede determinar un initial-scale=0.1(min) maximun-scale= minimun-scale= user-scalable=si permite o no escala-->
-<pre><code>
+            <!--Sino por defecto una web tiene siempre 980px de ancho
+            Se le puede determinar un initial-scale=0.1(min) maximun-scale= minimun-scale= user-scalable=si permite o no escala-->
+        <pre><code>
     <meta name="viewport" content="width=device-width, user-scalable=no">
 </code></pre>
+
         </pre>
     </section>
 
