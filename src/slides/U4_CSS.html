@@ -448,73 +448,88 @@ lineas */
 </section>
 
 <section>
-    <h2>Position</h2>
-    <p>Como posicionar elementos dentro de la pagina.</p>
-    <ul>
-        <li>static</li>
-        <li>relative</li>
-        <li>fixed</li>
-        <li>absolute</li>
-        <li>inherit</li>
-    </ul>
-</section>
-<section>
-    <h2>Position: static;</h2>
-    <p>
-        Los elementos posicionados con "Static" no son afectados por las propiedades
-        top, bottom, left y right.
-    </p>
-    <p>
-        Por defecto, todos los elementos HTML son Static.
-    </p>
-</section>
+    <section>
+        <h2>Position</h2>
+        <p>Como posicionar elementos dentro de la pagina.</p>
+        <ul>
+            <li>static</li>
+            <li>relative</li>
+            <li>fixed</li>
+            <li>absolute</li>
+            <li>inherit</li>
+        </ul>
+        <p><a href="https://www.w3schools.com/cssref/pr_class_position.asp">W3Shool</a></p>
+        <p><a href="http://es.learnlayout.com/position.html">Learn Layout</a></p>
+    </section>
+    <section>
+        <h2>Position: static;</h2>
+        <p>
+            Los elementos posicionados con "Static" no son afectados por las propiedades
+            top, bottom, left y right.
+        </p>
+        <p>
+            Por defecto, todos los elementos HTML son Static.
+        </p>
+    </section>
 
-<section>
-    <h2>Position: relative;</h2>
-    <p> El elemento es posicionado relativo respecto a su posición normal.</p>
-    <p> Los valores top, left, right, bottom lo mueven respecto a su posición original</p>
-    <p> Permite que un elemento se desplace respecto a lo que hubiera sido su posición normal;
-        el resto de elementos continúan en su posición ignorando al que se desplaza,
-        lo que puede crear superposiciones; el espacio libre que deja el elemento queda libre.
-    </p>
-</section>
+    <section>
+        <h2>Position: relative;</h2>
+        <p> El elemento es posicionado relativo respecto a su posición normal.</p>
+        <p> Los valores top, left, right, bottom lo mueven respecto a su posición original</p>
+        <p> Permite que un elemento se desplace respecto a lo que hubiera sido su posición normal;
+            el resto de elementos continúan en su posición ignorando al que se desplaza,
+            lo que puede crear superposiciones; el espacio libre que deja el elemento queda libre.
+        </p>
+    </section>
 
-<section>
-    <h2>Position: fixed;</h2>
-    <p> El elemento "fixed" es posicionado respecto al area visible.</p>
-    <p>Los valores top, left, right, bottom lo mueven respecto a su posición original</p>
-    <p> Permite que un elemento se desplace respecto al origen de coordenadas del primer elemento
-        contenedor posicionado ó respecto a la esquina superior izquierda de la ventana de visualización;
-        el resto de elementos actúan como si el desplazado no existiera,
-        por lo que su espacio será ocupado por otros elementos; puede crear superposiciones.
-    </p>
-</section>
+    <section>
+        <h2>Position: fixed;</h2>
+        <p> El elemento "fixed" es posicionado respecto al area visible.</p>
+        <p>Los valores top, left, right, bottom lo mueven respecto a su posición original</p>
+        <p> Permite que un elemento se desplace respecto al origen de coordenadas del primer elemento
+            contenedor posicionado ó respecto a la esquina superior izquierda de la ventana de visualización;
+            el resto de elementos actúan como si el desplazado no existiera,
+            por lo que su espacio será ocupado por otros elementos; puede crear superposiciones.
+        </p>
+    </section>
 
-<section>
-    <h2>position: absoluto;</h2>
-    <p>Los elementos con position: absolute; son posicionados mediante
-        top, left... respecto a su ancestro mas secano que este posicionado.</p>
-    <p>Un elemento posicionado es aquel que tenga en su propiedad position algo
-        distinto a static
-    </p>
-    <p>
-        Permite fijar un elemento en una posición respecto al origen de coordenadas del primer elemento
-        contenedor posicionado ó respecto a la esquina superior de la ventana de visualización;
-        el elemento se mantendrá en la ventana de visualización o viewport,
-        siempre en una misma posición aunque el usuario se desplace por la web haciendo scroll.
-    </p>
-</section>
+    <section>
+        <h2>position: absoluto;</h2>
+        <p>Los elementos con position: absolute; son posicionados mediante
+            top, left... respecto a su ancestro mas secano que este posicionado.</p>
+        <p>Un elemento posicionado es aquel que tenga en su propiedad position algo
+            distinto a static
+        </p>
+        <p>
+            Permite fijar un elemento en una posición respecto al origen de coordenadas del primer elemento
+            contenedor posicionado ó respecto a la esquina superior de la ventana de visualización;
+            el elemento se mantendrá en la ventana de visualización o viewport,
+            siempre en una misma posición aunque el usuario se desplace por la web haciendo scroll.
+        </p>
+    </section>
 
-<section>
-    <h2>position: inherit;</h2>
-    <p> Se heredan las características del elemento padre.</p>
+    <section>
+        <h2>position: inherit;</h2>
+        <p> Se heredan las características del elemento padre.</p>
+    </section>
 </section>
-
 
 <section>
     <h2>superposición con z-index</h2>
     <p>La propiedad z-index indica que elemento va estar posicionado sobre otro elemento.</p>
     <p>Los elementos con z-index mayor tapan a los elementos con z-index menor </p>
+</section>
+
+<section>
+    <h2>Float</h2>
+    <p>Float se usa para envolver imágenes con texto.</p>
+    <p><a href="http://es.learnlayout.com/float.html" target="_blank">Learn Layout</a></p>
+</section>
+
+<section>
+    <h2>Clear</h2>
+    <p>para controlar el comportamiento de los floats.</p>
+    <p><a href="http://es.learnlayout.com/clear.html" target="_blank">Learn Layout</a></p>
 </section>
 
 <section>
@@ -555,6 +570,29 @@ lineas */
         Modifique la página web del CV para que los estilos incrustados estén en un archivo de estilos. <br>
         Asegúrese de por lo menos incluir un estilo por Tag, por ID y por clase.
     </p>
+</section>
+
+<section>
+    <h2>Media Queries</h2>
+    <p>"Responsive Design" es la estrategia para hacer que un sitio
+        se adapte al navegador y dispositivo en el que se muestra</p>
+<pre><code>
+@media screen and (min-width:600px) {
+  nav {
+    float: left;
+    width: 25%;
+  }
+  section {
+    margin-left: 25%;
+  }
+}
+@media screen and (max-width:599px) {
+  nav li {
+    display: inline;
+  }
+}
+</code></pre>
+    <p><a href="http://es.learnlayout.com/media-queries.html" target="_blank">Learn Layout</a></p>
 </section>
 
 <section>
@@ -654,6 +692,11 @@ div:hover {
     <pre><code data-trim>
     <link rel="shortcut icon" href="/favicon.ico">
 </code></pre>
+</section>
+
+<section>
+    <h2>¿Dudas, Preguntas, Comentarios?</h2>
+    <img class="noBorder" src="images/pregunta.gif" style="width:30%;border-radius: 20%;">
 </section>
 
 <include src="../templates/footer.html"></include>
