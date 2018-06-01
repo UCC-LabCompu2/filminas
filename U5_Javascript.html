@@ -5,8 +5,8 @@
     <link href='images/code.ico' rel='shortcut icon' type='image/x-icon'>
     <meta charset="utf-8">
 
-    <title>Orientacion a Eventos</title>
-    <meta name="description" content="Orientación a Eventos y JavaScript">
+    <title>JavaScript</title>
+    <meta name="description" content="JavaScript">
     <meta name="author" content="
     Agus Edme Aliciardi | Ricardo Martin Marcucci
 ">
@@ -43,98 +43,6 @@
 
     <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides">
-
-<section>
-    <h1>Orientación a Eventos</h1>
-    
-
-    <p>
-        <small>Created by
-            <a href="https://t.me/edme88" target="_blank">
-            <i class="fa fa-telegram"></i>edme88
-            </a> &
-            <a href="https://t.me/rmarku" target="_blank">
-            <i class="fa fa-telegram"></i>rmarku
-            </a>
-        </small>
-    </p>
-</section>
-
-
-<section>
-    <h2>Libros:</h2>
-    <p>
-        <img class="noBorder" src="images/book.png" style="float:left;"/>
-        “Programación con lenguajes de guión en páginas web (UF1305)” <br>
-        de Carlos Ollero Sánchez
-    </p>
-</section>
-
-<section>
-    <h2>Programación Dirigida por eventos</h2>
-    <p>Paradigma de programación en el que la estructura y la ejecución de los programas van
-        determinados por los sucesos que ocurran en el sistema, definidos por el usuario o que ellos mismos
-        provoquen.</p>
-</section>
-
-<section data-background="images/Eventos/Lenguajes.png">
-    <h2>Lenguajes</h2>
-    <ul>
-        <li>JavaScript</li>
-        <li>ActionScript</li>
-        <li>Visual Basic</li>
-        <li>C#</li>
-        <li>Visual C++</li>
-        <li>etc...</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Eventos</h2>
-    <p>
-        Todo aquello que puede ser detectado y que pueda producir una reacción.
-        <br><br>
-        Ej. Hacer click en un botón, mover el puntero sobre un enlace, seleccionar un elemento de una lista
-        desplegable, etc.
-    </p>
-</section>
-
-<section>
-    <h2>Tipos de Eventos</h2>
-
-    <ul>
-        <li>Eventos de Usuario
-            <ul>
-                <li>Eventos del mouse</li>
-                <li>Eventos del teclado</li>
-            </ul>
-        </li>
-        <li>Eventos del navegador
-            <ul>
-                <li>Manipulación de las ventanas del navegador</li>
-                <li>Comunicación con el servidor</li>
-            </ul>
-        </li>
-        <li>Eventos generados desde código
-            <ul>
-                <li>Cambios en el contenido, aspecto o estructura</li>
-                <li>Especificación DOM</li>
-            </ul>
-        </li>
-    </ul>
-</section>
-
-<section>
-    <h2>Event Handler</h2>
-    <p>
-        El manejador de eventos contiene instrucciones acerca de que hacer cuando una clase particular de evento
-        se dispara.
-    </p>
-</section>
-
-<section data-background="images/html/js2_wallpaper.jpg">
-    <!--h1>Javascript</h1-->
-</section>
 
 <section>
     <h2>JavaScript</h2>
@@ -299,14 +207,14 @@ setInterval(miFunc, 3000);
 </section>
 
 <section>
-    <h2>Ejercicio: Hola Mundo!</h2>
+    <h2 class="ejercicio">Ejercicio: Hola Mundo!</h2>
     <p>
         Mostrar un “alert()” con el texto “Hola Mundo!” que se ejecute en el onload del body.
     </p>
 </section>
 
 <section style="font-size: 0.8em">
-    <h2>Ejercicio: Conversor de Unidades</h2>
+    <h2 class="ejercicio">Ejercicio: Conversor de Unidades</h2>
     <p>
         Escribir funciones JavaScript para que, al escribir un número en cualquiera de los inputs,
         la unidad sea convertida.
@@ -382,7 +290,7 @@ function cambioUnidades(valor, unidad) {
 </section>
 
 <section style="font-size: 0.8em">
-    <h2>Ejercicio: Documentación</h2>
+    <h2 class="ejercicio">Ejercicio: Documentación</h2>
     <p>
         Documentar las funciones del “Conversor de Unidades” adecuadamente,  indicando que hacen las funciones,
         el nombre del método, que parámetros se le envía y que valor retorna.
@@ -436,7 +344,7 @@ function sumaN() {
     </section>
 
     <section style="font-size: 0.8em">
-        <h2>Ejercicio: Grados a Radianes</h2>
+        <h2 class="ejercicio">Ejercicio: Grados a Radianes</h2>
         <p>
             Cree una web con 2 inputs para convertir de grados a radianes.
         </p>
@@ -493,7 +401,7 @@ function senN() {
 </section>
 
 <section style="font-size: 0.8em">
-    <h2>Ejercicio: Mostrar/Ocultar div</h2>
+    <h2 class="ejercicio">Ejercicio: Mostrar/Ocultar div</h2>
     <p>
         Escribir una función JavaScript para mostrar u ocultar el div celeste.
     </p>
@@ -553,7 +461,7 @@ function seMuestra(nombre) {
 </section-->
 
 <section style="font-size: 0.8em">
-    <h2>Ejercicio: Operaciones Matemáticas</h2>
+    <h2 class="ejercicio">Ejercicio: Operaciones Matemáticas</h2>
     <p>
         Escribir funciones JavaScript para resolver las operaciones matemáticas una vez que el usuario ingresa
         un valor numérico en ambos inputs. <br>
@@ -566,7 +474,7 @@ function seMuestra(nombre) {
 </section>
 
 <section style="font-size: 0.8em">
-    <h2>Ejercicio: Conversor de Unidades II</h2>
+    <h2 class="ejercicio">Ejercicio: Conversor de Unidades II</h2>
     <p>
         Modificar las funciones para que el resultado de la conversión sólo posea 2 decimales.
     </p>
@@ -578,7 +486,7 @@ function seMuestra(nombre) {
 </section>
 
 <section style="font-size: 0.8em">
-    <h2>Ejercicio: Operaciones Matemáticas II</h2>
+    <h2 class="ejercicio">Ejercicio: Operaciones Matemáticas II</h2>
     <p>
         Modificar el HTML para quitar los inputs de los resultados. Emplear div, y en JavaScript, emplear innerHTML.
     </p>
@@ -754,331 +662,7 @@ function numAleatorio(a,b) {
 </section-->
 
 <section>
-
-    <section>
-        <h2>Gráficos en HTML5</h2>
-        <p>
-            Existen 2 elementos dentro de HTML5 que permiten la generación de gráficos:
-        <ul>
-            <li><b>Canvas:</b> Dibuja objetos como un mapa de bits en un lienzo.</li>
-            <li> <b>SVG (Scalable Vector Graphics):</b> Dibuja vectores sobre un lienzo.</li>
-        </ul>
-        </p>
-    </section>
-
-    <section>
-        <h2>Canvas vs. SVG</h2>
-        <p>
-        <table>
-            <thead>
-            <tr>
-                <th>Canvas</th>
-                <th>SVG</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Basado en píxeles (.png dinámico)</td>
-                <td>Basado en forma</td>
-            </tr>
-            <tr>
-                <td>Elemento HTML único</td>
-                <td>Múltiples elementos gráficos, que forman parte de DOM</td>
-            </tr>
-            <tr>
-                <td>Modificado mediante script solamente</td>
-                <td>Modificado mediante script y CSS</td>
-            </tr>
-            <tr>
-                <td>La interacción de usuario/modelo de eventos es pormenorizada (x,y)</td>
-                <td>La interacción de usuario/modelo de eventos es resumida (rect, ruta)</td>
-            </tr>
-            <tr>
-                <td>El rendimiento es mejor con una superficie menor, un número más grande de objetos (>10 k) o ambos</td>
-                <td>El rendimiento es mejor con un número menor de objetos (<10 k), una superficie más grande o ambos</td>
-            </tr>
-            </tbody>
-        </table>
-        </p>
-    </section>
-
-    <section>
-        <h2><a href="http://www.w3schools.com/tags/ref_canvas.asp" target="_blank"> Canvas </a></h2>
-        <p>
-            Es un elemento incorporado en HTML5 que permite la generación de gráficos estáticos, dinámicos y
-            animaciones por medio del scripting.
-            <br><br>
-            El potencial de canvas reside en su habilidad para actualizar su contenido en tiempo real.
-        </p>
-    </section>
-
-    <section>
-        <h2>Canvas: Coordenadas</h2>
-        <img src="images/Eventos/coordenadas-canvas.gif">
-    </section>
-
-    <section>
-        <h2>Canvas: Métodos</h2>
-        <ul style="font-size: 0.6em;">
-            <li>fillRect(x, y, width, height) <br>
-                Dibuja un rectángulo relleno usando el color/estilo del atributo fillStyle. Las coordenadas x e y empiezan en la esquina superior izquierda.
-            </li>
-            <li>strokeRect(x, y, w, h) <br>
-                Dibuja las líneas de un rectángulo usando el color/estilo de el atributo strokeStyle.
-            </li>
-            <li>clearRect(x, y, w, h) <br>
-                Limpia un area rectangular.
-            </li>
-            <li>rect(x, y, w, h) <br>
-                Crea un rectángulo.
-            </li>
-            <li>moveTo(x, y) <br>
-                Mueve el camino al punto especificado, sin crear una línea.
-            </li>
-            <li>lineTo(x, y) <br>
-                Crea una línea desde el último punto en el camino hasta el punto dado.
-            </li>
-            <li>arc(x, y, r, sAngle, eAngle, aClockwise) <br>
-                Crea un circulo, o parte de un circulo.
-            </li>
-            <li>arcTo(x1, y1, x2, y2, radius) <br>
-                Crea un arco entre dos puntos.
-            </li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Canvas: Propiedades</h2>
-        <ul style="font-size: 0.6em;" class="bigB">
-            <li><b>fillStyle = color|style </b>
-                El color|estilo de relleno del dibujo.
-            </li>
-            <li><b>strokeStyle = color|style </b>
-                El color|estilo del contorno del dibujo.
-            </li>
-            <li><b>lineCap = butt|round|square </b>
-                El estilo del acabado de linea.
-            </li>
-            <li><b>lineJoin = bevel|round|miter </b>
-                El estilo de las esquinas de las líneas.
-            </li>
-            <li><b>lineWidth = number </b>
-                El grosor de las lineasThe width of the drawing stroke.
-            </li>
-            <li><b>miterLimit = number </b>
-                El limite de esquinas en una línea.
-            </li>
-            <li><b>shadowColor = color </b>
-                El color de la sombra.
-            </li>
-            <li><b>shadowOffsetX = number </b>
-                La distancia horizontal de la sombra.
-            </li>
-            <li><b>shadowOffsetY = number </b>
-                La distancia vertical de la sombra.
-            </li>
-            <li><b>shadowBlur = number </b>
-                El tamaño del efecto de desenfoque.
-            </li>
-        </ul>
-    </section>
-
-
-    <section>
-        <h2>Canvas: Ejemplo</h2>
-        <canvas id="canvas" width="600" height="300" style="background-color: #8dcffc" onclick="dibujo()">
-            Su navegador no soporta HTML5
-        </canvas>
-    </section>
-
-    <section>
-        <h2><a href="http://www.w3schools.com/tags/ref_canvas.asp" target="_blank"> Canvas </a></h2>
-        <pre><code data-trim>
-function dibujo() {
-    var canvas = document.getElementById("canvas");
-    var ctx = canvas.getContext("2d");
-    ctx.fillStyle = "#000";
-
-    //fillRect(x, y, width, height)
-    ctx.fillRect (10, 15, 20, 25);
-
-    ctx.beginPath();
-    ctx.moveTo(75,50);
-    ctx.lineTo(100,75);
-    ctx.lineTo(100,25);
-    ctx.fill();
-}
-</code></pre>
-    </section>
-</section>
-
-<section>
-    <h2>Ejercicio-Canvas: Eventos y Canvas</h2>
-    <ul>
-        <li>Utilizar el evento onmousemove para disparar la función de dibujo</li>
-        <li>En la función, obtener la posición x e y del ratón y dibujar un punto en el canvas</li>
-        <li>Agregar una variable "bandera" que indique si el botón del ratón se presionó (onmousedown, onmouseup)</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Canvas: arc(x,y,ap,af,cR)</h2>
-    <ul>
-        <li>Define un segmento circular</li>
-        <li><b>x</b> e <b>y</b> son las coordenadas del centro</li>
-        <li><b>ap</b> y <b>af</b> ángulo de partida y ángulo final en radianes</li>
-        <li><b>cR</b> [opcional] sentido contra reloj (true|false)</li>
-    </ul>
-    <img src="images/Eventos/arc.png">
-</section>
-
-<section>
-    <h2>Ejercicio-Canvas: Dibujar cuadrado y circulo</h2>
-    <ul>
-        <li>Crear una función javascript que dibuje un círculo y un cuadrado en un canvas.</li>
-        <li>Llamar la función al cargar la página.</li>
-        <li>El círculo debe estar en la mitad de la página.</li>
-        <li>El cuadrado debe estar en la esquina inferior izquirda, separado un cierto margen.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Ejercicio-Canvas: Dibujar cuadriculado</h2>
-    <ul>
-        <li>Crear una función javascript que dibuje un cuadriculado en un canvas </li>
-        <li>Llamar la función desde un botón en la página</li>
-    </ul>
-</section>
-
-<!--section>
-    <h2>Canvas: Cuadriculado</h2>
-    <canvas id="canvas2" width="600" height="300" style="background-color: #8dcffc" onclick="dibujo2()">
-        Su navegador no soporta HTML5
-    </canvas>
-</section>
-
-<section>
-    <h2>Canvas: Cuadriculado</h2>
-    <pre><code data-trim>
-function dibujo2() {
-    var canvas = document.getElementById("canvas2");
-    var ctx = canvas.getContext("2d");
-
-    //Dibuja lineas horizontales
-    for(var i=0; i<300;){
-        ctx.moveTo(0,i);
-        ctx.lineTo(600,i);
-        ctx.strokeStyle = "#D8D8D8";
-        ctx.stroke();
-        i=i+20;
-    }
-
-    //Dibuja lineas verticales
-    for(var i=0; i<600;){
-        ctx.moveTo(i,0);
-        ctx.lineTo(i,600);
-        ctx.strokeStyle = "#D8D8D8";
-        ctx.stroke();
-        i=i+20;
-    }
-
-    //Eje X
-    ctx.beginPath();
-    ctx.moveTo(600,160);
-    ctx.lineTo(0,160);
-    ctx.strokeStyle = "#FA5858";
-    ctx.stroke();
-
-    //Eje Y
-    ctx.beginPath();
-    ctx.moveTo(300,0);
-    ctx.lineTo(300,300);
-    ctx.strokeStyle = "#FA5858";
-    ctx.stroke();
-}
-</code></pre>
-</section-->
-
-<section>
-    <section>
-        <h2>Canvas: Arco</h2>
-        <canvas id="canvas3" width="600" height="300" style="background-color: #8dcffc"
-                onclick="dibujoParabola()">
-            Su navegador no soporta HTML5
-        </canvas>
-    </section>
-
-    <section>
-        <h2>Canvas: Arco</h2>
-        <pre><code data-trim>
-function dibujoArco() {
-    var canvas = document.getElementById("canvas3");
-    var ctx = canvas.getContext("2d");
-
-    ctx.beginPath();
-    //ctx.arc(X, Y, radio, angulo inicial, angulo final);
-    ctx.arc(300, 250, 200, 1* Math.PI, 2 * Math.PI);
-    ctx.stroke();
-}
-</code></pre>
-    </section>
-
-    <section>
-        <h2>Canvas: arcTo()</h2>
-        <canvas id="canvas4" width="600" height="300" style="background-color: #8dcffc" onclick="dibujoArcT()">
-            Su navegador no soporta HTML5
-        </canvas>
-    </section>
-
-    <section>
-        <h2>Canvas: arcTo()</h2>
-        <pre><code data-trim>
-function dibujoArcT() {
-    var c = document.getElementById("canvas4");
-    var ctx = c.getContext("2d");
-    ctx.beginPath();
-    ctx.moveTo(20, 120);
-    ctx.lineTo(100, 40);
-    ctx.arcTo(130, 10, 150, 40, 20);
-    ctx.lineTo(220, 120);
-    ctx.stroke();
-}
-</code></pre>
-    </section>
-</section>
-
-<section>
-    <h2>Ejercicio-Canvas: Dibujar imagen</h2>
-    <ul>
-        <li>Crear 2 inputs para que el usuario ingrese X e Y</li>
-        <li>Crear un boton que llame una función y le pase los parametros X e Y</li>
-        <li>Crear una función JS que dibuje una imagen (drawImage) en la posición especificada</li>
-    </ul>
-</section>
-
-
-<section>
-    <h2>setTimeOut()</h2>
-    <ul>
-        <li>Llama a una función o evalúa una expresión después de un número específico de milisegundos </li>
-        <li><a href="https://www.w3schools.com/jsref/met_win_settimeout.asp" target="_blank">w3School</a> </li>
-        <li>La función solo se ejecuta una vez.</li>
-        <li>Si se necesita repetir la ejecución, se usa el método<b>setInterval()</b></li>
-        <li>El método <b>creatTimeOut()</b> evita que la función continue ejecutandose</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Ejercicio: Canvas y setTimeOut()</h2>
-    <p>
-        Utilizando la función anterior que dibujaba imágenes y la función setTimeOut() de javascript,
-        realice una animación que mueva la imagen desde el borde izquierdo al derecho del canvas.
-    </p>
-</section>
-
-
-<section>
-    <h2>Segundo Parcial!</h2>
+    <h2>Podemos Comenzar con el Segundo Parcial!</h2>
     <p>Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada</p>
     <ul>
         <li>Una función que compruebe si los valores ingresados son correctos, y si no lo son, que le

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+<head>
+
+    <link href='images/code.ico' rel='shortcut icon' type='image/x-icon'>
+    <meta charset="utf-8">
+
+    <title>Orientacion a Eventos</title>
+    <meta name="description" content="Orientación a Eventos">
+    <meta name="author" content="
+    Agus Edme Aliciardi | Ricardo Martin Marcucci
+">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/filminas.css">
+    <script type="text/javascript" src="js/pruebas.js"></script>
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+<section>
+    <h1>Orientación a Eventos</h1>
+    
+
+    <p>
+        <small>Created by
+            <a href="https://t.me/edme88" target="_blank">
+            <i class="fa fa-telegram"></i>edme88
+            </a> &
+            <a href="https://t.me/rmarku" target="_blank">
+            <i class="fa fa-telegram"></i>rmarku
+            </a>
+        </small>
+    </p>
+</section>
+
+
+<section>
+    <h2>Libros:</h2>
+    <p>
+        <img class="noBorder" src="images/book.png" style="float:left;"/>
+        “Programación con lenguajes de guión en páginas web (UF1305)” <br>
+        de Carlos Ollero Sánchez
+    </p>
+</section>
+
+<section>
+    <h2>Programación Dirigida por eventos</h2>
+    <p>Paradigma de programación en el que la estructura y la ejecución de los programas van
+        determinados por los sucesos que ocurran en el sistema, definidos por el usuario o que ellos mismos
+        provoquen.</p>
+</section>
+
+<section data-background="images/Eventos/Lenguajes.png">
+    <h2>Lenguajes</h2>
+    <ul>
+        <li>JavaScript</li>
+        <li>ActionScript</li>
+        <li>Visual Basic</li>
+        <li>C#</li>
+        <li>Visual C++</li>
+        <li>etc...</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Eventos</h2>
+    <p>
+        Todo aquello que puede ser detectado y que pueda producir una reacción.
+        <br><br>
+        Ej. Hacer click en un botón, mover el puntero sobre un enlace, seleccionar un elemento de una lista
+        desplegable, etc.
+    </p>
+</section>
+
+<section>
+    <h2>Tipos de Eventos</h2>
+
+    <ul>
+        <li>Eventos de Usuario
+            <ul>
+                <li>Eventos del mouse</li>
+                <li>Eventos del teclado</li>
+            </ul>
+        </li>
+        <li>Eventos del navegador
+            <ul>
+                <li>Manipulación de las ventanas del navegador</li>
+                <li>Comunicación con el servidor</li>
+            </ul>
+        </li>
+        <li>Eventos generados desde código
+            <ul>
+                <li>Cambios en el contenido, aspecto o estructura</li>
+                <li>Especificación DOM</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2>Event Handler</h2>
+    <p>
+        El manejador de eventos contiene instrucciones acerca de que hacer cuando una clase particular de evento
+        se dispara.
+    </p>
+</section>
+
+<section>
+    <h2>¿Dudas, Preguntas, Comentarios?</h2>
+    <img class="noBorder" src="images/pregunta.gif" style="width:30%;border-radius: 20%;">
+</section>
+
+</div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+	// More info https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		history: true,
+
+		// More info https://github.com/hakimel/reveal.js#dependencies
+		dependencies: [
+			{src: 'plugin/markdown/marked.js'},
+			{src: 'plugin/markdown/markdown.js'},
+			{src: 'plugin/notes/notes.js', async: true},
+			{
+				src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+				hljs.initHighlightingOnLoad();
+			}
+			}
+		]
+	});
+</script>
+</body>
+</html>
+
