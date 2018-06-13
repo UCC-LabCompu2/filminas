@@ -40,12 +40,6 @@
     transform: rotate(180deg);
 }
 
-.h2ej {
-    background: url("../images/code.png") no-repeat;
-    vertical-align: middle;
-    padding: 15px;
-}
-
 .textBorder {
     text-shadow: -1px 1px black, 1px 1px black, 1px -1px black, -1px -1px black,
     2px 0 black, 0 2px black, 0 -2px black, -2px 0 black !important;
@@ -57,4 +51,10 @@
 
     border-radius: 20px;
     padding:0 7px;
+}
+
+.ejercicio{
+    background: url('../images/code.png') no-repeat;
+    vertical-align: middle;
+    padding: 15px !important;
 }
