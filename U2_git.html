@@ -108,22 +108,6 @@ git config --local user.email miEmail@domain.com</code></pre>
             <li>Mostrar los commits realizados</li>
         </ul>
     </section>
-    <section>
-        <h2>Ejercicio: Github Básico</h2>
-        <p>El archivo a crear debe ser un bloc de notas y guardarlo como <b>index.html</b></p>
-        <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="es">
-&lt;head>
-  &lt;meta charset="UTF-8"&gt;
-  &lt;meta name="description" content="Free Web tutorials"&gt;
-  &lt;meta name="keywords" content="HTML,CSS,XML,JavaScript"&gt;
-  &lt;meta name="author" content="John Doe"&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-    </section>
 </section>
 <section data-background="images/herramientas/servidoresGIT.png">
     <h2>Git: Servidores</h2>
@@ -142,9 +126,9 @@ git config --local user.email miEmail@domain.com</code></pre>
 <section>
     <h2>Los 3 estados + Untraking</h2>
     <ul>
-        <li><b>Unmodified(confirmado)</b> los datos estan almacenados de manera segura en el repositorio</li>
-        <li><b>Modified(modificado)</b> Se ha modificado el archivo pero todavía no se ha confirmado</li>
-        <li><b>Staged(preparado)</b>se ha marcado para confirmación el archivo en su version actual</li>
+        <li><b>Unmodified</b> los datos estan almacenados de manera segura en el repositorio</li>
+        <li><b>Modified</b> Se ha modificado el archivo pero todavía no se ha confirmado</li>
+        <li><b>Untrack</b> el archivo no lleva seguimiento de versionado</li>
     </ul>
 </section>
 
@@ -167,7 +151,7 @@ git config --local user.email miEmail@domain.com</code></pre>
 <section>
     <h2>Ejercicio: Github Básico</h2>
     <ul>
-        <li>Crear un repositorio sin inicializarlo</li>
+        <li>Crear un repositorio (inicializarlo)</li>
         <li>Clonar el repositorio</li>
         <li>Agregar archivo</li>
         <li>Guardar cambios en repositorio local</li>
@@ -177,7 +161,20 @@ git config --local user.email miEmail@domain.com</code></pre>
 </section>
 
 <section>
-    <img class="noBorder" src="images/herramientas/git-puss.jpg"/>
+    <h2>Ejercicio: Github Básico</h2>
+    <p>El archivo a crear debe ser un bloc de notas y guardarlo como <b>index.html</b></p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es">
+&lt;head>
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="description" content="Free Web tutorials"&gt;
+  &lt;meta name="keywords" content="HTML,CSS,XML,JavaScript"&gt;
+  &lt;meta name="author" content="John Doe"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
 </section>
 
 <section>
@@ -193,18 +190,12 @@ git config --local user.email miEmail@domain.com</code></pre>
 <section>
     <h2>Ejercicio: Github Colaborativo</h2>
     <ul style="font-size: 0.8em">
-        <li>Crear un repositorio e Inicializarlo. Agregar una descripción. </li>
+        <li>Emplear el repositorio del anterior ejercicio</li>
         <li>Configurar el repositorio para trabajar de manera colaborativa con un compañero. (Setting->Collaborators).</li>
-        <li>Clonar el repositorio.</li>
-        <li>Crear un archivo dentro del repositorio.</li>
-        <li>Verificar el estado del repositorio. De ser necesario, agregar el archivo y guardar los cambios de forma local.</li>
-        <li>Guardar los archivos en el repositorio remoto (GitHub).</li>
-        <li>Si el compañero ha realizado un cambio (si está trabajando de manera individual, realizar un cambio desde el navegador, y realizar un commit desde el mismo), actualizar el repositorio local.</li>
+        <li>Modificar un archivo desde el navegador</li>
+        <li>Comprobar el repositorio local.</li>
+        <li>Descargar cambios.</li>
     </ul>
-</section>
-
-<section>
-    <img class="noBorder" src="images/herramientas/git-purr.jpg"/>
 </section>
 
 <section>
@@ -234,6 +225,14 @@ git config --local user.email miEmail@domain.com</code></pre>
         <li><b>Ref o referencia:</b> Cadena de 40 bytes que representa una version/commit.</li>
         <li><b>Merge:</b> Mezcla codigo de 2 ramas</li>
     </ul>
+</section>
+
+<section>
+    <img class="noBorder" src="images/herramientas/git-puss.jpg"/>
+</section>
+
+<section>
+    <img class="noBorder" src="images/herramientas/git-purr.jpg"/>
 </section>
 
 <section>
