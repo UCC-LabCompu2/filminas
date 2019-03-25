@@ -1,7 +1,15 @@
-.noBorder {
+.reveal section img {
     background: none !important;
     box-shadow: none !important;
     border: none !important;
+}
+.reveal i.fab {
+    font-family:"Font Awesome 5 Brands";
+    font-style: normal;
+} 
+
+table{
+    font-size: 20px;
 }
 
 .cuadroBlanco {
