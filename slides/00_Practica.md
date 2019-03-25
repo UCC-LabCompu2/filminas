@@ -6,9 +6,9 @@ slideNumber: true
 
 # Lab Compu II (Practica)
 <small>
-Created by <i class="fa fa-telegram"></i>
+Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88") & 
-<i class="fa fa-telegram"></i>
+<i class="fab fa-telegram"></i>
 [rmarku]("https://t.me/rmarku")
 </small>
 
