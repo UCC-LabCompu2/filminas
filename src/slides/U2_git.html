@@ -9,6 +9,10 @@
 </include>
 
 <section>
+    <img src="images/herramientas/comicVersionado.png"/>
+</section>
+
+<section>
     <h2>Git</h2>
     <ul>
         <li>Sistema distribuido de control de versiones</li>
@@ -146,17 +150,14 @@ git config --local user.email miEmail@domain.com</code></pre>
 </section>
 
 <section>
-    <img src="images/herramientas/branches.png"/>
-</section>
-
-<section>
-    <h2>Pull Request</h2>
-    <p>Un pull request es una petición que el propietario de un fork de un repositorio hace
-        al propietario del repositorio original para que este último incorpore
-        los commits que están en el fork.</p>
-    <p>También se denomina pull request a una solicitud que se realiza de una
-        branch a otra para mergearse (generalmente después de un code review y si no se tienen permisos de merge a master).</p>
-    <!--http://aprendegit.com/que-es-un-pull-request/-->
+    <h2>Ejercicio: Git Commits Anteriores</h2>
+    <p>Empleando el repositorio del ejercicio Git</p>
+    <ul style="font-size: 0.8em">
+        <li>Volver a un commit anterior (sin borrar el posterior o último)</li>
+        <li>Volver al último commit</li>
+        <!--li>Volver a un commit anterior (borrando el último, usando checkout)</li>
+        <li>Descartar el ultimo commit (usado reset hard)</li-->
+    </ul>
 </section>
 
 <section>
@@ -175,6 +176,46 @@ git config --local user.email miEmail@domain.com</code></pre>
 </section>
 
 <section>
+    <img src="images/herramientas/branches.png"/>
+</section>
+
+<section>
+    <h2>Ejercicio: Github Branchs</h2>
+    <p>Empleando un repositorio, cuyo remote este en Github:</p>
+    <ul style="font-size: 0.8em">
+        <li>Visualizar en que rama estamos trabajando</li>
+        <li>Cree una nueva rama (develop)</li>
+        <li>Vea el listado de todas las branchs existentes en el proyecto y la branch actual</li>
+        <li>Cambie de rama</li>
+        <li>Realice algún cambio en el código y commit al repositorio local</li>
+        <li>Visualice en Github los commits de las branchs</li>
+        <li>Merge de la nueva rama con Master</li>
+        <li>Borrar una branch</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Fork</h2>
+    <p>
+    Hacerle <b>fork</b> a un repositorio significa copiarlo. Así podemos modifucar el código sin afectar al proyecto original.
+    </p>
+    <p>
+        Se utiliza para proponer cambios en el proyecto de otra persona u organización ó para utilizar el proyecto de
+        otra persona como punto de partida para nuevas ideas.
+    </p>
+</section>
+
+<section>
+    <h2>Pull Request</h2>
+    <p>Un pull request es una petición que el propietario de un fork de un repositorio hace
+        al propietario del repositorio original para que este último incorpore
+        los commits que están en el fork.</p>
+    <p>También se denomina pull request a una solicitud que se realiza de una
+        branch a otra para mergearse (generalmente después de un code review y si no se tienen permisos de merge a master).</p>
+    <!--http://aprendegit.com/que-es-un-pull-request/-->
+</section>
+
+<section>
     <img class="noBorder" src="images/herramientas/git-puss.jpg"/>
 </section>
 
@@ -183,35 +224,10 @@ git config --local user.email miEmail@domain.com</code></pre>
 </section>
 
 <section>
-    <h2>Ejercicio: Github Branchs</h2>
-    <p>Empleando un repositorio, cuyo remote este en Github:</p>
-    <ul style="font-size: 0.8em">
-        <li>Cree una nueva rama</li>
-        <li>Vea el listado de todas las branchs existentes en el proyecto y la branch actual</li>
-        <li>Cambie de rama</li>
-        <li>Realice algún cambio en el código y push al repositorio remoto</li>
-        <li>Visualice en Github los commits de las branchs</li>
-        <li>Merge de la nueva rama con Master</li>
-        <li>Borrar una branch</li>
-    </ul>
-</section>
-
-<section>
     <img class="noBorder" src="images/herramientas/git-merge-rebase.jpg"/>
 </section>
 
-<section>
-    <h2>Ejercicio: Git Commits Anteriores</h2>
-    <p>Empleando el repositorio del ejercicio Git</p>
-    <ul style="font-size: 0.8em">
-        <li>Volver a un commit anterior (sin borrar el posterior o último)</li>
-        <li>Volver al último commit</li>
-        <li>Volver a un commit anterior (borrando el último, usando checkout)</li>
-        <li>Descartar el ultimo commit (usado reset hard)</li>
-    </ul>
-</section>
-
-<section>
+<!--section>
     <h2>Ejercicio: Git eliminar</h2>
     <p>Empleando un repositorio, cuyo remote este en Github:</p>
     <ul style="font-size: 0.8em">
@@ -220,9 +236,9 @@ git config --local user.email miEmail@domain.com</code></pre>
         <li>Guardar los cambios en remoto</li>
         <li>Verificar que en el remoto, los archivos no estén presentes</li>
     </ul>
-</section>
+</section-->
 
-<section>
+<!--section>
     <h2>Ejercicio: Github Fork</h2>
     <p> Hacer un fork de las filminas de clases: <br>
         <a href="https://github.com/UCC-LabCompu2/filminas"> https://github.com/UCC-LabCompu2/filminas </a></p>
@@ -232,7 +248,7 @@ git config --local user.email miEmail@domain.com</code></pre>
     <h2>Ejercicio: Github Clone</h2>
     <p> Configurar WebStorm para clonar el repositorio al que se le realizo el Fork <br>
         https://github.com/UCC-LabCompu2/filminas.git</p>
-</section>
+</section!-->
 
 <section data-background="images/herramientas/SOFTsubversionado.png">
     <h2>Software para VCS</h2>
@@ -273,10 +289,6 @@ git config --local user.email miEmail@domain.com</code></pre>
         <li>Hacer un commit</li>
         <li>Enviar cambios a repositorio remoto</li>
     </ul>
-</section>
-
-<section>
-    <img src="images/herramientas/comicVersionado.png"/>
 </section>
 
 <section>
