@@ -75,9 +75,9 @@ Los SO requieren ciertos recursos de Hardware para funcionar:
 
 ---
 ## Hardware: Mínimo y Recomendado
-Con la configuración del hardware <b>mínima</b> el rendimiento del sistema suele ser pobre, ya que el SO sólo podrá ejecutar funciones básicas.
+Con la configuración del hardware **mínima** el rendimiento del sistema suele ser pobre, ya que el SO sólo podrá ejecutar funciones básicas.
 
-Con la configuración de hardware <b>recomendada</b> el SO funciona a una velocidad adecuada.
+Con la configuración de hardware **recomendada** el SO funciona a una velocidad adecuada.
 
 ---
 ## Requisitos mínimos de 
@@ -185,4 +185,109 @@ Habitualmente se usa para ejecutar sistemas operativos y "probarlos".
 * Parallels
 
 ---
-Linea 369
+## Ejercicio: Windows-Máquina Virtual
+**Instale Windows** en una computadora o máquina virtual (recuerde sacar screenshots del proceso).
+
+Descarga SO:
+[Windows 10](https://www.microsoft.com/es-es/software-download/windows10)
+
+Descarga Máquina Virtual: 
+[VirtualBox](https://www.virtualbox.org/)
+
+---
+## Basic Input/Output System
+La BIOS es el software que localiza y reconoce los dispositivos necesarios para cargar el Sistema Operativo en la memoria RAM.
+
+![BIOS](images/configSO/BIOS.jpg)
+
+---
+## Basic Input/Output System
+Es el encargado de gestionar el hardware y permite gestionar el arranque, es decir, seleccionar desde qué dispositivo debería leer el SO.
+
+También Puede controlar la frecuencia de la RAM, de la tarjeta gráfica, las revoluciones de los ventiladores, periféricos, etc.
+
+---
+## Basic Input/Output System
+Está integrado en un chip en la placa madre, y el firmware puede ser actualizado y grabado en la memoria flash que posee integrada.
+
+Sólo puede ser modificado por una actualización del fabricante,. Su memoria es de solo lectura.
+
+---
+## Basic Input/Output System
+Una vez que el BIOS comprueba que los componentes de la computadora funcionan correctamente, le pasa el control del hardware al sistema operativo.
+
+---
+## Basic Input/Output System
+![BIOS](images/configSO/Bios2.jpg)
+
+---
+## Basic Input/Output System
+![BIOS](images/configSO/bios2_phoenix.png)
+
+---
+## Basic Input/Output System
+![BIOS](images/configSO/Bios1.jpg)
+
+---
+## Unified Extensible Firmware Interface
+Es una interfaz entre el sistema operativo y el firmware que reemplaza la antigua interfaz del BIOS.
+![UEFI](images/configSO/uefi.png)
+
+---
+## Unified Extensible Firmware Interface
+![UEFI](images/configSO/uefi.jpg)
+
+---
+## UEFI: Mejoras
+* La interfaz permite usar el mouse, e incluye sonidos y animaciones.
+* El SO carga más rápido, a la velocidad del SSD (Disco Estado Sólido)
+* Compatible con sistemas de archivos GTP (Guid Partition Table). Discos de 9.4 Zetabytes. 128 particiones.
+* Compatibilidad nativa con 64bits
+* Mayor seguridad durante el inicio (evita bootkits, virus que se ejecutan antes de que Windows inicie)
+
+---
+![Historieta](images/configSO/commitStrip-bios.jpg)
+
+---
+## Ejercicio: BIOS o UEFI
+Entre a la sección del “BOOT Loader” dentro de la BIOS y ordene adecuadamente los dispositivos de arranque del sistema. (F1, F2, Del)
+
+---
+## Formateado de Discos
+**Formatear** un disco duro consiste en restablecer a este a su estado original para ser reutilizado o reescrito con una nueva información.
+        
+Al realizar esta operación se elimina toda la información contenida en el.
+
+---
+## Formateado de Discos (lógico)
+* **Windows:** ExFAT, FAT, FAT16, FAT32, NTFS, EFS.
+* **Linux:** ext2, ext3, ext4, JFS, ReiserFS, Reiser4, XFS.
+* **Solaris:** UFS, ZFS.
+* **Mac OS:** HFS, HFS+.
+* **IBM:** JFS, GPFS. 
+* **Discos Ópticos:** UDF.
+
+---
+## IMPORTANTE!!!
+//data-background="images/herramientas/Busydesk-desarrollo.png"
+Recuerda **ANTES** de formatear hacer backup de tus datos, así evitas perder información.
+
+---
+## Particionado de Discos
+Una **partición** es la división de espacio que se le asigna a un disco duro.
+
+Un disco duro puede tener varias particiones, que son de cierto modo independientes entre si, dado que cada una de ellas tiene su propio sistema de archivos o formato, y el SO lo reconoce como un disco independiente (aunque físicamente sea uno).
+
+Se puede formatear una partición sin necesidad de formatear todo el disco.
+
+---
+## Tipos de Particiones
+**Partición Primaria:** Se encarga de iniciar la carga del SO
+
+**Partición Extendida o Secundaria:** Almacenan información
+
+![Particiones](images/configSO/partitions.png)
+
+---
+## ¿Dudas, Preguntas, Comentarios?
+![DUDAS](images/pregunta.gif)
