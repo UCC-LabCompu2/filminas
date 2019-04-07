@@ -13,7 +13,6 @@ Created by <i class="fab fa-telegram"></i>
 </small>
 
 ---
-
 <!-- .slide: data-background="images/presentacion/lenguajes.png" data-background-size="50%" -->
 
 ## ¿Sáben Programar?
@@ -69,99 +68,26 @@ La Materia
 **Unidad 7:** Simulación de circuitos
 
 ---
-<!-- table: style="font-size: 20px" -->
-
 ## Calendario
-<table style="font-size: 20px">
-    <thead>
-    <tr>
-        <th>Semana</th>
-        <th>Unidad</th>
-        <th>Tema</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>1</td>
-        <td>1</td>
-        <td>Instalación de SO (windows y linux)</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>2</td>
-        <td>Herramientas de Desarrollo</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>3</td>
-        <td>Conceptos de Interfaz de Usuario</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>3</td>
-        <td>Interfaz de Usuario / Aplicaciones Web</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>4</td>
-        <td>Aplicaciones Web (HTML)</td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>4</td>
-        <td>Aplicaciones Web (CSS)</td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td></td>
-        <td>1er PARCIAL</td>
-    </tr>
-    <tr>
-        <td>8</td>
-        <td>5</td>
-        <td>Orientación a Eventos</td>
-    </tr>
-    <tr>
-        <td>9</td>
-        <td>5</td>
-        <td>JavaScript</td>
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>5</td>
-        <td>JavaScript</td>
-    </tr>
-    <tr>
-        <td>11</td>
-        <td></td>
-        <td>Desarrollo Proyecto Integrador</td>
-    </tr>
-    <tr>
-        <td>12</td>
-        <td></td>
-        <td>Desarrollo Proyecto Integrador</td>
-    </tr>
-    <tr>
-        <td>13</td>
-        <td>6</td>
-        <td>Aplicaciones Móviles</td>
-    </tr>
-    <tr>
-        <td>14</td>
-        <td></td>
-        <td>2do PARCIAL</td>
-    </tr>
-    <tr>
-        <td>15</td>
-        <td>7</td>
-        <td>Recuperatorio <br>Simulacion Circuitos Electronicos</td>
-    </tr>
-    </tbody>
-</table>
-
+| Semana | Unidad | Tema |
+|--------|--------|------|
+| 1 | 1 | Instalación de SO (windows y linux) |
+| 2 | 2 | Herramientas de Desarrollo |
+| 3 | 3 | Conceptos de Interfaz de Usuario |
+| 4 | 3 | Interfaz de Usuario / Aplicaciones Web |
+| 5 | 4 | Aplicaciones Web (HTML) |
+| 6 | 4 | Aplicaciones Web (CSS) |
+| 7 |   | 1er PARCIAL |
+| 8 | 5 | Orientación a Eventos |
+| 9 | 5 | JavaScript |
+| 10 | 5 | JavaScript |
+| 11 |   | Desarrollo Proyecto Integrador |
+| 12 |   | Desarrollo Proyecto Integrador |
+| 13 | 6 | Aplicaciones Móviles |
+| 14 |   | 2do PARCIAL |
+| 15 | 7 | Recuperatorio <br>Simulacion Circuitos Electronicos |
 
 ---
-
 ## Forma de Evaluación
 
 Parciales:
