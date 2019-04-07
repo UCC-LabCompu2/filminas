@@ -58,7 +58,7 @@ Desde la consola de comandos:
 * Mostrar los commits realizados
 
 ---
-<!data-background="images/herramientas/servidoresGIT.png">
+<!-- .slide: data-background="images/herramientas/servidoresGIT.png" -->
 ## Git: Servidores
 * Github
 * Bitbucket
@@ -194,7 +194,7 @@ Configurar WebStorm para clonar el repositorio al que se le realizo el Fork\
 https://github.com/UCC-LabCompu2/filminas.git
 
 ---
-<!--data-background="images/herramientas/SOFTsubversionado.png"-->
+<!-- .slide: data-background="images/herramientas/SOFTsubversionado.png" -->
 ## Software para VCS
 * Linea de Comandos
 * GitHub for windows
