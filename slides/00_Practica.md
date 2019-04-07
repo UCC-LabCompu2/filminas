@@ -20,8 +20,8 @@ Relizar un ejercicio de **Física I** ó **Física II**
 <span style="font-size: 0.4em">(o alguna idea propia que cumpla con los requisitos)</span>
 
 
-*            User Interface (HTML5 y CSS3)
-*            Funcionalidad (Javascript, canvas, etc)
+* User Interface (HTML5 y CSS3)
+* Funcionalidad (Javascript, canvas, etc)
 
 
 ![HTML5](images/presentacion/HTML5.png)
