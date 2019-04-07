@@ -18,7 +18,6 @@ Created by <i class="fab fa-telegram"></i>
 “Ingeniería del software” séptima edición de Ian Sommervill
 (Capítulo N°16: Diseño de Interfaces de Usuario)
 
-![Book](images/book.png)
 “Ingeniería del Software: Un enfoque práctico 6ta ed.” de Roger Pressman
 (Capítulo N°11: Diseño de la Interfaz de Usuario)
 
@@ -160,8 +159,8 @@ Es posible tener una interfaz separada para diferentes tipos de usuario.
 * Ser cuidadoso al utilizar pares de colores
 
 ---
-<data-background="#0000ff">
-    <h1 style="color: #ff0000;font-size: 3.5em; font-weight: bolder;">ESTO NO</h1>
+<!-- .slide: data-background="#0000ff" -->
+<h1 style="color: #ff0000;font-size: 3.5em; font-weight: bolder;">ESTO NO</h1>
    
 ---
 ## Diseño de Mensajes del sistema
