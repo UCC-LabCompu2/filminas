@@ -75,7 +75,7 @@ Los programas interpretados suelen ser más lentos que los compilados debido a l
 Uno de los entornos más comunes de uso de los intérpretes es en los navegadores web, debido a que se ejecutan independientemente de la plataforma.
 
 ---
-<!data-background="images/herramientas/IDES.png"-->
+<!-- .slide: data-background="images/herramientas/IDES.png" -->
 ## IDE's
 Ejemplos de IDE's para desarrollo Web:
 * Eclipse
@@ -88,7 +88,7 @@ Ejemplos de IDE's para desarrollo Web:
 * NotePad ++
 
 ---
-<data-background="images/herramientas/Busydesk-desarrollo.png">
+<!-- .slide: data-background="images/herramientas/Busydesk-desarrollo.png" -->
 ## IDE's
 No hay mejor IDE que aquel que cumpla con tus expectativas y supla tus necesidades y requerimientos.
 
@@ -110,7 +110,7 @@ Los usuarios pueden:
 * Aplicar cambios de distintas versiones
 
 ---
-<data-background="images/herramientas/subversionado.png">
+<!-- .slide: data-background="images/herramientas/subversionado.png" -->
 ## Ventajas de VCS:
 * Permite llevar cuenta de los cambios de un conjunto de archivos digitales en el tiempo
 * Cada versión registrada en el tiempo es una revisión
