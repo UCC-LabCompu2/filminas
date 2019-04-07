@@ -37,7 +37,7 @@ Las tareas que hace un SO son:
 
 ---
 ##  [Ejemplos de Sistema Operativo](http://gs.statcounter.com/os-market-share)
-//data-background="images/configSO/OtrosOS.png" data-background-size="50%"
+<!-- .slide: data-background="images/configSO/OtrosOS.png" data-background-size="50%" -->
 Para PC:
 * Solaris
 * Linux
@@ -269,7 +269,7 @@ Al realizar esta operación se elimina toda la información contenida en el.
 
 ---
 ## IMPORTANTE!!!
-//data-background="images/herramientas/Busydesk-desarrollo.png"
+<!-- .slide: data-background="images/herramientas/Busydesk-desarrollo.png" -->
 Recuerda **ANTES** de formatear hacer backup de tus datos, así evitas perder información.
 
 ---
