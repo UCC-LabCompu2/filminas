@@ -4,11 +4,14 @@ node_js:
   - "8"
 
 before_script:
-  - npm install -g gulp
-  - npm install
+  - npm install -g reveal-md
   
 script:
-  - gulp deploy
+  - reveal-md slides/ --static build
+  - cp -r slides/css build/
+  - cp -r slides/js build/
+  - cp -r slides/images build/
+  - cp -r slides/ejemplos build/
 
 deploy:
   provider: pages
