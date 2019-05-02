@@ -1,397 +1,311 @@
-<!doctype html>
-<html lang="es">
-<head>
-
-    <link href='images/code.ico' rel='shortcut icon' type='image/x-icon'>
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <title>Git</title>
-    <meta name="description" content="Git">
-    <meta name="author" content="
-    Agus Edme Aliciardi | Ricardo Martin Marcucci
-">
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
 
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
 
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+# Git: Sistema de Control de Versiones
+<small>
+Created by <i class="fab fa-telegram"></i>
+[edme88]("https://t.me/edme88") & 
+<i class="fab fa-telegram"></i>
+[rmarku]("https://t.me/rmarku")
+</small>
 
-    <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="lib/css/zenburn.css">
-    <link rel="stylesheet" href="css/filminas.css">
-    <script type="text/javascript" src="js/pruebas.js"></script>
+</script></section><section  data-markdown><script type="text/template">
+![Historieta Versionado](images/herramientas/comicVersionado.png)
 
-    <!-- Printing and PDF exports -->
-    <script>
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-    </script>
+</script></section><section  data-markdown><script type="text/template">
+## Git
+* Sistema distribuido de control de versiones
+* Libre
+* Crea branches y hace merge rapido y facil
+* Cada "Clón" es un repositorio completo
 
-    <!--[if lt IE 9]>
-    <script src="lib/js/html5shiv.js"></script>
-    <![endif]-->
+[![Git](images/herramientas/git.png)](href="https://git-scm.com/)
+
+</script></section><section  data-markdown><script type="text/template">
+## Git: Configuración Usuario
+Desde la consola de comandos:
+* Configurar usuario de manera Global
+
+```javascript
+   git config --global user.name "nombreUsuario"
+   git config --global user.email miEmail@domain.com 
+```
+
+* Configurar usuario de manera local
+```javascript
+   git config --local user.name "nombreUsuario"
+   git config --local user.email miEmail@domain.com
+```
+
+* Ver configuración realizada
+```javascript
+   git config --list
+```
+</script></section><section  data-markdown><script type="text/template">
+## Ejercicio: Repositorio local
+Desde la consola de comandos:
+* Inicializar un repositorio
+* Crear un archivo y guardarlo -
+* Mostrar situación actual del repositorio
+* Registrar los cambios (añadir el archivo)
+* Incluir el archivo en el repositorio local
+* Mostrar los commits realizados
+* Modificar nuevamente el archivo -
+* Registrar los cambios e incluirlos
+* Mostrar los commits realizados
+
+</script></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-background="images/herramientas/servidoresGIT.png" -->
+## Git: Servidores
+* Github
+* Bitbucket
+
+</script></section><section  data-markdown><script type="text/template">
+## Ejercicio: Creación de Cuenta en GitHub
+[![gitHub](images/herramientas/gitHub.png)](https://www.github.com)
+
+</script></section><section  data-markdown><script type="text/template">
+## Los 3 estados + Untraking
+* **Unmodified** los datos estan almacenados de manera segura en el repositorio
+* **Modified** Se ha modificado el archivo pero todavía no se ha confirmado
+* **Untrack** el archivo no lleva seguimiento de versionado
+
+</script></section><section  data-markdown><script type="text/template">
+## Los 3 estados + Untraking
+![3 Estados](images/herramientas/three-stages-01.svg)
+
+</script></section><section  data-markdown><script type="text/template">
+## Commit
+* Identificadores numéricos de 40bytes
+* Identificación de la persona que realizo el commit (nombre y mail)
+* Fecha del commit</li>
+* Mensaje de texto asociado al commit (comentario personal de los cambios)
+
+![Git Commit](images/herramientas/git_commit.png)
+
+</script></section><section  data-markdown><script type="text/template">-
+## Ejercicio: Github Básico
+* Crear un repositorio (inicializarlo)
+* Clonar el repositorio
+* Agregar archivo
+* Guardar cambios en repositorio local
+* Guardar el commit en el repositorio remoto
+* En el navegador, visualizar los commits realizados
+
+</script></section><section  data-markdown><script type="text/template">
+## Ejercicio: Github Básico
+El archivo a crear debe ser un bloc de notas y guardarlo como **index.html**
+
+````html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
-
-<div class="reveal">
-
-    <!-- Any section element inside of this container is displayed as a slide -->
-    <div class="slides">
-
-<section>
-    <h1>Git: Sistema de Control de Versiones</h1>
-    
-    <h3>Conceptos básicos</h3>
-
-    <p>
-        <small>Created by
-            <a href="https://t.me/edme88" target="_blank">
-            <i class="fa fa-telegram"></i>edme88
-            </a> &
-            <a href="https://t.me/rmarku" target="_blank">
-            <i class="fa fa-telegram"></i>rmarku
-            </a>
-        </small>
-    </p>
-</section>
-
-<section>
-    <img src="images/herramientas/comicVersionado.png"/>
-</section>
-
-<section>
-    <h2>Git</h2>
-    <ul>
-        <li>Sistema distribuido de control de versiones</li>
-        <li>Libre</li>
-        <li>Crea branches y hace merge rapido y facil</li>
-        <li>Cada "Clón" es un repositorio completo</li>
-    </ul>
-    <a href="https://git-scm.com/" target="_blank"><img class="noBorder" src="images/herramientas/git.png"
-                                                        height="40%"/></a>
-</section>
-
-<section>
-    <h2>Git: Configuracion Usuario</h2>
-    Desde la consola de comandos:
-    <ul>
-        <li>Configurar usuario de manera Global</li>
-    </ul>
-    <pre><code>git config --global user.name "nombreUsuario"
-git config --global user.email miEmail@domain.com</code></pre>
-    <ul>
-        <li>Configurar usuario de manera local</li>
-    </ul>
-    <pre><code>git config --local user.name "nombreUsuario"
-git config --local user.email miEmail@domain.com</code></pre>
-    <ul>
-        <li>Ver configuración realizada</li>
-    </ul>
-    <pre><code>git config --list</code></pre>
-</section>
-
-<section>
-    <section>
-        <h2>Ejercicio: Repositorio local</h2>
-        Desde la consola de comandos:
-        <ul>
-            <li>Inicializar un repositorio</li>
-            <li>Crear un archivo y guardarlo -</li>
-            <li>Mostrar situación actual del repositorio</li>
-            <li>Registrar los cambios (añadir el archivo) </li>
-            <li>Incluir el archivo en el repositorio local</li>
-            <li>Mostrar los commits realizados</li>
-            <li>Modificar nuevamente el archivo -</li>
-            <li>Registrar los cambios e incluirlos</li>
-            <li>Mostrar los commits realizados</li>
-        </ul>
-    </section>
-</section>
-<section data-background="images/herramientas/servidoresGIT.png">
-    <h2>Git: Servidores</h2>
-    <ul>
-        <li>Github</li>
-        <li>Bitbucket</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Ejercicio: Creación de Cuenta en GitHub</h2>
-    <a href="https://www.github.com" target="_blank">
-        <img class="noBorder" src="images/herramientas/gitHub.png" height="40%"/></a>
-</section>
-
-<section>
-    <h2>Los 3 estados + Untraking</h2>
-    <ul>
-        <li><b>Unmodified</b> los datos estan almacenados de manera segura en el repositorio</li>
-        <li><b>Modified</b> Se ha modificado el archivo pero todavía no se ha confirmado</li>
-        <li><b>Untrack</b> el archivo no lleva seguimiento de versionado</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Los 3 estados + Untraking</h2>
-    <img style="background: rgba(255, 255, 255, 0.4); border: none; padding:  10px; border-radius:10px" src="images/herramientas/three-stages-01.svg" width="70%"/>
-</section>
-
-<section>
-    <h2>Commit</h2>
-    <ul>
-        <li> Identificadores numéricos de 40bytes</li>
-        <li> Identificación de la persona que realizo el commit (nombre y mail)</li>
-        <li> Fecha del commit</li>
-        <li> Mensaje de texto asociado al commit (comentario personal de los cambios)</li>
-    </ul>
-    <img class="noBorder" src="images/herramientas/git_commit.png"/>
-</section>
-
-<section>
-    <h2>Ejercicio: Github Básico</h2>
-    <ul>
-        <li>Crear un repositorio (inicializarlo)</li>
-        <li>Clonar el repositorio</li>
-        <li>Agregar archivo</li>
-        <li>Guardar cambios en repositorio local</li>
-        <li>Guardar el commit en el repositorio remoto</li>
-        <li>En el navegador, visualizar los commits realizados</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Ejercicio: Github Básico</h2>
-    <p>El archivo a crear debe ser un bloc de notas y guardarlo como <b>index.html</b></p>
-    <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="es">
-&lt;head>
-  &lt;meta charset="UTF-8"&gt;
-  &lt;meta name="description" content="Free Web tutorials"&gt;
-  &lt;meta name="keywords" content="HTML,CSS,XML,JavaScript"&gt;
-  &lt;meta name="author" content="John Doe"&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-</section>
-
-<section>
-    <h2>Readme.md</h2>
-    <ul>
-        <li>Guía rápida de la aplicación o librería y de cómo empezar a usarla.</li>
-        <li>Instrucciones de configuración, instalación, operación, manifiesto de archivos, información sobre licencia y el desarrolador, bug conocidos, solución a problemas, créditos y agradecimientos, registro de cambios o versiones, sección de noticias, etc. </li>
-        <li><a href="https://dillinger.io/">Visualizador de Markdown</a></li>
-    </ul>
-    <!--https://jesuslc.com/2016/07/12/como-escribir-un-readme-que-mole/-->
-</section>
-
-<section>
-    <h2>Ejercicio: Github Colaborativo</h2>
-    <ul style="font-size: 0.8em">
-        <li>Emplear el repositorio del anterior ejercicio</li>
-        <li>Configurar el repositorio para trabajar de manera colaborativa con un compañero. (Setting->Collaborators).</li>
-        <li>Modificar un archivo desde el navegador</li>
-        <li>Comprobar el repositorio local.</li>
-        <li>Descargar cambios.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Ejercicio: Git Commits Anteriores</h2>
-    <p>Empleando el repositorio del ejercicio Git</p>
-    <ul style="font-size: 0.8em">
-        <li>Volver a un commit anterior (sin borrar el posterior o último)</li>
-        <li>Volver al último commit</li>
-        <!--li>Volver a un commit anterior (borrando el último, usando checkout)</li>
-        <li>Descartar el ultimo commit (usado reset hard)</li-->
-    </ul>
-</section>
-
-<section>
-    <h2>Terminología</h2>
-
-    <ul>
-        <li><b>Repositorio:</b> Colección de todas las referencias, base de datos, objetos y una copia de
-            trabajo.
-        </li>
-        <li><b>Commit:</b> Es una foto del proyecto en un tiempo determinado.</li>
-        <li><b>Branch (rama):</b> Linea de desarrollo del proyecto</li>
-        <li><b>Tag (etiqueta):</b> Una etiqueta a un commit en particular</li>
-        <li><b>Ref o referencia:</b> Cadena de 40 bytes que representa una version/commit.</li>
-        <li><b>Merge:</b> Mezcla codigo de 2 ramas</li>
-    </ul>
-</section>
-
-<section>
-    <img src="images/herramientas/branches.png"/>
-</section>
-
-<section>
-    <h2>Ejercicio: Github Branchs</h2>
-    <p>Empleando un repositorio, cuyo remote este en Github:</p>
-    <ul style="font-size: 0.8em">
-        <li>Visualizar en que rama estamos trabajando</li>
-        <li>Cree una nueva rama (develop)</li>
-        <li>Vea el listado de todas las branchs existentes en el proyecto y la branch actual</li>
-        <li>Cambie de rama</li>
-        <li>Realice algún cambio en el código y commit al repositorio local</li>
-        <li>Visualice en Github los commits de las branchs</li>
-        <li>Merge de la nueva rama con Master</li>
-        <li>Borrar una branch</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Fork</h2>
-    <p>
-    Hacerle <b>fork</b> a un repositorio significa copiarlo. Así podemos modifucar el código sin afectar al proyecto original.
-    </p>
-    <p>
-        Se utiliza para proponer cambios en el proyecto de otra persona u organización ó para utilizar el proyecto de
-        otra persona como punto de partida para nuevas ideas.
-    </p>
-</section>
-
-<section>
-    <h2>Pull Request</h2>
-    <p>Un pull request es una petición que el propietario de un fork de un repositorio hace
-        al propietario del repositorio original para que este último incorpore
-        los commits que están en el fork.</p>
-    <p>También se denomina pull request a una solicitud que se realiza de una
-        branch a otra para mergearse (generalmente después de un code review y si no se tienen permisos de merge a master).</p>
-    <!--http://aprendegit.com/que-es-un-pull-request/-->
-</section>
-
-<section>
-    <img class="noBorder" src="images/herramientas/git-puss.jpg"/>
-</section>
-
-<section>
-    <img class="noBorder" src="images/herramientas/git-purr.jpg"/>
-</section>
-
-<section>
-    <img class="noBorder" src="images/herramientas/git-merge-rebase.jpg"/>
-</section>
-
-<!--section>
-    <h2>Ejercicio: Git eliminar</h2>
-    <p>Empleando un repositorio, cuyo remote este en Github:</p>
-    <ul style="font-size: 0.8em">
-        <li>Elimar un archivo</li>
-        <li>Eliminar una carpeta</li>
-        <li>Guardar los cambios en remoto</li>
-        <li>Verificar que en el remoto, los archivos no estén presentes</li>
-    </ul>
-</section-->
-
-<!--section>
-    <h2>Ejercicio: Github Fork</h2>
-    <p> Hacer un fork de las filminas de clases: <br>
-        <a href="https://github.com/UCC-LabCompu2/filminas"> https://github.com/UCC-LabCompu2/filminas </a></p>
-</section>
-
-<section>
-    <h2>Ejercicio: Github Clone</h2>
-    <p> Configurar WebStorm para clonar el repositorio al que se le realizo el Fork <br>
-        https://github.com/UCC-LabCompu2/filminas.git</p>
-</section!-->
-
-<section data-background="images/herramientas/SOFTsubversionado.png">
-    <h2>Software para VCS</h2>
-    <ul>
-        <li>Linea de Comandos</li>
-        <li>GitHub for windows</li>
-        <li>Tortoise</li>
-        <li>SourceTree (BitBucket)</li>
-        <li>GitKraken</li>
-    </ul>
-</section>
-
-<section>
-    <h2>GitKraken</h2>
-    <img src="images/herramientas/git_kraken.png"/>
-</section>
-
-<section>
-    <h2>SourceTree</h2>
-    <img src="images/herramientas/git_sourceTree.png"/>
-</section>
-
-<section>
-    <h2>Git Tortoise</h2>
-    <img src="images/herramientas/git_tortoise.png"/>
-</section>
-
-<section>
-    <img src="images/herramientas/gitCommands.jpg"/>
-</section>
-
-<section>
-    <h2>Repaso: Comandos Básicos</h2>
-    <ul>
-        <li>Clonar Repositorio</li>
-        <li>Actualizar repositorio local a commit más nuevo</li>
-        <li>Registrar cambios (añadirlos al Index)</li>
-        <li>Hacer un commit</li>
-        <li>Enviar cambios a repositorio remoto</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Desafío: Comandos Git</h2>
-    <img src="images/herramientas/comandoGit1.png"/>
-</section>
-
-<section>
-    <img class="noBorder" src="images/herramientas/Fire-commit-push.jpg" style="height: 650px"/>
-</section>
-
-<section>
-    <h2>Cursos de Git</h2>
-    <ul>
-        <li><a href="https://try.github.io" target="_blank">try.github</a></li>
-        <li><a href="https://www.codecademy.com/learn/learn-git" target="_blank">Codecademy</a></li>
-        <li><a href="https://www.acamica.com/cursos/29/git" target="_blank">Acamica</a> </li>
-        <li><a href="https://www.codeschool.com/learn/git" target="_blank">CodeSchool</a> </li>
-    </ul>
-</section>
-
-<section>
-    <h2>¿Dudas, Preguntas, Comentarios?</h2>
-    <img class="noBorder" src="images/pregunta.gif" style="width:30%;border-radius: 20%;">
-</section>
-
-</div>
-</div>
-
-<script src="lib/js/head.min.js"></script>
-<script src="js/reveal.js"></script>
-
-<script>
-	// More info https://github.com/hakimel/reveal.js#configuration
-	Reveal.initialize({
-		history: true,
-
-		// More info https://github.com/hakimel/reveal.js#dependencies
-		dependencies: [
-			{src: 'plugin/markdown/marked.js'},
-			{src: 'plugin/markdown/markdown.js'},
-			{src: 'plugin/notes/notes.js', async: true},
-			{
-				src: 'plugin/highlight/highlight.js', async: true, callback: function () {
-				hljs.initHighlightingOnLoad();
-			}
-			}
-		]
-	});
-</script>
 </body>
 </html>
+````
+</script></section><section  data-markdown><script type="text/template">
+## Readme.md
+* Guía rápida de la aplicación o librería y de cómo empezar a usarla.
+* Instrucciones de configuración, instalación, operación, manifiesto de archivos, información sobre licencia y el desarrolador, bug conocidos, solución a problemas, créditos y agradecimientos, registro de cambios o versiones, sección de noticias, etc.
+* [Visualizador de Markdown](https://dillinger.io/)
 
+<!--https://jesuslc.com/2016/07/12/como-escribir-un-readme-que-mole/-->
+
+</script></section><section  data-markdown><script type="text/template">
+## Ejercicio: Github Colaborativo
+* Emplear el repositorio del anterior ejercicio
+* Configurar el repositorio para trabajar de manera colaborativa con un compañero. (Setting->Collaborators).
+* Modificar un archivo desde el navegador
+* Comprobar el repositorio local.
+* Descargar cambios.
+
+</script></section><section  data-markdown><script type="text/template">
+## Ejercicio: Git Commits Anteriores
+Empleando el repositorio del ejercicio Git
+
+* Volver a un commit anterior (sin borrar el posterior o último)
+* Volver al último commit
+
+</script></section><section  data-markdown><script type="text/template">
+## Terminología
+* **Repositorio:** Colección de todas las referencias, base de datos, objetos y una copia de trabajo.
+* **Commit:** Es una foto del proyecto en un tiempo determinado.
+* **Branch (rama):** Linea de desarrollo del proyecto
+* **Tag (etiqueta):** Una etiqueta a un commit en particular
+* **Ref o referencia:** Cadena de 40 bytes que representa una version/commit.
+* **Merge:** Mezcla codigo de 2 ramas
+
+</script></section><section  data-markdown><script type="text/template">
+![Branches](images/herramientas/branches.png)
+
+</script></section><section  data-markdown><script type="text/template">
+## Ejercicio: Github Branchs
+Empleando un repositorio, cuyo remote este en Github:
+* Visualizar en que rama estamos trabajando
+* Cree una nueva rama (develop)
+* Vea el listado de todas las branchs existentes en el proyecto y la branch actual
+* Cambie de rama
+* Realice algún cambio en el código y commit al repositorio local
+* Visualice en Github los commits de las branchs
+* Merge de la nueva rama con Master
+* Borrar una branch
+
+</script></section><section  data-markdown><script type="text/template">
+## Fork
+Hacerle **fork** a un repositorio significa copiarlo. Así podemos modifucar el código sin afectar al proyecto original.
+
+Se utiliza para proponer cambios en el proyecto de otra persona u organización ó para utilizar el proyecto de otra persona como punto de partida para nuevas ideas.
+
+</script></section><section  data-markdown><script type="text/template">
+## Pull Request
+Un pull request es una petición que el propietario de un fork de un repositorio hace al propietario del repositorio original para que este último incorpore los commits que están en el fork.
+
+También se denomina pull request a una solicitud que se realiza de una branch a otra para mergearse (generalmente después de un code review y si no se tienen permisos de merge a master).
+
+<!--http://aprendegit.com/que-es-un-pull-request/-->
+
+</script></section><section  data-markdown><script type="text/template">   
+![Git Puss](images/herramientas/git-puss.jpg)
+
+</script></section><section  data-markdown><script type="text/template">
+![Git Purr](images/herramientas/git-purr.jpg)
+
+</script></section><section  data-markdown><script type="text/template">
+![Git Merge-Rebase](images/herramientas/git-merge-rebase.jpg)
+
+</script></section><section  data-markdown><script type="text/template">
+## Ejercicio: Github Fork
+Hacer un fork de las filminas de clases:\
+https://github.com/UCC-LabCompu2/filminas
+ 
+</script></section><section  data-markdown><script type="text/template">
+## Ejercicio: Github Clone
+Configurar WebStorm para clonar el repositorio al que se le realizo el Fork\
+https://github.com/UCC-LabCompu2/filminas.git
+
+</script></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-background="images/herramientas/SOFTsubversionado.png" -->
+## Software para VCS
+* Linea de Comandos
+* GitHub for windows
+* Tortoise
+* SourceTree (BitBucket)
+* GitKraken
+
+</script></section><section  data-markdown><script type="text/template">
+## GitKraken
+![Git Kraken](images/herramientas/git_kraken.png)
+
+</script></section><section  data-markdown><script type="text/template">
+## SourceTree
+![Git SourceTree](images/herramientas/git_sourceTree.png)
+
+</script></section><section  data-markdown><script type="text/template">
+## Git Tortoise
+![Git Tortoise](images/herramientas/git_tortoise.png)
+
+</script></section><section  data-markdown><script type="text/template">
+![Git Commands](images/herramientas/gitCommands.jpg)
+
+</script></section><section  data-markdown><script type="text/template">
+## Repaso: Comandos Básicos
+* Clonar Repositorio
+* Actualizar repositorio local a commit más nuevo
+* Registrar cambios (añadirlos al Index)
+* Hacer un commit
+* Enviar cambios a repositorio remoto
+
+</script></section><section  data-markdown><script type="text/template">
+## Desafío: Comandos Git
+![Comandos Git](images/herramientas/comandoGit1.png)
+
+</script></section><section  data-markdown><script type="text/template">
+![Fire](images/herramientas/Fire-commit-push.jpg)
+
+</script></section><section  data-markdown><script type="text/template">
+## Cursos de Git
+* [try.github](https://try.github.io)
+* [Codecademy](https://www.codecademy.com/learn/learn-git)
+* [Acamica](https://www.acamica.com/cursos/29/git)
+* [CodeSchool](https://www.codeschool.com/learn/git)
+
+</script></section><section  data-markdown><script type="text/template">
+## ¿Dudas, Preguntas, Comentarios?
+![DUDAS](images/pregunta.gif)
+</script></section></div>
+    </div>
+
+    <script src="./lib/js/head.min.js"></script>
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+    </script>
+
+    <script src="./_assets/slides/js/pruebas.js"></script>
+    <script src="./_assets/slides/js/init.js"></script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
