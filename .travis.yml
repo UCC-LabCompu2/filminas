@@ -12,6 +12,7 @@ script:
   - cp -r slides/js build/
   - cp -r slides/images build/
   - cp -r slides/ejemplos build/
+  - cp slides/index.html build/index.html 
 
 deploy:
   provider: pages
