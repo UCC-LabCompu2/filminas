@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>PSpice</title>
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+
+# Unidad 7: Simulación de Circuitos
+<small>
+Created by <i class="fab fa-telegram"></i>
+[edme88]("https://t.me/edme88") & 
+<i class="fab fa-telegram"></i>
+[rmarku]("https://t.me/rmarku")
+</small>
+
+</script></section><section  data-markdown><script type="text/template">
+## Simulación de Circuitos
+Permiten realizar los diseños y mostrar el funcionamiento de los circuitos de forma virtual antes de su montaje con componentes reales.
+
+</script></section><section  data-markdown><script type="text/template">
+## Ejemplos de Simuladores
+* Orcad
+* Proteus
+* KiCad
+* Eagle
+* Altium
+* MultiSim
+
+</script></section><section  data-markdown><script type="text/template">
+## Simuladores en Linea
+* [CircuitLab](https://www.circuitlab.com/)
+* [Logic.ly](http://logic.ly/)
+* [The Logic Lab](http://www.neuroproductions.be/logic-lab/)
+* [DA/AC Lab](http://dcaclab.com/en/home)
+* [EasyEDA](https://easyeda.com/editor)
+
+</script></section><section  data-markdown><script type="text/template">
+<!--
+    http://www.taringa.net/post/linux/15435191/Simuladores-de-circuitos-electricos-y-electronicos.html
+    http://www.educacontic.es/blog/simuladores-de-circuitos-electricos-y-electronicos-en-linea
+    http://electronica.yoreparo.com/laboratorios_virtuales/programas-de-diseno-electronico-y-simulacion-t316534.html
+-->
+</script></section><section  data-markdown><script type="text/template">
+## SPICE
+Es un acrónimo inglés de Simulation Program with Integrated Circuits Emphasis.
+
+Es un estándar internacional cuyo objetivo es simular circuitos electrónicos analógicos compuestos por
+resistencias, condensadores, diodos, transistores, etc. Para ello hay que describir los componentes,
+describir el circuito y luego elegir el tipo de simulación (temporal, en frecuencia, en continua,
+paramétrico, Montecarlo, etc.).
+
+</script></section><section  data-markdown><script type="text/template">
+## Aplicaciones Principales
+* Pspice
+* Capture
+* Layout
+* Express/Capture
+
+</script></section><section  data-markdown><script type="text/template">
+## Spice
+Simulación de circuitos analógicos, digitales y mixtos (analógico + digital).
+
+* **Entrada:** Ficheros **.cir** (en el que se describe el circuito y el tipo de simulación) y **.lib** (librerías). se almacenan sub-circuitos o los modelos que describen el comportamiento de los diferentes dispositivos
+
+* **Salida:** Ficheros **.out** (información sobre la simulación y posibles errores) y **.dat** (se almacenan los valores de todas las variables del circuito.)
+
+</script></section><section  data-markdown><script type="text/template">
+## Schematic o Capture
+Descripción gráfica del diseño **.sch**, que puede ser realizada mediante esquema eléctrico o con el lenguaje de descripción hardware VHDL.
+
+</script></section><section  data-markdown><script type="text/template">
+## Layout
+Realización de placas de circuito impreso.
+
+</script></section><section  data-markdown><script type="text/template">
+## Express/Capture
+Diseño de circuitos digitales con dispositivos lógicos programables y memorias
+
+</script></section><section  data-markdown><script type="text/template">
+## Otras librerias
+* **Libreria de Simbolos (.slb):** Almacena la descripción de los símbolos correspondientes a los diferentes componentes electrónicos.
+
+* **Lista de Nodos (.net):** Descripción del circuito (componentes y cómo se disponen)
+
+</script></section><section  data-markdown><script type="text/template">
+## Ejercicio: FiltroRC Pasa Bajo
+[PartSim](http://www.partsim.com/simulator)
+![Pasa Bajo](images/pspice/RC_pasaBajo.png)
+
+</script></section><section  data-markdown><script type="text/template">
+## Ejemplo: RC filter Transient
+<pre><code>
+    *RC Filter Transient example
+
+    V1 in 0 sin(0 1 1e6)
+    R1 in out 50k
+    C1 out 0 10p
+
+    .TRAN 10n 10u
+    .end
+</code></pre>
+
+![Filtro](images/pspice/RC_filter_Transient.png)
+
+</script></section><section  data-markdown><script type="text/template">
+## Ejemplo: RC filter Transient
+![Plot Filtro](images/pspice/plot_filterRC.png)
+
+</script></section><section  data-markdown><script type="text/template">
+## ¿Dudas, Preguntas, Comentarios?
+![DUDAS](images/pregunta.gif)
+</script></section></div>
+    </div>
+
+    <script src="./lib/js/head.min.js"></script>
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+    </script>
+
+    <script src="./_assets/slides/js/pruebas.js"></script>
+    <script src="./_assets/slides/js/init.js"></script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
