@@ -100,21 +100,10 @@ margin-left: 15px;
 
 ---
 ## Ejercicio: Propiedades tipográficas
-Escribe un código con la siguiente estructura:
-
-````html
-<p>Este es el primer párrafo
-<h1>Titulo 2</h1>
-<p>Este es el SeGuNdO PáRRaFo
-````
-
----
-## Empleando estilo en línea
-* Utilice **font-family**, **font-size** y **font-style** para el primer titulo
-* Utilice **font-weight**, **text-decoration** y **color** para el segundo titulo
-* Emplee **letter-spacing**, **line-height** y **text-align** para el primer párrafo
-* Emplee **world-spacing**, **text-indent** y **text-transform** para el segundo párrafo
-* underline, line-through, none
+Empleando el template “ej_columnas”, agregue estilo en línea para cambiar:
+1. Color del texto del título de la página.
+2. Tamaño de la fuente del título de la noticia.
+3. Tipo de fuente o letra de toda la página.
 
 ---
 ##  ¿Como Escribir un Estilo? 
@@ -136,18 +125,12 @@ selector{nombreEstilo: valor;}
 ````
 
 ---
-## Ejercicio: Selectores
-Escribe un código con la siguiente estructura:
-````html
-<h1 id="principal">Titulo 1</h1>
-<p>Este es el primer párrafo
-<h1 class="mi-titulo">Titulo 2</h1>
-<p>Este es el SeGuNdO PáRRaFo</p>
-````
-Empleando una hoja de estilo incrustada
-* A todas las etiquetas &lt;p&gt; aplicar el mismo tipo de tipografía y color.
-* Para el titulo **#principal** emplear un font-size
-* A la clase **.mi-titulo** emplee un text-decortation
+## Ejercicio: Incrustado
+Cambiar los estilos en línea por estilos incrustados.
+
+---
+## Ejercicio:
+Emplee un estilo por tag, uno por id y otro por clase.
 
 ---
 ##  Descendientes
@@ -167,8 +150,9 @@ ul li{nombreEstilo: valor;}
 ````
 ---
 ## Ejercicio: Estilo con Descendientes
-* Cree 2 listas no ordenadas y agregue estilos para visualizarla con círculos y con cuadrados.
-* Cree 2 listas ordenadas y agregue estilos para visualizarla con números romanos y letras griegas.
+Empleando el template “ej_leyes” y hoja de estilo incrustada, agregue los estilos necesarios para cambiar: 
+1. La  primera  lista  ordenada  para  visualizarla  con  números  romanos  y  una  tipografía  de mayor tamaño (upper-roman). 
+2. La segunda lista ordenada para visualizarla con letras (lower-alpha).
    
 ---
 ## Pseudo Clases
@@ -196,23 +180,11 @@ a:active {
 
 ---
 ## Ejercicio: Pseudo Clases
-Cree un hipervinculo en una pagina
+Cree un hipervinculo en la página de ej_columnas
 Empleando Pseudo clases:
 * Link visitado o no visitado con el mismo color
 * Al posicionar el mouse arriba del link, modificar el tamano de la fuente
 * Al seleccionar el link, seleccionar BOLD
-
----
-## CCS3
-Buenas Practicas:
-* Comprobar el diseño en varios navegadores
-* Depuracion (Ej. firebug)
-* Comentar el código
-* Identar y hacer el código fácil de leer
-* Usar sistema comun de nombrado
-* Evitar tamaños absolutos en fuentes o elementos
-* Utilizar notación de colores en hexadecimal
-* Ordenar los elementos según pertenezcan a cabecera, contenido principal o pie de página
 
 ---
 ## Modelo de Cajas
@@ -303,6 +275,29 @@ background: url("fondo.png");
 ````
 
 ---
+## FavIcon
+````css
+<link rel="shortcut icon" href="/favicon.ico">
+````
+
+---
+## Ejercicio: CV
+Diseñe un CV y agregue estilos empleando una hoja de estilo incrustada:
+* Hacer que el borde de los divs sea visible
+* Agregue atributos de margin y padding.
+* Agregar una imagen en el primer <div> y alinee a la izquierda
+* Centrar todo el contenido del body.
+* Agregar <a href="https://fonts.google.com/" target="_blank"> fuentes de google </a> para personalizar la página
+* Agregar background al body, que posea <a href="https://www.w3schools.com/csS/css3_gradients.asp" target="_blank">gradiente</a>
+* Agregar color plano a los divs y ponerle opacity
+* Redondear las esquinas de la imagen para dejarla circular. Redondear las esquinas de los &lt;div&gt;
+* Cambiar el favicon
+
+---
+## Ejercicio: CV
+![CV Imagen](images/html/cv_imagen.png)
+
+---
 ## Comentario
 ````css
 /* Este es un
@@ -311,30 +306,25 @@ lineas */
 ````
 
 ---
-## Ejercicio: Modelo de Cajas
-Cree 4 divs
-* Asigne diferentes colores para cada uno
-* Modifique el Padding o margen interno
-* Modifique el Borde de cada caja
-* Modifique el Margen de cada caja
-* Agregue comentarios a los estilos
+## CCS3
+Buenas Practicas:
+* Comprobar el diseño en varios navegadores
+* Depuracion (Ej. firebug)
+* Comentar el código
+* Identar y hacer el código fácil de leer
+* Usar sistema comun de nombrado
+* Evitar tamaños absolutos en fuentes o elementos
+* Utilizar notación de colores en hexadecimal
+* Ordenar los elementos según pertenezcan a cabecera, contenido principal o pie de página
 
 ---
-## Ejercicio: CV
-Diseñe un CV y agregue estilos empleando una hoja de estilo incrustada:
-* Emplear &lt;div&gt; para la estructura de la página. Agregue atributos de margin y padding.
-* Agregar una imagen en el primer &lt;div&gt; y alinee a la izquierda
-* Emplear &lt;h1&gt; para el nombre y &lt;h2&gt; para la ocupación
-* Dentro de los &lt;div&gt;, utilizar &lt;h3&gt; para cada título y &lt;p&gt; para la descripción
-* Centrar todo el contenido del body.
-* Agregar <a href="https://fonts.google.com/" target="_blank"> fuentes de google </a> para personalizar la página
-* Agregar background al body, que posea <a href="https://www.w3schools.com/csS/css3_gradients.asp" target="_blank">gradiente</a>
-* Redondear las esquinas de la imagen para dejarla circular. Redondear las esquinas de los &lt;div&gt; y elegir un color y un estilo
-* Cambiar el favicon
+## Fondos
+[W3Shool - Background](https://www.w3schools.com/cssref/css3_pr_background.asp)
 
 ---
-## Ejercicio: CV
-![CV Imagen](images/html/cv_imagen.png)
+## Ejercicio: Backgrounds
+Cree una página nueva, emplee de fondo la imagen “fondo_mario.jpg” ubicada en la carpeta de  “imagenes”. 
+Pruebe  los  diferentes  atributos  de  background:  image,  attachment,  blend-mode, clip, color, image, origin, position, repeat, size.
 
 ---
 ## Position
@@ -398,13 +388,7 @@ para controlar el comportamiento de los floats.
 ---
 ## Ejercicio: 2 Columnas
 Emplear <div> con style para lograr que el estilo del texto quede en 2 columnas fluidas.
-* En la clase **WRAP**, emplear overflow para indicar al navegador qué es lo que debe hacer con el contenido que no cabe dentro de una capa, según las dimensiones que se le han asignado. (visible, hidden, scroll,auto)
-* En la clase **SIDEBAR**, se determinara el ancho en px y el float izq (para posicionar los elementos de forma flotante)
-* En la clase **MAIN**, se determinara el margin izq del tamaño del SIDEBAR o mayor para que se coloque a la derecha del sidebar.
-
----
-## Ejercicio: 2 Columnas
-![2 Columnas](images/html/2columnas.png)
+* Float y Width
 
 ---
 ## Hoja de Estilo Externa
@@ -416,31 +400,6 @@ Emplear <div> con style para lograr que el estilo del texto quede en 2 columnas 
 ## Ejercicio: Hoja de Estilo Externa
 Modifique la página web del CV para que los estilos incrustados estén en un archivo de estilos.
 Asegúrese de por lo menos incluir un estilo por Tag, por ID y por clase.
-
----
-## Media Queries
-"Responsive Design" es la estrategia para hacer que un sitio se adapte al navegador y dispositivo en el que se muestra
-````css
-@media screen and (min-width:600px) {
-    nav {
-        float: left;
-        width: 25%;
-    }
-    section {
-        margin-left: 25%;
-    }
-}
-@media screen and (max-width:599px) {
-    nav li {
-        display: inline;
-    }
-}
-````
-[Learn Layout](http://es.learnlayout.com/media-queries.html)
-
----
-## Grid
-[W3School Grid](https://www.w3schools.com/css/css_grid.asp)
 
 ---
 ## CSS
@@ -461,28 +420,6 @@ Emplea **Chakra** para JavaScript y **Trident** para renderizado.
 
 ---
 ![Prueba Navegadores](images/html/prueba_navegadores.jpg)
-
----
-##  CSS: Recomendación 
-Revisar documentación:
-[W3 School](http://www.w3schools.com/css/default.asp)
-
-Autogenerar algunos estilos complicados:
-http://css3generator.com/
-http://www.css3.me/
-http://westciv.com/tools/shadows/
-
-Escribir los colores en hexadecimal:
-
-http://html-color-codes.info/codigos-de-colores-hexadecimales/
-
----
-## Ejemplo CCS3
-<iframe width="1200" height="500" src="ejemplos/css/index2.html"></iframe>
-
----
-## Ejemplo CCS3
-<iframe width="1200" height="500" src="ejemplos/css/index.html"></iframe>
 
 ---
 ## Transitions
@@ -520,12 +457,44 @@ div:hover {
 }
 ````
 <div class="divTran2"></div>
+---
+## Grid
+[W3School Grid](https://www.w3schools.com/css/css_grid.asp)
 
 ---
-## FavIcon
+##  CSS: Recomendación 
+Revisar documentación:
+[W3 School](http://www.w3schools.com/css/default.asp)
+
+Autogenerar algunos estilos complicados:
+http://css3generator.com/
+http://www.css3.me/
+http://westciv.com/tools/shadows/
+
+Escribir los colores en hexadecimal:
+
+http://html-color-codes.info/codigos-de-colores-hexadecimales/
+
+---
+## Media Queries
+"Responsive Design" es la estrategia para hacer que un sitio se adapte al navegador y dispositivo en el que se muestra
 ````css
-<link rel="shortcut icon" href="/favicon.ico">
+@media screen and (min-width:600px) {
+    nav {
+        float: left;
+        width: 25%;
+    }
+    section {
+        margin-left: 25%;
+    }
+}
+@media screen and (max-width:599px) {
+    nav li {
+        display: inline;
+    }
+}
 ````
+[Learn Layout](http://es.learnlayout.com/media-queries.html)
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
