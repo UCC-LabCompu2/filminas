@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Drivers</title>
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+
+# Drivers
+<small>
+Created by <i class="fab fa-telegram"></i>
+[edme88]("https://t.me/edme88") & 
+<i class="fab fa-telegram"></i>
+[rmarku]("https://t.me/rmarku")
+</small>
+
+</script></section><section  data-markdown><script type="text/template">
+## Driver o Controlador de Dispositivo
+Es un programa que permite al SO interaccionar con un periférico (impresora, scaner, etc) o dispositivo hardware (tarjeta gráfica, tarjeta de sonido, modem, etc), haciendo una abstracción del mismo y proporcionando una interfaz para poder utilizarlo. <br><br>
+
+Le indica al SO como controlar y comunicarse con un dispositivo particular.
+
+</script></section><section  data-markdown><script type="text/template">
+![Drivers](images/configSO/drivers.png)
+
+</script></section><section  data-markdown><script type="text/template">
+## Tipos de Drivers
+Existen tantos tipos de controladores como tipos de periféricos.
+
+Puede haber más de un controlador para un mismo dispositivo.
+
+</script></section><section  data-markdown><script type="text/template">
+## Tipos de Drivers: Ejemplos
+* de Audio (Realtek, SoundBlast)
+* de Video (ATI, NVIDIA)
+* LAN o Ethernet
+* Wireless
+* Escáners
+* Impresoras
+* Mouse
+* Teclados
+* Webcam
+
+</script></section><section  data-markdown><script type="text/template">
+## Tipos de Drivers
+* Fabricantes de dispositivos
+* Genéricos
+* Comunidad de Usuarios
+
+</script></section><section  data-markdown><script type="text/template">
+## Drivers: Actualización
+Los fabricantes de hardware suelen actualizar los drivers para otorgar más funcionalidades, mejorar el rendimiento o aumentar las medidas de seguridad con la finalidad de corregir errores o vulnerabilidades que podrían comprometer el equipo de los usuarios.
+
+</script></section><section  data-markdown><script type="text/template">
+### Windows
+### Administrador de Dispositivos
+El usuario puede:
+* Comprobar si el funcionamiento de los dispositivos es correcto
+* Actualizar el software de controlador o Driver
+* Modificar o establecer propiedades a un dispositivo
+* Habilitar o deshabilitar dispositivos
+
+</script></section><section  data-markdown><script type="text/template">          
+### Administrador de Dispositivos
+![Administrador de Dispositivos](images/configSO/admDispositivos2.jpg)
+
+</script></section><section  data-markdown><script type="text/template">
+###Administrador de Dispositivos
+| Simbolo | Definición |
+|---------|------------|
+|![Simbolo1](images/configSO/driver_simbolo1.png) | Ocurrió un problema. Muestra un código de error del dispositivo. |
+|![Simbolo2](images/configSO/driver_simbolo2.png) | El dispositivo está desactivado (está presente físicamente, consume recursos, pero no tiene un controlador cargado en modo protegido. |
+|![Simbolo3](images/configSO/driver_simbolo3.png) | Configuración manual en lugar de automática. |
+|![Simbolo4](images/configSO/driver_simbolo4.png) | El controlador específico del dispositivo no está disponible y se instalo un controlador compatible.
+
+</script></section><section  data-markdown><script type="text/template">
+### Linux
+### Administrador de Dispositivos
+* Los drivers son módulos del ***Kernel***
+* Con el comando lsmod
+* Desde el visor de hardware del entorno gráfico
+
+</script></section><section  data-markdown><script type="text/template">
+   <!--http://support.hp.com/es-es/document/c00374631 Simbolos de Error de Administrador de dispositivos-->
+
+</script></section><section  data-markdown><script type="text/template">
+## ¿Dudas, Preguntas, Comentarios?
+![DUDAS](images/pregunta.gif)
+</script></section></div>
+    </div>
+
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+    </script>
+
+    <script src="./_assets/slides/js/pruebas.js"></script>
+    <script src="./_assets/slides/js/init.js"></script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
