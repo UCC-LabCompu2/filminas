@@ -28,7 +28,7 @@ Relizar un ejercicio de **Física I** ó **Física II**
 
 ---
 ## Ejemplos de Proyectos
-[Historico de Proyectos](https://ucc-labcompu2-historico.github.io/)
+[Historico de Proyectos](https://ucc-labcompu2-historico.github.io/historial-proyectos/)
 
 
 ---
