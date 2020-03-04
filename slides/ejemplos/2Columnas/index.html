@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2 Columnas</title>
+    <style>
+        html, body {
+            background: #ccc;
+        }
+        .wrap {
+            margin: 20px;
+            padding: 20px;
+            padding-right: 240px;
+            background: #fff;
+            overflow: hidden;
+        }
+        .main {
+            margin: 0 -220px 0 auto;
+            width: 100%;
+            float: right;
+        }
+        .sidebar {
+            width: 200px;
+            float: left;
+            height: 200px
+        }
+        .main,.sidebar {
+            background: #eee;
+            min-height: 100px;
+        }
+        .clear {
+            clear: both
+        }
+        span {
+            background: yellow
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="sidebar">Barra Izquierda</div>
+    <div class="main"><span>Contenido Derecha</span>
+        <div class="clear">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec cursus nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla leo tellus, ornare vel aliquam sed, rhoncus sed ligula. Duis quis hendrerit nisl. Vestibulum magna neque, auctor in eleifend eu, egestas vel ipsum. Etiam vitae interdum nisl, non tincidunt sapien. Nam nisi neque, vulputate a iaculis id, aliquam non nunc. Vivamus ut efficitur sem. Maecenas nec tortor arcu. Quisque elementum bibendum diam eget euismod. Nulla et arcu vel nisi pellentesque viverra placerat ac ante. Quisque mattis leo et arcu euismod, quis cursus felis convallis. Integer ut condimentum ex. Sed vel justo ac sapien placerat fermentum.
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
