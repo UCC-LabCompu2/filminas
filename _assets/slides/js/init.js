@@ -1,4 +1,3 @@
-
 window.onload = function () {
     var head = document.head;
     var link = document.createElement("link");
