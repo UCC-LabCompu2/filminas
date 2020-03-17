@@ -71,18 +71,23 @@ La Materia
 ## Calendario
 | Semana | Unidad | Tema |
 |--------|--------|------|
-| 1 | 1 | Instalación de SO (windows y linux) |
+| 1 | 1 | Instalación de SO |
 | 2 | 2 | Herramientas de Desarrollo |
-| 3 | 3 | Conceptos de Interfaz de Usuario |
-| 4 | 3 | Interfaz de Usuario / Aplicaciones Web |
-| 5 | 4 | Aplicaciones Web (HTML) |
-| 6 | 4 | Aplicaciones Web (CSS) |
+| 3 | 3 | Interfaz de Usuario |
+| 4 | 3 | Aplicaciones Web |
+| 5 | 4 | HTML |
+| 6 | 4 | CSS |
 | 7 |   | 1er PARCIAL |
+
+---
+## Calendario
+| Semana | Unidad | Tema |
+|--------|--------|------|
 | 8 | 5 | Orientación a Eventos |
 | 9 | 5 | JavaScript |
 | 10 | 5 | JavaScript |
-| 11 |   | Desarrollo Proyecto Integrador |
-| 12 |   | Desarrollo Proyecto Integrador |
+| 11 |   | Proyecto Integrador |
+| 12 |   | Proyecto Integrador |
 | 13 | 6 | Aplicaciones Móviles |
 | 14 |   | 2do PARCIAL |
 | 15 | 7 | Recuperatorio <br>Simulacion Circuitos Electronicos |

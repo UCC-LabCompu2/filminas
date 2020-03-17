@@ -63,13 +63,13 @@ El usuario puede:
 ![Administrador de Dispositivos](images/configSO/admDispositivos2.jpg)
 
 ---
-###Administrador de Dispositivos
+### Administrador de Dispositivos
 | Simbolo | Definición |
-|---------|------------|
-|![Simbolo1](images/configSO/driver_simbolo1.png) | Ocurrió un problema. Muestra un código de error del dispositivo. |
-|![Simbolo2](images/configSO/driver_simbolo2.png) | El dispositivo está desactivado (está presente físicamente, consume recursos, pero no tiene un controlador cargado en modo protegido. |
-|![Simbolo3](images/configSO/driver_simbolo3.png) | Configuración manual en lugar de automática. |
-|![Simbolo4](images/configSO/driver_simbolo4.png) | El controlador específico del dispositivo no está disponible y se instalo un controlador compatible.
+|--------------------------------------------------|------------------------------------------------------------------|
+| ![Simbolo1](images/configSO/driver_simbolo1.png) | Ocurrió un problema. Muestra un código de error del dispositivo. |
+| ![Simbolo2](images/configSO/driver_simbolo2.png) | El dispositivo está desactivado (está presente físicamente, consume recursos, pero no tiene un controlador cargado en modo protegido. |
+| ![Simbolo3](images/configSO/driver_simbolo3.png) | Configuración manual en lugar de automática. |
+| ![Simbolo4](images/configSO/driver_simbolo4.png) | El controlador específico del dispositivo no está disponible y se instalo un controlador compatible. |
 
 ---
 ### Linux
@@ -77,9 +77,6 @@ El usuario puede:
 * Los drivers son módulos del ***Kernel***
 * Con el comando lsmod
 * Desde el visor de hardware del entorno gráfico
-
----
-   <!--http://support.hp.com/es-es/document/c00374631 Simbolos de Error de Administrador de dispositivos-->
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
