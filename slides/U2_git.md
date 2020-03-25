@@ -22,6 +22,13 @@ Created by <i class="fab fa-telegram"></i>
 [![Git](images/herramientas/git.png)](href="https://git-scm.com/)
 
 ---
+## Ya instalaste Git? 
+Si aún no lo descargaste, bajalo del siguiente link!
+(Se recomienda **Use Windows default console windows**)
+
+[Git]("https://git-scm.com/")
+
+---
 ## Git: Configuración Usuario
 Desde la consola de comandos:
 * Configurar usuario de manera Global
@@ -42,17 +49,9 @@ Desde la consola de comandos:
    git config --list
 ```
 ---
-## Ejercicio: Repositorio local
-Desde la consola de comandos:
-* Inicializar un repositorio
-* Crear un archivo y guardarlo -
-* Mostrar situación actual del repositorio
-* Registrar los cambios (añadir el archivo)
-* Incluir el archivo en el repositorio local
-* Mostrar los commits realizados
-* Modificar nuevamente el archivo -
-* Registrar los cambios e incluirlos
-* Mostrar los commits realizados
+## Ejercicio: Configurar Usuario
+* Abre la consola de windows **cmd** (símbolo del sistema) o el Bash de Git (depende como lo instalaste)
+* Configura tu usuario de git de manera global (Recuerda tu nombre de usuario e email usados. Posteriorment lo usaras para tu cuenta de GitHub)
 
 ---
 <!-- .slide: data-background="images/herramientas/servidoresGIT.png" -->
@@ -62,7 +61,10 @@ Desde la consola de comandos:
 
 ---
 ## Ejercicio: Creación de Cuenta en GitHub
+Create una cuenta en [gitHub]("https://www.github.com") ...**Sign up** ...for Free
+Recuerda emplear el mismo nombre de usuario e email que tu usuario de github global.
 [![gitHub](images/herramientas/gitHub.png)](https://www.github.com)
+Una vez creada tu cuenta, enviar el nombre usuario al Profe por email, así puede validarlo!
 
 ---
 ## Los 3 estados + Untraking
@@ -91,11 +93,10 @@ Desde la consola de comandos:
 * Guardar cambios en repositorio local
 * Guardar el commit en el repositorio remoto
 * En el navegador, visualizar los commits realizados
+(No te preocupes, hay un PDF con el paso a paso y capturas de pantalla https://campusvirtual.ucc.edu.ar/mod/resource/view.php?id=117801)
 
 ---
 ## Ejercicio: Github Básico
-El archivo a crear debe ser un bloc de notas y guardarlo como **index.html**
-
 ````html
 <!DOCTYPE html>
 <html lang="es">
@@ -111,6 +112,39 @@ El archivo a crear debe ser un bloc de notas y guardarlo como **index.html**
 </html>
 ````
 ---
+## Ejercicio: Github Básico
+Con este ejercicio hemos aprendido los siguientes comandos:
+* Clonar un respositorio remoto
+````
+git clone https://github.com/mi_usuario/nombre_repositorio.git
+````
+* Verificar que archivos del repositorio cambiaron
+````
+git status
+````
+* Agregar archivo al siguiente commit
+````
+git add nombre_archivo
+````
+* Guardar cambios en repositorio local
+````
+git commit -m "Comentario"
+````
+* Guardar el commit en el repositorio remoto
+````
+git push
+````
+
+## Ejercicio: Github Básico
+Los siguientes comandos
+* git clone
+* git status
+* git add
+* git commit
+* git push
+### Es lo más importante de Git. APRENDANLO COMO SU NOMBRE!!!
+
+---
 ## Readme.md
 * Guía rápida de la aplicación o librería y de cómo empezar a usarla.
 * Instrucciones de configuración, instalación, operación, manifiesto de archivos, información sobre licencia y el desarrolador, bug conocidos, solución a problemas, créditos y agradecimientos, registro de cambios o versiones, sección de noticias, etc.
@@ -119,7 +153,12 @@ El archivo a crear debe ser un bloc de notas y guardarlo como **index.html**
 <!--https://jesuslc.com/2016/07/12/como-escribir-un-readme-que-mole/-->
 
 ---
+## Readme.md
+![Markdown](images/herramientas/markdown.png)
+
+---
 ## Ejercicio: Github Colaborativo
+#### Este año (2020), por las complicaciones con las clases, no se hará :(
 * Emplear el repositorio del anterior ejercicio
 * Configurar el repositorio para trabajar de manera colaborativa con un compañero. (Setting->Collaborators).
 * Modificar un archivo desde el navegador
@@ -127,14 +166,7 @@ El archivo a crear debe ser un bloc de notas y guardarlo como **index.html**
 * Descargar cambios.
 
 ---
-## Ejercicio: Git Commits Anteriores
-Empleando el repositorio del ejercicio Git
-
-* Volver a un commit anterior (sin borrar el posterior o último)
-* Volver al último commit
-
----
-## Terminología
+## Reppaso de Terminología
 * **Repositorio:** Colección de todas las referencias, base de datos, objetos y una copia de trabajo.
 * **Commit:** Es una foto del proyecto en un tiempo determinado.
 * **Branch (rama):** Linea de desarrollo del proyecto
@@ -185,11 +217,6 @@ También se denomina pull request a una solicitud que se realiza de una branch a
 Hacer un fork de las filminas de clases:\
 https://github.com/UCC-LabCompu2/filminas
  
----
-## Ejercicio: Github Clone
-Configurar WebStorm para clonar el repositorio al que se le realizo el Fork\
-https://github.com/UCC-LabCompu2/filminas.git
-
 ---
 <!-- .slide: data-background="images/herramientas/SOFTsubversionado.png" -->
 ## Software para VCS
