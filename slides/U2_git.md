@@ -114,7 +114,7 @@ Una vez creada tu cuenta, enviar el nombre usuario al Profe por email, así pued
 ````
 ---
 ## Ejercicio: Github Básico
-Con este ejercicio hemos aprendido los siguientes comandos:
+Con este ejercicio aprendimos los comandos para:
 * Clonar un respositorio remoto
 ````
 git clone https://github.com/mi_usuario/nombre_repositorio.git
@@ -126,7 +126,11 @@ git status
 
 ---
 ## Ejercicio: Github Básico
-Con este ejercicio hemos aprendido los siguientes comandos:
+Con este ejercicio aprendimos los comandos para:
+* Añadir el cambio al siguiente commit
+````
+git add nombre_archivo
+````
 * Guardar cambios en repositorio local
 ````
 git commit -m "Comentario"
@@ -155,9 +159,10 @@ Muchas veces cuando se presentan conflictos en estos softwares, por problemas de
 
 ---
 ## por que debo emplear lineas de comando?
-Para sentirse como **Hackerman**
-![Hackerman](images/herramientas/hackerman.jpg)
-Aprendiendo **Git** por linea de comandos no dependeras de ningun software, y podras realizar TODAS las acciones. Siempre tendrás documentación de los comandos a mano!
+<!-- .slide: data-background="images/herramientas/hackerman.jpg" -->
+Para sentirse como **Hackerman** xD
+
+Aprendiendo **Git** por linea de comandos no dependeras de ningun software, y podras realizar TODAS las acciones.
 
 ---
 ## Esto de la lina de comandos sigue sin convencerme...
@@ -206,10 +211,8 @@ Es un archivo que deberian tener todos los proyectos de Soft. El mismo se supone
 ## Reppaso de Terminología
 * **Repositorio:** Colección de todas las referencias, base de datos, objetos y una copia de trabajo.
 * **Commit:** Es una foto del proyecto en un tiempo determinado.
-* **Branch (rama):** Linea de desarrollo del proyecto
 * **Tag (etiqueta):** Una etiqueta a un commit en particular
 * **Ref o referencia:** Cadena de 40 bytes que representa una version/commit.
-* **Merge:** Mezcla codigo de 2 ramas
 
 ---
 ## Ejercicio: Github Colaborativo
@@ -239,6 +242,10 @@ Empleando un repositorio, cuyo remote este en Github:
 * Visualice en Github los commits de las branchs
 * Merge de la nueva rama con Master
 * Borrar una branch
+---
+## Reppaso de Terminología
+* **Branch (rama):** Linea de desarrollo del proyecto
+* **Merge:** Mezcla codigo de 2 ramas
 
 ---
 ## Fork
