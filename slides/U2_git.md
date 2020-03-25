@@ -13,9 +13,6 @@ Created by <i class="fab fa-telegram"></i>
 </small>
 
 ---
-![Historieta Versionado](images/herramientas/comicVersionado.png)
-
----
 ## Git
 * Sistema distribuido de control de versiones
 * Libre
@@ -86,7 +83,7 @@ Desde la consola de comandos:
 
 ![Git Commit](images/herramientas/git_commit.png)
 
-----
+---
 ## Ejercicio: Github Básico
 * Crear un repositorio (inicializarlo)
 * Clonar el repositorio

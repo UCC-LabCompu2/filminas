@@ -13,9 +13,6 @@ Created by <i class="fab fa-telegram"></i>
 </small>
 
 ---
-![Historieta Versionado](images/herramientas/comicVersionado.png)
-
----
 ## Herramientas de Desarrollo
 Permiten agilizar el proceso de desarrollo de Software.
 
@@ -122,6 +119,9 @@ Los usuarios pueden:
 * SVN
 * Mercurial
 * Bazaar
+
+---
+![Historieta Versionado](images/herramientas/comicVersionado.png)
 
 ---
 ## Documentación de Código
