@@ -63,8 +63,9 @@ Desde la consola de comandos:
 ## Ejercicio: Creación de Cuenta en GitHub
 Create una cuenta en [gitHub]("https://www.github.com") ...**Sign up** ...for Free
 Recuerda emplear el mismo nombre de usuario e email que tu usuario de github global.
-[![gitHub](images/herramientas/gitHub.png)](https://www.github.com)
 Una vez creada tu cuenta, enviar el nombre usuario al Profe por email, así puede validarlo!
+[![gitHub](images/herramientas/gitHub.png)](https://www.github.com)
+
 
 ---
 ## Los 3 estados + Untraking
@@ -122,10 +123,10 @@ git clone https://github.com/mi_usuario/nombre_repositorio.git
 ````
 git status
 ````
-* Agregar archivo al siguiente commit
-````
-git add nombre_archivo
-````
+
+---
+## Ejercicio: Github Básico
+Con este ejercicio hemos aprendido los siguientes comandos:
 * Guardar cambios en repositorio local
 ````
 git commit -m "Comentario"
@@ -135,6 +136,7 @@ git commit -m "Comentario"
 git push
 ````
 
+---
 ## Ejercicio: Github Básico
 Los siguientes comandos
 * git clone
@@ -145,7 +147,51 @@ Los siguientes comandos
 ### Es lo más importante de Git. APRENDANLO COMO SU NOMBRE!!!
 
 ---
+## Y si no me gusta emplear lineas de comando?
+Hay otras alternativas, como emplear softwares de VCS.
+
+Sin embargo...la mayoría de interfaces gráficas de usuario solo implementan una parte de las características de Git por motivos de simplicidad.
+Muchas veces cuando se presentan conflictos en estos softwares, por problemas de configuración o acciones mal realizadas, hay que solucionarlas por linea de comandos.
+
+---
+## por que debo emplear lineas de comando?
+Para sentirse como **Hackerman**
+![Hackerman](images/herramientas/hackerman.jpg)
+Aprendiendo **Git** por linea de comandos no dependeras de ningun software, y podras realizar TODAS las acciones. Siempre tendrás documentación de los comandos a mano!
+
+---
+## Esto de la lina de comandos sigue sin convencerme...
+En la siguiente filmina tienes algunas opciones de software para VCS. Puedes probar y usar cualquier :D
+Depende de ti! (pero en clase solo veremos linea de comandos)
+
+---
+<!-- .slide: data-background="images/herramientas/SOFTsubversionado.png" -->
+## Software para VCS
+* Linea de Comandos
+* GitHub for windows
+* Tortoise
+* SourceTree (BitBucket)
+* GitKraken
+
+---
+## GitKraken
+![Git Kraken](images/herramientas/git_kraken.png)
+
+---
+## SourceTree
+![Git SourceTree](images/herramientas/git_sourceTree.png)
+
+---
+## Git Tortoise
+![Git Tortoise](images/herramientas/git_tortoise.png)
+
+---
+![Git Commands](images/herramientas/gitCommands.jpg)
+
+---
 ## Readme.md
+Seguramente te estes preguntando: qué es ese readme.md que se autogeneró? 
+Es un archivo que deberian tener todos los proyectos de Soft. El mismo se supone que sea una:
 * Guía rápida de la aplicación o librería y de cómo empezar a usarla.
 * Instrucciones de configuración, instalación, operación, manifiesto de archivos, información sobre licencia y el desarrolador, bug conocidos, solución a problemas, créditos y agradecimientos, registro de cambios o versiones, sección de noticias, etc.
 * [Visualizador de Markdown](https://dillinger.io/)
@@ -157,6 +203,15 @@ Los siguientes comandos
 ![Markdown](images/herramientas/markdown.png)
 
 ---
+## Reppaso de Terminología
+* **Repositorio:** Colección de todas las referencias, base de datos, objetos y una copia de trabajo.
+* **Commit:** Es una foto del proyecto en un tiempo determinado.
+* **Branch (rama):** Linea de desarrollo del proyecto
+* **Tag (etiqueta):** Una etiqueta a un commit en particular
+* **Ref o referencia:** Cadena de 40 bytes que representa una version/commit.
+* **Merge:** Mezcla codigo de 2 ramas
+
+---
 ## Ejercicio: Github Colaborativo
 #### Este año (2020), por las complicaciones con las clases, no se hará :(
 * Emplear el repositorio del anterior ejercicio
@@ -166,13 +221,9 @@ Los siguientes comandos
 * Descargar cambios.
 
 ---
-## Reppaso de Terminología
-* **Repositorio:** Colección de todas las referencias, base de datos, objetos y una copia de trabajo.
-* **Commit:** Es una foto del proyecto en un tiempo determinado.
-* **Branch (rama):** Linea de desarrollo del proyecto
-* **Tag (etiqueta):** Una etiqueta a un commit en particular
-* **Ref o referencia:** Cadena de 40 bytes que representa una version/commit.
-* **Merge:** Mezcla codigo de 2 ramas
+## Git Brach
+Branch significa **rama**.
+Cuando se crea un repositorio, por defecto se emplea la rama principal **master**. 
 
 ---
 ![Branches](images/herramientas/branches.png)
@@ -217,30 +268,6 @@ También se denomina pull request a una solicitud que se realiza de una branch a
 Hacer un fork de las filminas de clases:\
 https://github.com/UCC-LabCompu2/filminas
  
----
-<!-- .slide: data-background="images/herramientas/SOFTsubversionado.png" -->
-## Software para VCS
-* Linea de Comandos
-* GitHub for windows
-* Tortoise
-* SourceTree (BitBucket)
-* GitKraken
-
----
-## GitKraken
-![Git Kraken](images/herramientas/git_kraken.png)
-
----
-## SourceTree
-![Git SourceTree](images/herramientas/git_sourceTree.png)
-
----
-## Git Tortoise
-![Git Tortoise](images/herramientas/git_tortoise.png)
-
----
-![Git Commands](images/herramientas/gitCommands.jpg)
-
 ---
 ## Repaso: Comandos Básicos
 * Clonar Repositorio
