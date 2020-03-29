@@ -22,7 +22,6 @@ Proporciona las bases para los programas de aplicación y actúa como un interme
 ## Sistema Operativo
 ![SO](images/configSO/SO.png)
 
-
 ---
 ## SO: Tareas
 Las tareas que hace un SO son:
