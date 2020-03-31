@@ -304,8 +304,8 @@ Es un archivo que deberian tener todos los proyectos de Soft. El mismo se supone
 ---
 ## Ejercicio: Github Básico II
 * Realizar un cambio en el repositorio remoto
-* Ver el estado del repositorio actual (si hay cambios, añadirlos, commitearlos y pushearlos)
-* Traer los cambios del repositorio remoto
+* Ver el repositorio local (esta ese cambio?)
+* Traer los cambios del repositorio remoto al local
 (No te preocupes, hay un [PDF](https://drive.google.com/open?id=1fImvKA6bvFDLyq0-17OHXUeUGhJmJLBK) con el paso a paso y capturas de pantalla)
 
 ---
