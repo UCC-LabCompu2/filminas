@@ -91,6 +91,7 @@ Se deben teneren cuenta capacidades físicas y mentales de las personas que util
 
 ---
 ## Principios de Diseño
+<!-- .slide: style="font-size: 0.85em" -->
 1. **Familiaridad del usuario:** Utilizar términos que el usuario conozca
 2. **Unifomidad:** Operaciones comparables se deben activar de la misma forma
 3. **Mínimo Sorpresa:** El comportamiento del sistema debe ser esperable
@@ -125,6 +126,7 @@ Según Shneiderman existen 5 estilos de interacción:
 
 ---
 ## Estilos de Interacción
+<!-- .slide: style="font-size: 0.5em" -->
 | Estilo de Interacción | Ventajas | Desventajas | Aplicación |
 |-----------------------|----------|-------------|------------|
 | Manipulación Directa | Interacción rápida Intuitiva Fácil de Aprender | Difícil de Implementar<br> Sólo adecuada para sistemas visuales | Videojuegos Sistemas CAD |
@@ -152,6 +154,7 @@ Es posible tener una interfaz separada para diferentes tipos de usuario.
 
 ---
 ## Pautas de Shneiderman para la utilización efectiva del COLOR
+<!-- .slide: style="font-size: 0.85em" -->
 * Limitar el número de colores utilizados y ser conservador en la forma de utilizarlos
 * Utilizar un cambio de color para mostrar un cambio en el estado del sistema
 * Utilizar el código de colores para apoyar la tarea que los usuarios están tratando de llevar a cabo
@@ -164,6 +167,7 @@ Es posible tener una interfaz separada para diferentes tipos de usuario.
    
 ---
 ## Diseño de Mensajes del sistema
+<!-- .slide: style="font-size: 0.85em" -->
 Factores a tener en cuenta:
 * **Contexto:** Generar mensajes relacionados con la actividad actual del usuario.
 * **Experiencia:** Proporcionar 2 tipos de mensajes: Cortos y concisos, largos y significativos.

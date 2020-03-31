@@ -56,7 +56,6 @@ Observación de los usuarios en su contexto y dentro de su entorno, tratando de 
     
 Reunirse con los usuarios para entender mejor sus necesidades, motivaciones, cultura laboral y otros aspectos. Pueden ser reuniones individuales o a través de grupos de enfoque.
     
----
 <!--http://www.nosolousabilidad.com/articulos/diagramacion.htm-->
 ---
 ## Tipos de diagramas  
@@ -100,7 +99,7 @@ El objetivo es mostrar el contenido de las páginas, mostrando los elementos que
 
 ---
 ## Tipos de Prototipo
-    
+<!-- .slide: style="font-size: 0.85em" -->
 * Baja Fidelidad: Conjunto de dibujos que representan cómo estarán organizados los elementos en las páginas en aspectos generales, sin entrar en detalle.
   * Sketch
   * Wireframe
@@ -138,6 +137,7 @@ Secuencia de Sketchs que muestran cómo se realiza una tarea.
 
 ---
 ## Ejercicio: Sketch
+<!-- .slide: style="font-size: 0.85em" -->
 Realice Sketchs formando un 'Thumbnail Skeths' de la interfaz de usuario del sistema en papel.
 Debe tener en cuenta:
 * ¿Qué opciones debe ofrecer al usuario?
@@ -205,9 +205,9 @@ Debe tener en cuenta:
 * El entregable es un HTML, PPT, Animación o formato navegable.
 
 ---
+<!-- .slide: style="font-size: 0.85em" -->
 ## Utilización de Técnicas de Diseño
 #### Ventajas:
-
 * Definir funcionalidades del proyecto
 * Mejora la comunicación entre el equipo de desarrollo y los usuarios 
 * Definir el recorrido del usuario (work flow)
@@ -263,23 +263,23 @@ Es parte del proceso de verificación y validación de los sistemas software.
 
 ![Evaluacion Interfaz](images/interfazUsuario/evaluacion.png)
 
----
+<!-- ---
 ## Ejercicio: Evaluacion de Interfaz
 Intercambie su diseño de interfaz con otro grupo:
 * ¿Qué opciones tiene este sistema que no estén disponibles en el propio?
 * ¿Es deseable introducir en un futuro rediseño del sistema estas características?
 * ¿Qué ventajas y desventajas presenta el otro sistema con respecto al propio?
     
-Presente un documento al otro equipo con el análisis realizado.
+Presente un documento al otro equipo con el análisis realizado. -->
     
----
+<!--
 ## Ejercicio: Rediseño
 Realice un rediseño del sistema teniendo en cuenta el documento de sugerencias recibido.
 
 Si son pocas modificaciones, puede marcarlas con un color diferente sobre los sketches.
 En caso de ser varias modificaciones, se sugiere dibujar el sketch nuevamente.
 
----
+-->
 ## Información en un wireframe
 * **Inventario de contenido:** Contenido que debe estar presente en cada página 
 * **Elementos de la página:** Cabeceras, enlaces, listas, imágenes, formularios, etc.
