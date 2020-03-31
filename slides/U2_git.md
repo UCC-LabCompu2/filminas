@@ -29,6 +29,10 @@ Si aún no lo descargaste, bajalo del siguiente link!
 [Git]("https://git-scm.com/")
 
 ---
+## git config
+Este comando permite establecer una configuración específica de usuario, como email, nombre de usuario, tipo de formato, etc
+
+---
 ## Git: Configuración Usuario
 Desde la consola de comandos:
 * Configurar usuario de manera Global
@@ -61,12 +65,16 @@ Desde la consola de comandos:
 * GitLab
 
 ---
+## Git: Servidores
+Los servidores permiten tener almacenamiento virtual de tu proyecto. 
+Puedes guardar versiones del código y accederlas cuando lo necesites. 
+
+---
 ## Ejercicio: Creación de Cuenta en GitHub
 Create una cuenta en [gitHub]("https://www.github.com") ...**Sign up** ...for Free
 Recuerda emplear el mismo nombre de usuario e email que tu usuario de github global.
 Una vez creada tu cuenta, enviar el nombre usuario al Profe por email, así puede validarlo!
 [![gitHub](images/herramientas/gitHub.png)](https://www.github.com)
-
 
 ---
 ## Los 3 estados + Untraking
@@ -79,13 +87,91 @@ Una vez creada tu cuenta, enviar el nombre usuario al Profe por email, así pued
 ![3 Estados](images/herramientas/three-stages-01.svg)
 
 ---
+## Git: Comandos
+Algunos comandos son:
+* init
+* clone
+* add
+* commit
+* push
+* pull
+* log
+* diff
+etc, etc, etc
+
+---
+## git init
+Permite crear un nuevo repositorio de git para comenzar a versionar los archivos.
+````
+git init
+````
+
+---
+## git clone
+Crea una copia local de un repositorio remoto.
+````
+git clone <repo url>
+````
+La última versión de los archivos del respositorio remoto se copian en nuestra computadora dentro de una nueva carpeta: NOMBRE_REPO
+
+---
+## git status
+Muestra la lista de archivos que se han cambiado junto con los archivos que están por ser añadidos (add).
+````
+git status
+````
+
+---
+## git add
+Permite agregar archivos al index. Es decir, selecciona el/los archivos que seran versionados en el proximo commit.
+````
+git add mi_archivo.html
+````
+
+---
+## git commit
+Permite guardar los cambios (versionar) en el repositorio local
+````
+git commit -m "Se agrego un elemento a la pagina"
+````
+
+---
 ## Commit
 * Identificadores numéricos de 40bytes
 * Identificación de la persona que realizo el commit (nombre y mail)
-* Fecha del commit</li>
+* Fecha del commit
 * Mensaje de texto asociado al commit (comentario personal de los cambios)
 
 ![Git Commit](images/herramientas/git_commit.png)
+
+---
+## git push
+Envia los cambios realizados al repositorio remoto.
+````
+git push
+````
+
+---
+## git pull
+Trae los cambios del repositorio remoto.
+Debe emplearse, por ejemplo, cuando el repositorio remoto ha sido actualizado manualmente, o, en el caso del trabajo colaborativo, si nuestro compañero ha subido cambios con un push.
+````
+git pull
+````
+   
+---
+## git log
+Muestra el historial del repositorio, un listado de todos los commits realizados, junto con detalles del autor y fecha del cambio.
+````
+git log
+````
+
+---
+## git diff
+Muestra los cambios que se realizaron en los archivos (con respecto al último commit)
+````
+git diff
+````
 
 ---
 ## Ejercicio: Github Básico
@@ -216,13 +302,25 @@ Es un archivo que deberian tener todos los proyectos de Soft. El mismo se supone
 * **Ref o referencia:** Cadena de 40 bytes que representa una version/commit.
 
 ---
-## Ejercicio: Github Colaborativo
-#### Este año (2020), por las complicaciones con las clases, no se hará :(
-* Emplear el repositorio del anterior ejercicio
-* Configurar el repositorio para trabajar de manera colaborativa con un compañero. (Setting->Collaborators).
-* Modificar un archivo desde el navegador
-* Comprobar el repositorio local.
-* Descargar cambios.
+## Ejercicio: Github Básico II
+* Realizar un cambio en el repositorio remoto
+* Ver el estado del repositorio actual (si hay cambios, añadirlos, commitearlos y pushearlos)
+* Traer los cambios del repositorio remoto
+(No te preocupes, hay un [PDF](https://drive.google.com/open?id=1fImvKA6bvFDLyq0-17OHXUeUGhJmJLBK) con el paso a paso y capturas de pantalla)
+
+---
+## GitHub Classroom
+Plataforma que facilita el intercambio de código entre alumnos y docentes, manteniendolo versionado.
+
+Permite el trabajo colaborativo, gestión de issues, code reviews, feedback, etc.
+
+---
+## Ejercicio: GitHub Classroom
+* Crear un repositorio para los ejercicios de la materia, empleando el código base de los ejercicios (servira para avanzar con html, css, js más adelante).
+
+[Link Classroom](https://classroom.github.com/a/_fqrdUDF)
+
+Paso a paso aquí...[PDF](https://drive.google.com/open?id=1scW5JZ3puH0uPpmzckFkEgE8TjqSJbV8)
 
 ---
 ## Desafío: Comandos Git
