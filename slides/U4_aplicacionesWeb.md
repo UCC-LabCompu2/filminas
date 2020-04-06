@@ -75,8 +75,8 @@ Una **aplicación Web** es un conjunto de páginas Web estáticas y dinámicas.
 * **Web Dinámica:** Contiene elementos que permiten la comunicación activa entre el usuario y la
     aplicación, y cuyo contenido se genera a partir de lo que el usuario introduce.
 
----
 <!--https://helpx.adobe.com/es/dreamweaver/using/web-applications.html-->
+
 ---
 ## Procesamiento Web Estática
 
@@ -115,6 +115,7 @@ Se trata de aplicaciones que generan colaboración y de servicios que reemplacen
 
 ---
 ## Elige tu Propia Aventura xD
+<!-- .slide: style="font-size: 0.75em" -->
 * **Programador de Servidores o Back-end:** Python, Ruby, PHP, Java, .Net (o JavaScript con nodeJS).
     Conocimientos de bases de datos y de administración de sistemas.
 
@@ -143,6 +144,7 @@ HTML5 es la última evolución de la norma que define HTML (HyperText Markup Lan
 
 ---
 ## Características
+<!-- .slide: style="font-size: 0.90em" -->
 * ***Semántica:***
   lo que le permite describir con mayor precisión cuál es su contenido.
 
@@ -157,6 +159,7 @@ HTML5 es la última evolución de la norma que define HTML (HyperText Markup Lan
 
 ---
 ## Características
+<!-- .slide: style="font-size: 0.90em" -->
 * ***Gráficos y efectos 2D/3D:***
   permite una gama mucho más amplia de opciones de presentación.
     

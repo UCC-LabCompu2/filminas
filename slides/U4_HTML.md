@@ -38,7 +38,7 @@ Created by <i class="fab fa-telegram"></i>
 ---
 ## Github Classroom
 
-[Github Classroom](https://classroom.github.com/a/D62pXDcP)
+[Github Classroom](https://classroom.github.com/classrooms/17771595-labcompu2-ucc)
 
 ---
 ## Ejercicio: Primer HTML
@@ -56,6 +56,7 @@ Etiquetas que dan un significado a las partes del documento, indican qué conten
 
 ---
 ## Estructura Semántica
+<!-- .slide: style="font-size: 0.90em" -->
 * **Header:** Especifica un encabezado de un documento o sección.
 * **Nav:** Define un conjunto de enlaces de navegación.
 * **Aside:** Define un contenido que se coloca como una barra lateral.
@@ -425,6 +426,7 @@ La accesibilidad web tiene como objetivo lograr que las páginas web sean utiliz
 
 ---
 ## Accesibilidad: Consejos
+<!-- .slide: style="font-size: 0.75em" -->
 * Use el atributo **alt** en las **imágenes** para describir la función del elemento visual.
 *  Use el elemento map para las zonas activas.
 *  Emplee programas **lector de pantalla** (JAWS, NVDA, ETC) para comprobar el correcto funcionamiento de la web. (Fangs Screenenders muestra una version de texto de la pagina web)
@@ -497,7 +499,7 @@ Para los navegadores que no soporten esta tecnología, se pueden incluir textos 
 
 ---
 ## Github Classroom: Proyecto Integrador
-[Primer Parcial](https://classroom.github.com/g/bkDwNLv8)
+[Primer Parcial](https://classroom.github.com/g/t7sOcasY)
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
