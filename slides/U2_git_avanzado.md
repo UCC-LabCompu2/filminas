@@ -77,7 +77,7 @@ git merge nueva_rama
 
 ---
 ## Ejercicio: Github Branchs
-Empleando el repositorio ejercicio1 [PDF paso a paso](https://drive.google.com/open?id=1FZ54y3soPcTVKzbj4rWlSJjb_HYk121x):
+Empleando el repositorio ejercicio1 [PDF paso a paso](https://drive.google.com/open?id=1CJ1sKwzrNTryVxTR4p7P7XC8BDaEgm8a):
 * Visualizar en que rama estamos trabajando
 * Cree una nueva rama (develop)
 * Vea el listado de todas las branchs
