@@ -14,35 +14,59 @@ Created by <i class="fab fa-telegram"></i>
 </small>
 
 ---
+## Formulario
+Es un documento que nos permite rellenar información de forma ordenada y estructurada. 
+
+Algunos ejemplos podrían ser escribir nuestro nombre y apellidos, dirección, cuenta de email, etc.
+
+---
+## Formularios
+Los elementos y atributos para formularios en HTML5 proveen un mayor grado de marcado semántico que en HTML4 y eliminan 
+gran parte del tedioso trabajo de programar y diseñar que se necesitaba en HTML4. 
+
+Las funcionalidades de los formularios en HTML5 brindan una experiencia mejor para los usuarios al permitir que los 
+formularios tengan un comportamiento más consistente entre diferentes sitios web y al darle una devolución inmediata 
+acerca de la información ingresada.
+
+---
 ## Elementos para Formularios
 ````html
 <form id="form1">
 
 </form>
 ````
+<!-- .slide: style="font-size: 0.70em" -->
+Atributos que puede tener:
+* action: url donde se envia la información
+* method: los datos se envian de forma oculta(post) ó sin condificar(get)
+* accept: especifica tipo de archivo que puede subirse al formulario
+* enctype: indica como se deben codificar los datos al enviarse al servidor
+* autocomplete: controles del formulario que pueden tener sus valores automáticamente completados.
+* name: nombre con el que identificamos al formulario.
+* novalidate: indica que el formulario no es validado cuando es enviado
+* target: Indica dónde mostrar la respuesta, después de enviar el formulario (_self. _blank, _parent, _top)
 
 ---
-## Input Text
+## Input
+Campo de texto en una línea
 ````html
 <input type="text" name="nombre"/>
 <input type="password" name="psw">
 <input type="email" name="email">
+<input type="search" name="buscar"/>
+<input type="tel" name="telefono"/>
+<input type="url" name="pagina_web"/>
 ````
-
 <input type="text" name="nombre"/>
 <input type="password" name="psw">
 <input type="email" name="email">
-
----
-## Ejercicio UI: Conversor de Unidades
-![conversor Unidades](images/html/conversorUnidades.png)
-
----
-## Ejercicio UI: Operaciones Matemáticas
-![Operaciones Matematicas](images/html/operacionesMatematicas.png)
+<input type="search" name="buscar"/>
+<input type="tel" name="telefono"/>
+<input type="url" name="pagina_web"/>
 
 ---
 ## Input Radio
+Permiten elegir una sola opción entre un grupo. 
 ````html
 <input type="radio" name="gender" value="male" checked> Male<br>
 <input type="radio" name="gender" value="female"> Female
@@ -51,13 +75,8 @@ Created by <i class="fab fa-telegram"></i>
 <input type="radio" name="gender" value="female"> Female
 
 ---
-## Ejercicio UI: Mostrar/Ocultar Div
-Cree la UI para posteriormente agregar funciones JavaScript que permitan mostrar u ocultar un div.
-* Debe emplear un <input type="radio">
-![Mostrar/Ocultar Div](images/html/mostrarOcultarDiv.png)
-
----
 ## Input Select
+Permite al usuario elegir de entre un número de opciones de una lista.
 ````html
 <select name="materias">
     <option value="analisisMat">Análisis Matemático</option>
@@ -75,13 +94,20 @@ Cree la UI para posteriormente agregar funciones JavaScript que permitan mostrar
 
 ---
 ## Input Button
+Crear un botón en el que se puede hacer click sin ningún valor por defecto.
 ````html
 <button type="button">Click Me!</button>
 ````
 <button type="button">Click Me!</button>
+Atributos:
+* disabled
+* autofocus
+* autocomplete
+* form, etc, ect
 
 ---
 ## Input Range
+Permite que el usuario especifique un valor numérico comprendido entre un valor mínimo y máximo
 ````html
 <input type="range" id="a" name="a" value="50">
 ````
@@ -89,6 +115,7 @@ Cree la UI para posteriormente agregar funciones JavaScript que permitan mostrar
 
 ---
 ## Input Checkbbox
+Casilla de verificación asociada a una opción que puede ser marcado o desmarcado por el usuario.
 ````html
 <input type="checkbox" name="materia1" value="Matematica"> Matematica<br>
 <input type="checkbox" name="materia2" value="Lengua"> Lengua
@@ -98,10 +125,39 @@ Cree la UI para posteriormente agregar funciones JavaScript que permitan mostrar
 
 ---
 ## Input Number
+Campo para la entrada de un número.
 ````html
 <input type="number" name="points" min="0" max="100" step="10" value="30">
 ````
 <input type="number" name="points" min="0" max="100" step="10" value="30">
+
+---
+## Textarea
+Representa un campo para la entrada de texto multilínea.
+````html
+<textarea name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea>
+````
+<textarea name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea>
+
+---
+## Placeholder
+Atributo de elementos input y textarea para representar una indicación que ayude al usuario a completar estos campos.
+````html
+<input name="nombre" placeholder="Ingrese nombre">
+````
+<input name="nombre" placeholder="Ingrese nombre">
+
+---
+## Ejercicio: Formulario
+<!-- .slide: style="font-size: 0.50em" -->
+Empleando el template “ej_formulario”, agregue las siguientes etiquetas:
+* **form** para agrupar todos los campos
+* **input** tipo texto, radio, numero, email, password, checkbox y submit
+* **select y option** para el selector
+* **textareae**
+* Atributo **placeholder** en todos los inputs
+
+![Formulario](images/html/formulario_ej.png)
 
 ---
 ## Fieldset, Legend y Label
