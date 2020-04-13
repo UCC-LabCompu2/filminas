@@ -160,23 +160,7 @@ Empleando el template “ej_formulario”, agregue las siguientes etiquetas:
 ![Formulario](images/html/formulario_ej.png)
 
 ---
-## Fieldset, Legend y Label
-````html
-<fieldset>
-    <legend>Persona:</legend>
-    <label for="nombre"> Nombre:</label>
-    <input type="text" size="30" id="nombre"><br>
-    <label for="email"> Email:</label>
-    <input type="text" size="30" id="email">
-</fieldset>
-````
-<div align="left">
-    <fieldset style="border: 5px white solid;padding: 20px">
-        <legend>Personalia:</legend>
-        Name: <input type="text" size="30" style="margin-left: 110px"><br>
-        Email: <input type="text" size="30" style="margin-left: 110px">
-    </fieldset>
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zSbEPLMhBh0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 ## [Nuevos Campos de HTML 5.1](https://lenguajehtml.com/p/html/formularios/controles-campos-fecha-hora)
@@ -197,9 +181,56 @@ Empleando el template “ej_formulario”, agregue las siguientes etiquetas:
 
 ---
 ## Accesibilidad
-La accesibilidad web tiene como objetivo lograr que las páginas web sean utilizables por el máximo número de personas, independientemente de sus conocimientos o capacidades personales.
+La accesibilidad web tiene como objetivo lograr que las páginas web sean utilizables por el máximo número de personas, 
+independientemente de sus conocimientos o capacidades personales.
 
 [Accesibilidad Web](http://accesibilidadweb.dlsi.ua.es/?menu=guiabreve-1)
+
+---
+## Fieldset, Legend y Label
+<!-- .slide: style="font-size: 0.85em" -->
+* **Fieldset**: representa un conjunto de elementos en un formulario (form), opcionalmente agrupados bajo un mismo nombre. 
+Este elemento puede ser útil en formularios grandes, donde la legibilidad y la facilidad de acceso pueden ser mejoradas mediante la segmentación. 
+Lo navegadores mostrarán normalmente un marco alrededor de los controles agrupados. 
+* **Legend**: Crea un título para un grupo de campos (**fieldset**) de un formulario.
+* **label**: representa una etiqueta que puede ser asociada a un campo de formulario.
+
+---
+## Fieldset, Legend y Label
+````html
+<fieldset>
+    <legend>Persona:</legend>
+    <label for="nombre"> Nombre:</label>
+    <input type="text" size="30" id="nombre"><br>
+    <label for="email"> Email:</label>
+    <input type="text" size="30" id="email">
+</fieldset>
+````
+<div align="left">
+    <fieldset style="border: 5px white solid;padding: 20px">
+        <legend>Persona:</legend>
+            <label for="nombre"> Nombre:</label>
+            <input type="text" size="30" id="nombre"><br>
+            <label for="email"> Email:</label>
+            <input type="text" size="30" id="email">
+    </fieldset>
+</div>
+
+---
+## Caption
+Es el encargado de darle un título descriptivo a las tablas.
+````html
+<table border='1'>
+    <caption>Tabla con caption</caption>
+    <tr> <td> tabla de una celda. </td>  </tr>
+</table>
+````
+<table border='1'>
+    <caption>Tabla con caption</caption>
+    <tr> <td> tabla de una celda. </td>  </tr>
+</table>
+
+[MDN Web Doc](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/caption)
 
 ---
 ## Accesibilidad: Consejos
@@ -212,6 +243,16 @@ La accesibilidad web tiene como objetivo lograr que las páginas web sean utiliz
 *  Describir figuras, diagramas o animaciones con el atributo longdesc
 *  Emplee el tag &ltcaption&gt para los titulos de las tablas
 *  Utilice herramientas o servicios como [Accesibility Validator W3](https://validator.w3.org/) para comprobar el adecuado funcionamiento de la página
+
+---
+## Ejercicios: Accesibilidad
+* En el formulario que ha creado, emplee la etiqueta **<labelfor=”mismo_id”>**
+* Agregue el atributo **alt** con el texto alternativo a todas las imágenes de su sitio web.
+* Emplee el tag **caption** para agregar títulos a todas las tablas del sitio web.
+
+---
+## Ejercicios: Accesibilidad
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZdyJMznlgJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 ## Lienzo Canvas
@@ -240,6 +281,7 @@ Para los navegadores que no soporten esta tecnología, se pueden incluir textos 
     
 ---
 ## Video
+Permite añadir archivos de video a la página.
 ````html
 <video src="http://v2v.cc/~j/theora_testsuite/320x240.ogg" controls>
     Tu navegador no implementa el elemento <code>video</code>.
@@ -251,6 +293,7 @@ Para los navegadores que no soporten esta tecnología, se pueden incluir textos 
 
 ---
 ## Audio
+Permite añadir archivos de audio a la página.
 ````html
 <audio src="/test/audio.ogg" controls autoplay>
 <p>Tu navegador no implementa el elemento audio.</p>
@@ -259,6 +302,23 @@ Para los navegadores que no soporten esta tecnología, se pueden incluir textos 
 <audio src="/test/audio.ogg" controls autoplay>
     Tu navegador no implementa el elemento audio.</p>
 </audio>
+
+Atributos: src, preload (auto, metadata, none), mediagroup, autoplay, loop, muted, controls
+
+Formato: mp3, ogg, aac, opus, flac, wav
+
+[Más info](https://lenguajehtml.com/p/html/multimedia/etiquetas-html-de-audio)
+
+---
+## Ejercicio 7: Multimedia
+Empleando el template “ej_animales”, agregue las etiquetas necesarias para:
+* Agregar un audio (el mismo se encuentra en la carpeta “resources”)
+* Agregar un video (el mismo se encuentra en la carpeta “resources”)
+* Agregar un video de youtube
+
+---
+## Ejercicio 7: Multimedia
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AFtAFhgGDE8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 ## Consejos
