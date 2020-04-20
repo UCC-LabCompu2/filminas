@@ -55,6 +55,7 @@ Estilos visual del documento.
 ````html
 <h1 style="color: red; font-type: helvetica; font-size: 2em">
 ````
+
 ---
 ## Hoja de Estilo Incrustada
 * Se incorpora en &lt;head&gt;
@@ -75,6 +76,13 @@ margin-left: 15px;
 }
 ````
 ---
+## Hoja de Estilo Externa o Enlazada
+* En el &lt;head&gt; se emplea un link a un archivo externo
+````css
+<link rel="stylesheet" href="estilos.css" type="text/css">
+````
+---
+
 ## Propiedades tipográficas
 <!-- .slide: style="font-size: 0.80em" -->
 * **font-family:** se define tipografía por orden de prioridad
@@ -100,13 +108,6 @@ margin-left: 15px;
 * RGB: <h1 style="color: rgb(205, 92, 92)>
 
 ---
-## Ejercicio: Propiedades tipográficas
-Empleando el template “ej_columnas”, agregue estilo en línea para cambiar:
-1. Color del texto del título de la página.
-2. Tamaño de la fuente del título de la noticia.
-3. Tipo de fuente o letra de toda la página.
-
----
 ##  ¿Como Escribir un Estilo? 
 Obviamente, con el teclado xD. Bue, hablando en serio, hay 3 formas:
 
@@ -126,14 +127,33 @@ selector{nombreEstilo: valor;}
 ````
 
 ---
+## Ejercicio: Propiedades tipográficas
+Empleando el template “ej_columnas”, agregue estilo en línea para cambiar:
+1. Color del texto del título de la página.
+2. Tamaño de la fuente del título de la noticia.
+3. Tipo de fuente o letra de toda la página.
+
+---
 ## Ejercicio: Incrustado
-Cambiar los estilos en línea por estilos incrustados.
+Empleando el template “ej_columnas”, cambie los estilos en línea por estilos incrustados.
+1. El título de la página debe estar definido por ID
+2. El título de la noticia debe estar definido por clase
+3. El tipo de fuente para toda la página debe estar definido por Tag
 
 ---
-## Ejercicio:
-Emplee un estilo por tag, uno por id y otro por clase.
+## Ejercicio: Propiedades tipográficas e Inscrustado
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1cssxcEdTBs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
+##  Descendientes
+Un elemento HTML es descendiente de otro cuando se encuentra contenido dentro de las etiquetas de apertura y cierre del otro elemento:
+````
+<div>
+    <span>En este ejemplo, "span"</span>  es descendiente de div
+</div>
+````
+---
+
 ##  Descendientes
 * **selectores:** 
 ````css
@@ -155,6 +175,23 @@ Empleando el template “ej_leyes” y hoja de estilo incrustada, agregue los es
 1. La  primera  lista  ordenada  para  visualizarla  con  números  romanos  y  una  tipografía  de mayor tamaño (upper-roman). 
 2. La segunda lista ordenada para visualizarla con letras (lower-alpha).
    
+---
+## Ejercicio: Estilo con Descendientes
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u9wBB3DoAyc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   
+---
+## Pseudo Clases
+<!-- .slide: style="font-size: 0.75em" -->
+Es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado.
+
+Ejemplos:
+* hover: se activa cuando pasa el mouse por encima de un elemento
+* active: se activa cuando el usuario activa un elemento (haciendo click)
+* focus: se activa cuando el elemento tiene el foco del navegador (está seleccionado)
+* link: enlaces que todavía no han sido visitados por el usuario
+* visited: enlaces que han sido visitados al menos una vez por el usuario
+* first-child: selecciona el primer elemento hijo de un elemento
+
 ---
 ## Pseudo Clases
 ````css
@@ -181,11 +218,14 @@ a:active {
 
 ---
 ## Ejercicio: Pseudo Clases
-Cree un hipervinculo en la página de ej_columnas
-Empleando Pseudo clases:
+Al hipervinculo de la página de ej_columnas, empleando Pseudo clases modifiqUE:
 * Link visitado o no visitado con el mismo color
 * Al posicionar el mouse arriba del link, modificar el tamano de la fuente
 * Al seleccionar el link, seleccionar BOLD
+
+---
+## Ejercicio: Pseudo Clases
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LUuAI1UFd30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 ## Modelo de Cajas
@@ -300,6 +340,10 @@ Diseñe un CV y agregue estilos empleando una hoja de estilo incrustada:
 ![CV Imagen](images/html/cv_imagen.png)
 
 ---
+## Ejercicio: CV
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9aJKvSPW5GA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
 ## Comentario
 ````css
 /* Este es un
@@ -393,12 +437,6 @@ para controlar el comportamiento de los floats.
 Emplear <div> con style para lograr que el estilo del texto quede en 2 columnas fluidas.
 * Float y Width
 
----
-## Hoja de Estilo Externa
-* En el &lt;head&gt; se emplea un link a un archivo externo
-````css
-<link rel="stylesheet" href="estilos.css" type="text/css">
-````
 ---
 ## Ejercicio: Hoja de Estilo Externa
 Modifique la página web del CV para que los estilos incrustados estén en un archivo de estilos.
