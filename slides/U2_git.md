@@ -282,6 +282,7 @@ Depende de ti! (pero en clase solo veremos linea de comandos)
 
 ---
 ## Readme.md
+<!-- .slide: style="font-size: 0.80em" -->
 Seguramente te estes preguntando: qué es ese readme.md que se autogeneró? 
 Es un archivo que deberian tener todos los proyectos de Soft. El mismo se supone que sea una:
 * Guía rápida de la aplicación o librería y de cómo empezar a usarla.
