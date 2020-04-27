@@ -55,7 +55,7 @@ Puedes ver más documentación en:
 ---
 ## Ejercicio: Backgrounds
 Cree una página nueva, emplee de fondo la imagen “fondo_mario.jpg” ubicada en la carpeta de  “imagenes”. 
-Pruebe  los  diferentes  atributos  de  background:  image,  attachment,  blend-mode, clip, color, image, origin, position, repeat, size.
+Pruebe  los  diferentes  atributos  de  background:  image, color, origin, position, repeat, size, etc.
 
 ---
 ## Position
@@ -121,11 +121,7 @@ para controlar el comportamiento de los floats.
 ## Ejercicio: 2 Columnas
 Emplear <div> con style para lograr que el estilo del texto quede en 2 columnas fluidas.
 * Float y Width
-
----
-## Ejercicio: Hoja de Estilo Externa
-Modifique la página web del CV para que los estilos incrustados estén en un archivo de estilos.
-Asegúrese de por lo menos incluir un estilo por Tag, por ID y por clase.
+* Column-count
 
 ---
 ## CSS
@@ -184,9 +180,23 @@ div:hover {
 } //Pasa el mouse arriba del rectangulo
 ````
 <div class="divTran2"></div>
+
 ---
 ## Grid
+Es bastante nuevo, y permite de cierta forma reemplazar el position en algunos casos, y 
+simplifica muchas tareas para las que antes era necesario incluir algun framework como flexbox.
+
+Es un sistema de rejilla en 2 dimensiones, creado dentro standard del lenguaje CSS.
+
+---
+## Grid
+Puedes acceder a más documentación en:
+
 [W3School Grid](https://www.w3schools.com/css/css_grid.asp)
+
+[DesarrolloWeb.com](https://desarrolloweb.com/articulos/que-es-css-grid-layout.html)
+
+[LenaguajeCSS](https://lenguajecss.com/p/css/propiedades/grid-css)
 
 ---
 ##  CSS: Recomendación 
@@ -194,8 +204,11 @@ Revisar documentación:
 [W3 School](http://www.w3schools.com/css/default.asp)
 
 Autogenerar algunos estilos complicados:
+
 http://css3generator.com/
+
 http://www.css3.me/
+
 http://westciv.com/tools/shadows/
 
 Escribir los colores en hexadecimal:
