@@ -68,7 +68,7 @@ Como posicionar elementos dentro de la pagina.
 
 [W3School](https://www.w3schools.com/cssref/pr_class_position.asp)
 
-[Learns Layout](http://es.learnlayout.com/position.html)
+Ejemplos: [Learns Layout](http://es.learnlayout.com/position.html)
 
 ---
 ## Position: static;
@@ -80,21 +80,30 @@ Por defecto, todos los elementos HTML son Static.
 ## Position: relative
 El elemento es posicionado relativo respecto a su posición normal.
 Los valores top, left, right, bottom lo mueven respecto a su posición original
-Permite que un elemento se desplace respecto a lo que hubiera sido su posición normal; el resto de elementos continúan en su posición ignorando al que se desplaza, lo que puede crear superposiciones; el espacio libre que deja el elemento queda libre.
+Permite que un elemento se desplace respecto a lo que hubiera sido su posición normal; 
+el resto de elementos continúan en su posición ignorando al que se desplaza, 
+lo que puede crear superposiciones; el espacio libre que deja el elemento queda libre.
 
 ---
 ## Position: fixed
 El elemento "fixed" es posicionado respecto al area visible.
 Los valores top, left, right, bottom lo mueven respecto a su posición original
-Permite que un elemento se desplace respecto al origen de coordenadas del primer elemento contenedor posicionado ó respecto a la esquina superior izquierda de la ventana de visualización; el resto de elementos actúan como si el desplazado no existiera, por lo que su espacio será ocupado por otros elementos; puede crear superposiciones.
+Permite que un elemento se desplace respecto al origen de coordenadas del primer 
+elemento contenedor posicionado ó respecto a la esquina superior izquierda de la ventana de 
+visualización; el resto de elementos actúan como si el desplazado no existiera, por lo que su 
+espacio será ocupado por otros elementos; puede crear superposiciones.
 
 ---
 ## position: absolute
 <!-- .slide: style="font-size: 0.90em" -->
-Los elementos con position: absolute; son posicionados mediante top, left... respecto a su ancestro mas secano que este posicionado.
+Los elementos con position: absolute; son posicionados mediante top, left... 
+respecto a su ancestro mas cercano que este posicionado.
 Un elemento posicionado es aquel que tenga en su propiedad position algo distinto a static
 
-Permite fijar un elemento en una posición respecto al origen de coordenadas del primer elemento contenedor posicionado ó respecto a la esquina superior de la ventana de visualización; el elemento se mantendrá en la ventana de visualización o viewport, siempre en una misma posición aunque el usuario se desplace por la web haciendo scroll.
+Permite fijar un elemento en una posición respecto al origen de coordenadas del primer 
+elemento contenedor posicionado ó respecto a la esquina superior de la ventana de visualización; el 
+elemento se mantendrá en la ventana de visualización o viewport, siempre en una misma posición aunque 
+el usuario se desplace por la web haciendo scroll.
 
 ---
 ## position: inherit;
@@ -107,13 +116,14 @@ Los elementos con z-index mayor tapan a los elementos con z-index menor
 
 ---
 ## Float
-Float se usa para envolver imágenes con texto.
+Epecifica si un elemento debe salir del flujo normal y aparecer a la izquierda o a la derecha de su contenedor.
 
 [Learns Layout](http://es.learnlayout.com/float.html)
 
 ---
 ## Clear
-para controlar el comportamiento de los floats.
+Epecifica si un elemento puede estar al lado de elementos flotantes que lo preceden o si debe ser movido (cleared) 
+debajo de ellos. La propiedad clear aplica a ambos elementos flotantes y no flotantes.
 
 [Learns Layout](http://es.learnlayout.com/clear.html)
 
@@ -156,8 +166,9 @@ div {
    
 div:hover {
    width: 300px;
-} //Pasa el mouse arriba del rectangulo
+}
 ````
+
 <div class="divTran"></div>
 
 ---
@@ -177,8 +188,9 @@ div:hover {
    height: 200px;
    -webkit-transform: rotate(180deg); /* Safari */
    transform: rotate(180deg);
-} //Pasa el mouse arriba del rectangulo
+}
 ````
+
 <div class="divTran2"></div>
 
 ---
