@@ -6,7 +6,8 @@ slideNumber: true
 
 # JavaScript
 <small>
-Created by <i class="fab fa-telegram"></i>
+Created by 
+<i class="fab fa-telegram"></i> 
 [edme88]("https://t.me/edme88") & 
 <i class="fab fa-telegram"></i>
 [rmarku]("https://t.me/rmarku")
@@ -19,19 +20,24 @@ Se usa principalmente del lado del cliente implementado como parte de un navegad
 
 ---
 ## Características
-* Orientado a Objetos
+* Orientado a Eventos y Objetos
 * Lenguaje Interpretado
-* Tipado dinámico
+* Tipado dinámico (una variable puede tomar valores de distinto tipo)
 
 ---
 ## Incluir JavaScript
-* En el mismo documento, agregando <script>
+* En el mismo documento, agregando &lt;script&gt;
 * En un archivo externo
 ````javascript
 <script type="text/javascript" src="/js/codigo.js"></script>
 ````
 * En linea
-
+````javascript
+<button onclick="alert('Hola Mundo!!!')">Enviar</button>
+<!--el onclick es el eventhandler-->
+Puedes ver mas EventsHandlers aqui:
+https://www.w3schools.com/jsref/dom_obj_event.asp
+````
 ---
 ## Sintaxis
 Conjunto de reglas que deben seguirse al escribir el código:
@@ -108,10 +114,13 @@ switch(nombre){
 
 ---
 ## Funciones Callback
+Funciones que se pasan como parámetros de otras funciones y que se ejecutan dentro de éstas.
 ````javascript
    setInterval(function(){ alert("Hello"); }, 3000);
 ````
+El codigo de arriba y abajo hace lo mismo... Abre una ventana de alert que dice Hello cada 3000ms=3seg
 
+(lo que volveria loco a un usuario xD )
 ````javascript
 function miFunc(){
    alert("Hello");
@@ -130,7 +139,7 @@ setInterval(miFunc, 3000);
 * Terminar un Switch con default:
 * Evitar usar eval()
 
-http://www.williammalone.com/articles/create-html5-canvas-javascript-drawing-app/#demo-simple
+<!--http://www.williammalone.com/articles/create-html5-canvas-javascript-drawing-app/#demo-simple-->
 
 ---
 ## Eventos y objetos
@@ -166,6 +175,8 @@ Escribir funciones JavaScript para que, al escribir un número en cualquiera de 
 * Los campos deben contener un nombre
 * La función debe enviar el valor y el nombre del campo cambiado
 
+---
+## Ejercicio: Conversor de Unidades
 ![conversor de unidades](images/html/conversorUnidades.png)
 
 ---
@@ -241,6 +252,7 @@ Para más Info ver [Ejemplos](http://www.codexexempla.org/curso/curso_4_3_a.php)
     <input size="1" style="font-size: 28px" type="text" id="num1">+<input size="1" style="font-size: 28px" type="text" id="num2">=<input size="1" style="font-size: 28px" type="text" id="resultado" disabled>
     <button style="font-size: 28px" onclick="sumaN()"> Calcular</button>
 </form>
+
 ````javascript
 function sumaN() {
    var num1 = document.getElementById("num1").value;
@@ -274,6 +286,7 @@ X<sup>n</sup>
     <input size="1" style="font-size: 28px" type="text" id="num3">
     <button style="font-size: 28px" onclick="potenciaN();raizN()"> Calcular</button>
 </form>
+
 ````javascript
 function potenciaN() {
    var numP = document.getElementById("num3").value;
@@ -298,6 +311,7 @@ Sen(ang)
     <input size="1" style="font-size: 28px" type="text" id="num4">
     <button style="font-size: 28px" onclick="senN()"> Calcular</button>
 </form>
+
 ````javascript
 function senN() {
    var senNum = document.getElementById("num4").value;
@@ -308,7 +322,7 @@ function senN() {
 ````
 
 ---
-## Ejercicio: Mostrar/Ocultar div
+### Ejercicio: Mostrar/Ocultar div
 Escribir una función JavaScript para mostrar u ocultar el div celeste.
 * Emplear **OnChange** en los radio button
 * Los campos deben contener un nombre u ID
@@ -352,6 +366,8 @@ Escribir funciones JavaScript para resolver las operaciones matemáticas una vez
 * Se debe castear de tipo String a tipo Number
 * Los resultados deben contener el atributo disabled
 
+---
+## Ejercicio: Operaciones Matemáticas
 ![Operaciones Matematicas](images/html/operacionesMatematicas.png)
 
 ---
@@ -360,6 +376,8 @@ Modificar las funciones para que el resultado de la conversión sólo posea 2 de
 * Emplear **Math.Round** antes de asignar el resultado
 * Reemplace ',' por '.' para evitar errores
 
+---
+## Ejercicio: Conversor de Unidades II
 ![Conversor Unidades](images/html/conversorUnidades.png)
 
 ---
@@ -367,6 +385,8 @@ Modificar las funciones para que el resultado de la conversión sólo posea 2 de
 Modificar el HTML para quitar los inputs de los resultados. Emplear div, y en JavaScript, emplear innerHTML.
 * Emplear **innerHTML** para asignarle valores a los divs.
 
+---
+## Ejercicio: Operaciones Matemáticas II
 ![Operaciones Matematicas](images/html/operacionesMatematicas.png)
 
 ---
@@ -412,7 +432,9 @@ function miFuncion(event){
 }
 ````
 
-Permite recibir propiedades del evento:<br> elemento en el que ocurre, el estado de las teclas, la posición del mouse, estado de los botones.
+Permite recibir propiedades del evento:
+elemento en el que ocurre, el estado de las teclas, 
+la posición del mouse, estado de los botones.
 
 
 ---
@@ -503,6 +525,7 @@ function convertGrados(radianes) {
 
 ---
 ## Podemos Comenzar con el Segundo Parcial!
+<!-- .slide: style="font-size: 0.75em" -->
 Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada</p>
 * Una función que compruebe si los valores ingresados son correctos, y si no lo son, que le indique al usuario por un alert, y que blanquee el contenido del campo.
 * Una función que calcule algo en base a los valores ingresados por el usuario en los inputs.

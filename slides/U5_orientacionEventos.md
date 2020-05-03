@@ -20,7 +20,8 @@ de Carlos Ollero Sánchez
 
 ---
 ## Programación Dirigida por eventos
-Paradigma de programación en el que la estructura y la ejecución de los programas van determinados por los sucesos que ocurran en el sistema, definidos por el usuario o que ellos mismos provoquen.
+Paradigma de programación en el que la estructura y la ejecución de los programas van determinados por los 
+sucesos que ocurran en el sistema, definidos por el usuario o por el propio sistema.
 
 ---
 <!-- .slide: data-background="images/Eventos/Lenguajes.png" -->
