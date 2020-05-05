@@ -15,6 +15,7 @@ Created by <i class="fab fa-telegram"></i>
 ---
 ## Libros:
 ![Book](images/book.png)
+Material de consulta:
 “Programación con lenguajes de guión en páginas web (UF1305)”
 de Carlos Ollero Sánchez
 
@@ -44,12 +45,12 @@ Ej. Hacer click en un botón, mover el puntero sobre un enlace, seleccionar un e
 * Eventos de Usuario
   * Eventos del mouse
   * Eventos del teclado
-* Eventos del navegado
+* Eventos del navegador
   * Manipulación de las ventanas del navegador
   * Comunicación con el servidor
 * Eventos generados desde código
   * Cambios en el contenido, aspecto o estructura
-  * Especificación DOM
+  * Especificación DOM (Document Object Model)
   
 ---
 ## Event Handler
