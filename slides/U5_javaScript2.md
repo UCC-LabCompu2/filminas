@@ -139,12 +139,30 @@ Modificar las funciones para que el resultado de la conversión sólo posea 2 de
 
 ---
 ## Ejercicio: Operaciones Matemáticas II
-Modificar el HTML para quitar los inputs de los resultados. Emplear div, y en JavaScript, emplear innerHTML.
+Modificar el HTML para quitar los inputs de los resultados. Emplear span, p o div, y en JavaScript, emplear innerHTML.
 * Emplear **innerHTML** para asignarle valores a los divs.
 
 ---
 ## Ejercicio: Operaciones Matemáticas II
 ![Operaciones Matematicas](images/html/operacionesMatematicas.png)
+
+---
+## Ejercicio: Operaciones Matemáticas II
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z2eiHH0qGbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+### Ejercicio: Pasar valores de PrimeraWeb a SegundaWeb
+<!-- .slide: style="font-size: 0.70em" -->
+![Primer Web](images/html/primerWeb.png)
+* Crear una función JavaScript que sea ejecutada cuando el botón sea presionado. 
+La función debe concatenar la URL de la segunda web con los valores ingresados por el usuario, separados por ‘#’ y dirigirse a la segunda web.
+![Segunda Web](images/html/segundaWeb.png)
+* Crear una función JavaScript que se ejecute cuando la segunda web sea cargada. 
+Debe tomar el valor de la URL y dividirla cada vez que ‘#’ sea encontrado. Debe emplear estos valores y cargarlos en el input.
+
+---
+### Ejercicio: Pasar valores de PrimeraWeb a SegundaWeb
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UANWAIdMQEg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 ## JavaScript: Formulas
