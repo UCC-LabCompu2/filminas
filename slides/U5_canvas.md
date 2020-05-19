@@ -268,6 +268,10 @@ function dibujoArcT() {
 * Crear una función JS que dibuje una imagen (drawImage) en la posición especificada
 
 ---
+## Ejercicio: Dibujar imagen
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h8CsSjv3U48" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
 ## setTimeOut()
 * Llama a una función o evalúa una expresión después de un número específico de milisegundos 
 * [W3 School](https://www.w3schools.com/jsref/met_win_settimeout.asp) 
