@@ -71,7 +71,7 @@ function senN() {
 }
 
 function dibujo() {
-    var canvas = document.getElementById("canvas");
+    var canvas = document.getElementById("canvasEJ1");
     var ctx = canvas.getContext("2d");
     ctx.fillStyle = "#000";
 
