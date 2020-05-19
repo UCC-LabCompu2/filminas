@@ -34,31 +34,47 @@ Es un elemento incorporado en HTML5 que permite la generación de gráficos est�
 
 El potencial de canvas reside en su habilidad para actualizar su contenido en tiempo real.
 
+Permite renderizaciones en contextos 2d y 3d. (Ej. WebGL emplea 3D)
+
 ---
 ## Canvas: Coordenadas
 ![Coordenadas Canvas](images/Eventos/coordenadas-canvas.gif)
 
+El tamaño por defecto es: ancho 300px, alto 150px
+
+<!-- .slide: style="font-size: 0.70em" -->
+(El por que se debe definir width y heigth en el elemento canvas: https://devcode.la/tutoriales/elemento-canvas-responsive/ )
+
+---
+## Canvas: Contexto
+El canvas esta inicialmente en blanco. Para mostrar alguna cosa, un script primero necesita acceder al contexto a renderizar y dibujar sobre este.
+
+````javascript
+var canvas = document.getElementById('canvasEjercicio');
+var ctx = canvas.getContext('2d');
+````
+
+La primera linea regresa el nodo DOM para el elemento **canvas**.
+
 ---
 ## Canvas: Métodos
-* fillRect(x, y, width, height) <br>
+<!-- .slide: style="font-size: 0.70em" -->
+**JS** tiene varios métodos (funciones asociadas a objetos) para trabajar con Canvas.
+
+Algunos de los más usados son:
+* **fillRect(x, y, width, height)** <br>
   Dibuja un rectángulo relleno usando el color/estilo del atributo fillStyle. Las coordenadas x e y empiezan en la esquina superior izquierda.
-* strokeRect(x, y, w, h) <br>
+* **strokeRect(x, y, w, h)** <br>
   Dibuja las líneas de un rectángulo usando el color/estilo de el atributo strokeStyle.
-* clearRect(x, y, w, h) <br>
+* **clearRect(x, y, w, h)** <br>
   Limpia un area rectangular.
-* rect(x, y, w, h) <br>
+* **rect(x, y, w, h)** <br>
   Crea un rectángulo.
-* moveTo(x, y) <br>
-  Mueve el camino al punto especificado, sin crear una línea.
-* lineTo(x, y) <br>
-  Crea una línea desde el último punto en el camino hasta el punto dado.
-* arc(x, y, r, sAngle, eAngle, aClockwise) <br>
-  Crea un circulo, o parte de un circulo.
-* arcTo(x1, y1, x2, y2, radius) <br>
-  Crea un arco entre dos puntos.
 
 ---
 ## Canvas: Propiedades
+<!-- .slide: style="font-size: 0.80em" -->
+Una **propiedad** es una variable adjunta a un objeto, como el color, color de borde, etc.
 * **fillStyle = color|style**
   El color|estilo de relleno del dibujo.
 * **strokeStyle = color|style**
@@ -69,29 +85,18 @@ El potencial de canvas reside en su habilidad para actualizar su contenido en ti
     El estilo de las esquinas de las líneas.
 * **lineWidth = number**
     El grosor de las lineasThe width of the drawing stroke.
-* **miterLimit = number**
-    El limite de esquinas en una línea.
-* **shadowColor = color**
-    El color de la sombra.
-* **shadowOffsetX = number**
-    La distancia horizontal de la sombra.
-* **shadowOffsetY = number**
-    La distancia vertical de la sombra.
-* **shadowBlur = number**
-    El tamaño del efecto de desenfoque.
 
 ---
 ## Canvas: Ejemplo
-<canvas id="canvas" width="600" height="300" style="background-color: #8dcffc" onclick="dibujo()">
+<canvas id="canvasEJ1" width="600" height="300" style="background-color: #8dcffc" onclick="dibujo()">
     Su navegador no soporta HTML5
 </canvas>
 
 ---
 ## [Canvas](http://www.w3schools.com/tags/ref_canvas.asp)
-
 ````javascript
 function dibujo() {
-   var canvas = document.getElementById("canvas");
+   var canvas = document.getElementById("canvasEJ1");
    var ctx = canvas.getContext("2d");
    ctx.fillStyle = "#000";
 
@@ -105,28 +110,83 @@ function dibujo() {
    ctx.fill();
 }
 ````
-       
 ---
-## Ejercicio: Eventos y Canvas
-* Utilizar el evento onmousemove para disparar la función de dibujo
-* En la función, obtener la posición x e y del ratón y dibujar un punto en el canvas
-* Agregar una variable "bandera" que indique si el botón del ratón se presionó (onmousedown, onmouseup)
-
----
-## Canvas: arc(x,y,ap,af,cR)
+## Canvas: arc(x,y,r,ap,af,cR)
 * Define un segmento circular
 * **x** e **y** son las coordenadas del centro
+* **r** es el radio del circulo
 * **ap** y **af** ángulo de partida y ángulo final en radianes
 * **cR** [opcional] sentido contra reloj (true|false)
 
 ![Arc](images/Eventos/arc.png)
 
 ---
+## Canvas: Arco
+````javascript
+function dibujoArco() {
+   var canvas = document.getElementById("canvas3");
+   var ctx = canvas.getContext("2d");
+
+   ctx.beginPath();
+   //ctx.arc(X, Y, radio, angulo inicial, angulo final);
+   ctx.arc(300, 250, 200, 1* Math.PI, 2 * Math.PI);
+   ctx.stroke();
+}
+````
+
+---
+## Canvas: Arco
+<canvas id="canvas3" width="600" height="300" style="background-color: #8dcffc" onclick="dibujoParabola()">
+    Su navegador no soporta HTML5
+</canvas>
+
+---
 ## Ejercicio: Dibujar cuadrado y circulo
 * Crear una función javascript que dibuje un círculo y un cuadrado en un canvas.
 * Llamar la función al cargar la página.
-* El círculo debe estar en la mitad de la página.
-* El cuadrado debe estar en la esquina inferior izquirda, separado un cierto margen.
+* El círculo debe estar en la mitad del canvas.
+* El cuadrado debe estar en la esquina inferior izquierda, separado un cierto margen.
+
+---
+## Ejercicio: Dibujar cuadrado y circulo
+<iframe width="560" height="315" src="https://www.youtube.com/embed/g_I3oExuQ-M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+## Canvas: Más Métodos
+<!-- .slide: style="font-size: 0.80em" -->
+* **moveTo(x, y)** <br>
+  Mueve el camino al punto especificado, sin crear una línea.
+* **lineTo(x, y)** <br>
+  Crea una línea desde el último punto en el camino hasta el punto dado.
+* **beginPath()** <br>
+  Comienza un dibujo nuevo.
+* **closePath()** <br>
+  Termina un dibujo (levanta el lapiz).
+* **arcTo(x1, y1, x2, y2, radius)** <br>
+  Crea un arco entre dos puntos.
+ 
+---
+## Canvas: Más Propiedades
+<!-- .slide: style="font-size: 0.80em" -->
+* **shadowColor = color**
+    El color de la sombra.
+* **shadowOffsetX = number**
+    La distancia horizontal de la sombra.
+* **shadowOffsetY = number**
+    La distancia vertical de la sombra.
+* **shadowBlur = number**
+    El tamaño del efecto de desenfoque.
+       
+---
+## Ejercicio: Mini-Paint
+* Utilizar el evento onmousemove para disparar la función de dibujo
+* En la función, obtener la posición x e y del ratón y dibujar un punto en el canvas
+* Agregar una variable "bandera" que indique si el botón del ratón se presionó (onmousedown, onmouseup)
+* Cree un boton para limpiar el canvas
+
+---
+## Ejercicio: Mini-Paint
+<iframe width="560" height="315" src="https://www.youtube.com/embed/q4jeaoqnldg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 ## Ejercicio: Dibujar cuadriculado
@@ -138,6 +198,10 @@ function dibujo() {
 <canvas id="canvas2" width="600" height="300" style="background-color: #8dcffc" onclick="dibujo2()">
    Su navegador no soporta HTML5
 </canvas>
+
+---
+## Canvas: Cuadriculado
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2ei-dCOQrq4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 ## Canvas: Cuadriculado
@@ -172,26 +236,6 @@ function dibujo2() {
    ctx.moveTo(300,0);
    ctx.lineTo(300,300);
    ctx.strokeStyle = "#FA5858";
-   ctx.stroke();
-}
-````
-
----
-## Canvas: Arco
-<canvas id="canvas3" width="600" height="300" style="background-color: #8dcffc" onclick="dibujoParabola()">
-    Su navegador no soporta HTML5
-</canvas>
-
----
-## Canvas: Arco
-````javascript
-function dibujoArco() {
-   var canvas = document.getElementById("canvas3");
-   var ctx = canvas.getContext("2d");
-
-   ctx.beginPath();
-   //ctx.arc(X, Y, radio, angulo inicial, angulo final);
-   ctx.arc(300, 250, 200, 1* Math.PI, 2 * Math.PI);
    ctx.stroke();
 }
 ````
@@ -236,7 +280,17 @@ function dibujoArcT() {
 Utilizando la función anterior que dibujaba imágenes y la función setTimeOut() de javascript, realice una animación que mueva la imagen desde el borde izquierdo al derecho del canvas.
 
 ---
+## Borrar Canvas
+La forma más sensilla de borrar todo el contenido del canvas es:
+````javascript
+canvas.width=canvas.width;
+}
+````
+
+
+---
 ## Podemos Continuar con el Segundo Parcial!
+<!-- .slide: style="font-size: 0.70em" -->
 Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada
 * Una función que compruebe si los valores ingresados son correctos, y si no lo son, que le indique al usuario por un alert, y que blanquee el contenido del campo.
 * Una función que calcule algo en base a los valores ingresados por el usuario en los inputs.
