@@ -56,6 +56,8 @@ var ctx = canvas.getContext('2d');
 
 La primera linea regresa el nodo DOM para el elemento **canvas**.
 
+El método getContext () devuelve un objeto que proporciona métodos y propiedades para dibujar en el lienzo.
+
 ---
 ## Canvas: Métodos
 <!-- .slide: style="font-size: 0.70em" -->
@@ -272,25 +274,12 @@ function dibujoArcT() {
 <iframe width="560" height="315" src="https://www.youtube.com/embed/h8CsSjv3U48" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
-## setTimeOut()
-* Llama a una función o evalúa una expresión después de un número específico de milisegundos 
-* [W3 School](https://www.w3schools.com/jsref/met_win_settimeout.asp) 
-* La función solo se ejecuta una vez.
-* Si se necesita repetir la ejecución, se usa el método **setInterval()**
-* El método **creatTimeOut()** evita que la función continue ejecutandose
-
----
-## Ejercicio: Canvas y setTimeOut()
-Utilizando la función anterior que dibujaba imágenes y la función setTimeOut() de javascript, realice una animación que mueva la imagen desde el borde izquierdo al derecho del canvas.
-
----
 ## Borrar Canvas
 La forma más sensilla de borrar todo el contenido del canvas es:
 ````javascript
 canvas.width=canvas.width;
 }
 ````
-
 
 ---
 ## Podemos Continuar con el Segundo Parcial!
