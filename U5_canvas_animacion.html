@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+
+# Canvas
+<small>
+Created by <i class="fab fa-telegram"></i>
+[edme88]("https://t.me/edme88") & 
+<i class="fab fa-telegram"></i>
+[rmarku]("https://t.me/rmarku")
+</small>
+
+</script></section><section  data-markdown><script type="text/template">
+## Animación
+Con Js se puede controlar elementos **canvas** para generar animaciones.
+
+Para ello deberemos emplear algunas de los siguientes métodos:
+* setInterval()
+* setTimeout()
+* requestAnimationFrame()
+
+</script></section><section  data-markdown><script type="text/template">
+## Pasos básicos de animación
+Estos son los pasos que necesitas para dibujar un cuadro:
+**1. Limpiar el canvas** <br>
+A menos que las formas que vas a dibujar llenen el canvas completo (por ejemplo, una imagen de fondo), debes borrar cualquier forma que haya dibujado previamente. La forma más fácil de hacerlo es usar el método clearRect().
+
+**2. Guardar el estado del canvas** <br>
+Si estás cambiando alguna configuración (como estilos, transformaciones, etc.) que afecte el estado del canvas y deseas asegurarte de que se utiliza el estado original cada vez que se dibuja una figura, debes guardar ese estado original. 
+
+**3. Dibujar formas animadas** <br>
+El paso en el que realizas el renderizado del cuadro actual.
+
+**4. Restaurar el estado del canvas** <br>
+Si has guardado el estado, restáuralo antes de dibujar un nuevo cuadro.
+
+</script></section><section  data-markdown><script type="text/template">
+## [setTimeOut()](https://www.w3schools.com/jsref/met_win_settimeout.asp) 
+* Llama a una función o evalúa una expresión después de un número específico de milisegundos 
+* La función solo se ejecuta una vez.
+* Si se necesita repetir la ejecución, se usa el método **setInterval()**
+* El método **creatTimeOut()** evita que la función continue ejecutandose
+````javascript
+setTimeout(function(){ alert("Hello"); }, 3000);
+````
+
+</script></section><section  data-markdown><script type="text/template">
+## requestAnimationFrame()
+* Comunica al navegador que  deseas iniciar una animación y requieres que el navegador llame a las funciones especificas para actualizar la misma antes de la siguiente escena.
+````javascript
+requestID = window.mozRequestAnimationFrame(callback);   // Firefox
+window.msRequestAnimationFrame(callback);                // IE 10 PP2+
+window.webkitRequestAnimationFrame(callback[, element]); // Chrome/Webkit
+````
+
+</script></section><section  data-markdown><script type="text/template">
+## setInterval(function, delay)
+* Ejecuta una función especificada por function cada delay milisegundos.
+````javascript
+var procesoID = window.setInterval(función, intervaloDeTiempo[, parámetro1, parámetro2, ... , parámetroN]);
+var procesoID = window.setInterval(código, intervaloDeTiempo);
+````
+
+</script></section><section  data-markdown><script type="text/template">
+## Ejercicio: Canvas y setTimeOut()
+Utilizando la función anterior que dibujaba imágenes y la función setTimeOut() de javascript, realice una animación que mueva la imagen desde el borde izquierdo al derecho del canvas.
+
+</script></section><section  data-markdown><script type="text/template">
+## Podemos Continuar con el Segundo Parcial!
+<!-- .slide: style="font-size: 0.70em" -->
+Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada
+* Una función que compruebe si los valores ingresados son correctos, y si no lo son, que le indique al usuario por un alert, y que blanquee el contenido del campo.
+* Una función que calcule algo en base a los valores ingresados por el usuario en los inputs.
+* Una función que realice un dibujo sobre un canvas.
+* No debe haber errores en el javaScript.
+* El código debe estar pusheado en el repositorio (emplear gh-pages).
+* Las funciones javaScript deben estar comentadas adecuadamente.
+
+</script></section><section  data-markdown><script type="text/template">
+## ¿Dudas, Preguntas, Comentarios?
+![DUDAS](images/pregunta.gif)
+</script></section></div>
+    </div>
+
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+    </script>
+
+    <script src="./_assets/slides/js/pruebas.js"></script>
+    <script src="./_assets/slides/js/init.js"></script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
