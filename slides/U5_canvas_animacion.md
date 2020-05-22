@@ -13,12 +13,55 @@ Created by <i class="fab fa-telegram"></i>
 </small>
 
 ---
-## setTimeOut()
+## Animación
+Con Js se puede controlar elementos **canvas** para generar animaciones.
+
+Para ello deberemos emplear algunas de los siguientes métodos:
+* setInterval()
+* setTimeout()
+* requestAnimationFrame()
+
+---
+## Pasos básicos de animación
+Estos son los pasos que necesitas para dibujar un cuadro:
+**1. Limpiar el canvas** <br>
+A menos que las formas que vas a dibujar llenen el canvas completo (por ejemplo, una imagen de fondo), debes borrar cualquier forma que haya dibujado previamente. La forma más fácil de hacerlo es usar el método clearRect().
+
+**2. Guardar el estado del canvas** <br>
+Si estás cambiando alguna configuración (como estilos, transformaciones, etc.) que afecte el estado del canvas y deseas asegurarte de que se utiliza el estado original cada vez que se dibuja una figura, debes guardar ese estado original. 
+
+**3. Dibujar formas animadas** <br>
+El paso en el que realizas el renderizado del cuadro actual.
+
+**4. Restaurar el estado del canvas** <br>
+Si has guardado el estado, restáuralo antes de dibujar un nuevo cuadro.
+
+---
+## [setTimeOut()](https://www.w3schools.com/jsref/met_win_settimeout.asp) 
 * Llama a una función o evalúa una expresión después de un número específico de milisegundos 
-* [W3 School](https://www.w3schools.com/jsref/met_win_settimeout.asp) 
 * La función solo se ejecuta una vez.
 * Si se necesita repetir la ejecución, se usa el método **setInterval()**
 * El método **creatTimeOut()** evita que la función continue ejecutandose
+````javascript
+setTimeout(function(){ alert("Hello"); }, 3000);
+````
+
+---
+## requestAnimationFrame()
+* Comunica al navegador que  deseas iniciar una animación y requieres que el navegador llame a las funciones especificas para actualizar la misma antes de la siguiente escena.
+````javascript
+requestID = window.mozRequestAnimationFrame(callback);   // Firefox
+window.msRequestAnimationFrame(callback);                // IE 10 PP2+
+window.webkitRequestAnimationFrame(callback[, element]); // Chrome/Webkit
+````
+
+---
+## setInterval(function, delay)
+* Ejecuta una función especificada por function cada delay milisegundos.
+````javascript
+var procesoID = window.setInterval(función, intervaloDeTiempo[, parámetro1, parámetro2, ... , parámetroN]);
+var procesoID = window.setInterval(código, intervaloDeTiempo);
+````
 
 ---
 ## Ejercicio: Canvas y setTimeOut()
