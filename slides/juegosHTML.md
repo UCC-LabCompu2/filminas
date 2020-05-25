@@ -206,6 +206,19 @@ Para más info:
 * Consolas
 
 ---
+## Pong
+1. Crea el lienzo (canvas) y dibuja en él
+2. Mueve la bola
+3. Rebota en las paredes
+4. Control de la pala y el teclado
+5. Fin del juego
+6. Construye el muro de ladrillos
+7. Detección de colisiones
+8. Cuenta los puntos y gana
+9. Controles del mouse
+10. Finalizando
+
+---
 ## Melon.JS
 [Tutorial: Plataforma](http://melonjs.github.io/tutorial-platformer/)
 
