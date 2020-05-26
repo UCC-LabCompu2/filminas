@@ -53,7 +53,7 @@ que mueva la imagen desde el borde izquierdo al derecho del canvas.
 
 ---
 ## Ejercicio: Canvas y setInterval()
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SA1o76UYA94" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lK2JkR9ykSc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 ## [setTimeOut()](https://www.w3schools.com/jsref/met_win_settimeout.asp) 
