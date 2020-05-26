@@ -23,6 +23,7 @@ Para ello deberemos emplear algunas de los siguientes métodos:
 
 ---
 ## Pasos básicos de animación
+<!-- .slide: style="font-size: 0.70em" -->
 Estos son los pasos que necesitas para dibujar un cuadro:
 **1. Limpiar el canvas** <br>
 A menos que las formas que vas a dibujar llenen el canvas completo (por ejemplo, una imagen de fondo), debes borrar cualquier forma que haya dibujado previamente. La forma más fácil de hacerlo es usar el método clearRect().
@@ -35,6 +36,20 @@ El paso en el que realizas el renderizado del cuadro actual.
 
 **4. Restaurar el estado del canvas** <br>
 Si has guardado el estado, restáuralo antes de dibujar un nuevo cuadro.
+
+---
+## setInterval(function, delay)
+* Ejecuta una función especificada por function cada delay milisegundos.
+
+````javascript
+var procesoID = window.setInterval(función, intervaloDeTiempo[, parámetro1, parámetro2, ... , parámetroN]);
+var procesoID = window.setInterval(código, intervaloDeTiempo);
+````
+
+---
+## Ejercicio: Canvas y setInterval()
+Utilizando la función anterior que dibujaba imágenes y la función setInterval() de javascript, realice una animación 
+que mueva la imagen desde el borde izquierdo al derecho del canvas.
 
 ---
 ## [setTimeOut()](https://www.w3schools.com/jsref/met_win_settimeout.asp) 
@@ -54,18 +69,6 @@ requestID = window.mozRequestAnimationFrame(callback);   // Firefox
 window.msRequestAnimationFrame(callback);                // IE 10 PP2+
 window.webkitRequestAnimationFrame(callback[, element]); // Chrome/Webkit
 ````
-
----
-## setInterval(function, delay)
-* Ejecuta una función especificada por function cada delay milisegundos.
-````javascript
-var procesoID = window.setInterval(función, intervaloDeTiempo[, parámetro1, parámetro2, ... , parámetroN]);
-var procesoID = window.setInterval(código, intervaloDeTiempo);
-````
-
----
-## Ejercicio: Canvas y setTimeOut()
-Utilizando la función anterior que dibujaba imágenes y la función setTimeOut() de javascript, realice una animación que mueva la imagen desde el borde izquierdo al derecho del canvas.
 
 ---
 ## Podemos Continuar con el Segundo Parcial!
