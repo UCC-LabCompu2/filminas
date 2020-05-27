@@ -43,6 +43,7 @@ El desarrollo de VJ requiere de un equipo MULTIDISCIPLINARIO de personas:
 
 ---
 ## Tipos de Juegos
+<!-- .slide: style="font-size: 0.90em" -->
 * Acción
 * Educativos
 * Carreras
@@ -217,6 +218,65 @@ Para más info:
 8. Cuenta los puntos y gana
 9. Controles del mouse
 10. Finalizando
+
+---
+## Pong
+En la siguiente diapositiva estan los videos con los pasos explicados. Pero si lo prefieres, puedes seguir el siguiente tutorial:
+
+[MDN Web Docs](https://developer.mozilla.org/es/docs/Games/Workflows/Famoso_juego_2D_usando_JavaScript_puro)
+
+(Aclaración: En los videos se emplea JS orientado a Objetos, y y en el tutorial de MDN no, por lo que las versiones pueden variar.)
+
+---
+## Pong (parte 1)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9wBxNZsHTtw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Pasos:
+1. Crear el lienzo canvas
+2. Mover la pelota/bola
+
+---
+## Pong (parte 2)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tBEaNgUif5Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Pasos:
+
+3.Rebota en las paredes
+
+4.Control de la barra/pala y el teclado 
+
+---
+## Pong (parte 3)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FnbEaA1NqkU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+5.Fin de Juego
+
+6.Construye el muro de ladrillos
+
+---
+## Pong (parte 4)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/52nM2qbEsG4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+7.Detectar Colisión
+
+8.Mover Mouse
+
+---
+## Pong (parte 5)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/523GOA7MjOM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+9.Puntaje
+
+8.Fin?
+
+---
+## Pong... Fin???
+Se propone realizar las siguientes mejoras:
+* Agregar un sonido cuando la pelota rompe un bloque
+* Cambiar el patron de dibujo de los bloques
+* Bloques en diferentes colores: color 1 se rompe con un golpe, color 2 con 2 golpes, color 3 con 3 golpes
+* Agregar más jugadores
+* Aumentar la velocidad de la pelota si ocurre un evento 
 
 ---
 ## Melon.JS

@@ -56,7 +56,7 @@ que mueva la imagen desde el borde izquierdo al derecho del canvas.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lK2JkR9ykSc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
-## [setTimeOut()](https://www.w3schools.com/jsref/met_win_settimeout.asp) 
+## [setTimeOut(function, delay)](https://www.w3schools.com/jsref/met_win_settimeout.asp) 
 * Llama a una función o evalúa una expresión después de un número específico de milisegundos 
 * La función solo se ejecuta una vez.
 * Si se necesita repetir la ejecución, se usa el método **setInterval()**
@@ -66,8 +66,10 @@ setTimeout(function(){ alert("Hello"); }, 3000);
 ````
 
 ---
-## requestAnimationFrame()
-* Comunica al navegador que  deseas iniciar una animación y requieres que el navegador llame a las funciones especificas para actualizar la misma antes de la siguiente escena.
+## requestAnimationFrame(callback)
+* Comunica al navegador que  deseas iniciar una animación y requieres que el navegador llame a las funciones especificas 
+para actualizar la misma antes de la siguiente escena.
+
 ````javascript
 requestID = window.mozRequestAnimationFrame(callback);   // Firefox
 window.msRequestAnimationFrame(callback);                // IE 10 PP2+
