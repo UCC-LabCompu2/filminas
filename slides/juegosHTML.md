@@ -43,7 +43,7 @@ El desarrollo de VJ requiere de un equipo MULTIDISCIPLINARIO de personas:
 
 ---
 ## Tipos de Juegos
-<!-- .slide: style="font-size: 0.90em" -->
+<!-- .slide: style="font-size: 0.70em" -->
 * Acción
 * Educativos
 * Carreras

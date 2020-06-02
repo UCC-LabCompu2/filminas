@@ -13,13 +13,35 @@ Created by <i class="fab fa-telegram"></i>
 </small>
 
 ---
+## Libros:
+![Book](images/book.png)
+[“Diseñando APPS para móviles” Javier Cuello y José Vittone](http://appdesignbook.com/es/contenidos/tipos-de-apps/)
+
+---
 ## Aplicaciones Moviles o APP
-Son aplicaciones diseñada para ser ejecutadas en teléfonos inteligentes, tablets y otros dispositivos móviles y que permite al usuario efectuar una tarea, facilitando la gestión o actividad a desarrollar.
+Son aplicaciones diseñada para ser ejecutadas en teléfonos inteligentes, tablets y otros dispositivos móviles y que 
+permite al usuario efectuar una tarea, facilitando la gestión o actividad a desarrollar.
 
 ![Aplicaciones Moviles](images/moviles/aplicaciones-moviles.jpg)
 
 ---
-## Ejemplos de Aplicaciones Móviles
+## Aplicaciones Moviles o APP
+Inicialmente estaban enfocadas en **mejorar la productividad personal**:
+* Alarmas
+* Calendarios
+* Calculadoras
+* Clientes de Correo
+
+---
+## Diferencia entre APP y Web Móvil
+Las APP deben ser descargadas e instaladas antes de usarse.
+
+Las Webs se acceden empleando internet y un navegador.
+
+Las APPs pueden verse sin internet y tienen acceso a ciertas características del hardware del teléfono.
+
+---
+## [Ejemplos de Aplicaciones Móviles](https://www.infobae.com/america/tecno/2020/03/03/cuales-son-las-10-aplicaciones-mas-descargadas-del-mundo/)
 * Whatsap
 * Telegram
 * Instagram
@@ -27,21 +49,32 @@ Son aplicaciones diseñada para ser ejecutadas en teléfonos inteligentes, table
 * Clash of Clans
 
 ---
-<!--http://appdesignbook.com/es/contenidos/tipos-de-apps/-- >
----
 ## Categorías de Aplicaciones
 ### Según el contenido:</h3>
 * Entretenimiento
 * Sociales
 * Utilitarias y Productividad
 * Educativas e Informativas
+* Creación 
 
 ---
 ## Categorías de Aplicaciones
 ### Según el costo:</h3>
-* Apps Gratuitas
-* Apps de Pago
-* Fremium
+* Apps Gratuitas 
+<p class="fragment"> <small>(mayor llegada a los usuarios, disminuye expectativa del producto, suele incluir publicidad) </small></p>
+
+* Apps de Pago 
+<p class="fragment"> <small>(altas expectativas, será exitosa si no tiene rivales gratuitos)</small> </p>
+
+* Fremium 
+<p class="fragment"><small>(uso básico, que se amplia al pagar)</small> </p>
+
+
+---
+## Tipos de Aplicaciones
+* Aplicaciones Nativas
+* Aplicaciones Web
+* Aplicaciones Hibridas
 
 ---
 ## Características de App
@@ -64,19 +97,19 @@ Son aplicaciones diseñada para ser ejecutadas en teléfonos inteligentes, table
 ---
 ## Apps Android
 * **Lenguaje:** Java o Kotlin + Librerias Android
-* **IDE:** Android Studio
+* **IDE:** [Android Studio](https://developer.android.com/studio)
 * **SO:** Windows, Linux o Mac
 * Emuladores de Dispositivos
     
 ---
 ## Apps iOS
 * **Lenguaje:** ObjetiveC - Swift
-* **IDE:** XCode
+* **IDE:** [XCode](https://developer.apple.com/xcode/)
 * **SO:** Mac
 * Emuladores de Dispositivos
 * Para probarlo en dispositivo, pagar licencia de desarollador
 
----
+
 <!--
     http://appdesignbook.com/es/contenidos/diseno-visual-apps-nativas/
     http://www.lancetalent.com/blog/tipos-de-aplicaciones-moviles-ventajas-inconvenientes/
@@ -87,7 +120,7 @@ Son aplicaciones diseñada para ser ejecutadas en teléfonos inteligentes, table
 ---
 ## Tipos de Aplicaciones
 * Aplicaciones Nativas
-* Aplicaciones Web
+* Aplicaciones Web o Webapps
 * Aplicaciones Hibridas
 
 ![Hybrid App](images/moviles/hybrid-app-development.png)
@@ -107,19 +140,18 @@ Development Kit o SDK de la plataforma.
     <tr>
 <td>
     <ul>
-<li>>Acceso completo al dispositivo</li>
-<li>Mejor experiencia del usuario</li>
-<li>Visibilidad en APP Store</li>
-<li>Envio de notificaciones a los usuarios</li>
-<li>La actualización es constante</li>
-<li>No requiere conexion a internet</li>
+        <li>Acceso completo al dispositivo (Acceso a cámara y sensores: GPS, acelerómetro, giróscopo, etc)</li>
+        <li>Mejor experiencia del usuario</li>
+        <li>Visibilidad en APP Store</li>
+        <li>Envio de notificaciones a los usuarios</li>
+        <li>No requiere conexion a internet</li>
     </ul>
 </td>
 <td>
     <ul>
-<li>Diferentes habilidades/idiomas/herramientaspara cada plataforma de destino</li>
-<li>Tienden a ser más caras de desarrollar</li>
-<li>El código cliente no es reutilizable entre las diferentes plataformas</li>
+        <li>Diferentes habilidades/idiomas/herramientaspara cada plataforma de destino</li>
+        <li>Tienden a ser más caras de desarrollar</li>
+        <li>El código cliente no es reutilizable entre las diferentes plataformas</li>
     </ul>
 </td>
     </tr>
@@ -127,7 +159,7 @@ Development Kit o SDK de la plataforma.
     </section>
 
 ---
-## Web APP 
+## Web APP
 Se ejecutan dentro del propio navegador web del dispositivo a través de una URL. Se desarrollan con HTML, JavaScript y CSS.
     
 ---
@@ -140,18 +172,19 @@ Se ejecutan dentro del propio navegador web del dispositivo a través de una URL
     <tr>
 <td>
     <ul>
-* El código es reutilizable
-* Proceso de desarrollo sencillo y económico
-* No Necesita Instalarse
-* EL usuario siempre dispone de la ultima version
+        <li>El código es reutilizable</li>
+        <li>Proceso de desarrollo sencillo y económico</li>
+        <li>No Necesita Instalarse</li>
+        <li>El usuario siempre dispone de la ultima version</li>
     </ul>
 </td>
 <td>
     <ul>
-* Requiere conexión a Internet
-* Acceso limitado a características de hardware
-* Experiencia del ususario más propia de la aplicación web que de la app nativa
-* Requiere mayor esfuerzo de promoción
+        <li>Requiere conexión a Internet</li>
+        <li>Acceso limitado a características de hardware</li>
+        <li>Experiencia del ususario más propia de la aplicación web que de la app nativa</li>
+        <li>Requiere mayor esfuerzo de promoción</li>
+        <li>Restricciones e inconvenientes en gestión de memoria</li>
     </ul>
 </td>
     </tr>
@@ -159,13 +192,40 @@ Se ejecutan dentro del propio navegador web del dispositivo a través de una URL
 
 ---
 ## Aplicación híbrida
-Es una combinación de las aplicaciones nativas y las webapss. Se desarrollan con lenguajes: HTML, Javascript y CSS por lo que permite su uso en diferentes plataformas y el acceso a gran parte de las características del hardware del dispositivo. Es posible distribuirla en app store.
+Es una combinación de las aplicaciones nativas y las webapss. Se desarrollan con lenguajes: HTML, Javascript y CSS por
+lo que permite su uso en diferentes plataformas y el acceso a gran parte de las características del hardware del 
+dispositivo. Es posible distribuirla en app store.
     
 ---
 ## Aplicación híbrida
 Una vez que la aplicación está terminada, se compila o empaqueta, y el resultado final es como si se tratara de una aplicación nativa.
-    
+
+
 ---
+## Aplicación híbrida
+<table style="font-size: 0.7em">
+    <tr>
+<td>Ventajas</td>
+<td>Desventajas</td>
+    </tr>
+    <tr>
+    <td>
+        <ul>
+            <li>Acceso al dispositivo (Acceso a cámara y sensores: GPS, acelerómetro, giróscopo, etc)</li>
+            <li>Visibilidad en APP Store</li>
+            <li>El código es reutilizable</li>
+            <li>Proceso de desarrollo sencillo y económico</li>
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <li>Experiencia del ususario más propia de la aplicación web que de la app nativa. 
+            Sin embargo, hay formas de usar controles y botones nativos de cada plataforma</li>
+        </ul>
+    </td>
+    </tr>
+</table>
+
 <!--http://blog.aplicacionesmovil.com/aplicaciones-celular/desarrollo-de-aplicaciones-hibridas-->
 
 ---
@@ -181,6 +241,7 @@ Una vez que la aplicación está terminada, se compila o empaqueta, y el resulta
 ## Frameworks Híbridos
 * Apache Cordova
 * IONIC
+* Icenium
 * React Native
 * Appcelerator Titanium
 
@@ -209,16 +270,14 @@ Las aplicaciones resultantes son híbridas ya que están empaquetadas como aplic
 1.Abrir el proyecto, y reemplazar el contenido de la carpeta 'www' por un proyecto web
 2. Abrir el Android Studio
 3. Crear un dispositivo para emular desde 'Tools > Android > AVD Manager'
-4. Correr la aplicación en el emulador <pre><code>cordova emulate andorid</code></pre> 
+4. Correr la aplicación en el emulador <pre><code>cordova emulate android</code></pre> 
 
 ---
 ## Por qué Android? 
-1. Para generar la APP es necesario contar con el Software Development Kit o SDK instalado.
-2. Android Studio es libre y funciona sobre cualquier SO.
-3. Para desarrollar APK para iOS se debe emplear MacOS.
-4. Para desarrollar APP para Windows Phone se requiere Windows.
+* Para generar la APP es necesario contar con el Software Development Kit o SDK instalado.
+* Android Studio es libre y funciona sobre cualquier SO.
+* Para desarrollar APK para iOS se debe emplear MacOS.
 
----
 <!--https://desarrolloweb.com/manuales/responsive-web-design.html-->
 
 ---
@@ -310,6 +369,64 @@ Contiene plantillas de diseño con tipografía, formularios, botones, cuadros, m
 ---
 ## Ejercicio: Cordova
 Utilizando Cordova, hacer una aplicación hibrida de CV.
+
+---
+## Primero el Móvil
+La filosofía **Mobile First** implica plantear el proceso de diseño teniendo en cuenta el móvil en primer lugar.
+
+Ventaja: Obliga a concentrarse en lo esencial de un producto y a hacer foco solo en lo que tiene sentido para este dispositivo.
+
+---
+## Etapas de Desarrollo
+1. Conceptualización
+2. Definición
+3. Diseño
+4. Desarrollo
+5. Publicación
+
+[Proceso de Diseño](images/appWeb/disenioMovil.png)
+
+---
+### 1. Conceptualización
+Idea de aplicación, que tiene en cuenta las necesidades y problemas de los usuarios. Esta idea responde a una 
+investigación preliminar y a la posterior comprobación de la viabilidad del concepto.
+* Ideación
+* Investigación
+* Formalización de la idea
+
+---
+### 2. Definición
+Se describe con detalle a los usuarios para quienes se diseñará la aplicación, usando metodologías como «Personas» y 
+«Viaje del usuario». También aquí se sientan las bases de la funcionalidad, lo cual determinará el alcance del
+proyecto y la complejidad de diseño y programación de la app.
+* Definición de usuarios
+* Definición funcional
+
+---
+### 3. Diseño
+Se crean los primeros prototipos para ser probados con usuarios. Se provee al desarrollador de pantallas modelo 
+para la programación del código.
+* Wireframes
+* Prototipos
+* Test con usuarios
+* Diseño visual
+
+---
+### 4. Desarrollo
+El programador se encarga de dar vida a los diseños y crear la estructura sobre la cual se apoyará el funcionamiento de la
+aplicación. Una vez que existe la versión inicial, dedica gran parte del tiempo a corregir errores funcionales para asegurar el
+correcto desempeño de la app y la prepara para su aprobación en las tiendas.
+* Programación del código
+* Corrección de bugs
+
+---
+### 5. Publicación
+La aplicación es puesta a disposición de los usuarios en las tiendas. Se realiza un seguimiento a través de analíticas, 
+estadísticas y comentarios de usuarios, para evaluar el comportamiento y desempeño de la app, corregir errores, 
+realizar mejoras y actualizarla en futuras versiones.
+* Lanzamiento
+* Seguimiento
+* Actualización
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
