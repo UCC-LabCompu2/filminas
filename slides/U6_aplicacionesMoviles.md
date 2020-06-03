@@ -387,6 +387,12 @@ Empleando Ejercicios-CSS el template ej_instagram, el contenido debe visualizars
 * Permite compartir los contenidos de una forma más rápida y natural.
 
 ---
+### Tu página está correctamente optimizada para móviles?
+Deja quw google te ayude a averiguarlo...
+
+https://search.google.com/test/mobile-friendly?utm_source=mft&utm_medium=redirect&utm_campaign=mft-redirect
+
+---
 ## Ejercicio: Diseño Responsivo
 Emplear alguna herramienta para probar si el sitio web es responsivo.
 Se sugiere usar ‘Chrome Developer Tools’ Ctrol+Mayus+i
@@ -427,6 +433,10 @@ Empleando Ejercicios-CSS el template ej_instagram, el contenido debe visualizars
 
 <!-- ## Ejercicio: Cordova
 Utilizando Cordova, hacer una aplicación hibrida de CV. -->
+
+---
+## Ejercicio: Bootstrap
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6b0R4bNYxb8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 ## Primero el Móvil
