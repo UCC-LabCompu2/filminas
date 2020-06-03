@@ -42,11 +42,14 @@ Las APPs pueden verse sin internet y tienen acceso a ciertas características de
 
 ---
 ## [Ejemplos de Aplicaciones Móviles](https://www.infobae.com/america/tecno/2020/03/03/cuales-son-las-10-aplicaciones-mas-descargadas-del-mundo/)
+<!-- .slide: style="font-size: 0.80em" -->
 * Whatsap
 * Telegram
 * Instagram
 * Opera Mini
 * Clash of Clans
+
+![Apps Mas Descargadas](images/appWeb/appsDescargadas.jpg)
 
 ---
 ## Categorías de Aplicaciones
@@ -84,9 +87,10 @@ Las APPs pueden verse sin internet y tienen acceso a ciertas características de
 * Disponibilidad de muchos sensores
 
 ---
-## Sistemas Operativos para Dispositivos móviles
+## [Sistemas Operativos para Dispositivos móviles](https://gs.statcounter.com/os-market-share/mobile/worldwide)
 * Android
 * iOS
+* kaios
 * ~~Windows Phone~~
 * ~~Blackberry~~
 * ~~Ubuntu Phone~~
@@ -191,6 +195,10 @@ Se ejecutan dentro del propio navegador web del dispositivo a través de una URL
 </table>
 
 ---
+## Web APP
+![Web App Facebook](images/appWeb/webApp_facebook.png)
+
+---
 ## Aplicación híbrida
 Es una combinación de las aplicaciones nativas y las webapss. Se desarrollan con lenguajes: HTML, Javascript y CSS por
 lo que permite su uso en diferentes plataformas y el acceso a gran parte de las características del hardware del 
@@ -199,7 +207,6 @@ dispositivo. Es posible distribuirla en app store.
 ---
 ## Aplicación híbrida
 Una vez que la aplicación está terminada, se compila o empaqueta, y el resultado final es como si se tratara de una aplicación nativa.
-
 
 ---
 ## Aplicación híbrida
@@ -229,6 +236,10 @@ Una vez que la aplicación está terminada, se compila o empaqueta, y el resulta
 <!--http://blog.aplicacionesmovil.com/aplicaciones-celular/desarrollo-de-aplicaciones-hibridas-->
 
 ---
+## Aplicación híbrida
+![App Hibrida Netflix](images/appWeb/appHibrida_netflix.png)
+
+---
 ![Nativa vs. Hibrida](images/appWeb/native-v-hybrid.png)
 
 ---
@@ -241,6 +252,7 @@ Una vez que la aplicación está terminada, se compila o empaqueta, y el resulta
 ## Frameworks Híbridos
 * Apache Cordova
 * IONIC
+* PhoneGap
 * Icenium
 * React Native
 * Appcelerator Titanium
@@ -292,6 +304,10 @@ Se trata de redimensionar y colocar los elementos de la web de forma que se adap
 Se caracteriza porque los layouts (contenidos) e imágenes son fluidos y se usa código media-queries de CSS3.
 
 ---
+## Diseño Responsivo
+![Diseño Responsivo](images/appWeb/disenio_responsivo.png)
+
+---
 ## [Media Query](https://developer.mozilla.org/es/docs/CSS/Media_queries)
 Se considera un tipo de medio y al menos una consulta que limita las hojas de estilo utilizando características del medio como ancho, alto y color.
     
@@ -307,7 +323,7 @@ Se considera un tipo de medio y al menos una consulta que limita las hojas de es
 ````
 
 ---
-## HTML5: Viewport
+## [HTML5: Viewport](https://developer.mozilla.org/es/docs/M%C3%B3vil/Viewport_meta_tag)
 La etiqueta viewport permite definir el ancho, alto y escala del área usada por el navegador para mostrar contenido.
 
 Sino por defecto una web tiene siempre 980px de ancho
@@ -316,6 +332,17 @@ Se le puede determinar un initial-scale=0.1(min) maximun-scale= minimun-scale= u
 ````css
 <meta name="viewport" content="width=device-width, user-scalable=no">
 ````
+
+---
+## Ejercicio: Responsive
+Empleando Ejercicios-CSS el template ej_instagram, el contenido debe visualizarse:
+* Se deben mostrar 3 columnas las imagenes si la pantalla si la pantalla tiene un minimo de 601px
+* Se debe mostrar 1 columna si la pantalla tiene como máximo 600px
+* Las imagenes deben ocupar el 100% de su columna
+
+---
+## Ejercicio: Responsive
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nLImEsvaP2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 ## Diseño Responsivo: Características
@@ -358,17 +385,13 @@ Contiene plantillas de diseño con tipografía, formularios, botones, cuadros, m
 
 ---
 ## Ejercicio: Bootstrap
-* Crear una página web e incluir bootstrap <br>
-````css
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
-````
-* Crear 3 divs que ocupen 4 columnas cada uno.
-* Aplique estilos propios de bootstrap para que las columnas se adapten al tamaño de la pantalla.
+Empleando Ejercicios-CSS el template ej_instagram, el contenido debe visualizarse:
+* Se deben mostrar 3 columnas las imagenes si la pantalla es mediana
+* Se debe mostrar 1 columna si la pantalla es pequeña
+* Las imagenes deben ocupar el 100% de su columna
 
----
-## Ejercicio: Cordova
-Utilizando Cordova, hacer una aplicación hibrida de CV.
+<!-- ## Ejercicio: Cordova
+Utilizando Cordova, hacer una aplicación hibrida de CV. -->
 
 ---
 ## Primero el Móvil
@@ -378,13 +401,14 @@ Ventaja: Obliga a concentrarse en lo esencial de un producto y a hacer foco solo
 
 ---
 ## Etapas de Desarrollo
+<!-- .slide: style="font-size: 0.80em" -->
 1. Conceptualización
 2. Definición
 3. Diseño
 4. Desarrollo
 5. Publicación
 
-[Proceso de Diseño](images/appWeb/disenioMovil.png)
+![Proceso de Diseño](images/appWeb/disenioMovil.png)
 
 ---
 ### 1. Conceptualización
