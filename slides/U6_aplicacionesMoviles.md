@@ -294,6 +294,10 @@ Las aplicaciones resultantes son híbridas ya que están empaquetadas como aplic
 
 ---
 ## Diseño Responsivo
+![Diseño Responsive](images/appWeb/responsive-viewport.png)
+
+---
+## Diseño Responsivo
 Diseño web adaptable, donde la apariencia de las páginas web se adapta al dispositivo que se esté utilizando para visualizarla.
 ![Dispositivos](images/moviles/img-dispositius.png)
 
@@ -323,11 +327,42 @@ Se considera un tipo de medio y al menos una consulta que limita las hojas de es
 ````
 
 ---
-## [HTML5: Viewport](https://developer.mozilla.org/es/docs/M%C3%B3vil/Viewport_meta_tag)
-La etiqueta viewport permite definir el ancho, alto y escala del área usada por el navegador para mostrar contenido.
+## HTML5: Viewport
+![Ejemplo Viewport](images/appWeb/viewport2.jpg)
 
-Sino por defecto una web tiene siempre 980px de ancho
-Se le puede determinar un initial-scale=0.1(min) maximun-scale= minimun-scale= user-scalable=si permite o no escala
+---
+## [HTML5: Viewport](https://developer.mozilla.org/es/docs/M%C3%B3vil/Viewport_meta_tag)
+Es el área de la ventana en donde el contenido web está visible. Generalmente no es del mismo tamaño que la página 
+renderizada, en donde se brindan barras de desplazamiento para que el usuario pueda acceder a todo el contenido.
+
+---
+## HTML5: Viewport
+Dispositivos con pantallas angostas muestran la página en una ventana virtual o viewport, que es usualmente más ancho 
+que la pantalla y la comprimen de manera que pueda verse completa. El usuario podrá recorrerla y hacer zoom para ver 
+diferentes áreas de la página. Por ejemplo, si una pantalla móvil tiene un ancho 640px, las páginas pueden ser procesadas 
+con un viewport de 980px, y después comprimidas para que entren en 640px.
+
+---
+## HTML5: Viewport
+![ejemplo viewport](images/appWeb/viewport.png)
+
+---
+## HTML5: Viewport
+Esto se hace porque muchas páginas no están optimizadas para dispositivos móviles y se ven mal cuando son procesadas a un 
+ancho de viewport pequeño. El viewport virtual es una forma de resolver el problema de sitios no optimizados para móviles, 
+logrando que se vean mejor.
+
+---
+## HTML5: Viewport
+<!-- .slide: style="font-size: 0.80em" -->
+La etiqueta viewport permite definir el ancho, alto y escala del área usada por el navegador para mostrar contenido.
+Sino por defecto una web tiene siempre 980px de ancho.
+
+Se le puede configurar
+* **width:** Ancho que vamos a declarar
+* **initial-scale:** zoom que va tener como inicio (min 0.1)
+* **maximum-scale:** zoom máximo permitido
+* **user-scalable:** control del zoom en la página para darle la opción al usuario de aumentar o disminuir el tamaño
 
 ````css
 <meta name="viewport" content="width=device-width, user-scalable=no">
