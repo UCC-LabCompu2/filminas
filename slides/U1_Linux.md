@@ -13,10 +13,6 @@ Created by <i class="fab fa-telegram"></i>
 </small>
 
 ---
-## Ejercicio: SO Linux
-**Instale** alguna distribución de Linux, como Ubuntu, en una computadora o máquina virtual.
-
----
 ## ¿Qué es Linux?
 **Linux** es un kernel de SO.
 
@@ -94,6 +90,10 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 4. Tarjetagráfica y monitor que soporte una resolución de 800x600
 
 ![Ubuntu](images/configSO/ubuntu.png)
+
+---
+## Ejercicio: SO Linux
+**Instale** alguna distribución de Linux, como Ubuntu, en una computadora o máquina virtual.
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?

@@ -13,6 +13,26 @@ Created by <i class="fab fa-telegram"></i>
 </small>
 
 ---
+<!-- .slide: style="font-size: 0.60em" -->
+## Sistema Operativo
+* Definicion
+* Tareas
+* Ejemplos de SO
+* Criterios de Clasificación
+* Recursos de Hardware
+
+## Máquinas Virtuales
+* Definición 
+* Características
+* Ventajas
+* Aplicaciones
+
+## BIOS y UEFI
+* Definición
+* Función
+* Forma de funcionamiento
+
+---
 ## Sistema Operativo
     
 Es un programa que administra el Hardware de una computadora. 
@@ -24,6 +44,7 @@ Proporciona las bases para los programas de aplicación y actúa como un interme
 
 ---
 ## SO: Tareas
+<!-- .slide: style="font-size: 0.90em" -->
 Las tareas que hace un SO son:
 * Realizar el interfaz Sistema-Usuario
 * Compartir los recursos de Hardware entre los usuarios
@@ -36,7 +57,7 @@ Las tareas que hace un SO son:
 
 ---
 ##  [Ejemplos de Sistema Operativo](http://gs.statcounter.com/os-market-share)
-<!-- .slide: data-background="images/configSO/OtrosOS.png" data-background-size="50%" -->
+<!-- .slide: data-background="images/configSO/OtrosOS.png" data-background-size="50%" style="font-size: 0.60em" -->
 Para PC:
 * Solaris
 * Linux
@@ -58,10 +79,121 @@ Para dispositivos móviles:
 * Cantidad de tareas
   * Multitarea
   * Monotarea
-* Cliente o Servidor</li>
+* Cliente o Servidor
 * Tipo de Licencia
   * Propietario
   * Libre
+
+---
+## Ejercicio: Criterios de SO
+En base a tus conocimientos previos, completa la siguiente tabla:
+<table>
+<tr>
+    <td>SO</td>
+    <td>Año</td>
+    <td colspan="2">Tipo de Interfaz</td>
+    <td colspan="2">Tareas</td>
+    <td colspan="2">Arquitectura</td>
+    <td colspan="2">Licencia</td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td>GUI</td>
+    <td>CLI</td>
+    <td>Mono</td>
+    <td>Multi</td>
+    <td>Cliente</td>
+    <td>Servidor</td>
+    <td>Libre</td>
+    <td>Propietario</td>
+</tr>
+<tr>
+    <td>Windows 3.11</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Windows NT</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Windows 95</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Windows 10</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Ubuntu 20</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Ubuntu Server</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Red Hat</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+</table>
+Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 
 ---
 ## Recursos de Hardware
@@ -79,12 +211,132 @@ Con la configuración del hardware **mínima** el rendimiento del sistema suele 
 Con la configuración de hardware **recomendada** el SO funciona a una velocidad adecuada.
 
 ---
+## Ejercicio: Comparar SO
+Emplea la información de las siguientes diapositivas para contruir una tabla comparativa.
+<table>
+<tr>
+    <td>SO</td>
+    <td>Año</td>
+    <td colspan="2">Tipo de Interfaz</td>
+    <td colspan="2">Tareas</td>
+    <td colspan="2">Arquitectura</td>
+    <td colspan="2">Licencia</td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td>GUI</td>
+    <td>CLI</td>
+    <td>Mono</td>
+    <td>Multi</td>
+    <td>Cliente</td>
+    <td>Servidor</td>
+    <td>Libre</td>
+    <td>Propietario</td>
+</tr>
+<tr>
+    <td>Windows 3.11</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Windows NT</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Windows 95</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Windows 98</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Windows XP</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Windows 7</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Windows 10</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+</table>
+Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
+
+---
+#### Advertencia: Algunas de las siguientes imágenes nos harán viajar en el tiempo... 
+<!--Descargar audio https://www.youtube.com/watch?v=tHr46P2r514-->
+![Máquina del Tiempo](images/configSO/maquinaTiempo.jpeg)
+
+---
 ## Requisitos mínimos de 
 ## Windows 3.11
 * Año: 1990
 * Procesador 80386sx o superior (25 MHz)
 * 3 MB de ram (se recomienda 4 MB)
 * Al menos 6.2 MB de espacio disponible en disco duro (se recomienda 14.5 MB)
+
+---
+## Windows 3.11
+![Windows 3.11](images/configSO/Windows_3.11.png)
 
 ---
 ## Requisitos mínimos de
@@ -96,6 +348,10 @@ Con la configuración de hardware **recomendada** el SO funciona a una velocidad
 * adaptador de pantalla de video con resolución VGA o superior
    
 ---
+## Windows NT
+![Windows NT](images/configSO/Windows_NT.jpeg)
+   
+---
 ## Requisitos mínimos de
 ## Windows 95
 * Año: 1995
@@ -104,6 +360,10 @@ Con la configuración de hardware **recomendada** el SO funciona a una velocidad
 * Mínimo 55 Mb de espacio disponible en disco duro
 * 1 unidad de disco de alta densidad de 3,5 pulgadas
 * Resolución VGA o superior (se recomienda SVGA de 256 colores)
+
+---
+## Windows 95
+![Windows 95](images/configSO/windows_95.jpeg)
 
 ---
 ## Requisitos mínimos de
@@ -117,6 +377,10 @@ Con la configuración de hardware **recomendada** el SO funciona a una velocidad
 * Internet (MSN, Mensajeria): Modem 14,4 bits por segundo (bps),recomendado 28,8 bits o más rapido
 
 ---
+## Windows 98
+![Windows 98](images/configSO/Windows_98.png)
+
+---
 ## Requisitos mínimos de
 ## Windows XP
 * Año: 2001
@@ -125,6 +389,10 @@ Con la configuración de hardware **recomendada** el SO funciona a una velocidad
 * Mínimo 1,5 GB de espacio disponible en disco duro
 * Tarjeta gráfica y monitor de resolución Súper VGA (800x600) o superior
 ![Windows XP](images/configSO/winXP.png)
+
+---
+## Windows XP
+![Windows XP](images/configSO/Windows_XP.png)
 
 ---
 ## Requisitos mínimos de
@@ -137,6 +405,10 @@ Con la configuración de hardware **recomendada** el SO funciona a una velocidad
 ![Windows 7](images/configSO/win7.png)
 
 ---
+## Windows 7
+![Windows 7](images/configSO/Windows_7.webp)
+
+---
 ## Requisitos mínimos de
 ## Windows 10
 * Año: 2015
@@ -146,6 +418,10 @@ Con la configuración de hardware **recomendada** el SO funciona a una velocidad
 * Dispositivo gráfico DirectX9.
 ![Windows 10](images/configSO/windows10-logo.png)
 <!---https://www.xataka.com/especiales/maquinas-virtuales-que-son-como-funcionan-y-como-utilizarlas-->
+
+---
+## Windows 10
+![Windows 10](images/configSO/Windows_10.jpeg)
 
 ---
 ## Máquina Virtual
@@ -271,6 +547,22 @@ Al realizar esta operación se elimina toda la información contenida en el.
 <!-- .slide: data-background="images/herramientas/Busydesk-desarrollo.png" -->
 Recuerda **ANTES** de formatear hacer backup de tus datos, así evitas perder información.
 
+
+---
+## [Qué es Rufus?](https://rufus.ie/)
+<!-- .slide: style="font-size: 0.80em" -->
+Rufus es una utilidad que le ayuda a formatear y crear soportes USB de arranque, como pendrives, tarjetas de memoria, etc.
+
+Es especialmente útil en casos donde:
+* necesite crear medios de instalación USB a partir de ISOs arrancables (Windows, Linux, UEFI, etc.)
+* necesite trabajar en un equipo que no tenga un sistema operativo instalado
+* necesite actualizar el firmware o BIOS de un ordenador desde DOS
+* quiera ejecutar una utilidad de bajo nivel
+
+---
+## [Qué es Rufus?](https://rufus.ie/)
+![Rufus](images/configSO/rufus_en_2x.png)
+
 ---
 ## Particionado de Discos
 Una **partición** es la división de espacio que se le asigna a un disco duro.
@@ -281,6 +573,7 @@ Se puede formatear una partición sin necesidad de formatear todo el disco.
 
 ---
 ## Tipos de Particiones
+<!-- .slide: style="font-size: 0.80em" -->
 **Partición Primaria:** Se encarga de iniciar la carga del SO
 
 **Partición Extendida o Secundaria:** Almacenan información

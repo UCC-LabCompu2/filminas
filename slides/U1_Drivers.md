@@ -42,8 +42,15 @@ Puede haber más de un controlador para un mismo dispositivo.
 ---
 ## Tipos de Drivers
 * Fabricantes de dispositivos
-* Genéricos
+* Genéricos o Universales
 * Comunidad de Usuarios
+
+---
+## Drivers en Windows
+Los drivers críticos (fundamentales, como los de la CPU), están integrados dentro del sistema operativo. 
+Estos controladores genéricos no permiten conseguir el máximo rendimiento posible del hardware, 
+pero sí un primer arranque con las funciones básicas para que, a partir de ahí, se apliquen los 
+controladores específicos para cada componentes de hardware.
 
 ---
 ## Drivers: Actualización
