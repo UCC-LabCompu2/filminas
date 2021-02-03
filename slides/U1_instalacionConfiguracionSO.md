@@ -57,7 +57,7 @@ Las tareas que hace un SO son:
 
 ---
 ##  [Ejemplos de Sistema Operativo](http://gs.statcounter.com/os-market-share)
-<!-- .slide: data-background="images/configSO/OtrosOS.png" data-background-size="50%" style="font-size: 0.60em" -->
+<!-- .slide: data-background="images/configSO/OtrosOS.png" data-background-size="50%" style="font-size: 0.80em" -->
 Para PC:
 * Solaris
 * Linux
@@ -192,16 +192,30 @@ En base a tus conocimientos previos, completa la siguiente tabla:
     <td></td>
     <td></td>
 </tr>
+<tr>
+    <td>Mac OS X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
 </table>
 Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 
 ---
 ## Recursos de Hardware
+<!-- .slide: style="font-size: 0.80em" -->
 Los SO requieren ciertos recursos de Hardware para funcionar:
 1. Memoria RAM
 2. Espacio disponible en Disco Duro
 3. Tipo y velocidad del procesador
 4. Resolución de video
+
 ![Recursos Hardware](images/configSO/hardware.png)
 
 ---
@@ -212,32 +226,20 @@ Con la configuración de hardware **recomendada** el SO funciona a una velocidad
 
 ---
 ## Ejercicio: Comparar SO
-Emplea la información de las siguientes diapositivas para contruir una tabla comparativa.
+En base a las siguientes diapositivas, completa la tabla:
 <table>
 <tr>
-    <td>SO</td>
+    <td>Requisitos</td>
+    <td>3.11</td>
+    <td>NT</td>
+    <td>95</td>
+    <td>98</td>
+    <td>XP</td>
+    <td>7</td>
+    <td>10</td>
+</tr>
+<tr>
     <td>Año</td>
-    <td colspan="2">Tipo de Interfaz</td>
-    <td colspan="2">Tareas</td>
-    <td colspan="2">Arquitectura</td>
-    <td colspan="2">Licencia</td>
-</tr>
-<tr>
-    <td></td>
-    <td></td>
-    <td>GUI</td>
-    <td>CLI</td>
-    <td>Mono</td>
-    <td>Multi</td>
-    <td>Cliente</td>
-    <td>Servidor</td>
-    <td>Libre</td>
-    <td>Propietario</td>
-</tr>
-<tr>
-    <td>Windows 3.11</td>
-    <td></td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -247,21 +249,7 @@ Emplea la información de las siguientes diapositivas para contruir una tabla co
     <td></td>
 </tr>
 <tr>
-    <td>Windows NT</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-<tr>
-    <td>Windows 95</td>
-    <td></td>
-    <td></td>
+    <td>Procesador</td>
     <td></td>
     <td></td>
     <td></td>
@@ -271,21 +259,7 @@ Emplea la información de las siguientes diapositivas para contruir una tabla co
     <td></td>
 </tr>
 <tr>
-    <td>Windows 98</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-<tr>
-    <td>Windows XP</td>
-    <td></td>
-    <td></td>
+    <td>Memoria Ram</td>
     <td></td>
     <td></td>
     <td></td>
@@ -295,9 +269,7 @@ Emplea la información de las siguientes diapositivas para contruir una tabla co
     <td></td>
 </tr>
 <tr>
-    <td>Windows 7</td>
-    <td></td>
-    <td></td>
+    <td>Disco Duro</td>
     <td></td>
     <td></td>
     <td></td>
@@ -307,9 +279,7 @@ Emplea la información de las siguientes diapositivas para contruir una tabla co
     <td></td>
 </tr>
 <tr>
-    <td>Windows 10</td>
-    <td></td>
-    <td></td>
+    <td>Tarjeta Gráfica</td>
     <td></td>
     <td></td>
     <td></td>
@@ -318,6 +288,7 @@ Emplea la información de las siguientes diapositivas para contruir una tabla co
     <td></td>
     <td></td>
 </tr>
+
 </table>
 Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 
@@ -333,6 +304,7 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 * Procesador 80386sx o superior (25 MHz)
 * 3 MB de ram (se recomienda 4 MB)
 * Al menos 6.2 MB de espacio disponible en disco duro (se recomienda 14.5 MB)
+* Monotarea
 
 ---
 ## Windows 3.11
@@ -346,6 +318,7 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 * 16 MB de memoria ram
 * Al menos 125 MB de espacio disponible en disco duro
 * adaptador de pantalla de video con resolución VGA o superior
+* Multitarea
    
 ---
 ## Windows NT
@@ -360,6 +333,7 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 * Mínimo 55 Mb de espacio disponible en disco duro
 * 1 unidad de disco de alta densidad de 3,5 pulgadas
 * Resolución VGA o superior (se recomienda SVGA de 256 colores)
+* Multitarea
 
 ---
 ## Windows 95
@@ -422,6 +396,24 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 ---
 ## Windows 10
 ![Windows 10](images/configSO/Windows_10.jpeg)
+
+---
+## Requisitos mínimos de
+## Ubuntu 11.10
+* Año: 2011
+* Procesador de 32bit (x86) a 1GHz
+* 1GB de RAM
+* 15 GB de espacio disponible en disco duro
+* Tarjeta gráfica que soporte resolución 800x600
+
+---
+## Requisitos mínimos de
+## Mac OS X Lion
+* Año: 2011
+* Procesador Itel de 64 Bits (itel Core 2 Duo, i3, i5, i7 o Xeon)
+* 2 GB de RAM
+* 7 GB de espacio disponible en disco duro
+* Tarjeta gráfica que soporte resolución 800x600
 
 ---
 ## Máquina Virtual
@@ -564,6 +556,19 @@ Es especialmente útil en casos donde:
 ![Rufus](images/configSO/rufus_en_2x.png)
 
 ---
+## MBR vs GPT
+#### Master Boot Table vs GUI Partition Table
+Formatos de la tabla de particiones.
+* GPT: Para sistemas de 64 bits (Windows Vista, 7, 8, 10) y UEFI
+* GPT: Para sistemas de 32 bots (Windows 8, 10) y UEFI
+* MBR: Para sistemas de 32 bits (Vista, 7)
+Equipo > Administrar > Administración de Discos
+
+---
+## Ejercicio: Rufus
+Crear un pen drive autobooteable de Windows 10 empleado Rufus.
+
+---
 ## Particionado de Discos
 Una **partición** es la división de espacio que se le asigna a un disco duro.
 
@@ -579,6 +584,14 @@ Se puede formatear una partición sin necesidad de formatear todo el disco.
 **Partición Extendida o Secundaria:** Almacenan información
 
 ![Particiones](images/configSO/partitions.png)
+
+---
+## Pasos de Instalación de un SO
+1. Cofiguración de dispositivo de arranque en la BIOS
+2. Formateo de Discos
+3. Particionado de discos
+4. Creació de sistema de ficheros
+5. Configuración de la red, dispositivos, pantalla, idioma, usuarios, etc.
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?

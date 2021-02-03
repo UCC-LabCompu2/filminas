@@ -68,7 +68,7 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 * DD-WRT
 
 ![Router](images/configSO/router.png)
-----
+---
 ## Linux Embebido
 ## RPi
 ![RPI](images/configSO/rpi.png)
@@ -83,6 +83,9 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 ![Install Soft](images/configSO/whenIinstallAsoftware.png)
 
 ---
+<!---
+### [Recordando un poco de historia...](https://soft.lafibre.info/download/linux/linux_distribution_by_linux_kernel.pdf?version=last)
+---
 ## Requisitos mínimos de Ubuntu 11.10
 1. Procesador de 32bits a 1GHz
 2. 1Gb de Memoria RAM
@@ -91,7 +94,7 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 
 ![Ubuntu](images/configSO/ubuntu.png)
 
----
+--->
 ## Ejercicio: SO Linux
 **Instale** alguna distribución de Linux, como Ubuntu, en una computadora o máquina virtual.
 
