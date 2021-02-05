@@ -327,6 +327,7 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 ---
 ## Requisitos mínimos de
 ## Windows 95
+<!-- .slide: style="font-size: 0.90em" -->
 * Año: 1995
 * Procesador 386DX 33 MHz o superior
 * Mínimo 4 MB de RAM (de preferencia 8 MB)
@@ -342,6 +343,7 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 ---
 ## Requisitos mínimos de
 ## Windows 98
+<!-- .slide: style="font-size: 0.90em" -->
 * Año: 1998
 * Procesador 486DX de 66 MHz o superior
 * Mínimo 16 MB de RAM (de preferencia 24 MB)
@@ -396,24 +398,6 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 ---
 ## Windows 10
 ![Windows 10](images/configSO/Windows_10.jpeg)
-
----
-## Requisitos mínimos de
-## Ubuntu 11.10
-* Año: 2011
-* Procesador de 32bit (x86) a 1GHz
-* 1GB de RAM
-* 15 GB de espacio disponible en disco duro
-* Tarjeta gráfica que soporte resolución 800x600
-
----
-## Requisitos mínimos de
-## Mac OS X Lion
-* Año: 2011
-* Procesador Itel de 64 Bits (itel Core 2 Duo, i3, i5, i7 o Xeon)
-* 2 GB de RAM
-* 7 GB de espacio disponible en disco duro
-* Tarjeta gráfica que soporte resolución 800x600
 
 ---
 ## Máquina Virtual

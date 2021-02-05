@@ -41,8 +41,8 @@ Puede haber más de un controlador para un mismo dispositivo.
 
 ---
 ## Tipos de Drivers
-* Fabricantes de dispositivos
-* Genéricos o Universales
+* Fabricantes de dispositivos (quien hace el hardware, provee el driver)
+* Genéricos o Universales (funcionan la mayoria de los dispositivos)
 * Comunidad de Usuarios
 
 ---
@@ -54,7 +54,18 @@ controladores específicos para cada componentes de hardware.
 
 ---
 ## Drivers: Actualización
-Los fabricantes de hardware suelen actualizar los drivers para otorgar más funcionalidades, mejorar el rendimiento o aumentar las medidas de seguridad con la finalidad de corregir errores o vulnerabilidades que podrían comprometer el equipo de los usuarios.
+Los fabricantes de hardware suelen actualizar los drivers para otorgar más funcionalidades, 
+mejorar el rendimiento o aumentar las medidas de seguridad con la finalidad de corregir errores o 
+vulnerabilidades que podrían comprometer el equipo de los usuarios.
+
+---
+## Descargar los controladores
+* CD del fabricante
+* Administrador de dispositivos
+* Windows Update
+* Descarga manual
+* Programas que descargan drivers
+* Sitio web del fabricante
 
 ---
 ### Windows
@@ -64,6 +75,9 @@ El usuario puede:
 * Actualizar el software de controlador o Driver
 * Modificar o establecer propiedades a un dispositivo
 * Habilitar o deshabilitar dispositivos
+
+---          
+![Administrador de Dispositivos](images/configSO/administradorEquipos.gif)
 
 ---          
 ### Administrador de Dispositivos

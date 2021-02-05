@@ -69,8 +69,7 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 
 ![Router](images/configSO/router.png)
 ---
-## Linux Embebido
-## RPi
+## Linux Embebido: RPi
 ![RPI](images/configSO/rpi.png)
 
 ---
@@ -83,16 +82,47 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 ![Install Soft](images/configSO/whenIinstallAsoftware.png)
 
 ---
-<!---
-### [Recordando un poco de historia...](https://soft.lafibre.info/download/linux/linux_distribution_by_linux_kernel.pdf?version=last)
----
-## Requisitos mínimos de Ubuntu 11.10
-1. Procesador de 32bits a 1GHz
-2. 1Gb de Memoria RAM
-3. 15Gb de espacio disponible en Disco Duro
-4. Tarjetagráfica y monitor que soporte una resolución de 800x600
+## Breve Cronología de Distribuciones
+[Conologia de Versiones](http://static.sigt.net/imagenes/2006/linea-cronologica-gnulinux.png)
 
-![Ubuntu](images/configSO/ubuntu.png)
+[Conologia de Versiones + Completa](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
+
+---
+## Requisitos mínimos de
+## Debian 6
+* Año: 2012
+* Procesador Pentium 4 - 1 GHz
+* 128 MB - 256 MB de RAM
+* 2 GB (sin escritorio) - 10 GB (con escritori) de espacio disponible en disco duro
+* Tarjeta gráfica que soporte resolución 800x600
+
+---
+## Requisitos mínimos de
+## Ubuntu 11.10
+* Año: 2011
+* Procesador de 32bit (x86) a 1GHz
+* 1GB de RAM
+* 15 GB de espacio disponible en disco duro
+* Tarjeta gráfica que soporte resolución 800x600
+
+---
+## Requisitos mínimos de
+## Fedora 33
+* Año: 2020
+* Procesador 1 GHz
+* 4 GB de RAM
+* 20-30 GB de espacio disponible en disco duro
+* Tarjeta gráfica compatible con VGA
+
+---
+## Requisitos mínimos de
+## Mac OS X Lion
+* Año: 2011
+* Procesador Intel de 64 Bits (itel Core 2 Duo, i3, i5, i7 o Xeon)
+* 2 GB de RAM
+* 7 GB de espacio disponible en disco duro
+* Tarjeta gráfica que soporte resolución 800x600
+
 
 --->
 ## Ejercicio: SO Linux
