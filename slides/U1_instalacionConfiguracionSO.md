@@ -40,7 +40,7 @@ Proporciona las bases para los programas de aplicación y actúa como un interme
 
 ---
 ## Sistema Operativo
-![SO](images/configSO/SO.png)
+![SO](images/configSO/so.png)
 
 ---
 ## SO: Tareas

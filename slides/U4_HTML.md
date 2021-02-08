@@ -44,7 +44,7 @@ comandos más empleados.
 ---
 ## Github Classroom
 
-[Github Classroom](https://classroom.github.com/classrooms/17771595-labcompu2-ucc)
+[Github Classroom](https://classroom.github.com/a/alV9yr2r)
 
 ---
 ## Ejercicio: Primer HTML
