@@ -69,18 +69,21 @@ Diagramas de presentación
 ---
 ## Tipos de diagramas
 Otros autores sugieren:
-* **Diagramas de organización:** Diagrama básico para entender la estructura general del producto (Planos - Blueprints)
-* **Diagramas de funcionamiento:** Representación de las estructuras con los flujos de navegación (Planos avanzados - Blueprints)
-* **Diagramas de presentación:** Muestra las formas de organización visual de los contenidos en las páginas principales (maquetas - wireframes)
+* **Diagramas de organización**
+* **Diagramas de funcionamiento**
+* **Diagramas de presentación** 
 
 ---   
 ## Diagrama de Organización
+Diagrama básico para entender la estructura general del producto (Planos - Blueprints)
 
 ![Diagrama Organizacion](images/interfazUsuario/diagrama_organizacion.gif)
     
 ---
-#### Diagrama de Funcionamiento: Elementos
+## Diagrama de Funcionamiento: Elementos
+Representación de las estructuras con los flujos de navegación (Planos avanzados - Blueprints)
 
+---
 ![Iconos](images/interfazUsuario/iconos_fun_pre.gif)
     
 ---
@@ -90,6 +93,7 @@ Otros autores sugieren:
 
 ---
 ## Diagrama de Presentación
+Muestra las formas de organización visual de los contenidos en las páginas principales (maquetas - wireframes)
 
 ![Diagrama Presentacion](images/interfazUsuario/diagrama_presentacion.gif)
 
@@ -263,6 +267,7 @@ Es parte del proceso de verificación y validación de los sistemas software.
 
 ![Evaluacion Interfaz](images/interfazUsuario/evaluacion.png)
 
+---
 <!-- ---
 ## Ejercicio: Evaluacion de Interfaz
 Intercambie su diseño de interfaz con otro grupo:
@@ -281,6 +286,7 @@ En caso de ser varias modificaciones, se sugiere dibujar el sketch nuevamente.
 
 -->
 ## Información en un wireframe
+<!-- .slide: style="font-size: 0.90em" -->
 * **Inventario de contenido:** Contenido que debe estar presente en cada página 
 * **Elementos de la página:** Cabeceras, enlaces, listas, imágenes, formularios, etc.
 * **Etiquetado:** De vínculos, títulos, etc. 

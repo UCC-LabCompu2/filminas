@@ -542,11 +542,11 @@ Es especialmente útil en casos donde:
 ---
 ## MBR vs GPT
 #### Master Boot Table vs GUI Partition Table
-Formatos de la tabla de particiones.
-* GPT: Para sistemas de 64 bits (Windows Vista, 7, 8, 10) y UEFI
-* GPT: Para sistemas de 32 bots (Windows 8, 10) y UEFI
-* MBR: Para sistemas de 32 bits (Vista, 7)
-Equipo > Administrar > Administración de Discos
+| MBR | GTP |
+|-----|-----|
+| Compatible con todos los SO | Compatible con SO de 64 bits |
+| Maneja discos de hasta 2TB | Maneja discos hasta 256TB |
+| Admite hasta 4 particiones primarias | Admite hasta 128 particiones primarias. No existen las particiones lógicas |
 
 ---
 ## Ejercicio: Rufus

@@ -35,22 +35,13 @@ La Materia
 
 ---
 ## Profesores
-#### Ing. Martín Marcucci <span style="font-size: 0.5em">(Teórico)</span>
+#### Ing. Agustina Edmé Aliciardi
+0919281@ucc.edu.ar
 
-<img src="images/presentacion/marku.png" style="border-radius: 50%; position: absolute; right: 5px; top: 110px"/>
-<!-- Codificación super cheta anti arañas busca mails (ver de poner una imagen mejor) -->
-&#109;&#109;&#97;&#114;&#99;&#117;&#99;&#99;&#105;&#64;&#105;&#110;&#103;&#46;&#117;&#99;&#99;&#46;&#101;&#100;&#117;&#46;&#97;&#114;
-
-#### Ing. Agustina Edmé Aliciardi <span style="font-size: 0.5em">(Práctico)</span></h4>
-
-<img src="images/presentacion/agus.png" style="border-radius: 50%; position: absolute; right: 5px; top: 300px"/>
-<!-- Codificación super cheta anti arañas busca mails (ver de poner una imagen mejor) -->
-&#101;&#100;&#109;&#101;&#97;&#108;&#105;&#99;&#105;&#97;&#114;&#100;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
-
+#### Ing. María Eugenia Castagnola
+1001147@ucc.edu.ar
 
 ---
-<!-- .slide: style="text-align: left" -->
-
 ## UNIDADES
 
 **Unidad 1:** Instalación y configuración de Sistemas Operativos y Drivers
