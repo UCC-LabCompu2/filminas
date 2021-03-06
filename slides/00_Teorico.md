@@ -5,27 +5,30 @@ slideNumber: true
 ---
 
 # Lab Compu II (Teórico)
+
 <small>
-Created by <i class="fab fa-telegram"></i>
-[edme88]("https://t.me/edme88") & 
-<i class="fab fa-telegram"></i>
-[rmarku]("https://t.me/rmarku")
+Created by 
+
+<i class="fab fa-telegram"></i> [edme88](https://t.me/edme88) & 
+
+<i class="fab fa-telegram"></i> [rmarku](https://t.me/rmarku)
 </small>
 
----
-<!-- .slide: data-background="images/presentacion/lenguajes.png" data-background-size="50%" -->
+<!---
 
-## ¿Sáben Programar?
-## ¿Qué lenguajes conocen?
----
+<!-- ## ¿Sáben Programar? -->
+<!-- ## ¿Qué lenguajes conocen? -->
+<!---
 
 ## ¿Han instalado windows?
-![Win10](images/presentacion/Win10.png)
+![Win10](images/presentacion/Win10.png)-->
 
 ---
+<!-- .slide: <!-- data-background="images/presentacion/lenguajes.png" data-background-size="50%" -->
 <!-- .slide: data-background="images/configSO/OtrosOS.png" data-background-size="50%" -->
-## ¿Han usado un sistema operativo que no sea windows?
-
+<!--## ¿Han usado un sistema operativo que no sea windows?-->
+### Para romper el hielo... Juguemos un **Kahoot**
+[Kahoot](https://create.kahoot.it/share/conociendonos-en-lab-de-compu-2/ae3a1b83-b59d-4e2c-bd9b-e6ae71333bce)
 
 ---
 # LABORATORIO DE COMPUTACIÓN II
