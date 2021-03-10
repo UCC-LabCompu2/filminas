@@ -48,7 +48,7 @@ Proporciona las bases para los programas de aplicación y actúa como un interme
 Las tareas que hace un SO son:
 * Realizar el interfaz Sistema-Usuario
 * Compartir los recursos de Hardware entre los usuarios
-* Permitir a los usuarios comaprtir sus datos entre ellos
+* Permitir a los usuarios compartir sus datos entre ellos
 * Prevenir que las actividades de un usuario no interfieran en las de los demás usuarios
 * Calendarizar los recursos de los usuarios
 * Facilitar el acceso a los dispositivos de E/S
@@ -69,7 +69,7 @@ Para dispositivos móviles:
 * Android
 * Windows phone
 * iOS
-* Blackberry
+* ~~Blackberry~~
 
 ---
 ## Criterios para Definir SO
@@ -85,7 +85,7 @@ Para dispositivos móviles:
   * Libre
 
 ---
-## Ejercicio: Criterios de SO
+## [Ejercicio: Criterios de SO](https://docs.google.com/document/d/1U8oEEb7HMQVZxbTH55FgOpdqoxX8QGPJchaX3eztLSQ/edit)
 En base a tus conocimientos previos, completa la siguiente tabla:
 <table>
 <tr>
@@ -205,7 +205,6 @@ En base a tus conocimientos previos, completa la siguiente tabla:
     <td></td>
 </tr>
 </table>
-Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 
 ---
 ## Recursos de Hardware
@@ -446,6 +445,10 @@ Descarga Máquina Virtual:
 [VirtualBox](https://www.virtualbox.org/)
 
 ---
+## Ejercicio: Windows-Máquina Virtual
+<iframe width="560" height="315" src="https://www.youtube.com/embed/upEIXtOcl9g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
 ## Basic Input/Output System
 La BIOS es el software que localiza y reconoce los dispositivos necesarios para cargar el Sistema Operativo en la memoria RAM.
 
@@ -553,6 +556,10 @@ Es especialmente útil en casos donde:
 Crear un pen drive autobooteable de Windows 10 empleado Rufus.
 
 ---
+## Ejercicio: Rufus
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8DAoywHszD8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
 ## Particionado de Discos
 Una **partición** es la división de espacio que se le asigna a un disco duro.
 
@@ -568,6 +575,10 @@ Se puede formatear una partición sin necesidad de formatear todo el disco.
 **Partición Extendida o Secundaria:** Almacenan información
 
 ![Particiones](images/configSO/partitions.png)
+
+---
+### ¿Qué formato tienen en sus discos? ¿Su disco esta particionado?
+Equipo > Administrar > Almacenamiento > Administración de Discos
 
 ---
 ## Pasos de Instalación de un SO
