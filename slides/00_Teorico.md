@@ -84,7 +84,6 @@ La Materia
 | 12 |   | Proyecto Integrador |
 | 13 | 6 | Aplicaciones Móviles |
 | 14 |   | 2do PARCIAL |
-| 15 | 7 | Recuperatorio <br>Simulacion Circuitos Electronicos |
 
 ---
 ## Forma de Evaluación
@@ -92,8 +91,8 @@ La Materia
 Parciales:
 
 *   Entrega a tiempo del proyecto
-*   Preguntas sobre el código
-*   Preguntas teóricas de la guía
+*   Cumplir con los requisitos (1er/2do parcial)
+*   7 parcialistos teóricos = 1 nota
 
 ---
 ## Forma de Evaluación
@@ -109,7 +108,7 @@ FINAL:
 ##  Forma de Evaluación
 En %
 
-*    40% Evaluación del Trabajo
+*    45% Evaluación del Trabajo
 *    30% Preguntas Teóricas
 *    20% Trabajo en clases
-*    10% Extras 
+*    5% Extras 

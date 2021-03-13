@@ -449,6 +449,27 @@ Descarga Máquina Virtual:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/upEIXtOcl9g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
+## ¿Qué es Docker?
+Permite crear contenedores ligeros y portables para que las aplicaciones de software puedan ejecutarse en cualquier máquina 
+con Docker instalado (independientemente del sistema operativo que la máquina tenga por debajo), facilitando los despliegues.
+
+Dentro del contenedor se alojan todas las dependencias que nuestra aplicación necesite para ser ejecutada: código, 
+librerías del sistema, entorno de ejecución o cualquier tipo de configuración. 
+
+---
+### MV vs Contenedores
+![MV vs Contenedores](images/configSO/virtualizacion-vs-contenedores.png)
+
+---
+### MV vs Contenedores... Que elegir?
+|Máquinas Virtuales|Contenedores|
+|------------------|------------|
+| Alojar cargas de trabajo tradicionales, monolíticas y heredadas | Diseñar aplicaciones en la nube |
+| Aislar ciclos de desarrollo riesgosos | Empaquetar microservicios |
+| Implementar recursos de infraestructura (como redes, servidores y datos) | Implantar gradualmente las prácticas de DevOps o CI
+| Ejecutar un sistema operativo diferente dentro de otro sistema operativo (por ejemplo, ejecutar Unix en Linux) | Trasladar proyectos de TI escalables con el mismo sistema operativo |
+
+---
 ## Basic Input/Output System
 La BIOS es el software que localiza y reconoce los dispositivos necesarios para cargar el Sistema Operativo en la memoria RAM.
 
