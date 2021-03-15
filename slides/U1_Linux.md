@@ -124,9 +124,13 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 * Tarjeta gráfica que soporte resolución 800x600
 
 
---->
+---
 ## Ejercicio: SO Linux
 **Instale** alguna distribución de Linux, como Ubuntu, en una computadora o máquina virtual.
+
+---
+## Ejercicio: SO Linux
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xHPRv0-OXuM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
