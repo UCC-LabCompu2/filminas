@@ -30,6 +30,10 @@ Si aún no lo descargaste, bajalo del siguiente link!
 [Git](https://git-scm.com/)
 
 ---
+## Ejercicio: Instalar Git
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WEUliO01zL4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
 ## git config
 Este comando permite establecer una configuración específica de usuario, como email, nombre de usuario, tipo de formato, etc
 
@@ -56,7 +60,11 @@ Desde la consola de comandos:
 ---
 ## Ejercicio: Configurar Usuario
 * Abre la consola de windows **cmd** (símbolo del sistema) o el Bash de Git (depende como lo instalaste)
-* Configura tu usuario de git de manera global (Recuerda tu nombre de usuario e email usados. Posteriorment lo usaras para tu cuenta de GitHub)
+* Configura tu usuario de git de manera global (Recuerda tu nombre de usuario e email usados. Posteriormente lo usaras para tu cuenta de GitHub)
+
+---
+## Ejercicio: Configurar Usuario
+<iframe width="560" height="315" src="https://www.youtube.com/embed/R1DgidQBjgc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 <!-- .slide: data-background="images/herramientas/servidoresGIT.png" -->
@@ -76,6 +84,10 @@ Create una cuenta en [gitHub]("https://www.github.com") ...**Sign up** ...for Fr
 Recuerda emplear el mismo nombre de usuario e email que tu usuario de github global.
 Una vez creada tu cuenta, enviar el nombre usuario al Profe por email, así puede validarlo!
 [![gitHub](images/herramientas/gitHub.png)](https://www.github.com)
+
+---
+## Ejercicio: Creación de Cuenta en GitHub
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2xr8dkuMb_c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 ## Los 3 estados + Untraking
@@ -182,7 +194,7 @@ git diff
 * Guardar cambios en repositorio local
 * Guardar el commit en el repositorio remoto
 * En el navegador, visualizar los commits realizados
-(No te preocupes, hay un [PDF](https://drive.google.com/open?id=15WiD8tBJ1rZtosfbDFEaoFBBAbN8oJh5) con el paso a paso y capturas de pantalla)
+<!--(No te preocupes, hay un [PDF](https://drive.google.com/open?id=15WiD8tBJ1rZtosfbDFEaoFBBAbN8oJh5) con el paso a paso y capturas de pantalla)-->
 
 ---
 ## Ejercicio: Github Básico
@@ -200,6 +212,10 @@ git diff
 </body>
 </html>
 ````
+---
+## Ejercicio: Github Básico
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IxlMd1Mu_40" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ---
 ## Ejercicio: Github Básico
 Con este ejercicio aprendimos los comandos para:
@@ -297,7 +313,7 @@ Es un archivo que deberian tener todos los proyectos de Soft. El mismo se supone
 ![Markdown](images/herramientas/markdown.png)
 
 ---
-## Reppaso de Terminología
+## Repaso de Terminología
 * **Repositorio:** Colección de todas las referencias, base de datos, objetos y una copia de trabajo.
 * **Commit:** Es una foto del proyecto en un tiempo determinado.
 * **Tag (etiqueta):** Una etiqueta a un commit en particular
@@ -308,7 +324,11 @@ Es un archivo que deberian tener todos los proyectos de Soft. El mismo se supone
 * Realizar un cambio en el repositorio remoto
 * Ver el repositorio local (esta ese cambio?)
 * Traer los cambios del repositorio remoto al local
-(No te preocupes, hay un [PDF](https://drive.google.com/open?id=1fImvKA6bvFDLyq0-17OHXUeUGhJmJLBK) con el paso a paso y capturas de pantalla)
+<!--(No te preocupes, hay un [PDF](https://drive.google.com/open?id=1fImvKA6bvFDLyq0-17OHXUeUGhJmJLBK) con el paso a paso y capturas de pantalla)-->
+
+---
+## Ejercicio: Github Básico II
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eqEVgp98qcY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 ## GitHub Classroom
@@ -320,9 +340,13 @@ Permite el trabajo colaborativo, gestión de issues, code reviews, feedback, etc
 ## Ejercicio: GitHub Classroom
 * Crear un repositorio para los ejercicios de la materia, empleando el código base de los ejercicios (servira para avanzar con html, css, js más adelante).
 
-[Link Classroom](https://classroom.github.com/a/_fqrdUDF)
+[Link Classroom](https://classroom.github.com/a/alV9yr2r)
 
-Paso a paso aquí...[PDF](https://drive.google.com/open?id=1scW5JZ3puH0uPpmzckFkEgE8TjqSJbV8)
+<!--Paso a paso aquí...[PDF](https://drive.google.com/open?id=1scW5JZ3puH0uPpmzckFkEgE8TjqSJbV8)-->
+
+---
+## Ejercicio: GitHub Classroom
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BH2V4aBNkYk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 ## Desafío: Comandos Git
@@ -333,6 +357,7 @@ Paso a paso aquí...[PDF](https://drive.google.com/open?id=1scW5JZ3puH0uPpmzckFk
 
 ---
 ## Cursos de Git
+* [Learn Git Branching](https://learngitbranching.js.org/)
 * [try.github](https://try.github.io)
 * [Codecademy](https://www.codecademy.com/learn/learn-git)
 * [Acamica](https://www.acamica.com/cursos/29/git)
