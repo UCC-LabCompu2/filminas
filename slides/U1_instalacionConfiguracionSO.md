@@ -606,7 +606,7 @@ Equipo > Administrar > Almacenamiento > Administración de Discos
 1. Cofiguración de dispositivo de arranque en la BIOS
 2. Formateo de Discos
 3. Particionado de discos
-4. Creació de sistema de ficheros
+4. Creación de sistema de ficheros
 5. Configuración de la red, dispositivos, pantalla, idioma, usuarios, etc.
 
 ---

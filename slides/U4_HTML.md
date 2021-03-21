@@ -312,7 +312,7 @@ Agrege comentarios a la página web de tablas.
 
 ---
 ## Github Classroom: Proyecto Integrador
-[Primer Parcial](https://classroom.github.com/g/t7sOcasY)
+[Primer Parcial](https://classroom.github.com/g/SGDqjO4W)
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?

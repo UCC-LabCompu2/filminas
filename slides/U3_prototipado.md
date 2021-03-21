@@ -152,6 +152,11 @@ Debe tener en cuenta:
 * ¿Qué acciones le permiten al usuario realizar?
 * Mensajes de Error
 * Conversión de unidades
+
+---
+## Ejercicio: Sketch
+RECUERDA en el repositorio Proyecto2021-Apellido1-Apellido2 crear una carpeta con el nombre "Sketch" y subir una o varias fotos 
+de tu diseño hecho prolijamente a mano.
    
 ---
 ## Wireframe
@@ -307,6 +312,15 @@ Emplee algún programa para confeccionar Wireframes y generar un wireflow.
 [![NinjaMocks](images/interfazUsuario/ninjamock-icon.png)](https://ninjamock.com/Designer/NewWorkplace/WebProject/napkin/0/Page1)
 
 [![Pencil](images/interfazUsuario/pencil-icon.png)](https://pencil.evolus.vn/)
+
+---
+#### Errores comunes al crear un Wireframe para nuestro proyecto web
+* No indicar campos obligatorios
+* No indicar las unidades que se introducen (m, cm, kg, etc)
+* No describir el flow normal (que botón o link me lleva a donde)
+* No mostrar ejemplos o brindar información teórica
+* Texto que indique cuál es la finalidad de la página
+* No especificar mensajes de error
 
 ---
 <!-- .slide: data-background="images/interfazUsuario/prototipado-de-paginas-web.jpg" -->
