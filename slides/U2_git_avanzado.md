@@ -25,6 +25,10 @@ Created by <i class="fab fa-telegram"></i>
 </ul>
 
 ---
+### Cómo funcionan los comandos que aprendimos la clase pasada?
+![Git Repaso](images/herramientas/comandoGit2.png)
+
+---
 ## Git Brach
 Branch significa **rama**. 
 Las ramas son caminos que puede tomar el desarrollo de un software, algo que ocurre generalmente para resolver problemas o crear nuevas funcionalidades. 
