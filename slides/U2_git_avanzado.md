@@ -13,6 +13,18 @@ Created by <i class="fab fa-telegram"></i>
 </small>
 
 ---
+### Qué comandos aprendimos la clase pasada?
+<ul>
+<li class="fragment">git config</li>
+<li class="fragment">git init</li>
+<li class="fragment">git add</li>
+<li class="fragment">git commit</li>
+<li class="fragment">git push</li>
+<li class="fragment">git pull</li>
+<li class="fragment">git log</li>
+</ul>
+
+---
 ## Git Brach
 Branch significa **rama**. 
 Las ramas son caminos que puede tomar el desarrollo de un software, algo que ocurre generalmente para resolver problemas o crear nuevas funcionalidades. 
@@ -77,7 +89,7 @@ git merge nueva_rama
 
 ---
 ## Ejercicio: Github Branchs
-Empleando el repositorio ejercicio1 [PDF paso a paso](https://drive.google.com/open?id=1CJ1sKwzrNTryVxTR4p7P7XC8BDaEgm8a):
+Empleando el repositorio ejercicio 1:
 * Visualizar en que rama estamos trabajando
 * Cree una nueva rama (develop)
 * Vea el listado de todas las branchs
@@ -86,6 +98,11 @@ Empleando el repositorio ejercicio1 [PDF paso a paso](https://drive.google.com/o
 * Visualice en Github los commits de las branchs
 * Merge de la nueva rama con Master
 * Borrar una branch
+
+---
+## Ejercicio: Github Branchs
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2KXSZtjzgkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ---
 ## Reppaso de Terminología
 * **Branch (rama):** Linea de desarrollo del proyecto
