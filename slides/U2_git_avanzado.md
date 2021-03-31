@@ -198,6 +198,16 @@ Puede que no sea necesario versionar esos archivos porque: son privados y no se 
 con datos que no se desa versionar (instaladores, diagramas, etc).
 
 ---
+## Ejercicio: .gitignore
+* Crear un archivo .gitignore
+* Incluir el nombre de la carpeta que se desea ignorar
+* Subir los cambios al repositorio remoto
+
+---
+## Ejercicio: .gitignore
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1yGiz06KKRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
 #### Sigo sin enter como funcionan las ramas con los comandos...
 * push
 * pull
