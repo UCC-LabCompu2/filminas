@@ -298,21 +298,6 @@ Depende de ti! (pero en clase solo veremos linea de comandos)
 ![Git Commands](images/herramientas/gitCommands.jpg)
 
 ---
-## Readme.md
-<!-- .slide: style="font-size: 0.80em" -->
-Seguramente te estes preguntando: qué es ese readme.md que se autogeneró? 
-Es un archivo que deberian tener todos los proyectos de Soft. El mismo se supone que sea una:
-* Guía rápida de la aplicación o librería y de cómo empezar a usarla.
-* Instrucciones de configuración, instalación, operación, manifiesto de archivos, información sobre licencia y el desarrolador, bug conocidos, solución a problemas, créditos y agradecimientos, registro de cambios o versiones, sección de noticias, etc.
-* [Visualizador de Markdown](https://dillinger.io/)
-
-<!--https://jesuslc.com/2016/07/12/como-escribir-un-readme-que-mole/-->
-
----
-## Readme.md
-![Markdown](images/herramientas/markdown.png)
-
----
 ## Repaso de Terminología
 * **Repositorio:** Colección de todas las referencias, base de datos, objetos y una copia de trabajo.
 * **Commit:** Es una foto del proyecto en un tiempo determinado.
@@ -347,10 +332,6 @@ Permite el trabajo colaborativo, gestión de issues, code reviews, feedback, etc
 ---
 ## Ejercicio: GitHub Classroom
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BH2V4aBNkYk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
----
-## Desafío: Comandos Git
-![Comandos Git](images/herramientas/comandoGit1.png)
 
 ---
 ![Fire](images/herramientas/Fire-commit-push.jpg)

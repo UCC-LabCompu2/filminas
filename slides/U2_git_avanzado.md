@@ -4,12 +4,10 @@ theme: black
 slideNumber: true
 ---
 
-# Git II: Más Git que Nunca!
+# Git (parte II)
 <small>
 Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88") & 
-<i class="fab fa-telegram"></i>
-[rmarku]("https://t.me/rmarku")
 </small>
 
 ---
@@ -27,6 +25,51 @@ Created by <i class="fab fa-telegram"></i>
 ---
 ### Cómo funcionan los comandos que aprendimos la clase pasada?
 ![Git Repaso](images/herramientas/comandoGit2.png)
+
+<small class="fragment">1 git add</small>
+<small class="fragment">2 git commit -m</small>
+<small class="fragment">3 git push</small>
+<small class="fragment">4 git clone/pull</small>
+<small class="fragment">5 git diff</small>
+<small class="fragment">6 git commit -a -m</small>
+
+---
+## Readme.md
+<!-- .slide: style="font-size: 0.80em" -->
+Seguramente te estes preguntando: qué es ese readme.md que se autogeneró? 
+Es un archivo que deberian tener todos los proyectos de Soft. El mismo se supone que sea una:
+* Guía rápida de la aplicación o librería y de cómo empezar a usarla.
+* Instrucciones de configuración, instalación, operación, manifiesto de archivos, información sobre licencia y el desarrolador, bug conocidos, solución a problemas, créditos y agradecimientos, registro de cambios o versiones, sección de noticias, etc.
+
+
+<!--https://jesuslc.com/2016/07/12/como-escribir-un-readme-que-mole/-->
+
+---
+## Ejemplos de Readmes
+[RevealJS](https://github.com/hakimel/reveal.js)
+
+[MelonJS](https://github.com/melonjs/melonjs)
+
+---
+## Readme.md
+![Markdown](images/herramientas/markdown.png)
+
+[Visualizador de Markdown](https://dillinger.io/)
+
+---
+## Ejercicio Readme.md
+* Agregar títulos secundarios:
+ * Autor
+ * Contenido/Descripción
+* Agregar los autores con items
+* Poner los apellidos de los autores en negrita
+* Agregar un link del aula virtual
+* Agregar info de contacto en una tabla
+* Agregar [emoji](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
+
+---
+## Ejercicio Readme.md
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NlmsWZmC_IQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 ## Git Brach
@@ -108,7 +151,7 @@ Empleando el repositorio ejercicio 1:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2KXSZtjzgkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
-## Reppaso de Terminología
+## Repaso de Terminología
 * **Branch (rama):** Linea de desarrollo del proyecto
 * **Merge:** Mezcla codigo de 2 ramas
 
@@ -147,6 +190,12 @@ También se denomina pull request a una solicitud que se realiza de una branch a
 después de un code review y si no se tienen permisos de merge a master).
 
 <!--http://aprendegit.com/que-es-un-pull-request/-->
+---
+## .gitignore
+El archivo "gitignore" sirve para decirle a Git qué archivos o directorios completos debe ignorar y no subir al repositorio de código. 
+
+Puede que no sea necesario versionar esos archivos porque: son privados y no se desea compartir, son archivos binarios 
+con datos que no se desa versionar (instaladores, diagramas, etc).
 
 ---
 #### Sigo sin enter como funcionan las ramas con los comandos...
@@ -165,13 +214,6 @@ No te preocupes, te lo explicamos con gatitos (si, nada que tenga gatitos puede 
 
 ---
 ![Git Merge-Rebase](images/herramientas/git-merge-rebase.jpg)
-
----
-## .gitignore
-El archivo "gitignore" sirve para decirle a Git qué archivos o directorios completos debe ignorar y no subir al repositorio de código. 
-
-Puede que no sea necesario versionar esos archivos porque: son privados y no se desea compartir, son archivos binarios 
-con datos que no se desa versionar (instaladores, diagramas, etc).
  
 ---
 ## +
