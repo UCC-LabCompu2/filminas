@@ -5,12 +5,8 @@ slideNumber: true
 ---
 
 # Diseño de Interface de Usuario
-<small>
 Created by <i class="fab fa-telegram"></i>
-[edme88]("https://t.me/edme88") & 
-<i class="fab fa-telegram"></i>
-[rmarku]("https://t.me/rmarku")
-</small>
+[edme88]("https://t.me/edme88")
 
 ---
 ## Libros:
@@ -83,6 +79,7 @@ del usuario.
 
 ---
 ## Factores que se deben considerar
+<!-- .slide: style="font-size: 0.90em" -->
 Se deben teneren cuenta capacidades físicas y mentales de las personas que utilizarán el software.
 1. Las personas tienen una memoria limitada a corto plazo
 2. Cuando el sistema falla, y emite avisos y mensajes genera estrés en el usuario
@@ -93,9 +90,9 @@ Se deben teneren cuenta capacidades físicas y mentales de las personas que util
 ## Principios de Diseño
 <!-- .slide: style="font-size: 0.85em" -->
 1. **Familiaridad del usuario:** Utilizar términos que el usuario conozca
-2. **Unifomidad:** Operaciones comparables se deben activar de la misma forma
+2. **Uniformidad:** Operaciones comparables se deben activar de la misma forma
 3. **Mínimo Sorpresa:** El comportamiento del sistema debe ser esperable
-4. **Recuperabulidad:** Mecanismos de recuración de errores
+4. **Recuperabilidad:** Mecanismos de recuración de errores
 5. **Guía de Usuario:** Retroalimentación significativa frente a errores. Asesoramiento y características.
 6. **Diversidad de Usuarios:** Interacción para diferentes tipos de usuario. (Casuales, Potenciales)
 
@@ -174,6 +171,10 @@ Factores a tener en cuenta:
 * **Nivel de Habilidad:** El mensaje se debe adaptar a diferentes clases de usuarios.
 * **Estilo:** Los mensajes deben ser: positivos y activos, fomales, concisos, uniformes y constructivos. Nunca: negativos, pasivos, insultantes.
 * **Cultura:** Adaptado a la cultura del país donde se utilizará el sistema.
+
+---  
+#### Mensajes de error: Cuidado con el Estilo!
+![Mensaje de Error inapropiado](images/interfazUsuario/mensajeErrorMAL.jpeg)
 
 ---  
 ## Mensajes de error

@@ -5,12 +5,8 @@ slideNumber: true
 ---
 
 # Prototipado y Proceso de Diseño
-<small>
 Created by <i class="fab fa-telegram"></i>
-[edme88]("https://t.me/edme88") & 
-<i class="fab fa-telegram"></i>
-[rmarku]("https://t.me/rmarku")
-</small>
+[edme88]("https://t.me/edme88")
 
 ---
 ## Interfaz de Usuario
@@ -42,7 +38,7 @@ Actividades para el proceso de Diseño de Interfaz de Usuario:
 * Evaluación de la Interfaz
     
 ---
-## Análisis Jerárquico de Tareas
+### Análisis Jerárquico de Tareas
 
 ![HTA](images/interfazUsuario/HTA.png)
 
@@ -141,7 +137,7 @@ Secuencia de Sketchs que muestran cómo se realiza una tarea.
 
 ---
 ## Ejercicio: Sketch
-<!-- .slide: style="font-size: 0.85em" -->
+<!-- .slide: data-background="images/interfazUsuario/sketch-fondo.jpg" style="font-size: 0.85em" -->
 Realice Sketchs formando un 'Thumbnail Skeths' de la interfaz de usuario del sistema en papel.
 Debe tener en cuenta:
 * ¿Qué opciones debe ofrecer al usuario?
@@ -157,6 +153,8 @@ Debe tener en cuenta:
 ## Ejercicio: Sketch
 RECUERDA en el repositorio Proyecto2021-Apellido1-Apellido2 crear una carpeta con el nombre "Sketch" y subir una o varias fotos 
 de tu diseño hecho prolijamente a mano.
+
+(No es necesario hacer esto ahora! pero mantén tu sketch a mano para evitar re-trabjar)
    
 ---
 ## Wireframe
@@ -176,7 +174,8 @@ de tu diseño hecho prolijamente a mano.
 
 ---
 ## StoryBoard o WireFlows
-* Secuencia de wireframes que muestran cómo se realiza una tarea.
+<!-- .slide: style="font-size: 0.75em" -->
+Secuencia de wireframes que muestran cómo se realiza una tarea.
 
 ![Wireflow](images/interfazUsuario/wireflow.png)
 
@@ -305,12 +304,14 @@ En caso de ser varias modificaciones, se sugiere dibujar el sketch nuevamente.
 
 ---
 ## Ejercicio: Wireframe
+<!-- .slide: style="font-size: 0.80em" -->
 Emplee algún programa para confeccionar Wireframes y generar un wireflow.
 
 [![Mockups Icon](images/interfazUsuario/mockUps-icon.png)](https://moqups.com/)
 
 [![NinjaMocks](images/interfazUsuario/ninjamock-icon.png)](https://ninjamock.com/Designer/NewWorkplace/WebProject/napkin/0/Page1)
 
+Se recomienda (por ser gratuito y apto para todo SO):
 [![Pencil](images/interfazUsuario/pencil-icon.png)](https://pencil.evolus.vn/)
 
 ---
@@ -321,6 +322,12 @@ Emplee algún programa para confeccionar Wireframes y generar un wireflow.
 * No mostrar ejemplos o brindar información teórica
 * Texto que indique cuál es la finalidad de la página
 * No especificar mensajes de error
+
+---
+## Ejercicio: Evaluación de la Interfaz
+Si un valiente se anima, que comparta su pantalla con su diseño, y entre todos le damos un feedback de como mejorarlo.
+
+(Paso: El usuario evalúa la interfaz)
 
 ---
 <!-- .slide: data-background="images/interfazUsuario/prototipado-de-paginas-web.jpg" -->
