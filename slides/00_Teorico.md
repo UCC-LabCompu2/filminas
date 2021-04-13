@@ -5,14 +5,8 @@ slideNumber: true
 ---
 
 # Lab Compu II (Teórico)
-
-<small>
 Created by 
-
-<i class="fab fa-telegram"></i> [edme88](https://t.me/edme88) & 
-
-<i class="fab fa-telegram"></i> [rmarku](https://t.me/rmarku)
-</small>
+<i class="fab fa-telegram"></i> [edme88](https://t.me/edme88)
 
 <!---
 

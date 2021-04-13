@@ -5,12 +5,8 @@ slideNumber: true
 ---
 
 # CSS
-<small>
 Created by <i class="fab fa-telegram"></i>
-[edme88]("https://t.me/edme88") & 
-<i class="fab fa-telegram"></i>
-[rmarku]("https://t.me/rmarku")
-</small>
+[edme88]("https://t.me/edme88")
 
 ---
 ## CCS: Cascading Style Sheets

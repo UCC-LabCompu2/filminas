@@ -5,10 +5,8 @@ slideNumber: true
 ---
 
 # Git (parte II)
-<small>
 Created by <i class="fab fa-telegram"></i>
-[edme88]("https://t.me/edme88") & 
-</small>
+[edme88]("https://t.me/edme88")
 
 ---
 ### Qué comandos aprendimos la clase pasada?

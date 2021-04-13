@@ -5,13 +5,8 @@ slideNumber: true
 ---
 
 # JavaScript: 2da Parte
-<small>
-Created by 
-<i class="fab fa-telegram"></i> 
-[edme88]("https://t.me/edme88") & 
-<i class="fab fa-telegram"></i>
-[rmarku]("https://t.me/rmarku")
-</small>
+Created by <i class="fab fa-telegram"></i> 
+[edme88]("https://t.me/edme88")
 
 ---
 ## Podemos modificar CSS mediante Javascript?

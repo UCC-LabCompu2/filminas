@@ -5,12 +5,8 @@ slideNumber: true
 ---
 
 # Diseño de Juegos
-<small>
 Created by <i class="fab fa-steam"></i>
-[edme88]("http://steamcommunity.com/id/edme88") & 
-<i class="fab fa-steam"></i>
-[rmarku]("http://steamcommunity.com/id/rmarku")
-</small>
+[edme88]("http://steamcommunity.com/id/edme88")
 
 ---
 ## Libros:

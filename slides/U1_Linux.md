@@ -5,12 +5,8 @@ slideNumber: true
 ---
 
 # Linux
-<small>
 Created by <i class="fab fa-telegram"></i>
-[edme88]("https://t.me/edme88") & 
-<i class="fab fa-telegram"></i>
-[rmarku]("https://t.me/rmarku")
-</small>
+[edme88]("https://t.me/edme88")
 
 ---
 ## ¿Qué es Linux?

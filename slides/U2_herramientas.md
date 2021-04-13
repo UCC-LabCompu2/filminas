@@ -5,12 +5,8 @@ slideNumber: true
 ---
 
 # Herramientas de Desarrollo
-<small>
 Created by <i class="fab fa-telegram"></i>
-[edme88]("https://t.me/edme88") & 
-<i class="fab fa-telegram"></i>
-[rmarku]("https://t.me/rmarku")
-</small>
+[edme88]("https://t.me/edme88")
 
 ---
 ## Herramientas de Desarrollo
