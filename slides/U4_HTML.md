@@ -13,7 +13,7 @@ Created by <i class="fab fa-telegram"></i>
 ## Comenzar!
 Cuando estás empezando a trabajar con HTML es recomendable tener a mano siempre un CheatSheet con un resumen de los 
 comandos más empleados.
-[HTML Cheat Sheet](https://campusvirtual.ucc.edu.ar/mod/resource/view.php?id=60351)
+[HTML Cheat Sheet](cheatsheet/html5-cheatsheet.pdf)
 
 ---
 ## Estructura Básica
@@ -39,6 +39,7 @@ comandos más empleados.
 
 ---
 ## Github Classroom
+Repositorio base para realizar todos los ejercicios que veremos en clase:
 
 [Github Classroom](https://classroom.github.com/a/alV9yr2r)
 

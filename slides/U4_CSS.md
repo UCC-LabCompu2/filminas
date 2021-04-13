@@ -39,6 +39,12 @@ Estilos visual del documento.
 ![CSS Sintaxis](images/html/css-sintaxis.png)
 
 ---
+## Comenzar!
+Cuando estás empezando a trabajar con CSS es recomendable tener a mano siempre un CheatSheet con un resumen de los 
+comandos más empleados.
+[CSS Cheat Sheet](cheatsheet/css3-cheatsheet.pdf)
+
+---
 ## Formar de Agregar Estilos
 * Estilo en Linea
 * Incrustando una Hoja de Estilo
