@@ -42,7 +42,7 @@ Estilos visual del documento.
 ## Comenzar!
 Cuando estás empezando a trabajar con CSS es recomendable tener a mano siempre un CheatSheet con un resumen de los 
 comandos más empleados.
-[CSS Cheat Sheet](cheatsheet/css3-cheatsheet.pdf)
+[CSS Cheat Sheet](https://raw.githubusercontent.com/UCC-LabCompu2/filminas/master/slides/cheatsheet/css3-cheatsheet.pdf)
 
 ---
 ## Formar de Agregar Estilos

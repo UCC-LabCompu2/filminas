@@ -13,7 +13,7 @@ Created by <i class="fab fa-telegram"></i>
 ## Comenzar!
 Cuando estás empezando a trabajar con HTML es recomendable tener a mano siempre un CheatSheet con un resumen de los 
 comandos más empleados.
-[HTML Cheat Sheet](cheatsheet/html5-cheatsheet.pdf)
+[HTML Cheat Sheet](https://raw.githubusercontent.com/UCC-LabCompu2/filminas/master/slides/cheatsheet/html5-cheatsheet.pdf)
 
 ---
 ## Estructura Básica
@@ -74,11 +74,13 @@ Etiquetas que dan un significado a las partes del documento, indican qué conten
 ## Cuerpo de la Página
 ````html
 <body>
-<header>
-    <section>
+<header>   
         Logo de la Página + Titulo de la Página
-    </section>
 </header>
+<nav>Botones de navegación</nav>
+<section>
+    Contenido de la página
+</section>
 <footer>
     Este es el pie de Pagina
 </footer>
@@ -116,17 +118,25 @@ Ozono= O<sub>3</sub>
 
 ---
 ## Ejercicio: Secciones
-Incluir en la pagina 3 secciones:
-* Un &lt;header&gt; con imagen y titulo
-* Un texto con párrafos. Debe incluir estilos (negrita, itálica y subrayado).
-* Un &lt;footer&gt; con el nombre de los autores de la pagina
+Empleando  el  template  “ej_noticia”,  incluir  en  la  página  3  secciones mediante  etiquetas semánticas: 
+* En el **header** incluir una imagen y un título(la imagen debe ser descargada de internet e incluida en la carpeta 
+‘Ejercicios-HTML/imagenes’)
+* En  **section**,  separar  el texto en párrafos.  Debe  incluir  la  utilización  de  estilos  
+(negrita, itálica y subrayado).
+* El **footer** debe contener el autor de la página
 
 ---
+## Ejercicio: Títulos
+Empleando el template “ej_noticia”, incluir diferentes tipos de título:
+* h1 para ‘Diario On-line’
+* h3 para ‘Cordobici’
+* h6 para la fecha de publicaciónd
+* h5 para el sub-titulo de la noticia
+
+---
+## Ejercicio: Secciones y Títulos
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/c4dqkCbeHC0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
----
-## Para realizar pruebas...
-[![JSfiddle](images/html/JSfiddle.png)](https://jsfiddle.net/)
 
 ---
 ## Tipos de Listas
@@ -182,11 +192,18 @@ Incluir en la pagina 3 secciones:
 
 ---
 ## Ejercicio: Listas
-* Emplear una lista no ordenada
-* Emplear una lista ordenada
-* En la web principal incluir &lt;nav&gt; y un link a la web creada.
+Empleando el template “ej_listas” donde hay una receta, emplear:
+* una lista no ordenadapara los ingredientes  
+* una lista  ordenada para  los  pasos  de  la  preparación. 
+* una imagen de la receta (la misma se encuentra en la carpeta ‘Ejercicios-HTML/imagenes’)
 
 ---
+## Ejercicio: Link
+Empleando el template “ej_noticia”, incluir la etiqueta semántica **nav** debajo de la cabecera de la página,y agregar 
+un link a la web de la receta (como si fuera un diario con diferentes secciones).
+
+---
+## Ejercicio: Listas y Link
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DEd52yU1CHY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
@@ -250,23 +267,41 @@ Incluir en la pagina 3 secciones:
 
 ---
 ## Ejercicio: Tablas I
-Cree una tabla con la siguiente estructura:
+Empleando el template “ej_tablas”, agregue las siguientes etiquetas:
+* table
+* tr
+* td
 
 ![Tabla1](images/html/tabla1.png)
 
 ---
 ## Ejercicio: Tablas II
-Cree una tabla con la siguiente estructura:
-* Utiliza el atributo colspan
+Empleando el template “ej_tablas”, agregue las siguientes etiquetas:
+* thead
+* tbody
+* th
 
 ![Tabla2](images/html/tabla2.png)
 
 ---
 ## Ejercicio: Tablas III
-Cree una tabla con la siguiente estructura:
-* Utiliza el atributo rowspan
+Empleando el template “ej_tablas”, agregue el atributo:
+* colspan
+
+Elimine las siglas CPAR, y unifique esa celda con la contigua para que ambas contengan el texto “Campus party”
 
 ![Tabla3](images/html/tabla3.png)
+
+---
+## Ejercicio: Tablas VI
+Empleando el template “ej_tablas”, agregue el atributo:
+* rowspan
+
+Como en la columna “Lugar”, ‘Buenos Aires’ se repite, unificar ambas celdas.
+
+![Tabla4](images/html/tabla4.png)
+
+Al contenido de la columna “Web”, agregar links a las páginas correspondientes
 
 ---
 ## Ejercicio: Comentarios
@@ -276,6 +311,7 @@ Agrege comentarios a la página web de tablas.
 <!--Esto es un comentario-->
 ````
 ---
+## Ejercicio: Tablas y Comentarios
 <iframe width="560" height="315" src="https://www.youtube.com/embed/C-_ZWqhN5YU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
@@ -314,3 +350,8 @@ Agrege comentarios a la página web de tablas.
 ---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
+
+---
+## Para realizar pruebas...
+[![JSfiddle](images/html/JSfiddle.png)](https://jsfiddle.net/)
+
