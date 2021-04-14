@@ -59,7 +59,27 @@ Normalmente posee 3 capas:
 * Capa Intermedia
 * Capa de Servidor
 
-![3 Capas](images/appWeb/3capas.gif)
+![3 Capas](images/appWeb/modelo3capas.png)
+
+---
+## Estructura
+* Capa de Presentación, de Usuario/Cliente
+<p class="fragment"> <small> 
+front-end que es el responsable de proporcionar la lógica de presentación. También es conocida como interfaz gráfica.
+</small> </p>
+* Capa del Servidor Web o del Negocio o Intermedia
+<p class="fragment"> <small> 
+es donde residen los programas que se ejecutan, se reciben las peticiones del usuario y se envían las respuestas tras 
+el proceso. Aquí es donde se establecen todas las reglas que deben cumplirse. Esta capa se comunica con la capa de 
+presentación, para recibir las solicitudes y presentar los resultados, y con la capa de datos, para solicitar al gestor 
+de base de datos almacenar o recuperar datos de él. 
+</small> </p>
+* Capa del Servidor de BD
+<p class="fragment"> <small> 
+ es donde residen los datos y es la encargada de acceder a los mismos. Está formada por uno o más gestores de bases de 
+ datos que realizan todo el almacenamiento de datos, reciben solicitudes de almacenamiento o recuperación de información 
+ desde la capa de negocio.
+</small> </p>
 
 ---
 ## Tipos de Páginas web
@@ -93,10 +113,47 @@ Una **aplicación Web** es un conjunto de páginas Web estáticas y dinámicas.
 Software que ayuda al servidor Web a procesar las páginas que contienen scripts o etiquetas del lado del servidor. Cuando se solicita al servidor una página de este tipo, el servidor Web pasa la página al servidor de aplicaciones para su procesamiento antes de enviarla al navegador.
 
 ---
-## Web 2.0
-Representa la evolución de las aplicaciones tradicionales hacia aplicaciones web, enfocadas en el usuario.
+## Evolución de la Web
+* Web 1.0
+* Web 2.0
+* Web 3.0
+* Web 4.0
 
-Se trata de aplicaciones que generan colaboración y de servicios que reemplacen las aplicaciones de escritorio (permite que la gente escriba en internet, como por ejemplo, blogs o wikis) y comparta sus producciones (fotos, videos, etc).
+---
+## Web 1.0
+El comienzo de la web data de los años 60, donde el usuario es un mero consumidor del contenido que es subido a 
+servidores por parte de expertos informáticos. Los navegadores eran solo de texto.
+
+La web 1.0 mejora con la aparición del lenguaje HTML, que proporciona contenido con mejor estructuras y más atractivos 
+para leer. Aun así, el usuario aún no podía interactuar y la web era como una especie de libro donde buscar y leer información.
+
+---
+## Web 2.0
+A partir del año 2001, surge un cambio importante: el usuario empieza a interactuar con las webs. 
+Se siguen tres principios :
+* La web como plataforma.
+* La inteligencia colectiva.
+* La arquitectura de participación.
+
+Aparecen grupos de usuarios, redes sociales, blogs y wikis entre otras. Se fomenta la colaboración entre usuarios. 
+El usuario ahora no solo accede a la información, sino que la crea.
+
+---
+## Web 3.0
+Surge en 2006 para relacionar las webs de forma semántica, lo que permite que la información pueda ser encontrada de 
+forma más rápida y eficiente debido a su estructuración.
+
+Además de navegadores, se accede desde otros dispositivos y tecnologías.
+
+---
+## Web 4.0
+En esta etapa la inteligencia artificial aparece como principal tecnología.
+ 
+Algunas de las características de la web 4.0 son:
+* Comprensión del lenguaje cotidiano o natural. (comandos de voz ej “llama a un contacto” )
+* Comunicación entre dispositivos (m2m, máquina a máquina).
+* Uso de información relacionada (GPS, sensores de temperatura, etc.).
+* Nuevas formas de interacción con el usuario.
 
 ---
 ## Lenguajes de Programación Web
@@ -151,7 +208,7 @@ HTML5 es la última evolución de la norma que define HTML (HyperText Markup Lan
   permite a páginas web almacenar datos, localmente, en el lado del cliente y operar fuera de línea de manera más eficiente.
 
 * ***Multimedia:***
-  permite hacer vídeo y audio de ciudadanos de primera clase en la Web abierta.
+  permite hacer vídeo y audio en la Web abierta.
 
 ---
 ## Características
