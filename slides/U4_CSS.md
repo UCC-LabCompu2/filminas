@@ -32,9 +32,6 @@ Estilos visual del documento.
 * Interfaz de Usuario
 
 ---
-![CSS3 Historia](images/html/CSS3_historia.png)
-
----
 ## CSS: Sintaxis
 ![CSS Sintaxis](images/html/css-sintaxis.png)
 

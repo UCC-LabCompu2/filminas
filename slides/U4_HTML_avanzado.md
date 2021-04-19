@@ -157,6 +157,8 @@ Empleando el template “ej_formulario”, agregue las siguientes etiquetas:
 ![Formulario](images/html/formulario_ej.png)
 
 ---
+## Ejercicio: Formulario
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zSbEPLMhBh0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
@@ -244,7 +246,7 @@ Es el encargado de darle un título descriptivo a las tablas.
 
 ---
 ## Ejercicios: Accesibilidad
-* En el formulario que ha creado, emplee la etiqueta **<labelfor=”mismo_id”>**
+* En el formulario que ha creado, emplee la etiqueta **<label for=”mismo_id”>**
 * Agregue el atributo **alt** con el texto alternativo a todas las imágenes de su sitio web.
 * Emplee el tag **caption** para agregar títulos a todas las tablas del sitio web.
 
