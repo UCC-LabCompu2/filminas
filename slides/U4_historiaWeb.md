@@ -13,8 +13,10 @@ Created by <i class="fab fa-telegram"></i>
 * HTML 1
 * HTML 2
 * HTML 3
+* HTML 3.2
 * HTML 4
 * HTML 5
+* HTML 6 ???
 
 ---
 ## HTML 1
@@ -59,6 +61,7 @@ como vídeo y música) y los frameset para dividir la pantalla en partes.
 
 ---
 ## HTML 5
+<!-- .slide: style="font-size: 0.70em" -->
 Empieza su definición apoyándose en dos puntos: 
 * Compatibilidad hacía atrás de todo lo que hay creado 
 * Capacidad de absorber todas las funcionalidades que los nuevos fabricantes de la web habían ido construyendo (Google, Apple u Opera).
@@ -70,9 +73,18 @@ Además alrededor de HTML5 nacen una gran cantidad de especificaciones para la m
 Se publicada oficialmente el 28 de octubre de 2014.
 
 ---
-### HTML.next
-Están propuestos elementos como RECO, para el reconocimiento de voz, áreas de texto WYSIWYG(What You See Is What You Get), 
-DATAGRID para representar datos tabulares, DATA para insertar elementos sólo reconocibles para máquinas, entre otros.
+### [HTML 6](https://programacion.net/articulo/9_caracteristicas_que_deseamos_que_esten_en_html6_1189)
+Algunos cambios que se vienen:
+* Librerías dedicadas (como un jQuery integrado)
+* Mayor control sobre los objetos de vídeo 
+* Integración con la cámara
+* Pre-procesadores que se puedan conectar
+* Mejores anotaciones
+* Lenguajes conectables
+* Muchos más microformatos
+* Dimensionamiento de imágenes según el navegador
+* Mejor gestión de la información de contacto
+
 
 ---
 ### Y los estilos?
@@ -101,7 +113,7 @@ Los primeros borradores aparecieron en 1999. El W3C publicó varios "módulos" i
 Esto resulta bastante práctico para los navegadores, que pueden así implementar las novedades progresivamente.
 
 ---
-[CSS3 Historia](images/html/CSS3_historia.png)
+![CSS3 Historia](images/html/CSS3_historia.png)
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
