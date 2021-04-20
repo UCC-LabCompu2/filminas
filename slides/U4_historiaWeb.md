@@ -75,6 +75,32 @@ Están propuestos elementos como RECO, para el reconocimiento de voz, áreas de 
 DATAGRID para representar datos tabulares, DATA para insertar elementos sólo reconocibles para máquinas, entre otros.
 
 ---
+### Y los estilos?
+Con el HTML 3.2 se daba formato en HTML con los elementos específicos para ello: <b>, <font>... y sus respectivos 
+atributos face="arial,helvetica,sans-serif", size="3", align="center"... 
+
+Implementarlo requería mucho tiempo, actualizarlo era molesto y no resultaba productivo.
+
+---
+### CSS
+Con la llegada del HTML 4 se quitaron los estilos, pero se crearon las hojas de estilo en cascada, Cascading Style Sheet o CSS. 
+
+La primera versión data del 17 de diciembre de 1996, cuando salio HTML 3.2
+
+---
+### CSS 2
+Aparece el 12 de mayo de 1998. Se trataba de una versión con demasiadas novedades, y los navegadores no pudieron adaptarse bien.
+ 
+El W3C volvió a retrabjarlo, y entre 2004-2006, lanzó la versión level 2 revisión 1, que se conoce como CSS 2.1. 
+La versión 2.1 de las CSS fue publicada como Recommendation el 7 de junio de 2011.
+
+---
+### CSS 3
+Los primeros borradores aparecieron en 1999. El W3C publicó varios "módulos" independientes los unos de los otros. 
+
+Esto resulta bastante práctico para los navegadores, que pueden así implementar las novedades progresivamente.
+
+---
 [CSS3 Historia](images/html/CSS3_historia.png)
 
 ---
