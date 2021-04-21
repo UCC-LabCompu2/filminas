@@ -7,8 +7,7 @@ slideNumber: true
 # Tutorial de HTML II
 ### en HTML (que recursivo :P)
 Created by <i class="fab fa-telegram"></i>
-[edme88]("https://t.me/edme88") & 
-
+[edme88]("https://t.me/edme88")
 
 ---
 ## Formulario
@@ -43,72 +42,62 @@ Atributos que puede tener:
 * novalidate: indica que el formulario no es validado cuando es enviado
 * target: Indica dónde mostrar la respuesta, después de enviar el formulario (_self. _blank, _parent, _top)
 
+[VER HTML CheatSheet](https://raw.githubusercontent.com/UCC-LabCompu2/filminas/master/slides/cheatsheet/html5-cheatsheet.pdf)
+
 ---
-## Input
+## [Input](https://www.w3schools.com/tags/att_input_type.asp)
 Campo de texto en una línea
 ````html
 <input type="text" name="nombre"/>
 <input type="password" name="psw">
-<input type="email" name="email">
-<input type="search" name="buscar"/>
+<input type="email" name="email"> <!--Valida @-->
 <input type="tel" name="telefono"/>
-<input type="url" name="pagina_web"/>
+<input type="url" name="pagina_web"/><!--Valida http-->
+<input type="color" name="color"/>
 ````
 <input type="text" name="nombre"/>
 <input type="password" name="psw">
 <input type="email" name="email">
-<input type="search" name="buscar"/>
 <input type="tel" name="telefono"/>
 <input type="url" name="pagina_web"/>
+<input type="color" name="color"/>
 
 ---
 ## Input Radio
-Permiten elegir una sola opción entre un grupo. 
+Permiten elegir una sola opción entre un grupo 
+
+(tener en cuenta que deben tener el mismo **name** para pertenecer al grupo). 
 ````html
 <input type="radio" name="gender" value="male" checked> Male<br>
 <input type="radio" name="gender" value="female"> Female
 ````
 <input type="radio" name="gender" value="male" checked> Male<br>
 <input type="radio" name="gender" value="female"> Female
-
----
-## Input Select
-Permite al usuario elegir de entre un número de opciones de una lista.
-````html
-<select name="materias">
-    <option value="analisisMat">Análisis Matemático</option>
-    <option value="algebra">Álgebra</option>
-    <option value="program1">Programación I</option>
-    <option value="labCompu2">Laboratorio de Computación II</option>
-</select>
-````
-<select name="materias">
-    <option value="analisisMat">Análisis Matemático</option>
-    <option value="algebra">Álgebra</option>
-    <option value="program1">Programación I</option>
-    <option value="labCompu2">Laboratorio de Computación II</option>
-</select>
-
----
-## Input Button
-Crear un botón en el que se puede hacer click sin ningún valor por defecto.
-````html
-<button type="button">Click Me!</button>
-````
-<button type="button">Click Me!</button>
-Atributos:
-* disabled
-* autofocus
-* autocomplete
-* form, etc, ect
 
 ---
 ## Input Range
 Permite que el usuario especifique un valor numérico comprendido entre un valor mínimo y máximo
 ````html
-<input type="range" id="a" name="a" value="50">
+<input type="range" id="a" name="a" value="50" min="0" max="120">
 ````
-<input type="range" id="a" name="a" value="50">
+<input type="range" id="a" name="a" value="50" min="0" max="120">
+
+---
+## [Nuevos Campos de HTML 5.1](https://lenguajehtml.com/p/html/formularios/controles-campos-fecha-hora)
+
+* Fecha <input type="date">
+* Hora <input type="time">
+* Fecha y hora local <input type="datetime-local">
+* Mes <input type="month">
+* Semana <input type="week">
+
+````html
+<input type="date">
+<input type="time">
+<input type="datetime-local">
+<input type="month">
+<input type="week">
+````
 
 ---
 ## Input Checkbbox
@@ -127,6 +116,52 @@ Campo para la entrada de un número.
 <input type="number" name="points" min="0" max="100" step="10" value="30">
 ````
 <input type="number" name="points" min="0" max="100" step="10" value="30">
+
+---
+## Input: Atributos
+<!-- .slide: style="font-size: 0.90em" -->
+Algunos atributos son:
+* name: permite hacer referencia al elemento desde Js empleando un document.formName.inputName
+* placehorder: ayuda visual del contenido del input
+* disabled: deshabilita el campo y no permite que el usuario ingrese nombres
+* size: altera el ancho del cuadro de texto
+* maxlength: cantidad máxima de caracteres que se pueden ingresar
+
+<input type="text" placeholder="nombre"/>
+<input type="text" value="15" disabled/>
+<input type="text" size="4"/>
+<input type="text" maxlength="4"/>
+
+---
+## Select & Option
+Permite al usuario elegir de entre un número de opciones de una lista.
+````html
+<select name="materias">
+    <option value="analisisMat">Análisis Matemático</option>
+    <option value="algebra">Álgebra</option>
+    <option value="program1">Programación I</option>
+    <option value="labCompu2">Laboratorio de Computación II</option>
+</select>
+````
+<select name="materias">
+    <option value="analisisMat">Análisis Matemático</option>
+    <option value="algebra">Álgebra</option>
+    <option value="program1">Programación I</option>
+    <option value="labCompu2">Laboratorio de Computación II</option>
+</select>
+
+---
+## Button
+Crear un botón en el que se puede hacer click sin ningún valor por defecto.
+````html
+<button type="button">Click Me!</button>
+````
+<button type="button">Click Me!</button>
+Atributos:
+* disabled
+* autofocus
+* autocomplete
+* form, etc, ect
 
 ---
 ## Textarea
@@ -160,23 +195,6 @@ Empleando el template “ej_formulario”, agregue las siguientes etiquetas:
 ## Ejercicio: Formulario
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zSbEPLMhBh0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
----
-## [Nuevos Campos de HTML 5.1](https://lenguajehtml.com/p/html/formularios/controles-campos-fecha-hora)
-
-* Fecha
-* Hora
-* Fecha y hora local
-* Mes
-* Semana
-
-````html
-<input type="date">
-<input type="time">
-<input type="datetime-local">
-<input type="month">
-<input type="week">
-````
 
 ---
 ## Accesibilidad
