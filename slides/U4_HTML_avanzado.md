@@ -184,9 +184,10 @@ Atributo de elementos input y textarea para representar una indicación que ayud
 <!-- .slide: style="font-size: 0.50em" -->
 Empleando el template “ej_formulario”, agregue las siguientes etiquetas:
 * **form** para agrupar todos los campos
-* **input** tipo texto, radio, numero, email, password, checkbox y submit
+* **input** tipo texto, radio, numero, email, password, checkbox y submit 
+(agregar atributo size=40 a los campos de texto. Separe con **p** cada grupo.)
 * **select y option** para el selector
-* **textareae**
+* **textarea**
 * Atributo **placeholder** en todos los inputs
 
 ![Formulario](images/html/formulario_ej.png)
@@ -214,6 +215,7 @@ Lo navegadores mostrarán normalmente un marco alrededor de los controles agrupa
 
 ---
 ## Fieldset, Legend y Label
+<!-- .slide: style="font-size: 0.85em" -->
 ````html
 <fieldset>
     <legend>Persona:</legend>
@@ -223,6 +225,7 @@ Lo navegadores mostrarán normalmente un marco alrededor de los controles agrupa
     <input type="text" size="30" id="email">
 </fieldset>
 ````
+(el **for** del label debe contener el mismo texto que el **id** del input)
 <div align="left">
     <fieldset style="border: 5px white solid;padding: 20px">
         <legend>Persona:</legend>
@@ -234,37 +237,38 @@ Lo navegadores mostrarán normalmente un marco alrededor de los controles agrupa
 </div>
 
 ---
-## Caption
+## [Caption](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/caption)
 Es el encargado de darle un título descriptivo a las tablas.
 ````html
 <table border='1'>
     <caption>Tabla con caption</caption>
-    <tr> <td> tabla de una celda. </td>  </tr>
+    <tr> <td> Celda 1 </td><td> Celda 2 </td>  </tr>
+    <tr> <td> Celda 3 </td><td> Celda 4 </td>  </tr>
 </table>
 ````
 
 <table border='1'>
     <caption>Tabla con caption</caption>
-    <tr> <td> tabla de una celda. </td>  </tr>
+    <tr> <td> Celda 1 </td><td> Celda 2 </td>  </tr>
+    <tr> <td> Celda 3 </td><td> Celda 4 </td>  </tr>
 </table>
-
-[MDN Web Doc](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/caption)
 
 ---
 ## Accesibilidad: Consejos
 <!-- .slide: style="font-size: 0.75em" -->
 * Use el atributo **alt** en las **imágenes** para describir la función del elemento visual.
+*  Emplee el tag **caption** para los titulos de las tablas
+*  Emplee la etiqueta **label** y el atributo **for** en los input 
 *  Use el elemento map para las zonas activas.
 *  Emplee programas **lector de pantalla** (JAWS, NVDA, ETC) para comprobar el correcto funcionamiento de la web. (Fangs Screenenders muestra una version de texto de la pagina web)
 *  Utilice correctamente los hipervinculos (deben tener sentido por si mismo. No emplear 'Click Aqui')
 *  Utilice encabezados, listas y estructura de manera consistente
 *  Describir figuras, diagramas o animaciones con el atributo longdesc
-*  Emplee el tag &ltcaption&gt para los titulos de las tablas
 *  Utilice herramientas o servicios como [Accesibility Validator W3](https://validator.w3.org/) para comprobar el adecuado funcionamiento de la página
 
 ---
 ## Ejercicios: Accesibilidad
-* En el formulario que ha creado, emplee la etiqueta **<label for=”mismo_id”>**
+* En el formulario que creado, emplee la etiqueta **label for=”mismo_id”**
 * Agregue el atributo **alt** con el texto alternativo a todas las imágenes de su sitio web.
 * Emplee el tag **caption** para agregar títulos a todas las tablas del sitio web.
 
@@ -340,10 +344,13 @@ Empleando el template “ej_animales”, agregue las etiquetas necesarias para:
 
 ---
 ## Consejos
+Algunos consejos de 
 [Google WebMasters](http://www.google.es/webmasters/learn/)
 
 ---
 ## Verifica tu Web
+Permite encontrar con facilidad algunos errores que puede haber en tu página:
+
 [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input)
 
 ---

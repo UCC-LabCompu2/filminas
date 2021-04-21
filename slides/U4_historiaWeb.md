@@ -1,10 +1,10 @@
 ---
-title: CSS
+title: Desarrollo Web
 theme: black
 slideNumber: true
 ---
 
-# Desarrollo Web
+# Breve Historia del Desarrollo Web
 Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
@@ -47,7 +47,7 @@ Se empieza a hablar de elementos como tablas, textos alrededor de las imágenes,
 En enero de 1997 aparece HTML 3.2.  Aparecen elementos definidos por los fabricantes de navegadores: Netscape e Internet Explorer.
 
 Así podemos encontrar en HTML 3.2 la capacidad de crear código script, capas, formularios, posibilidad de meter Applets 
-de Java, modificar el tamaño metiendo fuentes.
+de Java, entre otros.
 
 ---
 ## HTML 4
@@ -103,7 +103,7 @@ La primera versión data del 17 de diciembre de 1996, cuando salio HTML 3.2
 ### CSS 2
 Aparece el 12 de mayo de 1998. Se trataba de una versión con demasiadas novedades, y los navegadores no pudieron adaptarse bien.
  
-El W3C volvió a retrabjarlo, y entre 2004-2006, lanzó la versión level 2 revisión 1, que se conoce como CSS 2.1. 
+El W3C volvió a retrabajarlo, y entre 2004-2006, lanzó la versión level 2 revisión 1, que se conoce como CSS 2.1. 
 La versión 2.1 de las CSS fue publicada como Recommendation el 7 de junio de 2011.
 
 ---
