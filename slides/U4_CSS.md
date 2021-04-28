@@ -56,6 +56,13 @@ comandos más empleados.
 ````
 
 ---
+## Estilo en Linea: Desventajas
+* Difícil de mantener
+* Solución poco elegante
+* Código duplicado para que varios elementos posean el mismo estilo visual
+* La estructura y el estilo se mezclan
+
+---
 ## Hoja de Estilo Incrustada
 * Se incorpora en &lt;head&gt;
 *  Se describe:
@@ -80,8 +87,14 @@ margin-left: 15px;
 ````css
 <link rel="stylesheet" href="estilos.css" type="text/css">
 ````
----
 
+---
+### Hoja de Estilo Externa o Enlazada: Ventajas
+* Se separa la estructura del estilo
+* Fácil de mantener
+* Permite compartir estilos similares en todas las páginas
+
+---
 ## Propiedades tipográficas
 <!-- .slide: style="font-size: 0.80em" -->
 * **font-family:** se define tipografía por orden de prioridad
@@ -217,9 +230,9 @@ a:active {
 
 ---
 ## Ejercicio: Pseudo Clases
-Al hipervinculo de la página de ej_columnas, empleando Pseudo clases modifiqUE:
+Al hipervinculo de la página de ej_columnas, empleando Pseudo clases modifique:
 * Link visitado o no visitado con el mismo color
-* Al posicionar el mouse arriba del link, modificar el tamano de la fuente
+* Al posicionar el mouse arriba del link, modificar el tamaño de la fuente
 * Al seleccionar el link, seleccionar BOLD
 
 ---
@@ -354,10 +367,10 @@ lineas */
 ## CCS3
 Buenas Practicas:
 * Comprobar el diseño en varios navegadores
-* Depuracion (Ej. firebug)
+* Depuración (Ej. firebug)
 * Comentar el código
 * Identar y hacer el código fácil de leer
-* Usar sistema comun de nombrado
+* Usar sistema común de nombrado
 * Evitar tamaños absolutos en fuentes o elementos
 * Utilizar notación de colores en hexadecimal
 * Ordenar los elementos según pertenezcan a cabecera, contenido principal o pie de página

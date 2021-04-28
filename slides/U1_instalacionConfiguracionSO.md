@@ -336,6 +336,10 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 ![Windows 95](images/configSO/windows_95.jpeg)
 
 ---
+## Windows 95
+https://www.tiktok.com/@shtunner/video/6953654804665093381?is_copy_url=0&is_from_webapp=v1&sender_device=pc&sender_web_id=6955970873513772550
+
+---
 ## Requisitos mínimos de
 ## Windows 98
 <!-- .slide: style="font-size: 0.90em" -->
