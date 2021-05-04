@@ -33,6 +33,10 @@ Paradigma de programación en el que la estructura y la ejecución de los progra
 sucesos que ocurran en el sistema, definidos por el usuario o por el propio sistema.
 
 </script></section><section  data-markdown><script type="text/template">
+## Programación Dirigida por eventos
+El código no se ejecutará en un flujo lineal, sino, de forma asíncrona, según vayan ocurriendo los **eventos**. 
+
+</script></section><section  data-markdown><script type="text/template">
 <!-- .slide: data-background="images/Eventos/Lenguajes.png" -->
 ## Lenguajes
 * JavaScript
@@ -43,13 +47,13 @@ sucesos que ocurran en el sistema, definidos por el usuario o por el propio sist
 * etc...
 
 </script></section><section  data-markdown><script type="text/template">
-## Eventos
+## [Eventos](https://www.w3schools.com/jsref/dom_obj_event.asp)
 Todo aquello que puede ser detectado y que pueda producir una reacción.
 
 Ej. Hacer click en un botón, mover el puntero sobre un enlace, seleccionar un elemento de una lista desplegable, etc.
 
 </script></section><section  data-markdown><script type="text/template">
-## Tipos de Eventos
+## [Tipos de Eventos](https://content.breatheco.de/es/lesson/event-driven-programming#%C2%BFpero-qui%C3%A9n-desencadena-estos-eventos)
 * Eventos de Usuario
   * Eventos del mouse
   * Eventos del teclado
@@ -59,10 +63,171 @@ Ej. Hacer click en un botón, mover el puntero sobre un enlace, seleccionar un e
 * Eventos generados desde código
   * Cambios en el contenido, aspecto o estructura
   * Especificación DOM (Document Object Model)
-  
+
+</script></section><section  data-markdown><script type="text/template">
+## Eventos de Mouse
+<!-- .slide: style="font-size: 0.90em" -->
+* **Click**: Cuando el usuario hace clic con el mouse o el dedo en cualquier elemento HTML.
+* **Mouseover, Mouseout**:	El evento ocurre cuando el puntero se mueve hacia dentro (para el mouseover) o hacia afuera 
+(para el mouseout) un elemento, o uno de sus hijos.
+* **contextmenu**: Cuando el usuario hace clic derecho en el mouse.
+* **Mousemove**: Si el usuario mueve el mouse.
+* **Mousedown, Mouseup**: Si el usuario presiona o suelta el mouse.
+
+</script></section><section  data-markdown><script type="text/template">
+## Eventos de Teclado
+* **Keyup**: Cuando el usuario suelta la tecla del teclado.
+* **Keydown**: Cuando el usuario presiona la tecla del teclado.
+* **Keypress**: Cuando el usuario presiona y suelta la tecla del teclado. La diferencia de keydown/up es que Keypress 
+solo funciona con teclas de caracteres. Por ejemplo, no funciona en las flechas arriba
+
+</script></section><section  data-markdown><script type="text/template">
+## Eventos Navegador
+<!-- .slide: style="font-size: 0.90em" -->
+* **Load**: El navegador ha terminado de cargar el sitio web.
+* **Error**: El evento ocurre cuando se produce un error al cargar un archivo externo (como un CSS o un JavaScript).
+* **Scroll**: El evento ocurre cuando se realiza scroll.
+* **PageHide, PageShow**: Cuando el usuario se enfoca en una ventana/pestaña diferente; o cuando el usuario vuelve de 
+una ventana/pestaña diferente.
+* **Resize**: Cuando la ventana se redimensiona.
+
+</script></section><section  data-markdown><script type="text/template">
+## Eventos de Formularios
+<!-- .slide: style="font-size: 0.90em" -->
+* **Submit**: El evento ocurre cuando se envía un formulario.
+* **Focusin, Focusout**: El evento ocurre cuando el puntero se mueve a un elemento o a uno de los elementos secundarios del elemento.
+* **Input**: El evento ocurre cuando un elemento obtiene la entrada del usuario.
+* **Change**: El evento ocurre cuando el contenido de un elemento del formulario, la selección o el estado previamente 
+establecido han cambiado (para ````<input>, <keygen>, <select>, y <textarea>````)
+
 </script></section><section  data-markdown><script type="text/template">
 ## Event Handler
 El manejador de eventos contiene instrucciones acerca de que hacer cuando una clase particular de evento se dispara.
+
+</script></section><section  data-markdown><script type="text/template">
+## Event Listeners
+La única forma de reaccionar ante cualquier evento es **escuchar** ese evento y asignar una función que maneje el evento como lo necesite.
+
+El detector de eventos se puede agregar:
+* En el HTML
+* En JavaScript
+
+</script></section><section  data-markdown><script type="text/template">
+## Listeners en HTML
+Por ejemplo, si se desea empezar a escuchar cuando el usuario hace clic en un botón, se debe especificar el atributo 
+"onclick" para esa etiqueta HTML específica ````<button>````:
+````javascript
+<!– myClickHandler is a javascript function that will handle the event –>
+<button onclick="llamar_alert();">Alertar Usuario</button>
+ 
+<script>
+function llamar_alert(){
+    alert(‘Hola Usuario!!!’);
+}
+__SCRIPT_END__
+````
+
+</script></section><section  data-markdown><script type="text/template">
+## Listeners en Javascript
+A veces el elemento DOM no existe desde el principio, porque se crea después de una llamada a la base de datos o 
+después de que el usuario haya hecho algo.
+
+La función **.addEventListener** se puede usar en cualquier elemento DOM durante el tiempo de ejecución. 
+Se debe especificar qué evento se quiere escuchar, y la función controladora que se llamará cada vez que ese evento se 
+active en ese elemento DOM.
+
+</script></section><section  data-markdown><script type="text/template">
+## Listeners en Javascript
+Por ejemplo, este código está creando una lista de nombres, y cada ancla de eliminación en cada fila está escuchando el evento "click" solo para esa fila.
+````javascript
+<!– myClickHandler is a javascript function that will handle the event –>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>repl.it</title>
+    </head>
+    <body onload="inicialize();">
+        <button id="onTimeButton">First time only</button>
+    </body>
+</html>
+ 
+<script>
+var listenerFunction = function(){
+    alert('First click');
+    document.getElementById('onTimeButton').removeEventListener("click",listenerFunction);
+}
+function inicialize(){
+    document.getElementById('onTimeButton').addEventListener("click",listenerFunction);
+}
+__SCRIPT_END__
+````
+
+</script></section><section  data-markdown><script type="text/template">
+## Objeto del Evento
+<!-- .slide: style="font-size: 0.90em" -->
+Los controladores de eventos pueden tener un parámetro opcional en la declaración de la función, que se llena con un 
+objeto "Evento" que contiene información sobre el **evento que se activó** para obtener esta función llamada.
+
+* **Objetivo**: Devuelve el objeto DOM que ha activado el evento.
+* **Tipo**: El tipo de evento: haga clic en, al pasar el ratón, carga, etc .
+* **Cancelable**: Si puede detener la propagación del evento o no.
+
+</script></section><section  data-markdown><script type="text/template">
+## Objeto del Evento
+````javascript
+function myEventHandler(eventObj)
+{
+    console.log(eventObj.target);
+     //imprimirá en la consola del objeto DOM que ha activado el evento
+    console.log(eventObj.type);
+     //Imprimirá en la consola el tipo de evento. 
+    console.log(eventObj.cancelable);
+     //Imprimiremos en la consola verdadero o falso si podemos detener la propagación de este evento.
+}
+````
+
+Dependiendo del tipo de evento, tendrá propiedades adicionales que le darán información muy útil sobre lo que sucedió cuando se activó el evento.
+
+
+</script></section><section  data-markdown><script type="text/template">
+## Objeto del Evento Mouse
+* **clientX, clientY**: Devuelve la horizontal o vertical de coordenadas del puntero del ratón, con relación a la 
+ventana actual, cuando el evento de ratón fue provocada.
+* **pageX, pageY**: Devuelve la horizontal o vertical de coordenadas del puntero del ratón - en relación con el 
+documento - cuando el evento de ratón fue provocado.
+* **which**: Devuelve qué botón del ratón cuando se presiona el evento de ratón se desencadenó
+
+</script></section><section  data-markdown><script type="text/template">
+## Objeto del Evento Teclado
+* **keyCode**: Devuelve el código de caracteres Unicode de la tecla que activa el evento.
+* **shiftKey, altKey o ctrlKey**: Devuelve si el shift,alt o ctrl se pulsan con el evento clave fue provocada.
+
+</script></section><section  data-markdown><script type="text/template">
+### Objeto del Evento Rueda del Mouse
+* **deltaX, deltaY**: Devuelve la cantidad de desplazamiento vertical u horizontal de una rueda del ratón ( eje y) o (eje x)
+* **deltaMode**: Devuelve un número que representa la unidad de mediciones de valores delta (píxeles, líneas o páginas)
+
+</script></section><section  data-markdown><script type="text/template">
+## Eliminar los Listeners
+Se pueden eliminar los **listener** empleando:
+````javascript
+element.removeEventListener(type, eventHandlerFunction);
+````
+
+</script></section><section  data-markdown><script type="text/template">
+### Eliminar los Listeners: Ejemplo
+En este código, se añade un detector de eventos para el evento click, pero luego, la primera vez que el detector de 
+click se llama a la función de controlador, elimina el detector de eventos desde el botón. 
+La segunda vez que se hace clic en el botón, no pasa nada.
+````javascript
+var listenerFunction = function(){
+    alert("First click");
+    document.getElementById("onTimeButton").removeEventListener("click",listenerFunction);
+}
+function inicialize(){
+    document.getElementById("onTimeButton").addEventListener("click",listenerFunction);
+}
+````
 
 </script></section><section  data-markdown><script type="text/template">
 ## ¿Dudas, Preguntas, Comentarios?
