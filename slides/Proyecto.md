@@ -60,3 +60,6 @@ Created by <i class="fab fa-telegram"></i>
 ---
 ## Proyecto - Parte 3
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nMPTkLKy1gg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Proyecto: Configuración de Github Pages
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aChzT06VBok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
