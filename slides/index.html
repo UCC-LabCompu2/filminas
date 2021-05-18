@@ -17,7 +17,8 @@
         font-weight: normal;
         color: #fff;
         margin: 20px;
-        margin-left: 20%
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     h2 {
@@ -47,38 +48,90 @@
         border: none;
     }
 
-
+    .grid-container {
+        display: grid;
+        grid-template-columns: 320px auto;
+        padding: 10px;
+    }
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        font-size: 30px;
+        padding: 10px;
+        vertical-align: middle;
+    }
 </style>
 <body>
 
 <h2>LABORATORIO DE COMPUTACIÓN II</h2>
 <br>
-<p style="text-align: left">
-    <a href="00_Teorico.html"> Presentación de la Materia (teórico)</a> <br>
-    <a href="00_Practica.html"> Presentación de la Materia (práctico)</a> <br>
-    <a href="U1_instalacionConfiguracionSO.html"> Unidad I: Instalación y Configuración de SO </a> <br>
-    <a href="U1_Linux.html" style="margin-left: 120px">Linux</a> <br>
-    <a style="margin-left: 120px" href="U1_Drivers.html">Drivers</a> <br>
-    <a href="U2_herramientas.html">Unidad II: Herramientas de Desarrollo</a> <br>
-    <a style="margin-left: 120px" href="U2_git.html">Git</a> <br>
-    <a style="margin-left: 120px" href="U2_git_avanzado.html">Git Avanzado</a> <br>
-    <a href="U3_diseñoInterfazUsuario.html">Unidad III: Diseño de Interfaz de Usuario</a> <br>
-    <a style="margin-left: 136px" href="U3_prototipado.html">Prototipado</a> <br>
-    <a href="U4_aplicacionesWeb.html">Unidad IV: Aplicaciones Webs</a> <br>
-    <a style="margin-left: 136px" href="U4_HTML.html">HTML5</a> <br>
-    <a style="margin-left: 136px" href="U4_CSS.html">CSS3</a> <br>
-    <a href="U5_orientacionEventos.html">Unidad V: Orientación a Eventos</a> <br>
-    <a style="margin-left: 136px" href="U5_Javascript.html">JavaScript</a> <br>
-    <a style="margin-left: 136px" href="U5_canvas.html">Canvas</a> <br>
-    <a style="margin-left: 136px" href="juegosHTML.md">Clase Especial: HTML + JS altamente interactivo</a><br>
-    <a style="margin-left: 136px" href="U6_aplicacionesMoviles.md">Unidad VI: Aplicaciones Móviles</a> <br>
-    <a style="margin-left: 136px" href="U7_pspice.md">Unidad VII: Simulación de Circuitos</a>
-    <br><br><br>
+<div class="grid-container">
+    <div class="grid-item">
+    </div>
+    <div class="grid-item">
+        <a href="00_Teorico.html"> Presentación de la Materia (teórico)</a> <br>
+        <a href="00_Practica.html"> Presentación de la Materia (práctico)</a> <br>
+    </div>
+    <div class="grid-item">
+        <img src="images/indice/eje1.png" />
+    </div>
+    <div class="grid-item">
+        Unidad I: <br>
+        <a href="U1_instalacionConfiguracionSO.html"> Instalación y Configuración de SO </a> <br>
+        <a href="U1_Linux.html" >Linux</a> <br>
+        <a href="U1_Drivers.html">Drivers</a> <br>
+    </div>
+    <div class="grid-item">
+        <img src="images/indice/eje2.png" />
+    </div>
+    <div class="grid-item">
+        Unidad II: <br>
+        <a href="U2_herramientas.html">Herramientas de Desarrollo</a> <br>
+        <a  href="U2_git.html">Git</a> <br>
+        <a  href="U2_git_avanzado.html">Git Avanzado</a> <br>
+    </div>
+    <div class="grid-item">
+        <img src="images/indice/eje3.png" />
+    </div>
+    <div class="grid-item">
+        Unidad III: <br>
+        <a href="U3_diseñoInterfazUsuario.html">Diseño de Interfaz de Usuario</a> <br>
+        <a href="U3_prototipado.html">Prototipado</a> <br>
+    </div>
+    <div class="grid-item">
+        <img src="images/indice/eje4.png" />
+    </div>
+    <div class="grid-item">
+        Unidad IV: <br>
+        <a href="U4_aplicacionesWeb.html">Aplicaciones Webs</a> <br>
+        <a href="U4_HTML.html">HTML5</a> <br>
+        <a href="U4_CSS.html">CSS3</a> <br>
+    </div>
+    <div class="grid-item">
+        <img src="images/indice/eje5.png" />
+    </div>
+    <div class="grid-item">
+        Unidad V: <br>
+        <a href="U5_orientacionEventos.html">Orientación a Eventos</a> <br>
+        <a href="U5_Javascript.html">JavaScript</a> <br>
+        <a href="U5_canvas.html">Canvas</a> <br>
+        <a href="juegosHTML.md">Clase Especial: HTML + JS altamente interactivo</a><br>
+    </div>
+    <div class="grid-item">
+        <img src="images/indice/eje6.png" />
+    </div>
+    <div class="grid-item">
+        Unidad VI: <br>
+        <a href="U6_aplicacionesMoviles.md">Aplicaciones Móviles</a> <br>
+    </div>
+    <div class="grid-item">
+        <img src="images/indice/eje7.png" />
+    </div>
+    <div class="grid-item">
+        Unidad VII: <br>
+        <a href="U7_pspice.md">Simulación de Circuitos</a>
+    </div>
+</div>
 
-<!--
-<h3>Ejemplos</h3>
-<a href="ejemplos/2Columnas/index.html">Texto en dos columnas.</a>
--->
-</p>
 </body>
 </html>
