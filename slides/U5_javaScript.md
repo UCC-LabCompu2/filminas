@@ -9,9 +9,17 @@ Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
 ---
+## Bibliografía:
+![Book](images/book.png)
+
+[Guía de JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide)
+
+---
 ## JavaScript
-Es un lenguaje de scripting multiplataforma y orientado a objetos.
+Es un lenguaje de scripting multiplataforma y orientado a eventos y objetos.
 Se usa principalmente del lado del cliente implementado como parte de un navegador web permitiendo mejoras en la interfaz de usuario y páginas web dinámicas.
+
+También hay versiones de JavaScript más avanzadas de lado del servidor, como [Node.js](https://nodejs.org/es/), que te permiten agregar más funcionalidad a un sitio web.
 
 ---
 ## Características
@@ -21,7 +29,7 @@ Se usa principalmente del lado del cliente implementado como parte de un navegad
 
 ---
 ## Incluir JavaScript
-* En el mismo documento, agregando &lt;script&gt;
+* En el mismo documento, agregando ```<script></script>```
 * En un archivo externo
 ````javascript
 <script type="text/javascript" src="/js/codigo.js"></script>
@@ -35,14 +43,21 @@ https://www.w3schools.com/jsref/dom_obj_event.asp
 ````
 ---
 ## Sintaxis
+<!-- .slide: style="font-size: 0.80em" -->
 Conjunto de reglas que deben seguirse al escribir el código:
 * No se tienen en cuenta los espacios en blanco y las nuevas líneas.
-* Se distinguen las mayúsculas y minúsculas.
+* Se distinguen las mayúsculas y minúsculas (case-sensitive).
 * No se define el tipo de las variables.
 * Se pueden incluir comentarios.
+* No es necesario un punto y coma después de una declaración si está escrita en su propia línea. Pero si se deseas más de una declaración en una línea, entonces debes separarlas con punto y coma.
 
 ---
 ## Variables
+Existen 3 tipos de declaraciones de variables:
+* **var** Declara una variable.
+* **let** Declara una variable local con ámbito de bloque.
+* **const** Declara un nombre de constante de solo lectura y ámbito de bloque. 
+
 ````javascript
 var num;
 var texto = "hola";
@@ -52,6 +67,14 @@ ambos = texto + ' ' + num; // ambos == "hola 5"
 
 var arr[5];
 ````
+
+---
+## Identificadores
+Los nombres de las variables deben cumplir ciertas reglas:
+* Debe comenzar con una letra, un guión bajo (_) o un signo de dólar ($). 
+* Los siguientes caracteres también pueden ser dígitos (0-9).
+* Distinción entre mayúsculas y minúsculas
+
 ---
 ## Funciones
 ````javascript
@@ -61,11 +84,28 @@ function miFuncionSuma(parametro1, parametro2){
    return res;
 }
 ````
+
+---
+## Funciones Predefinidas
+<!-- .slide: style="font-size: 0.80em" -->
+* [isNaN()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Number/isNaN) Verifica si la variable 'is not a number'.
+* [parseFloat()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/parseFloat) Convierte una cadena de texto a número de punto flotante.
+* [paseInt()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Number/parseInt) Convierte una cadena de texto en un entero.
+* [varNum.toFixed(X)](https://www.w3schools.com/jsref/jsref_tofixed.asp) Convierta un número en una cadena, redondeando el número para mantener **X** cantidad de decimales.
+
+Hay otros...
+eval(), uneval(), isFinite(), decodeURI(), encodeURI(), encodeURIComponent(), escape(), unescape()...
+
 ---
 ## Condicionales
+<!-- .slide: style="font-size: 0.80em" -->
 ````javascript
 if(saludo == "Whatsup!"){
    console.log("Whatsup!");
+}else if(saludo == "Como va?"){
+    console.log("Como va?");
+}else{
+    console.log("Hola mundo!");
 }
 ````
 * **==** iguales
@@ -125,6 +165,7 @@ setInterval(miFunc, 3000);
 
 ---
 ## [Buenas Prácticas](https://www.w3schools.com/js/js_best_practices.asp)
+<!-- .slide: style="font-size: 0.90em" -->
 * Evitar las variables globales
 * Declarar variables locales
 * Declarar variables primero
@@ -132,7 +173,7 @@ setInterval(miFunc, 3000);
 * No declarar variables como Number, String o Boolean
 * Conocer el tipo de variables
 * Terminar un Switch con default:
-* Evitar usar [eval()](https://www.etnassoft.com/2011/01/05/javascript-eval-uso-y-alternativas/)
+* Evitar usar [eval()](https://www.etnassoft.com/2011/01/05/javascript-eval-uso-y-alternativas/) (evalúa el código JavaScript representado como una cadena.)
 
 <!--http://www.williammalone.com/articles/create-html5-canvas-javascript-drawing-app/#demo-simple-->
 
@@ -263,6 +304,7 @@ function cambioUnidades(valor, unidad) {
 
 ---
 ## Documentar Código
+Podemos emplear [JsDoc](https://jsdoc.app/) para generar nuestra documentación... Solo debemos documentar de esta manera:
 ````javascript
    /**
    * Descripción
@@ -286,10 +328,12 @@ Documentar las funciones del “Conversor de Unidades” adecuadamente,  indican
 
 ---
 ## Get element By
+<!-- .slide: style="font-size: 0.90em" -->
 Es una forma sencilla de encontrar elementos HTML en el DOM.
 * document.getElementById('id_del_elemento');
 * document.getElementsByName('name_del_elemento');
 * document.getElementsByTagName('elemento')[índice_del_elemento]; 
+
 (Ej. document.getElementsByTagName('p')[3];)
 * document.getElementsByClassName("clase_del_elemento"); 
 * CSS Selector: document.querySelectorAll("p.intro"); 

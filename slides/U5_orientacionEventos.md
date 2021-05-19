@@ -55,12 +55,12 @@ Ej. Hacer click en un botón, mover el puntero sobre un enlace, seleccionar un e
 ---
 ## Eventos de Mouse
 <!-- .slide: style="font-size: 0.90em" -->
-* **Click**: Cuando el usuario hace clic con el mouse o el dedo en cualquier elemento HTML.
-* **Mouseover, Mouseout**:	El evento ocurre cuando el puntero se mueve hacia dentro (para el mouseover) o hacia afuera 
+* **mlick**: Cuando el usuario hace clic con el mouse o el dedo en cualquier elemento HTML.
+* **mouseover, mouseout**:	El evento ocurre cuando el puntero se mueve hacia dentro (para el mouseover) o hacia afuera 
 (para el mouseout) un elemento, o uno de sus hijos.
 * **contextmenu**: Cuando el usuario hace clic derecho en el mouse.
-* **Mousemove**: Si el usuario mueve el mouse.
-* **Mousedown, Mouseup**: Si el usuario presiona o suelta el mouse.
+* **mousemove**: Si el usuario mueve el mouse.
+* **mousedown, mouseup**: Si el usuario presiona o suelta el mouse.
 
 ---
 ## Eventos de Teclado
