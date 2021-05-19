@@ -9,6 +9,14 @@ Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
 ---
+## ECMAScript
+JavaScript está estandarizado por Ecma International, la asociación europea para estandarizar los sistemas de información 
+y comunicación.
+
+El último estándar es [ECMA-262](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/), 
+y también está aprobado por ISO (Organización Internacional de Normalización).
+
+---
 ## Jerarquía de Objetos en Js
 Podemos ver una página web como una colección de objetos. Por ejemplo, para JavaScript un formulario es un objeto, una imagen es un objeto, etc.
 
@@ -35,6 +43,20 @@ Todo documento HTML dispone de los siguientes objetos en la jerarquía de objeto
 * **history:** tiene propiedades relacionadas con URLs previamente visitadas.
 
 ---
+#### [Nombres dentro de laJerarquía de Objetos en Js](https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=858:jerarquia-de-objetos-javascript-forms-elements-images-navigator-useragent-geolocation-online-cu01170e&catid=78&Itemid=206)
+<!-- .slide: style="font-size: 0.85em" -->
+Reglas al nombrar los objetos:
+
+1. El nombre del objeto descendente incluye el nombre del objeto padre. 
+Ej. window.document
+
+2. Como todo desciende de window, podemos omitirlo:
+Ej. document.body en lugar de window.document.body
+
+3. Se organiza de forma automática ciertos objetos (forms, elements, images, links) en arrays. 
+Ej. En caso de varios formularios window.document.forms[0] ó document.forms[0]
+
+---
 #### Jerarquía de Objetos en Js: Ejemplos
 ````javascript
 windows.alert("Hola Mundo!!!");
@@ -42,6 +64,8 @@ windows.alert("Hola Mundo!!!");
 document.getElementById("num1").value;
 
 document.getElementsByName("miDiv")[0].style.display = 'none';
+
+window.document.forms[0].nombreUsuario.value;
 ````
 
 ---

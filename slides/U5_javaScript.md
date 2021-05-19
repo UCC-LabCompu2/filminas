@@ -84,6 +84,12 @@ function miFuncionSuma(parametro1, parametro2){
    return res;
 }
 ````
+Ó también se puede emplear [función flecha](https://www.etnassoft.com/2016/06/22/las-funciones-flecha-en-javascript-parte-1/) (tecnología experimental, no tan implementada por los navegadores)
+````javascript
+( param1, param2, ...rest ) => { expression; }
+Ejemplo:
+var add = ( x, y ) => x + y;
+````
 
 ---
 ## Funciones Predefinidas
@@ -117,6 +123,22 @@ if(saludo == "Whatsup!"){
 * **===** exactamente igual
 
 ---
+## Switch
+````javascript
+switch(nombre){
+   case "Juan":
+    console.log("Se llama Juan");
+    break;
+   case "Pedro":
+    console.log("Se llama Pedro");
+    break;
+   case "Pancracio":
+    console.log("Se llama Pancracio");
+    break;
+}
+````
+
+---
 ## Bucles
 ````javascript
 for(var i=0; i<20;i++){
@@ -132,19 +154,11 @@ while(i < 20){
 }
 ````
 
----
 ````javascript
-switch(nombre){
-   case "Juan":
-    console.log("Se llama Juan");
-    break;
-   case "Pedro":
-    console.log("Se llama Pedro");
-    break;
-   case "Pancracio":
-    console.log("Se llama Pancracio");
-    break;
-}
+var i = 0; 
+do { 
+    i += 1; console.log(i); 
+} while(i < 5);
 ````
 
 ---
