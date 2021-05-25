@@ -10,6 +10,20 @@ Created by <i class="fab fa-telegram"></i>
 
 ---
 ### Requisitos del Primer Parcial
+#### Sobre el Sketch
+- [ ] Tener en cuenta los mensajes de error para el usuario
+Tener en cuenta
+* ¿Qué opciones debe ofrecer al usuario?
+* ¿Qué campos hay para ingresar datos?
+* ¿Hay ejercicios de ejemplo?
+* ¿Hay una introducción teorica?
+* [Sistemas similares](images/interfazUsuario/tiroOblicuo.jpg)
+* ¿Qué acciones le permiten al usuario realizar?
+* Mensajes de Error
+* Conversión de unidades
+
+---
+### Requisitos del Primer Parcial
 #### Sobre el repositorio
 <!-- .slide: style="font-size: 0.60em" -->
 - [ ] El proyecto debe estar subido al repositorio adecuado "Proyecto2021-ApellidoAlumno1-ApellidoAlumno2"
@@ -27,13 +41,14 @@ Created by <i class="fab fa-telegram"></i>
 - [ ] Identar correctamente el código (en Webstorm Ctrl+Alt+L)
 - [ ] No debe haber errores presentes (realizar *Code* > *Inspect Code* para verificar que no haya errores)
 - [ ] Se debe emplear favicon (2022)
+- [ ] Emplear alguna fuente de google fonts (2022 aunque sea para un título)
 
 ---
 ### Requisitos del Primer Parcial
 #### Sobre el HTML
 <!-- .slide: style="font-size: 0.60em" -->
-- [ ] En el ```<head></head>``` incluir las etiquetas ```<meta>``` detallando: autor, descripcion y palabras clave
-- [ ] Emplear al menos 3 etiquetas semánticas
+- [ ] En el ```<head></head>``` incluir las etiquetas ```<meta>``` detallando: autor, descripción y palabras clave
+- [ ] Emplear al menos 3 etiquetas semánticas (header, nav, aside, section, article, footer)
 - [ ] Emplear ```<header></header>```. En el contenido de la cabecera debe haber un título ```<h1></h1>```, puede tener color de fondo, algún logotipo, etc.
 - [ ] Debe haber por lo menos una etiqueta ```<img>``` en la página.
 - [ ] La estructura de la página debe estar definida con ```<div></div>```
@@ -41,7 +56,7 @@ Created by <i class="fab fa-telegram"></i>
 - [ ] Debe contener un ```<canvas>```, para que posteriormente (en la 2da etapa) se grafique alguna imagen representativa del ejercicio. (el desarrollo del gráfico se realizará cuando se vea la unidad de “Orientación a Eventos”)
 - [ ] No espaciar con excesivos ```<br>```. Utilizar márgenes, paddings, etc.
 - [ ] No utilizar etiquetas deprecadas.
-- [ ] Todas las etiquetas deben estar correctamente cerradas
+- [ ] Todas las etiquetas que correspondan deben estar correctamente cerradas
 - [ ] Los ids de los elementos deben ser unívocos
 
 ---
@@ -49,6 +64,7 @@ Created by <i class="fab fa-telegram"></i>
 #### Sobre el CSS
 - [ ] El estilo de los elementos debe establecerse en un archivo CSS (prohibido poner el atributo style a los elementos o emplear estilos incrustados).
 - [ ] El CSS debe contar mínimo con un tipo de cada forma (por Tag, por ID y por clase).
+- [ ] No emplear ```!important``` (2022)
 
 ---
 ### Requisitos del Primer Parcial
