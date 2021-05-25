@@ -4,7 +4,7 @@ theme: black
 slideNumber: true
 ---
 
-# Canvas
+# Animación en Canvas
 Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
