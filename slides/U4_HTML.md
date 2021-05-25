@@ -344,10 +344,6 @@ Agrege comentarios a la página web de tablas.
 * Usar ficheros externos para CSS y JavaScript
 
 ---
-## Github Classroom: Proyecto Integrador
-[Primer Parcial](https://classroom.github.com/g/SGDqjO4W)
-
----
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
 

@@ -121,7 +121,7 @@ Objetivos:
 ---
 ## Ejercicio: Conversor de Unidades II
 Modificar las funciones para que el resultado de la conversión sólo posea 2 decimales.
-* Emplear **Math.Round** antes de asignar el resultado
+* Emplear **Math.Round** ó **miVar.toFix(2)** antes de asignar el resultado
 * Reemplace ',' por '.' para evitar errores
 
 ---
