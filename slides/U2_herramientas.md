@@ -190,6 +190,9 @@ x = -x;
 [más ejemplos](http://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered%3E)
 
 ---
+![Comenario de Gatito](images/herramientas/coment_code.jpg)
+
+---
 ![Autocomentario](images/herramientas/autocomentario.jpg)
 
 ---

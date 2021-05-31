@@ -328,6 +328,7 @@ Podemos emplear [JsDoc](https://jsdoc.app/) para generar nuestra documentación.
    * @return Valor que retorna
    */
 ````
+Y luego correr el comando `jsdoc misFunciones.js`
 
 ---
 ## Ejercicio: Documentación

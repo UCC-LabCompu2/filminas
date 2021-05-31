@@ -213,6 +213,49 @@ function convertGrados(radianes) {
 ````
 
 ---
+## [JS: LocalStorage](https://developer.mozilla.org/es/docs/Web/API/Web_Storage_API)
+<!-- .slide: style="font-size: 0.90em" -->
+La API de almacenamiento web permite almacenar información de tipo clave/valor.
+* **sessionStorage**: mantiene el almacenamiento mientras dure la sesión de la página (mientras el navegador esté abierto, 
+incluyendo recargas de página y restablecimientos).
+* **localStorage**: el almacenamiento persiste incluso cuando el navegador se cierre y se reabra.
+
+Al invocar uno de éstos, se creará una instancia del objeto Storage, a través del cual los datos pueden ser creados, recuperados y eliminados. 
+
+---
+## JS: LocalStorage
+<!-- .slide: style="font-size: 0.90em" -->
+* **Storage**: Permite crear, recuperar y eliminar datos de un dominio y tipo de almacenamiento (sesión o local) específicos.
+* **Window**: Las propiedades **Window.sessionStorage** y **Window.localStorage** proveen acceso a la sesión actual 
+del dominio y a objetos Storage locales. Ofrece un manejador de evento Window.onstorage que se dispara cuando un área 
+de la memoria cambia (por ejemplo, cuando se almacena un nuevo elemento).
+* **StorageEvent**: El evento se dispara en el objeto Window de un documento cuando un área de la memoria cambia. 
+
+---
+## JS: Ejemplo LocalStorage
+HTML
+````javascript
+<body onload="tomarDatos()">
+Esto es una prueba del local storage. <br>
+Ingrese su nombre <input type="text" id="NombreUsuarioInput" onchange="guardarNombre(this.value)">
+<p>Su nombre es <span id="aCompletar"></span></p>
+</body>
+````
+
+JavaScript
+````javascript
+function tomarDatos(){
+    var nombre=localStorage.getItem("NombreDelUsuario");
+    document.getElementById("NombreUsuarioInput").value=nombre;
+    document.getElementById("aCompletar").innerHTML=nombre;
+}
+
+function guardarNombre(nombreUsu) {
+    localStorage.setItem("NombreDelUsuario", nombreUsu);
+}
+````
+
+---
 ## Podemos Comenzar con el Segundo Parcial!
 <!-- .slide: style="font-size: 0.75em" -->
 Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada</p>
