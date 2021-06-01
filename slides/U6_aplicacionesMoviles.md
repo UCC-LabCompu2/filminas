@@ -4,7 +4,7 @@ theme: black
 slideNumber: true
 ---
 
-# Unidad 6: Diseño Responsive
+# Unidad 6: Aplicaciones Móviles
 Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
