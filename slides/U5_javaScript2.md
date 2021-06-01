@@ -256,6 +256,32 @@ function guardarNombre(nombreUsu) {
 ````
 
 ---
+## Métodos para Strings
+````javascript
+var nombreMateria = 'LabCompu2';
+nombreMateria.length;
+nombreMateria[0]; //Devuelve L, primera letra
+nombreMateria[nombreMateria.length-1]; //Devuelve 2, última letra
+nombreMateria.indexOf('Compu2'); //Encuentra una subcadena dentro de una cadena y la extrae, da como resultado 3
+nombreMateria.indexOf('pepe'); //Resultado -1, subcadena no encontrada
+nombreMateria.slice(0,3); //Esto devuelve Lab
+nombreMateria.slice(3); //Esto devuelve Compu2
+nombreMateria.toLowerCase(); //Conversión a minúsculas
+nombreMateria.toUpperCase(); //Conversión a Mayusculas
+nombreMateria.replace('Lab','Laboratorio');
+````
+
+---
+## Métodos para Strings
+````javascript
+var saludo1 = 'Hola';
+var saludo2 = 'Mundo!';
+var texto = saludo1 + saludo2;
+var nombreMat = "Laboratorio de Computacion 2";
+nombreMat.split('a'); //Se crea el siguiente array: ['L','bor','torio de Comput','cion 2'];
+````
+
+---
 ## Podemos Comenzar con el Segundo Parcial!
 <!-- .slide: style="font-size: 0.75em" -->
 Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada</p>

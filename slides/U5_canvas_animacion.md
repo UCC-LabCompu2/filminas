@@ -60,6 +60,16 @@ que mueva la imagen desde el borde izquierdo al derecho del canvas.
 ````javascript
 setTimeout(function(){ alert("Hello"); }, 3000);
 ````
+Otro ejemplo:
+````javascript
+function abrirWeb() {
+    window.open('Jugador.html','_self');
+}
+
+function esperar() {
+    setTimeout(abrirWeb, 6000);
+}
+````
 
 ---
 ## requestAnimationFrame(callback)
