@@ -37,7 +37,7 @@ Las Webs se acceden empleando internet y un navegador.
 Las APPs pueden verse sin internet y tienen acceso a ciertas características del hardware del teléfono.
 
 ---
-## [Ejemplos de Aplicaciones Móviles](https://www.infobae.com/america/tecno/2020/03/03/cuales-son-las-10-aplicaciones-mas-descargadas-del-mundo/)
+## [Ejemplos de Aplicaciones Móviles](https://www.trecebits.com/2021/04/06/las-apps-mas-descargadas-en-el-primer-trimestre-de-2021/)
 <!-- .slide: style="font-size: 0.80em" -->
 * Whatsap
 * Telegram
@@ -45,11 +45,17 @@ Las APPs pueden verse sin internet y tienen acceso a ciertas características de
 * Opera Mini
 * Clash of Clans
 
-![Apps Mas Descargadas](images/appWeb/appsDescargadas.jpg)
+![Apps Mas Descargadas](images/moviles/appsDescargadas2021.png)
 
 ---
 ## Categorías de Aplicaciones
-### Según el contenido:</h3>
+* por Contenido
+* por Costo
+* según forma de Desarrollo
+
+---
+## Categorías de Aplicaciones
+### Según el contenido:
 * Entretenimiento
 * Sociales
 * Utilitarias y Productividad
@@ -58,7 +64,7 @@ Las APPs pueden verse sin internet y tienen acceso a ciertas características de
 
 ---
 ## Categorías de Aplicaciones
-### Según el costo:</h3>
+### Según el costo:
 * Apps Gratuitas 
 <p class="fragment"> <small>(mayor llegada a los usuarios, disminuye expectativa del producto, suele incluir publicidad) </small></p>
 
@@ -71,6 +77,7 @@ Las APPs pueden verse sin internet y tienen acceso a ciertas características de
 
 ---
 ## Tipos de Aplicaciones
+Según forma de desarrollo:
 * Aplicaciones Nativas
 * Aplicaciones Web
 * Aplicaciones Hibridas
@@ -78,7 +85,7 @@ Las APPs pueden verse sin internet y tienen acceso a ciertas características de
 ---
 ## Características de App
 * Capacidad de comunicarse desde cualquier lugar
-* Interfaz de usuario para pantalla y teclado pequeno
+* Interfaz de usuario para pantalla y teclado pequeño
 * Movilidad del dispositivo
 * Disponibilidad de muchos sensores
 
@@ -92,7 +99,7 @@ Las APPs pueden verse sin internet y tienen acceso a ciertas características de
 * ~~Ubuntu Phone~~
 * ~~Firefox OS~~
 * ~~Tizen~~
-* Fucshia <small>(comming soon...)</small></br>
+* Fucshia <small>(mayo 2021)</small></br>
 
 ---
 ## Apps Android
@@ -192,11 +199,13 @@ Se ejecutan dentro del propio navegador web del dispositivo a través de una URL
 
 ---
 ## Web APP
+Facebook cuenta con una versión WebApp y una versión Nativa
+
 ![Web App Facebook](images/appWeb/webApp_facebook.png)
 
 ---
 ## Aplicación híbrida
-Es una combinación de las aplicaciones nativas y las webapss. Se desarrollan con lenguajes: HTML, Javascript y CSS por
+Es una combinación de las aplicaciones nativas y las webapps. Se desarrollan con lenguajes: HTML, Javascript y CSS por
 lo que permite su uso en diferentes plataformas y el acceso a gran parte de las características del hardware del 
 dispositivo. Es posible distribuirla en app store.
     
@@ -233,6 +242,8 @@ Una vez que la aplicación está terminada, se compila o empaqueta, y el resulta
 
 ---
 ## Aplicación híbrida
+Netflix tiene una aplicación híbrida que se ve prácticamente igual en iOS y en Android.
+
 ![App Hibrida Netflix](images/appWeb/appHibrida_netflix.png)
 
 ---
@@ -266,7 +277,7 @@ Genera un proyecto de Android Studio o CodeX.
 3. Instalar android para capacitor `npm install @capacitor/android`
 4. Agregar la plataforma `npx cap add android`
 5. Correr android `npx cap run android`
-6; En Android Studio crear un emulador
+6. En Android Studio crear un emulador
 
 ---
 ## [Apache Cordova](https://cordova.apache.org/)
