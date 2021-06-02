@@ -153,10 +153,11 @@ function dibujoArcT() {
 
 </script></section><section  data-markdown><script type="text/template">
 ## Borrar Canvas
-La forma más sensilla de borrar todo el contenido del canvas es:
 ````javascript
+//Para borrar TODO el contenido
 canvas.width=canvas.width;
-}
+//Para borrar un área rectangular
+ctx.clearRect(x, y, width, height);
 ````
 
 </script></section><section  data-markdown><script type="text/template">

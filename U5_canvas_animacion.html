@@ -31,10 +31,11 @@ Para ello deberemos emplear algunas de los siguientes métodos:
 
 </script></section><section  data-markdown><script type="text/template">
 ## Pasos básicos de animación
-<!-- .slide: style="font-size: 0.70em" -->
+<!-- .slide: style="font-size: 0.65em" -->
 Estos son los pasos que necesitas para dibujar un cuadro:
+
 **1. Limpiar el canvas** <br>
-A menos que las formas que vas a dibujar llenen el canvas completo (por ejemplo, una imagen de fondo), debes borrar cualquier forma que haya dibujado previamente. La forma más fácil de hacerlo es usar el método clearRect().
+A menos que las formas que vas a dibujar llenen el canvas completo (por ejemplo, una imagen de fondo), debes borrar cualquier forma que haya dibujado previamente.
 
 **2. Guardar el estado del canvas** <br>
 Si estás cambiando alguna configuración (como estilos, transformaciones, etc.) que afecte el estado del canvas y deseas asegurarte de que se utiliza el estado original cada vez que se dibuja una figura, debes guardar ese estado original. 
@@ -47,7 +48,7 @@ Si has guardado el estado, restáuralo antes de dibujar un nuevo cuadro.
 
 </script></section><section  data-markdown><script type="text/template">
 ## setInterval(function, delay)
-* Ejecuta una función especificada por function cada delay milisegundos.
+Ejecuta una función o un fragmento de código de forma repetitiva cada vez que termina el periodo de tiempo determinado. 
 
 ````javascript
 var procesoID = window.setInterval(función, intervaloDeTiempo[, parámetro1, parámetro2, ... , parámetroN]);
@@ -69,11 +70,16 @@ que mueva la imagen desde el borde izquierdo al derecho del canvas.
 * La función solo se ejecuta una vez.
 * Si se necesita repetir la ejecución, se usa el método **setInterval()**
 * El método **creatTimeOut()** evita que la función continue ejecutandose
+
+</script></section><section  data-markdown><script type="text/template">
+## [setTimeOut(function, delay)](https://www.w3schools.com/jsref/met_win_settimeout.asp) 
 ````javascript
 setTimeout(function(){ alert("Hello"); }, 3000);
 ````
 Otro ejemplo:
 ````javascript
+<body onload="esperar()">
+//En el código JS
 function abrirWeb() {
     window.open('Jugador.html','_self');
 }
@@ -84,7 +90,7 @@ function esperar() {
 ````
 
 </script></section><section  data-markdown><script type="text/template">
-## requestAnimationFrame(callback)
+## [requestAnimationFrame(callback)](https://developer.mozilla.org/es/docs/Web/API/Window/requestAnimationFrame)
 * Comunica al navegador que  deseas iniciar una animación y requieres que el navegador llame a las funciones especificas 
 para actualizar la misma antes de la siguiente escena.
 
@@ -95,15 +101,23 @@ window.webkitRequestAnimationFrame(callback[, element]); // Chrome/Webkit
 ````
 
 </script></section><section  data-markdown><script type="text/template">
+## [cancelAnimationFrame(callback)](https://developer.mozilla.org/es/docs/Web/API/Window/cancelAnimationFrame)
+* Cancela la petición de animación previamente programada a través de window.requestAnimationFrame().
+
+````javascript
+window.cancelAnimationFrame(requestID);
+````
+
+
+</script></section><section  data-markdown><script type="text/template">
 ## Podemos Continuar con el Segundo Parcial!
 <!-- .slide: style="font-size: 0.70em" -->
 Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada
-* Una función que compruebe si los valores ingresados son correctos, y si no lo son, que le indique al usuario por un alert, y que blanquee el contenido del campo.
-* Una función que calcule algo en base a los valores ingresados por el usuario en los inputs.
-* Una función que realice un dibujo sobre un canvas.
-* No debe haber errores en el javaScript.
-* El código debe estar pusheado en el repositorio (emplear gh-pages).
-* Las funciones javaScript deben estar comentadas adecuadamente.
+* Realiza un dibujo en el canvas
+* El dibujo debe ser representativo de los valores ingresados (ej. que un triángulo se vea más grande o más pequeño según lo que ingreso el usuario)
+* Realizar **animaciones** es un requisito del final, no del parcial! (así que tienes tiempo para ir pensando como realizarlo)
+* Ten en cuenta que el usuario quizás ingrese valores que no puedas graficar (que se salgan del ancho u alto del canvas). 
+En ese caso, puedes escalar los valores, o indicar con un alert que los valores están fuera del área de dibujo.
 
 </script></section><section  data-markdown><script type="text/template">
 ## ¿Dudas, Preguntas, Comentarios?
