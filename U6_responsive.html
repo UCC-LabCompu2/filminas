@@ -41,7 +41,14 @@ Se caracteriza porque los layouts (contenidos) e imágenes son fluidos y se usa 
 
 </script></section><section  data-markdown><script type="text/template">
 ## [Media Query](https://developer.mozilla.org/es/docs/CSS/Media_queries)
-Se considera un tipo de medio y al menos una consulta que limita las hojas de estilo utilizando características del medio como ancho, alto y color.
+Fue introducido en CSS3. Estas construcciones del lenguaje CSS permiten definir estilos condicionales, aplicables 
+únicamente en determinadas situaciones.
+
+<small>Por ejemplo:
+- Si la pantalla del usuario tiene estas características, entonces aplica estos estilos
+- Si se imprime el documento en la impresora, aplica estos estilos.
+- Si la pantalla del dispositivo tiene estas dimensiones y además está situado en posición horizontal (landscape), entonces aplica este CSS. 
+</small>
     
 ````css
 @media (max-width: 600px) {
@@ -53,6 +60,68 @@ Se considera un tipo de medio y al menos una consulta que limita las hojas de es
 @media (min-width: 700px) and (orientation: landscape) { ... }
 
 ````
+
+</script></section><section  data-markdown><script type="text/template">
+## [Media Query](https://desarrolloweb.com/articulos/css-media-queries.html)
+Formas de Aplicación:
+* Media Query por etiqueta LINK
+* Media Query mediante @media
+
+</script></section><section  data-markdown><script type="text/template">
+## Media Query por Etiqueta Link
+Se debe agregar un atributo media de la etiqueta *Link*, que permite enlazar el HTML con el CSS.
+````css
+<link rel="stylesheet" media="print" href="estilo-imprimir.css" >
+<link rel="stylesheet" media="(min-width:1200px)" href="estilo-pantallas-grandes.css">
+````
+<small>
+1. Estos estilos aplican solo cuando la página se está mostrando para la impresión. <br>
+2. Estos estilos aplican cuando la página tenga una anchura mínima de 1200px
+</small>
+
+</script></section><section  data-markdown><script type="text/template">
+### Media Query mediante @media
+Es el más empleado. En la definición de los estilos se emplea @media con la condición/es que deben cumplirse.
+````css
+@media (min-width: 500px) {
+    h1{
+        margin: 1%;
+    }
+    .estiloresponsive{
+        float: right;
+        padding-left: 15px; 
+    }
+}
+````
+Cuando la sentencia entre paréntesis se evalúe como verdadera, se aplicarán todos los estilos definidos ente llaves. 
+
+</script></section><section  data-markdown><script type="text/template">
+### Operadores lógicos para Media Query
+<!-- .slide: style="font-size: 0.80em" -->
+* **and:** las dos condiciones deben cumplirse para que se evalúe como verdadera.
+* **not**: es una negación de una condición. Cuando esa condición no se cumpla se aplicarán las media queries.
+* **only**: se aplican las reglas solo en el caso que se cunpla cierta circunstancia.
+* **or**: no existe como tal, pero puedes poner varias condiciones separadas por comas y cuando se cumpla cualquiera de 
+ellas, se aplicarán los estilos de las media queries. 
+````css
+//Ejemplo and
+@media (max-width: 600px) and (orientation: landscape) {
+    h1{
+        color: red;
+    }
+}
+````
+
+</script></section><section  data-markdown><script type="text/template">
+### [Media Types](https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries)
+Describen la categoría general de un dispositivo. 
+* **all:** Apto para todos los dispositivos.
+* **print:** Destinado a material impreso y visualización de documentos en una pantalla en el modo de vista previa de impresión. 
+* **screen:** Destinado principalmente a las pantallas.
+* **speech:** Destinado a sintetizadores de voz. 
+<small>
+Fueron deprecados los Medios: tty, tv, projection, handheld, braille, embossed y aural
+</small>
 
 </script></section><section  data-markdown><script type="text/template">
 ## HTML5: Viewport
@@ -87,13 +156,15 @@ La etiqueta viewport permite definir el ancho, alto y escala del área usada por
 Sino por defecto una web tiene siempre 980px de ancho.
 
 Se le puede configurar
-* **width:** Ancho que vamos a declarar
+* **width:** Ancho virtual (emulado) de la pantalla
+* **Height:** altura virtual de la pantalla
 * **initial-scale:** zoom que va tener como inicio (min 0.1)
+* **minimum-scale:** zoom mínima permitido
 * **maximum-scale:** zoom máximo permitido
-* **user-scalable:** control del zoom en la página para darle la opción al usuario de aumentar o disminuir el tamaño
+* **user-scalable:** si se permite o no al usuario hacer zoom.
 
 ````css
-<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
 ````
 
 </script></section><section  data-markdown><script type="text/template">
@@ -115,10 +186,8 @@ Empleando Ejercicios-CSS el template ej_instagram, el contenido debe visualizars
 * Permite compartir los contenidos de una forma más rápida y natural.
 
 </script></section><section  data-markdown><script type="text/template">
-### Tu página está correctamente optimizada para móviles?
-Deja quw google te ayude a averiguarlo...
-
-https://search.google.com/test/mobile-friendly?utm_source=mft&utm_medium=redirect&utm_campaign=mft-redirect
+## [Tu página está correctamente optimizada para móviles?](https://search.google.com/test/mobile-friendly?utm_source=mft&utm_medium=redirect&utm_campaign=mft-redirect)
+Deja que google te ayude a averiguarlo...
 
 </script></section><section  data-markdown><script type="text/template">
 ## Ejercicio: Diseño Responsivo

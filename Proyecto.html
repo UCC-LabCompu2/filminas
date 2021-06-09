@@ -85,6 +85,10 @@ Tener en cuenta
 - [ ] Debe haber por lo menos una etiqueta ```<img>``` en la página.
 - [ ] La estructura de la página debe estar definida con ```<div></div>```
 - [ ] Debe contener al menos 3 elementos de tipo ```<input>``` o ```<select>``` ó ```<button>``` que le permitan al usuario ingresar valores para poder realizar un cálculo de un ejercicio.
+
+</script></section><section  data-markdown><script type="text/template">
+### Requisitos del Primer Parcial
+#### Sobre el HTML (2)
 - [ ] Debe contener un ```<canvas>```, para que posteriormente (en la 2da etapa) se grafique alguna imagen representativa del ejercicio. (el desarrollo del gráfico se realizará cuando se vea la unidad de “Orientación a Eventos”)
 - [ ] No espaciar con excesivos ```<br>```. Utilizar márgenes, paddings, etc.
 - [ ] No utilizar etiquetas deprecadas.
@@ -148,13 +152,13 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada</p>
 </script></section><section  data-markdown><script type="text/template">
 ### Requisitos del Segundo Parcial
 #### Sobre la documentación
-- [ ] **TODAS** las funciones javaScript deben estar comentadas adecuadamente.
+- [ ] **TODAS** las funciones javaScript deben estar comentadas adecuadamente. [JsDoc](https://jsdoc.app/about-getting-started.html)
 ````javascript
    /**
-   * Descripción
+   * Descripción de que hace la función
    * @method Nombre de la función
-   * @param Parámetro A
-   * @param Parámetro B
+   * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
+   * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
    * @return Valor que retorna
    */
 ````
@@ -163,7 +167,19 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada</p>
 ### Requisitos del Segundo Parcial
 #### Sobre las Correcciones
 - [ ] Se corregirá el proyecto con el último commit realizado en Github hasta las 23:59 del día anterior a la fecha de entrega
-- [ ] Las notas serán de manera logarítmica: (Por ejemplo 60% 4; 70% 5,5; 80% 7; 90% 8,5)</script></section></div>
+- [ ] Las notas serán de manera logarítmica: (Por ejemplo 60% 4; 70% 5,5; 80% 7; 90% 8,5)
+
+</script></section><section  data-markdown><script type="text/template">
+### Requisitos del Final
+#### Sobre el proyecto general
+- [ ] Todas las correcciones y mejoras solicitadas durante el primer parcial deben estar corregidas.
+- [ ] No debe haber errores presentes en el código (realizar *Code* > *Inspect Code* para verificar que no haya errores)
+- [ ] No debe haber errores JavaScript presentes (F12 > Consola)
+- [ ] Debe cumplir con TODOS los requisitos del 1er y 2do Parcial (si se agrego código nuevo en Js, se debe documentar, si hay nuevos inputs de html deben contener su label, etc)
+
+</script></section><section  data-markdown><script type="text/template">
+### Requisitos del Final
+- [ ] El Canvas debe poseer animación con *setInterval()* o *requestAnimationFrame()*</script></section></div>
     </div>
 
     <script src="./dist/reveal.js"></script>
