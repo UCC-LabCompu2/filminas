@@ -312,6 +312,14 @@ Depende de ti! (pero en clase solo veremos linea de comandos)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eqEVgp98qcY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
+## Sobre Git
+Puedes versionar código, documentos de texto plano...
+
+Pero recuerda que GIT no está optimizado para subir VIDEOS o imágenes muy pesadas, o archivos binarios (como instaladores).
+
+Usa Git sabiamente pequeño padawan.
+
+---
 ## GitHub Classroom
 Plataforma que facilita el intercambio de código entre alumnos y docentes, manteniendolo versionado.
 

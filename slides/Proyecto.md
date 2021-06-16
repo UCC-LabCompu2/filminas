@@ -122,6 +122,11 @@ Tener en cuenta
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aChzT06VBok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
+
+# Proyecto
+### Requisitos del Segundo Parcial
+
+---
 ### Requisitos del Segundo Parcial
 #### Sobre el proyecto general
 - [ ] Todas las correcciones y mejoras solicitadas durante el primer parcial deben estar corregidas.
@@ -158,9 +163,15 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada</p>
 - [ ] Las notas serán de manera logarítmica: (Por ejemplo 60% 4; 70% 5,5; 80% 7; 90% 8,5)
 
 ---
+
+# Proyecto
+### Requisitos del FINAL
+
+---
 ### Requisitos del Final
 #### Sobre el proyecto general
-- [ ] Todas las correcciones y mejoras solicitadas durante el primer parcial deben estar corregidas.
+<!-- .slide: style="font-size: 0.80em" -->
+- [ ] Todas las correcciones y mejoras solicitadas durante el primer y segundo parcial deben estar corregidas.
 - [ ] No debe haber errores presentes en el código (realizar *Code* > *Inspect Code* para verificar que no haya errores)
 - [ ] No debe haber errores JavaScript presentes (F12 > Consola)
 - [ ] Debe cumplir con TODOS los requisitos del 1er y 2do Parcial (si se agrego código nuevo en Js, se debe documentar, si hay nuevos inputs de html deben contener su label, etc)
