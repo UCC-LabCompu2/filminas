@@ -62,7 +62,21 @@ table{
 }
 
 .ejercicio{
-    background: url('../images/code.png') no-repeat;
+    /*background: url('../images/code.png') no-repeat;*/
     vertical-align: middle;
     padding: 15px !important;
+    background-color: #303030;
+}
+
+.grid-container4 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-size: 0.8em;
+    text-align: left !important;
+}
+
+.grid-item {
+    border: 3px solid rgba(121, 177, 217, 0.8);
+    padding: 20px;
+    text-align: left !important;
 }

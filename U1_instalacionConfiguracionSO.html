@@ -22,25 +22,53 @@ Created by <i class="fab fa-telegram"></i>
 
 </script></section><section  data-markdown><script type="text/template">
 <!-- .slide: style="font-size: 0.60em" -->
-## Sistema Operativo
-* Definicion
+## Temario
+<div class="grid-container4">
+<div class="grid-item">
+
+### Sistema Operativo
+* Definición
 * Tareas
 * Ejemplos de SO
 * Criterios de Clasificación
+[Ejercicio: Criterios de SO](U1_instalacionConfiguracionSO.md#/6/1)
 * Recursos de Hardware
+* Hardware Mínimo y Recomendado
+[Ejercicio: Comparar SO](U1_instalacionConfiguracionSO.md#/9)
+</div>
+<div class="grid-item">
 
-## Máquinas Virtuales
+### Máquinas Virtuales
 * Definición 
 * Características
 * Ventajas
 * Aplicaciones
+[Ejercicio: MV Windows](U1_instalacionConfiguracionSO.md#/17)
+* Docker
+* MV vs Docker 
+</div>
+<div class="grid-item">
 
-## BIOS y UEFI
+### BIOS y UEFI
 * Definición
 * Función
 * Forma de funcionamiento
+[Ejercicio: Bios o UEFI](U1_instalacionConfiguracionSO.md#/33)
+</div>
+<div class="grid-item">
+
+### Formateo y Parcición
+* Formateo de Discos
+* Rufus
+* MBR vs GTP
+[Ejercicio: Rufus](U1_instalacionConfiguracionSO.md#/40)
+* Particionado de Discos
+* Pasos de Instalción de un SO
+</div>
+</div>
 
 </script></section><section  data-markdown><script type="text/template">
+
 ## Sistema Operativo
     
 Es un programa que administra el Hardware de una computadora. 
@@ -79,7 +107,7 @@ Para dispositivos móviles:
 * iOS
 * ~~Blackberry~~
 
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section ><section data-markdown><script type="text/template">
 ## Criterios para Definir SO
 * Tipo de Interfaz
   * Gráfica (GUI)
@@ -91,8 +119,8 @@ Para dispositivos móviles:
 * Tipo de Licencia
   * Propietario
   * Libre
-
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section data-markdown><script type="text/template">
+<!-- .slide: class="ejercicio" -->
 ## [Ejercicio: Criterios de SO](https://docs.google.com/document/d/1U8oEEb7HMQVZxbTH55FgOpdqoxX8QGPJchaX3eztLSQ/edit)
 En base a tus conocimientos previos, completa la siguiente tabla:
 <table>
@@ -214,7 +242,7 @@ En base a tus conocimientos previos, completa la siguiente tabla:
 </tr>
 </table>
 
-</script></section><section  data-markdown><script type="text/template">
+</script></section></section><section  data-markdown><script type="text/template">
 ## Recursos de Hardware
 <!-- .slide: style="font-size: 0.80em" -->
 Los SO requieren ciertos recursos de Hardware para funcionar:
@@ -299,12 +327,11 @@ En base a las siguientes diapositivas, completa la tabla:
 </table>
 Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section ><section data-markdown><script type="text/template">
 #### Advertencia: Algunas de las siguientes imágenes nos harán viajar en el tiempo... 
 <!--Descargar audio https://www.youtube.com/watch?v=tHr46P2r514-->
 ![Máquina del Tiempo](images/configSO/maquinaTiempo.jpeg)
-
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section data-markdown><script type="text/template">
 ## Requisitos mínimos de 
 ## Windows 3.11
 * Año: 1990
@@ -312,12 +339,10 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 * 3 MB de ram (se recomienda 4 MB)
 * Al menos 6.2 MB de espacio disponible en disco duro (se recomienda 14.5 MB)
 * Monotarea
-
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section data-markdown><script type="text/template">
 ## Windows 3.11
 ![Windows 3.11](images/configSO/Windows_3.11.png)
-
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section data-markdown><script type="text/template">
 ## Requisitos mínimos de
 ## Windows NT Server
 * Año: 1993
@@ -327,11 +352,13 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 * adaptador de pantalla de video con resolución VGA o superior
 * Multitarea
    
-</script></section><section  data-markdown><script type="text/template">
+</script></section></section><section  data-markdown><script type="text/template">-
+
 ## Windows NT
 ![Windows NT](images/configSO/Windows_NT.jpeg)
    
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section ><section data-markdown><script type="text/template">-
+
 ## Requisitos mínimos de
 ## Windows 95
 <!-- .slide: style="font-size: 0.90em" -->
@@ -342,16 +369,13 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 * 1 unidad de disco de alta densidad de 3,5 pulgadas
 * Resolución VGA o superior (se recomienda SVGA de 256 colores)
 * Multitarea
-
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section data-markdown><script type="text/template">
 ## Windows 95
 ![Windows 95](images/configSO/windows_95.jpeg)
-
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section data-markdown><script type="text/template">
 ## Windows 95
 https://www.tiktok.com/@shtunner/video/6953654804665093381?is_copy_url=0&is_from_webapp=v1&sender_device=pc&sender_web_id=6955970873513772550
-
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section data-markdown><script type="text/template">
 ## Requisitos mínimos de
 ## Windows 98
 <!-- .slide: style="font-size: 0.90em" -->
@@ -362,12 +386,10 @@ https://www.tiktok.com/@shtunner/video/6953654804665093381?is_copy_url=0&is_from
 * 1 unidad de disco de alta densidad de 3,5 pulgadas
 * Resolución VGA o superior (se recomienda SVGA de 256 colores)
 * Internet (MSN, Mensajeria): Modem 14,4 bits por segundo (bps),recomendado 28,8 bits o más rapido
-
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section data-markdown><script type="text/template">
 ## Windows 98
 ![Windows 98](images/configSO/Windows_98.png)
-
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section data-markdown><script type="text/template">
 ## Requisitos mínimos de
 ## Windows XP
 * Año: 2001
@@ -376,12 +398,10 @@ https://www.tiktok.com/@shtunner/video/6953654804665093381?is_copy_url=0&is_from
 * Mínimo 1,5 GB de espacio disponible en disco duro
 * Tarjeta gráfica y monitor de resolución Súper VGA (800x600) o superior
 ![Windows XP](images/configSO/winXP.png)
-
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section data-markdown><script type="text/template">
 ## Windows XP
 ![Windows XP](images/configSO/Windows_XP.png)
-
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section data-markdown><script type="text/template">
 ## Requisitos mínimos de
 ## Windows 7
 * Año: 2007
@@ -390,12 +410,10 @@ https://www.tiktok.com/@shtunner/video/6953654804665093381?is_copy_url=0&is_from
 * 16GB de espacio disponible en disco duro para 32bits, o 20GB para 64bits
 * Dispositivo gráfico DirectX9.
 ![Windows 7](images/configSO/win7.png)
-
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section data-markdown><script type="text/template">
 ## Windows 7
 ![Windows 7](images/configSO/Windows_7.webp)
-
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section data-markdown><script type="text/template">
 ## Requisitos mínimos de
 ## Windows 10
 * Año: 2015
@@ -405,12 +423,11 @@ https://www.tiktok.com/@shtunner/video/6953654804665093381?is_copy_url=0&is_from
 * Dispositivo gráfico DirectX9.
 ![Windows 10](images/configSO/windows10-logo.png)
 <!---https://www.xataka.com/especiales/maquinas-virtuales-que-son-como-funcionan-y-como-utilizarlas-->
-
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section data-markdown><script type="text/template">
 ## Windows 10
 ![Windows 10](images/configSO/Windows_10.jpeg)
 
-</script></section><section  data-markdown><script type="text/template">
+</script></section></section><section  data-markdown><script type="text/template">
 ## Máquina Virtual
 Es un software que simula a un computadora y puede ejecutar programas.
 Se puede configurar para que los procesos que ejecutan están limitados por los recursos proporcionados.
@@ -624,6 +641,12 @@ Equipo > Administrar > Almacenamiento > Administración de Discos
 </script></section><section  data-markdown><script type="text/template">
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
+
+</script></section><section  data-markdown><script type="text/template">
+## Preguntas Frecuentes
+* En el exámen habrá preguntas del tipo: "Qué microprocesador tenia Win95"?
+
+Toda la informacón relativa a las características puntuales de cada SO: año, procesaor, ram, disco duro, video NO son preguntas de examen.
 </script></section></div>
     </div>
 
