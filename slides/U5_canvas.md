@@ -149,6 +149,16 @@ ctx.clearRect(x, y, width, height);
 ````
 
 ---
+## Escribir texto en canvas Canvas
+````javascript
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.font="10pt Verdana";
+ctx.fillStyle = "blue";
+ctx.fillText( "Hola Mundo!!!", canvas.width/2, canvas.height/2);
+````
+
+---
 ## Podemos Continuar con el Segundo Parcial!
 <!-- .slide: style="font-size: 0.70em" -->
 Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada

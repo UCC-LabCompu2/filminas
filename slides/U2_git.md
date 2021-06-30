@@ -9,6 +9,53 @@ Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
 ---
+<!-- .slide: style="font-size: 0.60em" -->
+## Temario
+<div class="grid-container4">
+<div class="grid-item">
+
+### GIT
+* Definición
+
+[Ejercicio: Instalar Git](U2_git.md#/3)
+* Configuración
+
+[Ejercicio: Configurar Usuario](U2_git.md#/7)
+* Servidores
+
+[Ejercicio: Crear Cuenta Github](U2_git.md#/11)
+* Estados 
+* Comandos
+</div>
+<div class="grid-item">
+
+### Comandos
+* init 
+* clone
+* status
+* add
+* commit
+* push
+* pull
+* log
+* diff
+
+[Ejercicio: Github Básico](U2_git.md#/26)
+* Software VCS
+
+[Ejercicio: Github Básico II](U2_git.md#/38)
+* Sobre git
+</div>
+<div class="grid-item">
+
+### Classroom
+* Qué es?
+
+[Ejercicio: Github Classroom](U2_git.md#/42)
+* Cursos de git
+</div>
+
+---
 ## Git
 * Sistema distribuido de control de versiones
 * Libre
@@ -278,15 +325,18 @@ Depende de ti! (pero en clase solo veremos linea de comandos)
 * SourceTree (BitBucket)
 * GitKraken
 
----
+----
+
 ## GitKraken
 ![Git Kraken](images/herramientas/git_kraken.png)
 
----
+----
+
 ## SourceTree
 ![Git SourceTree](images/herramientas/git_sourceTree.png)
 
----
+----
+
 ## Git Tortoise
 ![Git Tortoise](images/herramientas/git_tortoise.png)
 

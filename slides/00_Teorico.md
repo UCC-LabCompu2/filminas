@@ -80,16 +80,13 @@ La Materia
 | 14 |   | 2do PARCIAL |
 
 ---
-## Forma de Evaluación
-
-Parciales:
-
-*   Entrega a tiempo del proyecto
-*   Cumplir con los requisitos (1er/2do parcial)
-*   7 parcialistos teóricos = 1 nota
+## Forma de Evaluación: Cursado
+* Proyecto Web: Primera Etapa (HTML+CSS)
+* Proyecto Web: Segunda Etapa (JavaScript)
+* Nota del promedio de 7 parcilitos teóricos multiple opción
 
 ---
-## Forma de Evaluación
+## Forma de Evaluación: FINAL
 FINAL:
 
 *    Entrega a tiempo del proyecto
@@ -99,10 +96,18 @@ FINAL:
 *    Promocion de la parte Teórica <br> <span style="font-size: 0.5em">Promedio >= 8 y nota mínima 7</span>
 
 ---
-##  Forma de Evaluación
-En %
+## Regularidad
+* Asistencia del 70% en Clases Teórico-Prácticas (en el repositorio **ejercicio2022-Apellido** tener realizados los ejercicio de clase)
+* Proyecto primera y segunda etapa aprobados (nota mínima de 4)
+* Promedio de los 7 parcialitos >= 4
 
-*    45% Evaluación del Trabajo
-*    30% Preguntas Teóricas
-*    20% Trabajo en clases
-*    5% Extras 
+---
+## Promoción
+* Asistencia del 70% en Clases Teórico-Prácticas
+* Promedio >= 8 y nota mínima 7 (3 notas: proyecto primera etapa, segunda etapa y promedio de parcialitos)
+
+---
+## Notas
+![Notas](images/presentacion/notasFacultad.png)
+
+<small>Tener en cuenta que un 60%=4, 70%=5.5, 80%=7, 90%=8.5</small>

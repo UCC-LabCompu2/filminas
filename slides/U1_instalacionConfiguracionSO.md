@@ -10,25 +10,53 @@ Created by <i class="fab fa-telegram"></i>
 
 ---
 <!-- .slide: style="font-size: 0.60em" -->
-## Sistema Operativo
-* Definicion
+## Temario
+<div class="grid-container4">
+<div class="grid-item">
+
+### Sistema Operativo
+* Definición
 * Tareas
 * Ejemplos de SO
 * Criterios de Clasificación
+[Ejercicio: Criterios de SO](U1_instalacionConfiguracionSO.md#/6/1)
 * Recursos de Hardware
+* Hardware Mínimo y Recomendado
+[Ejercicio: Comparar SO](U1_instalacionConfiguracionSO.md#/9)
+</div>
+<div class="grid-item">
 
-## Máquinas Virtuales
+### Máquinas Virtuales
 * Definición 
 * Características
 * Ventajas
 * Aplicaciones
+[Ejercicio: MV Windows](U1_instalacionConfiguracionSO.md#/17)
+* Docker
+* MV vs Docker 
+</div>
+<div class="grid-item">
 
-## BIOS y UEFI
+### BIOS y UEFI
 * Definición
 * Función
 * Forma de funcionamiento
+[Ejercicio: Bios o UEFI](U1_instalacionConfiguracionSO.md#/33)
+</div>
+<div class="grid-item">
+
+### Formateo y Parcición
+* Formateo de Discos
+* Rufus
+* MBR vs GTP
+[Ejercicio: Rufus](U1_instalacionConfiguracionSO.md#/40)
+* Particionado de Discos
+* Pasos de Instalción de un SO
+</div>
+</div>
 
 ---
+
 ## Sistema Operativo
     
 Es un programa que administra el Hardware de una computadora. 
@@ -80,7 +108,9 @@ Para dispositivos móviles:
   * Propietario
   * Libre
 
----
+----
+
+<!-- .slide: class="ejercicio" -->
 ## [Ejercicio: Criterios de SO](https://docs.google.com/document/d/1U8oEEb7HMQVZxbTH55FgOpdqoxX8QGPJchaX3eztLSQ/edit)
 En base a tus conocimientos previos, completa la siguiente tabla:
 <table>
@@ -292,7 +322,8 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 <!--Descargar audio https://www.youtube.com/watch?v=tHr46P2r514-->
 ![Máquina del Tiempo](images/configSO/maquinaTiempo.jpeg)
 
----
+----
+
 ## Requisitos mínimos de 
 ## Windows 3.11
 * Año: 1990
@@ -301,11 +332,13 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 * Al menos 6.2 MB de espacio disponible en disco duro (se recomienda 14.5 MB)
 * Monotarea
 
----
+----
+
 ## Windows 3.11
 ![Windows 3.11](images/configSO/Windows_3.11.png)
 
----
+----
+
 ## Requisitos mínimos de
 ## Windows NT Server
 * Año: 1993
@@ -315,11 +348,13 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 * adaptador de pantalla de video con resolución VGA o superior
 * Multitarea
    
----
+----
+
 ## Windows NT
 ![Windows NT](images/configSO/Windows_NT.jpeg)
    
----
+----
+
 ## Requisitos mínimos de
 ## Windows 95
 <!-- .slide: style="font-size: 0.90em" -->
@@ -331,15 +366,18 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 * Resolución VGA o superior (se recomienda SVGA de 256 colores)
 * Multitarea
 
----
+----
+
 ## Windows 95
 ![Windows 95](images/configSO/windows_95.jpeg)
 
----
+----
+
 ## Windows 95
 https://www.tiktok.com/@shtunner/video/6953654804665093381?is_copy_url=0&is_from_webapp=v1&sender_device=pc&sender_web_id=6955970873513772550
 
----
+----
+
 ## Requisitos mínimos de
 ## Windows 98
 <!-- .slide: style="font-size: 0.90em" -->
@@ -351,11 +389,13 @@ https://www.tiktok.com/@shtunner/video/6953654804665093381?is_copy_url=0&is_from
 * Resolución VGA o superior (se recomienda SVGA de 256 colores)
 * Internet (MSN, Mensajeria): Modem 14,4 bits por segundo (bps),recomendado 28,8 bits o más rapido
 
----
+----
+
 ## Windows 98
 ![Windows 98](images/configSO/Windows_98.png)
 
----
+----
+
 ## Requisitos mínimos de
 ## Windows XP
 * Año: 2001
@@ -365,11 +405,13 @@ https://www.tiktok.com/@shtunner/video/6953654804665093381?is_copy_url=0&is_from
 * Tarjeta gráfica y monitor de resolución Súper VGA (800x600) o superior
 ![Windows XP](images/configSO/winXP.png)
 
----
+----
+
 ## Windows XP
 ![Windows XP](images/configSO/Windows_XP.png)
 
----
+----
+
 ## Requisitos mínimos de
 ## Windows 7
 * Año: 2007
@@ -379,11 +421,13 @@ https://www.tiktok.com/@shtunner/video/6953654804665093381?is_copy_url=0&is_from
 * Dispositivo gráfico DirectX9.
 ![Windows 7](images/configSO/win7.png)
 
----
+----
+
 ## Windows 7
 ![Windows 7](images/configSO/Windows_7.webp)
 
----
+----
+
 ## Requisitos mínimos de
 ## Windows 10
 * Año: 2015
@@ -394,7 +438,8 @@ https://www.tiktok.com/@shtunner/video/6953654804665093381?is_copy_url=0&is_from
 ![Windows 10](images/configSO/windows10-logo.png)
 <!---https://www.xataka.com/especiales/maquinas-virtuales-que-son-como-funcionan-y-como-utilizarlas-->
 
----
+----
+
 ## Windows 10
 ![Windows 10](images/configSO/Windows_10.jpeg)
 
@@ -612,3 +657,9 @@ Equipo > Administrar > Almacenamiento > Administración de Discos
 ---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
+
+---
+## Preguntas Frecuentes
+* En el exámen habrá preguntas del tipo: "Qué microprocesador tenia Win95"?
+
+Toda la informacón relativa a las características puntuales de cada SO: año, procesaor, ram, disco duro, video NO son preguntas de examen.

@@ -9,6 +9,21 @@ Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
 ---
+<!-- .slide: style="font-size: 0.60em" -->
+## Temario
+<div class="grid-item">
+
+### Linux
+* Definición
+* Ventajas
+* Distribuciones
+* Cronología de Distribuciones
+* Requisitos mínimos
+
+[Ejercicio: SO Linux](U1_Linux.md#/18)
+</div>
+
+---
 ## ¿Qué es Linux?
 **Linux** es un kernel de SO.
 
