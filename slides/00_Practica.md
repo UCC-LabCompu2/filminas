@@ -4,7 +4,7 @@ theme: black
 slideNumber: true
 ---
 
-# Lab Compu II (Practica)
+# Lab Compu II (Práctica)
 Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
@@ -14,7 +14,6 @@ Created by <i class="fab fa-telegram"></i>
 Relizar un ejercicio de **Física I** ó **Física II**
 
 <span style="font-size: 0.4em">(o alguna idea propia que cumpla con los requisitos)</span>
-
 
 * User Interface (HTML5 y CSS3)
 * Funcionalidad (Javascript, canvas, etc)
@@ -29,15 +28,11 @@ Relizar un ejercicio de **Física I** ó **Física II**
 
 ---
 ## Aula Virtual
-[http://campusvirtual.ucc.edu.ar
-    ![campus](images/presentacion/CampusVirtual.png)
-](http://campusvirtual.ucc.edu.ar/course/view.php?id=1103)
+[http://campusvirtual.ucc.edu.ar![campus](images/presentacion/CampusVirtual.png)](http://campusvirtual.ucc.edu.ar/course/view.php?id=1103)
 
 ---
 ## Organización en Github
 
-[github.com/UCC-LabCompu2
-    ![campus](images/presentacion/github.png)
-](github.com/UCC-LabCompu2)
+[github.com/UCC-LabCompu2![campus](images/presentacion/github.png)](github.com/UCC-LabCompu2)
 
 

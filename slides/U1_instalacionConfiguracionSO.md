@@ -318,6 +318,7 @@ En base a las siguientes diapositivas, completa la tabla:
 Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 
 ---
+
 #### Advertencia: Algunas de las siguientes imágenes nos harán viajar en el tiempo... 
 <!--Descargar audio https://www.youtube.com/watch?v=tHr46P2r514-->
 ![Máquina del Tiempo](images/configSO/maquinaTiempo.jpeg)
@@ -344,7 +345,7 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 * Año: 1993
 * Procesador de 32 bits basado en intel x86: 80486 a 33 Mhz o superior
 * 16 MB de memoria ram
-* Al menos 125 MB de espacio disponible en disco duro
+* 125 MB de espacio disponible en disco duro
 * adaptador de pantalla de video con resolución VGA o superior
 * Multitarea
    
@@ -352,7 +353,8 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 
 ## Windows NT
 ![Windows NT](images/configSO/Windows_NT.jpeg)
-   
+
+
 ----
 
 ## Requisitos mínimos de

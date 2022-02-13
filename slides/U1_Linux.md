@@ -126,16 +126,6 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 * Tarjeta gráfica compatible con VGA
 
 ---
-## Requisitos mínimos de
-## Mac OS X Lion
-* Año: 2011
-* Procesador Intel de 64 Bits (itel Core 2 Duo, i3, i5, i7 o Xeon)
-* 2 GB de RAM
-* 7 GB de espacio disponible en disco duro
-* Tarjeta gráfica que soporte resolución 800x600
-
-
----
 ## Ejercicio: SO Linux
 **Instale** alguna distribución de Linux, como Ubuntu, en una computadora o máquina virtual.
 

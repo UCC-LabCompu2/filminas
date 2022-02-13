@@ -83,7 +83,7 @@ La Materia
 ## Forma de Evaluación: Cursado
 * Proyecto Web: Primera Etapa (HTML+CSS)
 * Proyecto Web: Segunda Etapa (JavaScript)
-* Nota del promedio de 7 parcilitos teóricos multiple opción
+* Nota del promedio de 7 parcialitos teóricos multiple opción
 
 ---
 ## Forma de Evaluación: FINAL

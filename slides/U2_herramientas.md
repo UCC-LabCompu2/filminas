@@ -21,6 +21,7 @@ Una aplicacion o programa puede contar con multiples herramientas que se encargu
 * Bug Tracker
 * Pruebas de desempeño, carga, stress
 * Documentación
+* Sistema de Integración Continuo
 
 ![Herramientas](images/herramientas/herramientas.png)
 
