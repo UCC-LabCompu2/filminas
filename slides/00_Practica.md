@@ -11,7 +11,7 @@ Created by <i class="fab fa-telegram"></i>
 ---
 ## ¿PROYECTO?
     
-Relizar un ejercicio de **Física I** ó **Física II**
+Relizar un ejercicio de **Física I** ó **Física II** ó **Matemática**
 
 <span style="font-size: 0.4em">(o alguna idea propia que cumpla con los requisitos)</span>
 

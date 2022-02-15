@@ -16,9 +16,11 @@ Created by <i class="fab fa-telegram"></i>
 ### Driver
 * Definición
 * Tipos de Drivers
+* Desarrolladores de Drivers
 * Actualización
 * Descarga
-* Requisitos mínimos
+* Windows: Administrador de dispositivos
+* Linux: Hardware Map
 </div>
 
 ---

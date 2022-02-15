@@ -15,6 +15,24 @@ Created by <i class="fab fa-steam"></i>
 Universidad de Castilla
 
 ---
+<!-- .slide: style="font-size: 0.60em" -->
+## Temario
+<div class="grid-item">
+
+### Juegos
+* Definición
+* Equipo de desarrollo
+* Ciclo de vida
+* Tipos de juegos
+* Motores
+* Librerias
+* Plataformas
+[Pong](juegosHTML.md#/17)
+* MelonJS
+
+</div>
+
+---
 ## ¿Qué es un videojuego?
 Un VJ es una aplicación gráfica en tiempo real en la que existe una interacción explícita entre el usuario y el videojuego.
 
