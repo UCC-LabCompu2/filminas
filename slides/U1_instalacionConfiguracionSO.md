@@ -9,6 +9,20 @@ Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
 ---
+<style>
+.grid-container4 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-size: 0.8em;
+    text-align: left !important;
+}
+
+.grid-item {
+    border: 3px solid rgba(121, 177, 217, 0.8);
+    padding: 20px;
+    text-align: left !important;
+}
+</style>
 <!-- .slide: style="font-size: 0.60em" -->
 ## Temario
 <div class="grid-container4">
@@ -19,10 +33,10 @@ Created by <i class="fab fa-telegram"></i>
 * Tareas
 * Ejemplos de SO
 * Criterios de Clasificación
-[Ejercicio: Criterios de SO](U1_instalacionConfiguracionSO.md#/6/1)
+[Ejercicio: Criterios de SO](U1_instalacionConfiguracionSO.html#/6/1)
 * Recursos de Hardware
 * Hardware Mínimo y Recomendado
-[Ejercicio: Comparar SO](U1_instalacionConfiguracionSO.md#/9)
+[Ejercicio: Comparar SO](U1_instalacionConfiguracionSO.html#/9)
 </div>
 <div class="grid-item">
 
@@ -31,7 +45,7 @@ Created by <i class="fab fa-telegram"></i>
 * Características
 * Ventajas
 * Aplicaciones
-[Ejercicio: MV Windows](U1_instalacionConfiguracionSO.md#/17)
+[Ejercicio: MV Windows](U1_instalacionConfiguracionSO.html#/17)
 * Docker
 * MV vs Docker 
 </div>
@@ -41,7 +55,7 @@ Created by <i class="fab fa-telegram"></i>
 * Definición
 * Función
 * Forma de funcionamiento
-[Ejercicio: Bios o UEFI](U1_instalacionConfiguracionSO.md#/33)
+[Ejercicio: Bios o UEFI](U1_instalacionConfiguracionSO.html#/33)
 </div>
 <div class="grid-item">
 
@@ -49,7 +63,7 @@ Created by <i class="fab fa-telegram"></i>
 * Formateo de Discos
 * Rufus
 * MBR vs GTP
-[Ejercicio: Rufus](U1_instalacionConfiguracionSO.md#/40)
+[Ejercicio: Rufus](U1_instalacionConfiguracionSO.html#/40)
 * Particionado de Discos
 * Pasos de Instalción de un SO
 </div>
