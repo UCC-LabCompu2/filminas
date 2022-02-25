@@ -33,7 +33,10 @@ La Materia
 ---
 ## Profesores
 #### Ing. Agustina Edmé Aliciardi
-0919281@ucc.edu.ar
+agustina.aliciardi@ucc.edu.ar
+
+#### Ing. Daniel Germena
+1230332@ucc.edu.ar
 
 #### Ing. María Eugenia Castagnola
 1001147@ucc.edu.ar
@@ -52,8 +55,6 @@ La Materia
 **Unidad 5:** Conceptos de orientación a eventos
 
 **Unidad 6:** Aplicaciones móviles
-
-**Unidad 7:** Simulación de circuitos
 
 ---
 ## Calendario

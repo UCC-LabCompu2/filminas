@@ -9,6 +9,48 @@ Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
 ---
+
+<style>
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 0.8em;
+    text-align: left !important;
+}
+
+.grid-item {
+    border: 3px solid rgba(121, 177, 217, 0.8);
+    padding: 20px;
+    text-align: left !important;
+}
+</style>
+<!-- .slide: style="font-size: 0.80em" -->
+## Temario
+<div class="grid-container2">
+<div class="grid-item">
+
+### Versiones de HTML
+* HTML 1
+* HTML 2
+* HTML 3
+* HTML 3.2
+* HTML 4
+* HTML 5
+* HTML 6 ???
+
+
+</div>
+<div class="grid-item">
+
+### Versiones de CSS
+* CSS
+* CSS 2
+* CSS 3
+
+</div>
+</div>
+
+---
 ## Versiones de HTML
 * HTML 1
 * HTML 2

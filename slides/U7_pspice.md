@@ -9,6 +9,31 @@ Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
 ---
+<style>
+.grid-item {
+    border: 3px solid rgba(121, 177, 217, 0.8);
+    padding: 20px;
+    text-align: left !important;
+}
+</style>
+<!-- .slide: style="font-size: 0.80em" -->
+## Temario
+<div class="grid-container2">
+<div class="grid-item">
+
+### Simulación de Circuitos
+* Definición
+* Ejemplos de simuladores
+* Simuladores Online
+* Spice
+* Schematic o capture
+* Layout
+* Express/capture
+* Otras librerías
+* Ejemplo
+</div>
+
+---
 ## Simulación de Circuitos
 Permiten realizar los diseños y mostrar el funcionamiento de los circuitos de forma virtual antes de su montaje con componentes reales.
 

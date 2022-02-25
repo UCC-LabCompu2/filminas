@@ -9,6 +9,64 @@ Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
 ---
+<style>
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 0.8em;
+    text-align: left !important;
+}
+
+.grid-item {
+    border: 3px solid rgba(121, 177, 217, 0.8);
+    padding: 20px;
+    text-align: left !important;
+}
+</style>
+<!-- .slide: style="font-size: 0.80em" -->
+## Temario
+<div class="grid-container2">
+<div class="grid-item">
+
+### JavaScript
+* Definición
+* Características
+* Incluir Js
+* Sintaxis
+* Variables
+* Identificadores
+* Funciones
+* Funciones predefinidas
+* Condicionales
+* Switch
+* Bucles
+* Funciones Callback
+* Buenas Prácticas
+
+</div>
+<div class="grid-item">
+
+* Eventos y Objetos
+* Eventos de formularios
+
+[Ejercicio: Hola Mundo!](U5_javaScript.html#/19)
+
+[Ejercicio: Conversor de Unidades](U5_javaScript.html#/21)
+
+* Documentar
+
+[Ejercicio: Documentación](U5_javaScript.html#/28)
+
+* getElementBy
+* Obtener valores
+* Objeto Math
+
+[Ejercicio: Grados a Radianes](U5_javaScript.html#/36)
+
+</div>
+</div>
+
+---
 ## Bibliografía:
 ![Book](images/book.png)
 
@@ -84,7 +142,7 @@ function miFuncionSuma(parametro1, parametro2){
    return res;
 }
 ````
-Ó también se puede emplear [función flecha](https://www.etnassoft.com/2016/06/22/las-funciones-flecha-en-javascript-parte-1/) (tecnología experimental, no tan implementada por los navegadores)
+Ó también se puede emplear [función flecha](https://www.etnassoft.com/2016/06/22/las-funciones-flecha-en-javascript-parte-1/)
 ````javascript
 ( param1, param2, ...rest ) => { expression; }
 Ejemplo:
@@ -309,7 +367,7 @@ function cambioUnidades(valor, unidad) {
 ````
 
 ---
-## Por QUE Documentar Código
+## Porque Documentar Código
 * Ayuda a entender nuestro código
 * Ayuda a los demás
 * Te ayuda a corregir errores fácilmente

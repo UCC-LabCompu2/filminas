@@ -9,6 +9,46 @@ Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
 ---
+<style>
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 0.8em;
+    text-align: left !important;
+}
+
+.grid-item {
+    border: 3px solid rgba(121, 177, 217, 0.8);
+    padding: 20px;
+    text-align: left !important;
+}
+</style>
+<!-- .slide: style="font-size: 0.80em" -->
+## Temario
+<div class="grid-container2">
+<div class="grid-item">
+
+### Aplicaicones móviles
+* Definición
+* Diferencia entre App y web
+* Ejemplos
+* Categorías
+* Características
+* SO para móviles
+
+</div>
+<div class="grid-item">
+
+### Formas de desarrollo
+* Nativas
+* Web
+* Hibridas
+* Ventajas y Desventajas
+
+</div>
+</div>
+
+---
 ## Libros:
 ![Book](images/book.png)
 [“Diseñando APPS para móviles” Javier Cuello y José Vittone](http://appdesignbook.com/es/contenidos/tipos-de-apps/)

@@ -9,6 +9,52 @@ Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
 ---
+<style>
+.grid-container3 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: 0.8em;
+    text-align: left !important;
+}
+
+.grid-item {
+    border: 3px solid rgba(121, 177, 217, 0.8);
+    padding: 20px;
+    text-align: left !important;
+}
+</style>
+<!-- .slide: style="font-size: 0.80em" -->
+## Temario
+<div class="grid-container3">
+<div class="grid-item">
+
+### Interfaz de usuario
+* Definición
+* Arquitectura de información
+* Proceso de diseño
+* Análisis de usuario (AGT, Etnografico, entrevistas)
+* Prototipado
+
+</div>
+<div class="grid-item">
+
+### Proceso de Diseño
+* Tipos de diagramas (planos, maquetas) ó (organización, funcionamiento, presentación)
+* Tipos de prototipo (Sketch, Wireframe, Mockup, prototipo)
+* Evaluación de interfaz
+
+</div>
+<div class="grid-item">
+
+[Ejercicio: Sketch](U3_prototipado.html#/23)
+* Ventajas de las técnicas de diseño
+[Ejercicio: Wireframe](U3_prototipado.html#/45)
+* Errores comunes
+[Ejercicio: Evaluación](U3_prototipado.html#/47)
+</div>
+</div>
+
+---
 ## Interfaz de Usuario
 Es el medio con que el usuario puede comunicarse con una máquina, equipo, computadora o dispositivo, y comprende todos los puntos de contacto entre el usuario y el equipo.
 

@@ -9,6 +9,50 @@ Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
 ---
+<style>
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 0.8em;
+    text-align: left !important;
+}
+
+.grid-item {
+    border: 3px solid rgba(121, 177, 217, 0.8);
+    padding: 20px;
+    text-align: left !important;
+}
+</style>
+<!-- .slide: style="font-size: 0.90em" -->
+## Temario
+<div class="grid-container2">
+<div class="grid-item">
+
+### CSS
+* Backgrounds
+
+[Ejercicio: Backgrounds](U4_CSS_avanzado.html#/5)
+
+* Position
+* Z-index
+* Float
+* Clear
+
+</div>
+<div class="grid-item">
+
+[Ejercicio: 2 columnas](U4_CSS_avanzado.html#/16)
+
+* Por qué funciona diferente? 
+* Transiciones
+* Grid (NEW)
+* Recomendaciones
+* Media Queries
+
+</div>
+</div>
+
+---
 ## Fondos o Backgrounds
 <!-- .slide: style="font-size: 0.70em" -->
 La propiedad compuesta background permite definir simultáneamente todas las propiedades relacionadas con el fondo de 
@@ -140,7 +184,7 @@ Pruebe
 
 ---
 ## CSS
-¿Porque una Web no funciona igual en diferentes navegadores?
+¿Por qué una Web no funciona igual en diferentes navegadores?
 <ul>
 <li style="list-style-image: url('images/html/chrome.png');">
 <b>Google Chrome</b>
@@ -223,8 +267,6 @@ Revisar documentación:
 Autogenerar algunos estilos complicados:
 
 http://css3generator.com/
-
-http://www.css3.me/
 
 http://westciv.com/tools/shadows/
 

@@ -9,6 +9,53 @@ Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
 ---
+<style>
+.grid-container3 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: 0.8em;
+    text-align: left !important;
+}
+
+.grid-item {
+    border: 3px solid rgba(121, 177, 217, 0.8);
+    padding: 20px;
+    text-align: left !important;
+}
+</style>
+## Temario
+<div class="grid-container3">
+<div class="grid-item">
+
+### Interfaz de usuario
+* Qué es
+* Quién lo diseña
+* Por qué es importante
+* Pasos para el diseño
+* Requisitos mínimos
+
+</div>
+<div class="grid-item">
+
+* Factores a considerar
+* **Principios de diseño**
+* Estilos de Interacción: Ventajas y Desventajas
+* Modelo de Seeheim
+* Presentación de Información
+
+</div>
+<div class="grid-item">
+
+* Pautas de **Shneiderman** para uso de color
+* Mensajes del sistema
+* Mensajes de error
+* Atributos de usabilidad
+* Evaluación de la interfaz
+
+</div>
+</div>
+
+---
 ## Libros:
 ![Book](images/book.png)
 “Ingeniería del software” séptima edición de Ian Sommervill

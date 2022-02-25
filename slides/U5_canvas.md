@@ -9,6 +9,33 @@ Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
 ---
+<style>
+.grid-item {
+    border: 3px solid rgba(121, 177, 217, 0.8);
+    padding: 20px;
+    text-align: left !important;
+}
+</style>
+<!-- .slide: style="font-size: 0.80em" -->
+## Temario
+<div class="grid-item">
+
+[Ejercicio: Dibujar cuadrado y circulo](U5_canvas.html#/2)
+
+* Canvas: Métodos & propiedades
+
+[Ejercicio: Mini-paint](U5_canvas.html#/6)
+
+[Ejercicio: Dibujar cuadriculado](U5_canvas.html#/8)
+
+[Ejercicio: Dibujar imagen](U5_canvas.html#/14)
+
+* Borrar canvas
+* Escribir texto
+
+</div>
+
+---
 ## Ejercicio: Dibujar cuadrado y circulo
 * Crear una función javascript que dibuje un círculo y un cuadrado en un canvas.
 * Llamar la función al cargar la página.

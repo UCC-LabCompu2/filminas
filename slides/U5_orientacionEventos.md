@@ -9,6 +9,34 @@ Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
 ---
+<style>
+.grid-item {
+    border: 3px solid rgba(121, 177, 217, 0.8);
+    padding: 20px;
+    text-align: left !important;
+}
+</style>
+<!-- .slide: style="font-size: 0.70em" -->
+## Temario
+<div class="grid-item">
+
+* Programación dirigida por eventos
+* Lenguajes
+
+### Eventos
+* Definición
+* Tipos de eventos
+* Mouse
+    * Teclado
+    * Navegador
+    * Formularios
+* Event Handler
+* Event Listeners
+* Objeto del evento
+
+</div>
+
+---
 ## Libros:
 ![Book](images/book.png)
 Material de consulta:

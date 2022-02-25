@@ -9,6 +9,54 @@ Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
 ---
+<style>
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 0.8em;
+    text-align: left !important;
+}
+
+.grid-item {
+    border: 3px solid rgba(121, 177, 217, 0.8);
+    padding: 20px;
+    text-align: left !important;
+}
+</style>
+<!-- .slide: style="font-size: 0.80em" -->
+## Temario
+<div class="grid-container2">
+<div class="grid-item">
+
+### Diseño Responsivo
+* Definición
+* Carcaterísticas
+
+### Media Query
+* @link
+* @media
+* Operadores lógicos
+* Media types
+* Viewport
+
+[Ejercicio: Responsive](U6_responsive.html#/18)
+
+</div>
+<div class="grid-item">
+
+* Consejos
+* Pilares de optimización
+* Bootstrap
+
+[Ejercicio: Bootstrap](U6_responsive.html#/27)
+
+* Primero el móvil
+* Etapas de desarrollo
+
+</div>
+</div>
+
+---
 ## Diseño Responsivo
 ![Diseño Responsive](images/appWeb/responsive-viewport.png)
 

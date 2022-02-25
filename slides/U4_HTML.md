@@ -10,6 +10,64 @@ Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
 ---
+<style>
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 0.8em;
+    text-align: left !important;
+}
+
+.grid-item {
+    border: 3px solid rgba(121, 177, 217, 0.8);
+    padding: 20px;
+    text-align: left !important;
+}
+</style>
+<!-- .slide: style="font-size: 0.80em" -->
+## Temario
+<div class="grid-container2">
+<div class="grid-item">
+
+### Páginas Web
+* Estructura básica
+* Contenido mínimo
+* Sintaxis
+* Etiquetas head
+
+[Ejercicio: Primer HTML](U4_HTML.html#/9)
+
+* Etiquetas semánticas
+* Etiquetas body
+* Tipos de texto
+
+[Ejercicio: Secciones](U4_HTML.html#/17)
+
+[Ejercicio: Títulos](U4_HTML.html#/18)
+
+</div>
+<div class="grid-item">
+
+* Tipos de listas
+* Hipervínculos
+
+[Ejercicio: Listas](U4_HTML.html#/24)
+
+[Ejercicio: Link](U4_HTML.html#/25)
+
+* Tablas
+
+[Ejercicio: Tablas 1,2,3,4](U4_HTML.html#/30)
+
+[Ejercicio: Comentarios](U4_HTML.html#/34)
+
+* Div
+* Buenas prácticas
+
+</div>
+</div>
+
+---
 ## Comenzar!
 Cuando estás empezando a trabajar con HTML es recomendable tener a mano siempre un CheatSheet con un resumen de los 
 comandos más empleados.
@@ -41,7 +99,7 @@ comandos más empleados.
 ## Github Classroom
 Repositorio base para realizar todos los ejercicios que veremos en clase:
 
-[Github Classroom](https://classroom.github.com/a/alV9yr2r)
+[Github Classroom](https://classroom.github.com/a/piW5lbnA)
 
 ---
 ## Ejercicio: Primer HTML

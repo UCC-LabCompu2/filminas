@@ -10,6 +10,20 @@ Created by <i class="fab fa-telegram"></i>
 
 ---
 <!-- .slide: style="font-size: 0.60em" -->
+<style>
+.grid-container4 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-size: 0.8em;
+    text-align: left !important;
+}
+
+.grid-item {
+    border: 3px solid rgba(121, 177, 217, 0.8);
+    padding: 20px;
+    text-align: left !important;
+}
+</style>
 ## Temario
 <div class="grid-container4">
 <div class="grid-item">
@@ -17,13 +31,13 @@ Created by <i class="fab fa-telegram"></i>
 ### GIT
 * Definición
 
-[Ejercicio: Instalar Git](U2_git.md#/3)
+[Ejercicio: Instalar Git](U2_git.html#/3)
 * Configuración
 
-[Ejercicio: Configurar Usuario](U2_git.md#/7)
+[Ejercicio: Configurar Usuario](U2_git.html#/7)
 * Servidores
 
-[Ejercicio: Crear Cuenta Github](U2_git.md#/11)
+[Ejercicio: Crear Cuenta Github](U2_git.html#/11)
 * Estados 
 * Comandos
 </div>
@@ -40,10 +54,10 @@ Created by <i class="fab fa-telegram"></i>
 * log
 * diff
 
-[Ejercicio: Github Básico](U2_git.md#/26)
+[Ejercicio: Github Básico](U2_git.html#/26)
 * Software VCS
 
-[Ejercicio: Github Básico II](U2_git.md#/38)
+[Ejercicio: Github Básico II](U2_git.html#/38)
 * Sobre git
 </div>
 <div class="grid-item">
@@ -51,8 +65,9 @@ Created by <i class="fab fa-telegram"></i>
 ### Classroom
 * Qué es?
 
-[Ejercicio: Github Classroom](U2_git.md#/42)
+[Ejercicio: Github Classroom](U2_git.html#/42)
 * Cursos de git
+</div>
 </div>
 
 ---
@@ -379,7 +394,7 @@ Permite el trabajo colaborativo, gestión de issues, code reviews, feedback, etc
 ## Ejercicio: GitHub Classroom
 * Crear un repositorio para los ejercicios de la materia, empleando el código base de los ejercicios (servira para avanzar con html, css, js más adelante).
 
-[Link Classroom](https://classroom.github.com/a/alV9yr2r)
+[Link Classroom](https://classroom.github.com/a/piW5lbnA)
 
 <!--Paso a paso aquí...[PDF](https://drive.google.com/open?id=1scW5JZ3puH0uPpmzckFkEgE8TjqSJbV8)-->
 

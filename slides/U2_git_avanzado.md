@@ -9,6 +9,33 @@ Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
 ---
+<!-- .slide: style="font-size: 0.60em" -->
+<style>
+.grid-item {
+    border: 3px solid rgba(121, 177, 217, 0.8);
+    padding: 20px;
+    text-align: left !important;
+}
+</style>
+## Temario
+<div class="grid-item">
+
+### GIT
+* Repaso de comandos
+* Readme.md
+
+[Ejercicio: Escribir readme.md](U2_git_avanzado.html#/7)
+* Git branch
+
+[Ejercicio: Github Branch](U2_git_avanzado.html#/17)
+* Fork
+* Pull Request
+* .gitignore
+
+[Ejercicio: .gitignore](U2_git_avanzado.html#/26)
+</div>
+
+---
 ### Qué comandos aprendimos la clase pasada?
 <ul>
 <li class="fragment">git config</li>

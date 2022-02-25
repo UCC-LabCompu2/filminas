@@ -9,6 +9,39 @@ Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
 ---
+<style>
+.grid-item {
+    border: 3px solid rgba(121, 177, 217, 0.8);
+    padding: 20px;
+    text-align: left !important;
+}
+</style>
+<!-- .slide: style="font-size: 0.60em" -->
+## Temario
+<div class="grid-item">
+
+* Modificar CSS mediante Js
+
+[Ejercicio: Mostrar/Ocultar div](U5_javaScript2.html#/6)
+
+[Ejercicio: Operaciones Mateáticas](U5_javaScript2.html#/8)
+
+* Random y Round
+* Refactorización
+
+[Ejercicio: Conversor de Unidades 2](U5_javaScript2.html#/14)
+
+[Ejercicio: Operaciones Mateáticas 2](U5_javaScript2.html#/17)
+
+[Ejercicio: Primera a Segunda web](U5_javaScript2.html#/20)
+
+* Formulas
+* LocalStorage
+* Métodos para Strings
+
+</div>
+
+---
 ## Podemos modificar CSS mediante Javascript?
 <p class="fragment"> SI </p>
 <p class="fragment"> Ahora veremos un ejemplo... </p>

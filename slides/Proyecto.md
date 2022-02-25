@@ -20,7 +20,7 @@ Relizar un proyecto Web. La página debe poder resolver ejercicios de **Física 
 
 ---
 ## Github Classroom: Proyecto Integrador
-[Primer Parcial](https://classroom.github.com/g/SGDqjO4W)
+[Primer Parcial](https://classroom.github.com/a/IdekyeEy)
 
 ---
 ### Requisitos del Primer Parcial
@@ -68,7 +68,7 @@ Tener en cuenta
 - [ ] Poner comillas a todos los atributos
 - [ ] **Title** debe contener el título de la página
 - [ ] En el ```<head></head>``` incluir las etiquetas ```<meta>``` detallando: autor, descripción y palabras clave
-- [ ] Emplear al menos 3 etiquetas semánticas (header, nav, aside, section, article, footer)
+- [ ] Emplear al menos 3 etiquetas semánticas diferentes (header, nav, aside, section, article, footer)
 - [ ] Emplear ```<header></header>```. En el contenido de la cabecera debe haber un título ```<h1></h1>```, puede tener color de fondo, algún logotipo, etc.
 - [ ] Debe haber por lo menos una etiqueta ```<img>``` en la página.
 - [ ] La estructura de la página debe estar definida con ```<div></div>```

@@ -9,6 +9,67 @@ Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
 ---
+<style>
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 0.8em;
+    text-align: left !important;
+}
+
+.grid-item {
+    border: 3px solid rgba(121, 177, 217, 0.8);
+    padding: 20px;
+    text-align: left !important;
+}
+</style>
+<!-- .slide: style="font-size: 0.70em" -->
+## Temario
+<div class="grid-container2">
+<div class="grid-item">
+
+### CSS
+* Definición
+* Capas de diseño
+* Sintaxis
+* Estilos en línea
+* Estilos incrustados
+* Hoja de estilo enlazada
+* Propiedades tipográficas
+* Colores
+* Estilo: Tag, #ID, .clase
+* Caption
+* Consejos de accesibilidad
+
+[Ejercicio: Propiedades tipográficas](U4_CSS.html#/16)
+
+[Ejercicio: CSS incrustado](U4_CSS.html#/17)
+
+</div>
+<div class="grid-item">
+
+* Descendientes
+* Multimedia (video, audio)
+
+[Ejercicio: Estilos con descendientes](U4_CSS.html#/21)
+
+* Pseudo clases
+
+[Ejercicio: Pseudo Clases](U4_CSS.html#/25)
+
+* Modelo de cajas: Margin, border, padding
+* Unidades de medida
+* Fondos
+* Favicon
+
+[Ejercicio: CV](U4_CSS.html#/35)
+
+* Comentarios
+* Buenas prácticas
+</div>
+</div>
+
+---
 ## CCS: Cascading Style Sheets
 Hojas de Estilo en Cascada (CSS) es un lenguaje de estilo de hojas usado para describir la presentación de las páginas web escrito en HTML o XML.
 

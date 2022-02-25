@@ -7,6 +7,50 @@ slideNumber: true
 # Aplicaciones Web
 Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
+---
+
+<style>
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 0.8em;
+    text-align: left !important;
+}
+
+.grid-item {
+    border: 3px solid rgba(121, 177, 217, 0.8);
+    padding: 20px;
+    text-align: left !important;
+}
+</style>
+<!-- .slide: style="font-size: 0.80em" -->
+## Temario
+<div class="grid-container2">
+<div class="grid-item">
+
+### Aplicaciones web
+* Definición
+* Ejemplos
+* Aplicación web vs. página web
+* Ventajas
+* Tipo de acceso
+* Estructura
+
+</div>
+<div class="grid-item">
+
+### Página web
+* Estátitca vs Dinámica
+* Procesamiento
+* Servidor
+* Evolución de la web
+
+## Programación
+* Lenguajes de programación
+* Características de HTML
+</div>
+</div>
+
 
 ---
 ## Libros:
@@ -49,8 +93,8 @@ Una **aplicación web** es una página web especial, que tiene información sobr
 ---
 ## Tipos de Aplicaciones Web
 Según el tipo de acceso:
-* **Públicas:**Tiendas virtuales, diarios digitales, portales de internet, etc.
-* **Restringidas:**Intranets, que ofrecen servicios para mejorar gestiones internas de una empresa (control hs de personal, gestión ed proyectos o tareas), etc.
+* **Públicas:** Tiendas virtuales, diarios digitales, portales de internet, etc.
+* **Restringidas:** Intranets, que ofrecen servicios para mejorar gestiones internas de una empresa (control hs de personal, gestión ed proyectos o tareas), etc.
 
 ---
 ## Estructura de Aplicaciones Webs

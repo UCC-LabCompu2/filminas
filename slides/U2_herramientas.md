@@ -9,6 +9,74 @@ Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
 ---
+<style>
+.grid-container5 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    font-size: 0.8em;
+    text-align: left !important;
+}
+
+.grid-item {
+    border: 3px solid rgba(121, 177, 217, 0.8);
+    padding: 20px;
+    text-align: left !important;
+}
+</style>
+<!-- .slide: style="font-size: 0.60em" -->
+## Temario
+<div class="grid-container5">
+<div class="grid-item">
+
+### Herramientas de Desarrollo
+* Definición
+* Tipos de herramientas
+</div>
+<div class="grid-item">
+
+### IDE
+* Definición 
+* Editor de código
+* Construcción aut.
+* Debugger
+* Compilador
+* Interprete
+* Ejemplos de IDEs
+</div>
+<div class="grid-item">
+
+### VSC
+* Definición
+* Función
+* Ventajas
+* Ejemplo de herramientas
+</div>
+<div class="grid-item">
+
+### Documentación
+* Funcionalidad
+* Nivel de documentación
+* Recomendaciones
+
+
+### Bug Tracker
+* Definición
+* Ejemplo de herramientas
+* Recomendaciones
+</div>
+<div class="grid-item">
+
+### Testing
+* Pruebas de desempeño
+* Ejemplo de herramientas
+
+### Integración Continua
+* Definición
+* Ejemplo de herramientas
+</div>
+</div>
+
+---
 ## Herramientas de Desarrollo
 Permiten agilizar el proceso de desarrollo de Software.
 
@@ -72,13 +140,13 @@ Uno de los entornos más comunes de uso de los intérpretes es en los navegadore
 <!-- .slide: data-background="images/herramientas/IDES.png" -->
 ## IDE's
 Ejemplos de IDE's para desarrollo Web:
+* JetBrains Web Storm
+* Microsoft Visual Studio Code
+* Sublime Text
 * Eclipse
 * Net Beans
-* JetBrains Web Storm
 * Aptana
 * Dreamweaber
-* Microsoft Visual Studio Express for Web
-* Sublime Text
 * NotePad ++
 
 ---

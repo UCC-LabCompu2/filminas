@@ -124,6 +124,13 @@ Para dispositivos móviles:
 
 ----
 
+<style>
+.ejercicio{
+    vertical-align: middle;
+    padding: 15px !important;
+    background-color: #303030;
+}
+</style>
 <!-- .slide: class="ejercicio" -->
 ## [Ejercicio: Criterios de SO](https://docs.google.com/document/d/1U8oEEb7HMQVZxbTH55FgOpdqoxX8QGPJchaX3eztLSQ/edit)
 En base a tus conocimientos previos, completa la siguiente tabla:
@@ -265,6 +272,7 @@ Con la configuración de hardware **recomendada** el SO funciona a una velocidad
 
 ---
 ## Ejercicio: Comparar SO
+<!-- .slide: style="font-size: 0.80em" -->
 En base a las siguientes diapositivas, completa la tabla:
 <table>
 <tr>
@@ -368,7 +376,6 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 ## Windows NT
 ![Windows NT](images/configSO/Windows_NT.jpeg)
 
-
 ----
 
 ## Requisitos mínimos de
@@ -458,6 +465,18 @@ https://www.tiktok.com/@shtunner/video/6953654804665093381?is_copy_url=0&is_from
 
 ## Windows 10
 ![Windows 10](images/configSO/Windows_10.jpeg)
+
+----
+
+## Requisitos mínimos de
+## Windows 11
+* Año: 2021
+* Procesador de 64 bits con 2 o más núcleos
+* Memoria Ram: 4 GB
+* Almacenamiento: 64 GB
+* Chip gráfico: Compatible con DirectX 12 con el controlador WDDM 2.0.
+* Firmware: UEFI compatible con la función de ‘Arranque Seguro’.
+* Pantalla: 9 pulgadas con resolución HD.
 
 ---
 ## Máquina Virtual

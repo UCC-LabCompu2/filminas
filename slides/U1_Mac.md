@@ -10,12 +10,20 @@ Created by <i class="fab fa-telegram"></i>
 
 ---
 <!-- .slide: style="font-size: 0.60em" -->
+<style>
+.grid-item {
+    border: 3px solid rgba(121, 177, 217, 0.8);
+    padding: 20px;
+    text-align: left !important;
+}
+</style>
 ## Temario
 <div class="grid-item">
 
 ### Mac
 * Definición
-
+* Ventajas
+* Desventajas
 </div>
 
 ---

@@ -16,6 +16,13 @@ Universidad de Castilla
 
 ---
 <!-- .slide: style="font-size: 0.60em" -->
+<style>
+.grid-item {
+    border: 3px solid rgba(121, 177, 217, 0.8);
+    padding: 20px;
+    text-align: left !important;
+}
+</style>
 ## Temario
 <div class="grid-item">
 
@@ -27,7 +34,8 @@ Universidad de Castilla
 * Motores
 * Librerias
 * Plataformas
-[Pong](juegosHTML.md#/17)
+
+[Ejercicio: Pong](juegosHTML.html#/27)
 * MelonJS
 
 </div>
