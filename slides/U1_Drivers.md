@@ -103,6 +103,7 @@ El usuario puede:
 
 ---
 ### Administrador de Dispositivos
+<!-- .slide: style="font-size: 0.60em" -->
 | Simbolo | Definición |
 |--------------------------------------------------|------------------------------------------------------------------|
 | ![Simbolo1](images/configSO/driver_simbolo1.png) | Ocurrió un problema. Muestra un código de error del dispositivo. |

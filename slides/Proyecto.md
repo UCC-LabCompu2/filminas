@@ -75,6 +75,7 @@ Tener en cuenta
 - [ ] Debe contener al menos 3 elementos de tipo ```<input>``` o ```<select>``` ó ```<button>``` que le permitan al usuario ingresar valores para poder realizar un cálculo de un ejercicio.
 
 ---
+<!-- .slide: style="font-size: 0.80em" -->
 ### Requisitos del Primer Parcial
 #### Sobre el HTML (2)
 - [ ] Debe contener un ```<canvas>```, para que posteriormente (en la 2da etapa) se grafique alguna imagen representativa del ejercicio. (el desarrollo del gráfico se realizará cuando se vea la unidad de “Orientación a Eventos”)

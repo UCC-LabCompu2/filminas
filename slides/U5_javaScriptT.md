@@ -4,6 +4,8 @@ theme: black
 slideNumber: true
 ---
 
+<script src="../js/pruebas.js"></script>
+
 # JavaScript
 Created by <i class="fab fa-telegram"></i> 
 [edme88]("https://t.me/edme88")
@@ -194,6 +196,7 @@ Existen 2 elementos dentro de HTML5 que permiten la generación de gráficos:
 
 ---
 ## Canvas vs. SVG
+<!-- .slide: style="font-size: 0.70em" -->
 | Canvas | SVG |
 |--------|-----|
 | Basado en píxeles (.png dinámico) | Basado en forma |

@@ -295,10 +295,6 @@ HTML5 es la última evolución de la norma que define HTML (HyperText Markup Lan
 ````
 
 ---
-## Como comenzar con HTML5!
-<iframe width="1200" height="500" src="ejemplos/html/index.html"></iframe>
-
----
 ![App Web](images/appWeb/tags.png)
 
 ---

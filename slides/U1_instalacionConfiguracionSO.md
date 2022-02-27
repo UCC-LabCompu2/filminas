@@ -131,8 +131,9 @@ Para dispositivos móviles:
     background-color: #303030;
 }
 </style>
-<!-- .slide: class="ejercicio" -->
+<!-- .slide: class="ejercicio" style="font-size: 0.70em" -->
 ## [Ejercicio: Criterios de SO](https://docs.google.com/document/d/1U8oEEb7HMQVZxbTH55FgOpdqoxX8QGPJchaX3eztLSQ/edit)
+
 En base a tus conocimientos previos, completa la siguiente tabla:
 <table>
 <tr>
@@ -374,6 +375,7 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 ----
 
 ## Windows NT
+
 ![Windows NT](images/configSO/Windows_NT.jpeg)
 
 ----

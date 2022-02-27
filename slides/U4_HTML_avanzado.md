@@ -3,6 +3,13 @@ title: HTML
 theme: black
 slideNumber: true
 ---
+
+# Tutorial de HTML II
+### en HTML (que recursivo :P)
+Created by <i class="fab fa-telegram"></i>
+[edme88]("https://t.me/edme88")
+
+---
 <style>
 .grid-container2 {
     display: grid;
@@ -52,12 +59,6 @@ slideNumber: true
 
 </div>
 </div>
-
----
-# Tutorial de HTML II
-### en HTML (que recursivo :P)
-Created by <i class="fab fa-telegram"></i>
-[edme88]("https://t.me/edme88")
 
 ---
 ## Formulario

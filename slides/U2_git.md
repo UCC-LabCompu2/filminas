@@ -80,6 +80,10 @@ Created by <i class="fab fa-telegram"></i>
 [![Git](images/herramientas/git.png)](href="https://git-scm.com/)
 
 ---
+
+![No git](images/herramientas/NoGit.jpeg)
+
+---
 <!-- .slide: data-background-color="grey"-->
 ## Ya instalaste Git? 
 Si aún no lo descargaste, bajalo del siguiente link!
