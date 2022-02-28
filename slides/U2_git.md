@@ -31,13 +31,13 @@ Created by <i class="fab fa-telegram"></i>
 ### GIT
 * Definición
 
-[Ejercicio: Instalar Git](U2_git.html#/3)
+[Ejercicio: Instalar Git](U2_git.html#/4)
 * Configuración
 
-[Ejercicio: Configurar Usuario](U2_git.html#/7)
+[Ejercicio: Configurar Usuario](U2_git.html#/8)
 * Servidores
 
-[Ejercicio: Crear Cuenta Github](U2_git.html#/11)
+[Ejercicio: Crear Cuenta Github](U2_git.html#/12)
 * Estados 
 * Comandos
 </div>

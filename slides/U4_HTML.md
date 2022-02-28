@@ -402,6 +402,9 @@ Agrege comentarios a la página web de tablas.
 * Usar ficheros externos para CSS y JavaScript
 
 ---
+![PaginaWeb Segun el Cliente](images/html/webPage_client.jpg)
+
+---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
 

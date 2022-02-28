@@ -119,6 +119,10 @@ Permite probar y eliminar los errores del programa.
 El depurador permite detener el programa en un punto determinado o en un momento determinado para que el usuario pueda examinar y modificar la memoria y las variables del programa, cambiar punto de ejecución, ejecutar una instrucción o partes determinadas de código.
 
 ---
+## Depurador o Debugger
+![Debuggin](images/herramientas/debugging.png)
+
+---
 ## Compilador
 Traduce del lenguaje de programación al lenguaje maquina, código intermedio o texto.
 

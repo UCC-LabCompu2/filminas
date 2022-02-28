@@ -17,6 +17,13 @@ Created by <i class="fab fa-telegram"></i>
     text-align: left !important;
 }
 
+.grid-container3 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: 0.8em;
+    text-align: left !important;
+}
+
 .grid-item {
     border: 3px solid rgba(121, 177, 217, 0.8);
     padding: 20px;
@@ -37,6 +44,8 @@ Created by <i class="fab fa-telegram"></i>
 * Recursos de Hardware
 * Hardware Mínimo y Recomendado
 [Ejercicio: Comparar SO](U1_instalacionConfiguracionSO.html#/9)
+
+* Actualización en los SO
 </div>
 <div class="grid-item">
 
@@ -45,7 +54,7 @@ Created by <i class="fab fa-telegram"></i>
 * Características
 * Ventajas
 * Aplicaciones
-[Ejercicio: MV Windows](U1_instalacionConfiguracionSO.html#/17)
+[Ejercicio: MV Windows](U1_instalacionConfiguracionSO.html#/21)
 * Docker
 * MV vs Docker 
 </div>
@@ -96,18 +105,39 @@ Las tareas que hace un SO son:
 ---
 ##  [Ejemplos de Sistema Operativo](http://gs.statcounter.com/os-market-share)
 <!-- .slide: data-background="images/configSO/OtrosOS.png" data-background-size="50%" style="font-size: 0.80em" -->
+<div class="grid-container3">
+<div class="grid-item">
+
 Para PC:
-* Solaris
 * Linux
 * Windows 7
 * Mac OS X
-* FreeBSD
+* RactOS
+* FreeDOS
+* Chromium OS
+* ArcaOS
+* Haiku
+</div>
+<div class="grid-item">
 
 Para dispositivos móviles:
 * Android
-* Windows phone
+* ~~Windows phone~~
 * iOS
+* Fuchsia
 * ~~Blackberry~~
+* ~~Symbian~~
+</div>
+<div class="grid-item">
+
+Para servidores: 
+* FreeBSD
+* Mac OS X Server
+* Microsoft Servers
+* Novell Netware
+* Solaris
+
+</div>
 
 ---
 ## Criterios para Definir SO
@@ -122,16 +152,8 @@ Para dispositivos móviles:
   * Propietario
   * Libre
 
-----
-
-<style>
-.ejercicio{
-    vertical-align: middle;
-    padding: 15px !important;
-    background-color: #303030;
-}
-</style>
-<!-- .slide: class="ejercicio" style="font-size: 0.70em" -->
+---
+<!-- .slide: style="font-size: 0.80em" -->
 ## [Ejercicio: Criterios de SO](https://docs.google.com/document/d/1U8oEEb7HMQVZxbTH55FgOpdqoxX8QGPJchaX3eztLSQ/edit)
 
 En base a tus conocimientos previos, completa la siguiente tabla:
@@ -343,6 +365,7 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 ---
 
 #### Advertencia: Algunas de las siguientes imágenes nos harán viajar en el tiempo... 
+<small>Solo hay algunas versiones, NO todo</small>
 <!--Descargar audio https://www.youtube.com/watch?v=tHr46P2r514-->
 ![Máquina del Tiempo](images/configSO/maquinaTiempo.jpeg)
 
@@ -362,6 +385,7 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 ![Windows 3.11](images/configSO/Windows_3.11.png)
 
 ----
+
 
 ## Requisitos mínimos de
 ## Windows NT Server
@@ -479,6 +503,26 @@ https://www.tiktok.com/@shtunner/video/6953654804665093381?is_copy_url=0&is_from
 * Chip gráfico: Compatible con DirectX 12 con el controlador WDDM 2.0.
 * Firmware: UEFI compatible con la función de ‘Arranque Seguro’.
 * Pantalla: 9 pulgadas con resolución HD.
+
+---
+### Actualizaciones en los SO
+<!-- .slide: style="font-size: 0.90em" -->
+Ventajas:
+* Ayudan a mantener el SO más seguro, reduciendo las vulnerabilidades (la mayoría de los parches son de seguridad)
+* Menor fragmentación (evitan conflictos, ya que todos los usuarios tendrían la última versión. No son necesarios parches intermedios)
+* Windows a partir de la versión 10 mudo a Saas (software as a service), y no hay versiones (SI compilaciones), que se actualizan continuamente.
+
+---
+### Actualizaciones en los SO
+<!-- .slide: style="font-size: 0.90em" -->
+Desventajas:
+* Usuarios empresariales pueden llegar a tener conflictos que otros software que emplean a diario.
+* Emplean ancho de banda
+* Pueden generarse conflictos con otros SO
+
+---
+### Actualizaciones en los SO
+![Actualiciones SO](images/configSO/actualizacionesSO.jpg)
 
 ---
 ## Máquina Virtual
@@ -623,6 +667,14 @@ Al realizar esta operación se elimina toda la información contenida en el.
 * **Mac OS:** HFS, HFS+.
 * **IBM:** JFS, GPFS. 
 * **Discos Ópticos:** UDF.
+
+---
+### Comparación 
+| | NTFS | FAT32 | ExFAT |
+|-|------|-------|-------|
+| Utilización | Discos duros interno con Windows | Discos que requieran compatibilidad con varios SO | Unidades flash|
+| Ventajas | Permite copias de seguridad | Amplia compatibilidad con varios SO | Sistema de archivos livianos - Compatible con Windows, Mac, Linux |
+| Desventajas | Incompatibilidad con SO antiguos | No permite archivos de más de 4GB - No permite parciciones de más de 4 TB| Sin funciones de seguridad |
 
 ---
 ## IMPORTANTE!!!

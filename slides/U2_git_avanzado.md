@@ -30,9 +30,12 @@ Created by <i class="fab fa-telegram"></i>
 [Ejercicio: Github Branch](U2_git_avanzado.html#/17)
 * Fork
 * Pull Request
+* Code review
 * .gitignore
 
-[Ejercicio: .gitignore](U2_git_avanzado.html#/26)
+[Ejercicio: .gitignore](U2_git_avanzado.html#/28)
+
+* SSH
 </div>
 
 ---
@@ -119,7 +122,7 @@ git branch
 
 ---
 ## Branching
-* Master: Contiene una versión estable y funcional del código.
+* Master/main: Contiene una versión estable y funcional del código.
 * Se pueden crear ramas para desarollar nuevas funcionalidades **feature**
 * En equipos de trabajo, Se puede crear una rama para cada desarrollar o **developer**
 * Se pueden crear ramas para trabajar en soluciones a los defectos o errores encontrados, **hotfix**
@@ -216,6 +219,18 @@ después de un code review y si no se tienen permisos de merge a master).
 
 <!--http://aprendegit.com/que-es-un-pull-request/-->
 ---
+## Code Review
+Todo buen PR, requiere code review, es decir, que otro dev revise el código que desarrollamos, previo a mergear la rama.
+
+Ayuda a detectar errores en el código (lógicos, ortografía, funcionalidad), previo a su pase a producción. 
+
+El revisor puede aprobar el código y mergearlo, o solicitar al dev que realice correcciones. Todo push que se realice, se agregará al PR mientras este esté abierto.
+
+---
+## Code Review
+![Code Review](images/herramientas/codereview_friendly.jpg)
+
+---
 ## .gitignore
 El archivo "gitignore" sirve para decirle a Git qué archivos o directorios completos debe ignorar y no subir al repositorio de código. 
 
@@ -231,6 +246,26 @@ con datos que no se desa versionar (instaladores, diagramas, etc).
 ---
 ## Ejercicio: .gitignore
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1yGiz06KKRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+## SSH
+**Secure Shell** es una forma de autenticarse en servidores remotos sin tener que escribir la contraseña siempre.
+
+Funciona empleando 2 claves: la privada (solo para tí), la pública (para todo internet).
+
+---
+### [Como configurar SSH?](https://medium.com/humantodev/configurar-ssh-github-enwindows-10-linux-y-macos-e843eb6d104e#:~:text=%C2%BFQu%C3%A9%20es%20SSH%3F,(PARA%20TODA%20LA%20HUMANIDAD))
+<!--https://platzi.com/tutoriales/1557-git-github/4067-configurar-llaves-ssh-en-git-y-github/?gclid=EAIaIQobChMI35TBz4ij9gIVgwWRCh1ddwUPEAAYAiAAEgJJJfD_BwE&gclsrc=aw.ds-->
+1. Generar una **key** mediante cmd (-t para generar con sistema criptográfico rsa, -b tamaño, -C nota para identificar)
+````html
+ssh-keygen -t rsa -b 4096 -C "tu@email.com"
+````
+2. Se genera una carpeta llamada **.ssh** con la clave pública y privada (hay que configurar windows para ver archivos ocultos)
+3. Copiar el contenido de id_rsa.pub y configurarlo en GitHub
+
+---
+## SSH en GitHub
+![SSH en GitHub](images/herramientas/sshKey.png)
 
 ---
 #### Sigo sin enter como funcionan las ramas con los comandos...
