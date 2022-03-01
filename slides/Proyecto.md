@@ -107,6 +107,10 @@ Tener en cuenta
 - [ ] Las notas serán de manera logarítmica: (Por ejemplo 60% 4; 70% 5,5; 80% 7; 90% 8,5)
 
 ---
+#### Como quiere sentirse la Profe al corregir el proyecto
+![Over nine thousands](images/proyecto/over9thousand.jpg)
+
+---
 ## Proyecto - Parte 1
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Iay1jxKGqQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
