@@ -52,10 +52,11 @@ Created by <i class="fab fa-telegram"></i>
 
 ### Otras etiquetas
 
+* Etiquetas anidadas
 * Canvas
 * Multimedia (video, audio)
 
-[Ejercicio: Multimedia](U4_HTML.html#/31)
+[Ejercicio: Multimedia](U4_HTML.html#/32)
 
 </div>
 </div>
@@ -326,6 +327,17 @@ Es el encargado de darle un título descriptivo a las tablas.
 ---
 ## Ejercicios: Accesibilidad
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZdyJMznlgJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+### Etiquetas anidadas
+<!-- .slide: style="font-size: 0.80em" -->
+Significa que una etiqueta está dentro de otra. Por ejemplo, **strong** y **em** están anidadas dentro de **p**. A su vez, **em** esta anidada dentro de **strong**.
+
+![Etiquetas anidadas](images/html/anidar-etiquetas-1.jpg)
+
+Generalmente la última etiqueta en abrirse es la primera en cerrarse.
+
+Los errores típicos son: olvidarse de cerrar etiquetas y cerrar etiquetas en un orden inadecuado (lo que puede generar demoras al renderizar una página).
 
 ---
 ## Lienzo Canvas
