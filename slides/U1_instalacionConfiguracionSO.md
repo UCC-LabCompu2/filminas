@@ -751,4 +751,4 @@ Equipo > Administrar > Almacenamiento > Administración de Discos
 ## Preguntas Frecuentes
 * En el exámen habrá preguntas del tipo: "Qué microprocesador tenia Win95"?
 
-Toda la informacón relativa a las características puntuales de cada SO: año, procesaor, ram, disco duro, video NO son preguntas de examen.
+Toda la información relativa a las características puntuales de cada SO: año, procesador, ram, disco duro, video NO son preguntas de examen.

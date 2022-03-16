@@ -95,9 +95,6 @@ El usuario puede:
 * Habilitar o deshabilitar dispositivos
 
 ---          
-![Administrador de Dispositivos](images/configSO/administradorEquipos.gif)
-
----          
 ### Administrador de Dispositivos
 ![Administrador de Dispositivos](images/configSO/admDispositivos2.jpg)
 

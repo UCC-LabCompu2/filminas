@@ -101,9 +101,7 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 
 ---
 ## Breve Cronología de Distribuciones
-[Conologia de Versiones](http://static.sigt.net/imagenes/2006/linea-cronologica-gnulinux.png)
-
-[Conologia de Versiones + Completa](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
+[Cronologia de Versiones + Completa](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
 
 ---
 ## Requisitos mínimos de
@@ -111,7 +109,7 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 * Año: 2012
 * Procesador Pentium 4 - 1 GHz
 * 128 MB - 256 MB de RAM
-* 2 GB (sin escritorio) - 10 GB (con escritori) de espacio disponible en disco duro
+* 2 GB (sin escritorio) - 10 GB (con escritorio) de espacio disponible en disco duro
 * Tarjeta gráfica que soporte resolución 800x600
 
 ---
@@ -135,6 +133,12 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 ---
 ## Ejercicio: SO Linux
 **Instale** alguna distribución de Linux, como Ubuntu, en una computadora o máquina virtual.
+
+Descarga SO:
+[Ubuntu 20](https://ubuntu.com/download/desktop)
+
+Descarga Máquina Virtual: 
+[VirtualBox](https://www.virtualbox.org/)
 
 ---
 ## Ejercicio: SO Linux

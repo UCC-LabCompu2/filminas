@@ -74,7 +74,7 @@ Created by <i class="fab fa-telegram"></i>
 ## Git
 * Sistema distribuido de control de versiones
 * Libre
-* Crea branches y hace merge rapido y facil
+* Crea branches y hace merge rapido y fácil
 * Cada "Clón" es un repositorio completo
 
 [![Git](images/herramientas/git.png)](href="https://git-scm.com/)
@@ -142,7 +142,7 @@ Puedes guardar versiones del código y accederlas cuando lo necesites.
 
 ---
 ## Ejercicio: Creación de Cuenta en GitHub
-Create una cuenta en [gitHub]("https://www.github.com") ...**Sign up** ...for Free
+Create una cuenta en [gitHub](www.github.com) ...**Sign up** ...for Free
 Recuerda emplear el mismo nombre de usuario e email que tu usuario de github global.
 Una vez creada tu cuenta, enviar el nombre usuario al Profe por email, así puede validarlo!
 [![gitHub](images/herramientas/gitHub.png)](https://www.github.com)
@@ -189,6 +189,11 @@ git clone <repo url>
 ````
 La última versión de los archivos del respositorio remoto se copian en nuestra computadora dentro de una nueva carpeta: NOMBRE_REPO
 
+Si queremos que en nuestro local el proyecto/carpeta tenga otro nombre, podemos agregar un parámetro más:
+````
+git clone <repo url> nombre_carpeta
+````
+
 ---
 ## git status
 Muestra la lista de archivos que se han cambiado junto con los archivos que están por ser añadidos (add).
@@ -202,6 +207,12 @@ Permite agregar archivos al index. Es decir, selecciona el/los archivos que sera
 ````
 git add mi_archivo.html
 ````
+
+Puedes agregar espacio y el nombre de otros archivos, o en lugar de un archivo poner el nombre de una carpeta (se agrega TODO su contenido), o emplear:
+````
+git add .
+````
+para agregar TODOS los cambios (pero CUIDADO!!! no agregues archivos que no deseas).
 
 ---
 ## git commit
@@ -332,7 +343,7 @@ Aprendiendo **Git** por linea de comandos no dependeras de ningun software, y po
 
 ---
 ## Esto de la lina de comandos sigue sin convencerme...
-En la siguiente filmina tienes algunas opciones de software para VCS. Puedes probar y usar cualquier :D
+En la siguiente diapositiva tienes algunas opciones de software para VCS. Puedes probar y usar cualquiera :D
 Depende de ti! (pero en clase solo veremos linea de comandos)
 
 ---
@@ -387,6 +398,11 @@ Puedes versionar código, documentos de texto plano...
 Pero recuerda que GIT no está optimizado para subir VIDEOS o imágenes muy pesadas, o archivos binarios (como instaladores).
 
 Usa Git sabiamente pequeño padawan.
+
+---
+## Github
+https://gitexplorer.com/
+![Git Explorer](images/herramientas/git_explorer.png)
 
 ---
 ## GitHub Classroom
