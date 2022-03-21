@@ -588,6 +588,7 @@ librerías del sistema, entorno de ejecución o cualquier tipo de configuración
 
 ---
 ### MV vs Contenedores... Que elegir?
+<!-- .slide: style="font-size: 0.60em" -->
 |Máquinas Virtuales|Contenedores|
 |------------------|------------|
 | Alojar cargas de trabajo tradicionales, monolíticas y heredadas | Diseñar aplicaciones en la nube |
@@ -669,7 +670,8 @@ Al realizar esta operación se elimina toda la información contenida en el.
 * **Discos Ópticos:** UDF.
 
 ---
-### Comparación 
+### Comparación
+<!-- .slide: style="font-size: 0.60em" -->
 | | NTFS | FAT32 | ExFAT |
 |-|------|-------|-------|
 | Utilización | Discos duros interno con Windows | Discos que requieran compatibilidad con varios SO | Unidades flash|
