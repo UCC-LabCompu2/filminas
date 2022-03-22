@@ -62,6 +62,43 @@ Created by <i class="fab fa-telegram"></i>
 <small class="fragment">6 git commit -a -m</small>
 
 ---
+### Necesito un PAT?
+A partir de agosto/2021 github solicita un método seguro de autenticación, como:
+1. PAT: Token de Acceso Personal
+2. Autenticación de Dos Factores
+3. SSH
+
+---
+### Pasos para generar el PAT
+1. En **gitHub** entrar a la sección de Setting
+2. En el menú de la izquierda ingresar a &lt &gt **Developer Setting**
+3. Seleccionar **Personal Access Token**
+4. Click en el botón **Generate New Token**
+
+Ese token NO compartirlo con NADIE (es personal)
+
+```javascript
+git config --global user.password TOKEN_GENERADO_EN_GITHUB
+```
+
+---
+### Y si empleo git en la facultad???
+<!-- .slide: style="font-size: 0.75em" -->
+Las computadoras están freezadas (por lo que los cambios se pierden al reiniciar el sistemas)
+Podria hacerse la prueba de hacer un .bat y correrlo al principio de la clase para configurar github y bajar el repositorio.
+```bash
+@echo [off]
+title config git account
+git --version
+git config --global user.name "nombreUsuario"
+git config --global user.email miEmail@domain.com
+git config --global user.password TOKEN_GENERADO_EN_GITHUB
+git config --list
+git clone URL_COPIADA_DE_GITHUB_PARA_CLONAR_EL_REPO
+pause
+```
+
+---
 ## Readme.md
 <!-- .slide: style="font-size: 0.80em" -->
 Seguramente te estes preguntando: qué es ese readme.md que se autogeneró? 
