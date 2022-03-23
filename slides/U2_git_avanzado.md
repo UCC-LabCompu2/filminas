@@ -104,7 +104,7 @@ pause
 Seguramente te estes preguntando: qué es ese readme.md que se autogeneró? 
 Es un archivo que deberian tener todos los proyectos de Soft. El mismo se supone que sea una:
 * Guía rápida de la aplicación o librería y de cómo empezar a usarla.
-* Instrucciones de configuración, instalación, operación, manifiesto de archivos, información sobre licencia y el desarrolador, bug conocidos, solución a problemas, créditos y agradecimientos, registro de cambios o versiones, sección de noticias, etc.
+* Instrucciones de configuración, instalación, operación, manifiesto de archivos, información sobre licencia y el desarrollador, bug conocidos, solución a problemas, créditos y agradecimientos, registro de cambios o versiones, sección de noticias, etc.
 
 
 <!--https://jesuslc.com/2016/07/12/como-escribir-un-readme-que-mole/-->
@@ -114,6 +114,15 @@ Es un archivo que deberian tener todos los proyectos de Soft. El mismo se supone
 [RevealJS](https://github.com/hakimel/reveal.js)
 
 [MelonJS](https://github.com/melonjs/melonjs)
+
+---
+## Markdown
+Markdown es una forma de estilo de texto en la web, que permite controlar la visualización del documento; dar formato a 
+las palabras en negrita o cursiva, agregar imágenes y crear listas.
+ 
+En su mayoría, Markdown es solo texto normal con algunos caracteres no alfabéticos, como # o * que permiten formatear el 
+texto.
+
 
 ---
 ## Readme.md
