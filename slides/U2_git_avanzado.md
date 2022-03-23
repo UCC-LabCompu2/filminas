@@ -71,7 +71,7 @@ A partir de agosto/2021 github solicita un método seguro de autenticación, com
 ---
 ### Pasos para generar el PAT
 1. En **gitHub** entrar a la sección de Setting
-2. En el menú de la izquierda ingresar a &lt &gt **Developer Setting**
+2. En el menú de la izquierda ingresar a **Developer Setting**
 3. Seleccionar **Personal Access Token**
 4. Click en el botón **Generate New Token**
 
