@@ -144,14 +144,14 @@ Uno de los entornos más comunes de uso de los intérpretes es en los navegadore
 <!-- .slide: data-background="images/herramientas/IDES.png" -->
 ## IDE's
 Ejemplos de IDE's para desarrollo Web:
-* JetBrains Web Storm
-* Microsoft Visual Studio Code
-* Sublime Text
-* Eclipse
-* Net Beans
-* Aptana
-* Dreamweaber
-* NotePad ++
+* [JetBrains Web Storm](https://www.jetbrains.com/es-es/webstorm/download/#section=windows)
+* [Microsoft Visual Studio Code](https://code.visualstudio.com/)
+* [Sublime Text](https://www.sublimetext.com/)
+* [Eclipse](https://www.eclipse.org/downloads/)
+* [Net Beans](https://netbeans.apache.org/download/index.html)
+* [Aptana](http://www.aptana.com/)
+* [Dreamweaber](https://www.adobe.com/la/products/dreamweaver.html)
+* [NotePad ++](https://notepad-plus-plus.org/downloads/)
 
 ---
 <!-- .slide: data-background="images/herramientas/Busydesk-desarrollo.png" -->
