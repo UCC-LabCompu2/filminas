@@ -203,7 +203,7 @@ Permite:
 
 ---
 ## Niveles de Documentación
-* **por clase:** descripción,autor,fecha y ultima modificación
+* **por clase:** descripción, autor, fecha y última modificación
 * **por método:** descripción del objeto, funcionalidades, parámetros y resultados
 * **de variables:** que sean importantes o difíciles de entender
 * **de limitaciones**
