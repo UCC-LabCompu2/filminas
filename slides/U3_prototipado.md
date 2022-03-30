@@ -204,7 +204,7 @@ Debe tener en cuenta:
 RECUERDA en el repositorio Proyecto2021-Apellido1-Apellido2 crear una carpeta con el nombre "Sketch" y subir una o varias fotos 
 de tu diseño hecho prolijamente a mano.
 
-(No es necesario hacer esto ahora! pero mantén tu sketch a mano para evitar re-trabjar)
+(No es necesario hacer esto ahora! pero mantén tu sketch a mano para evitar re-trabajar)
    
 ---
 ## Wireframe
@@ -363,6 +363,8 @@ Emplee algún programa para confeccionar Wireframes y generar un wireflow.
 
 Se recomienda (por ser gratuito y apto para todo SO):
 [![Pencil](images/interfazUsuario/pencil-icon.png)](https://pencil.evolus.vn/)
+![Draw.io](images/interfazUsuario/drive_drawio.png) 
+(drive>nuevo>más>diagramas.net)
 
 ---
 #### Errores comunes al crear un Wireframe para nuestro proyecto web
