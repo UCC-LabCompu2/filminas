@@ -116,20 +116,5 @@ El usuario puede:
 * Desde el visor de hardware del entorno gráfico
 
 ---
-### HardwareMap
-![HardwareMap](images/herramientas/hardwareMap.png)
-
----
-### HardwareMap
-Suministra información detallada del Hardware. Se enumeran los equipos y servicios en la red local y hardware conectado. 
-Al hacer clic en un dispositivo, muestra las propiedades del dispositivo y permite realizar acciones comunes para ese dispositivo.
-Para instalar HardwareMap en Ubuntu karmic.
-````
-sudo add-apt-repository ppa:ccouzens/ppa
-sudo apt-get update
-sudo apt-get install hardwaremap
-````
-
----
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
