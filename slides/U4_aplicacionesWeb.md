@@ -94,7 +94,7 @@ Una **aplicación web** es una página web especial, que tiene información sobr
 ## Tipos de Aplicaciones Web
 Según el tipo de acceso:
 * **Públicas:** Tiendas virtuales, diarios digitales, portales de internet, etc.
-* **Restringidas:** Intranets, que ofrecen servicios para mejorar gestiones internas de una empresa (control hs de personal, gestión ed proyectos o tareas), etc.
+* **Restringidas:** Intranets, que ofrecen servicios para mejorar gestiones internas de una empresa (control hs de personal, gestión de proyectos o tareas), etc.
 
 ---
 ## Estructura de Aplicaciones Webs
@@ -142,15 +142,42 @@ Una **aplicación Web** es un conjunto de páginas Web estáticas y dinámicas.
 
 ![Web Estatica](images/appWeb/procesamiento_webEstatica.png)
 
+<small> 
+1. El navegador Web solicita la página estática. <br>
+2. El servidor localiza la página. <br>
+3. El servidor Web envía la página al navegador solicitante.
+</small>
+
 ---
 ## Procesamiento Web Dinámica
 
 ![Web Dinamica](images/appWeb/procesamiento_webDinamica.png)
 
+<small>
+1. El navegador web solicita la página dinámica.
+2. El servidor web localiza la página y la envía al servidor de aplicaciones.
+3. El servidor de aplicaciones busca instrucciones en la página y la termina.
+4. El servidor de aplicaciones pasa la página terminada al servidor web.
+5. El servidor web envía la página finalizada al navegador solicitante.  
+</small>
+
 ---
 ## Procesamiento Web Dinámica+DB
 
 ![Web Completo](images/appWeb/procesamiento_webCompleto.png)
+
+---
+## Procesamiento Web Dinámica+DB
+<!-- .slide: style="font-size: 0.7em" -->
+1. El navegador web solicita la página dinámica. 
+2. El servidor web localiza la página y la envía al servidor de aplicaciones. 
+3. El servidor de aplicaciones busca instrucciones en la página. 
+4. El servidor de aplicaciones envía la consulta al controlador de la base de datos. 
+5. El controlador ejecuta la consulta en la base de datos. 
+6. El juego de registros se devuelve al controlador. 
+7. El controlador pasa el juego de registros al servidor de aplicaciones. 
+8. El servidor de aplicaciones inserta los datos en una página y luego pasa la página al servidor web. 
+9. El servidor Web envía la página finalizada al navegador solicitante.  
 
 ---
 ## Servidor de Aplicaciones
