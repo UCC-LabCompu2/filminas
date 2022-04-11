@@ -364,7 +364,10 @@ Emplee algún programa para confeccionar Wireframes y generar un wireflow.
 Se recomienda (por ser gratuito y apto para todo SO):
 [![Pencil](images/interfazUsuario/pencil-icon.png)](https://pencil.evolus.vn/)
 ![Draw.io](images/interfazUsuario/drive_drawio.png) 
-(drive>nuevo>más>diagramas.net)
+
+---
+## Ejercicio: Wireframe
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BR1YqiSAuVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 #### Errores comunes al crear un Wireframe para nuestro proyecto web
