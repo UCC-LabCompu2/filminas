@@ -366,8 +366,16 @@ Se recomienda (por ser gratuito y apto para todo SO):
 ![Draw.io](images/interfazUsuario/drive_drawio.png) 
 
 ---
-## Ejercicio: Wireframe
+## Ejercicio: Wireframe con Pencil y NinjaMock
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BR1YqiSAuVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+## Ejercicio: Wireframe con Draw.io (desktop)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZV9NFPVev34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+## Ejercicio: Wireframe con Draw.io (mobile)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iFwfgU_fhiU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 #### Errores comunes al crear un Wireframe para nuestro proyecto web
