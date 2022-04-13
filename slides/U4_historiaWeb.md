@@ -155,6 +155,15 @@ Los primeros borradores aparecieron en 1999. El W3C publicó varios "módulos" i
 Esto resulta bastante práctico para los navegadores, que pueden así implementar las novedades progresivamente.
 
 ---
+### Preprocesadores
+Extienden las características de HTML y CSS promoviendo la escritura de código reutilizable y modular. 
+Los más empleados son:
+* SASS
+* LESS
+* Stylus
+
+
+---
 ![CSS3 Historia](images/html/CSS3_historia.png)
 
 ---

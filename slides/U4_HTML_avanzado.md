@@ -175,7 +175,7 @@ Campo para la entrada de un número.
 Algunos atributos son:
 * name: permite hacer referencia al elemento desde Js empleando un document.formName.inputName
 * placehorder: ayuda visual del contenido del input
-* disabled: deshabilita el campo y no permite que el usuario ingrese nombres
+* disabled: deshabilita el campo y no permite que el usuario ingrese textos
 * size: altera el ancho del cuadro de texto
 * maxlength: cantidad máxima de caracteres que se pueden ingresar
 
@@ -257,6 +257,10 @@ independientemente de sus conocimientos o capacidades personales.
 [Accesibilidad Web](http://accesibilidadweb.dlsi.ua.es/?menu=guiabreve-1)
 
 ---
+## Accesibilidad
+![Accesibilidad](images/html/accesibilidad.webp)
+
+---
 ## Fieldset, Legend y Label
 <!-- .slide: style="font-size: 0.85em" -->
 * **Fieldset**: representa un conjunto de elementos en un formulario (form), opcionalmente agrupados bajo un mismo nombre. 
@@ -304,6 +308,10 @@ Es el encargado de darle un título descriptivo a las tablas.
     <tr> <td> Celda 1 </td><td> Celda 2 </td>  </tr>
     <tr> <td> Celda 3 </td><td> Celda 4 </td>  </tr>
 </table>
+
+---
+## Accesibilidad: Consejos
+![Consejos de Accesibilidad](images/html/claves_accesibilidad.png)
 
 ---
 ## Accesibilidad: Consejos
@@ -406,6 +414,14 @@ Empleando el template “ej_animales”, agregue las etiquetas necesarias para:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AFtAFhgGDE8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
+## RECUERDA!!!!
+Puedes versionar código, documentos de texto plano...
+
+Pero recuerda que GIT no está optimizado para subir VIDEOS o imágenes muy pesadas, o archivos binarios (como instaladores).
+
+Usa Git sabiamente pequeño padawan.
+
+---
 ## Consejos
 Algunos consejos de 
 [Google WebMasters](http://www.google.es/webmasters/learn/)
@@ -418,7 +434,7 @@ Permite encontrar con facilidad algunos errores que puede haber en tu página:
 
 ---
 # Bibliografia xD
-[![W3School](images/html/logo_w3schoolscom.png)](http://www.w3schools.com/html/U4_HTML.html)
+[![W3School](images/html/logo_w3schoolscom.png)](http://www.w3schools.com/html)
 
 [![MDN](images/html/logo_MDN.png)](https://developer.mozilla.org/es/)
 
