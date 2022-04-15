@@ -35,20 +35,13 @@ Created by <i class="fab fa-telegram"></i>
 * Jerarquía de Objetos
 <br><br>
 
-### Más Eventos
-* mouse
-* teclado 
-* enfoque
-* ventana
-* otros
-
-</div>
-<div class="grid-item">
-
 ### Graficos en HTML5
 * Canvas
 * SVG
 <br><br>
+
+</div>
+<div class="grid-item">
 
 ### Canvas
 * Contexto
@@ -118,75 +111,6 @@ document.getElementsByName("miDiv")[0].style.display = 'none';
 
 window.document.forms[0].nombreUsuario.value;
 ````
-
----
-## Más Eventos
-Así como están los eventos de los elementos del formulario, también existen:</p>
-* Eventos de mouse
-* Eventos de Teclado
-* Eventos de Enfoque
-* Eventos de Ventana
-* Otros Eventos
-
----
-## Eventos de Mouse
-* **onMouseDown:** Pulsar sobre un elemento de la página.
-* **OnMouseMove:** Al mover el puntero por la página
-* **onMouseOut:** Al salir del área ocupada por un elemento de la página
-* **onMouseOver:** Al entrar el puntero en el área ocupada por un elemento de la pagina
-* **onMouseUp:** Al soltar el botón del mouse que anteriormente se habia presionado
-
----
-## Eventos de Teclado
-* **onKeyDown:** Al pulsar una tecla.
-* **onKeyPress:** Dejar pulsada una tecla un tiempo determinado.
-* **onKeyUp:** Al liberar la tecla presionada
-
----
-## Objeto: Event
-````javascript
-function miFuncion(event){
-    
-}
-````
-
-Permite recibir propiedades del evento:
-elemento en el que ocurre, el estado de las teclas, 
-la posición del mouse, estado de los botones.
-
-
----
-<!-- .slide: style="font-size: 0.90em" -->
-* **altKey:** Devuelve si se ha precionado la techa ALT
-* **button:** Se presionó el botón del mouse
-* **ClientX:** Coordenada X del mouse
-* **clientY:** Coordenada Y del mouse
-* **keyIdentifier:** Identifica la letra que se presiono
-* **keyLocation:** Devuelve la posición de la tecla
-* **relatedTarget:** Devuelve el elemento relacionado con el elemento sobre el que se ejecuta el evento.
-* **screenX:** Devuelve la posición X del cursor relativa a la página
-* **screenY:** Devuelve la posición Y del cursor relativa a la página
-* **shoftKey:** Devuelve si se presionó Shift
-
----
-## Eventos de Enfoque
-* **onBlur:** Cuando un elemento pierde el foco de la aplicación.
-* **onFocus:** Cuando un elemento de la página o la ventana gana el foco de la aplicación
-
----
-## Eventos de Ventana
-* **onMove:** Al mover la ventana del navegador
-* **onResize:** Al redimensionar la ventana del navegador
-
----
-## Otros Eventos
-<!-- .slide: style="font-size: 0.90em" -->
-* **onUnload:** Al abandonar la página.
-* **onLoad:** Al terminar de cargarse la página o imágenes
-* **onClick:** Al hacer click al botón del mouse sobre un elemento de la página.
-* **onDragDrop:** Al soltar algo que se ha arrastrado sobre la página
-* **onError:** Si no se puede cargar un documento o una imagen
-* **onAbort:** Al detenerse la carga de una imagen, de la página o irse de la pagina.
 
 ---
 ## Gráficos en HTML5

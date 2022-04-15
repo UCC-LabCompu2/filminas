@@ -199,6 +199,10 @@ La web 1.0 mejora con la aparición del lenguaje HTML, que proporciona contenido
 para leer. Aun así, el usuario aún no podía interactuar y la web era como una especie de libro donde buscar y leer información.
 
 ---
+## Web 1.0
+![Web 1.0](images/appWeb/web1_0.webp)
+
+---
 ## Web 2.0
 A partir del año 2001, surge un cambio importante: el usuario empieza a interactuar con las webs. 
 Se siguen tres principios :
@@ -210,11 +214,19 @@ Aparecen grupos de usuarios, redes sociales, blogs y wikis entre otras. Se fomen
 El usuario ahora no solo accede a la información, sino que la crea.
 
 ---
+## Web 2.0
+![Web 2.0](images/appWeb/web2_0.webp)
+
+---
 ## Web 3.0
 Surge en 2006 para relacionar las webs de forma semántica, lo que permite que la información pueda ser encontrada de 
 forma más rápida y eficiente debido a su estructuración.
 
 Además de navegadores, se accede desde otros dispositivos y tecnologías.
+
+---
+## Web 3.0
+![Web 3.0](images/appWeb/web3_0.webp)
 
 ---
 ## Web 4.0
@@ -225,6 +237,10 @@ Algunas de las características de la web 4.0 son:
 * Comunicación entre dispositivos (m2m, máquina a máquina).
 * Uso de información relacionada (GPS, sensores de temperatura, etc.).
 * Nuevas formas de interacción con el usuario.
+
+---
+## Evolución Web
+![Evolución Web](images/appWeb/webEvolution.png)
 
 ---
 ## Lenguajes de Programación Web

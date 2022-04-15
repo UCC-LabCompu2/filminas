@@ -83,29 +83,45 @@ Ej. Hacer click en un botón, mover el puntero sobre un enlace, seleccionar un e
 ---
 ## Eventos de Mouse
 <!-- .slide: style="font-size: 0.90em" -->
-* **mlick**: Cuando el usuario hace clic con el mouse o el dedo en cualquier elemento HTML.
-* **mouseover, mouseout**:	El evento ocurre cuando el puntero se mueve hacia dentro (para el mouseover) o hacia afuera 
+* **onClick**: Cuando el usuario hace clic con el mouse o el dedo en cualquier elemento HTML.
+* **onMouseover, onMouseout**:	El evento ocurre cuando el puntero se mueve hacia dentro (para el mouseover) o hacia afuera 
 (para el mouseout) un elemento, o uno de sus hijos.
 * **contextmenu**: Cuando el usuario hace clic derecho en el mouse.
-* **mousemove**: Si el usuario mueve el mouse.
-* **mousedown, mouseup**: Si el usuario presiona o suelta el mouse.
+* **onMousemove**: Si el usuario mueve el mouse.
+* **onMousedown, onMouseup**: Si el usuario presiona o suelta el mouse.
+
+---
+### Ejemplo de Evento de Mouse
+````html
+<input type="button" value="Mostrar Cartel" onclick="alert('Hola Mundo!!!');" />
+<br>
+<div id="contenidos" style="width:150px; height:60px; border:thin solid silver" 
+     onmouseover="this.style.borderColor='black';" 
+     onmouseout="this.style.borderColor='silver';">
+    Sección de contenidos...
+</div>
+````
 
 ---
 ## Eventos de Teclado
-* **Keyup**: Cuando el usuario suelta la tecla del teclado.
-* **Keydown**: Cuando el usuario presiona la tecla del teclado.
-* **Keypress**: Cuando el usuario presiona y suelta la tecla del teclado. La diferencia de keydown/up es que Keypress 
+* **onKeyup**: Cuando el usuario suelta la tecla del teclado.
+* **onKeydown**: Cuando el usuario presiona la tecla del teclado.
+* **onKeypress**: Cuando el usuario presiona y suelta la tecla del teclado. La diferencia de keydown/up es que Keypress 
 solo funciona con teclas de caracteres. Por ejemplo, no funciona en las flechas arriba
 
 ---
 ## Eventos Navegador
-<!-- .slide: style="font-size: 0.90em" -->
+<!-- .slide: style="font-size: 0.80em" -->
+* **Unload**: Abandonar la página
 * **Load**: El navegador ha terminado de cargar el sitio web.
 * **Error**: El evento ocurre cuando se produce un error al cargar un archivo externo (como un CSS o un JavaScript).
 * **Scroll**: El evento ocurre cuando se realiza scroll.
 * **PageHide, PageShow**: Cuando el usuario se enfoca en una ventana/pestaña diferente; o cuando el usuario vuelve de 
 una ventana/pestaña diferente.
 * **Resize**: Cuando la ventana se redimensiona.
+* **Move**: Al mover la ventana del navegador
+* **DragDrop**:Al soltar algo que se ha arrastrado sobre la página
+* **Abort**: Al detenerse la carga de una imagen, de la página o irse de la pagina.
 
 ---
 ## Eventos de Formularios
