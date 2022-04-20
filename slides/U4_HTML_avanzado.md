@@ -384,6 +384,26 @@ Permite añadir archivos de video a la página.
     Tu navegador no implementa el elemento <code>video</code>.
 </video>
 
+[Más info](https://www.w3schools.com/html/html5_video.asp)
+
+---
+### Video
+<!-- .slide: style="font-size: 0.80em" -->
+````html
+<video width="320" height="240" autoplay muted>
+  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video> 
+````
+<video width="320" height="240" autoplay muted>
+  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video> 
+
+Atributos: controls (play, pause, volumen), width, height, autoplay, muted
+
+Formatos: mp4, webm, ogg.
+
 ---
 ## Audio
 Permite añadir archivos de audio a la página.

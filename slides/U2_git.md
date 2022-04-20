@@ -260,6 +260,15 @@ git diff
 ````
 
 ---
+#### Antes de comenzar... sabes usar lo básico de la consola???
+| accion           | comando | Windows    | Mac        |
+|------------------|---------|------------|------------|
+| change directory | cd      | cd carpeta | cd carpeta |
+| change directory a carpeta padres | cd.. | cd.. | cd .. |
+| ver contenido de un directorio | dir | dir | ls |
+
+
+---
 ## Ejercicio: Github Básico
 * Crear un repositorio (inicializarlo)
 * Clonar el repositorio
