@@ -42,10 +42,10 @@ Tener en cuenta
 ### Requisitos del Primer Parcial
 #### Sobre el repositorio
 <!-- .slide: style="font-size: 0.60em" -->
-- [ ] El proyecto debe estar subido al repositorio adecuado "Proyecto2021-ApellidoAlumno1-ApellidoAlumno2"
+- [ ] El proyecto debe estar subido al repositorio adecuado "Proyecto2022-ApellidoAlumno1-ApellidoAlumno2"
 - [ ] Modificar el Readme.MD y colocar información del proyecto/página (mínimamente: título del proyecto, autores, link de gh-pages, contenido de la página,  listado de tecnologías usadas, etc)
 - [ ] La estructura del proyecto debe ser adecuada (crear una carpeta para las imágenes, otra para los sketch/mockups). Es importante que contenga SKETCH y MOCKUP/Wireframe (debe estar en formato: PDF, PNG o JPG)
-- [ ] El código debe estar pusheado en el repositorio (emplear gh-pages), y no debe haber diferencias entre **main** y **gh-pages** (verificar de realizar el Merge).
+- [ ] El código debe estar pusheado en el repositorio (emplear gh-pages o configurar github para que se tome a la main como la pagina a visualiza), y no debe haber diferencias entre **main** y **gh-pages** (verificar de realizar el Merge).
 - [ ] Publicar la Web empleando GitHubPages
 - [ ] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc, en todo caso emplear **.gitignore**)
 
@@ -54,10 +54,10 @@ Tener en cuenta
 #### Sobre el proyecto general
 <!-- .slide: style="font-size: 0.60em" -->
 - [ ] La página principal debe llamarse index
-- [ ] Identar correctamente el código (en Webstorm Ctrl+Alt+L)
-- [ ] No debe haber errores presentes (realizar *Code* > *Inspect Code* para verificar que no haya errores)
-- [ ] Se debe emplear favicon (2022)
-- [ ] Emplear alguna fuente de google fonts o subir al proyecto alguna fuente externa (2022 aunque sea para un título)
+- [ ] Identar correctamente el código (en Webstorm Ctrl+Alt+L ó menú *Code* > *Reformat Code*)
+- [ ] No debe haber errores presentes (en Webstorm *Code* > *Inspect Code* para verificar que no haya errores)
+- [ ] Se debe emplear favicon
+- [ ] Emplear alguna fuente de google fonts o subir al proyecto alguna fuente externa (aunque sea para un título)
 - [ ] Debe haber navegación entre todas las páginas
 
 ---
@@ -72,15 +72,19 @@ Tener en cuenta
 - [ ] Emplear ```<header></header>```. En el contenido de la cabecera debe haber un título ```<h1></h1>```, puede tener color de fondo, algún logotipo, etc.
 - [ ] Debe haber por lo menos una etiqueta ```<img>``` en la página.
 - [ ] La estructura de la página debe estar definida con ```<div></div>```
-- [ ] Debe contener al menos 3 elementos de tipo ```<input>``` o ```<select>``` ó ```<button>``` que le permitan al usuario ingresar valores para poder realizar un cálculo de un ejercicio.
+- [ ] Debe contener al menos 3 elementos de tipo ```<input>``` o ```<select>``` o ```<button>``` que le permitan al usuario ingresar valores para poder realizar un cálculo de un ejercicio o seleccionar opciones.
 
 ---
 <!-- .slide: style="font-size: 0.80em" -->
 ### Requisitos del Primer Parcial
 #### Sobre el HTML (2)
+<!-- .slide: style="font-size: 0.70em" -->
+<!-- .slide: style="font-size: 0.70em" -->
 - [ ] Debe contener un ```<canvas>```, para que posteriormente (en la 2da etapa) se grafique alguna imagen representativa del ejercicio. (el desarrollo del gráfico se realizará cuando se vea la unidad de “Orientación a Eventos”)
 - [ ] No espaciar con excesivos ```<br>```. Utilizar márgenes, paddings, etc.
 - [ ] No utilizar etiquetas deprecadas.
+
+![TAG Deprecadas](images/proyecto/deprecated_tag.png)
 - [ ] Todas las etiquetas que correspondan deben estar correctamente cerradas
 - [ ] Los ids de los elementos deben ser unívocos
 
@@ -89,8 +93,8 @@ Tener en cuenta
 #### Sobre el CSS
 - [ ] El estilo de los elementos debe establecerse en un archivo CSS (prohibido poner el atributo style a los elementos o emplear estilos incrustados).
 - [ ] El CSS debe contar mínimo con un tipo de cada forma (por Tag, por ID y por clase).
-- [ ] Se debe emplear pseudoclase (2022)
-- [ ] No emplear ```!important``` (2022)
+- [ ] Se debe emplear pseudoclase
+- [ ] No emplear ```!important```
 
 ---
 ### Requisitos del Primer Parcial
