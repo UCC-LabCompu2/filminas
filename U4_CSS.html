@@ -196,21 +196,25 @@ margin-left: 15px;
 
 </script></section><section  data-markdown><script type="text/template">
 ##  ¿Como Escribir un Estilo? 
+<!-- .slide: style="font-size: 0.90em" -->
 Obviamente, con el teclado xD. Bue, hablando en serio, hay 3 formas:
 
 1. **por Tag** (se aplica a TODOS los selectores)
 ````html
 selector{nombreEstilo: valor;}
+Ej. section{font-family: Arial, Helvetica;}
 ````
 
 2. **por ID** (para identificar elementos unívocos)
 ````html
 #nombreID {nombreEstilo: valor;}
+Ej. #nombreUsuario {color: #ff00cc;}
 ````
 
 3. **por Clase**
 ````html
 .nombreClass {nombreEstilo: valor;}
+Ej. .myStl {background-color: rgb(234,55,76);}
 ````
 
 </script></section><section  data-markdown><script type="text/template">
@@ -328,6 +332,9 @@ div{
 ````
 unidad de medida | porcentaje | auto | inherit (hereda del padre)
 
+<!-- .slide: style="font-size: 0.75em" -->
+Nota: No se debe agregar espacio entre el valor y la unidad. Es incorrecto escribir "20 px"
+
 </script></section><section  data-markdown><script type="text/template">
 ##  Unidades de Medida 
 <!-- .slide: style="font-size: 0.80em" -->
@@ -396,17 +403,30 @@ div{margin: 15px 20px 5px;}
 ````css
 /* solo color */
 background: red;
+background-color: rgba(255,0,0, 0.5);
 /* gradiente */
 background: linear-gradient(to right, red , yellow);
 /* imagen de fondo */
 background: url("fondo.png");
+background-image: url("paper.gif");
+background-repeat: repeat-x; /*repeat-y; no-repeat;*/
+background-attachment: fixed; /*scroll; con respecto al resto de la imagen*/
+background-position: right top; /*posision de inicio de imagen de fondo*/
+/*Shorthand*/
+background: #ffffff url("img_tree.png") no-repeat right top;
+
 ````
 
 </script></section><section  data-markdown><script type="text/template">
 ## FavIcon
+<!-- .slide: style="font-size: 0.80em" -->
+Es una pequeña imagen que se muestra junto al título de la página en la pestaña del navegador, o cuando se agrega a favoritos/marcadores.
+
+Se puede usar cualquier imagen como favicon, o se puede crear favicon propios en sitios como https://favicon.cc
 ````css
-<link rel="shortcut icon" href="/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 ````
+![Favicon](images/html/img_favicon.png)
 
 </script></section><section  data-markdown><script type="text/template">
 ## Ejercicio: CV
@@ -414,7 +434,7 @@ background: url("fondo.png");
 Diseñe un CV y agregue estilos empleando una hoja de estilo incrustada:
 * Hacer que el borde de los divs sea visible
 * Agregue atributos de margin y padding.
-* Agregar una imagen en el primer <div> y alinee a la izquierda
+* Agregar una imagen en el primer **div** y alinee a la izquierda
 * Centrar todo el contenido del body.
 * Agregar <a href="https://fonts.google.com/" target="_blank"> fuentes de google </a> para personalizar la página
 * Agregar background al body, que posea <a href="https://www.w3schools.com/csS/css3_gradients.asp" target="_blank">gradiente</a>
@@ -432,7 +452,10 @@ Diseñe un CV y agregue estilos empleando una hoja de estilo incrustada:
 
 </script></section><section  data-markdown><script type="text/template">
 ## Comentario
+Se puede agregar comentarios de una ó multiples líneas.
 ````css
+/* Comentario de una sola línea */
+
 /* Este es un
 comentario CSS de varias
 lineas */
@@ -449,6 +472,12 @@ Buenas Practicas:
 * Evitar tamaños absolutos en fuentes o elementos
 * Utilizar notación de colores en hexadecimal
 * Ordenar los elementos según pertenezcan a cabecera, contenido principal o pie de página
+
+</script></section><section  data-markdown><script type="text/template">
+# Bibliografia xD
+[![W3School](images/html/logo_w3schoolscom.png)](http://www.w3schools.com/css)
+
+[![MDN](images/html/logo_MDN.png)](https://developer.mozilla.org/es/docs/Web/CSS)
 
 </script></section><section  data-markdown><script type="text/template">
 ## ¿Dudas, Preguntas, Comentarios?
