@@ -316,12 +316,21 @@ Funciona empleando 2 claves: la privada (solo para tí), la pública (para todo 
 </script></section><section  data-markdown><script type="text/template">
 ### [Como configurar SSH?](https://medium.com/humantodev/configurar-ssh-github-enwindows-10-linux-y-macos-e843eb6d104e#:~:text=%C2%BFQu%C3%A9%20es%20SSH%3F,(PARA%20TODA%20LA%20HUMANIDAD))
 <!--https://platzi.com/tutoriales/1557-git-github/4067-configurar-llaves-ssh-en-git-y-github/?gclid=EAIaIQobChMI35TBz4ij9gIVgwWRCh1ddwUPEAAYAiAAEgJJJfD_BwE&gclsrc=aw.ds-->
-1. Generar una **key** mediante cmd (-t para generar con sistema criptográfico rsa, -b tamaño, -C nota para identificar)
-````html
+1. Abrir CMD 
+2. Correr el comando  
+````
 ssh-keygen -t rsa -b 4096 -C "tu@email.com"
 ````
-2. Se genera una carpeta llamada **.ssh** con la clave pública y privada (hay que configurar windows para ver archivos ocultos)
-3. Copiar el contenido de id_rsa.pub y configurarlo en GitHub
+3. Correr el comando 
+````
+cd .ssh
+````
+4. Correr el comando 
+````
+more id_rsa.pub
+````
+5. Copiar el texto que dice "ssh-rsa BLA BLA"
+6. Ingresar a gitHub, Setting, SSH and GPG Keys, New SSH Key, pegar la clave
 
 </script></section><section  data-markdown><script type="text/template">
 ## SSH en GitHub
