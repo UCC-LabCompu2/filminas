@@ -118,14 +118,15 @@ Etiquetas que dan un significado a las partes del documento, indican qué conten
 
 ---
 ## Estructura Semántica
-![Estructura HTML5](images/html/estructura-HTML5.png)
+![Estructura HTML5](images/html/etiquetas_semanticas.png)
 
 ---
 ## Estructura Semántica
-<!-- .slide: style="font-size: 0.90em" -->
+<!-- .slide: style="font-size: 0.80em" -->
 * [**Header:**](https://www.w3schools.com/tags/tag_header.asp) Especifica un encabezado de un documento o sección.
 * [**Nav:**](https://www.w3schools.com/tags/tag_nav.asp) Define un conjunto de enlaces de navegación.
 * [**Aside:**](https://www.w3schools.com/tags/tag_aside.asp) Define un contenido que se coloca como una barra lateral.
+* [**Main**](https://www.w3schools.com/tags/tag_main.asp) Contenido predominante de la página.
 * [**Section:**](https://www.w3schools.com/tags/tag_section.asp) Define una sección de un documento. (Ejemplo, introducción, contenido, contacto)
 * [**Article:**](https://www.w3schools.com/tags/tag_article.asp) Especifica contenido independiente. Debe tener sentido por sí mismo. (Ejemplo mensaje foro, entrada blog, articulo periodico)
 * [**Footer:**](https://www.w3schools.com/tags/tag_footer.asp) Especifica un pie de página de un documento o sección.
