@@ -18,3 +18,12 @@ Steps:
 
 ### TODO LIST
 * Ejercicios de margin-padding
+* Agregar ejemplo de pull request
+* Agregar Ejercicios de CSS-Grid
+* Más enfoque en diseño mobile
+* Explicar diferencia entre función => y convencional
+* UX vs UI
+* Mobile First
+* Js trabajar con cadenas de caracteres
+* Borrar archivos del repositorio
+* Configurar remote URL en Github

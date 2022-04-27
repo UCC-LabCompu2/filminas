@@ -112,7 +112,7 @@ Como posicionar elementos dentro de la pagina.
 
 [W3School](https://www.w3schools.com/cssref/pr_class_position.asp)
 
-Ejemplos: [Learns Layout](http://es.learnlayout.com/position.html)
+Ejemplos: [Learns Layout](http://learnlayout.com/position.html)
 
 ---
 ## Position: static;
@@ -142,7 +142,7 @@ espacio será ocupado por otros elementos; puede crear superposiciones.
 <!-- .slide: style="font-size: 0.90em" -->
 Los elementos con position: absolute; son posicionados mediante top, left... 
 respecto a su ancestro mas cercano que este posicionado.
-Un elemento posicionado es aquel que tenga en su propiedad position algo distinto a static
+Un elemento posicionado es aquel que tenga en su propiedad position algo distinto a static.
 
 Permite fijar un elemento en una posición respecto al origen de coordenadas del primer 
 elemento contenedor posicionado ó respecto a la esquina superior de la ventana de visualización; el 
@@ -162,14 +162,14 @@ Los elementos con z-index mayor tapan a los elementos con z-index menor
 ## Float
 Epecifica si un elemento debe salir del flujo normal y aparecer a la izquierda o a la derecha de su contenedor.
 
-[Learns Layout](http://es.learnlayout.com/float.html)
+[Learns Layout](http://learnlayout.com/float.html)
 
 ---
 ## Clear
 Epecifica si un elemento puede estar al lado de elementos flotantes que lo preceden o si debe ser movido (cleared) 
 debajo de ellos. La propiedad clear aplica a ambos elementos flotantes y no flotantes.
 
-[Learns Layout](http://es.learnlayout.com/clear.html)
+[Learns Layout](http://learnlayout.com/clear.html)
 
 ---
 ## Ejercicio: 2 Columnas
@@ -201,6 +201,48 @@ Emplea <b>Chakra</b> para JavaScript y <b>Trident</b> para renderizado.
 
 ---
 ![Prueba Navegadores](images/html/prueba_navegadores.jpg)
+
+---
+## Transitions
+Es una forma de animar los cambios de las propiedades CSS, para que no surtan efecto de manera instantánea.
+````css
+transition: <propiedad> <duracion> <funcion-tiempo> <retraso>;
+````
+La sintaxis puede ser también separada:
+````css
+a {
+    transition-property: text-decoration;
+    transition-duration: 0.8s;
+    transition-timing-function: linear;
+    transition-delay: 0.2s;
+}
+````
+
+---
+## Transitions
+<!-- .slide: style="font-size: 0.80em" -->
+* **transition-poperty**: propiedad a la que se le va a aplicar el efecto de transición. Puede ser cualquier propiedad de CSS: width, height, color, border, etc.
+* **transition-duration**: duración del efecto. Puede ser en segundos (s) o milisegundos (ms).
+* **trasition-timing-function**: define la curva de velocidad a la que se produce el efecto. Puede ser: ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier, initial, inherit
+* **transition-delay**: retraso en el comienzo de la transición. Puede ser en segundos (s) o milisegundos (ms).
+
+---
+## Transitions
+
+Por ejemplo:
+````css
+a {
+    text-decoration: none;
+    color: blue;
+}
+a:hover {
+    color: red;
+}
+a {
+    transition: color 0.8s linear 0.2s;
+}
+````
+
 
 ---
 ## Transitions
@@ -244,10 +286,168 @@ div:hover {
 
 ---
 ## Grid
-Es bastante nuevo, y permite de cierta forma reemplazar el position en algunos casos, y 
+Permite de cierta forma reemplazar el position en algunos casos, y 
 simplifica muchas tareas para las que antes era necesario incluir algun framework como flexbox.
 
 Es un sistema de rejilla en 2 dimensiones, creado dentro standard del lenguaje CSS.
+
+---
+## Grid Básico
+![Grid Basico](images/css/grid1.png)
+
+---
+## Grid Básico
+````html
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>  
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>  
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>  
+</div>
+
+</body>
+````
+
+---
+## Grid: Columnas
+Las líneas verticales de los elementos de grid se denominan columnas.
+
+![Grid Columns](images/css/grid_columns.png)
+
+---
+## Grid: Columnas
+````html
+<style>
+.grid-container {
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: auto auto auto;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>  
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>  
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>  
+</div>
+
+</body>
+````
+
+
+---
+## Grid: Filas
+Las líneas horizontales de los elementos de grid se denominan filas.
+
+![Grid Columns](images/css/grid_rows.png)
+
+
+---
+## Grid: Filas
+````html
+<style>
+.grid-container {
+  display: grid;
+  row-gap: 50px;
+  grid-template-columns: auto auto auto;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>  
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>  
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>  
+</div>
+
+</body>
+````
+
+---
+## Grid: gap
+El espacio entre cada columna/fila se denomina gap.
+
+![Grid Gap](images/css/grid_gaps.png)
+
+---
+## Grid: Compolejo
+![Grid Complejo](images/css/grid_complex.png)
+
+---
+## Grid: Compolejo
+````html
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="item1">Header</div>
+  <div class="item2">Menu</div>
+  <div class="item3">Main</div>  
+  <div class="item4">Right</div>
+  <div class="item5">Footer</div>
+</div>
+
+</body>
+````
 
 ---
 ## Grid
@@ -294,7 +494,7 @@ http://html-color-codes.info/codigos-de-colores-hexadecimales/
     }
 }
 ````
-[Learn Layout](http://es.learnlayout.com/media-queries.html)
+[Learn Layout](http://learnlayout.com/media-queries.html)
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
