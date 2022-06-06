@@ -27,6 +27,9 @@ Relizar un proyecto Web. La página debe poder resolver ejercicios de **Física 
 #### Sobre el Sketch
 <!-- .slide: style="font-size: 0.80em" -->
 - [ ] Tener en cuenta los mensajes de error para el usuario
+- [ ] Versión Desktop y Mobile
+- [ ] Guardado en formato PNG, JPG ó PDF
+- [ ] Dentro de una carpeta llamada "Sketch"
 
 Tener en cuenta
 * ¿Qué opciones debe ofrecer al usuario?
@@ -40,21 +43,32 @@ Tener en cuenta
 
 ---
 ### Requisitos del Primer Parcial
+#### Sobre el Wireframe/Mockup
+<!-- .slide: style="font-size: 0.80em" -->
+- [ ] Dibujado con algún programa: Draw.io en Drive, Pencil Project, Mockups, NinjaMock, o similares.
+- [ ] Tener en cuenta los mensajes de error para el usuario
+- [ ] Versión Desktop y Mobile
+- [ ] Guardado en formato PNG, JPG ó PDF
+- [ ] Dentro de una carpeta llamada "Wireframe" ó "Mockup"
+
+---
+### Requisitos del Primer Parcial
 #### Sobre el repositorio
 <!-- .slide: style="font-size: 0.60em" -->
 - [ ] El proyecto debe estar subido al repositorio adecuado "Proyecto2022-ApellidoAlumno1-ApellidoAlumno2"
 - [ ] Modificar el Readme.MD y colocar información del proyecto/página (mínimamente: título del proyecto, autores, link de gh-pages, contenido de la página,  listado de tecnologías usadas, etc)
-- [ ] La estructura del proyecto debe ser adecuada (crear una carpeta para las imágenes, otra para los sketch/mockups). Es importante que contenga SKETCH y MOCKUP/Wireframe (debe estar en formato: PDF, PNG o JPG)
+- [ ] La estructura del proyecto debe ser adecuada (crear una carpeta para las imágenes, otra para los sketch/mockups)
 - [ ] El código debe estar pusheado en el repositorio (emplear gh-pages o configurar github para que se tome a la main como la pagina a visualiza), y no debe haber diferencias entre **main** y **gh-pages** (verificar de realizar el Merge).
 - [ ] Publicar la Web empleando GitHubPages
-- [ ] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc, en todo caso emplear **.gitignore**)
+- [ ] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc o .DS_Store, en todo caso emplear **.gitignore**)
+- [ ] "Lorem ipsum" es sólo válido para los prototipos, NO para la página
 
 ---
 ### Requisitos del Primer Parcial
 #### Sobre el proyecto general
 <!-- .slide: style="font-size: 0.60em" -->
 - [ ] La página principal debe llamarse index
-- [ ] Identar correctamente el código (en Webstorm Ctrl+Alt+L ó menú *Code* > *Reformat Code*)
+- [ ] Identar correctamente el código (en Webstorm con Ctrol+A se selecciona todo el código y con Ctrl+Alt+L ó menú *Code* > *Reformat Code*)
 - [ ] No debe haber errores presentes (en Webstorm *Code* > *Inspect Code* para verificar que no haya errores)
 - [ ] Se debe emplear favicon
 - [ ] Emplear alguna fuente de google fonts o subir al proyecto alguna fuente externa (aunque sea para un título)
@@ -68,7 +82,7 @@ Tener en cuenta
 - [ ] Poner comillas a todos los atributos
 - [ ] **Title** debe contener el título de la página
 - [ ] En el ```<head></head>``` incluir las etiquetas ```<meta>``` detallando: autor, descripción y palabras clave
-- [ ] Emplear al menos 3 etiquetas semánticas diferentes (header, nav, aside, section, article, footer)
+- [ ] Emplear al menos 3 etiquetas semánticas diferentes (header, nav, aside, main, section, article, footer)
 - [ ] Emplear ```<header></header>```. En el contenido de la cabecera debe haber un título ```<h1></h1>```, puede tener color de fondo, algún logotipo, etc.
 - [ ] Debe haber por lo menos una etiqueta ```<img>``` en la página.
 - [ ] La estructura de la página debe estar definida con ```<div></div>```
