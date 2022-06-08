@@ -204,6 +204,13 @@ Se le puede configurar
 ````
 
 ---
+## HTML5: Viewport
+Prueba como se ve la página Ejercicios-CSS/ej_cv.html con F12 SIN la etiqueta de viewport... Luego agregale la etiqueta y mira que pasa
+````css
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+````
+
+---
 ## Ejercicio: Responsive
 Empleando Ejercicios-CSS el template ej_instagram, el contenido debe visualizarse:
 * Se deben mostrar 3 columnas las imagenes si la pantalla si la pantalla tiene un minimo de 601px
@@ -224,6 +231,14 @@ Empleando Ejercicios-CSS el template ej_instagram, el contenido debe visualizars
 ---
 ## [Tu página está correctamente optimizada para móviles?](https://search.google.com/test/mobile-friendly?utm_source=mft&utm_medium=redirect&utm_campaign=mft-redirect)
 Deja que google te ayude a averiguarlo...
+
+Por ejemplo, podemos ingresar 
+
+https://ucc-labcompu2.github.io/filminas/Proyecto.html#/5
+
+---
+### [Tu página está correctamente optimizada para móviles?](https://search.google.com/test/mobile-friendly?utm_source=mft&utm_medium=redirect&utm_campaign=mft-redirect)
+![Resultado](images/appWeb/GoogleAdaptacionMobile.png)
 
 ---
 ## Ejercicio: Diseño Responsivo

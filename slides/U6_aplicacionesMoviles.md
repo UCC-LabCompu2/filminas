@@ -145,7 +145,7 @@ Según forma de desarrollo:
 ## Apps Android
 * **Lenguaje:** Java o Kotlin + Librerias Android
 * **IDE:** [Android Studio](https://developer.android.com/studio)
-* **SO:** Windows, Linux o Mac
+* **SO:** Windows, Linux, Mac, Chrome OS
 * Emuladores de Dispositivos
     
 ---
