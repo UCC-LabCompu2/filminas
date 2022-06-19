@@ -31,6 +31,9 @@ Relizar un proyecto Web. La página debe poder resolver ejercicios de **Física 
 - [ ] Guardado en formato PNG, JPG ó PDF
 - [ ] Dentro de una carpeta llamada "Sketch"
 
+---
+### Requisitos del Primer Parcial
+#### Sobre el Sketch
 Tener en cuenta
 * ¿Qué opciones debe ofrecer al usuario?
 * ¿Qué campos hay para ingresar datos?
@@ -67,6 +70,7 @@ Tener en cuenta
 ### Requisitos del Primer Parcial
 #### Sobre el proyecto general
 <!-- .slide: style="font-size: 0.60em" -->
+- [ ] NO está permitido descargar un TEMPLATE (diseño 100% desde cero)
 - [ ] La página principal debe llamarse index
 - [ ] Identar correctamente el código (en Webstorm con Ctrol+A se selecciona todo el código y con Ctrl+Alt+L ó menú *Code* > *Reformat Code*)
 - [ ] No debe haber errores presentes (en Webstorm *Code* > *Inspect Code* para verificar que no haya errores)
@@ -123,6 +127,16 @@ Tener en cuenta
 #### Sobre las Correcciones
 - [ ] Se corregirá el proyecto con el último commit realizado en Github hasta las 23:59 del día anterior a la fecha de entrega
 - [ ] Las notas serán de manera logarítmica: (Por ejemplo 60% 4; 70% 5,5; 80% 7; 90% 8,5)
+
+---
+### Requisitos del Primer Parcial
+#### Sobre las Correcciones
+| Items a Evaluar | %   |
+|-----------------|-----|
+| Prototipo en papel | 7%  |
+| Prototipo Mockup | 8%  |
+| HTML+CSS | 85% |
+Por cada corrección o defecto en el HTML+CSS se descontará un 6% del 85%.
 
 ---
 #### Como quiere sentirse la Profe al corregir el proyecto
@@ -184,6 +198,18 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada</p>
 #### Sobre las Correcciones
 - [ ] Se corregirá el proyecto con el último commit realizado en Github hasta las 23:59 del día anterior a la fecha de entrega
 - [ ] Las notas serán de manera logarítmica: (Por ejemplo 60% 4; 70% 5,5; 80% 7; 90% 8,5)
+
+---
+### Requisitos del Segundo Parcial
+#### Sobre las Correcciones
+| Items a Evaluar        | %   |
+|------------------------|-----|
+| Canvas                 | 26% |
+| Grafico Representativo | 10% |
+| Cálculo del Ejercicio  | 40% |
+| Errores Js             | 7%  |
+| HTML+CSS corregido     | 10% |
+| Comentar Js            | 7%  |
 
 ---
 

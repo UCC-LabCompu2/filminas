@@ -23,7 +23,6 @@ Steps:
 * Más enfoque en diseño mobile
 * Explicar diferencia entre función => y convencional
 * UX vs UI
-* Mobile First
 * Js trabajar con cadenas de caracteres
 * Borrar archivos del repositorio
 * Configurar remote URL en Github
