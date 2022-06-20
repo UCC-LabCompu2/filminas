@@ -178,6 +178,7 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada</p>
 * Una función que compruebe si los valores ingresados son correctos, y si no lo son, que le indique al usuario por un alert, y que blanquee el contenido del campo.
 * Una función que calcule algo en base a los valores ingresados por el usuario en los inputs.
 * Una función que realice un dibujo sobre un canvas (debe ser representativo y acorde a los valores ingreados).
+* El código Js debe estar en un archivo externo
 
 ---
 ### Requisitos del Segundo Parcial
@@ -205,7 +206,7 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada</p>
 | Items a Evaluar        | %   |
 |------------------------|-----|
 | Canvas                 | 26% |
-| Grafico Representativo | 10% |
+| Gráfico Representativo | 10% |
 | Cálculo del Ejercicio  | 40% |
 | Errores Js             | 7%  |
 | HTML+CSS corregido     | 10% |
