@@ -32,14 +32,11 @@ La Materia
 
 ---
 ## Profesores
-#### Ing. Agustina Edmé Aliciardi
+### Ing. Agustina Edmé Aliciardi
 agustina.aliciardi@ucc.edu.ar
 
-#### Ing. Daniel Germena
-1230332@ucc.edu.ar
-
-#### Ing. María Eugenia Castagnola
-1001147@ucc.edu.ar
+### Ing. Eduardo de Lima
+1938033@ucc.edu.ar
 
 ---
 ## UNIDADES
@@ -98,7 +95,7 @@ FINAL:
 
 ---
 ## Regularidad
-* Asistencia del 70% en Clases Teórico-Prácticas (en el repositorio **ejercicio2022-Apellido** tener realizados los ejercicio de clase)
+* Asistencia del 70% en Clases Teórico-Prácticas (en el repositorio **ejercicio2023-Apellido** tener realizados los ejercicio de clase)
 * Proyecto primera y segunda etapa aprobados (nota mínima de 4)
 * Promedio de los 7 parcialitos >= 4
 
