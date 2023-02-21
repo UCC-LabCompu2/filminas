@@ -9,6 +9,10 @@ Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
 ---
+## Bibliografia
+[![Pro Git](images/herramientas/book_git.png)](https://git-scm.com/book/en/v2)
+
+---
 <!-- .slide: style="font-size: 0.60em" -->
 <style>
 .grid-container4 {
@@ -423,7 +427,7 @@ Permite el trabajo colaborativo, gestión de issues, code reviews, feedback, etc
 ## Ejercicio: GitHub Classroom
 * Crear un repositorio para los ejercicios de la materia, empleando el código base de los ejercicios (servira para avanzar con html, css, js más adelante).
 
-[Link Classroom](https://classroom.github.com/a/piW5lbnA)
+[Link Classroom 2023](https://classroom.github.com/a/YYVS9bGo)
 
 <!--Paso a paso aquí...[PDF](https://drive.google.com/open?id=1scW5JZ3puH0uPpmzckFkEgE8TjqSJbV8)-->
 

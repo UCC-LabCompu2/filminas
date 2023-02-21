@@ -70,14 +70,24 @@ Created by <i class="fab fa-telegram"></i>
 * **shadowOffsetY = number**
     La distancia vertical de la sombra.
 * **shadowBlur = number**
-    El tamaño del efecto de desenfoque.
-       
+    El tamaño del efecto de desenfoque. 
+
+
+---
+## Borrar Canvas
+````javascript
+//Para borrar TODO el contenido
+canvas.width=canvas.width;
+//Para borrar un área rectangular
+ctx.clearRect(x, y, width, height);
+````
+
 ---
 ## Ejercicio: Mini-Paint
 * Utilizar el evento onmousemove para disparar la función de dibujo
 * En la función, obtener la posición x e y del ratón y dibujar un punto en el canvas
 * Agregar una variable "bandera" que indique si el botón del ratón se presionó (onmousedown, onmouseup)
-* Cree un boton para limpiar el canvas
+* Cree un boton para limpiar (borrar) el canvas
 
 ---
 ## Ejercicio: Mini-Paint
@@ -165,15 +175,6 @@ function dibujoArcT() {
 ---
 ## Ejercicio: Dibujar imagen
 <iframe width="560" height="315" src="https://www.youtube.com/embed/h8CsSjv3U48" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
----
-## Borrar Canvas
-````javascript
-//Para borrar TODO el contenido
-canvas.width=canvas.width;
-//Para borrar un área rectangular
-ctx.clearRect(x, y, width, height);
-````
 
 ---
 ## Escribir texto en canvas Canvas

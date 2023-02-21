@@ -20,7 +20,7 @@ Relizar un proyecto Web. La página debe poder resolver ejercicios de **Física 
 
 ---
 ## Github Classroom: Proyecto Integrador
-[Primer Parcial](https://classroom.github.com/a/IdekyeEy)
+[Primer Parcial 2023](https://classroom.github.com/a/TOTyEjnh)
 
 ---
 ### Requisitos del Primer Parcial

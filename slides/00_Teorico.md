@@ -45,11 +45,11 @@ agustina.aliciardi@ucc.edu.ar
 
 **Unidad 2:** Herramientas de Desarrollo
 
-**Unidad 3:** Conceptos de interfaces de usuario
+**Unidad 3:** Interfaces de usuario
 
 **Unidad 4:** Aplicaciones Web
 
-**Unidad 5:** Conceptos de orientación a eventos
+**Unidad 5:** Orientación a Eventos
 
 **Unidad 6:** Aplicaciones móviles
 
