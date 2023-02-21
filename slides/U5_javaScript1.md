@@ -130,24 +130,57 @@ var arr[5];
 ---
 ## Identificadores
 Los nombres de las variables deben cumplir ciertas reglas:
-* Debe comenzar con una letra, un guión bajo (_) o un signo de dólar ($). 
+* Debe comenzar con una letra, un guión bajo (_) o un signo de pesos ($). 
 * Los siguientes caracteres también pueden ser dígitos (0-9).
 * Distinción entre mayúsculas y minúsculas
 
 ---
-## Funciones
+## Funciones Clásicas
+* Emplea palabra reservada **function** + nombre de la función + los parámetros.
 ````javascript
 function miFuncionSuma(parametro1, parametro2){
-   var res;
+   let res;
    res = parametro1 + parametro2;
    return res;
 }
+console.log(miFuncionSuma(2,3));
 ````
-Ó también se puede emplear [función flecha](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+
+* **Hoisting**: la función puede ser llamada desde cualquier parte del código (antes o después de definir la función).
+
+---
+## Funciones Anónimas
+* Al no tener nombre es necesario almacenarlas en una variable para poder llamarlas después.
+* No admite **Hoisting**
 ````javascript
-( param1, param2, ...rest ) => { expression; }
-Ejemplo:
-const add = ( x, y ) => x + y;
+let sumar = function(parametro1, parametro2){
+   let res = parametro1 + parametro2;
+   return res;
+}
+console.log(miFuncionSuma(2,3));
+````
+
+---
+## Funciones Flecha
+* Es una función **anónima**
+* No necesita de la palabra reservada **function**
+* No es necesario emplear return
+* Sintaxis simplificada, que permite optimizar el código.
+````javascript
+let suma = (parametro1, parametro2) => { parametro1 + parametro2 }
+````
+
+---
+## Funciones Flecha
+* Si la función tiene solo un parámetro, pueden omitirse los paréntesis
+* Si el cuerpo de la función es una sola línea, pueden omitirse las llaves
+````javascript
+let saludo = nombre =>  'Hola ' + nombre + '!!!' ;
+````
+* Si la función no lleva parámetros, los parentesis vacios son obligatorios.
+* Si la función necesita de un objeto, debe emplearse un paréntesis
+````javascript
+let obj = () =>  ({nombre: 'Agus', edad: 34}) ;
 ````
 
 ---
@@ -180,6 +213,18 @@ if(saludo == "Whatsup!"){
 * **<** menor
 * **<=** menor o igual
 * **===** exactamente igual
+
+---
+## Ternarios
+Se emplea como atajo de if/else
+````javascript
+condición ? expr1 : expr2
+````
+
+Un ejemplo aplicado:
+````javascript
+edad >=18 ? console.log('Puede conducir un auto'): console.log('Menor de edad!';
+````
 
 ---
 ## Switch
@@ -218,6 +263,17 @@ var i = 0;
 do { 
     i += 1; console.log(i); 
 } while(i < 5);
+````
+
+---
+## Bucles
+Llama a una función por cada elemento en el array.
+````javascript
+const arrayPalabras = ['Laboratorio', 'Computacion', 'Universidad'];
+
+arrayPalabras.forEach((palabra, index) => {
+    console.log(`La palabra ${index} es: ${palabra}`)
+})
 ````
 
 ---

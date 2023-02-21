@@ -48,7 +48,7 @@ Tener en cuenta
 ### Requisitos del Primer Parcial
 #### Sobre el Wireframe/Mockup
 <!-- .slide: style="font-size: 0.80em" -->
-- [ ] Dibujado con algún programa: Draw.io en Drive, Pencil Project, Mockups, NinjaMock, o similares.
+- [ ] Dibujado con algún programa como: Figma, AdobeXD, Draw.io en Drive, Pencil Project, Mockups, NinjaMock, o similares.
 - [ ] Tener en cuenta los mensajes de error para el usuario
 - [ ] Versión Desktop y Mobile
 - [ ] Guardado en formato PNG, JPG ó PDF
@@ -61,7 +61,7 @@ Tener en cuenta
 - [ ] El proyecto debe estar subido al repositorio adecuado "Proyecto2023-ApellidoAlumno1-ApellidoAlumno2"
 - [ ] Modificar el Readme.MD y colocar información del proyecto/página (mínimamente: título del proyecto, autores, link de gh-pages, contenido de la página,  listado de tecnologías usadas, etc)
 - [ ] La estructura del proyecto debe ser adecuada (crear una carpeta para las imágenes, otra para los sketch/mockups)
-- [ ] El código debe estar pusheado en el repositorio (emplear gh-pages o configurar github para que se tome a la main como la pagina a visualiza), y no debe haber diferencias entre **main** y **gh-pages** (verificar de realizar el Merge).
+- [ ] El código debe estar pusheado en el repositorio (emplear gh-pages o configurar github para que se tome a la main como la página a visualizar), y no debe haber diferencias entre **main** y **gh-pages** (verificar de realizar el Merge).
 - [ ] Publicar la Web empleando GitHubPages
 - [ ] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc o .DS_Store, en todo caso emplear **.gitignore**)
 - [ ] "Lorem ipsum" es sólo válido para los prototipos, NO para la página
@@ -120,7 +120,7 @@ Tener en cuenta
 - [ ] Toda imagen debe tener su etiqueta alt
 - [ ] Todo ```<input>``` o ```<select>``` debe tener su ```<label>```
 - [ ] Los labels deben contener el atributo **for** (el for debe contener el id del input al cual se referencia) 
-- [ ] Si hay una tabla en la página, debe contener ```<caption></caption>``` mejoras en la interfaz de usuario y páginas web dinámicas.
+- [ ] Si hay una tabla en la página, debe contener ```<caption></caption>```
 
 ---
 ### Requisitos del Primer Parcial

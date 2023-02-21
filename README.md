@@ -21,7 +21,6 @@ Steps:
 * Agregar ejemplo de pull request
 * Agregar Ejercicios de CSS-Grid
 * Más enfoque en diseño mobile
-* Explicar diferencia entre función => y convencional
 * UX vs UI
 * Js trabajar con cadenas de caracteres
 * Borrar archivos del repositorio
