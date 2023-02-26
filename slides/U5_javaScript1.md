@@ -71,6 +71,7 @@ Created by <i class="fab fa-telegram"></i>
 ![Book](images/book.png)
 
 [Guía de JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide)
+[Curso: Introduction to JavaScript](https://testautomationu.applitools.com/javascript-tutorial/)
 
 ---
 ## JavaScript

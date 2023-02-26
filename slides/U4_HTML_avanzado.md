@@ -115,6 +115,22 @@ Campo de texto en una línea
 <input type="color" name="color"/>
 
 ---
+## Input
+![Inputs](images/html/inputs1.jpg)
+
+---
+## Input
+![Inputs](images/html/inputs2.jpg)
+
+---
+## Input
+![Inputs](images/html/inputs3.jpg)
+
+---
+## Input
+![Inputs](images/html/inputs4.jpg)
+
+---
 ## Input Radio
 Permiten elegir una sola opción entre un grupo 
 

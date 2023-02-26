@@ -235,6 +235,9 @@ git commit -m "Se agrego un elemento a la pagina"
 ![Git Commit](images/herramientas/git_commit.png)
 
 ---
+![Commit significativo](images/herramientas/mensaje_significativo.jpg)
+
+---
 ## git push
 Envia los cambios realizados al repositorio remoto.
 ````

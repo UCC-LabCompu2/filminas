@@ -266,7 +266,7 @@ x = -x;
 ![Comenario de Gatito](images/herramientas/coment_code.jpg)
 
 ---
-![Autocomentario](images/herramientas/autocomentario.jpg)
+![Comentarios Actualizados](images/herramientas/comentarios_actualizados.jpg)
 
 ---
 ## Bug Tracker o BTS
