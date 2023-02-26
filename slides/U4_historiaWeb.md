@@ -164,6 +164,13 @@ Los más empleados son:
 
 
 ---
+## SASS & LESS
+Son pre-procesadores CSS. Son herramientas permiten escribir pseudo-código CSS que luego será convertido a CSS real.
+Ese pseudo-código se conforma de variables, condiciones, bucles o funciones.
+
+El objetivo es tener un código más sencillo de mantener y editar.
+
+---
 ![CSS3 Historia](images/html/CSS3_historia.png)
 
 ---

@@ -25,6 +25,4 @@ Steps:
 * Js trabajar con cadenas de caracteres
 * Borrar archivos del repositorio
 * Configurar remote URL en Github
-* Agregar info de SASS/LESS
-* Más info sobre frameworks
 * Ejercicio de escribir texto en el canvas
