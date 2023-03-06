@@ -42,7 +42,6 @@ Created by <i class="fab fa-telegram"></i>
 * Criterios de Clasificación
 [Ejercicio: Criterios de SO](U1_instalacionConfiguracionSO.html#/6/1)
 * Recursos de Hardware
-* Hardware Mínimo y Recomendado
 [Ejercicio: Comparar SO](U1_instalacionConfiguracionSO.html#/9)
 
 * Actualización en los SO
@@ -68,7 +67,7 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 <div class="grid-item">
 
-### Formateo y Parcición
+### Formateo y Partición
 * Formateo de Discos
 * Rufus
 * MBR vs GTP
@@ -307,9 +306,11 @@ En base a las siguientes diapositivas, completa la tabla:
     <td>XP</td>
     <td>7</td>
     <td>10</td>
+    <td>11</td>
 </tr>
 <tr>
     <td>Año</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -327,9 +328,11 @@ En base a las siguientes diapositivas, completa la tabla:
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
 </tr>
 <tr>
     <td>Memoria Ram</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -347,9 +350,11 @@ En base a las siguientes diapositivas, completa la tabla:
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
 </tr>
 <tr>
     <td>Tarjeta Gráfica</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>

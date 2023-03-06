@@ -46,7 +46,8 @@ Existen tantos tipos de controladores como tipos de periféricos.
 Puede haber más de un controlador para un mismo dispositivo.
 
 ---
-## Tipos de Drivers: Ejemplos
+## Tipos de Drivers: 
+#### Clasificación por dispositivo
 * de Audio (Realtek, SoundBlast)
 * de Video (ATI, NVIDIA)
 * LAN o Ethernet
@@ -59,6 +60,7 @@ Puede haber más de un controlador para un mismo dispositivo.
 
 ---
 ## Tipos de Drivers
+#### Clasificación por desarrollador
 * Fabricantes de dispositivos (quien hace el hardware, provee el driver)
 * Genéricos o Universales (funcionan la mayoria de los dispositivos)
 * Comunidad de Usuarios

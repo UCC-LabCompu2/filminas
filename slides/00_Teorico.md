@@ -21,8 +21,8 @@ Created by
 <!-- .slide: <!-- data-background="images/presentacion/lenguajes.png" data-background-size="50%" -->
 <!-- .slide: data-background="images/configSO/OtrosOS.png" data-background-size="50%" -->
 <!--## ¿Han usado un sistema operativo que no sea windows?-->
-### Para romper el hielo... Juguemos un **Kahoot**
-[Kahoot](https://create.kahoot.it/share/conociendonos-en-lab-de-compu-2/ae3a1b83-b59d-4e2c-bd9b-e6ae71333bce)
+### Para romper el hielo... Juguemos un [Kahoot](https://create.kahoot.it/share/conociendonos-en-lab-de-compu-2/ae3a1b83-b59d-4e2c-bd9b-e6ae71333bce)
+Ingresa a [https://kahoot.it/](https://kahoot.it/) e introduce el PIN del juego
 
 ---
 # LABORATORIO DE COMPUTACIÓN II
@@ -55,27 +55,27 @@ agustina.aliciardi@ucc.edu.ar
 
 ---
 ## Calendario
-| Semana | Unidad | Tema |
-|--------|--------|------|
-| 1 | 1 | Instalación de SO |
-| 2 | 2 | Herramientas de Desarrollo |
-| 3 | 3 | Interfaz de Usuario |
-| 4 | 3 | Aplicaciones Web |
-| 5 | 4 | HTML |
-| 6 | 4 | CSS |
-| 7 |   | 1er PARCIAL |
+| Semana | Unidad | Tema                        |
+|--------|--------|-----------------------------|
+| 1      | 1      | Instalación de SO           |
+| 2      | 2      | Herramientas de Desarrollo  |
+| 3      | 3      | Interfaz de Usuario         |
+| 4      | 3      | Aplicaciones Web            |
+| 5      | 4      | HTML                        |
+| 6      | 4      | CSS                         |
+| 7      |        | 1er PARCIAL                 |
 
 ---
 ## Calendario
-| Semana | Unidad | Tema |
-|--------|--------|------|
-| 8 | 5 | Orientación a Eventos |
-| 9 | 5 | JavaScript |
-| 10 | 5 | JavaScript |
-| 11 |   | Proyecto Integrador |
-| 12 |   | Proyecto Integrador |
-| 13 | 6 | Aplicaciones Móviles |
-| 14 |   | 2do PARCIAL |
+| Semana | Unidad | Tema                  |
+|--------|--------|-----------------------|
+| 8      | 5      | Orientación a Eventos |
+| 9      | 5      | JavaScript            |
+| 10     | 5      | JavaScript            |
+| 11     |        | Proyecto Integrador   |
+| 12     |        | Proyecto Integrador   |
+| 13     | 6      | Aplicaciones Móviles  |
+| 14     |        | 2do PARCIAL           |
 
 ---
 ## Forma de Evaluación: Cursado
@@ -88,7 +88,7 @@ agustina.aliciardi@ucc.edu.ar
 FINAL:
 
 *    Entrega a tiempo del proyecto
-*    Mayor funcionalidad del programa
+*    HTML+CSS+JS (con animación)
 *    Preguntas sobre el código
 *    Preguntas de la guía
 *    Promocion de la parte Teórica <br> <span style="font-size: 0.5em">Promedio >= 8 y nota mínima 7</span>
