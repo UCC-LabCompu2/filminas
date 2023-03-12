@@ -105,6 +105,7 @@ FINAL:
 * Promedio >= 8 y nota mínima 7 (3 notas: proyecto primera etapa, segunda etapa y promedio de parcialitos)
 
 ---
+<!-- .slide: data-background-color="grey"-->
 ## Notas
 ![Notas](images/presentacion/notasFacultad.png)
 

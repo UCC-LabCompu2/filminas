@@ -131,6 +131,12 @@ Tener en cuenta
 ---
 ### Requisitos del Primer Parcial
 #### Sobre las Correcciones
+- [ ] Todas los errores o la falta de cumplimiento de los requisitos serán reportados a través de la plataforma de GitHub, en la pestaña de ISSUES
+![Issues en GitHub](images/correcciones.jpg)
+
+---
+### Requisitos del Primer Parcial
+#### Sobre las Correcciones
 | Items a Evaluar | %   |
 |-----------------|-----|
 | Prototipo en papel | 7%  |

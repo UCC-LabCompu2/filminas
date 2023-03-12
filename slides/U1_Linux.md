@@ -32,7 +32,7 @@ Created by <i class="fab fa-telegram"></i>
 
 ---
 ## ¿Qué es Linux?
-**Linux** es un kernel de SO.
+**Linux** es el nombre que recibe el núcleo o kernel de este SO. 
 
 Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, etc.)
 
@@ -41,7 +41,9 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 * Es código abierto
 * Configurable
 * Developer Friendly
+* Multiplataforma
 * Mejor Servidor
+* Modo Consola
 
 ---
 ## ¿Por qué Linux?
@@ -86,6 +88,7 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 * DD-WRT
 
 ![Router](images/configSO/router.png)
+
 ---
 ## Linux Embebido: RPi
 ![RPI](images/configSO/rpi.png)
@@ -113,6 +116,10 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 * Tarjeta gráfica que soporte resolución 800x600
 
 ---
+## Debian 6
+![Debian 6](images/configSO/debian6.png)
+
+---
 ## Requisitos mínimos de
 ## Ubuntu 11.10
 * Año: 2011
@@ -120,6 +127,10 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 * 1GB de RAM
 * 15 GB de espacio disponible en disco duro
 * Tarjeta gráfica que soporte resolución 800x600
+
+---
+## Ubuntu 11.10
+![Ubuntu 11](images/configSO/ubuntu11.jpg)
 
 ---
 ## Requisitos mínimos de
@@ -131,11 +142,70 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 * Tarjeta gráfica compatible con VGA
 
 ---
+## Fedora 33
+![Fedora 33](images/configSO/fedora33.png)
+
+---
+## Entornos de Escritorio
+* **Gnome**: Entorno de Modelo de Objeto de Red GNU
+* **KDE**: Entorno de Escritorio del K
+* **XFCE**: Entorno Común de XForms
+* **LXDE**: Entorno de escritorio X11 ligero
+* **Unity**
+* **Cinnamon**
+* **Mate**
+* **Budgie**
+* **Pantheon**
+
+---
+## GNOME
+![Gnome](images/configSO/gnome-3.4-600x375.png.webp)
+
+---
+## KDE
+![KDE](images/configSO/KDE_4-600x337.png.webp)
+
+---
+## XFCE
+![XFCE](images/configSO/xfce_debian_plank-600x375.jpg.webp)
+
+---
+## LXDE
+![LXDE](images/configSO/LXDE_desktop_full-600x450.png.webp)
+
+---
+## [Entornos de Escritorio](https://computerhoy.com/noticias/software/entornos-escritorio-linux-cual-es-mejor-64586)
+#### Parecido a Windows
+Tienen un panel en el que se van acumulando los programas abiertos.
+* Mate
+* XFCE
+* Cinnamon
+* LXDE
+
+---
+## Entornos de Escritorio
+#### Parecido a macOS
+Posee un **dock** para acceder a las apps y funciones principales.
+* Pantheon
+* Unity
+* Budgie
+* Gnome
+
+---
+## Entornos de Escritorio
+#### Menor consumo de recursos
+* LXDE
+* XFCE
+* Mate
+* Pantheon
+
+---
 ## Ejercicio: SO Linux
-**Instale** alguna distribución de Linux, como Ubuntu, en una computadora o máquina virtual.
+**Instale** alguna distribución de Linux, como Ubuntu o Mint, en una computadora o máquina virtual.
 
 Descarga SO:
-[Ubuntu 20](https://ubuntu.com/download/desktop)
+[Ubuntu 21](https://ubuntu.com/download/desktop)
+[Mint 21](https://linuxmint.com/download.php)
 
 Descarga Máquina Virtual: 
 [VirtualBox](https://www.virtualbox.org/)
@@ -143,6 +213,17 @@ Descarga Máquina Virtual:
 ---
 ## Ejercicio: SO Linux
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xHPRv0-OXuM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+### Comandos útiles de Linux
+| Comandos        | Explicación                   |
+|-----------------|-------------------------------|
+| sudo            | Permisos de root              |
+| apt-get install | Permite instalar paquetes     |
+| cd              | navegar por archivos\carpetas |
+| ls              | listar contenido de carpeta   |
+| mkdir           | Crear carpetas                |
+| grep            | buscar palabra en archivo     |
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
