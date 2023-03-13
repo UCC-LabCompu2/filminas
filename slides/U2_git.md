@@ -35,13 +35,13 @@ Created by <i class="fab fa-telegram"></i>
 ### GIT
 * Definición
 
-[Ejercicio: Instalar Git](U2_git.html#/4)
+[Ejercicio: Instalar Git](U2_git.html#/5)
 * Configuración
 
-[Ejercicio: Configurar Usuario](U2_git.html#/8)
+[Ejercicio: Configurar Usuario](U2_git.html#/9)
 * Servidores
 
-[Ejercicio: Crear Cuenta Github](U2_git.html#/12)
+[Ejercicio: Crear Cuenta Github](U2_git.html#/13)
 * Estados 
 * Comandos
 </div>
@@ -58,10 +58,10 @@ Created by <i class="fab fa-telegram"></i>
 * log
 * diff
 
-[Ejercicio: Github Básico](U2_git.html#/26)
+[Ejercicio: Github Básico](U2_git.html#/27)
 * Software VCS
 
-[Ejercicio: Github Básico II](U2_git.html#/38)
+[Ejercicio: Github Básico II](U2_git.html#/39)
 * Sobre git
 </div>
 <div class="grid-item">
@@ -69,7 +69,7 @@ Created by <i class="fab fa-telegram"></i>
 ### Classroom
 * Qué es?
 
-[Ejercicio: Github Classroom](U2_git.html#/42)
+[Ejercicio: Github Classroom](U2_git.html#/43)
 * Cursos de git
 </div>
 </div>
@@ -102,6 +102,8 @@ Si aún no lo descargaste, bajalo del siguiente link!
 ---
 ## git config
 Este comando permite establecer una configuración específica de usuario, como email, nombre de usuario, tipo de formato, etc
+
+Esta configuración se puede tener diferentes [alcances](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/Where-system-global-and-local-Windows-Git-config-files-are-saved): system, **global**, **local**, worktree, portable.
 
 ---
 ## Git: Configuración Usuario
@@ -443,6 +445,7 @@ Permite el trabajo colaborativo, gestión de issues, code reviews, feedback, etc
 
 ---
 ## Cursos de Git
+* [TAU - Source Control for Test Automation with Git](https://testautomationu.applitools.com/git-tutorial/) 
 * [Learn Git Branching](https://learngitbranching.js.org/)
 * [try.github](https://try.github.io)
 * [Codecademy](https://www.codecademy.com/learn/learn-git)

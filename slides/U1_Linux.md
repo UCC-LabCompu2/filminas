@@ -58,44 +58,44 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 ---
 ### ¿Qué Distro Elegir?
 #### Para uso normal
-* Kubuntu
-* Mint
-* Fedora o Suse
+* [Kubuntu](https://kubuntu.org/getkubuntu/)
+* [Mint](https://linuxmint.com/download.php)
+* [Fedora](https://getfedora.org/es/) o [Suse](https://www.suse.com/es-es/products/)
 
 ![Distros Normales](images/configSO/userNormal.png)
 
 ---
 ### ¿Qué Distro Elegir?
 #### Para Trabajar
-* RetHat/Fedora/Suse
-* Debian/Kubuntu/Ubuntu
+* [RetHat](https://developers.redhat.com/products/developertoolset/download)/[Fedora](https://getfedora.org/es/)/[Suse](https://www.suse.com/es-es/products/)
+* [Debian](https://www.debian.org/distrib/index.es.html)/[Kubuntu](https://kubuntu.org/getkubuntu/)/[Ubuntu](https://ubuntu.com/download/desktop)
 
 ![Distros Trabajo](images/configSO/workUser.png)
 
 ---
 ### ¿Qué Distro Elegir?
 #### Para PowerUsers!
-* Gentoo
-* Arch
-* Debian
+* [Gentoo](https://www.gentoo.org/downloads/)
+* [Arch](https://archlinux.org/download/)
+* [Debian](https://www.debian.org/distrib/index.es.html)
 
 ![Distros Powa](images/configSO/powerUser.png)
 
 ---
 ### ¿Qué Distro Elegir?
 #### Para el Router de casa!
-* OpenWRT
-* DD-WRT
+* [OpenWRT](https://openwrt.org/downloads)
+* [DD-WRT](https://dd-wrt.com/)
 
 ![Router](images/configSO/router.png)
 
 ---
-## Linux Embebido: RPi
+## Linux Embebido: [RPi](https://www.raspberrypi.com/software/) ó [TwisterOS](https://twisteros.com/download.html)
 ![RPI](images/configSO/rpi.png)
 
 ---
 ## Linux Embebido
-## OpenWRT
+## [OpenWRT](https://openwrt.org/downloads)
 
 ![TpLink](images/configSO/tplink.png)
 
