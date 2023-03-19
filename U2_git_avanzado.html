@@ -38,16 +38,16 @@ Created by <i class="fab fa-telegram"></i>
 * Repaso de comandos
 * Readme.md
 
-[Ejercicio: Escribir readme.md](U2_git_avanzado.html#/7)
+[Ejercicio: Escribir readme.md](U2_git_avanzado.html#/15)
 * Git branch
 
-[Ejercicio: Github Branch](U2_git_avanzado.html#/17)
+[Ejercicio: Github Branch](U2_git_avanzado.html#/25)
 * Fork
 * Pull Request
 * Code review
 * .gitignore
 
-[Ejercicio: .gitignore](U2_git_avanzado.html#/28)
+[Ejercicio: .gitignore](U2_git_avanzado.html#/36)
 
 * SSH
 </div>
@@ -76,7 +76,7 @@ Created by <i class="fab fa-telegram"></i>
 <small class="fragment">6 git commit -a -m</small>
 
 </script></section><section  data-markdown><script type="text/template">
-### Necesito un PAT?
+### Git: Autenticación Segura
 A partir de agosto/2021 github solicita un método seguro de autenticación, como:
 1. PAT: Token de Acceso Personal
 2. Autenticación de Dos Factores
@@ -113,13 +113,57 @@ pause
 ```
 
 </script></section><section  data-markdown><script type="text/template">
+### Pasos para autenticación de 2 Factores
+1. En **gitHub** entrar a la sección de Setting
+2. En el menú de la izquierda ingresar a **Password and authentication**
+3. Click en **Enable two-factor authentication**
+4. Para configurarlo con mensaje desde el celular, click en "Set up using SMS"
+
+
+</script></section><section  data-markdown><script type="text/template">
+## SSH
+**Secure Shell** es una forma de autenticarse en servidores remotos sin tener que escribir la contraseña siempre.
+
+Funciona empleando 2 claves: la privada (solo para tí), la pública (para todo internet).
+
+</script></section><section  data-markdown><script type="text/template">
+### [Como configurar SSH?](https://medium.com/humantodev/configurar-ssh-github-enwindows-10-linux-y-macos-e843eb6d104e#:~:text=%C2%BFQu%C3%A9%20es%20SSH%3F,(PARA%20TODA%20LA%20HUMANIDAD))
+<!--https://platzi.com/tutoriales/1557-git-github/4067-configurar-llaves-ssh-en-git-y-github/?gclid=EAIaIQobChMI35TBz4ij9gIVgwWRCh1ddwUPEAAYAiAAEgJJJfD_BwE&gclsrc=aw.ds-->
+<!-- .slide: style="font-size: 0.60em" -->
+
+1. Abrir CMD
+2. Correr el comando
+````
+ssh-keygen -t rsa -b 4096 -C "tu@email.com"
+````
+    - La terminal responde: Generating public/private rsa key pair.
+    - Enter file in which to save the key: **ENTER**
+    - Enter passphrase (empty for no passphrase): **ENTER**
+    - Your identification has been saved in cd .ssh.
+    - Your pubnlic key has been saved in cd .ssh.pub.
+    - The key fingerprint is: SHA256:.......
+3. Correr el comando
+````
+cd .ssh
+````
+4. Correr el comando
+````
+more id_rsa.pub
+````
+5. Copiar el texto que dice "ssh-rsa BLA BLA"
+6. Ingresar a gitHub, Setting, SSH and GPG Keys, New SSH Key, pegar la clave
+
+</script></section><section  data-markdown><script type="text/template">
+## SSH en GitHub
+![SSH en GitHub](images/herramientas/sshKey.png)
+
+</script></section><section  data-markdown><script type="text/template">
 ## Readme.md
 <!-- .slide: style="font-size: 0.80em" -->
 Seguramente te estes preguntando: qué es ese readme.md que se autogeneró? 
 Es un archivo que deberian tener todos los proyectos de Soft. El mismo se supone que sea una:
 * Guía rápida de la aplicación o librería y de cómo empezar a usarla.
 * Instrucciones de configuración, instalación, operación, manifiesto de archivos, información sobre licencia y el desarrollador, bug conocidos, solución a problemas, créditos y agradecimientos, registro de cambios o versiones, sección de noticias, etc.
-
 
 <!--https://jesuslc.com/2016/07/12/como-escribir-un-readme-que-mole/-->
 
@@ -306,43 +350,6 @@ con datos que no se desa versionar (instaladores, diagramas, etc).
 </script></section><section  data-markdown><script type="text/template">
 ## Ejercicio: .gitignore
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1yGiz06KKRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-</script></section><section  data-markdown><script type="text/template">
-## SSH
-**Secure Shell** es una forma de autenticarse en servidores remotos sin tener que escribir la contraseña siempre.
-
-Funciona empleando 2 claves: la privada (solo para tí), la pública (para todo internet).
-
-</script></section><section  data-markdown><script type="text/template">
-### [Como configurar SSH?](https://medium.com/humantodev/configurar-ssh-github-enwindows-10-linux-y-macos-e843eb6d104e#:~:text=%C2%BFQu%C3%A9%20es%20SSH%3F,(PARA%20TODA%20LA%20HUMANIDAD))
-<!--https://platzi.com/tutoriales/1557-git-github/4067-configurar-llaves-ssh-en-git-y-github/?gclid=EAIaIQobChMI35TBz4ij9gIVgwWRCh1ddwUPEAAYAiAAEgJJJfD_BwE&gclsrc=aw.ds-->
-<!-- .slide: style="font-size: 0.60em" -->
-
-1. Abrir CMD 
-2. Correr el comando  
-````
-ssh-keygen -t rsa -b 4096 -C "tu@email.com"
-````
-    - La terminal responde: Generating public/private rsa key pair.
-    - Enter file in which to save the key: **ENTER**
-    - Enter passphrase (empty for no passphrase): **ENTER**
-    - Your identification has been saved in cd .ssh.
-    - Your pubnlic key has been saved in cd .ssh.pub.
-    - The key fingerprint is: SHA256:.......
-3. Correr el comando 
-````
-cd .ssh
-````
-4. Correr el comando 
-````
-more id_rsa.pub
-````
-5. Copiar el texto que dice "ssh-rsa BLA BLA"
-6. Ingresar a gitHub, Setting, SSH and GPG Keys, New SSH Key, pegar la clave
-
-</script></section><section  data-markdown><script type="text/template">
-## SSH en GitHub
-![SSH en GitHub](images/herramientas/sshKey.png)
 
 </script></section><section  data-markdown><script type="text/template">
 #### Sigo sin enter como funcionan las ramas con los comandos...
