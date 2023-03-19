@@ -38,10 +38,10 @@ Created by <i class="fab fa-telegram"></i>
 [Ejercicio: Instalar Git](U2_git.html#/5)
 * Configuración
 
-[Ejercicio: Configurar Usuario](U2_git.html#/9)
+[Ejercicio: Configurar Usuario](U2_git.html#/10)
 * Servidores
 
-[Ejercicio: Crear Cuenta Github](U2_git.html#/13)
+[Ejercicio: Crear Cuenta Github](U2_git.html#/15)
 * Estados 
 * Comandos
 </div>
@@ -58,10 +58,10 @@ Created by <i class="fab fa-telegram"></i>
 * log
 * diff
 
-[Ejercicio: Github Básico](U2_git.html#/27)
+[Ejercicio: Github Básico](U2_git.html#/32)
 * Software VCS
 
-[Ejercicio: Github Básico II](U2_git.html#/39)
+[Ejercicio: Github Básico II](U2_git.html#/44)
 * Sobre git
 </div>
 <div class="grid-item">
@@ -81,23 +81,54 @@ Created by <i class="fab fa-telegram"></i>
 * Crea branches y hace merge rapido y fácil
 * Cada "Clón" es un repositorio completo
 
-[![Git](images/herramientas/git.png)](href="https://git-scm.com/)
+![Git](images/herramientas/git.png)]
 
 ---
 
 ![No git](images/herramientas/NoGit.jpeg)
 
 ---
-<!-- .slide: data-background-color="grey"-->
-## Ya instalaste Git? 
-Si aún no lo descargaste, bajalo del siguiente link!
-(Se recomienda **Use Windows default console windows**)
-
-[Git](https://git-scm.com/)
+### Instalar git en Windows
+1. Ingresar a [https://git-scm.com/download/win](https://git-scm.com/download/win)
+2. Descargar la versión **Standalone**
+3. Durante la instalación dejar todas las opciones por defecto, excepto en el paso que se debe seleccionar:
+   * Git from the command line and also from 3rd-party software
+   * Use Windows' default console windows
+4. Abrir el **Cmd** o **Consola** o **Simbolos del Sistema** y escribir
+```javascript
+   git --version
+```
+<small> Deberas ver un texto como **git version 2.31.0.windows.1** </small>
 
 ---
 ## Ejercicio: Instalar Git
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WEUliO01zL4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+### Instalar git en Mac
+Ingresar a [https://git-scm.com/download/mac](https://git-scm.com/download/mac) para leer los pasos
+1. Abrir el **BASH** o consola y escribir el comando para instalar **BREW** (gestor de paquetes)
+
+```javascript
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+2. Instalar **brew** (gestor de paquetes)
+```javascript
+   brew install git
+```
+
+---
+### Instalar git en Linux
+Ingresar a [https://git-scm.com/download/linux](https://git-scm.com/download/linux) para leer los pasos
+1. Abrir el **BASH** o consola y escribir
+```javascript
+   apt-get install git
+```
+o 
+```javascript
+yum install git
+``` 
+o el comando correspondiente con tu distribución de linux.
 
 ---
 ## git config
@@ -114,12 +145,7 @@ Desde la consola de comandos:
    git config --global user.name "nombreUsuario"
    git config --global user.email miEmail@domain.com 
 ```
-
-* Configurar usuario de manera local
-```javascript
-   git config --local user.name "nombreUsuario"
-   git config --local user.email miEmail@domain.com
-```
+La palabra **global** puede ser reemplazada por local, worktree, portable o system según sea necesario.
 
 * Ver configuración realizada
 ```javascript
