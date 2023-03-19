@@ -365,16 +365,13 @@ Emplee algún programa para confeccionar Wireframes y generar un wireflow.
 ![Draw.io](images/interfazUsuario/drive_drawio.png) 
 
 ---
-## Ejercicio: Wireframe con Pencil y NinjaMock
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BR1YqiSAuVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### Ejercicios: Wireframe (Videos)
+![Figma](images/interfazUsuario/figma.png) [Diseño Web + Mobile con Figma](https://youtu.be/9xP9vlz6s7k)
 
----
-## Ejercicio: Wireframe con Draw.io (desktop)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZV9NFPVev34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![Pencil](images/interfazUsuario/pencil-icon.png) [Diseño con Pencil y NinjaMock](https://youtu.be/BR1YqiSAuVw)
 
----
-## Ejercicio: Wireframe con Draw.io (mobile)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iFwfgU_fhiU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![Draw.io](images/interfazUsuario/drive_drawio.png) [Diseño con Draw.io (Desktop)](https://youtu.be/ZV9NFPVev34) <br>
+[Diseño con Draw.io (Mobile)](https://youtu.be/iFwfgU_fhiU)
 
 ---
 #### Errores comunes al crear un Wireframe para nuestro proyecto web
