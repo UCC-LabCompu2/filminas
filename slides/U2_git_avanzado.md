@@ -11,6 +11,13 @@ Created by <i class="fab fa-telegram"></i>
 ---
 <!-- .slide: style="font-size: 0.60em" -->
 <style>
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 0.8em;
+    text-align: left !important;
+}
+
 .grid-item {
     border: 3px solid rgba(121, 177, 217, 0.8);
     padding: 20px;
@@ -18,13 +25,23 @@ Created by <i class="fab fa-telegram"></i>
 }
 </style>
 ## Temario
+<div class="grid-container2">
 <div class="grid-item">
 
 ### GIT
 * Repaso de comandos
+* Autenticación Segura
+    * PAT
+    * 2 Factores
+    * SSH
+    * Ejercicio: Configurar SSH
 * Readme.md
 
 [Ejercicio: Escribir readme.md](U2_git_avanzado.html#/15)
+
+</div>
+<div class="grid-item">
+
 * Git branch
 
 [Ejercicio: Github Branch](U2_git_avanzado.html#/25)
@@ -33,9 +50,8 @@ Created by <i class="fab fa-telegram"></i>
 * Code review
 * .gitignore
 
-[Ejercicio: .gitignore](U2_git_avanzado.html#/36)
-
-* SSH
+[Ejercicio: .gitignore](U2_git_avanzado.html#/38)
+</div>
 </div>
 
 ---
@@ -66,7 +82,7 @@ Created by <i class="fab fa-telegram"></i>
 A partir de agosto/2021 github solicita un método seguro de autenticación, como:
 1. PAT: Token de Acceso Personal
 2. Autenticación de Dos Factores
-3. SSH
+3. **SSH**
 
 ---
 ### Pasos para generar el PAT
@@ -126,7 +142,7 @@ ssh-keygen -t rsa -b 4096 -C "tu@email.com"
     - Enter file in which to save the key: **ENTER**
     - Enter passphrase (empty for no passphrase): **ENTER**
     - Your identification has been saved in cd .ssh.
-    - Your pubnlic key has been saved in cd .ssh.pub.
+    - Your public key has been saved in cd .ssh.pub.
     - The key fingerprint is: SHA256:.......
 3. Correr el comando
 ````
@@ -200,7 +216,7 @@ El **branching** permite el desarrollo en paralelo sin interferencia entre las d
 
 ---
 ## Git Brach
-Cuando se crea un repositorio, por defecto se emplea la rama principal **master**. 
+Cuando se crea un repositorio, por defecto se emplea la rama principal **master** (en local) o **main** (en remoto). 
 
 Podemos verificar esto entrando a nuestro repositorio (ejercicio1), y escribiendo:
 ```
@@ -271,7 +287,7 @@ Empleando el repositorio ejercicio 1:
 ---
 ## Repaso de Terminología
 * **Branch (rama):** Linea de desarrollo del proyecto
-* **Merge:** Mezcla codigo de 2 ramas
+* **Merge:** Mezcla código de 2 ramas
 
 ---
 ## Fork
@@ -292,7 +308,7 @@ persona como punto de partida para nuevas ideas.
 
 ---
 ## Fork: Ejemplo
-Si quisieras investigar como hacer filminas con tecnologia markdown, podrias emplear este [repositorio](https://github.com/UCC-LabCompu2/filminas)
+Si quisieras investigar como hacer filminas con tecnología markdown, podrías emplear este [repositorio](https://github.com/UCC-LabCompu2/filminas)
 ![fork](images/herramientas/fork.png)
 
 ---
@@ -318,6 +334,10 @@ El revisor puede aprobar el código y mergearlo, o solicitar al dev que realice 
 
 ---
 ## Code Review
+![Code Review](images/herramientas/wtf_perSecond.png)
+
+---
+## Code Review
 ![Code Review](images/herramientas/codereview_friendly.jpg)
 
 ---
@@ -325,7 +345,7 @@ El revisor puede aprobar el código y mergearlo, o solicitar al dev que realice 
 El archivo "gitignore" sirve para decirle a Git qué archivos o directorios completos debe ignorar y no subir al repositorio de código. 
 
 Puede que no sea necesario versionar esos archivos porque: son privados y no se desea compartir, son archivos binarios 
-con datos que no se desa versionar (instaladores, diagramas, etc).
+con datos que no se desea versionar (instaladores, diagramas, etc).
 
 ---
 ## Ejercicio: .gitignore
