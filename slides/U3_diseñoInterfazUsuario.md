@@ -218,6 +218,12 @@ Es posible tener una interfaz separada para diferentes tipos de usuario.
   * Árboles
   * Redes
 
+----
+
+#### Presentación de Información
+Directa y Gráfica
+![Presentacion Informacion](images/interfazUsuario/info_directa_grafica.webp)
+
 ---
 ## Pautas de Shneiderman para la utilización efectiva del COLOR
 <!-- .slide: style="font-size: 0.85em" -->
