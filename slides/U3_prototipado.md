@@ -201,7 +201,7 @@ Debe tener en cuenta:
 
 ---
 ## Ejercicio: Sketch
-RECUERDA en el repositorio Proyecto2021-Apellido1-Apellido2 crear una carpeta con el nombre "Sketch" y subir una o varias fotos 
+RECUERDA en el repositorio Proyecto2023-Apellido1-Apellido2 crear una carpeta con el nombre "Sketch" y subir una o varias fotos 
 de tu diseño hecho prolijamente a mano.
 
 (No es necesario hacer esto ahora! pero mantén tu sketch a mano para evitar re-trabajar)

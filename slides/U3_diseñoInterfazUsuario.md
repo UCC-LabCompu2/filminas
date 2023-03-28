@@ -135,13 +135,34 @@ Se deben teneren cuenta capacidades físicas y mentales de las personas que util
 
 ---
 ## Principios de Diseño
+Se utilizan para crear interfaces que sean fáciles de usar y que permitan a los usuarios realizar sus tareas de manera eficiente.
+
+---
+## Principios de Diseño
 <!-- .slide: style="font-size: 0.85em" -->
-1. **Familiaridad del usuario:** Utilizar términos que el usuario conozca
-2. **Uniformidad:** Operaciones comparables se deben activar de la misma forma
-3. **Mínimo Sorpresa:** El comportamiento del sistema debe ser esperable
-4. **Recuperabilidad:** Mecanismos de recuración de errores
-5. **Guía de Usuario:** Retroalimentación significativa frente a errores. Asesoramiento y características.
-6. **Diversidad de Usuarios:** Interacción para diferentes tipos de usuario. (Casuales, Potenciales)
+* **Visibilidad:** los usuarios deben poder ver las opciones y controles que necesitan para realizar sus tareas de manera 
+clara y fácilmente accesible.
+* **Consistencia:** las interfaces de usuario deben ser coherentes en su diseño y comportamiento en toda la aplicación o 
+el sistema, lo que permite a los usuarios aprender de una experiencia para aplicarla a otra.
+* **Retroalimentación:** los usuarios deben recibir una respuesta clara y oportuna después de realizar una acción en la 
+interfaz de usuario para comprender que su acción tuvo efecto.
+
+---
+## Principios de Diseño
+<!-- .slide: style="font-size: 0.85em" -->
+* **Flexibilidad y eficiencia de uso:** la interfaz debe permitir a los usuarios realizar tareas de manera eficiente, ya 
+sea mediante atajos o cualquier otra forma de personalización.
+* **Jerarquía visual:** los elementos más importantes y relevantes en la interfaz deben ser visibles y accesibles en 
+primer lugar para que los usuarios puedan encontrarlos fácilmente.
+* **Estética y diseño:** el diseño debe ser atractivo y estéticamente agradable, además de funcional.
+
+---
+## Principios de Diseño
+<!-- .slide: style="font-size: 0.85em" -->
+* **Tolerancia a errores:** la interfaz debe ser capaz de prevenir errores o proporcionar una forma clara y fácil de 
+recuperación cuando se produzcan errores.
+* **Ayuda y documentación:** la interfaz de debe proporcionar suficiente información y ayuda para que los usuarios puedan 
+comprender cómo utilizarla y encontrar soluciones a los problemas.
 
 ---
 ## Principio de Recuperabilidad
@@ -171,13 +192,13 @@ Según Shneiderman existen 5 estilos de interacción:
 ---
 ## Estilos de Interacción
 <!-- .slide: style="font-size: 0.5em" -->
-| Estilo de Interacción | Ventajas | Desventajas | Aplicación |
-|-----------------------|----------|-------------|------------|
-| Manipulación Directa | Interacción rápida Intuitiva Fácil de Aprender | Difícil de Implementar<br> Sólo adecuada para sistemas visuales | Videojuegos Sistemas CAD |
-| Selección de menús | * Evita errores de usuario * Requiere teclear poco | Lenta para usuarios experimentados Compleja si hay muchas opciones Sistemas de propósito general | 
-| Rellenado de Formularios | Introducción de datos sencilla | Ocupa espacio en pantalla Opciones del usuario no se ajustan a los campos | Control de Stock Préstamos personales |
-| Lenguaje de Comandos | Poderoso y Flexible | Difícil de aprender Gestión pobre de errores | Sistemas operativos Sistemas de comandos y control |
-| Lenguaje Natural | Accesible a usuarios casuales Fácil de ampliar | Requiere más tecleo Los sistemas de comprensión de LN no son fiables | Sistemas de recuperación de información |
+| Estilo de Interacción | Ventajas | Desventajas                                                               | Aplicación                                         |
+|-----------------------|----------|---------------------------------------------------------------------------|----------------------------------------------------|
+| Manipulación Directa | Interacción rápida Intuitiva Fácil de Aprender | Difícil de Implementar<br> Sólo adecuada para sistemas visuales           | Videojuegos Sistemas CAD                           |
+| Selección de menús | * Evita errores de usuario * Requiere teclear poco | Lenta para usuarios experimentados Compleja si hay muchas opciones        | Sistemas de propósito general                      | 
+| Rellenado de Formularios | Introducción de datos sencilla | Ocupa espacio en pantalla Opciones del usuario no se ajustan a los campos | Control de Stock Préstamos personales              |
+| Lenguaje de Comandos | Poderoso y Flexible | Difícil de aprender Gestión pobre de errores Requiere más tecleo   | Sistemas operativos Sistemas de comandos y control |
+| Lenguaje Natural | Accesible a usuarios casuales Fácil de ampliar | Los sistemas de comprensión de LN no son fiables                          | Sistemas de recuperación de información            |
 
 ---
 ## Modelo de Seeheim
@@ -186,6 +207,7 @@ Se separa la presentación de la información, la gestión del diálogo y la apl
 Es posible tener una interfaz separada para diferentes tipos de usuario.
 
 ![InterfaZ Usuario](images/interfazUsuario/multiInterfazU.png)
+
 
 ---
 ## Presentación de Información
@@ -232,17 +254,27 @@ Factores a tener en cuenta:
 
 ---   
 ## Usabilidad
-Medición cualitativa de la facilidad y eficiencia con la que un humano emplea las funciones y características que ofrece el producto de alta tecnología.
+Medición cualitativa de la facilidad y eficiencia con la que un humano emplea las funciones y características que ofrece el producto (software o hardware).
 
 ![Usabilidad](images/interfazUsuario/usabilidad.jpg)
 
 ---
 ## Atributos de Usabilidad
-* **Aprendizaje:** Tiempo que tarda un usuario nuevo en ser productivo con el sistema
-* **Velocidad de Funcionamiento:** Respuesta del sistema a las operaciones de trabajo del usuario
-* **Robustez:** Tolerancia del sistema a errores de usuario.
-* **Recuperación:** Cómo se recupera el sistema a los errores del usuario
-* **Adaptación:** El sistema se adapta a único modelo de trabajo
+* **Facilidad de aprendizaje:** cuánto esfuerzo se necesita para que un usuario aprenda a utilizar la interfaz.
+* **Eficiencia:** rapidez con la que los usuarios pueden realizar tareas en una interfaz de usuario.
+* **Memorabilidad:** facilidad con la que los usuarios pueden recordar cómo utilizar una interfaz después de un período de tiempo sin usarla.
+
+---
+## Atributos de Usabilidad
+* **Errores:** cantidad de errores que los usuarios cometen al utilizar una interfaz, y cómo la misma ayuda a los usuarios a recuperarse de los errores.
+* **Satisfacción del usuario:** nivel de satisfacción del usuario al utilizar una interfaz.
+* **Accesibilidad:** capacidad de la interfaz para ser utilizada por personas con discapacidades, como problemas de visión o audición.
+* **Utilidad:** capacidad de la interfaz para cumplir con los objetivos y necesidades del usuario.
+
+---
+## Atributos de Usabilidad
+* **Integridad:** capacidad de la interfaz para proteger contra errores de entrada de datos y garantizar la integridad mismos.
+* **Consistencia:** capacidad de la interfaz para ser coherente en su diseño y comportamiento en toda la aplicación o el sistema.
 
 ---
 ## Técnicas de Evaluación de la Interfaz
