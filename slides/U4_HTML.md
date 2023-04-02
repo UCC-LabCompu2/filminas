@@ -110,6 +110,8 @@ Repositorio base para realizar todos los ejercicios que veremos en clase:
 * Incluir datos del autor, descripcion y palabras principales
 
 ---
+## Ejercicio: Primer HTML
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/k3nX5AdX54s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
@@ -163,8 +165,8 @@ Los titulos van desde **h1** hasta **h6**
 ````html
 <p>Esto es un párrafo</p>
 <p>Esto es un párrafo con un <span>span</span></p>
-<b>Esto es Negrita</b>
-<i>Esto es Cursiva</i>
+<strong>Esto es Negrita</strong>
+<em>Esto es Cursiva</em>
 <u>Esto es un Subrayado</u>
 2<sup>3</sup>=8
 Ozono= O<sub>3</sub>
@@ -191,13 +193,13 @@ Empleando  el  template  “ej_noticia”,  incluir  en  la  página  3  seccion
 Empleando el template “ej_noticia”, incluir diferentes tipos de título:
 * h1 para ‘Diario On-line’
 * h3 para ‘Cordobici’
-* h6 para la fecha de publicaciónd
+* h6 para la fecha de publicación
 * h5 para el sub-titulo de la noticia
 
 ---
 ## Ejercicio: Secciones y Títulos
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/c4dqkCbeHC0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FzZEdH5xJzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ---
 ## Tipos de Listas
