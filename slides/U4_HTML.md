@@ -203,8 +203,8 @@ Empleando el template “ej_noticia”, incluir diferentes tipos de título:
 
 ---
 ## Tipos de Listas
-* Ordenadas
-* No Ordenadas
+* [Ordenadas](https://www.w3schools.com/tags/tag_ol.asp)
+* [No Ordenadas](https://www.w3schools.com/tags/tag_ul.asp)
 
 ---
 ## Listas Ordenadas
@@ -235,7 +235,7 @@ Empleando el template “ej_noticia”, incluir diferentes tipos de título:
 </ul>
 
 ---
-## Hipervinculo
+## [Hipervinculo](https://www.w3schools.com/tags/tag_a.asp)
 ````html
 <a href="http://www.w3schools.com/tags/tag_a.asp" target="_blank">
     Soy un Hipervinculo xD
@@ -252,6 +252,13 @@ Empleando el template “ej_noticia”, incluir diferentes tipos de título:
 <a href="mailto:edmealiciardi@gmail.com">
     edmealiciardi@gmail.com
 </a>
+
+<small><strong>Target</strong> indica en donde se abrirá la página. </small>
+<small><strong>_blank</strong> en una nueva ventana o tab. </small>
+<small><strong>_self</strong> en el mismo marco donde se hizo click. </small>
+<small><strong>_parent</strong> en el marco principal. </small>
+<small><strong>_top</strong> en el cuerpo de la ventana </small>
+<small><strong>framename</strong> en un iframe determinado </small>
 
 ---
 ## Ejercicio: Listas
