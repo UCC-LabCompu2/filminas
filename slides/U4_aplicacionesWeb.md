@@ -58,9 +58,6 @@ Created by <i class="fab fa-telegram"></i>
 “Aplicaciones Web” de Javier Zofio Jiménez
 (Unidad Teórica N°1 y N°2)
 
-“Ingeniería del Software: Un enfoque práctico 6ta ed.” de Roger Pressman
-(Capítulo N°11: Diseño de la Interfaz de Usuario)
-
 ---
 ## Aplicaciones Web
 Software almacenado en una computadora o servidor web, que los usuarios pueden utilizar a través de Internet o
