@@ -63,8 +63,8 @@ cualquier elemento:
 * background-size: tamaño de la imagen de fondo (cover, auto, contain, inherit, etc)
 * background-repeat: si la imagen se repite o no (repeat, repeat-y, repeat-x)
 * background-attachment: si la imagen es fija o tiene scroll con el resto de la página
-* background-origin 
-* background-clip
+* background-origin: desde donde la imagen debe empezar a mostrarse (content-box, padding-box, border-box)
+* background-clip: hasta donde debe extenderse el fondo dentro de un elemento. (content-box, padding-box, border-box)
 
 ---
 ## Background: Ejemplo
@@ -173,7 +173,7 @@ debajo de ellos. La propiedad clear aplica a ambos elementos flotantes y no flot
 
 ---
 ## Ejercicio: 2 Columnas
-Emplear <div> con style para lograr que el estilo del texto quede en 2 columnas fluidas.
+Emplear div con style para lograr que el estilo del texto quede en 2 columnas fluidas.
 Pruebe
 * Forma 1 (CSS2): Float (left, right) y Width (50%) - (para div columna1 y div columna2)
 * Forma 2 (CSS3): Column-count y column-gap (para el article)
@@ -195,8 +195,8 @@ Utiliza para interpretar JavaScript un motor <b>V8</b>, y para el renderizado <b
 Emplea <b>JagerMonkey</b> para JavaScript y para el renderizado <b>Gecko</b>.
 
 <li style="list-style-image: url('images/html/explorer.png');">
-<b>Internet Explore</b>
-Emplea <b>Chakra</b> para JavaScript y <b>Trident</b> para renderizado.
+<b>Internet Explorer & Edge</b>
+Emplean <b>Chakra</b> para JavaScript y <b>Trident</b> para renderizado.
 </ul>
 
 ---
@@ -283,6 +283,12 @@ div:hover {
 ````
 
 <div class="divTran2"></div>
+
+---
+## Ejercicio de Transitions
+Emplea el template **ej_columna** y aplica un estilo de transición de color al **a** que contiene el enlace a la página de leyes.
+
+Se debe realizar un cambio de color lineal en 1seg.
 
 ---
 ## Grid
@@ -405,11 +411,11 @@ El espacio entre cada columna/fila se denomina gap.
 ![Grid Gap](images/css/grid_gaps.png)
 
 ---
-## Grid: Compolejo
+## Grid: Complejo
 ![Grid Complejo](images/css/grid_complex.png)
 
 ---
-## Grid: Compolejo
+## Grid: Complejo
 ````html
 <style>
 .item1 { grid-area: header; }
@@ -457,7 +463,7 @@ Puedes acceder a más documentación en:
 
 [DesarrolloWeb.com](https://desarrolloweb.com/articulos/que-es-css-grid-layout.html)
 
-[LenaguajeCSS](https://lenguajecss.com/p/css/propiedades/grid-css)
+[LenguajeCSS](https://lenguajecss.com/p/css/propiedades/grid-css)
 
 ---
 ##  CSS: Recomendación 
@@ -469,10 +475,6 @@ Autogenerar algunos estilos complicados:
 http://css3generator.com/
 
 http://westciv.com/tools/shadows/
-
-Escribir los colores en hexadecimal:
-
-http://html-color-codes.info/codigos-de-colores-hexadecimales/
 
 ---
 ## Media Queries
