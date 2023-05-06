@@ -160,13 +160,13 @@ Los elementos con z-index mayor tapan a los elementos con z-index menor
 
 ---
 ## Float
-Epecifica si un elemento debe salir del flujo normal y aparecer a la izquierda o a la derecha de su contenedor.
+Especifica si un elemento debe salir del flujo normal y aparecer a la izquierda o a la derecha de su contenedor.
 
 [Learns Layout](http://learnlayout.com/float.html)
 
 ---
 ## Clear
-Epecifica si un elemento puede estar al lado de elementos flotantes que lo preceden o si debe ser movido (cleared) 
+Especifica si un elemento puede estar al lado de elementos flotantes que lo preceden o si debe ser movido (cleared) 
 debajo de ellos. La propiedad clear aplica a ambos elementos flotantes y no flotantes.
 
 [Learns Layout](http://learnlayout.com/clear.html)
