@@ -89,12 +89,12 @@ Aca hay valores de Distancia! O mas radios, o algo xD
 ---
 ## JavaScript: Displayed
 ````javascript
-function seMuestra(nombre) {
-   if (nombre == "Vinicial" || nombre == "Vfinal") {
+let seMuestra = (nombre) => {
+   if (nombre === "Vinicial" || nombre === "Vfinal") {
         document.getElementById('variasCosas1').style.display = 'block';
-   } else if (nombre == "NingunaV") {
+   } else if (nombre === "NingunaV") {
         document.getElementById('variasCosas1').style.display = 'none';
-   } else if (nombre == "Dinicial" || nombre == "Dfinal") {
+   } else if (nombre === "Dinicial" || nombre === "Dfinal") {
         document.getElementById('variasCosas2').style.display = 'block';
    }
 }
@@ -134,7 +134,7 @@ Escribir funciones JavaScript para resolver las operaciones matemáticas una vez
 ---
 ## Ejemplo: Random y Round
 ````javascript
-function numAleatorio(a,b) {
+let numAleatorio = (a,b) => {
    document.prueba1.textoP.value = Math.round(Math.random()*(b-a)+parseInt(a));
 }
 ````   
@@ -221,13 +221,13 @@ Nota: Math.sin(ang) se calcula con un valor de ang en radianes
 ---
 ## JavaScript: Formulas
 ````javascript
-function calculoFun(numDist, numAng, longi, angul) {
+let calculoFun = (numDist, numAng, longi, angul) => {
     if (isNaN(numDist) || isNaN(numAng)) {
     alert("Los valores ingresados no son numeros");
     } else {
-        if (longi == "pulgadas")
+        if (longi === "pulgadas")
             numDist = convertMetros(numDist);
-        if (angul == "radianes")
+        if (angul === "radianes")
             numAng = convertGrados(numAng);
     document.getElementById("distR").value = numDist;
     document.getElementById("angR").value = numAng;
@@ -235,14 +235,14 @@ function calculoFun(numDist, numAng, longi, angul) {
     }
 }
        
-function convertMetros(distPulgadas) {
-    var enMetros = distPulgadas * 0.0254;
+let convertMetros = (distPulgadas) => {
+    let enMetros = distPulgadas * 0.0254;
     enMetros = Math.round(enMetros * 10000) / 10000;
     return enMetros;
 }
 
-function convertGrados(radianes) {
-    var enGrados = radianes * 180 / Math.PI;
+let convertGrados = (radianes) => {
+    let enGrados = radianes * 180 / Math.PI;
     enGrados = Math.round(enGrados * 10000) / 10000;
     return enGrados;
 }
@@ -280,13 +280,13 @@ Ingrese su nombre <input type="text" id="NombreUsuarioInput" onchange="guardarNo
 
 JavaScript
 ````javascript
-function tomarDatos(){
-    var nombre=localStorage.getItem("NombreDelUsuario");
-    document.getElementById("NombreUsuarioInput").value=nombre;
-    document.getElementById("aCompletar").innerHTML=nombre;
+let tomarDatos = () => {
+    let nombre = localStorage.getItem("NombreDelUsuario");
+    document.getElementById("NombreUsuarioInput").value = nombre;
+    document.getElementById("aCompletar").innerHTML = nombre;
 }
 
-function guardarNombre(nombreUsu) {
+let guardarNombre = (nombreUsu) => {
     localStorage.setItem("NombreDelUsuario", nombreUsu);
 }
 ````

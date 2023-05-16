@@ -49,19 +49,19 @@ Created by <i class="fab fa-telegram"></i>
 * Eventos y Objetos
 * Eventos de formularios
 
-[Ejercicio: Hola Mundo!](U5_javaScript.html#/19)
+[Ejercicio: Hola Mundo!](U5_javaScript.html#/24)
 
-[Ejercicio: Conversor de Unidades](U5_javaScript.html#/21)
+[Ejercicio: Conversor de Unidades](U5_javaScript.html#/26)
 
 * Documentar
 
-[Ejercicio: Documentación](U5_javaScript.html#/28)
+[Ejercicio: Documentación](U5_javaScript.html#/35)
 
 * getElementBy
 * Obtener valores
 * Objeto Math
 
-[Ejercicio: Grados a Radianes](U5_javaScript.html#/36)
+[Ejercicio: Grados a Radianes](U5_javaScript.html#/43)
 
 </div>
 </div>
@@ -300,9 +300,11 @@ setInterval(miFunc, 3000);
 * Declarar variables locales
 * Declarar variables primero
 * Inicializar variables
-* No declarar variables como Number, String o Boolean
+* Declarar los objetos y arrays con **const**
+* No declarar objetos como Number, String o Boolean
 * Conocer el tipo de variables
-* Terminar un Switch con default:
+* Terminar un Switch con **default:**
+* Para comparar, usar **===**
 * Evitar usar [eval()](https://www.etnassoft.com/2011/01/05/javascript-eval-uso-y-alternativas/) (evalúa el código JavaScript representado como una cadena.)
 
 <!--http://www.williammalone.com/articles/create-html5-canvas-javascript-drawing-app/#demo-simple-->
@@ -356,7 +358,7 @@ Escribir funciones JavaScript para que, al escribir un número en cualquiera de 
 ---
 ## Ejemplo Conversion de Unidades
 <script>
-function cambioUnidades(valor, unidad) {
+let convertirUnidades = (unidad, valor) => {
     if(isNaN(valor)){
         alert("Se ingreso un valor invalido en " + unidad);
         document.lasUnidades.yarda.value = "";
@@ -447,6 +449,23 @@ Podemos emplear [JsDoc](https://jsdoc.app/) para generar nuestra documentación.
 Y luego correr el comando `jsdoc misFunciones.js`
 
 ---
+## Documentar Código
+Ejemplo:
+````javascript
+/**
+ * Permite convertir unidades entre metros, pulgadas, pies y yardas
+ * @method convertirUnidades
+ * @param {string} id - Id de los elementos en html
+ * @param {number} value - Valor ingresado por el usuario
+ */
+````
+
+---
+## Documentar Código
+Ejemplo:
+![Ejemplo de JsDoc](images/Eventos/jsDocEjemplo.jpg)
+
+---
 ## Ejercicio: Documentación
 Documentar las funciones del “Conversor de Unidades” adecuadamente,  indicando que hacen las funciones, el nombre del método, que parámetros se le envía y que valor retorna.
 
@@ -474,15 +493,17 @@ Para más Info ver [Ejemplos](http://www.codexexempla.org/curso/curso_4_3_a.php)
 ---
 ## JavaScript: Leer Inputs
 <form name="sumaNum">
-    <input size="1" style="font-size: 28px" type="text" id="num1">+<input size="1" style="font-size: 28px" type="text" id="num2">=<input size="1" style="font-size: 28px" type="text" id="resultado" disabled>
-    <button style="font-size: 28px" onclick="sumaN()"> Calcular</button>
+    <input size="1" style="font-size: 28px" type="text" id="num1">+
+<input size="1" style="font-size: 28px" type="text" id="num2">=
+<input size="1" style="font-size: 28px" type="text" id="resultado" disabled>
 </form>
+<button style="font-size: 28px" onclick="sumaN()"> Calcular</button>
 
 ````javascript
-function sumaN() {
-   var num1 = document.getElementById("num1").value;
-   var num2 = document.getElementById("num2").value;
-   var resultado = Number(num1) + Number(num2);
+let sumaN = () => {
+   let num1 = document.getElementById("num1").value;
+   let num2 = document.getElementById("num2").value;
+   let resultado = Number(num1) + Number(num2);
    document.getElementById("resultado").value = resultado;
 }
 ````
@@ -499,22 +520,22 @@ X<sup>n</sup>
 
 <form name="sumaNum">
     <input size="1" style="font-size: 28px" type="text" id="num3">
-    <button style="font-size: 28px" onclick="potenciaN();raizN()"> Calcular</button>
+    <button type="button" style="font-size: 28px" onclick="potenciaN();raizN()"> Calcular</button>
 </form>
 
 ````javascript
-function potenciaN() {
-   var numP = document.getElementById("num3").value;
+let potenciaN = () => {
+   let numP = document.getElementById("num3").value;
    numP = Math.pow(numP,3);
-   alert("El cubo del numero ingresado es "+numP);
+   alert(`El cubo del numero ingresado es ${numP}`);
 }
 ````
    
 ````javascript
-function raizN() {
-   var numP = document.getElementById("num3").value;
+let raizN = () => {
+   let numP = document.getElementById("num3").value;
    numP = Math.pow(numP,1/3);
-   alert("La raiz cubica del numero ingresado es "+numP);
+   alert(`La raiz cubica del numero ingresado es ${numP}`);
 }
 ````
 
@@ -528,11 +549,11 @@ Sen(ang)
 </form>
 
 ````javascript
-function senN() {
-   var senNum = document.getElementById("num4").value;
+let senN = () => {
+   let senNum = document.getElementById("num4").value;
    //Math.sin(x) donde x en radianes
-   var valorSen = Math.sin(senNum*Math.PI/180);
-   alert("El seno de "+ senNum +" = "+ Math.round(valorSen*100)/100);
+   let valorSen = Math.sin(senNum*Math.PI/180);
+   alert(`El seno de ${senNum} = ${Math.round(valorSen*100)/100}`);
 }
 ````
 
