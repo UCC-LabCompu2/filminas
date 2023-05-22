@@ -89,6 +89,8 @@ Tener en cuenta
 - [ ] Emplear al menos 3 etiquetas semánticas diferentes (header, nav, aside, main, section, article, footer)
 - [ ] Emplear ```<header></header>```. En el contenido de la cabecera debe haber un título ```<h1></h1>```, puede tener color de fondo, algún logotipo, etc.
 - [ ] Debe haber por lo menos una etiqueta ```<img>``` en la página.
+- [ ] Todas las imágenes deben ser incluidas en el repositorio dentro de una carpeta llamada **imágenes** (salvo que sean demasiado pesadas. En ese caso, se puede emplear un servidor externo).
+- [ ] No se deben subir videos en el repositorio (excepto que sean muy livianos).
 - [ ] La estructura de la página debe estar definida con ```<div></div>```
 - [ ] Debe contener al menos 3 elementos de tipo ```<input>``` o ```<select>``` o ```<button>``` que le permitan al usuario ingresar valores para poder realizar un cálculo de un ejercicio o seleccionar opciones.
 
@@ -100,6 +102,7 @@ Tener en cuenta
 <!-- .slide: style="font-size: 0.70em" -->
 - [ ] Debe contener un ```<canvas>```, para que posteriormente (en la 2da etapa) se grafique alguna imagen representativa del ejercicio. (el desarrollo del gráfico se realizará cuando se vea la unidad de “Orientación a Eventos”)
 - [ ] No espaciar con excesivos ```<br>```. Utilizar márgenes, paddings, etc.
+- [ ] La anidación de etiquetas HTML debe ser correcta.
 - [ ] No utilizar etiquetas deprecadas.
 
 ![TAG Deprecadas](images/proyecto/deprecated_tag.png)
