@@ -344,6 +344,56 @@ function dibujoArcT() {
 <iframe width="560" height="315" src="https://www.youtube.com/embed/h8CsSjv3U48" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </script></section><section  data-markdown><script type="text/template">
+## Ejercicio: Dibujar imagen Mejorado
+* En el HTML crea un **Dialog**, que indique que los valores ingresados por el usuario son incorrectos
+* Si el usuario ingresa en los inputs coordendas menores a 0, o mayores al lienzo (y parte de la imagen queda fuera), debe mostrar el mensaje de error
+
+</script></section><section  data-markdown><script type="text/template">
+## Ejercicio: Dibujar Imagen Mejorado
+````javascript
+<dialog id="myDialog">
+    <h3>Error al ingresar los datos!</h3>
+    <button onclick="closeDialog()">Cerrar</button>
+</dialog>
+
+let closeDialog = () => {
+    const dialog = document.getElementById("myDialog");
+    dialog.close();
+}
+
+let openDialog = () => {
+    const dialog = document.getElementById("myDialog");
+    dialog.showModal();
+}
+
+let dibujarImagen = (posX, posY) => {
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    console.log(posX, posY);
+    const img = new Image();
+    img.src = "images/auto.png";
+
+    canvas.width = canvas.width;
+
+
+    img.onload = function (){
+        var width = this.naturalWidth;
+        var height = this.naturalHeight;
+        console.log(width, height);
+
+        if(posY<0 || posX<0){
+            openDialog();
+        }else if(canvas.width-width<posX || canvas.height-height<posY){
+            openDialog();
+        }else{
+            ctx.drawImage(img, posX, posY);
+        }
+    }
+}
+````
+
+</script></section><section  data-markdown><script type="text/template">
 ## Escribir texto en canvas Canvas
 ````javascript
 var canvas = document.getElementById("myCanvas");
@@ -352,6 +402,73 @@ ctx.font="10pt Verdana";
 ctx.fillStyle = "blue";
 ctx.fillText( "Hola Mundo!!!", canvas.width/2, canvas.height/2);
 ````
+
+</script></section><section  data-markdown><script type="text/template">
+## Ejercicio: Escribir Texto
+* Emplea de base el ejercicio canvas_cuadriculado
+* Modifica el código para escribir un número en el eje de las X y en el eje de las Y
+
+</script></section><section  data-markdown><script type="text/template">
+## Ejercicio: Escribir Texto
+````javascript
+let dibujarCuadriculado = () => {
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+    ctx.font="10pt Verdana";
+    ctx.fillStyle = "blue";
+
+    console.log("Se comenzara a dibujar!!!");
+    const xMax = canvas.width;
+    const yMax = canvas.height;
+
+    let paso = 20;
+    let ejeX=-15;
+    let ejeY=-25;
+    let despl = 2;
+
+    //Dibujar Líneas Horizontales
+
+    for(let i=0;i<yMax;i+=paso){
+        ctx.beginPath();
+        ctx.moveTo(0, i);
+        ctx.lineTo(xMax, i);
+        ctx.strokeStyle = "#a19797"
+        ctx.stroke();
+        ctx.fillText(ejeX, xMax/2+despl, i+4);
+        ejeX +=1;
+        ctx.closePath();
+    }
+
+    //Dibujar Líneas Verticales
+    for(let i=0;i<xMax;i+=paso){
+        ctx.beginPath();
+        ctx.moveTo(i, 0);
+        ctx.lineTo(i, yMax);
+        ctx.strokeStyle = "#1b73f8"
+        ctx.fillText(ejeY, i, yMax/2 - 6);
+        ejeY +=1;
+        ctx.stroke();
+        ctx.closePath();
+    }
+
+    //Eje X
+    ctx.beginPath();
+    ctx.moveTo(0, yMax/2);
+    ctx.lineTo(xMax, yMax/2);
+    ctx.strokeStyle = "#830303"
+    ctx.stroke();
+    ctx.closePath();
+
+   //Eje Y
+    ctx.beginPath();
+    ctx.moveTo(xMax/2, 0);
+    ctx.lineTo(xMax/2, yMax);
+    ctx.strokeStyle = "#830303"
+    ctx.stroke();
+    ctx.closePath();
+}
+````
+
 
 </script></section><section  data-markdown><script type="text/template">
 ## Podemos Continuar con el Segundo Parcial!

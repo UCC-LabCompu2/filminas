@@ -24,6 +24,13 @@ Created by <i class="fab fa-telegram"></i>
 
 </script></section><section  data-markdown><script type="text/template">
 <style>
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 0.8em;
+    text-align: left !important;
+}
+
 .grid-item {
     border: 3px solid rgba(121, 177, 217, 0.8);
     padding: 20px;
@@ -32,31 +39,99 @@ Created by <i class="fab fa-telegram"></i>
 </style>
 <!-- .slide: style="font-size: 0.60em" -->
 ## Temario
+<div class="grid-container2">
 <div class="grid-item">
+
+* Refactorización de Código
+
+[Ejercicio: Refactorización de Conversión de Unidades](U5_javaScript2.html#/3)
 
 * Modificar CSS mediante Js
 
-[Ejercicio: Mostrar/Ocultar div](U5_javaScript2.html#/6)
+[Ejercicio: Mostrar/Ocultar div](U5_javaScript2.html#/9)
 
-[Ejercicio: Operaciones Mateáticas](U5_javaScript2.html#/8)
+[Ejercicio: Operaciones Mateáticas](U5_javaScript2.html#/11)
 
-* Random y Round
-* Refactorización
+* Math Round
+* Math Random
+* Ejemplo: Random y Round
+* ParseFloat
+* ParseInt
+* toFixed(X)
+* Fórmulas
 
-[Ejercicio: Conversor de Unidades 2](U5_javaScript2.html#/14)
+</div>
+<div class="grid-item">
 
-[Ejercicio: Operaciones Mateáticas 2](U5_javaScript2.html#/17)
+[Ejercicio: Conversor de Unidades 2](U5_javaScript2.html#/23)
 
-[Ejercicio: Primera a Segunda web](U5_javaScript2.html#/20)
+[Ejercicio: Operaciones Mateáticas 2](U5_javaScript2.html#/26)
 
-* Formulas
+[Ejercicio: Primera a Segunda web](U5_javaScript2.html#/29)
+
 * LocalStorage
 
-[Ejercicio: Primera a Segunda web empleando LocalStorage](U5_javaScript2.html#/27)
+[Ejercicio: Primera a Segunda web empleando LocalStorage](U5_javaScript2.html#/34)
 
 * Métodos para Strings
 
 </div>
+</div>
+
+</script></section><section  data-markdown><script type="text/template">
+## Refactorizar Código: que es?
+* Limpieza de código
+* No arregla errores ni incorpora funcionalidades
+* Altera la estructura interna del código sin cambiar su comportamiento externo
+
+Objetivos:
+* Mejorar la facilidad de comprensión del código
+* Cambiar su estructura y diseño
+* Eliminar código muerto
+  *Facilitar el mantenimiento en el futuro
+
+</script></section><section  data-markdown><script type="text/template">
+### Ejercicio: Conversión de Unidades
+Refactorice el código de manera tal que:
+* Emplee función flecha en lugar de **function**
+* Al principio se creen las variables necesarias
+* Operar todos los valores empleando las variables
+* Al final hacer la asignación de valores a los campos en la UI
+
+</script></section><section  data-markdown><script type="text/template">
+### Ejercicio: Conversión de Unidades
+````javascript
+convertirUnidades = (id,valor) => {
+    let met, pul, pie, yar;
+
+    if(valor.includes(",")){
+        valor = valor.replace(",", ".")
+    }
+    if(isNaN(valor)){
+        alert("El valor ingresado es incorrecto");
+        met = "";
+        pul = "";
+        pie = "";
+        yar = "";
+    }else if(id==="metro"){
+        met = valor;
+        pul = valor*39.3701;
+        pie = valor*3.28084;
+        yar = valor*1.09361;
+    }else if(id==="pulgada"){
+        //tarea
+    }
+    else if(id==="pie"){
+        //tarea
+    }else if(id==="yarda"){
+        //tarea
+    }
+    document.lasUnidades.unid_metro.value = Math.round(met*100)/100;
+    document.lasUnidades.unid_pulgada.value = Math.round(pul*100)/100;
+    document.lasUnidades.unid_pie.value = Math.round(pie);
+    document.lasUnidades.unid_yarda.value = Math.round(yar);
+}
+````
 
 </script></section><section  data-markdown><script type="text/template">
 ## Podemos modificar CSS mediante Javascript?
@@ -146,6 +221,30 @@ Escribir funciones JavaScript para resolver las operaciones matemáticas una vez
 ![Meme JS](images/html/meme_js.jpg)
 
 </script></section><section  data-markdown><script type="text/template">
+## [Math Round](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math/round)
+La función Math.round() retorna el valor de un número redondeado al entero más cercano.
+* Si la porción fraccionaría del número es 0.5 o mayor, se redondea al siguiente número entero superior. 
+* Si la porción de la fracción del número es menor a 0.5, se redondea al siguiente número entero inferior.
+````javascript
+console.log(Math.round(200.34))
+````  
+Por consola veriamos "200"
+
+</script></section><section  data-markdown><script type="text/template">
+## [Math Random](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+La función Math.random() devuelve un número de coma flotante pseudo-aleatorio, comprendido en el rango de 0 a 
+menor que 1 (es decir, incluido el 0 pero no el 1), con una distribución aproximadamente uniforme en este rango.
+````javascript
+console.log(Math.random())
+````  
+Por consola veriamos:
+````javascript
+> 0.34963102221109255
+> 0.43184160054419074
+> 0.6179071257408261
+````
+
+</script></section><section  data-markdown><script type="text/template">
 ## Ejemplo: Random y Round
 ````javascript
 let numAleatorio = (a,b) => {
@@ -158,58 +257,32 @@ let numAleatorio = (a,b) => {
 </form>
 
 </script></section><section  data-markdown><script type="text/template">
-## Refactorizar Código: que es?
-* Limpieza de código
-* No arregla errores ni incorpora funcionalidades
-* Altera la estructura interna del código sin cambiar su comportamiento externo
-
-Objetivos:
-* Mejorar la facilidad de comprensión del código
-* Cambiar su estructura y diseño
-* Eliminar código muerto
-*Facilitar el mantenimiento en el futuro
+## ParseFloat
+La función parseFloat() analiza un argumento (si es necesario, lo convierte en una cadena) y devuelve un número de coma flotante.
+````javascript
+parseFloat(4.567); //4.567
+parseFloat(4.36275hdkjfhd); //4.36275
+parseFloat(jkdfjsdh); //NaN
+```` 
 
 </script></section><section  data-markdown><script type="text/template">
-## Ejercicio: Conversor de Unidades II
-Modificar las funciones para que el resultado de la conversión sólo posea 2 decimales.
-* Emplear **Math.Round** ó **miVar.toFix(2)** antes de asignar el resultado
-* Reemplace ',' por '.' para evitar errores
+## ParseInt
+Convierte (parsea) un argumento de tipo cadena y devuelve un entero de la base especificada.
+````javascript
+parseInt(4.567); //4
+parseInt(856.36275hdkjfhd); //856
+parseInt(jkdfjsdh); //NaN
+```` 
 
 </script></section><section  data-markdown><script type="text/template">
-## Ejercicio: Conversor de Unidades II
-![Conversor Unidades](images/html/conversorUnidades.png)
+## toFixed
+El método toFixed() formatea un número usando notación de punto fijo.
+````javascript
+34.67648768736.toFixed(4); //34.6764
+"34.67648768736".toFixed(4); //Error: "34.67648768736".toFixed is not a function
+Number("34.67648768736").toFixed(4); //34.6764
+```` 
 
-</script></section><section  data-markdown><script type="text/template">
-## Ejercicio: Conversor de Unidades II
-<iframe width="560" height="315" src="https://www.youtube.com/embed/a73NqZTeP2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-</script></section><section  data-markdown><script type="text/template">
-## Ejercicio: Operaciones Matemáticas II
-Modificar el HTML para quitar los inputs de los resultados. Emplear span, p o div, y en JavaScript, emplear innerHTML.
-* Emplear **innerHTML** para asignarle valores a los divs.
-
-</script></section><section  data-markdown><script type="text/template">
-## Ejercicio: Operaciones Matemáticas II
-![Operaciones Matematicas](images/html/operacionesMatematicas.png)
-
-</script></section><section  data-markdown><script type="text/template">
-## Ejercicio: Operaciones Matemáticas II
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Z2eiHH0qGbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-</script></section><section  data-markdown><script type="text/template">
-### Ejercicio: Pasar valores de PrimeraWeb a SegundaWeb
-<!-- .slide: style="font-size: 0.70em" -->
-![Primer Web](images/html/primerWeb.png)
-* Crear una función JavaScript que sea ejecutada cuando el botón sea presionado. 
-La función debe concatenar la URL de la segunda web con los valores ingresados por el usuario, separados por ‘#’ y dirigirse a la segunda web.
-
-![Segunda Web](images/html/segundaWeb.png)
-* Crear una función JavaScript que se ejecute cuando la segunda web sea cargada. 
-Debe tomar el valor de la URL y dividirla cada vez que ‘#’ sea encontrado. Debe emplear estos valores y cargarlos en el input.
-
-</script></section><section  data-markdown><script type="text/template">
-### Ejercicio: Pasar valores de PrimeraWeb a SegundaWeb
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UANWAIdMQEg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </script></section><section  data-markdown><script type="text/template">
 ## JavaScript: Formulas
@@ -261,6 +334,48 @@ let convertGrados = (radianes) => {
     return enGrados;
 }
 ````
+
+</script></section><section  data-markdown><script type="text/template">
+## Ejercicio: Conversor de Unidades II
+Modificar las funciones para que el resultado de la conversión sólo posea 2 decimales.
+* Emplear **Math.Round** ó **miVar.toFix(2)** antes de asignar el resultado
+* Reemplace ',' por '.' para evitar errores
+
+</script></section><section  data-markdown><script type="text/template">
+## Ejercicio: Conversor de Unidades II
+![Conversor Unidades](images/html/conversorUnidades.png)
+
+</script></section><section  data-markdown><script type="text/template">
+## Ejercicio: Conversor de Unidades II
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a73NqZTeP2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</script></section><section  data-markdown><script type="text/template">
+## Ejercicio: Operaciones Matemáticas II
+Modificar el HTML para quitar los inputs de los resultados. Emplear span, p o div, y en JavaScript, emplear innerHTML.
+* Emplear **innerHTML** para asignarle valores a los divs.
+
+</script></section><section  data-markdown><script type="text/template">
+## Ejercicio: Operaciones Matemáticas II
+![Operaciones Matematicas](images/html/operacionesMatematicas.png)
+
+</script></section><section  data-markdown><script type="text/template">
+## Ejercicio: Operaciones Matemáticas II
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z2eiHH0qGbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</script></section><section  data-markdown><script type="text/template">
+### Ejercicio: Pasar valores de PrimeraWeb a SegundaWeb
+<!-- .slide: style="font-size: 0.70em" -->
+![Primer Web](images/html/primerWeb.png)
+* Crear una función JavaScript que sea ejecutada cuando el botón sea presionado. 
+La función debe concatenar la URL de la segunda web con los valores ingresados por el usuario, separados por ‘#’ y dirigirse a la segunda web.
+
+![Segunda Web](images/html/segundaWeb.png)
+* Crear una función JavaScript que se ejecute cuando la segunda web sea cargada. 
+Debe tomar el valor de la URL y dividirla cada vez que ‘#’ sea encontrado. Debe emplear estos valores y cargarlos en el input.
+
+</script></section><section  data-markdown><script type="text/template">
+### Ejercicio: Pasar valores de PrimeraWeb a SegundaWeb
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UANWAIdMQEg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </script></section><section  data-markdown><script type="text/template">
 ## [JS: LocalStorage](https://developer.mozilla.org/es/docs/Web/API/Web_Storage_API)
