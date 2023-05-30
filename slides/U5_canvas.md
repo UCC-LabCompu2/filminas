@@ -460,12 +460,12 @@ let dibujarCuadriculado = () => {
 ## Podemos Continuar con el Segundo Parcial!
 <!-- .slide: style="font-size: 0.70em" -->
 Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada
-* Una función que compruebe si los valores ingresados son correctos, y si no lo son, que le indique al usuario por un alert, y que blanquee el contenido del campo.
+* Una función que compruebe si los valores ingresados son correctos, y si no lo son, que le indique al usuario por un alert ó  **dialog**, y que blanquee el contenido del campo.
 * Una función que calcule algo en base a los valores ingresados por el usuario en los inputs.
 * Una función que realice un dibujo sobre un canvas.
 * No debe haber errores en el javaScript.
-* El código debe estar pusheado en el repositorio (emplear gh-pages).
-* Las funciones javaScript deben estar comentadas adecuadamente.
+* El código debe estar pusheado en el repositorio.
+* **TODAS** las funciones javaScript deben estar comentadas adecuadamente.
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
