@@ -129,6 +129,10 @@ function esperar() {
 ---
 ## Ejercicio: Canvas y setTimeOut()
 ````javascript
+HTML
+<body onload="comenzarAnimacion()">
+        
+JavaScript        
 var x=0;
 var dx=2;
 let animarAuto = () => {
@@ -149,7 +153,7 @@ let animarAuto = () => {
     x+=dx;
 }
 
-var timeoutId;
+var intervalId;
 let detenerAuto = () => {
     console.log("Se detuvo el auto")
     clearInterval(intervalId); // Detener la animación
@@ -183,6 +187,10 @@ window.webkitRequestAnimationFrame(callback[, element]); // Chrome/Webkit
 ---
 ## Ejercicio: Canvas y requestAnimationFrame()
 ````javascript
+HTML
+<body onload="animarNuevo()">
+        
+JavaScript        
 var x=0;
 var dx=2;
 let animarAuto = () => {
@@ -226,6 +234,10 @@ window.cancelAnimationFrame(requestID);
 ---
 ## Ejercicio: Canvas y cancelAnimationFrame()
 ````javascript
+HTML
+<body onload="animarNuevo()">
+        
+JavaScript        
 var x=0;
 var dx=2;
 var animationId;

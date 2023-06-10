@@ -60,8 +60,9 @@ Tener en cuenta
 <!-- .slide: style="font-size: 0.60em" -->
 - [ ] El proyecto debe estar subido al repositorio adecuado "Proyecto2023-ApellidoAlumno1-ApellidoAlumno2"
 - [ ] Modificar el Readme.MD y colocar información del proyecto/página (mínimamente: título del proyecto, autores, link de gh-pages, contenido de la página,  listado de tecnologías usadas, etc)
-- [ ] La estructura del proyecto debe ser adecuada (crear una carpeta para las imágenes, otra para los sketch/mockups)
-- [ ] El código debe estar pusheado en el repositorio (emplear gh-pages o configurar github para que se tome a la main como la página a visualizar), y no debe haber diferencias entre **main** y **gh-pages** (verificar de realizar el Merge).
+- [ ] Debe usarse negrita, titulo de orden 2 y 3, link, items, tabla (2024)
+- [ ] El código debe estar pusheado en el repositorio (emplear gh-pages o configurar github para que se tome a la main como la página a visualizar)
+- [ ] En caso de haber múltiples branchs, NO debe haber diferencias entre **main** y **gh-pages** (verificar de realizar el Merge).
 - [ ] Publicar la Web empleando GitHubPages
 - [ ] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc o .DS_Store, en todo caso emplear **.gitignore**)
 - [ ] "Lorem ipsum" es sólo válido para los prototipos, NO para la página
@@ -72,11 +73,13 @@ Tener en cuenta
 <!-- .slide: style="font-size: 0.60em" -->
 - [ ] NO está permitido descargar un TEMPLATE (diseño 100% desde cero)
 - [ ] La página principal debe llamarse index
+- [ ] La estructura del proyecto debe ser adecuada (crear una carpeta para las imágenes, otra para los sketch/mockups)
 - [ ] Identar correctamente el código (en Webstorm con Ctrol+A se selecciona todo el código y con Ctrl+Alt+L ó menú *Code* > *Reformat Code*)
 - [ ] No debe haber errores presentes (en Webstorm *Code* > *Inspect Code* para verificar que no haya errores)
 - [ ] Se debe emplear favicon
 - [ ] Emplear alguna fuente de google fonts o subir al proyecto alguna fuente externa (aunque sea para un título)
 - [ ] Debe haber navegación entre todas las páginas
+- [ ] No debe haber errores de ortografía en el contenido visual
 
 ---
 ### Requisitos del Primer Parcial
@@ -108,6 +111,14 @@ Tener en cuenta
 ![TAG Deprecadas](images/proyecto/deprecated_tag.png)
 - [ ] Todas las etiquetas que correspondan deben estar correctamente cerradas
 - [ ] Los ids de los elementos deben ser unívocos
+
+---
+### Requisitos del Primer Parcial
+#### Sobre las imágenes (2024)
+- [ ] Toda imagen debe tener su etiqueta alt
+- [ ] Las imágenes empleadas deben estar incluidas en el repositorio
+- [ ] Las imágenes deben poseer un nombre representativo
+- [ ] Debe contener al menos 1 etiqueta `<img>` 
 
 ---
 ### Requisitos del Primer Parcial
