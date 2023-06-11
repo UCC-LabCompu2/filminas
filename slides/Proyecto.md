@@ -127,6 +127,7 @@ Tener en cuenta
 - [ ] El CSS debe contar mínimo con un tipo de cada forma (por Tag, por ID y por clase).
 - [ ] Se debe emplear pseudoclase
 - [ ] No emplear ```!important```
+- [ ] El diseño de la página debe ser consistente
 
 ---
 ### Requisitos del Primer Parcial
@@ -189,6 +190,7 @@ Por cada corrección o defecto en el HTML+CSS se descontará un 6% del 85%.
 - [ ] Todas las correcciones y mejoras solicitadas durante el primer parcial deben estar corregidas.
 - [ ] No debe haber errores presentes en el código (realizar *Code* > *Inspect Code* para verificar que no haya errores)
 - [ ] No debe haber errores JavaScript presentes (F12 > Consola)
+- [ ] El funcionamiento de la página debe ser consistente.
 
 ---
 ### Requisitos del Segundo Parcial
