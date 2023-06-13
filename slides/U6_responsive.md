@@ -160,6 +160,24 @@ Fueron deprecados los Medios: tty, tv, projection, handheld, braille, embossed y
 </small>
 
 ---
+### Media Types
+````css
+@media print {
+    /* … */
+}
+
+@media screen, print {
+    /* … */
+}
+
+````
+
+---
+### Media Queries
+![Sintaxis de Rango](images/appWeb/sintaxis_rango.jpg)
+
+
+---
 ## HTML5: Viewport
 ![Ejemplo Viewport](images/appWeb/viewport2.jpg)
 
@@ -232,8 +250,11 @@ Empleando Ejercicios-CSS el template ej_instagram, el contenido debe visualizars
 ## [Tu página está correctamente optimizada para móviles?](https://search.google.com/test/mobile-friendly?utm_source=mft&utm_medium=redirect&utm_campaign=mft-redirect)
 Deja que google te ayude a averiguarlo...
 
-Por ejemplo, podemos ingresar 
+![Pagina mobile](images/appWeb/pagina_mobile.jpg)
 
+---
+## Tu página está correctamente optimizada para móviles?
+Por ejemplo, podemos ingresar
 https://ucc-labcompu2.github.io/filminas/Proyecto.html#/5
 
 ---
