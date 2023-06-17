@@ -26,10 +26,21 @@ Relizar un proyecto Web. La página debe poder resolver ejercicios de **Física 
 ### Requisitos del Primer Parcial
 #### Sobre el Sketch
 <!-- .slide: style="font-size: 0.80em" -->
-- [ ] Tener en cuenta los mensajes de error para el usuario
 - [ ] Versión Desktop y Mobile
 - [ ] Guardado en formato PNG, JPG ó PDF
 - [ ] Dentro de una carpeta llamada "Sketch"
+- [ ] Tener en cuenta los mensajes de error para el usuario
+- [ ] Debe ser realizado con el template de la GTP (2024)
+
+---
+### Requisitos del Primer Parcial
+#### Sobre el Sketch
+![Sketch Móvil](images/proyecto/GTP_sketchMovil.jpg)
+
+---
+### Requisitos del Primer Parcial
+#### Sobre el Sketch
+![Sketch Móvil](images/proyecto/GTP_sketchDesktop.jpg)
 
 ---
 ### Requisitos del Primer Parcial
