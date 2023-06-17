@@ -21,6 +21,7 @@ Steps:
 * Más enfoque en diseño mobile
 * UX vs UI
 * Js trabajar con cadenas de caracteres
+* Trabajo con arrays
 * Borrar archivos del repositorio
 * Configurar remote URL en Github
 * Ejercicio de escribir texto en el canvas
