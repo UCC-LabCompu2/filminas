@@ -23,6 +23,59 @@ Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
 </script></section><section  data-markdown><script type="text/template">
+
+<style>
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 0.8em;
+    text-align: left !important;
+}
+
+.grid-item {
+    border: 3px solid rgba(121, 177, 217, 0.8);
+    padding: 20px;
+    text-align: left !important;
+}
+</style>
+<!-- .slide: style="font-size: 0.70em" -->
+## Temario
+<div class="grid-container2">
+<div class="grid-item">
+
+### Proyecto
+* Consigna básica
+* Link con template base (obligatorio)
+
+### Requisitos del Primer Parcial
+* [Sketch](Proyecto.html#/4)
+* [Wireframe/Mockup](Proyecto.html#/8)
+* [Repositorio](Proyecto.html#/9)
+* [Proyecto general](Proyecto.html#/10)
+* [HTML](Proyecto.html#/11)
+* [Imágenes](Proyecto.html#/14)
+* [CSS](Proyecto.html#/15)
+* [Accesibilidad](Proyecto.html#/16)
+* [Correcciones](Proyecto.html#/17)
+* [Videos](Proyecto.html#/21)
+
+</div>
+<div class="grid-item">
+
+### Requisitos del Segundo Parcial
+* [Proyecto General](Proyecto.html#/26)
+* [Funcionalidad JavaScript](Proyecto.html#/27)
+* [Documentación](Proyecto.html#/29)
+* [Correcciones](Proyecto.html#/30)
+
+### Requisitos del Final
+* [Proyecto General](Proyecto.html#/33)
+* [Animación](Proyecto.html#/34)
+
+</div>
+</div>
+
+</script></section><section  data-markdown><script type="text/template">
 ## PROYECTO
     
 Relizar un proyecto Web. La página debe poder resolver ejercicios de **Física I** ó **Física II**
@@ -44,7 +97,7 @@ Relizar un proyecto Web. La página debe poder resolver ejercicios de **Física 
 - [ ] Guardado en formato PNG, JPG ó PDF
 - [ ] Dentro de una carpeta llamada "Sketch"
 - [ ] Tener en cuenta los mensajes de error para el usuario
-- [ ] Debe ser realizado con el template de la GTP (2024)
+- [ ] Debe ser realizado con el template de la **GTP** (Guía de Trabajos Prácticos) (2024)
 
 </script></section><section  data-markdown><script type="text/template">
 ### Requisitos del Primer Parcial
@@ -85,11 +138,11 @@ Tener en cuenta
 <!-- .slide: style="font-size: 0.60em" -->
 - [ ] El proyecto debe estar subido al repositorio adecuado "Proyecto2023-ApellidoAlumno1-ApellidoAlumno2"
 - [ ] Modificar el Readme.MD y colocar información del proyecto/página (mínimamente: título del proyecto, autores, link de gh-pages, contenido de la página,  listado de tecnologías usadas, etc)
-- [ ] Debe usarse negrita, titulo de orden 2 y 3, link, items, tabla (2024)
+- [ ] En el **readme.md** Debe usarse negrita, titulo de orden 1, 2 y 3, link, items, tabla, index a cada sección (2024)
 - [ ] El código debe estar pusheado en el repositorio (emplear gh-pages o configurar github para que se tome a la main como la página a visualizar)
 - [ ] En caso de haber múltiples branchs, NO debe haber diferencias entre **main** y **gh-pages** (verificar de realizar el Merge).
 - [ ] Publicar la Web empleando GitHubPages
-- [ ] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc o .DS_Store, en todo caso emplear **.gitignore**)
+- [ ] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc o .DS_Store o node_modules, en todo caso emplear **.gitignore**)
 - [ ] "Lorem ipsum" es sólo válido para los prototipos, NO para la página
 
 </script></section><section  data-markdown><script type="text/template">
@@ -116,11 +169,16 @@ Tener en cuenta
 - [ ] En el ```<head></head>``` incluir las etiquetas ```<meta>``` detallando: autor, descripción y palabras clave
 - [ ] Emplear al menos 3 etiquetas semánticas diferentes (header, nav, aside, main, section, article, footer)
 - [ ] Emplear ```<header></header>```. En el contenido de la cabecera debe haber un título ```<h1></h1>```, puede tener color de fondo, algún logotipo, etc.
-- [ ] Debe haber por lo menos una etiqueta ```<img>``` en la página.
-- [ ] Todas las imágenes deben ser incluidas en el repositorio dentro de una carpeta llamada **imágenes** (salvo que sean demasiado pesadas. En ese caso, se puede emplear un servidor externo).
-- [ ] No se deben subir videos en el repositorio (excepto que sean muy livianos).
 - [ ] La estructura de la página debe estar definida con ```<div></div>```
+
+</script></section><section  data-markdown><script type="text/template">
+### Requisitos del Primer Parcial
+#### Sobre el HTML
+<!-- .slide: style="font-size: 0.80em" -->
 - [ ] Debe contener al menos 3 elementos de tipo ```<input>``` o ```<select>``` o ```<button>``` que le permitan al usuario ingresar valores para poder realizar un cálculo de un ejercicio o seleccionar opciones.
+- [ ] Emplear el atributo **placeholder** (mínimamente en 1 input) (2024)
+- [ ] Emplear el atributo **size** para que el tamaño de los inputs sea prolijo (2024)
+- [ ] Emplear el atributo **maxlength** para que el usurario no pueda ingresar valores "muy grandes" (2024)
 
 </script></section><section  data-markdown><script type="text/template">
 <!-- .slide: style="font-size: 0.80em" -->
@@ -138,14 +196,18 @@ Tener en cuenta
 - [ ] Los ids de los elementos deben ser unívocos
 
 </script></section><section  data-markdown><script type="text/template">
+<!-- .slide: style="font-size: 0.80em" -->
 ### Requisitos del Primer Parcial
-#### Sobre las imágenes (2024)
+#### Sobre las imágenes
+- [ ] Debe haber por lo menos una etiqueta ```<img>``` en la página.
+- [ ] Todas las imágenes deben ser incluidas en el repositorio dentro de una carpeta llamada **imagenes** (salvo que sean demasiado pesadas. En ese caso, se puede emplear un servidor externo). (2024)
+- [ ] No se deben subir videos en el repositorio (excepto que sean muy livianos).
 - [ ] Toda imagen debe tener su etiqueta alt
-- [ ] Las imágenes empleadas deben estar incluidas en el repositorio
-- [ ] Las imágenes deben poseer un nombre representativo
+- [ ] Las imágenes deben poseer un nombre representativo (2024)
 - [ ] Debe contener al menos 1 etiqueta `<img>` 
 
 </script></section><section  data-markdown><script type="text/template">
+<!-- .slide: style="font-size: 0.80em" -->
 ### Requisitos del Primer Parcial
 #### Sobre el CSS
 - [ ] El estilo de los elementos debe establecerse en un archivo CSS (prohibido poner el atributo style a los elementos o emplear estilos incrustados).
@@ -153,6 +215,7 @@ Tener en cuenta
 - [ ] Se debe emplear pseudoclase
 - [ ] No emplear ```!important```
 - [ ] El diseño de la página debe ser consistente
+- [ ] Debe existir un único archivo CSS (se debe evitar código duplicado. Se debe aplicar re-utilización de código/estilos) (2024)
 
 </script></section><section  data-markdown><script type="text/template">
 ### Requisitos del Primer Parcial
