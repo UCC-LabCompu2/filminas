@@ -194,6 +194,7 @@ Algunos atributos son:
 * disabled: deshabilita el campo y no permite que el usuario ingrese textos
 * size: altera el ancho del cuadro de texto
 * maxlength: cantidad máxima de caracteres que se pueden ingresar
+Ejemplo: Si una tarjeta de crédito tiene entre 13 y 16 dígitos, colocar **maxlength** en 16.
 
 <input type="text" placeholder="nombre"/>
 <input type="text" value="15" disabled/>
