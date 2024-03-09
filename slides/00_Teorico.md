@@ -8,21 +8,19 @@ slideNumber: true
 Created by 
 <i class="fab fa-telegram"></i> [edme88](https://t.me/edme88)
 
-<!---
-
-<!-- ## ¿Sáben Programar? -->
-<!-- ## ¿Qué lenguajes conocen? -->
-<!---
-
-## ¿Han instalado windows?
-![Win10](images/presentacion/Win10.png)-->
-
 ---
-<!-- .slide: <!-- data-background="images/presentacion/lenguajes.png" data-background-size="50%" -->
+
+## ¿Sáben Programar?
+## ¿Qué lenguajes conocen?
+## ¿Han instalado algún SO?
+<!--[Win10](images/presentacion/Win10.png)>
+
+<!--->
+<!-- .slide: data-background="images/presentacion/lenguajes.png" data-background-size="50%" -->
 <!-- .slide: data-background="images/configSO/OtrosOS.png" data-background-size="50%" -->
 <!--## ¿Han usado un sistema operativo que no sea windows?-->
-### Para romper el hielo... Juguemos un [Kahoot](https://create.kahoot.it/share/conociendonos-en-lab-de-compu-2/ae3a1b83-b59d-4e2c-bd9b-e6ae71333bce)
-Ingresa a [https://kahoot.it/](https://kahoot.it/) e introduce el PIN del juego
+<!--### Para romper el hielo... Juguemos un [Kahoot](https://create.kahoot.it/share/conociendonos-en-lab-de-compu-2/ae3a1b83-b59d-4e2c-bd9b-e6ae71333bce)
+Ingresa a [https://kahoot.it/](https://kahoot.it/) e introduce el PIN del juego-->
 
 ---
 # LABORATORIO DE COMPUTACIÓN II
@@ -35,8 +33,8 @@ La Materia
 ### Ing. Agustina Edmé Aliciardi
 agustina.aliciardi@ucc.edu.ar
 
-### Ing. Eduardo de Lima
-1938033@ucc.edu.ar
+### Ing. Daniel Germena
+1230332@ucc.edu.ar
 
 ---
 ## UNIDADES
@@ -55,6 +53,7 @@ agustina.aliciardi@ucc.edu.ar
 
 ---
 ## Calendario
+
 | Semana | Unidad | Tema                        |
 |--------|--------|-----------------------------|
 | 1      | 1      | Instalación de SO           |
@@ -67,6 +66,7 @@ agustina.aliciardi@ucc.edu.ar
 
 ---
 ## Calendario
+
 | Semana | Unidad | Tema                  |
 |--------|--------|-----------------------|
 | 8      | 5      | Orientación a Eventos |
@@ -91,11 +91,11 @@ FINAL:
 *    HTML+CSS+JS (con animación)
 *    Preguntas sobre el código
 *    Preguntas de la guía
-*    Promocion de la parte Teórica <br> <span style="font-size: 0.5em">Promedio >= 8 y nota mínima 7</span>
+*    Promoción de la parte Teórica <br> <span style="font-size: 0.5em">Promedio >= 8 y nota mínima 7</span>
 
 ---
 ## Regularidad
-* Asistencia del 70% en Clases Teórico-Prácticas (en el repositorio **ejercicio2023-Apellido** tener realizados los ejercicio de clase)
+* Asistencia del 70% en Clases Teórico-Prácticas (en el repositorio **ejercicios2024-Apellido** tener realizados los ejercicio de clase)
 * Proyecto primera y segunda etapa aprobados (nota mínima de 4)
 * Promedio de los 7 parcialitos >= 4
 
@@ -109,4 +109,4 @@ FINAL:
 ## Notas
 ![Notas](images/presentacion/notasFacultad.png)
 
-<small>Tener en cuenta que un 60%=4, 70%=5.5, 80%=7, 90%=8.5</small>
+<small>Tener en cuenta que un 55%=4, 70%=6, 80%=7.5, 90%=9</small>
