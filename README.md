@@ -25,3 +25,7 @@ Steps:
 * Borrar archivos del repositorio
 * Configurar remote URL en Github
 * Ejercicio de escribir texto en el canvas
+
+Para minificar código:
+https://minify-js.com/
+https://gist.github.com/straker/98a2aed6a7686d26c04810f08bfaf66b
