@@ -24,7 +24,7 @@ Relizar un ejercicio de **Física I** ó **Física II** ó **Matemática**
 ---
 ## PROYECTO: Requisitos básicos
 La página debe tener:
-* Imágines
+* Imágenes
 * Campos de formulario
 * Realizar algún cálculo o en base a la selección de usuario hacer algo
 * Lienzo canvas para graficar o mostrar algo
