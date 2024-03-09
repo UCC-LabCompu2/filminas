@@ -62,7 +62,7 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 
 ---
-## PROYECTO
+## [PROYECTO](https://ucc-labcompu2-historico.github.io/)
     
 Relizar un proyecto Web. La página debe poder resolver ejercicios de **Física I** ó **Física II**
 <span style="font-size: 0.4em">(o puede tener de temática cualquier idea que cumpla con los requisitos)</span>
@@ -73,11 +73,11 @@ Relizar un proyecto Web. La página debe poder resolver ejercicios de **Física 
 
 ---
 ## Github Classroom: Proyecto Integrador
-[Primer Parcial 2023](https://classroom.github.com/a/TOTyEjnh)
+[Primer Parcial 2024](https://classroom.github.com/a/WNgx1bBa)
 
 ---
 ### Requisitos del Primer Parcial
-#### Sobre el Sketch
+#### Sobre el [Sketch](U3_prototipado.html#/20)
 <!-- .slide: style="font-size: 0.80em" -->
 - [ ] Versión Desktop y Mobile
 - [ ] Guardado en formato PNG, JPG ó PDF
@@ -110,7 +110,7 @@ Tener en cuenta
 
 ---
 ### Requisitos del Primer Parcial
-#### Sobre el Wireframe/Mockup
+#### Sobre el [Wireframe/Mockup](U3_prototipado.html#/26)
 <!-- .slide: style="font-size: 0.80em" -->
 - [ ] Dibujado con algún programa como: Figma, AdobeXD, Draw.io en Drive, Pencil Project, Mockups, NinjaMock, o similares.
 - [ ] Tener en cuenta los mensajes de error para el usuario
@@ -122,12 +122,12 @@ Tener en cuenta
 ### Requisitos del Primer Parcial
 #### Sobre el repositorio
 <!-- .slide: style="font-size: 0.60em" -->
-- [ ] El proyecto debe estar subido al repositorio adecuado "Proyecto2023-ApellidoAlumno1-ApellidoAlumno2"
+- [ ] El proyecto debe estar subido al repositorio adecuado "Proyecto2024-ApellidoAlumno1-ApellidoAlumno2" (en gitHub Classroom)
 - [ ] Modificar el Readme.MD y colocar información del proyecto/página (mínimamente: título del proyecto, autores, link de gh-pages, contenido de la página,  listado de tecnologías usadas, etc)
-- [ ] En el **readme.md** Debe usarse negrita, titulo de orden 1, 2 y 3, link, items, tabla, index a cada sección (2024)
-- [ ] El código debe estar pusheado en el repositorio (emplear gh-pages o configurar github para que se tome a la main como la página a visualizar)
+- [ ] En el **readme.md** se debe emplear [Markdown](U2_git_avanzado.html#/13) y aplicar negrita, titulo de orden 1, 2 y 3, link, items, tabla, index a cada sección (2024)
+- [ ] El código debe estar en **gitHubPages** (emplear gh-pages o configurar github para que se tome a la main como la [página a visualizar](Proyecto.html#/24))
 - [ ] En caso de haber múltiples branchs, NO debe haber diferencias entre **main** y **gh-pages** (verificar de realizar el Merge).
-- [ ] Publicar la Web empleando GitHubPages
+- [ ] Publicar la Web empleando [GitHubPages](Proyecto.html#/24)
 - [ ] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc o .DS_Store o node_modules, en todo caso emplear **.gitignore**)
 - [ ] "Lorem ipsum" es sólo válido para los prototipos, NO para la página
 
@@ -140,8 +140,8 @@ Tener en cuenta
 - [ ] La estructura del proyecto debe ser adecuada (crear una carpeta para las imágenes, otra para los sketch/mockups)
 - [ ] Identar correctamente el código (en Webstorm con Ctrol+A se selecciona todo el código y con Ctrl+Alt+L ó menú *Code* > *Reformat Code*)
 - [ ] No debe haber errores presentes (en Webstorm *Code* > *Inspect Code* para verificar que no haya errores)
-- [ ] Se debe emplear favicon
-- [ ] Emplear alguna fuente de google fonts o subir al proyecto alguna fuente externa (aunque sea para un título)
+- [ ] Se debe emplear [favicon](U4_CSS.html#/34)
+- [ ] Emplear alguna fuente de [google fonts](U4_CSS.html#/35) o subir al proyecto alguna fuente externa (aunque sea para un título)
 - [ ] Debe haber navegación entre todas las páginas
 - [ ] No debe haber errores de ortografía en el contenido visual
 
@@ -152,8 +152,8 @@ Tener en cuenta
 - [ ] Todas las etiquetas deben estar en minúscula
 - [ ] Poner comillas a todos los atributos
 - [ ] **Title** debe contener el título de la página
-- [ ] En el ```<head></head>``` incluir las etiquetas ```<meta>``` detallando: autor, descripción y palabras clave
-- [ ] Emplear al menos 3 etiquetas semánticas diferentes (header, nav, aside, main, section, article, footer)
+- [ ] En el ```<head></head>``` incluir las etiquetas ```<meta>``` detallando: [autor, descripción y palabras clave](U4_HTML.html#/6)
+- [ ] Emplear al menos 3 [etiquetas semánticas](U4_HTML.html#/11) diferentes (header, nav, aside, main, section, article, footer)
 - [ ] Emplear ```<header></header>```. En el contenido de la cabecera debe haber un título ```<h1></h1>```, puede tener color de fondo, algún logotipo, etc.
 - [ ] La estructura de la página debe estar definida con ```<div></div>```
 
@@ -161,8 +161,8 @@ Tener en cuenta
 ### Requisitos del Primer Parcial
 #### Sobre el HTML
 <!-- .slide: style="font-size: 0.80em" -->
-- [ ] Debe contener al menos 3 elementos de tipo ```<input>``` o ```<select>``` o ```<button>``` que le permitan al usuario ingresar valores para poder realizar un cálculo de un ejercicio o seleccionar opciones.
-- [ ] Emplear el atributo **placeholder** (mínimamente en 1 input) (2024)
+- [ ] Debe contener al menos 3 [elementos](U4_HTML_avanzado.html#/5) de tipo ```<input>``` o ```<select>``` o ```<button>``` que le permitan al usuario ingresar valores para poder realizar un cálculo de un ejercicio o seleccionar opciones.
+- [ ] Emplear el atributo [**placeholder**](U4_HTML_avanzado.html#/19) (mínimamente en 1 input) (2024)
 - [ ] Emplear el atributo **size** para que el tamaño de los inputs sea prolijo (2024)
 - [ ] Emplear el atributo **maxlength** para que el usurario no pueda ingresar valores "muy grandes" (2024)
 
@@ -172,9 +172,9 @@ Tener en cuenta
 #### Sobre el HTML (2)
 <!-- .slide: style="font-size: 0.70em" -->
 <!-- .slide: style="font-size: 0.70em" -->
-- [ ] Debe contener un ```<canvas>```, para que posteriormente (en la 2da etapa) se grafique alguna imagen representativa del ejercicio. (el desarrollo del gráfico se realizará cuando se vea la unidad de “Orientación a Eventos”)
+- [ ] Debe contener un [canvas](U4_HTML_avanzado.html#/33), para que posteriormente (en la 2da etapa) se grafique alguna imagen representativa del ejercicio. (el desarrollo del gráfico se realizará cuando se vea la unidad de “Orientación a Eventos”)
 - [ ] No espaciar con excesivos ```<br>```. Utilizar márgenes, paddings, etc.
-- [ ] La anidación de etiquetas HTML debe ser correcta.
+- [ ] La [anidación de etiquetas](U4_HTML_avanzado.html#/31) HTML debe ser correcta.
 - [ ] No utilizar etiquetas deprecadas.
 
 ![TAG Deprecadas](images/proyecto/deprecated_tag.png)
