@@ -37,6 +37,22 @@ Esto implica que el hardware y el software son totalmente compatibles (a diferen
 ![Historia Mac](images/configSO/mac_history.png))
 
 ---
+#### 1984: 1 Macintosh
+![Primer Macintosh](images/mac/1984_macintosh.jpg)
+
+---
+#### 1989: Mac Portable
+![Mac Portable](images/mac/1989_mac_portable.jpg)
+
+---
+#### 1991: PowerBook
+![Power Book](images/mac/1991_powerBook.jpg)
+
+---
+#### 2005: Mac Mini
+![Mac Mini](images/mac/2005_mac_mini.jpg)
+
+---
 ### Ventajas
 * Alto rendimiento
 * Diseño cuidado
