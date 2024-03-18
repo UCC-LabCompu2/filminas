@@ -54,28 +54,26 @@ agustina.aliciardi@ucc.edu.ar
 ---
 ## Calendario
 
-| Semana | Unidad | Tema                        |
-|--------|--------|-----------------------------|
-| 1      | 1      | Instalación de SO           |
-| 2      | 2      | Herramientas de Desarrollo  |
-| 3      | 3      | Interfaz de Usuario         |
-| 4      | 3      | Aplicaciones Web            |
-| 5      | 4      | HTML                        |
-| 6      | 4      | CSS                         |
-| 7      |        | 1er PARCIAL                 |
+| Clase | Unidad | Tema                        |
+|-------|--------|-----------------------------|
+| 1     | 1      | Instalación de SO           |
+| 2 y 3 | 2      | Herramientas de Desarrollo  |
+| 4     | 3      | Interfaz de Usuario         |
+| 5     | 3      | Aplicaciones Web            |
+| 5 y 6 | 4      | HTML                        |
+| 7     | 4      | CSS                         |
+| 8     |        | 1er PARCIAL                 |
 
 ---
 ## Calendario
 
-| Semana | Unidad | Tema                  |
-|--------|--------|-----------------------|
-| 8      | 5      | Orientación a Eventos |
-| 9      | 5      | JavaScript            |
-| 10     | 5      | JavaScript            |
-| 11     |        | Proyecto Integrador   |
-| 12     |        | Proyecto Integrador   |
-| 13     | 6      | Aplicaciones Móviles  |
-| 14     |        | 2do PARCIAL           |
+| Clase  | Unidad | Tema                  |
+|---------|--------|-----------------------|
+| 9       | 5      | Orientación a Eventos |
+| 9       | 5      | JavaScript            |
+| 10 y 11 |        | Js: Canvas            |
+| 12      | 6      | Aplicaciones Móviles  |
+| 13      |        | 2do PARCIAL           |
 
 ---
 ## Forma de Evaluación: Cursado
