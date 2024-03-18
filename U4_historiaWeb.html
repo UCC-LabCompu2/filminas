@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,17 +12,19 @@
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
 
     <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
-
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">
+      <div class="slides">
+        <section data-markdown data-separator="^---" data-separator-vertical="^\r?\n----\r?\n$">
+          <textarea data-template>
+            
 
 # Breve Historia del Desarrollo Web
 Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
-</script></section><section  data-markdown><script type="text/template">
+---
 
 <style>
 .grid-container2 {
@@ -64,7 +66,7 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 </div>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Versiones de HTML
 * HTML 1
 * HTML 2
@@ -74,7 +76,7 @@ Created by <i class="fab fa-telegram"></i>
 * HTML 5
 * HTML 6 ???
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## HTML 1
 La primera versión del HTML nace en 1989 como un subconjunto de SGML (lenguaje de marcado generalizado estándar) y es 
 especificada mediante un documento que se denomina HTML Tags.
@@ -83,7 +85,7 @@ HTML1 intenta contemplar estructura, formato y semántica, los cuales han ido de
 
 También aparece el primer navegador para poder visualizar las páginas: WorldWideWeb.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## HTML 2
 Aparece en noviembre de 1995, HTML 2.0, desarrollada por el IETF (Internet Engineering Task Force). Fue más estándar, 
 ya que fue definida por un organismo oficial.
@@ -91,21 +93,21 @@ ya que fue definida por un organismo oficial.
 Entre las novedades podíamos encontrar cosas como imágenes, mapas de imágenes, formularios, barras separadoras… así como 
 una definición inicial del DTD HTML (Definición de tipo de documento).
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## HTML 3.0
 Se plantea en noviembre de 1995 el borrador de HTML 3.0 por parte de el consorcio W3C (World Wide Web Consortium),
 con la idea de definir estándares para Internet.
 
 Se empieza a hablar de elementos como tablas, textos alrededor de las imágenes, y un elemento llamado MATH que permite crear fórmulas dentro del documento HTML.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## HTML 3.2
 En enero de 1997 aparece HTML 3.2.  Aparecen elementos definidos por los fabricantes de navegadores: Netscape e Internet Explorer.
 
 Así podemos encontrar en HTML 3.2 la capacidad de crear código script, capas, formularios, posibilidad de meter Applets 
 de Java, entre otros.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## HTML 4
 HTML 4 y HTML 4.01 surge en 1998 y 1999, siendo esta última la versión más longeva del estándar.
 
@@ -115,7 +117,7 @@ Se crea un nuevo lenguaje llamado CSS.
 Los elementos nuevos que aparecen son las hojas de estilo (CSS), los objetos (para poder insertar elementos externos 
 como vídeo y música) y los frameset para dividir la pantalla en partes.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## HTML 5
 <!-- .slide: style="font-size: 0.70em" -->
 Empieza su definición apoyándose en dos puntos: 
@@ -128,7 +130,7 @@ Además alrededor de HTML5 nacen una gran cantidad de especificaciones para la m
 
 Se publicada oficialmente el 28 de octubre de 2014.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### [HTML 6](https://programacion.net/articulo/9_caracteristicas_que_deseamos_que_esten_en_html6_1189)
 Algunos cambios que se vienen:
 * Librerías dedicadas (como un jQuery integrado)
@@ -142,33 +144,33 @@ Algunos cambios que se vienen:
 * Mejor gestión de la información de contacto
 
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Y los estilos?
 Con el HTML 3.2 se daba formato en HTML con los elementos específicos para ello: <b>, <font>... y sus respectivos 
 atributos face="arial,helvetica,sans-serif", size="3", align="center"... 
 
 Implementarlo requería mucho tiempo, actualizarlo era molesto y no resultaba productivo.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### CSS
 Con la llegada del HTML 4 se quitaron los estilos, pero se crearon las hojas de estilo en cascada, Cascading Style Sheet o CSS. 
 
 La primera versión data del 17 de diciembre de 1996, cuando salio HTML 3.2
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### CSS 2
 Aparece el 12 de mayo de 1998. Se trataba de una versión con demasiadas novedades, y los navegadores no pudieron adaptarse bien.
  
 El W3C volvió a retrabajarlo, y entre 2004-2006, lanzó la versión level 2 revisión 1, que se conoce como CSS 2.1. 
 La versión 2.1 de las CSS fue publicada como Recommendation el 7 de junio de 2011.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### CSS 3
 Los primeros borradores aparecieron en 1999. El W3C publicó varios "módulos" independientes los unos de los otros. 
 
 Esto resulta bastante práctico para los navegadores, que pueden así implementar las novedades progresivamente.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Preprocesadores
 Extienden las características de HTML y CSS promoviendo la escritura de código reutilizable y modular. 
 Los más empleados son:
@@ -177,23 +179,28 @@ Los más empleados son:
 * Stylus
 
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## SASS & LESS
 Son pre-procesadores CSS. Son herramientas permiten escribir pseudo-código CSS que luego será convertido a CSS real.
 Ese pseudo-código se conforma de variables, condiciones, bucles o funciones.
 
 El objetivo es tener un código más sencillo de mantener y editar.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![CSS3 Historia](images/html/CSS3_historia.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
-</script></section></div>
+
+          </textarea>
+        </section>
+      </div>
     </div>
 
     <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
 
     <script src="./plugin/markdown/markdown.js"></script>
     <script src="./plugin/highlight/highlight.js"></script>
@@ -222,6 +229,9 @@ El objetivo es tener un código más sencillo de mantener y editar.
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
         plugins: [
           RevealMarkdown,
           RevealHighlight,
@@ -234,7 +244,7 @@ El objetivo es tener un código más sencillo de mantener y editar.
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -242,6 +252,20 @@ El objetivo es tener un código más sencillo de mantener y editar.
 
     <script>
       Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
     </script>
   </body>
 </html>

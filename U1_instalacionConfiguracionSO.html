@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,17 +12,19 @@
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
 
     <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
-
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">
+      <div class="slides">
+        <section data-markdown data-separator="^---" data-separator-vertical="^\r?\n----\r?\n$">
+          <textarea data-template>
+            
 
 # Sistemas Operativos
 Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <style>
 .grid-container4 {
     display: grid;
@@ -87,22 +89,22 @@ Created by <i class="fab fa-telegram"></i>
 * MBR vs GTP
 [Ejercicio: Rufus](U1_instalacionConfiguracionSO.html#/40)
 * Particionado de Discos
-* Pasos de Instalción de un SO
+* Pasos de Instalación de un SO
 </div>
 </div>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 
 ## Sistema Operativo
     
 Es un programa que administra el Hardware de una computadora. 
 Proporciona las bases para los programas de aplicación y actúa como un intermediario entre el usuario y el hardware.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Sistema Operativo
 ![SO](images/configSO/so.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## SO: Tareas
 <!-- .slide: style="font-size: 0.90em" -->
 Las tareas que hace un SO son:
@@ -115,7 +117,7 @@ Las tareas que hace un SO son:
 * Recuperarse de fallas o errores
 * Llevar el control sobre el uso de los recursos
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ##  [Ejemplos de Sistema Operativo](http://gs.statcounter.com/os-market-share)
 <!-- .slide: data-background="images/configSO/OtrosOS.png" data-background-size="50%" style="font-size: 0.80em" -->
 <div class="grid-container3">
@@ -152,7 +154,7 @@ Para servidores:
 
 </div>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Criterios para Definir SO
 * Tipo de Interfaz
   * Gráfica (GUI)
@@ -165,7 +167,7 @@ Para servidores:
   * Propietario
   * Libre
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <!-- .slide: style="font-size: 0.80em" -->
 ## [Ejercicio: Criterios de SO](https://docs.google.com/document/d/1U8oEEb7HMQVZxbTH55FgOpdqoxX8QGPJchaX3eztLSQ/edit)
 
@@ -289,7 +291,7 @@ En base a tus conocimientos previos, completa la siguiente tabla:
 </tr>
 </table>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Recursos de Hardware
 <!-- .slide: style="font-size: 0.80em" -->
 Los SO requieren ciertos recursos de Hardware para funcionar:
@@ -300,13 +302,13 @@ Los SO requieren ciertos recursos de Hardware para funcionar:
 
 ![Recursos Hardware](images/configSO/hardware.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Hardware: Mínimo y Recomendado
 Con la configuración del hardware **mínima** el rendimiento del sistema suele ser pobre, ya que el SO sólo podrá ejecutar funciones básicas.
 
 Con la configuración de hardware **recomendada** el SO funciona a una velocidad adecuada.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Comparar SO
 <!-- .slide: style="font-size: 0.80em" -->
 En base a las siguientes diapositivas, completa la tabla:
@@ -381,13 +383,15 @@ En base a las siguientes diapositivas, completa la tabla:
 </table>
 Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 
-</script></section><section ><section data-markdown><script type="text/template">
+---
 
 #### Advertencia: Algunas de las siguientes imágenes nos harán viajar en el tiempo... 
 <small>Solo hay algunas versiones, NO todo</small>
 <!--Descargar audio https://www.youtube.com/watch?v=tHr46P2r514-->
 ![Máquina del Tiempo](images/configSO/maquinaTiempo.jpeg)
-</script></section><section data-markdown><script type="text/template">
+
+----
+
 ## Requisitos mínimos de 
 ## Windows 3.11
 * Año: 1990
@@ -395,10 +399,14 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 * 3 MB de ram (se recomienda 4 MB)
 * Al menos 6.2 MB de espacio disponible en disco duro (se recomienda 14.5 MB)
 * Monotarea
-</script></section><section data-markdown><script type="text/template">
+
+----
+
 ## Windows 3.11
 ![Windows 3.11](images/configSO/Windows_3.11.png)
-</script></section><section data-markdown><script type="text/template">
+
+----
+
 
 ## Requisitos mínimos de
 ## Windows NT Server
@@ -409,12 +417,14 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 * adaptador de pantalla de video con resolución VGA o superior
 * Multitarea
    
-</script></section></section><section ><section data-markdown><script type="text/template">-
+----
 
 ## Windows NT
 
 ![Windows NT](images/configSO/Windows_NT.jpeg)
-</script></section><section data-markdown><script type="text/template">
+
+----
+
 ## Requisitos mínimos de
 ## Windows 95
 <!-- .slide: style="font-size: 0.90em" -->
@@ -425,13 +435,19 @@ Objetivo: Ver como el software va evolucionando en conjunto con el hardware.
 * 1 unidad de disco de alta densidad de 3,5 pulgadas
 * Resolución VGA o superior (se recomienda SVGA de 256 colores)
 * Multitarea
-</script></section><section data-markdown><script type="text/template">
+
+----
+
 ## Windows 95
 ![Windows 95](images/configSO/windows_95.jpeg)
-</script></section><section data-markdown><script type="text/template">
+
+----
+
 ## Windows 95
 https://www.tiktok.com/@shtunner/video/6953654804665093381?is_copy_url=0&is_from_webapp=v1&sender_device=pc&sender_web_id=6955970873513772550
-</script></section><section data-markdown><script type="text/template">
+
+----
+
 ## Requisitos mínimos de
 ## Windows 98
 <!-- .slide: style="font-size: 0.90em" -->
@@ -442,10 +458,14 @@ https://www.tiktok.com/@shtunner/video/6953654804665093381?is_copy_url=0&is_from
 * 1 unidad de disco de alta densidad de 3,5 pulgadas
 * Resolución VGA o superior (se recomienda SVGA de 256 colores)
 * Internet (MSN, Mensajeria): Modem 14,4 bits por segundo (bps),recomendado 28,8 bits o más rapido
-</script></section><section data-markdown><script type="text/template">
+
+----
+
 ## Windows 98
 ![Windows 98](images/configSO/Windows_98.png)
-</script></section><section data-markdown><script type="text/template">
+
+----
+
 ## Requisitos mínimos de
 ## Windows XP
 * Año: 2001
@@ -454,10 +474,14 @@ https://www.tiktok.com/@shtunner/video/6953654804665093381?is_copy_url=0&is_from
 * Mínimo 1,5 GB de espacio disponible en disco duro
 * Tarjeta gráfica y monitor de resolución Súper VGA (800x600) o superior
 ![Windows XP](images/configSO/winXP.png)
-</script></section><section data-markdown><script type="text/template">
+
+----
+
 ## Windows XP
 ![Windows XP](images/configSO/Windows_XP.png)
-</script></section><section data-markdown><script type="text/template">
+
+----
+
 ## Requisitos mínimos de
 ## Windows 7
 * Año: 2007
@@ -466,10 +490,14 @@ https://www.tiktok.com/@shtunner/video/6953654804665093381?is_copy_url=0&is_from
 * 16GB de espacio disponible en disco duro para 32bits, o 20GB para 64bits
 * Dispositivo gráfico DirectX9.
 ![Windows 7](images/configSO/win7.png)
-</script></section><section data-markdown><script type="text/template">
+
+----
+
 ## Windows 7
 ![Windows 7](images/configSO/Windows_7.webp)
-</script></section><section data-markdown><script type="text/template">
+
+----
+
 ## Requisitos mínimos de
 ## Windows 10
 * Año: 2015
@@ -479,10 +507,14 @@ https://www.tiktok.com/@shtunner/video/6953654804665093381?is_copy_url=0&is_from
 * Dispositivo gráfico DirectX9.
 ![Windows 10](images/configSO/windows10-logo.png)
 <!---https://www.xataka.com/especiales/maquinas-virtuales-que-son-como-funcionan-y-como-utilizarlas-->
-</script></section><section data-markdown><script type="text/template">
+
+----
+
 ## Windows 10
 ![Windows 10](images/configSO/Windows_10.jpeg)
-</script></section><section data-markdown><script type="text/template">
+
+----
+
 ## Requisitos mínimos de
 ## Windows 11
 * Año: 2021
@@ -493,7 +525,7 @@ https://www.tiktok.com/@shtunner/video/6953654804665093381?is_copy_url=0&is_from
 * Firmware: UEFI compatible con la función de ‘Arranque Seguro’.
 * Pantalla: 9 pulgadas con resolución HD.
 
-</script></section></section><section  data-markdown><script type="text/template">
+---
 ### Actualizaciones en los SO
 <!-- .slide: style="font-size: 0.90em" -->
 Ventajas:
@@ -501,7 +533,7 @@ Ventajas:
 * Menor fragmentación (evitan conflictos, ya que todos los usuarios tendrían la última versión. No son necesarios parches intermedios)
 * Windows a partir de la versión 10 mudo a Saas (software as a service), y no hay versiones (SI compilaciones), que se actualizan continuamente.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Actualizaciones en los SO
 <!-- .slide: style="font-size: 0.90em" -->
 Desventajas:
@@ -509,31 +541,31 @@ Desventajas:
 * Emplean ancho de banda
 * Pueden generarse conflictos con otros SO
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Actualizaciones en los SO
 ![Actualiciones SO](images/configSO/actualizacionesSO.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Máquina Virtual
 Es un software que simula a un computadora y puede ejecutar programas.
 Se puede configurar para que los procesos que ejecutan están limitados por los recursos proporcionados.
 Habitualmente se usa para ejecutar sistemas operativos y "probarlos".
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Máquina Virtual
 ![Maquina Virtual](images/configSO/maquinaVirtual.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![Maquina Virtual](images/configSO/ej_maquina-virtual.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Máquina Virtual: Características
 * La MV no puede acceder al resto de datos de la máquina anfitrion.
 * Para funcionar, una MV mapea los dispositivos virtuales que ofrece a su invitado con los dispositivos reales presentes en la máquina física.
 * Copias de Seguridad y Clonación
 * Crear entornos de prueba
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Máquina Virtual: Ventajas
 * Probar sistemas operativos
 * Ejecutar programas antiguos
@@ -542,14 +574,14 @@ Habitualmente se usa para ejecutar sistemas operativos y "probarlos".
 * Copias de Seguridad y Clonación
 * Crear entornos de prueba
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Máquinas Virtuales: Aplicaciones
 * VMWare
 * Virtual Box
 * Qemu
 * Parallels
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Windows-Máquina Virtual
 **Instale Windows** en una computadora o máquina virtual (recuerde sacar screenshots del proceso).
 
@@ -559,11 +591,11 @@ Descarga SO:
 Descarga Máquina Virtual: 
 [VirtualBox](https://www.virtualbox.org/)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Windows-Máquina Virtual
 <iframe width="560" height="315" src="https://www.youtube.com/embed/upEIXtOcl9g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Qué es Docker?
 Permite crear contenedores ligeros y portables para que las aplicaciones de software puedan ejecutarse en cualquier máquina 
 con Docker instalado (independientemente del sistema operativo que la máquina tenga por debajo), facilitando los despliegues.
@@ -571,11 +603,11 @@ con Docker instalado (independientemente del sistema operativo que la máquina t
 Dentro del contenedor se alojan todas las dependencias que nuestra aplicación necesite para ser ejecutada: código, 
 librerías del sistema, entorno de ejecución o cualquier tipo de configuración. 
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### MV vs Contenedores
 ![MV vs Contenedores](images/configSO/virtualizacion-vs-contenedores.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### MV vs Contenedores... Que elegir?
 <!-- .slide: style="font-size: 0.60em" -->
 |Máquinas Virtuales|Contenedores|
@@ -585,50 +617,50 @@ librerías del sistema, entorno de ejecución o cualquier tipo de configuración
 | Implementar recursos de infraestructura (como redes, servidores y datos) | Implantar gradualmente las prácticas de DevOps o CI
 | Ejecutar un sistema operativo diferente dentro de otro sistema operativo (por ejemplo, ejecutar Unix en Linux) | Trasladar proyectos de TI escalables con el mismo sistema operativo |
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Basic Input/Output System
 La BIOS es el software que localiza y reconoce los dispositivos necesarios para cargar el Sistema Operativo en la memoria RAM.
 
 ![BIOS](images/configSO/BIOS.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Basic Input/Output System
 Es el encargado de gestionar el hardware y permite gestionar el arranque, es decir, seleccionar desde qué dispositivo debería leer el SO.
 
 También Puede controlar la frecuencia de la RAM, de la tarjeta gráfica, las revoluciones de los ventiladores, periféricos, etc.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Basic Input/Output System
 Está integrado en un chip en la placa madre, y el firmware puede ser actualizado y grabado en la memoria flash que posee integrada.
 
-Sólo puede ser modificado por una actualización del fabricante,. Su memoria es de solo lectura.
+Sólo puede ser modificado por una actualización del fabricante. Su memoria es de solo lectura.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Basic Input/Output System
 Una vez que el BIOS comprueba que los componentes de la computadora funcionan correctamente, le pasa el control del hardware al sistema operativo.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Basic Input/Output System
 ![BIOS](images/configSO/Bios2.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Basic Input/Output System
 ![BIOS](images/configSO/bios2_phoenix.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Basic Input/Output System
 ![BIOS](images/configSO/Bios1.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Unified Extensible Firmware Interface
 Es una interfaz entre el sistema operativo y el firmware que reemplaza la antigua interfaz del BIOS.
 ![UEFI](images/configSO/uefi.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Unified Extensible Firmware Interface
 ![UEFI](images/configSO/uefi.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## UEFI: Mejoras
 * La interfaz permite usar el mouse, e incluye sonidos y animaciones.
 * El SO carga más rápido, a la velocidad del SSD (Disco Estado Sólido)
@@ -636,20 +668,20 @@ Es una interfaz entre el sistema operativo y el firmware que reemplaza la antigu
 * Compatibilidad nativa con 64bits
 * Mayor seguridad durante el inicio (evita bootkits, virus que se ejecutan antes de que Windows inicie)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![Historieta](images/configSO/commitStrip-bios.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: BIOS o UEFI
 Entre a la sección del “BOOT Loader” dentro de la BIOS y ordene adecuadamente los dispositivos de arranque del sistema. (F1, F2, Del)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Formateado de Discos
 **Formatear** un disco duro consiste en restablecer a este a su estado original para ser reutilizado o reescrito con una nueva información.
         
 Al realizar esta operación se elimina toda la información contenida en el.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Formateado de Discos (lógico)
 * **Windows:** ExFAT, FAT, FAT16, FAT32, NTFS, EFS.
 * **Linux:** ext2, ext3, ext4, JFS, ReiserFS, Reiser4, XFS.
@@ -658,7 +690,7 @@ Al realizar esta operación se elimina toda la información contenida en el.
 * **IBM:** JFS, GPFS. 
 * **Discos Ópticos:** UDF.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Comparación
 <!-- .slide: style="font-size: 0.60em" -->
 | | NTFS | FAT32 | ExFAT |
@@ -667,13 +699,13 @@ Al realizar esta operación se elimina toda la información contenida en el.
 | Ventajas | Permite copias de seguridad | Amplia compatibilidad con varios SO | Sistema de archivos livianos - Compatible con Windows, Mac, Linux |
 | Desventajas | Incompatibilidad con SO antiguos | No permite archivos de más de 4GB - No permite parciciones de más de 4 TB| Sin funciones de seguridad |
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## IMPORTANTE!!!
 <!-- .slide: data-background="images/herramientas/Busydesk-desarrollo.png" -->
 Recuerda **ANTES** de formatear hacer backup de tus datos, así evitas perder información.
 
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [Qué es Rufus?](https://rufus.ie/)
 <!-- .slide: style="font-size: 0.80em" -->
 Rufus es una utilidad que le ayuda a formatear y crear soportes USB de arranque, como pendrives, tarjetas de memoria, etc.
@@ -684,11 +716,11 @@ Es especialmente útil en casos donde:
 * necesite actualizar el firmware o BIOS de un ordenador desde DOS
 * quiera ejecutar una utilidad de bajo nivel
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [Qué es Rufus?](https://rufus.ie/)
 ![Rufus](images/configSO/rufus_en_2x.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## MBR vs GPT
 #### Master Boot Table vs GUI Partition Table
 | MBR | GTP |
@@ -697,15 +729,15 @@ Es especialmente útil en casos donde:
 | Maneja discos de hasta 2TB | Maneja discos hasta 256TB |
 | Admite hasta 4 particiones primarias | Admite hasta 128 particiones primarias. No existen las particiones lógicas |
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Rufus
 Crear un pen drive autobooteable de Windows 10 empleado Rufus.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Rufus
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8DAoywHszD8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Particionado de Discos
 Una **partición** es la división de espacio que se le asigna a un disco duro.
 
@@ -713,7 +745,7 @@ Un disco duro puede tener varias particiones, que son de cierto modo independien
 
 Se puede formatear una partición sin necesidad de formatear todo el disco.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Tipos de Particiones
 <!-- .slide: style="font-size: 0.80em" -->
 **Partición Primaria:** Se encarga de iniciar la carga del SO
@@ -722,11 +754,11 @@ Se puede formatear una partición sin necesidad de formatear todo el disco.
 
 ![Particiones](images/configSO/partitions.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### ¿Qué formato tienen en sus discos? ¿Su disco esta particionado?
 Equipo > Administrar > Almacenamiento > Administración de Discos
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Pasos de Instalación de un SO
 1. Cofiguración de dispositivo de arranque en la BIOS
 2. Formateo de Discos
@@ -734,19 +766,24 @@ Equipo > Administrar > Almacenamiento > Administración de Discos
 4. Creación de sistema de ficheros
 5. Configuración de la red, dispositivos, pantalla, idioma, usuarios, etc.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Preguntas Frecuentes
 * En el exámen habrá preguntas del tipo: "Qué microprocesador tenia Win95"?
 
 Toda la información relativa a las características puntuales de cada SO: año, procesador, ram, disco duro, video NO son preguntas de examen.
-</script></section></div>
+
+          </textarea>
+        </section>
+      </div>
     </div>
 
     <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
 
     <script src="./plugin/markdown/markdown.js"></script>
     <script src="./plugin/highlight/highlight.js"></script>
@@ -775,6 +812,9 @@ Toda la información relativa a las características puntuales de cada SO: año,
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
         plugins: [
           RevealMarkdown,
           RevealHighlight,
@@ -787,7 +827,7 @@ Toda la información relativa a las características puntuales de cada SO: año,
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -795,6 +835,20 @@ Toda la información relativa a las características puntuales de cada SO: año,
 
     <script>
       Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
     </script>
   </body>
 </html>

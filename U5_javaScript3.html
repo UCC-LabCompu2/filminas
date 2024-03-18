@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,19 +12,21 @@
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
 
     <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
-
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">
+      <div class="slides">
+        <section data-markdown data-separator="^---" data-separator-vertical="^\r?\n----\r?\n$">
+          <textarea data-template>
+            
 
-<script src="../js/pruebas.js">__SCRIPT_END__
+<script src="../js/pruebas.js"></script>
 
 # JavaScript
 Created by <i class="fab fa-telegram"></i> 
 [edme88]("https://t.me/edme88")
 
-</script></section><section  data-markdown><script type="text/template">
+---
 
 <style>
 .grid-container2 {
@@ -54,7 +56,7 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 </div>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ECMAScript
 JavaScript está estandarizado por Ecma International, la asociación europea para estandarizar los sistemas de información 
 y comunicación.
@@ -62,7 +64,7 @@ y comunicación.
 El último estándar es [ECMA-262](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/), 
 y también está aprobado por ISO (Organización Internacional de Normalización).
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Jerarquía de Objetos en Js
 Podemos ver una página web como una colección de objetos. Por ejemplo, para JavaScript un formulario es un objeto, una imagen es un objeto, etc.
 
@@ -70,11 +72,11 @@ Los objetos tienen propiedades, métodos y eventos asociados.
 
 Los objetos se organizan conforme a una jerarquía de forma que heredan métodos o propiedades de sus objetos padre, e incluso el nombre de un objeto se crea a partir de sus objetos padre.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Jerarquía de Objetos en Js
 ![Jerarquia Obejtos](images/html/jerarquiaObjetos.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Jerarquía de Objetos en Js
 <!-- .slide: style="font-size: 0.65em" -->
 Todo documento HTML dispone de los siguientes objetos en la jerarquía de objetos JavaScript:
@@ -88,7 +90,7 @@ Todo documento HTML dispone de los siguientes objetos en la jerarquía de objeto
 
 * **history:** tiene propiedades relacionadas con URLs previamente visitadas.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 #### [Nombres dentro de laJerarquía de Objetos en Js](https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=858:jerarquia-de-objetos-javascript-forms-elements-images-navigator-useragent-geolocation-online-cu01170e&catid=78&Itemid=206)
 <!-- .slide: style="font-size: 0.85em" -->
 Reglas al nombrar los objetos:
@@ -102,7 +104,7 @@ Ej. document.body en lugar de window.document.body
 3. Se organiza de forma automática ciertos objetos (forms, elements, images, links) en arrays. 
 Ej. En caso de varios formularios window.document.forms[0] ó document.forms[0]
 
-</script></section><section  data-markdown><script type="text/template">
+---
 #### Jerarquía de Objetos en Js: Ejemplos
 ````javascript
 windows.alert("Hola Mundo!!!");
@@ -114,13 +116,18 @@ document.getElementsByName("miDiv")[0].style.display = 'none';
 window.document.forms[0].nombreUsuario.value;
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
-</script></section></div>
+
+          </textarea>
+        </section>
+      </div>
     </div>
 
     <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
 
     <script src="./plugin/markdown/markdown.js"></script>
     <script src="./plugin/highlight/highlight.js"></script>
@@ -149,6 +156,9 @@ window.document.forms[0].nombreUsuario.value;
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
         plugins: [
           RevealMarkdown,
           RevealHighlight,
@@ -161,7 +171,7 @@ window.document.forms[0].nombreUsuario.value;
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -169,6 +179,20 @@ window.document.forms[0].nombreUsuario.value;
 
     <script>
       Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
     </script>
   </body>
 </html>

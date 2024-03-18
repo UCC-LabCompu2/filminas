@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,17 +12,19 @@
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
 
     <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
-
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">
+      <div class="slides">
+        <section data-markdown data-separator="^---" data-separator-vertical="^\r?\n----\r?\n$">
+          <textarea data-template>
+            
 
 # JavaScript: 2da Parte
 Created by <i class="fab fa-telegram"></i> 
 [edme88]("https://t.me/edme88")
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <style>
 .grid-container2 {
     display: grid;
@@ -78,7 +80,7 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 </div>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Refactorizar Código: que es?
 * Limpieza de código
 * No arregla errores ni incorpora funcionalidades
@@ -90,7 +92,7 @@ Objetivos:
 * Eliminar código muerto
   *Facilitar el mantenimiento en el futuro
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Ejercicio: Conversión de Unidades
 Refactorice el código de manera tal que:
 * Emplee función flecha en lugar de **function**
@@ -98,7 +100,7 @@ Refactorice el código de manera tal que:
 * Operar todos los valores empleando las variables
 * Al final hacer la asignación de valores a los campos en la UI
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Ejercicio: Conversión de Unidades
 ````javascript
 convertirUnidades = (id,valor) => {
@@ -133,12 +135,12 @@ convertirUnidades = (id,valor) => {
 }
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Podemos modificar CSS mediante Javascript?
 <p class="fragment"> SI </p>
 <p class="fragment"> Ahora veremos un ejemplo... </p>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Ejemplo Mostrar/Ocultar Div
 <!-- .slide: style="font-size: 0.70em" -->
 <div style="text-align: left; display: inline-block; margin: auto;">
@@ -157,7 +159,7 @@ Aca hay valores de Velocidad! O mas radios, o algo xD
 Aca hay valores de Distancia! O mas radios, o algo xD
 </div>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## HTML: Displayed
 ````html
 <div style="text-align: left; display: inline-block; margin: auto;">
@@ -175,7 +177,7 @@ Aca hay valores de Distancia! O mas radios, o algo xD
 </div>
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## JavaScript: Displayed
 ````javascript
 let seMuestra = (nombre) => {
@@ -189,7 +191,7 @@ let seMuestra = (nombre) => {
 }
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Ejercicio: Mostrar/Ocultar div
 Escribir una función JavaScript para mostrar u ocultar el div celeste.
 * Emplear **OnChange** en los radio button
@@ -198,29 +200,29 @@ Escribir una función JavaScript para mostrar u ocultar el div celeste.
 
 ![Mostrar/Ocultar](images/html/mostrarOcultarDiv.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Ejercicio: Mostrar/Ocultar div
 Escribir una función JavaScript para mostrar u ocultar el div celeste.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mP-S_eqCPYc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Operaciones Matemáticas
 Escribir funciones JavaScript para resolver las operaciones matemáticas una vez que el usuario ingresa un valor numérico en ambos inputs.
 * Se debe castear de tipo String a tipo Number
 * Los resultados deben contener el atributo disabled
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Operaciones Matemáticas
 ![Operaciones Matematicas](images/html/operacionesMatematicas.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Operaciones Matemáticas II
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7w3TRLPPIho" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![Meme JS](images/html/meme_js.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [Math Round](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math/round)
 La función Math.round() retorna el valor de un número redondeado al entero más cercano.
 * Si la porción fraccionaría del número es 0.5 o mayor, se redondea al siguiente número entero superior. 
@@ -230,7 +232,7 @@ console.log(Math.round(200.34))
 ````  
 Por consola veriamos "200"
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [Math Random](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
 La función Math.random() devuelve un número de coma flotante pseudo-aleatorio, comprendido en el rango de 0 a 
 menor que 1 (es decir, incluido el 0 pero no el 1), con una distribución aproximadamente uniforme en este rango.
@@ -244,7 +246,7 @@ Por consola veriamos:
 > 0.6179071257408261
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejemplo: Random y Round
 ````javascript
 let numAleatorio = (a,b) => {
@@ -256,7 +258,7 @@ let numAleatorio = (a,b) => {
     <input style="font-size: 48px;text-align: center;" type="text" size="1" onclick="numAleatorio(1,10)" name="textoP">
 </form>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ParseFloat
 La función parseFloat() analiza un argumento (si es necesario, lo convierte en una cadena) y devuelve un número de coma flotante.
 ````javascript
@@ -265,7 +267,7 @@ parseFloat(4.36275hdkjfhd); //4.36275
 parseFloat(jkdfjsdh); //NaN
 ```` 
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ParseInt
 Convierte (parsea) un argumento de tipo cadena y devuelve un entero de la base especificada.
 ````javascript
@@ -274,7 +276,7 @@ parseInt(856.36275hdkjfhd); //856
 parseInt(jkdfjsdh); //NaN
 ```` 
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## toFixed
 El método toFixed() formatea un número usando notación de punto fijo.
 ````javascript
@@ -284,7 +286,7 @@ Number("34.67648768736").toFixed(4); //34.6764
 ```` 
 
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## JavaScript: Formulas
 <form name="formulas">
     distancia=<input size="1" style="font-size: 28px" type="text" id="dist2">
@@ -305,7 +307,7 @@ Number("34.67648768736").toFixed(4); //34.6764
 </form>
 Nota: Math.sin(ang) se calcula con un valor de ang en radianes
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## JavaScript: Formulas
 ````javascript
 let calculoFun = (numDist, numAng, longi, angul) => {
@@ -335,34 +337,34 @@ let convertGrados = (radianes) => {
 }
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Conversor de Unidades II
 Modificar las funciones para que el resultado de la conversión sólo posea 2 decimales.
 * Emplear **Math.Round** ó **miVar.toFix(2)** antes de asignar el resultado
 * Reemplace ',' por '.' para evitar errores
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Conversor de Unidades II
 ![Conversor Unidades](images/html/conversorUnidades.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Conversor de Unidades II
 <iframe width="560" height="315" src="https://www.youtube.com/embed/a73NqZTeP2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Operaciones Matemáticas II
 Modificar el HTML para quitar los inputs de los resultados. Emplear span, p o div, y en JavaScript, emplear innerHTML.
 * Emplear **innerHTML** para asignarle valores a los divs.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Operaciones Matemáticas II
 ![Operaciones Matematicas](images/html/operacionesMatematicas.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Operaciones Matemáticas II
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z2eiHH0qGbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Ejercicio: Pasar valores de PrimeraWeb a SegundaWeb
 <!-- .slide: style="font-size: 0.70em" -->
 ![Primer Web](images/html/primerWeb.png)
@@ -373,11 +375,11 @@ La función debe concatenar la URL de la segunda web con los valores ingresados 
 * Crear una función JavaScript que se ejecute cuando la segunda web sea cargada. 
 Debe tomar el valor de la URL y dividirla cada vez que ‘#’ sea encontrado. Debe emplear estos valores y cargarlos en el input.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Ejercicio: Pasar valores de PrimeraWeb a SegundaWeb
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UANWAIdMQEg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [JS: LocalStorage](https://developer.mozilla.org/es/docs/Web/API/Web_Storage_API)
 <!-- .slide: style="font-size: 0.90em" -->
 La API de almacenamiento web permite almacenar información de tipo clave/valor.
@@ -387,7 +389,7 @@ incluyendo recargas de página y restablecimientos).
 
 Al invocar uno de éstos, se creará una instancia del objeto Storage, a través del cual los datos pueden ser creados, recuperados y eliminados. 
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## JS: LocalStorage
 <!-- .slide: style="font-size: 0.90em" -->
 * **Storage**: Permite crear, recuperar y eliminar datos de un dominio y tipo de almacenamiento (sesión o local) específicos.
@@ -396,7 +398,7 @@ del dominio y a objetos Storage locales. Ofrece un manejador de evento Window.on
 de la memoria cambia (por ejemplo, cuando se almacena un nuevo elemento).
 * **StorageEvent**: El evento se dispara en el objeto Window de un documento cuando un área de la memoria cambia. 
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## JS: Ejemplo LocalStorage
 HTML
 ````javascript
@@ -420,7 +422,7 @@ let guardarNombre = (nombreUsu) => {
 }
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Ejercicio: Pasar valores de PrimeraWeb a SegundaWeb empleando LocalStorage
 <!-- .slide: style="font-size: 0.70em" -->
 ![Primer Web](images/html/primerWeb.png)
@@ -431,11 +433,11 @@ La función debe guardar en el local storage los valores ingresados por el usuar
 * Crear una función JavaScript que se ejecute cuando la segunda web sea cargada. 
 Debe tomar los valores guardados en el localStorage.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Ejercicio: Pasar valores de PrimeraWeb a SegundaWeb empleando LocalStorage
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6wnp6uaEfjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Métodos para Strings
 ````javascript
 var nombreMateria = 'LabCompu2';
@@ -451,7 +453,7 @@ nombreMateria.toUpperCase(); //Conversión a Mayusculas
 nombreMateria.replace('Lab','Laboratorio');
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Métodos para Strings
 ````javascript
 var saludo1 = 'Hola';
@@ -461,7 +463,7 @@ var nombreMat = "Laboratorio de Computacion 2";
 nombreMat.split('a'); //Se crea el siguiente array: ['L','bor','torio de Comput','cion 2'];
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Podemos Comenzar con el Segundo Parcial!
 <!-- .slide: style="font-size: 0.75em" -->
 Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada</p>
@@ -471,25 +473,30 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada</p>
 * No debe haber errores en el javaScript.
 * Las funciones javaScript deben estar comentadas adecuadamente.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Bibliografia xD
 [![W3 School](images/html/logo_w3schoolscom.png)](http://www.w3schools.com/js/default.asp)
 
 [![MDN](images/html/logo_MDN.png)](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Cursos Online
 [![CodeCademy](images/Eventos/codecademy.png)](https://www.codecademy.com/)
 
 [![Acamica](images/Eventos/acamica.jpg)](https://www.acamica.com/)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
-</script></section></div>
+
+          </textarea>
+        </section>
+      </div>
     </div>
 
     <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
 
     <script src="./plugin/markdown/markdown.js"></script>
     <script src="./plugin/highlight/highlight.js"></script>
@@ -518,6 +525,9 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada</p>
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
         plugins: [
           RevealMarkdown,
           RevealHighlight,
@@ -530,7 +540,7 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada</p>
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -538,6 +548,20 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada</p>
 
     <script>
       Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
     </script>
   </body>
 </html>

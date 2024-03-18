@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,17 +12,19 @@
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
 
     <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
-
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">
+      <div class="slides">
+        <section data-markdown data-separator="^---" data-separator-vertical="^\r?\n----\r?\n$">
+          <textarea data-template>
+            
 
 # Lab Compu II (Teórico)
 Created by 
 <i class="fab fa-telegram"></i> [edme88](https://t.me/edme88)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 
 ## ¿Sáben Programar?
 ## ¿Qué lenguajes conocen?
@@ -36,13 +38,13 @@ Created by
 <!--### Para romper el hielo... Juguemos un [Kahoot](https://create.kahoot.it/share/conociendonos-en-lab-de-compu-2/ae3a1b83-b59d-4e2c-bd9b-e6ae71333bce)
 Ingresa a [https://kahoot.it/](https://kahoot.it/) e introduce el PIN del juego-->
 
-</script></section><section  data-markdown><script type="text/template">
+---
 # LABORATORIO DE COMPUTACIÓN II
 
 <!-- TODO: Insertar logo super cheta acá -->
 La Materia
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Profesores
 ### Ing. Agustina Edmé Aliciardi
 agustina.aliciardi@ucc.edu.ar
@@ -50,7 +52,7 @@ agustina.aliciardi@ucc.edu.ar
 ### Ing. Daniel Germena
 1230332@ucc.edu.ar
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## UNIDADES
 
 **Unidad 1:** Instalación y configuración de Sistemas Operativos y Drivers
@@ -65,39 +67,37 @@ agustina.aliciardi@ucc.edu.ar
 
 **Unidad 6:** Aplicaciones móviles
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Calendario
 
-| Semana | Unidad | Tema                        |
-|--------|--------|-----------------------------|
-| 1      | 1      | Instalación de SO           |
-| 2      | 2      | Herramientas de Desarrollo  |
-| 3      | 3      | Interfaz de Usuario         |
-| 4      | 3      | Aplicaciones Web            |
-| 5      | 4      | HTML                        |
-| 6      | 4      | CSS                         |
-| 7      |        | 1er PARCIAL                 |
+| Clase | Unidad | Tema                        |
+|-------|--------|-----------------------------|
+| 1     | 1      | Instalación de SO           |
+| 2 y 3 | 2      | Herramientas de Desarrollo  |
+| 4     | 3      | Interfaz de Usuario         |
+| 5     | 3      | Aplicaciones Web            |
+| 5 y 6 | 4      | HTML                        |
+| 7     | 4      | CSS                         |
+| 8     |        | 1er PARCIAL                 |
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Calendario
 
-| Semana | Unidad | Tema                  |
-|--------|--------|-----------------------|
-| 8      | 5      | Orientación a Eventos |
-| 9      | 5      | JavaScript            |
-| 10     | 5      | JavaScript            |
-| 11     |        | Proyecto Integrador   |
-| 12     |        | Proyecto Integrador   |
-| 13     | 6      | Aplicaciones Móviles  |
-| 14     |        | 2do PARCIAL           |
+| Clase  | Unidad | Tema                  |
+|---------|--------|-----------------------|
+| 9       | 5      | Orientación a Eventos |
+| 9       | 5      | JavaScript            |
+| 10 y 11 |        | Js: Canvas            |
+| 12      | 6      | Aplicaciones Móviles  |
+| 13      |        | 2do PARCIAL           |
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Forma de Evaluación: Cursado
 * Proyecto Web: Primera Etapa (HTML+CSS)
 * Proyecto Web: Segunda Etapa (JavaScript)
 * Nota del promedio de 7 parcialitos teóricos multiple opción
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Forma de Evaluación: FINAL
 FINAL:
 
@@ -107,27 +107,32 @@ FINAL:
 *    Preguntas de la guía
 *    Promoción de la parte Teórica <br> <span style="font-size: 0.5em">Promedio >= 8 y nota mínima 7</span>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Regularidad
 * Asistencia del 70% en Clases Teórico-Prácticas (en el repositorio **ejercicios2024-Apellido** tener realizados los ejercicio de clase)
 * Proyecto primera y segunda etapa aprobados (nota mínima de 4)
 * Promedio de los 7 parcialitos >= 4
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Promoción
 * Asistencia del 70% en Clases Teórico-Prácticas
 * Promedio >= 8 y nota mínima 7 (3 notas: proyecto primera etapa, segunda etapa y promedio de parcialitos)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <!-- .slide: data-background-color="grey"-->
 ## Notas
 ![Notas](images/presentacion/notasFacultad.png)
 
 <small>Tener en cuenta que un 55%=4, 70%=6, 80%=7.5, 90%=9</small>
-</script></section></div>
+
+          </textarea>
+        </section>
+      </div>
     </div>
 
     <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
 
     <script src="./plugin/markdown/markdown.js"></script>
     <script src="./plugin/highlight/highlight.js"></script>
@@ -156,6 +161,9 @@ FINAL:
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
         plugins: [
           RevealMarkdown,
           RevealHighlight,
@@ -168,7 +176,7 @@ FINAL:
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -176,6 +184,20 @@ FINAL:
 
     <script>
       Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
     </script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,17 +12,19 @@
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
 
     <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
-
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">
+      <div class="slides">
+        <section data-markdown data-separator="^---" data-separator-vertical="^\r?\n----\r?\n$">
+          <textarea data-template>
+            
 
 # Diseño de Interface de Usuario
 Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <style>
 .grid-container3 {
     display: grid;
@@ -69,7 +71,7 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 </div>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Libros:
 ![Book](images/book.png)
 “Ingeniería del software” séptima edición de Ian Sommervill
@@ -78,7 +80,7 @@ Created by <i class="fab fa-telegram"></i>
 “Ingeniería del Software: Un enfoque práctico 6ta ed.” de Roger Pressman
 (Capítulo N°11: Diseño de la Interfaz de Usuario)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Qué es?
 El diseño de la interfaz de usuario crea un medio eficaz de comunicación entre los seres humanos y la computadora.
 
@@ -86,13 +88,13 @@ Siguiendo un conjunto de principios de diseño de la interfaz, el diseño identi
 
 ![Question](images/question.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Quién lo hace?
 Un "UX Designer" diseña la interfaz de usuario con la aplicación de un proceso iterativo que sigue principios de diseño predefinidos.
 
 ![Interfaz de usuario](images/interfazUsuario/who.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Por qué es importante?
 Si el software es difícil de usar, fuerza al usuario a cometer errores, o si frustra sus esfuerzos para alcanzar las metas, entonces no le gustará, sin que importe el poder computacional que tenga, el contenido que entregue o las funciones que ofrezca.
 
@@ -100,39 +102,47 @@ La interfaz tiene que estar bien hecha porque moldea la percepción que el usuar
 
 ![importante](images/interfazUsuario/importante.png)
 
-</script></section><section ><section data-markdown><script type="text/template">
+---
 ## ¿Cuáles son los pasos?
 ### Paso 1
 El diseño de la interfaz de usuario comienza con la identificación de los requerimientos del usuario, la tarea y el ambiente.
-</script></section><section data-markdown><script type="text/template">
+
+----
+
 ### Paso 2
 Una vez identificadas las tareas del usuario, se crean y analizan los escenarios para éste y se define un conjunto de objetos y acciones de la interfaz.
-</script></section><section data-markdown><script type="text/template">
+
+----
+
 ### Paso 3
 Esto forma la base para crear una plantilla o prototipo que ilustra el diseño gráfico y la colocación de los iconos, 
 la definición de textos descriptivos, la especificación y títulos de las ventanas, y la especificación de aspectos 
 mayores y menores del menú.
-</script></section><section data-markdown><script type="text/template">
+
+----
+
 ### Paso 4
 Con el empleo de herramientas, se hace el prototipo, se implementa en definitiva el modelo del diseño y se evalúa la 
 calidad del resultado.
-</script></section><section data-markdown><script type="text/template">
+
+----
+
 ![Requerimientos](images/interfazUsuario/requerimientos.png)
 
-</script></section></section><section  data-markdown><script type="text/template">
+---
 ## ¿Cuál es el producto final?
 Se crean los escenarios del usuario y se generan los formatos de la pantalla.
 Se desarrolla un prototipo de la interfaz y se modifica de manera iterativa.
 
 ![Wireframe](images/interfazUsuario/wireframe.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Cómo me aseguro de que lo hice bien?
 Los usuarios “prueban” un prototipo de la interfaz y la retroalimentación de esta prueba se utiliza para la siguiente modificación iterativa del prototipo.
 
 ![Iterativo](images/interfazUsuario/iterativo.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Interfaz de Usuario
 Debe ser diseñada para ajustarse a:
 * Habilidad
@@ -140,7 +150,7 @@ Debe ser diseñada para ajustarse a:
 * Expectativas
 del usuario.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Factores que se deben considerar
 <!-- .slide: style="font-size: 0.90em" -->
 Se deben teneren cuenta capacidades físicas y mentales de las personas que utilizarán el software.
@@ -149,11 +159,11 @@ Se deben teneren cuenta capacidades físicas y mentales de las personas que util
 3. Las personas poseen un amplio rango de capacidades físicas
 4. Las personas poseen diferentes preferencias de interacción
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Principios de Diseño
 Se utilizan para crear interfaces que sean fáciles de usar y que permitan a los usuarios realizar sus tareas de manera eficiente.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Principios de Diseño
 <!-- .slide: style="font-size: 0.85em" -->
 * **Visibilidad:** los usuarios deben poder ver las opciones y controles que necesitan para realizar sus tareas de manera 
@@ -163,7 +173,7 @@ el sistema, lo que permite a los usuarios aprender de una experiencia para aplic
 * **Retroalimentación:** los usuarios deben recibir una respuesta clara y oportuna después de realizar una acción en la 
 interfaz de usuario para comprender que su acción tuvo efecto.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Principios de Diseño
 <!-- .slide: style="font-size: 0.85em" -->
 * **Flexibilidad y eficiencia de uso:** la interfaz debe permitir a los usuarios realizar tareas de manera eficiente, ya 
@@ -172,7 +182,7 @@ sea mediante atajos o cualquier otra forma de personalización.
 primer lugar para que los usuarios puedan encontrarlos fácilmente.
 * **Estética y diseño:** el diseño debe ser atractivo y estéticamente agradable, además de funcional.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Principios de Diseño
 <!-- .slide: style="font-size: 0.85em" -->
 * **Tolerancia a errores:** la interfaz debe ser capaz de prevenir errores o proporcionar una forma clara y fácil de 
@@ -180,7 +190,7 @@ recuperación cuando se produzcan errores.
 * **Ayuda y documentación:** la interfaz de debe proporcionar suficiente información y ayuda para que los usuarios puedan 
 comprender cómo utilizarla y encontrar soluciones a los problemas.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Principio de Recuperabilidad
 Recursos que le permiten al usuario recuperarse de un error:
 1. Confirmación de acción destructiva
@@ -189,14 +199,14 @@ Recursos que le permiten al usuario recuperarse de un error:
     
 ![Error Interfaz](images/interfazUsuario/error.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Interacción del Usuario
 La interacción del usuario significa emitir comandos y datos asociados al sistema informático.
 
 En un inicio era sólo a través de lineas de comando
 ![xkcd](images/interfazUsuario/xkcd.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Estilos de Interacción
 Según Shneiderman existen 5 estilos de interacción:
 1. Manipulación Directa
@@ -205,7 +215,7 @@ Según Shneiderman existen 5 estilos de interacción:
 4. Lenguaje de Comandos
 5. Lenguaje Natural
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Estilos de Interacción
 <!-- .slide: style="font-size: 0.5em" -->
 | Estilo de Interacción | Ventajas | Desventajas                                                               | Aplicación                                         |
@@ -216,7 +226,7 @@ Según Shneiderman existen 5 estilos de interacción:
 | Lenguaje de Comandos | Poderoso y Flexible | Difícil de aprender Gestión pobre de errores Requiere más tecleo   | Sistemas operativos Sistemas de comandos y control |
 | Lenguaje Natural | Accesible a usuarios casuales Fácil de ampliar | Los sistemas de comprensión de LN no son fiables                          | Sistemas de recuperación de información            |
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Modelo de Seeheim
 Se separa la presentación de la información, la gestión del diálogo y la aplicación.
 
@@ -225,7 +235,7 @@ Es posible tener una interfaz separada para diferentes tipos de usuario.
 ![InterfaZ Usuario](images/interfazUsuario/multiInterfazU.png)
 
 
-</script></section><section ><section data-markdown><script type="text/template">
+---
 ## Presentación de Información
 * Presentación directa
 * Presentación Gráfica
@@ -233,12 +243,14 @@ Es posible tener una interfaz separada para diferentes tipos de usuario.
   * 3d
   * Árboles
   * Redes
-</script></section><section data-markdown><script type="text/template">
+
+----
+
 #### Presentación de Información
 Directa y Gráfica
 ![Presentacion Informacion](images/interfazUsuario/info_directa_grafica.webp)
 
-</script></section></section><section  data-markdown><script type="text/template">
+---
 ## Pautas de Shneiderman para la utilización efectiva del COLOR
 <!-- .slide: style="font-size: 0.85em" -->
 * Limitar el número de colores utilizados y ser conservador en la forma de utilizarlos
@@ -247,11 +259,11 @@ Directa y Gráfica
 * Utilizar el código de colores de una forma consciente y uniforme
 * Ser cuidadoso al utilizar pares de colores
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <!-- .slide: data-background="#0000ff" -->
 <h1 style="color: #ff0000;font-size: 3.5em; font-weight: bolder;">ESTO NO</h1>
    
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Diseño de Mensajes del sistema
 <!-- .slide: style="font-size: 0.85em" -->
 Factores a tener en cuenta:
@@ -261,55 +273,60 @@ Factores a tener en cuenta:
 * **Estilo:** Los mensajes deben ser: positivos y activos, fomales, concisos, uniformes y constructivos. Nunca: negativos, pasivos, insultantes.
 * **Cultura:** Adaptado a la cultura del país donde se utilizará el sistema.
 
-</script></section><section  data-markdown><script type="text/template">  
+---  
 #### Mensajes de error: Cuidado con el Estilo!
 ![Mensaje de Error inapropiado](images/interfazUsuario/mensajeErrorMAL.jpeg)
 
-</script></section><section  data-markdown><script type="text/template">  
+---  
 ## Mensajes de error
 * Orientado al Usuario
 * Orientado al Sistema
 
 ![Mensaje Error](images/interfazUsuario/mensajeError.png)
 
-</script></section><section  data-markdown><script type="text/template">   
+---   
 ## Usabilidad
 Medición cualitativa de la facilidad y eficiencia con la que un humano emplea las funciones y características que ofrece el producto (software o hardware).
 
 ![Usabilidad](images/interfazUsuario/usabilidad.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Atributos de Usabilidad
 * **Facilidad de aprendizaje:** cuánto esfuerzo se necesita para que un usuario aprenda a utilizar la interfaz.
 * **Eficiencia:** rapidez con la que los usuarios pueden realizar tareas en una interfaz de usuario.
 * **Memorabilidad:** facilidad con la que los usuarios pueden recordar cómo utilizar una interfaz después de un período de tiempo sin usarla.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Atributos de Usabilidad
 * **Errores:** cantidad de errores que los usuarios cometen al utilizar una interfaz, y cómo la misma ayuda a los usuarios a recuperarse de los errores.
 * **Satisfacción del usuario:** nivel de satisfacción del usuario al utilizar una interfaz.
 * **Accesibilidad:** capacidad de la interfaz para ser utilizada por personas con discapacidades, como problemas de visión o audición.
 * **Utilidad:** capacidad de la interfaz para cumplir con los objetivos y necesidades del usuario.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Atributos de Usabilidad
 * **Integridad:** capacidad de la interfaz para proteger contra errores de entrada de datos y garantizar la integridad mismos.
 * **Consistencia:** capacidad de la interfaz para ser coherente en su diseño y comportamiento en toda la aplicación o el sistema.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Técnicas de Evaluación de la Interfaz
 * Cuestionarios de la opinión de los usuarios sobre la interfaz
 * Observación de los usuarios cuando usan el sistema
 * Videos del uso típico del sistema
 * Incluir código en el software que recopila información de los recursos utilizados y errores comunes
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
-</script></section></div>
+
+          </textarea>
+        </section>
+      </div>
     </div>
 
     <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
 
     <script src="./plugin/markdown/markdown.js"></script>
     <script src="./plugin/highlight/highlight.js"></script>
@@ -338,6 +355,9 @@ Medición cualitativa de la facilidad y eficiencia con la que un humano emplea l
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
         plugins: [
           RevealMarkdown,
           RevealHighlight,
@@ -350,7 +370,7 @@ Medición cualitativa de la facilidad y eficiencia con la que un humano emplea l
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -358,6 +378,20 @@ Medición cualitativa de la facilidad y eficiencia con la que un humano emplea l
 
     <script>
       Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
     </script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,17 +12,19 @@
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
 
     <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
-
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">
+      <div class="slides">
+        <section data-markdown data-separator="^---" data-separator-vertical="^\r?\n----\r?\n$">
+          <textarea data-template>
+            
 
 # Lab Compu II (Práctica)
 Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿PROYECTO?
     
 Relizar un ejercicio de **Física I** ó **Física II** ó **Matemática**
@@ -35,7 +37,7 @@ Relizar un ejercicio de **Física I** ó **Física II** ó **Matemática**
 
 ![HTML5](images/presentacion/HTML5.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## PROYECTO: Requisitos básicos
 La página debe tener:
 * Imágenes
@@ -43,7 +45,7 @@ La página debe tener:
 * Realizar algún cálculo o en base a la selección de usuario hacer algo
 * Lienzo canvas para graficar o mostrar algo
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## PROYECTO: Ideas
 * Ejercicios de rectas numérica, conjunto de números, fracciones, ángulos
 * Mini paint (selección de de pincel, colores)
@@ -53,25 +55,30 @@ La página debe tener:
 * Música: Ejercicios de como tocar guitarra (u otro instrumento)
 * Etc, etc, etc
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejemplos de Proyectos
 [Historico de Proyectos](https://ucc-labcompu2-historico.github.io/)
 
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Aula Virtual
 [http://campusvirtual.ucc.edu.ar![campus](images/presentacion/Lab2_moodle.png)](https://campusvirtual.ucc.edu.ar/course/view.php?id=4429)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Organización en Github
 
 [github.com/UCC-LabCompu2![campus](images/presentacion/github2022.png)](https://github.com/UCC-LabCompu2)
 
 
-</script></section></div>
+
+          </textarea>
+        </section>
+      </div>
     </div>
 
     <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
 
     <script src="./plugin/markdown/markdown.js"></script>
     <script src="./plugin/highlight/highlight.js"></script>
@@ -100,6 +107,9 @@ La página debe tener:
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
         plugins: [
           RevealMarkdown,
           RevealHighlight,
@@ -112,7 +122,7 @@ La página debe tener:
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -120,6 +130,20 @@ La página debe tener:
 
     <script>
       Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
     </script>
   </body>
 </html>

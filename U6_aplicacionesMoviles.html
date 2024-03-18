@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,17 +12,19 @@
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
 
     <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
-
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">
+      <div class="slides">
+        <section data-markdown data-separator="^---" data-separator-vertical="^\r?\n----\r?\n$">
+          <textarea data-template>
+            
 
 # Unidad 6: Aplicaciones Móviles
 Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <style>
 .grid-container2 {
     display: grid;
@@ -62,19 +64,19 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 </div>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Libros:
 ![Book](images/book.png)
 [“Diseñando APPS para móviles” Javier Cuello y José Vittone](http://appdesignbook.com/es/contenidos/tipos-de-apps/)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Aplicaciones Moviles o APP
 Son aplicaciones diseñada para ser ejecutadas en teléfonos inteligentes, tablets y otros dispositivos móviles y que 
 permite al usuario efectuar una tarea, facilitando la gestión o actividad a desarrollar.
 
 ![Aplicaciones Moviles](images/moviles/aplicaciones-moviles.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Aplicaciones Moviles o APP
 Inicialmente estaban enfocadas en **mejorar la productividad personal**:
 * Alarmas
@@ -82,7 +84,7 @@ Inicialmente estaban enfocadas en **mejorar la productividad personal**:
 * Calculadoras
 * Clientes de Correo
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Diferencia entre APP y Web Móvil
 Las APP deben ser descargadas e instaladas antes de usarse.
 
@@ -90,7 +92,7 @@ Las Webs se acceden empleando internet y un navegador.
 
 Las APPs pueden verse sin internet y tienen acceso a ciertas características del hardware del teléfono.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [Ejemplos de Aplicaciones Móviles](https://www.trecebits.com/2021/04/06/las-apps-mas-descargadas-en-el-primer-trimestre-de-2021/)
 <!-- .slide: style="font-size: 0.80em" -->
 * Whatsap
@@ -101,13 +103,13 @@ Las APPs pueden verse sin internet y tienen acceso a ciertas características de
 
 ![Apps Mas Descargadas](images/moviles/appsDescargadas2021.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Categorías de Aplicaciones
 * por Contenido
 * por Costo
 * según forma de Desarrollo
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Categorías de Aplicaciones
 ### Según el contenido:
 * Entretenimiento
@@ -116,7 +118,7 @@ Las APPs pueden verse sin internet y tienen acceso a ciertas características de
 * Educativas e Informativas
 * Creación 
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Categorías de Aplicaciones
 ### Según el costo:
 * Apps Gratuitas 
@@ -129,21 +131,21 @@ Las APPs pueden verse sin internet y tienen acceso a ciertas características de
 <p class="fragment"><small>(uso básico, que se amplia al pagar)</small> </p>
 
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Tipos de Aplicaciones
 Según forma de desarrollo:
 * Aplicaciones Nativas
 * Aplicaciones Web
 * Aplicaciones Hibridas
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Características de App
 * Capacidad de comunicarse desde cualquier lugar
 * Interfaz de usuario para pantalla y teclado pequeño
 * Movilidad del dispositivo
 * Disponibilidad de muchos sensores
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [Sistemas Operativos para Dispositivos móviles](https://gs.statcounter.com/os-market-share/mobile/worldwide)
 * Android
 * iOS
@@ -155,14 +157,14 @@ Según forma de desarrollo:
 * ~~Tizen~~
 * Fucshia <small>(mayo 2021)</small></br>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Apps Android
 * **Lenguaje:** Java o Kotlin + Librerias Android
 * **IDE:** [Android Studio](https://developer.android.com/studio)
 * **SO:** Windows, Linux, Mac, Chrome OS
 * Emuladores de Dispositivos
     
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Apps iOS
 * **Lenguaje:** ObjetiveC - Swift
 * **IDE:** [XCode](https://developer.apple.com/xcode/)
@@ -178,7 +180,7 @@ Según forma de desarrollo:
     https://cordova.apache.org/docs/es/latest/guide/overview/
 -->
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Tipos de Aplicaciones
 * Aplicaciones Nativas
 * Aplicaciones Web o Webapps
@@ -186,12 +188,12 @@ Según forma de desarrollo:
 
 ![Hybrid App](images/moviles/hybrid-app-development.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Aplicaciones Nativas
 Se desarrolla de forma específica para un determinado sistema operativo, utilizando el Software
 Development Kit o SDK de la plataforma.
     
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Aplicaciones Nativas
 <table style="font-size: 0.7em">
     <tr>
@@ -219,11 +221,11 @@ Development Kit o SDK de la plataforma.
 </table>
     </section>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Web APP
 Se ejecutan dentro del propio navegador web del dispositivo a través de una URL. Se desarrollan con HTML, JavaScript y CSS.
     
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Web APP
 <table style="font-size: 0.7em">
     <tr>
@@ -251,23 +253,23 @@ Se ejecutan dentro del propio navegador web del dispositivo a través de una URL
     </tr>
 </table>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Web APP
 Facebook cuenta con una versión WebApp y una versión Nativa
 
 ![Web App Facebook](images/appWeb/webApp_facebook.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Aplicación híbrida
 Es una combinación de las aplicaciones nativas y las webapps. Se desarrollan con lenguajes: HTML, Javascript y CSS por
 lo que permite su uso en diferentes plataformas y el acceso a gran parte de las características del hardware del 
 dispositivo. Es posible distribuirla en app store.
     
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Aplicación híbrida
 Una vez que la aplicación está terminada, se compila o empaqueta, y el resultado final es como si se tratara de una aplicación nativa.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Aplicación híbrida
 <table style="font-size: 0.7em">
     <tr>
@@ -294,22 +296,22 @@ Una vez que la aplicación está terminada, se compila o empaqueta, y el resulta
 
 <!--http://blog.aplicacionesmovil.com/aplicaciones-celular/desarrollo-de-aplicaciones-hibridas-->
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Aplicación híbrida
 Netflix tiene una aplicación híbrida que se ve prácticamente igual en iOS y en Android.
 
 ![App Hibrida Netflix](images/appWeb/appHibrida_netflix.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![Nativa vs. Hibrida](images/appWeb/native-v-hybrid.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![Web y Nativa](images/appWeb/app-web-native.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![Hibrida vs. Nativa](images/moviles/hybrid-native-web.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Frameworks Híbridos
 * CapacitorJS
 * Apache Cordova
@@ -319,12 +321,12 @@ Netflix tiene una aplicación híbrida que se ve prácticamente igual en iOS y e
 * React Native
 * Appcelerator Titanium
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [CapacitorJS](https://capacitorjs.com/)
 Es un framework que permite transformar una WebApp en una App Mobile o Desktop mediante el uso de WebView. 
 Genera un proyecto de Android Studio o CodeX.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Crear APP en CapacitorJS
 1. Crear una nueva aplicación `npm init @capacitor/app`
 2. Inicializar capacitor `npx cap init`
@@ -333,13 +335,13 @@ Genera un proyecto de Android Studio o CodeX.
 5. Correr android `npx cap run android`
 6. En Android Studio crear un emulador
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [Apache Cordova](https://cordova.apache.org/)
 Es un framework para desarrollar aplicaciones "híbridas" dentro de un smartphone.
 Cuenta con muchas Apis de diversos dispositivos móviles. Permite desarrollar con HTML, JavaScript y CSS, y luego las
 compila directamente con el SDK.
     
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Apache Cordova
 Permite encapsular CSS, HTML, y código de Javascript dependiendo de la plataforma del dispositivo.
     
@@ -347,21 +349,21 @@ Extiende las características de HTML y Javascript para trabajar con el disposit
     
 Las aplicaciones resultantes son híbridas ya que están empaquetadas como aplicaciones para su distribución y tienen acceso a las APIs nativas del dispositivo.
     
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejecución de Cordova
 1. Instalar cordova `npm install -g cordova`
 2. Crear nuevo proyecto `cordova create MyApp`
 3. Agregar tipo de plataforma `cd MyApp cordova platform add android` 
 4. Conectar un celular con Android (opciones de desarrollador-Depuración de USB) `cordova run android` 
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejecución de Cordova 2
 1. Abrir el proyecto, y reemplazar el contenido de la carpeta 'www' por un proyecto web
 2. Abrir el Android Studio
 3. Crear un dispositivo para emular desde 'Tools > Android > AVD Manager'
 4. Correr la aplicación en el emulador <pre><code>cordova emulate android</code></pre> 
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Por qué Android? 
 * Para generar la APP es necesario contar con el Software Development Kit o SDK instalado.
 * Android Studio es libre y funciona sobre cualquier SO.
@@ -369,13 +371,18 @@ Las aplicaciones resultantes son híbridas ya que están empaquetadas como aplic
 
 <!--https://desarrolloweb.com/manuales/responsive-web-design.html-->
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
-</script></section></div>
+
+          </textarea>
+        </section>
+      </div>
     </div>
 
     <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
 
     <script src="./plugin/markdown/markdown.js"></script>
     <script src="./plugin/highlight/highlight.js"></script>
@@ -404,6 +411,9 @@ Las aplicaciones resultantes son híbridas ya que están empaquetadas como aplic
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
         plugins: [
           RevealMarkdown,
           RevealHighlight,
@@ -416,7 +426,7 @@ Las aplicaciones resultantes son híbridas ya que están empaquetadas como aplic
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -424,6 +434,20 @@ Las aplicaciones resultantes son híbridas ya que están empaquetadas como aplic
 
     <script>
       Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
     </script>
   </body>
 </html>

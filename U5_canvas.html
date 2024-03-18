@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,17 +12,19 @@
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
 
     <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
-
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">
+      <div class="slides">
+        <section data-markdown data-separator="^---" data-separator-vertical="^\r?\n----\r?\n$">
+          <textarea data-template>
+            
 
 # Canvas
 Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <style>
 .grid-container2 {
     display: grid;
@@ -71,13 +73,13 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 </div>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Gráficos en HTML5
 Existen 2 elementos dentro de HTML5 que permiten la generación de gráficos:
 * **Canvas:** Dibuja objetos como un mapa de bits en un lienzo.
 * **SVG (Scalable Vector Graphics):** Dibuja vectores sobre un lienzo.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Canvas vs. SVG
 <!-- .slide: style="font-size: 0.70em" -->
 | Canvas | SVG |
@@ -88,7 +90,7 @@ Existen 2 elementos dentro de HTML5 que permiten la generación de gráficos:
 | La interacción de usuario/modelo de eventos es pormenorizada (x,y) | La interacción de usuario/modelo de eventos es resumida (rect, ruta) |
 | El rendimiento es mejor con una superficie menor, un número más grande de objetos (>10 k) o ambos | El rendimiento es mejor con un número menor de objetos (<10 k), una superficie más grande o ambos |
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [Canvas](http://www.w3schools.com/tags/ref_canvas.asp)
 Es un elemento incorporado en HTML5 que permite la generación de gráficos estáticos, dinámicos y animaciones por medio del scripting.
 
@@ -96,7 +98,7 @@ El potencial de canvas reside en su habilidad para actualizar su contenido en ti
 
 Permite renderizaciones en contextos 2d y 3d. (Ej. WebGL emplea 3D)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Canvas: Coordenadas
 ![Coordenadas Canvas](images/Eventos/coordenadas-canvas.gif)
 
@@ -105,7 +107,7 @@ El tamaño por defecto es: ancho 300px, alto 150px
 <!-- .slide: style="font-size: 0.70em" -->
 (El por que se debe definir width y heigth en el elemento canvas: https://devcode.la/tutoriales/elemento-canvas-responsive/ )
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Canvas: Contexto
 El canvas esta inicialmente en blanco. Para mostrar alguna cosa, un script primero necesita acceder al contexto a renderizar y dibujar sobre este.
 
@@ -118,7 +120,7 @@ La primera linea regresa el nodo DOM para el elemento **canvas**.
 
 El método getContext () devuelve un objeto que proporciona métodos y propiedades para dibujar en el lienzo.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Canvas: Métodos
 <!-- .slide: style="font-size: 0.70em" -->
 **JS** tiene varios métodos (funciones asociadas a objetos) para trabajar con Canvas.
@@ -133,7 +135,7 @@ Algunos de los más usados son:
 * **rect(x, y, w, h)** <br>
   Crea un rectángulo.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Canvas: Propiedades
 <!-- .slide: style="font-size: 0.80em" -->
 Una **propiedad** es una variable adjunta a un objeto, como el color, color de borde, etc.
@@ -148,13 +150,13 @@ Una **propiedad** es una variable adjunta a un objeto, como el color, color de b
 * **lineWidth = number**
   El grosor de las lineasThe width of the drawing stroke.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Canvas: Ejemplo
 <canvas id="canvasEJ1" width="600" height="300" style="background-color: #8dcffc" onclick="dibujo()">
     Su navegador no soporta HTML5
 </canvas>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [Canvas](http://www.w3schools.com/tags/ref_canvas.asp)
 ````javascript
 function dibujo() {
@@ -172,7 +174,7 @@ function dibujo() {
    ctx.fill();
 }
 ````
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Canvas: arc(x,y,r,ap,af,cR)
 * Define un segmento circular
 * **x** e **y** son las coordenadas del centro
@@ -182,7 +184,7 @@ function dibujo() {
 
 ![Arc](images/Eventos/arc.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Canvas: Arco
 ````javascript
 function dibujoArco() {
@@ -196,24 +198,24 @@ function dibujoArco() {
 }
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Canvas: Arco
 <canvas id="canvas3" width="600" height="300" style="background-color: #8dcffc" onclick="dibujoParabola()">
     Su navegador no soporta HTML5
 </canvas>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Dibujar cuadrado y circulo
 * Crear una función javascript que dibuje un círculo y un cuadrado en un canvas.
 * Llamar la función al cargar la página.
 * El círculo debe estar en la mitad del canvas.
 * El cuadrado debe estar en la esquina inferior izquierda, separado un cierto margen.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Dibujar cuadrado y circulo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/g_I3oExuQ-M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Canvas: Más Métodos
 <!-- .slide: style="font-size: 0.80em" -->
 * **moveTo(x, y)** <br>
@@ -227,7 +229,7 @@ function dibujoArco() {
 * **arcTo(x1, y1, x2, y2, radius)** <br>
   Crea un arco entre dos puntos.
  
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Canvas: Más Propiedades
 <!-- .slide: style="font-size: 0.80em" -->
 * **shadowColor = color**
@@ -240,7 +242,7 @@ function dibujoArco() {
     El tamaño del efecto de desenfoque. 
 
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Borrar Canvas
 ````javascript
 //Para borrar TODO el contenido
@@ -249,33 +251,33 @@ canvas.width=canvas.width;
 ctx.clearRect(x, y, width, height);
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Mini-Paint
 * Utilizar el evento onmousemove para disparar la función de dibujo
 * En la función, obtener la posición x e y del ratón y dibujar un punto en el canvas
 * Agregar una variable "bandera" que indique si el botón del ratón se presionó (onmousedown, onmouseup)
 * Cree un boton para limpiar (borrar) el canvas
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Mini-Paint
 <iframe width="560" height="315" src="https://www.youtube.com/embed/q4jeaoqnldg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Dibujar cuadriculado
 * Crear una función javascript que dibuje un cuadriculado en un canvas 
 * Llamar la función desde un botón en la página
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Canvas: Cuadriculado
 <canvas id="canvas2" width="600" height="300" style="background-color: #8dcffc" onclick="dibujo2()">
    Su navegador no soporta HTML5
 </canvas>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Canvas: Cuadriculado
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2ei-dCOQrq4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Canvas: Cuadriculado
 ````javascript
 function dibujo2() {
@@ -312,13 +314,13 @@ function dibujo2() {
 }
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Canvas: arcTo()
 <canvas id="canvas4" width="600" height="300" style="background-color: #8dcffc" onclick="dibujoArcT()">
     Su navegador no soporta HTML5
 </canvas>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Canvas: arcTo()
 ````javascript
 function dibujoArcT() {
@@ -333,22 +335,22 @@ function dibujoArcT() {
 }
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Dibujar imagen
 * Crear 2 inputs para que el usuario ingrese X e Y
 * Crear un boton que llame una función y le pase los parametros X e Y
 * Crear una función JS que dibuje una imagen (drawImage) en la posición especificada
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Dibujar imagen
 <iframe width="560" height="315" src="https://www.youtube.com/embed/h8CsSjv3U48" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Dibujar imagen Mejorado
 * En el HTML crea un **Dialog**, que indique que los valores ingresados por el usuario son incorrectos
 * Si el usuario ingresa en los inputs coordendas menores a 0, o mayores al lienzo (y parte de la imagen queda fuera), debe mostrar el mensaje de error
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Dibujar Imagen Mejorado
 ````javascript
 <dialog id="myDialog">
@@ -393,7 +395,7 @@ let dibujarImagen = (posX, posY) => {
 }
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Escribir texto en canvas Canvas
 ````javascript
 var canvas = document.getElementById("myCanvas");
@@ -403,12 +405,12 @@ ctx.fillStyle = "blue";
 ctx.fillText( "Hola Mundo!!!", canvas.width/2, canvas.height/2);
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Escribir Texto
 * Emplea de base el ejercicio canvas_cuadriculado
 * Modifica el código para escribir un número en el eje de las X y en el eje de las Y
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Escribir Texto
 ````javascript
 let dibujarCuadriculado = () => {
@@ -470,7 +472,7 @@ let dibujarCuadriculado = () => {
 ````
 
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Podemos Continuar con el Segundo Parcial!
 <!-- .slide: style="font-size: 0.70em" -->
 Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada
@@ -481,13 +483,18 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada
 * El código debe estar pusheado en el repositorio.
 * **TODAS** las funciones javaScript deben estar comentadas adecuadamente.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
-</script></section></div>
+
+          </textarea>
+        </section>
+      </div>
     </div>
 
     <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
 
     <script src="./plugin/markdown/markdown.js"></script>
     <script src="./plugin/highlight/highlight.js"></script>
@@ -516,6 +523,9 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
         plugins: [
           RevealMarkdown,
           RevealHighlight,
@@ -528,7 +538,7 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -536,6 +546,20 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada
 
     <script>
       Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
     </script>
   </body>
 </html>

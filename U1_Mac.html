@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,17 +12,19 @@
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
 
     <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
-
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">
+      <div class="slides">
+        <section data-markdown data-separator="^---" data-separator-vertical="^\r?\n----\r?\n$">
+          <textarea data-template>
+            
 
 # Mac
 Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <!-- .slide: style="font-size: 0.60em" -->
 <style>
 .grid-item {
@@ -40,17 +42,33 @@ Created by <i class="fab fa-telegram"></i>
 * Desventajas
 </div>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Mac
 Sistema operativo diseñado por Apple que está instalado en todos los equipos creados por la compañía Apple Inc.
 
 Esto implica que el hardware y el software son totalmente compatibles (a diferencia de windows, que puede ser usado en equipos de diferentes fabricantes (Dell, Lenovo, Bangho, Acer, Asus, etc)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Breve Historia
 ![Historia Mac](images/configSO/mac_history.png))
 
-</script></section><section  data-markdown><script type="text/template">
+---
+#### 1984: 1 Macintosh
+![Primer Macintosh](images/mac/1984_macintosh.jpg)
+
+---
+#### 1989: Mac Portable
+![Mac Portable](images/mac/1989_mac_portable.jpg)
+
+---
+#### 1991: PowerBook
+![Power Book](images/mac/1991_powerBook.jpg)
+
+---
+#### 2005: Mac Mini
+![Mac Mini](images/mac/2005_mac_mini.jpg)
+
+---
 ### Ventajas
 * Alto rendimiento
 * Diseño cuidado
@@ -58,20 +76,25 @@ Esto implica que el hardware y el software son totalmente compatibles (a diferen
 * Alta productividad
 * Pocos virus
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Desventajas
 * Precio elevado
 * Centro de atención y soporte no tan accesible
 * Equipos no ampliables
 * No "sirven" para jugar
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
-</script></section></div>
+
+          </textarea>
+        </section>
+      </div>
     </div>
 
     <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
 
     <script src="./plugin/markdown/markdown.js"></script>
     <script src="./plugin/highlight/highlight.js"></script>
@@ -100,6 +123,9 @@ Esto implica que el hardware y el software son totalmente compatibles (a diferen
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
         plugins: [
           RevealMarkdown,
           RevealHighlight,
@@ -112,7 +138,7 @@ Esto implica que el hardware y el software son totalmente compatibles (a diferen
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -120,6 +146,20 @@ Esto implica que el hardware y el software son totalmente compatibles (a diferen
 
     <script>
       Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
     </script>
   </body>
 </html>

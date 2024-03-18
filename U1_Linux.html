@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,17 +12,19 @@
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
 
     <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
-
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">
+      <div class="slides">
+        <section data-markdown data-separator="^---" data-separator-vertical="^\r?\n----\r?\n$">
+          <textarea data-template>
+            
 
 # Linux
 Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <!-- .slide: style="font-size: 0.60em" -->
 <style>
 .grid-item {
@@ -44,13 +46,13 @@ Created by <i class="fab fa-telegram"></i>
 [Ejercicio: SO Linux](U1_Linux.html#/18)
 </div>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Qué es Linux?
 **Linux** es el nombre que recibe el núcleo o kernel de este SO. 
 
 Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, etc.)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Por qué Linux?
 * Es código abierto
 * Configurable
@@ -59,17 +61,17 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 * Mejor Servidor
 * Modo Consola
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Por qué Linux?
 * Dedicado a Redes
 * Multi Plataforma
 * Sigue Estandares
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Que es una Distribución de Linux?
 ![Distros](images/configSO/distros.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### ¿Qué Distro Elegir?
 #### Para uso normal
 * [Kubuntu](https://kubuntu.org/getkubuntu/)
@@ -78,7 +80,7 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 
 ![Distros Normales](images/configSO/userNormal.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### ¿Qué Distro Elegir?
 #### Para Trabajar
 * [RetHat](https://developers.redhat.com/products/developertoolset/download)/[Fedora](https://getfedora.org/es/)/[Suse](https://www.suse.com/es-es/products/)
@@ -86,7 +88,7 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 
 ![Distros Trabajo](images/configSO/workUser.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### ¿Qué Distro Elegir?
 #### Para PowerUsers!
 * [Gentoo](https://www.gentoo.org/downloads/)
@@ -95,7 +97,7 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 
 ![Distros Powa](images/configSO/powerUser.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### ¿Qué Distro Elegir?
 #### Para el Router de casa!
 * [OpenWRT](https://openwrt.org/downloads)
@@ -103,24 +105,24 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 
 ![Router](images/configSO/router.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Linux Embebido: [RPi](https://www.raspberrypi.com/software/) ó [TwisterOS](https://twisteros.com/download.html)
 ![RPI](images/configSO/rpi.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Linux Embebido
 ## [OpenWRT](https://openwrt.org/downloads)
 
 ![TpLink](images/configSO/tplink.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![Install Soft](images/configSO/whenIinstallAsoftware.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Breve Cronología de Distribuciones
 [Cronologia de Versiones + Completa](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Requisitos mínimos de
 ## Debian 6
 * Año: 2012
@@ -129,11 +131,11 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 * 2 GB (sin escritorio) - 10 GB (con escritorio) de espacio disponible en disco duro
 * Tarjeta gráfica que soporte resolución 800x600
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Debian 6
 ![Debian 6](images/configSO/debian6.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Requisitos mínimos de
 ## Ubuntu 11.10
 * Año: 2011
@@ -142,11 +144,11 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 * 15 GB de espacio disponible en disco duro
 * Tarjeta gráfica que soporte resolución 800x600
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ubuntu 11.10
 ![Ubuntu 11](images/configSO/ubuntu11.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Requisitos mínimos de
 ## Fedora 33
 * Año: 2020
@@ -155,11 +157,11 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 * 20-30 GB de espacio disponible en disco duro
 * Tarjeta gráfica compatible con VGA
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Fedora 33
 ![Fedora 33](images/configSO/fedora33.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Entornos de Escritorio
 * **Gnome**: Entorno de Modelo de Objeto de Red GNU
 * **KDE**: Entorno de Escritorio del K
@@ -171,23 +173,23 @@ Esta basado en UNIX, como otros sistemas operativos (MacOS, FreeBSD, Solaris, et
 * **Budgie**
 * **Pantheon**
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## GNOME
 ![Gnome](images/configSO/gnome-3.4-600x375.png.webp)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## KDE
 ![KDE](images/configSO/KDE_4-600x337.png.webp)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## XFCE
 ![XFCE](images/configSO/xfce_debian_plank-600x375.jpg.webp)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## LXDE
 ![LXDE](images/configSO/LXDE_desktop_full-600x450.png.webp)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [Entornos de Escritorio](https://computerhoy.com/noticias/software/entornos-escritorio-linux-cual-es-mejor-64586)
 #### Parecido a Windows
 Tienen un panel en el que se van acumulando los programas abiertos.
@@ -196,7 +198,7 @@ Tienen un panel en el que se van acumulando los programas abiertos.
 * Cinnamon
 * LXDE
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Entornos de Escritorio
 #### Parecido a macOS
 Posee un **dock** para acceder a las apps y funciones principales.
@@ -205,7 +207,7 @@ Posee un **dock** para acceder a las apps y funciones principales.
 * Budgie
 * Gnome
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Entornos de Escritorio
 #### Menor consumo de recursos
 * LXDE
@@ -213,7 +215,7 @@ Posee un **dock** para acceder a las apps y funciones principales.
 * Mate
 * Pantheon
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: SO Linux
 **Instale** alguna distribución de Linux, como Ubuntu o Mint, en una computadora o máquina virtual.
 
@@ -224,11 +226,11 @@ Descarga SO:
 Descarga Máquina Virtual: 
 [VirtualBox](https://www.virtualbox.org/)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: SO Linux
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xHPRv0-OXuM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Comandos útiles de Linux
 | Comandos        | Explicación                   |
 |-----------------|-------------------------------|
@@ -239,13 +241,18 @@ Descarga Máquina Virtual:
 | mkdir           | Crear carpetas                |
 | grep            | buscar palabra en archivo     |
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
-</script></section></div>
+
+          </textarea>
+        </section>
+      </div>
     </div>
 
     <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
 
     <script src="./plugin/markdown/markdown.js"></script>
     <script src="./plugin/highlight/highlight.js"></script>
@@ -274,6 +281,9 @@ Descarga Máquina Virtual:
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
         plugins: [
           RevealMarkdown,
           RevealHighlight,
@@ -286,7 +296,7 @@ Descarga Máquina Virtual:
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -294,6 +304,20 @@ Descarga Máquina Virtual:
 
     <script>
       Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
     </script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,17 +12,19 @@
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
 
     <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
-
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">
+      <div class="slides">
+        <section data-markdown data-separator="^---" data-separator-vertical="^\r?\n----\r?\n$">
+          <textarea data-template>
+            
 
 # Animación en Canvas
 Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <style>
 .grid-container2 {
     display: grid;
@@ -63,7 +65,7 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 </div>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Animación
 Con Js se puede controlar elementos **canvas** para generar animaciones.
 
@@ -72,7 +74,7 @@ Para ello deberemos emplear algunas de los siguientes métodos:
 * setTimeout()
 * requestAnimationFrame()
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Pasos básicos de animación
 <!-- .slide: style="font-size: 0.65em" -->
 Estos son los pasos que necesitas para dibujar un cuadro:
@@ -89,7 +91,7 @@ El paso en el que realizas el renderizado del cuadro actual.
 **4. Restaurar el estado del canvas** <br>
 Si has guardado el estado, restáuralo antes de dibujar un nuevo cuadro.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## setInterval(function, delay)
 Ejecuta una función o un fragmento de código de forma repetitiva cada vez que termina el periodo de tiempo determinado. 
 
@@ -98,23 +100,23 @@ var procesoID = window.setInterval(función, intervaloDeTiempo[, parámetro1, pa
 var procesoID = window.setInterval(código, intervaloDeTiempo);
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Canvas y setInterval()
 Utilizando la función anterior que dibujaba imágenes y la función setInterval() de javascript, realice una animación 
 que mueva la imagen desde el borde izquierdo al derecho del canvas.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Canvas y setInterval()
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lK2JkR9ykSc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [setTimeOut(function, delay)](https://www.w3schools.com/jsref/met_win_settimeout.asp) 
 * Llama a una función o evalúa una expresión después de un número específico de milisegundos 
 * La función solo se ejecuta una vez.
 * Si se necesita repetir la ejecución, se usa el método **setInterval()**
 * El método **clearTimeout()** evita que la función continue ejecutandose
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [setTimeOut(function, delay)](https://www.w3schools.com/jsref/met_win_settimeout.asp) 
 ````javascript
 setTimeout(function(){ alert("Hello"); }, 3000);
@@ -132,7 +134,7 @@ function esperar() {
 }
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Canvas y setTimeOut()
 * Emplee de base **animarAuto** y haga que posterior a 6 seg el movimiento se detenga
 * Cree 2 funciones:
@@ -140,7 +142,7 @@ function esperar() {
   * detenerAuto(): Limpie el intervalo
 * La función de comenzarAnimacion debe llamarse en el onload del body
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Canvas y setTimeOut()
 ````javascript
 HTML
@@ -181,7 +183,7 @@ let comenzarAnimacion = () => {
 }
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [requestAnimationFrame(callback)](https://developer.mozilla.org/es/docs/Web/API/Window/requestAnimationFrame)
 * Comunica al navegador que  deseas iniciar una animación y requieres que el navegador llame a las funciones especificas 
 para actualizar la misma antes de la siguiente escena.
@@ -192,13 +194,13 @@ window.msRequestAnimationFrame(callback);                // IE 10 PP2+
 window.webkitRequestAnimationFrame(callback[, element]); // Chrome/Webkit
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Canvas y requestAnimationFrame()
 * Emplee de base **animarAuto**
 * Cree animarNuevo para llamar a animarAuto
 * animarAuto se debe llamar a si mismo
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Canvas y requestAnimationFrame()
 ````javascript
 HTML
@@ -231,7 +233,7 @@ let animarNuevo = () => {
 }
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [cancelAnimationFrame(callback)](https://developer.mozilla.org/es/docs/Web/API/Window/cancelAnimationFrame)
 * Cancela la petición de animación previamente programada a través de window.requestAnimationFrame().
 
@@ -239,13 +241,13 @@ let animarNuevo = () => {
 window.cancelAnimationFrame(requestID);
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Canvas y cancelAnimationFrame()
 * Emplee de base **animarAuto3**
 * Cree cancelarAnimacion para cancelar a animarAuto
 * En animarAuto emplee un setTimeOut
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Canvas y cancelAnimationFrame()
 ````javascript
 HTML
@@ -284,7 +286,7 @@ let cancelarAnimacion = () => {
 };
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Podemos Continuar con el Segundo Parcial!
 <!-- .slide: style="font-size: 0.70em" -->
 Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada
@@ -294,13 +296,18 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada
 * Ten en cuenta que el usuario quizás ingrese valores que no puedas graficar (que se salgan del ancho u alto del canvas). 
 En ese caso, puedes escalar los valores, o indicar con un alert ó **dialog** que los valores están fuera del área de dibujo.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
-</script></section></div>
+
+          </textarea>
+        </section>
+      </div>
     </div>
 
     <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
 
     <script src="./plugin/markdown/markdown.js"></script>
     <script src="./plugin/highlight/highlight.js"></script>
@@ -329,6 +336,9 @@ En ese caso, puedes escalar los valores, o indicar con un alert ó **dialog** qu
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
         plugins: [
           RevealMarkdown,
           RevealHighlight,
@@ -341,7 +351,7 @@ En ese caso, puedes escalar los valores, o indicar con un alert ó **dialog** qu
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -349,6 +359,20 @@ En ese caso, puedes escalar los valores, o indicar con un alert ó **dialog** qu
 
     <script>
       Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
     </script>
   </body>
 </html>

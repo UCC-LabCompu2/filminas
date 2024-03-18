@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,18 +12,20 @@
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
 
     <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
-
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">
+      <div class="slides">
+        <section data-markdown data-separator="^---" data-separator-vertical="^\r?\n----\r?\n$">
+          <textarea data-template>
+            
 
 # Tutorial de HTML II
 ### en HTML (que recursivo :P)
 Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <style>
 .grid-container2 {
     display: grid;
@@ -75,13 +77,13 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 </div>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Formulario
 Es un documento que nos permite rellenar información de forma ordenada y estructurada. 
 
 Algunos ejemplos podrían ser escribir nuestro nombre y apellidos, dirección, cuenta de email, etc.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Formularios
 Los elementos y atributos para formularios en HTML5 proveen un mayor grado de marcado semántico que en HTML4 y eliminan 
 gran parte del tedioso trabajo de programar y diseñar que se necesitaba en HTML4. 
@@ -90,7 +92,7 @@ Las funcionalidades de los formularios en HTML5 brindan una experiencia mejor pa
 formularios tengan un comportamiento más consistente entre diferentes sitios web y al darle una devolución inmediata 
 acerca de la información ingresada.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Elementos para Formularios
 ````html
 <form id="form1">
@@ -110,7 +112,7 @@ Atributos que puede tener:
 
 [VER HTML CheatSheet](https://raw.githubusercontent.com/UCC-LabCompu2/filminas/master/slides/cheatsheet/html5-cheatsheet.pdf)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [Input](https://www.w3schools.com/tags/att_input_type.asp)
 Campo de texto en una línea
 ````html
@@ -128,23 +130,23 @@ Campo de texto en una línea
 <input type="url" name="pagina_web"/>
 <input type="color" name="color"/>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Input
 ![Inputs](images/html/inputs1.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Input
 ![Inputs](images/html/inputs2.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Input
 ![Inputs](images/html/inputs3.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Input
 ![Inputs](images/html/inputs4.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Input Radio
 Permiten elegir una sola opción entre un grupo 
 
@@ -156,7 +158,7 @@ Permiten elegir una sola opción entre un grupo
 <input type="radio" name="gender" value="male" checked> Male<br>
 <input type="radio" name="gender" value="female"> Female
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Input Range
 Permite que el usuario especifique un valor numérico comprendido entre un valor mínimo y máximo
 ````html
@@ -164,7 +166,7 @@ Permite que el usuario especifique un valor numérico comprendido entre un valor
 ````
 <input type="range" id="a" name="a" value="50" min="0" max="120">
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [Nuevos Campos de HTML 5.1](https://lenguajehtml.com/p/html/formularios/controles-campos-fecha-hora)
 
 * Fecha <input type="date">
@@ -181,7 +183,7 @@ Permite que el usuario especifique un valor numérico comprendido entre un valor
 <input type="week">
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Input Checkbbox
 Casilla de verificación asociada a una opción que puede ser marcado o desmarcado por el usuario.
 ````html
@@ -191,7 +193,7 @@ Casilla de verificación asociada a una opción que puede ser marcado o desmarca
 <input type="checkbox" name="materia1" value="Matematica"> Matematica<br>
 <input type="checkbox" name="materia2" value="Lengua"> Lengua
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Input Number
 Campo para la entrada de un número.
 ````html
@@ -199,7 +201,7 @@ Campo para la entrada de un número.
 ````
 <input type="number" name="points" min="0" max="100" step="10" value="30">
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Input: Atributos
 <!-- .slide: style="font-size: 0.90em" -->
 Algunos atributos son:
@@ -215,7 +217,7 @@ Ejemplo: Si una tarjeta de crédito tiene entre 13 y 16 dígitos, colocar **maxl
 <input type="text" size="4"/>
 <input type="text" maxlength="4"/>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Select & Option
 Permite al usuario elegir de entre un número de opciones de una lista.
 ````html
@@ -233,7 +235,7 @@ Permite al usuario elegir de entre un número de opciones de una lista.
     <option value="labCompu2">Laboratorio de Computación II</option>
 </select>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Button
 Crear un botón en el que se puede hacer click sin ningún valor por defecto.
 ````html
@@ -246,7 +248,7 @@ Atributos:
 * autocomplete
 * form, etc, ect
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Textarea
 Representa un campo para la entrada de texto multilínea.
 ````html
@@ -254,7 +256,7 @@ Representa un campo para la entrada de texto multilínea.
 ````
 <textarea name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Placeholder
 Atributo de elementos input y textarea para representar una indicación que ayude al usuario a completar estos campos.
 ````html
@@ -262,7 +264,7 @@ Atributo de elementos input y textarea para representar una indicación que ayud
 ````
 <input name="nombre" placeholder="Ingrese nombre">
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Formulario
 <!-- .slide: style="font-size: 0.50em" -->
 Empleando el template “ej_formulario”, agregue las siguientes etiquetas:
@@ -276,23 +278,23 @@ Empleando el template “ej_formulario”, agregue las siguientes etiquetas:
 
 ![Formulario](images/html/formulario_ej.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Formulario
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zSbEPLMhBh0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Accesibilidad
 La accesibilidad web tiene como objetivo lograr que las páginas web sean utilizables por el máximo número de personas, 
 independientemente de sus conocimientos o capacidades personales.
 
 [Accesibilidad Web](http://accesibilidadweb.dlsi.ua.es/?menu=guiabreve-1)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Accesibilidad
 ![Accesibilidad](images/html/accesibilidad.webp)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Fieldset, Legend y Label
 <!-- .slide: style="font-size: 0.85em" -->
 * **Fieldset**: representa un conjunto de elementos en un formulario (form), opcionalmente agrupados bajo un mismo nombre. 
@@ -301,7 +303,7 @@ Lo navegadores mostrarán normalmente un marco alrededor de los controles agrupa
 * **Legend**: Crea un título para un grupo de campos (**fieldset**) de un formulario.
 * **label**: representa una etiqueta que puede ser asociada a un campo de formulario.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Fieldset, Legend y Label
 <!-- .slide: style="font-size: 0.85em" -->
 ````html
@@ -324,7 +326,7 @@ Lo navegadores mostrarán normalmente un marco alrededor de los controles agrupa
     </fieldset>
 </div>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [Caption](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/caption)
 Es el encargado de darle un título descriptivo a las tablas.
 ````html
@@ -341,11 +343,11 @@ Es el encargado de darle un título descriptivo a las tablas.
     <tr> <td> Celda 3 </td><td> Celda 4 </td>  </tr>
 </table>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Accesibilidad: Consejos
 ![Consejos de Accesibilidad](images/html/claves_accesibilidad.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Accesibilidad: Consejos
 <!-- .slide: style="font-size: 0.75em" -->
 * Use el atributo **alt** en las **imágenes** para describir la función del elemento visual.
@@ -358,17 +360,17 @@ Es el encargado de darle un título descriptivo a las tablas.
 *  Describir figuras, diagramas o animaciones con el atributo longdesc
 *  Utilice herramientas o servicios como [Accesibility Validator W3](https://validator.w3.org/) para comprobar el adecuado funcionamiento de la página
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicios: Accesibilidad
 * En el formulario que creado, emplee la etiqueta **label for=”mismo_id”**
 * Agregue el atributo **alt** con el texto alternativo a todas las imágenes de su sitio web.
 * Emplee el tag **caption** para agregar títulos a todas las tablas del sitio web.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicios: Accesibilidad
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZdyJMznlgJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Etiquetas anidadas
 <!-- .slide: style="font-size: 0.80em" -->
 Significa que una etiqueta está dentro de otra. Por ejemplo, **strong** y **em** están anidadas dentro de **p**. A su vez, **em** esta anidada dentro de **strong**.
@@ -379,7 +381,7 @@ Generalmente la última etiqueta en abrirse es la primera en cerrarse.
 
 Los errores típicos son: olvidarse de cerrar etiquetas y cerrar etiquetas en un orden inadecuado (lo que puede generar demoras al renderizar una página).
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Lienzo Canvas
 Proporciona una Interfaz de Programación de Aplicaciones (API) para dibujar líneas en dos dimensiones, imágenes y textos.
 
@@ -387,7 +389,7 @@ El lienzo es un contenedor de gráficos y se debe utilizar un script para dibuja
 
 Cada pixel dentro del lienzo(canvas) puede ser controlado.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Lienzo Canvas
 ````html
 <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
@@ -398,13 +400,13 @@ Cada pixel dentro del lienzo(canvas) puede ser controlado.
     Your browser does not support the HTML5 canvas tag.
 </canvas>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Multimedia
 HTML5 permite incluir audio y video de forma nativa sin incluir pluing de terceros.
     
 Para los navegadores que no soporten esta tecnología, se pueden incluir textos que indiquen que es incompatible.
     
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Video
 Permite añadir archivos de video a la página.
 ````html
@@ -418,7 +420,7 @@ Permite añadir archivos de video a la página.
 
 [Más info](https://www.w3schools.com/html/html5_video.asp)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Video
 <!-- .slide: style="font-size: 0.80em" -->
 ````html
@@ -436,7 +438,7 @@ Atributos: controls (play, pause, volumen), width, height, autoplay, muted
 
 Formatos: mp4, webm, ogg.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Audio
 Permite añadir archivos de audio a la página.
 ````html
@@ -454,18 +456,18 @@ Formato: mp3, ogg, aac, opus, flac, wav
 
 [Más info](https://lenguajehtml.com/p/html/multimedia/etiquetas-html-de-audio)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio 7: Multimedia
 Empleando el template “ej_animales”, agregue las etiquetas necesarias para:
 * Agregar un audio (el mismo se encuentra en la carpeta “resources”)
 * Agregar un video (el mismo se encuentra en la carpeta “resources”)
 * Agregar un video de youtube
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio 7: Multimedia
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AFtAFhgGDE8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## RECUERDA!!!!
 Puedes versionar código, documentos de texto plano...
 
@@ -473,30 +475,35 @@ Pero recuerda que GIT no está optimizado para subir VIDEOS o imágenes muy pesa
 
 Usa Git sabiamente pequeño padawan.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Consejos
 Algunos consejos de 
 [Google WebMasters](http://www.google.es/webmasters/learn/)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Verifica tu Web
 Permite encontrar con facilidad algunos errores que puede haber en tu página:
 
 [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 # Bibliografia xD
 [![W3School](images/html/logo_w3schoolscom.png)](http://www.w3schools.com/html)
 
 [![MDN](images/html/logo_MDN.png)](https://developer.mozilla.org/es/)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
-</script></section></div>
+
+          </textarea>
+        </section>
+      </div>
     </div>
 
     <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
 
     <script src="./plugin/markdown/markdown.js"></script>
     <script src="./plugin/highlight/highlight.js"></script>
@@ -525,6 +532,9 @@ Permite encontrar con facilidad algunos errores que puede haber en tu página:
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
         plugins: [
           RevealMarkdown,
           RevealHighlight,
@@ -537,7 +547,7 @@ Permite encontrar con facilidad algunos errores que puede haber en tu página:
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -545,6 +555,20 @@ Permite encontrar con facilidad algunos errores que puede haber en tu página:
 
     <script>
       Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
     </script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,17 +12,19 @@
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
 
     <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
-
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">
+      <div class="slides">
+        <section data-markdown data-separator="^---" data-separator-vertical="^\r?\n----\r?\n$">
+          <textarea data-template>
+            
 
 # Herramientas de Desarrollo
 Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <style>
 .grid-container5 {
     display: grid;
@@ -90,13 +92,13 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 </div>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Herramientas de Desarrollo
 Permiten agilizar el proceso de desarrollo de Software.
 
 Una aplicacion o programa puede contar con multiples herramientas que se encarguen de funciones especificas y afines para realizar una tarea.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Tipos de Herramientas
 * IDE
 * Sistema de Control de Versiones
@@ -107,11 +109,11 @@ Una aplicacion o programa puede contar con multiples herramientas que se encargu
 
 ![Herramientas](images/herramientas/herramientas.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ambiente de Desarrollo Integrado o IDE
 Es un software que proporciona servicios integrales para facilitarle al programador el desarrollo de software.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ambiente de Desarrollo Integrado o IDE
 Normalmente, un IDE consiste de:
 * Editor de código fuente
@@ -120,33 +122,33 @@ Normalmente, un IDE consiste de:
 * Compilador
 * Intérprete
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Editor de código fuente
 Es un procesador de textos orientado para escribir código fuente de aplicaciones en general en lenguajes de programación.
 
 Generalmente los editores de código soportan varios lenguajes y son capaces de abrir varios archivos a la vez, resaltar su sintaxis y ofrecer ayudas contextuales a la hora de escribir o visualizar el código de las aplicaciones.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Depurador o Debugger
 Permite probar y eliminar los errores del programa.
 
 El depurador permite detener el programa en un punto determinado o en un momento determinado para que el usuario pueda examinar y modificar la memoria y las variables del programa, cambiar punto de ejecución, ejecutar una instrucción o partes determinadas de código.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Depurador o Debugger
 ![Debuggin](images/herramientas/debugging.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Compilador
 Traduce del lenguaje de programación al lenguaje maquina, código intermedio o texto.
 
 * **Lenguajes compilados:** C, C++, Fortran, Pascal, Visual Basic.
 * **Lenguajes interpretados:** Python, JavaScript, HTML, Ruby, PHP.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![Time Compilation](images/herramientas/time_compilation.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Interprete
 Realiza la traducción a medida que sea necesaria, instrucción por instrucción y no guardan el resultado de la traducción.
 
@@ -154,7 +156,7 @@ Los programas interpretados suelen ser más lentos que los compilados debido a l
 
 Uno de los entornos más comunes de uso de los intérpretes es en los navegadores web, debido a que se ejecutan independientemente de la plataforma.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <!-- .slide: data-background="images/herramientas/IDES.png" -->
 ## IDE's
 Ejemplos de IDE's para desarrollo Web:
@@ -167,19 +169,19 @@ Ejemplos de IDE's para desarrollo Web:
 * [Dreamweaber](https://www.adobe.com/la/products/dreamweaver.html)
 * [NotePad ++](https://notepad-plus-plus.org/downloads/)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <!-- .slide: data-background="images/herramientas/Busydesk-desarrollo.png" -->
 ## IDE's
 No hay mejor IDE que aquel que cumpla con tus expectativas y supla tus necesidades y requerimientos.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![CommitStrip](images/herramientas/CommitStrip-IDE.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Gestión de Versiones o VCS
 Permiten gestionarlos archivos de un proyecto (y sus versiones) y que sus integrantes puedan acceder remotamente a ellos.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Gestión de Versiones o VCS
 Los usuarios pueden:
 * Descargar los archivos
@@ -189,24 +191,24 @@ Los usuarios pueden:
 * Ramificar a partir de una versión
 * Aplicar cambios de distintas versiones
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <!-- .slide: data-background="images/herramientas/subversionado.png" -->
 ## Ventajas de VCS:
 * Permite llevar cuenta de los cambios de un conjunto de archivos digitales en el tiempo
 * Cada versión registrada en el tiempo es una revisión
 * Permite tanto a un desarrollador como a un grupo de desarrolladores, gestionar el código del proyecto.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Herramientas de VCS
 * Git
 * SVN
 * Mercurial
 * Bazaar
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![Historieta Versionado](images/herramientas/comicVersionado.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Documentación de Código
    
 Permite:
@@ -215,7 +217,7 @@ Permite:
 
 ![JsDoc](images/html/jsdoc.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Niveles de Documentación
 * **por clase:** descripción, autor, fecha y última modificación
 * **por método:** descripción del objeto, funcionalidades, parámetros y resultados
@@ -223,7 +225,7 @@ Permite:
 * **de limitaciones**
 * **de algoritmos implementados**
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Formato de Documentación (JSDoc)
 ```javascript
 /**
@@ -243,10 +245,10 @@ Permite:
    }
 ```
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![SPJS](images/herramientas/spjs_3301.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Documentación...A tener en cuenta
 * No uses solo una linea, divídela en párrafos para que sea mas legible
 * Tabular los comentarios de lineas consecutivas
@@ -254,14 +256,14 @@ Permite:
 * Se profesional (No insultes o coloques frases fuera de contexto)
 * Revisa la ortografía
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Documentación...A tener en cuenta
 * No comentes si no es necesario
 * Comentarios simple y directo
 * Documenta mientras desarrollas
 * Manten los comentarios actualizados
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ````javascript
 return 1; # returns 1
 stop(); // Hammertime!
@@ -276,17 +278,17 @@ x = -x;
 
 [más ejemplos](http://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered%3E)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![Comenario de Gatito](images/herramientas/coment_code.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![Comentarios Actualizados](images/herramientas/comentarios_actualizados.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Bug Tracker o BTS
 Para asegurar una buena calidad en los proyectos de dimension considerable es importante utilizar un Bug Tracker para realizar el seguimiento de los defectos o Bugs que surgen y son detectados.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejemplos de Bug Tracker
 * Jira
 * Bugzilla
@@ -295,25 +297,25 @@ Para asegurar una buena calidad en los proyectos de dimension considerable es im
 * The bug Genie
 * MantisBT
  
-</script></section><section  data-markdown><script type="text/template">
+---
 ![Bug Tracker](images/herramientas/bug-tracker_jira.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![Bugzilla](images/herramientas/bug-tracker_bugzilla.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![FlySpray](images/herramientas/bug-tracker_flyspray.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![Strip](images/herramientas/Strip-Depart-en-weekend-650-finalenglish.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Prueba de Desempeño o Performance
 * **Load Test:** Simular la realidad a la que esta expuesto el sistema cuando este en produccion.
 * **Stress Test:** Simula mas carga de la esperada.
 * **Endurance o Resistencia:** Desempeño del sistema después de una carga duradera por un periodo de tiempo largo.
                
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Herramienta para Stress Test
 * Apache JMeter
 * WebLOAD
@@ -324,22 +326,22 @@ Para asegurar una buena calidad en los proyectos de dimension considerable es im
 * NeoLoad
 * LoadComplete
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![JM16](images/herramientas/jm16.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![JMeter](images/herramientas/jmetertestvso-progress.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![Response Graph](images/herramientas/response_time_graph.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Integración Continua
 Es una buena practica generar tests para verificar el correcto funcionamiento de las partes del software.
 Estos test pueden ser manuales (los realiza una persona según un documento) o automáticos (código que prueba otro código).
 En el caso de los test automatizados, se recurre muchas veces a servidores que corran los test, para poder correrlos en distintos ambientes. A estos servidores se les llama de Integración Continua.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Herramienta para Integración Continua
 ### Propio servidor
 * GitLab CI
@@ -351,22 +353,22 @@ En el caso de los test automatizados, se recurre muchas veces a servidores que c
 * Codeship
 * CircleCI
 
-</script></section><section  data-markdown><script type="text/template">
+---
 [Ejemplo de Construccion con Travis de las filminas](https://travis-ci.org/UCC-LabCompu2/filminas)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![ci-flujo](images/herramientas/ci-flujo.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![Git-ci](images/herramientas/Git-CI.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![ci-laba](images/herramientas/ci-laba.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 [![ci-build](images/herramientas/ci-build.jpg)](https://en.wikipedia.org/wiki/Build_light_indicator)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## IDE WebStorm
 [![WebStorm](images/herramientas/Webstorm.png)](https://www.jetbrains.com/webstorm/)
 
@@ -374,16 +376,21 @@ En el caso de los test automatizados, se recurre muchas veces a servidores que c
 
 Pago pero gratuito para Alumnos
 
-</script></section><section  data-markdown><script type="text/template">
+---
 [![StackOverflow](images/herramientas/stackoverflow.png)](http://stackoverflow.com)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
-</script></section></div>
+
+          </textarea>
+        </section>
+      </div>
     </div>
 
     <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
 
     <script src="./plugin/markdown/markdown.js"></script>
     <script src="./plugin/highlight/highlight.js"></script>
@@ -412,6 +419,9 @@ Pago pero gratuito para Alumnos
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
         plugins: [
           RevealMarkdown,
           RevealHighlight,
@@ -424,7 +434,7 @@ Pago pero gratuito para Alumnos
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -432,6 +442,20 @@ Pago pero gratuito para Alumnos
 
     <script>
       Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
     </script>
   </body>
 </html>

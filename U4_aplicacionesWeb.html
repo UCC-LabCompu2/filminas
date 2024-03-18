@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,16 +12,18 @@
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
 
     <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
-
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">
+      <div class="slides">
+        <section data-markdown data-separator="^---" data-separator-vertical="^\r?\n----\r?\n$">
+          <textarea data-template>
+            
 
 # Aplicaciones Web
 Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
-</script></section><section  data-markdown><script type="text/template">
+---
 
 <style>
 .grid-container2 {
@@ -66,18 +68,18 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Libros:
 ![Book](images/book.png)
 “Aplicaciones Web” de Javier Zofio Jiménez
 (Unidad Teórica N°1 y N°2)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Aplicaciones Web
 Software almacenado en una computadora o servidor web, que los usuarios pueden utilizar a través de Internet o
 de una Intranet, con un navegador web, para obtener los servicios que ofrezca.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejemplos de Aplicaciones Web
 * [Web Mails](https://www.gmail.com)
 * [Wikis](https://www.wikipedia.com)
@@ -87,13 +89,13 @@ de una Intranet, con un navegador web, para obtener los servicios que ofrezca.
 * [Juegos Online](http://browserquest.mozilla.org/)
 * Otros Sistemas de Gestión, Diseño, Cálculo, etc)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Aplicación web vs. Página web
 Una **página web** es un documento estático al que se accede a través de un navegador (la información sólo se puede leer, no interactuar con ella).
 
 Una **aplicación web** es una página web especial, que tiene información sobre la que se puede interactuar e incluso cambiar.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ventajas de las Aplicaciones Webs
 * Facilidad de acceso (sólo se necesita navegador web)
 * Independencia de sistema operativo
@@ -101,13 +103,13 @@ Una **aplicación web** es una página web especial, que tiene información sobr
 * Facilidad de actualización y mantenimiento (sin redistribuir o instalar software)
 * Bajo consumo de recursos
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Tipos de Aplicaciones Web
 Según el tipo de acceso:
 * **Públicas:** Tiendas virtuales, diarios digitales, portales de internet, etc.
 * **Restringidas:** Intranets, que ofrecen servicios para mejorar gestiones internas de una empresa (control hs de personal, gestión de proyectos o tareas), etc.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Estructura de Aplicaciones Webs
 Normalmente posee 3 capas:
 * Capa del Cliente
@@ -116,7 +118,7 @@ Normalmente posee 3 capas:
 
 ![3 Capas](images/appWeb/modelo3capas.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Estructura
 * Capa de Presentación, de Usuario/Cliente
 <p class="fragment"> <small> 
@@ -136,7 +138,7 @@ de base de datos almacenar o recuperar datos de él.
  desde la capa de negocio.
 </small> </p>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Tipos de Páginas web
 Una **aplicación Web** es un conjunto de páginas Web estáticas y dinámicas.
 
@@ -148,7 +150,7 @@ Una **aplicación Web** es un conjunto de páginas Web estáticas y dinámicas.
 
 <!--https://helpx.adobe.com/es/dreamweaver/using/web-applications.html-->
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Procesamiento Web Estática
 
 ![Web Estatica](images/appWeb/procesamiento_webEstatica.png)
@@ -159,7 +161,7 @@ Una **aplicación Web** es un conjunto de páginas Web estáticas y dinámicas.
 3. El servidor Web envía la página al navegador solicitante.
 </small>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Procesamiento Web Dinámica
 
 ![Web Dinamica](images/appWeb/procesamiento_webDinamica.png)
@@ -172,12 +174,12 @@ Una **aplicación Web** es un conjunto de páginas Web estáticas y dinámicas.
 5. El servidor web envía la página finalizada al navegador solicitante.  
 </small>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Procesamiento Web Dinámica+DB
 
 ![Web Completo](images/appWeb/procesamiento_webCompleto.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Procesamiento Web Dinámica+DB
 <!-- .slide: style="font-size: 0.7em" -->
 1. El navegador web solicita la página dinámica. 
@@ -190,18 +192,18 @@ Una **aplicación Web** es un conjunto de páginas Web estáticas y dinámicas.
 8. El servidor de aplicaciones inserta los datos en una página y luego pasa la página al servidor web. 
 9. El servidor Web envía la página finalizada al navegador solicitante.  
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Servidor de Aplicaciones
 Software que ayuda al servidor Web a procesar las páginas que contienen scripts o etiquetas del lado del servidor. Cuando se solicita al servidor una página de este tipo, el servidor Web pasa la página al servidor de aplicaciones para su procesamiento antes de enviarla al navegador.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Evolución de la Web
 * Web 1.0
 * Web 2.0
 * Web 3.0
 * Web 4.0
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Web 1.0
 El comienzo de la web data de los años 60, donde el usuario es un mero consumidor del contenido que es subido a 
 servidores por parte de expertos informáticos. Los navegadores eran solo de texto.
@@ -209,11 +211,11 @@ servidores por parte de expertos informáticos. Los navegadores eran solo de tex
 La web 1.0 mejora con la aparición del lenguaje HTML, que proporciona contenido con mejor estructuras y más atractivos 
 para leer. Aun así, el usuario aún no podía interactuar y la web era como una especie de libro donde buscar y leer información.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Web 1.0
 ![Web 1.0](images/appWeb/web1_0.webp)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Web 2.0
 A partir del año 2001, surge un cambio importante: el usuario empieza a interactuar con las webs. 
 Se siguen tres principios :
@@ -224,22 +226,22 @@ Se siguen tres principios :
 Aparecen grupos de usuarios, redes sociales, blogs y wikis entre otras. Se fomenta la colaboración entre usuarios. 
 El usuario ahora no solo accede a la información, sino que la crea.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Web 2.0
 ![Web 2.0](images/appWeb/web2_0.webp)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Web 3.0
 Surge en 2006 para relacionar las webs de forma semántica, lo que permite que la información pueda ser encontrada de 
 forma más rápida y eficiente debido a su estructuración.
 
 Además de navegadores, se accede desde otros dispositivos y tecnologías.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Web 3.0
 ![Web 3.0](images/appWeb/web3_0.webp)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Web 4.0
 En esta etapa la inteligencia artificial aparece como principal tecnología.
  
@@ -249,11 +251,11 @@ Algunas de las características de la web 4.0 son:
 * Uso de información relacionada (GPS, sensores de temperatura, etc.).
 * Nuevas formas de interacción con el usuario.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Evolución Web
 ![Evolución Web](images/appWeb/webEvolution.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Lenguajes de Programación Web
 * HTML (HyperText Markup Language)
 * JavaScript
@@ -264,7 +266,7 @@ Algunas de las características de la web 4.0 son:
 * JSP (Java Server Pages)
 * Ruby
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Elige tu Propia Aventura xD
 <!-- .slide: style="font-size: 0.75em" -->
 * **Programador de Servidores o Back-end:** Python, Ruby, PHP, Java, .Net (o JavaScript con nodeJS).
@@ -277,23 +279,23 @@ Algunas de las características de la web 4.0 son:
 * **Programador 3D o de videojuegos:** C/C++, OpenGL, Animación. Conocimientos de diseño y artísticos.
 * **Programador de alto rendimiento:** C/ C++, Java, conocimientos en matemáticas y análisis cuantitativo.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ##  El mejor lenguaje de programación para empezar depende del tipo de proyectos que se quiera hacer.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Para programación web recomendamos...
 
 ![HTML5 JS CSS](images/appWeb/html5jscss.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## HTML5
 HTML5 es la última evolución de la norma que define HTML (HyperText Markup Language)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Características
 ![HTML5 Areas](images/appWeb/html5-areas.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Características
 <!-- .slide: style="font-size: 0.90em" -->
 * ***Semántica:***
@@ -308,7 +310,7 @@ HTML5 es la última evolución de la norma que define HTML (HyperText Markup Lan
 * ***Multimedia:***
   permite hacer vídeo y audio en la Web abierta.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Características
 <!-- .slide: style="font-size: 0.90em" -->
 * ***Gráficos y efectos 2D/3D:***
@@ -323,7 +325,7 @@ HTML5 es la última evolución de la norma que define HTML (HyperText Markup Lan
 * ***Styling:***
   deja a los autores escribir temas más sofisticados.
   
-</script></section><section  data-markdown><script type="text/template">
+---
 ## SEMÁNTICA
 ````html
 <section>
@@ -334,7 +336,7 @@ HTML5 es la última evolución de la norma que define HTML (HyperText Markup Lan
 <aside>
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## SEMÁNTICA
 ### Formularios
 ````html
@@ -348,16 +350,21 @@ HTML5 es la última evolución de la norma que define HTML (HyperText Markup Lan
 <progress max="100" value="50"></progress>
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![App Web](images/appWeb/tags.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
-</script></section></div>
+
+          </textarea>
+        </section>
+      </div>
     </div>
 
     <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
 
     <script src="./plugin/markdown/markdown.js"></script>
     <script src="./plugin/highlight/highlight.js"></script>
@@ -386,6 +393,9 @@ HTML5 es la última evolución de la norma que define HTML (HyperText Markup Lan
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
         plugins: [
           RevealMarkdown,
           RevealHighlight,
@@ -398,7 +408,7 @@ HTML5 es la última evolución de la norma que define HTML (HyperText Markup Lan
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -406,6 +416,20 @@ HTML5 es la última evolución de la norma que define HTML (HyperText Markup Lan
 
     <script>
       Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
     </script>
   </body>
 </html>

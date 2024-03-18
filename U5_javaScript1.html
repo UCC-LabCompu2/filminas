@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,17 +12,19 @@
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
 
     <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
-
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">
+      <div class="slides">
+        <section data-markdown data-separator="^---" data-separator-vertical="^\r?\n----\r?\n$">
+          <textarea data-template>
+            
 
 # JavaScript
 Created by <i class="fab fa-telegram"></i> 
 [edme88]("https://t.me/edme88")
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <style>
 .grid-container2 {
     display: grid;
@@ -80,32 +82,32 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 </div>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Bibliografía:
 ![Book](images/book.png)
 
 [Guía de JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide)
 [Curso: Introduction to JavaScript](https://testautomationu.applitools.com/javascript-tutorial/)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## JavaScript
 Es un lenguaje de scripting multiplataforma y orientado a eventos y objetos.
 Se usa principalmente del lado del cliente implementado como parte de un navegador web permitiendo mejoras en la interfaz de usuario y páginas web dinámicas.
 
 También hay versiones de JavaScript más avanzadas de lado del servidor, como [Node.js](https://nodejs.org/es/), que te permiten agregar más funcionalidad a un sitio web.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Características
 * Orientado a Eventos y Objetos
 * Lenguaje Interpretado
 * Tipado dinámico (una variable puede tomar valores de distinto tipo)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Incluir JavaScript
-* En el mismo documento, agregando ```<script>__SCRIPT_END__```
+* En el mismo documento, agregando ```<script></script>```
 * En un archivo externo
 ````javascript
-<script type="text/javascript" src="/js/codigo.js">__SCRIPT_END__
+<script type="text/javascript" src="/js/codigo.js"></script>
 ````
 * En linea
 ````javascript
@@ -114,7 +116,7 @@ También hay versiones de JavaScript más avanzadas de lado del servidor, como [
 Puedes ver mas EventsHandlers aqui:
 https://www.w3schools.com/jsref/dom_obj_event.asp
 ````
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Sintaxis
 <!-- .slide: style="font-size: 0.80em" -->
 Conjunto de reglas que deben seguirse al escribir el código:
@@ -124,7 +126,7 @@ Conjunto de reglas que deben seguirse al escribir el código:
 * Se pueden incluir comentarios.
 * No es necesario un punto y coma después de una declaración si está escrita en su propia línea. Pero si se deseas más de una declaración en una línea, entonces debes separarlas con punto y coma.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Variables
 Existen 3 tipos de declaraciones de variables:
 * **var** Declara una variable.
@@ -142,14 +144,14 @@ let nota = 10;
 var arr[5];
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Identificadores
 Los nombres de las variables deben cumplir ciertas reglas:
 * Debe comenzar con una letra, un guión bajo (_) o un signo de pesos ($). 
 * Los siguientes caracteres también pueden ser dígitos (0-9).
 * Distinción entre mayúsculas y minúsculas
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Funciones Clásicas
 * Emplea palabra reservada **function** + nombre de la función + los parámetros.
 ````javascript
@@ -163,7 +165,7 @@ console.log(miFuncionSuma(2,3));
 
 * **Hoisting**: la función puede ser llamada desde cualquier parte del código (antes o después de definir la función).
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Funciones Anónimas
 * Al no tener nombre es necesario almacenarlas en una variable para poder llamarlas después.
 * No admite **Hoisting**
@@ -175,7 +177,7 @@ let sumar = function(parametro1, parametro2){
 console.log(miFuncionSuma(2,3));
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Funciones Flecha
 * Es una función **anónima**
 * No necesita de la palabra reservada **function**
@@ -185,7 +187,7 @@ console.log(miFuncionSuma(2,3));
 let suma = (parametro1, parametro2) => { parametro1 + parametro2 }
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Funciones Flecha
 * Si la función tiene solo un parámetro, pueden omitirse los paréntesis
 * Si el cuerpo de la función es una sola línea, pueden omitirse las llaves
@@ -198,7 +200,7 @@ let saludo = nombre =>  'Hola ' + nombre + '!!!' ;
 let obj = () =>  ({nombre: 'Agus', edad: 34}) ;
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Funciones Predefinidas
 <!-- .slide: style="font-size: 0.80em" -->
 * [isNaN()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Number/isNaN) Verifica si la variable 'is not a number'.
@@ -209,7 +211,7 @@ let obj = () =>  ({nombre: 'Agus', edad: 34}) ;
 Hay otros...
 eval(), uneval(), isFinite(), decodeURI(), encodeURI(), encodeURIComponent(), escape(), unescape()...
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Condicionales
 <!-- .slide: style="font-size: 0.80em" -->
 ````javascript
@@ -229,7 +231,7 @@ if(saludo == "Whatsup!"){
 * **<=** menor o igual
 * **===** exactamente igual
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ternarios
 Se emplea como atajo de if/else
 ````javascript
@@ -241,7 +243,7 @@ Un ejemplo aplicado:
 edad >=18 ? console.log('Puede conducir un auto'): console.log('Menor de edad!';
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Switch
 ````javascript
 switch(nombre){
@@ -257,7 +259,7 @@ switch(nombre){
 }
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Bucles
 ````javascript
 for(var i=0; i<20;i++){
@@ -280,7 +282,7 @@ do {
 } while(i < 5);
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Bucles
 Llama a una función por cada elemento en el array.
 ````javascript
@@ -291,7 +293,7 @@ arrayPalabras.forEach((palabra, index) => {
 })
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Funciones Callback
 Funciones que se pasan como parámetros de otras funciones y que se ejecutan dentro de éstas.
 ````javascript
@@ -307,7 +309,7 @@ function miFunc(){
 setInterval(miFunc, 3000);
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [Buenas Prácticas](https://www.w3schools.com/js/js_best_practices.asp)
 <!-- .slide: style="font-size: 0.90em" -->
 * Evitar las variables globales
@@ -323,18 +325,18 @@ setInterval(miFunc, 3000);
 
 <!--http://www.williammalone.com/articles/create-html5-canvas-javascript-drawing-app/#demo-simple-->
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Eventos y objetos
 * Los eventos estan asociados a un objeto.
 * Los eventos se producen porque sobre un objeto se produce alguna acción
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Eventos de elementos de Formularios
 Se producen durante el uso de campos de formulario, como cajas de texto, listas desplegables, etc.
 
 Se producen cuando un elemento recibe foco,lo pierde o se cambia el contenido.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Eventos de elementos de Formularios
 * **OnSelect:** Se produce cuando se selecciona texto en un campo
 * **OnChange:** Se produce cuando se cambia algo en un elemento de formulario, y se pierde foco.
@@ -346,30 +348,30 @@ Se producen cuando un elemento recibe foco,lo pierde o se cambia el contenido.
 <input type="text" onselect="alert('Se ejecuto onSelect')">
 <input type="text" value="Cambiar Valor" onchange="alert('Se ejecuto onChange')">
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Hola Mundo!
 Mostrar un “alert()” con el texto “Hola Mundo!” que se ejecute en el onload del body.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Hola Mundo!
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iW5fADdHwGM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Conversor de Unidades
 Escribir funciones JavaScript para que, al escribir un número en cualquiera de los inputs, la unidad sea convertida.
 * Emplear **OnChange** en los campos
 * Los campos deben contener un nombre o id
 * La función debe enviar el valor y el nombre del campo cambiado
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Conversor de Unidades
 ![conversor de unidades](images/html/conversorUnidades.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Conversor de Unidades
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ETZtCd1sCxk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejemplo Conversion de Unidades
 <script>
 let convertirUnidades = (unidad, valor) => {
@@ -397,7 +399,7 @@ let convertirUnidades = (unidad, valor) => {
         document.lasUnidades.pie.value = valor * 3;
     }
 }
-__SCRIPT_END__
+</script>
 
 <form name="lasUnidades" style="text-align: right; width: 450px; margin:auto;">
 metro=<input style="font-size: 22px" type="text" name="metro" onchange="cambioUnidades(this.value,this.name)">
@@ -410,7 +412,7 @@ yarda=<input style="font-size: 22px" type="text" name="yarda" onchange="cambioUn
 <br>
 </form>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejemplo Conversion de Unidades
 ````javascript
 function cambioUnidades(valor, unidad) {
@@ -440,7 +442,7 @@ function cambioUnidades(valor, unidad) {
 }
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Porque Documentar Código
 * Ayuda a entender nuestro código
 * Ayuda a los demás
@@ -448,7 +450,7 @@ function cambioUnidades(valor, unidad) {
 * Mantiene claro el objetivo
 * El código se vuelve reutilizable
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Documentar Código
 Podemos emplear [JsDoc](https://jsdoc.app/) para generar nuestra documentación... Solo debemos documentar de esta manera:
 ````javascript
@@ -462,7 +464,7 @@ Podemos emplear [JsDoc](https://jsdoc.app/) para generar nuestra documentación.
 ````
 Y luego correr el comando `jsdoc misFunciones.js`
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Documentar Código
 Ejemplo:
 ````javascript
@@ -474,23 +476,23 @@ Ejemplo:
  */
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Documentar Código
 Ejemplo:
 ![Ejemplo de JsDoc](images/Eventos/jsDocEjemplo.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Documentación
 Documentar las funciones del “Conversor de Unidades” adecuadamente,  indicando que hacen las funciones, el nombre del método, que parámetros se le envía y que valor retorna.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Documentación
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OHcgwdimliE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![Oye y la Documentacion?](images/html/oye_documentacion.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Get element By
 <!-- .slide: style="font-size: 0.90em" -->
 Es una forma sencilla de encontrar elementos HTML en el DOM.
@@ -504,7 +506,7 @@ Es una forma sencilla de encontrar elementos HTML en el DOM.
     
 Para más Info ver [Ejemplos](http://www.codexexempla.org/curso/curso_4_3_a.php)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## JavaScript: Leer Inputs
 <form name="sumaNum">
     <input size="1" style="font-size: 28px" type="text" id="num1">+
@@ -522,13 +524,13 @@ let sumaN = () => {
 }
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Objeto Math
 Math es un objeto incorporado por javascript que posee propiedades y métodos creados por constantes y funciones matemáticas.
 
 Todas las propiedades y métodos de Math son estáticos y no se pueden modificar.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejemplo: Potencias
 X<sup>n</sup>
 
@@ -553,7 +555,7 @@ let raizN = () => {
 }
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejemplo: Sen y Cos
 Sen(ang)
 
@@ -571,7 +573,7 @@ let senN = () => {
 }
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Grados a Radianes
 Empleando la pagina grados_radianes haga una conversion de grados a radianes.
 
@@ -581,17 +583,22 @@ Empleando la pagina grados_radianes haga una conversion de grados a radianes.
 
 ![Grados a Radianes](images/html/gradosRadianes.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Grados a Radianes
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UdspGRMvxIQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
-</script></section></div>
+
+          </textarea>
+        </section>
+      </div>
     </div>
 
     <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
 
     <script src="./plugin/markdown/markdown.js"></script>
     <script src="./plugin/highlight/highlight.js"></script>
@@ -620,6 +627,9 @@ Empleando la pagina grados_radianes haga una conversion de grados a radianes.
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
         plugins: [
           RevealMarkdown,
           RevealHighlight,
@@ -632,7 +642,7 @@ Empleando la pagina grados_radianes haga una conversion de grados a radianes.
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -640,6 +650,20 @@ Empleando la pagina grados_radianes haga una conversion de grados a radianes.
 
     <script>
       Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
     </script>
   </body>
 </html>

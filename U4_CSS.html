@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,17 +12,19 @@
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
 
     <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
-
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">
+      <div class="slides">
+        <section data-markdown data-separator="^---" data-separator-vertical="^\r?\n----\r?\n$">
+          <textarea data-template>
+            
 
 # CSS
 Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <style>
 .grid-container2 {
     display: grid;
@@ -83,17 +85,17 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 </div>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## CCS: Cascading Style Sheets
 Hojas de Estilo en Cascada (CSS) es un lenguaje de estilo de hojas usado para describir la presentación de las páginas web escrito en HTML o XML.
 
 CSS permite la separación del contenido del documento de la presentación del documento (disposición, colores, fuentes, etcétera).
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Capas del Diseño Web
 ![Capas](images/html/capas.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## CCS3: Cascading Style Sheets
 Estilos visual del documento.
 * Selectores
@@ -106,23 +108,23 @@ Estilos visual del documento.
 * Multiples columnas
 * Interfaz de Usuario
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## CSS: Sintaxis
 ![CSS Sintaxis](images/html/css-sintaxis.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Comenzar!
 Cuando estás empezando a trabajar con CSS es recomendable tener a mano siempre un CheatSheet con un resumen de los 
 comandos más empleados.
 [CSS Cheat Sheet](https://raw.githubusercontent.com/UCC-LabCompu2/filminas/master/slides/cheatsheet/css3-cheatsheet.pdf)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Formas de Agregar Estilos
 * Estilo en Linea
 * Incrustando una Hoja de Estilo
 * Enlazando una hoja de Estilo Externa
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Estilo en Linea
 * Se usa el atributo "style" para definir como la etiqueta debe mostrarse.
 * Ejemplo:
@@ -130,14 +132,14 @@ comandos más empleados.
 <h1 style="color: red; font-type: helvetica; font-size: 2em">
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Estilo en Linea: Desventajas
 * Difícil de mantener
 * Solución poco elegante
 * Código duplicado para que varios elementos posean el mismo estilo visual
 * La estructura y el estilo se mezclan
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Hoja de Estilo Incrustada
 * Se incorpora en &lt;head&gt;
 *  Se describe:
@@ -156,20 +158,20 @@ font-weight: bold;
 margin-left: 15px;
 }
 ````
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Hoja de Estilo Externa o Enlazada
 * En el &lt;head&gt; se emplea un link a un archivo externo
 ````css
 <link rel="stylesheet" href="estilos.css" type="text/css">
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Hoja de Estilo Externa o Enlazada: Ventajas
 * Se separa la estructura del estilo
 * Fácil de mantener
 * Permite compartir estilos similares en todas las páginas
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Propiedades tipográficas
 <!-- .slide: style="font-size: 0.80em" -->
 * **font-family:** se define tipografía por orden de prioridad
@@ -185,7 +187,7 @@ margin-left: 15px;
 * **text-indent:** sangria
 * **text-transform:** uppercase, lowercase
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Colores
 * Por nombre: <h1 style="color: red>
 
@@ -193,7 +195,7 @@ margin-left: 15px;
 
 * RGB: <h1 style="color: rgb(205, 92, 92)>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ##  ¿Como Escribir un Estilo? 
 <!-- .slide: style="font-size: 0.90em" -->
 Obviamente, con el teclado xD. Bue, hablando en serio, hay 3 formas:
@@ -216,25 +218,25 @@ Ej. #nombreUsuario {color: #ff00cc;}
 Ej. .myStl {background-color: rgb(234,55,76);}
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Propiedades tipográficas
 Empleando el template “ej_columnas”, agregue estilo en línea para cambiar:
 1. Color del texto del título de la página.
 2. Tamaño de la fuente del título de la noticia.
 3. Tipo de fuente o letra de toda la página.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Incrustado
 Empleando el template “ej_columnas”, cambie los estilos en línea por estilos incrustados.
 1. El título de la página debe estar definido por ID
 2. El título de la noticia debe estar definido por clase
 3. El tipo de fuente para toda la página debe estar definido por Tag
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Propiedades tipográficas e Inscrustado
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1cssxcEdTBs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ##  Descendientes
 Un elemento HTML es descendiente de otro cuando se encuentra contenido dentro de las etiquetas de apertura y cierre del otro elemento:
 ````
@@ -242,7 +244,7 @@ Un elemento HTML es descendiente de otro cuando se encuentra contenido dentro de
     <span>En este ejemplo, "span"</span>  es descendiente de div
 </div>
 ````
-</script></section><section  data-markdown><script type="text/template">
+---
 
 ##  Descendientes
 * **selectores:** 
@@ -259,17 +261,17 @@ ul li{nombreEstilo: valor;}
 ````css
 .nombreClass p{nombreEstilo: valor;}
 ````
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Estilo con Descendientes
 Empleando el template “ej_leyes” y hoja de estilo incrustada, agregue los estilos necesarios para cambiar: 
 1. La  primera  lista  ordenada  para  visualizarla  con  números  romanos  y  una  tipografía  de mayor tamaño (upper-roman). 
 2. La segunda lista ordenada para visualizarla con letras (lower-alpha).
    
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Estilo con Descendientes
 <iframe width="560" height="315" src="https://www.youtube.com/embed/u9wBB3DoAyc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
    
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Pseudo Clases
 <!-- .slide: style="font-size: 0.75em" -->
 Es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado.
@@ -282,7 +284,7 @@ Ejemplos:
 * visited: enlaces que han sido visitados al menos una vez por el usuario
 * first-child: selecciona el primer elemento hijo de un elemento
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Pseudo Clases
 ````css
 /* unvisited link */
@@ -306,22 +308,22 @@ a:active {
 }
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Pseudo Clases
 Al hipervinculo de la página de ej_columnas, empleando Pseudo clases modifique:
 * Link visitado o no visitado con el mismo color
 * Al posicionar el mouse arriba del link, modificar el tamaño de la fuente
 * Al seleccionar el link, seleccionar BOLD
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Pseudo Clases
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LUuAI1UFd30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Modelo de Cajas
 ![Padding y Margin](images/html/pading_margin.gif)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ##  Alto y Ancho 
 ````css
 div{
@@ -334,7 +336,7 @@ unidad de medida | porcentaje | auto | inherit (hereda del padre)
 <!-- .slide: style="font-size: 0.75em" -->
 Nota: No se debe agregar espacio entre el valor y la unidad. Es incorrecto escribir "20 px"
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ##  Unidades de Medida 
 <!-- .slide: style="font-size: 0.80em" -->
 Las unidades relativas disponibles son:
@@ -349,7 +351,7 @@ Las unidades relativas disponibles son:
 
 ### En la práctica, las unidades relativas más utilizadas son em y rem, vw y vh.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 Las unidades absolutas disponibles son:
 * **px:** píxeles
 * **cm:** centímetros
@@ -359,7 +361,7 @@ Las unidades absolutas disponibles son:
 * **pc:** picas, la sexta parte de una pulgada
 * **pt:** puntos, la doceava parte de una pica
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ##  Margin & Padding 
 <!-- .slide: style="font-size: 0.70em" -->
 1. Establecerlos por separado
@@ -388,7 +390,7 @@ div{margin: 15px;}
 div{margin: 15px 20px 5px;}
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ##  Borde 
 * .estilo-borde {border: grosor tipo color}
 ````css
@@ -396,7 +398,7 @@ div{margin: 15px 20px 5px;}
 /*dotted, dashed, solid, double, groove, ridge, inset, outset*/
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <!-- .slide: data-background="linear-gradient(to right, red , yellow)" -->
 ## Fondo y Gradientes
 ````css
@@ -416,7 +418,7 @@ background: #ffffff url("img_tree.png") no-repeat right top;
 
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## FavIcon
 <!-- .slide: style="font-size: 0.80em" -->
 Es una pequeña imagen que se muestra junto al título de la página en la pestaña del navegador, o cuando se agrega a favoritos/marcadores.
@@ -427,7 +429,7 @@ Se puede usar cualquier imagen como favicon, o se puede crear favicon propios en
 ````
 ![Favicon](images/html/img_favicon.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: CV
 <!-- .slide: style="font-size: 0.70em" -->
 Diseñe un CV y agregue estilos empleando una hoja de estilo incrustada:
@@ -445,15 +447,15 @@ Diseñe un CV y agregue estilos empleando una hoja de estilo incrustada:
 * Agregar sombras a los divs
 * Asegúrese de por lo menos incluir un estilo por Tag, por ID y por clase
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: CV
 ![CV Imagen](images/html/cv_imagen.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: CV
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9aJKvSPW5GA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Comentario
 Se puede agregar comentarios de una ó multiples líneas.
 ````css
@@ -464,7 +466,7 @@ comentario CSS de varias
 lineas */
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## CCS3
 Buenas Practicas:
 * Comprobar el diseño en varios navegadores
@@ -476,19 +478,24 @@ Buenas Practicas:
 * Utilizar notación de colores en hexadecimal
 * Ordenar los elementos según pertenezcan a cabecera, contenido principal o pie de página
 
-</script></section><section  data-markdown><script type="text/template">
+---
 # Bibliografia xD
 [![W3School](images/html/logo_w3schoolscom.png)](http://www.w3schools.com/css)
 
 [![MDN](images/html/logo_MDN.png)](https://developer.mozilla.org/es/docs/Web/CSS)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
-</script></section></div>
+
+          </textarea>
+        </section>
+      </div>
     </div>
 
     <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
 
     <script src="./plugin/markdown/markdown.js"></script>
     <script src="./plugin/highlight/highlight.js"></script>
@@ -517,6 +524,9 @@ Buenas Practicas:
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
         plugins: [
           RevealMarkdown,
           RevealHighlight,
@@ -529,7 +539,7 @@ Buenas Practicas:
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -537,6 +547,20 @@ Buenas Practicas:
 
     <script>
       Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
     </script>
   </body>
 </html>

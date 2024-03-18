@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,17 +12,19 @@
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
 
     <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
-
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">
+      <div class="slides">
+        <section data-markdown data-separator="^---" data-separator-vertical="^\r?\n----\r?\n$">
+          <textarea data-template>
+            
 
 # Drivers
 Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <!-- .slide: style="font-size: 0.60em" -->
 <style>
 .grid-item {
@@ -44,22 +46,22 @@ Created by <i class="fab fa-telegram"></i>
 * Linux: Hardware Map
 </div>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Driver o Controlador de Dispositivo
-Es un programa que permite al SO interaccionar con un periférico (impresora, scaner, etc) o dispositivo hardware (tarjeta gráfica, tarjeta de sonido, modem, etc), haciendo una abstracción del mismo y proporcionando una interfaz para poder utilizarlo. <br><br>
+Es un programa que permite al SO interacturar con un periférico (impresora, scaner, etc) o dispositivo hardware (tarjeta gráfica, tarjeta de sonido, modem, etc), haciendo una abstracción del mismo y proporcionando una interfaz para poder utilizarlo. <br><br>
 
 Le indica al SO como controlar y comunicarse con un dispositivo particular.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![Drivers](images/configSO/drivers.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Tipos de Drivers
 Existen tantos tipos de controladores como tipos de periféricos.
 
 Puede haber más de un controlador para un mismo dispositivo.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Tipos de Drivers: 
 #### Clasificación por dispositivo
 * de Audio (Realtek, SoundBlast)
@@ -72,27 +74,27 @@ Puede haber más de un controlador para un mismo dispositivo.
 * Teclados
 * Webcam
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Tipos de Drivers
 #### Clasificación por desarrollador
 * Fabricantes de dispositivos (quien hace el hardware, provee el driver)
 * Genéricos o Universales (funcionan la mayoria de los dispositivos)
 * Comunidad de Usuarios
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Drivers en Windows
 Los drivers críticos (fundamentales, como los de la CPU), están integrados dentro del sistema operativo. 
 Estos controladores genéricos no permiten conseguir el máximo rendimiento posible del hardware, 
 pero sí un primer arranque con las funciones básicas para que, a partir de ahí, se apliquen los 
 controladores específicos para cada componentes de hardware.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Drivers: Actualización
 Los fabricantes de hardware suelen actualizar los drivers para otorgar más funcionalidades, 
 mejorar el rendimiento o aumentar las medidas de seguridad con la finalidad de corregir errores o 
 vulnerabilidades que podrían comprometer el equipo de los usuarios.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Descargar los controladores
 * CD del fabricante
 * Administrador de dispositivos
@@ -101,7 +103,7 @@ vulnerabilidades que podrían comprometer el equipo de los usuarios.
 * Programas que descargan drivers
 * Sitio web del fabricante
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Windows
 ### Administrador de Dispositivos
 El usuario puede:
@@ -110,11 +112,11 @@ El usuario puede:
 * Modificar o establecer propiedades a un dispositivo
 * Habilitar o deshabilitar dispositivos
 
-</script></section><section  data-markdown><script type="text/template">          
+---          
 ### Administrador de Dispositivos
 ![Administrador de Dispositivos](images/configSO/admDispositivos2.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Administrador de Dispositivos
 <!-- .slide: style="font-size: 0.60em" -->
 | Simbolo | Definición |
@@ -124,20 +126,25 @@ El usuario puede:
 | ![Simbolo3](images/configSO/driver_simbolo3.png) | Configuración manual en lugar de automática. |
 | ![Simbolo4](images/configSO/driver_simbolo4.png) | El controlador específico del dispositivo no está disponible y se instalo un controlador compatible. |
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Linux
 ### Administrador de Dispositivos
 * Los drivers son módulos del ***Kernel***
 * Con el comando lsmod
 * Desde el visor de hardware del entorno gráfico
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
-</script></section></div>
+
+          </textarea>
+        </section>
+      </div>
     </div>
 
     <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
 
     <script src="./plugin/markdown/markdown.js"></script>
     <script src="./plugin/highlight/highlight.js"></script>
@@ -166,6 +173,9 @@ El usuario puede:
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
         plugins: [
           RevealMarkdown,
           RevealHighlight,
@@ -178,7 +188,7 @@ El usuario puede:
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -186,6 +196,20 @@ El usuario puede:
 
     <script>
       Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
     </script>
   </body>
 </html>

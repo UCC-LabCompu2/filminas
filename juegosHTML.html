@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,23 +12,25 @@
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
 
     <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
-
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">
+      <div class="slides">
+        <section data-markdown data-separator="^---" data-separator-vertical="^\r?\n----\r?\n$">
+          <textarea data-template>
+            
 
 # Diseño de Juegos
 Created by <i class="fab fa-steam"></i>
 [edme88]("http://steamcommunity.com/id/edme88")
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Libros:
 ![Book](images/book.png)
 “Desarrollo de Videojuegos: Un enfoque Práctico”
 Universidad de Castilla
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <!-- .slide: style="font-size: 0.60em" -->
 <style>
 .grid-item {
@@ -54,13 +56,13 @@ Universidad de Castilla
 
 </div>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Qué es un videojuego?
 Un VJ es una aplicación gráfica en tiempo real en la que existe una interacción explícita entre el usuario y el videojuego.
 
 Un VJ está asociado al concepto de evolución, un personaje pretende alcanzar objetivos en un universo acotado que tiene ciertas reglas.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Hay equipo?
 El desarrollo de VJ requiere de un equipo MULTIDISCIPLINARIO de personas:
 * Programadores
@@ -69,15 +71,15 @@ El desarrollo de VJ requiere de un equipo MULTIDISCIPLINARIO de personas:
 * Diseñadores Gráficos
 * Testers :P
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Equipo de Desarrollo
 ![Equipo de Desarrollo](images/juegos/equipoDes.svg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ciclo de Vida
 ![Ciclo de Juego](images/juegos/cicloDelJuego.svg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Tipos de Juegos
 <!-- .slide: style="font-size: 0.70em" -->
 * Acción
@@ -93,7 +95,7 @@ El desarrollo de VJ requiere de un equipo MULTIDISCIPLINARIO de personas:
 * Sandbox
 * Simulación
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Accion
 * Lucha
 * Beat Em Up
@@ -102,7 +104,7 @@ El desarrollo de VJ requiere de un equipo MULTIDISCIPLINARIO de personas:
 
 ![Juegos de Acción](images/juegos/accion.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Disparos o Shooters
 * Primera Persona
 * Tercera Persona
@@ -110,14 +112,14 @@ El desarrollo de VJ requiere de un equipo MULTIDISCIPLINARIO de personas:
 
 ![Juegos Shooter](images/juegos/shooter.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Estrategia
 * Tiempo Real
 * Por Turnos
 
 ![Juegos de Estrategia](images/juegos/estrategia.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Simulación
 * Vuelo
 * Construcción
@@ -126,7 +128,7 @@ El desarrollo de VJ requiere de un equipo MULTIDISCIPLINARIO de personas:
 
 ![Construcción](images/juegos/construccion.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Deporte
 * Tenis
 * Basquet
@@ -135,28 +137,28 @@ El desarrollo de VJ requiere de un equipo MULTIDISCIPLINARIO de personas:
 
 ![Deportes](images/juegos/deportes.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Carreras
 * Arcade
 * Simuladores
 
 ![Juegos de Carreras](images/juegos/carreras.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Aventura
 * Conversacional
 * Acción-Aventura
 
 ![Juegos de Aventura](images/juegos/aventura.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Rol Player Game
 * RPG
 * MMORPG
 
 ![Juegos de Rol](images/juegos/rol.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Musical
 * Karaoke
 * Baile
@@ -164,19 +166,19 @@ El desarrollo de VJ requiere de un equipo MULTIDISCIPLINARIO de personas:
 
 ![Juegos Musicales](images/juegos/musical.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Puzzle
 ![Juegos Puzzle](images/juegos/puzzle.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Educativo
 ![Juegos Educativos](images/juegos/educativo.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Diferente tipos de juegos requieren diferents
 # MOTORES
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Motor?
 Es una serie de rutinas de programación que permiten el diseño, la creación y la representación de un VJ.
 
@@ -189,7 +191,7 @@ Proveen al VJ de capacidad para:
 * Inteligencia Artificial
 * Administración de memoria, etc
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Motores de VJ
 * Cocos 2D
 * Unity
@@ -198,7 +200,7 @@ Proveen al VJ de capacidad para:
 * GameMaker
 * RPG Maker
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![Cocos](images/juegos/cocos.png)
 * Open Source
 * 2D
@@ -206,7 +208,7 @@ Proveen al VJ de capacidad para:
 * Multiplataforma
 * Gran Comunidad
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![Unity](images/juegos/unity.jpg)
 * Versión Personal
 * Gran Comunidad
@@ -215,7 +217,7 @@ Proveen al VJ de capacidad para:
 * Multiplataforma
 * Difícil Optimizar
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ![Godot](images/juegos/Godot.png)
 * Open Source
 * 2D / 3D
@@ -224,7 +226,7 @@ Proveen al VJ de capacidad para:
 * Comunidad Pequeña
 * Python
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Librerias JavaScript
 * MelonJS
 * KiwiJS
@@ -235,14 +237,14 @@ Proveen al VJ de capacidad para:
 Para más info:
 [https://html5gameengine.com/](https://html5gameengine.com/)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Plataformas
 * Mobile
 * PC
 * Web
 * Consolas
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Pong
 1. Crea el lienzo (canvas) y dibuja en él
 2. Mueve la bola
@@ -255,7 +257,7 @@ Para más info:
 9. Controles del mouse
 10. Finalizando
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Pong
 En la siguiente diapositiva estan los videos con los pasos explicados. Pero si lo prefieres, puedes seguir el siguiente tutorial:
 
@@ -263,7 +265,7 @@ En la siguiente diapositiva estan los videos con los pasos explicados. Pero si l
 
 (Aclaración: En los videos se emplea JS orientado a Objetos, y y en el tutorial de MDN no, por lo que las versiones pueden variar.)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Pong (parte 1)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9wBxNZsHTtw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -271,7 +273,7 @@ Pasos:
 1. Crear el lienzo canvas
 2. Mover la pelota/bola
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Pong (parte 2)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tBEaNgUif5Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -281,7 +283,7 @@ Pasos:
 
 4.Control de la barra/pala y el teclado 
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Pong (parte 3)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FnbEaA1NqkU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -289,7 +291,7 @@ Pasos:
 
 6.Construye el muro de ladrillos
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Pong (parte 4)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/52nM2qbEsG4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -297,7 +299,7 @@ Pasos:
 
 8.Mover Mouse
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Pong (parte 5)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/523GOA7MjOM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -305,7 +307,7 @@ Pasos:
 
 8.Fin?
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Pong... Fin???
 Se propone realizar las siguientes mejoras:
 * Agregar un sonido cuando la pelota rompe un bloque
@@ -314,7 +316,7 @@ Se propone realizar las siguientes mejoras:
 * Agregar más jugadores
 * Aumentar la velocidad de la pelota si ocurre un evento 
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Melon.JS
 [Tutorial: Plataforma](http://melonjs.github.io/tutorial-platformer/)
 
@@ -324,11 +326,16 @@ Se propone realizar las siguientes mejoras:
 
 [Ejemplo](http://edme88.github.io/melonSpace/index.html)
 
-</script></section><section  data-markdown><script type="text/template">
-![Gave Over](images/juegos/game_over.jpg)</script></section></div>
+---
+![Gave Over](images/juegos/game_over.jpg)
+          </textarea>
+        </section>
+      </div>
     </div>
 
     <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
 
     <script src="./plugin/markdown/markdown.js"></script>
     <script src="./plugin/highlight/highlight.js"></script>
@@ -357,6 +364,9 @@ Se propone realizar las siguientes mejoras:
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
         plugins: [
           RevealMarkdown,
           RevealHighlight,
@@ -369,7 +379,7 @@ Se propone realizar las siguientes mejoras:
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -377,6 +387,20 @@ Se propone realizar las siguientes mejoras:
 
     <script>
       Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
     </script>
   </body>
 </html>

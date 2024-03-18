@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,17 +12,19 @@
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
 
     <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
-
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">
+      <div class="slides">
+        <section data-markdown data-separator="^---" data-separator-vertical="^\r?\n----\r?\n$">
+          <textarea data-template>
+            
 
 # Unidad 6: Diseño Responsive
 Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <style>
 .grid-container2 {
     display: grid;
@@ -70,26 +72,26 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 </div>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Diseño Responsivo
 ![Diseño Responsive](images/appWeb/responsive-viewport.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Diseño Responsivo
 Diseño web adaptable, donde la apariencia de las páginas web se adapta al dispositivo que se esté utilizando para visualizarla.
 ![Dispositivos](images/moviles/img-dispositius.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Diseño Responsivo
 Se trata de redimensionar y colocar los elementos de la web de forma que se adapten al ancho de cada dispositivo permitiendo una correcta visualización y una mejor experiencia de usuario.
     
 Se caracteriza porque los layouts (contenidos) e imágenes son fluidos y se usa código media-queries de CSS3.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Diseño Responsivo
 ![Diseño Responsivo](images/appWeb/disenio_responsivo.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [Media Query](https://developer.mozilla.org/es/docs/CSS/Media_queries)
 Fue introducido en CSS3. Estas construcciones del lenguaje CSS permiten definir estilos condicionales, aplicables 
 únicamente en determinadas situaciones.
@@ -111,13 +113,13 @@ Fue introducido en CSS3. Estas construcciones del lenguaje CSS permiten definir 
 
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [Media Query](https://desarrolloweb.com/articulos/css-media-queries.html)
 Formas de Aplicación:
 * Media Query por etiqueta LINK
 * Media Query mediante @media
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Media Query por Etiqueta Link
 Se debe agregar un atributo media de la etiqueta *Link*, que permite enlazar el HTML con el CSS.
 ````css
@@ -129,7 +131,7 @@ Se debe agregar un atributo media de la etiqueta *Link*, que permite enlazar el 
 2. Estos estilos aplican cuando la página tenga una anchura mínima de 1200px
 </small>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Media Query mediante @media
 Es el más empleado. En la definición de los estilos se emplea @media con la condición/es que deben cumplirse.
 ````css
@@ -145,7 +147,7 @@ Es el más empleado. En la definición de los estilos se emplea @media con la co
 ````
 Cuando la sentencia entre paréntesis se evalúe como verdadera, se aplicarán todos los estilos definidos ente llaves. 
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Operadores lógicos para Media Query
 <!-- .slide: style="font-size: 0.80em" -->
 * **and:** las dos condiciones deben cumplirse para que se evalúe como verdadera.
@@ -162,7 +164,7 @@ ellas, se aplicarán los estilos de las media queries.
 }
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### [Media Types](https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries)
 Describen la categoría general de un dispositivo. 
 * **all:** Apto para todos los dispositivos.
@@ -173,7 +175,7 @@ Describen la categoría general de un dispositivo.
 Fueron deprecados los Medios: tty, tv, projection, handheld, braille, embossed y aural
 </small>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Media Types
 ````css
 @media print {
@@ -186,38 +188,38 @@ Fueron deprecados los Medios: tty, tv, projection, handheld, braille, embossed y
 
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Media Queries
 ![Sintaxis de Rango](images/appWeb/sintaxis_rango.jpg)
 
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## HTML5: Viewport
 ![Ejemplo Viewport](images/appWeb/viewport2.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [HTML5: Viewport](https://developer.mozilla.org/es/docs/M%C3%B3vil/Viewport_meta_tag)
 Es el área de la ventana en donde el contenido web está visible. Generalmente no es del mismo tamaño que la página 
 renderizada, en donde se brindan barras de desplazamiento para que el usuario pueda acceder a todo el contenido.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## HTML5: Viewport
 Dispositivos con pantallas angostas muestran la página en una ventana virtual o viewport, que es usualmente más ancho 
 que la pantalla y la comprimen de manera que pueda verse completa. El usuario podrá recorrerla y hacer zoom para ver 
 diferentes áreas de la página. Por ejemplo, si una pantalla móvil tiene un ancho 640px, las páginas pueden ser procesadas 
 con un viewport de 980px, y después comprimidas para que entren en 640px.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## HTML5: Viewport
 ![ejemplo viewport](images/appWeb/viewport.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## HTML5: Viewport
 Esto se hace porque muchas páginas no están optimizadas para dispositivos móviles y se ven mal cuando son procesadas a un 
 ancho de viewport pequeño. El viewport virtual es una forma de resolver el problema de sitios no optimizados para móviles, 
 logrando que se vean mejor.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## HTML5: Viewport
 <!-- .slide: style="font-size: 0.80em" -->
 La etiqueta viewport permite definir el ancho, alto y escala del área usada por el navegador para mostrar contenido.
@@ -235,52 +237,52 @@ Se le puede configurar
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## HTML5: Viewport
 Prueba como se ve la página Ejercicios-CSS/ej_cv.html con F12 SIN la etiqueta de viewport... Luego agregale la etiqueta y mira que pasa
 ````css
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
 ````
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Responsive
 Empleando Ejercicios-CSS el template ej_instagram, el contenido debe visualizarse:
 * Se deben mostrar 3 columnas las imagenes si la pantalla si la pantalla tiene un minimo de 601px
 * Se debe mostrar 1 columna si la pantalla tiene como máximo 600px
 * Las imagenes deben ocupar el 100% de su columna
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Responsive
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nLImEsvaP2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Diseño Responsivo: Características
 * Los layouts o imagenes son fluidos y se adaptan a cada pantalla.
 * Permite reducir el tiempo de desarrollo.
 * Evita los contenidos duplicados.
 * Permite compartir los contenidos de una forma más rápida y natural.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [Tu página está correctamente optimizada para móviles?](https://search.google.com/test/mobile-friendly?utm_source=mft&utm_medium=redirect&utm_campaign=mft-redirect)
 Deja que google te ayude a averiguarlo...
 
 ![Pagina mobile](images/appWeb/pagina_mobile.jpg)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Tu página está correctamente optimizada para móviles?
 Por ejemplo, podemos ingresar
 https://ucc-labcompu2.github.io/filminas/Proyecto.html#/5
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### [Tu página está correctamente optimizada para móviles?](https://search.google.com/test/mobile-friendly?utm_source=mft&utm_medium=redirect&utm_campaign=mft-redirect)
 ![Resultado](images/appWeb/GoogleAdaptacionMobile.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Diseño Responsivo
 Emplear alguna herramienta para probar si el sitio web es responsivo.
 Se sugiere usar ‘Chrome Developer Tools’ Ctrol+Mayus+i
     
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Diseño Responsivo: Consejos
 * No usar estilos in-line.
 * La web no necesariamente se debe ver igual en todos los dispositivos y navegadores.
@@ -289,25 +291,25 @@ Se sugiere usar ‘Chrome Developer Tools’ Ctrol+Mayus+i
 * Maquetar con DIV y etiquetas semánticas.
 * Usar unidades relativas.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Diseño Responsivo: Pilares de optimización
 * Todos los navegadores y sistemas
 * Todas las resoluciones y tamaños de pantalla
 * Todas las velocidades de conexión
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## [Bootstrap](http://getbootstrap.com/)
 Es un framework web desarrollado por Twitter para crear interfaces que se adapten al tamaño de pantalla de diversos dispositivo.
 
 Está basado en HTML5 y CSS3 por lo que es compatible con la mayoría de los navegadores web.
     
-</script></section><section  data-markdown><script type="text/template">
+---
 <!--http://academia-binaria.com/formas/-->
 ## Bootstrap
 Contiene plantillas de diseño con tipografía, formularios, botones, cuadros, menús de navegación y otros elementos de diseño y requiere la librería jQuery para que todos los plugins JavaScript funcionen.
     </section>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Bootstrap
 Empleando Ejercicios-CSS el template ej_instagram, el contenido debe visualizarse:
 * Se deben mostrar 3 columnas las imagenes si la pantalla es mediana
@@ -317,17 +319,17 @@ Empleando Ejercicios-CSS el template ej_instagram, el contenido debe visualizars
 <!-- ## Ejercicio: Cordova
 Utilizando Cordova, hacer una aplicación hibrida de CV. -->
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: Bootstrap
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6b0R4bNYxb8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Primero el Móvil
 La filosofía **Mobile First** implica plantear el proceso de diseño teniendo en cuenta el móvil en primer lugar.
 
 Ventaja: Obliga a concentrarse en lo esencial de un producto y a hacer foco solo en lo que tiene sentido para este dispositivo.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Etapas de Desarrollo
 <!-- .slide: style="font-size: 0.80em" -->
 1. Conceptualización
@@ -338,7 +340,7 @@ Ventaja: Obliga a concentrarse en lo esencial de un producto y a hacer foco solo
 
 ![Proceso de Diseño](images/appWeb/disenioMovil.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### 1. Conceptualización
 Idea de aplicación, que tiene en cuenta las necesidades y problemas de los usuarios. Esta idea responde a una 
 investigación preliminar y a la posterior comprobación de la viabilidad del concepto.
@@ -346,7 +348,7 @@ investigación preliminar y a la posterior comprobación de la viabilidad del co
 * Investigación
 * Formalización de la idea
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### 2. Definición
 Se describe con detalle a los usuarios para quienes se diseñará la aplicación, usando metodologías como «Personas» y 
 «Viaje del usuario». También aquí se sientan las bases de la funcionalidad, lo cual determinará el alcance del
@@ -354,7 +356,7 @@ proyecto y la complejidad de diseño y programación de la app.
 * Definición de usuarios
 * Definición funcional
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### 3. Diseño
 Se crean los primeros prototipos para ser probados con usuarios. Se provee al desarrollador de pantallas modelo 
 para la programación del código.
@@ -363,7 +365,7 @@ para la programación del código.
 * Test con usuarios
 * Diseño visual
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### 4. Desarrollo
 El programador se encarga de dar vida a los diseños y crear la estructura sobre la cual se apoyará el funcionamiento de la
 aplicación. Una vez que existe la versión inicial, dedica gran parte del tiempo a corregir errores funcionales para asegurar el
@@ -371,7 +373,7 @@ correcto desempeño de la app y la prepara para su aprobación en las tiendas.
 * Programación del código
 * Corrección de bugs
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### 5. Publicación
 La aplicación es puesta a disposición de los usuarios en las tiendas. Se realiza un seguimiento a través de analíticas, 
 estadísticas y comentarios de usuarios, para evaluar el comportamiento y desempeño de la app, corregir errores, 
@@ -380,13 +382,18 @@ realizar mejoras y actualizarla en futuras versiones.
 * Seguimiento
 * Actualización
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
-</script></section></div>
+
+          </textarea>
+        </section>
+      </div>
     </div>
 
     <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
 
     <script src="./plugin/markdown/markdown.js"></script>
     <script src="./plugin/highlight/highlight.js"></script>
@@ -415,6 +422,9 @@ realizar mejoras y actualizarla en futuras versiones.
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
         plugins: [
           RevealMarkdown,
           RevealHighlight,
@@ -427,7 +437,7 @@ realizar mejoras y actualizarla en futuras versiones.
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -435,6 +445,20 @@ realizar mejoras y actualizarla en futuras versiones.
 
     <script>
       Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
     </script>
   </body>
 </html>

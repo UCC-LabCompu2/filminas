@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,17 +12,19 @@
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
 
     <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
-
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">
+      <div class="slides">
+        <section data-markdown data-separator="^---" data-separator-vertical="^\r?\n----\r?\n$">
+          <textarea data-template>
+            
 
 # Unidad 7: Simulación de Circuitos
 Created by <i class="fab fa-telegram"></i>
 [edme88]("https://t.me/edme88")
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <style>
 .grid-item {
     border: 3px solid rgba(121, 177, 217, 0.8);
@@ -47,11 +49,11 @@ Created by <i class="fab fa-telegram"></i>
 * Ejemplo
 </div>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Simulación de Circuitos
 Permiten realizar los diseños y mostrar el funcionamiento de los circuitos de forma virtual antes de su montaje con componentes reales.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejemplos de Simuladores
 * Orcad
 * Proteus
@@ -60,7 +62,7 @@ Permiten realizar los diseños y mostrar el funcionamiento de los circuitos de f
 * Altium
 * MultiSim
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Simuladores en Linea
 * [CircuitLab](https://www.circuitlab.com/)
 * [Logic.ly](http://logic.ly/)
@@ -68,13 +70,13 @@ Permiten realizar los diseños y mostrar el funcionamiento de los circuitos de f
 * [DA/AC Lab](http://dcaclab.com/en/home)
 * [EasyEDA](https://easyeda.com/editor)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <!--
     http://www.taringa.net/post/linux/15435191/Simuladores-de-circuitos-electricos-y-electronicos.html
     http://www.educacontic.es/blog/simuladores-de-circuitos-electricos-y-electronicos-en-linea
     http://electronica.yoreparo.com/laboratorios_virtuales/programas-de-diseno-electronico-y-simulacion-t316534.html
 -->
-</script></section><section  data-markdown><script type="text/template">
+---
 ## SPICE
 Es un acrónimo inglés de Simulation Program with Integrated Circuits Emphasis.
 
@@ -83,14 +85,14 @@ resistencias, condensadores, diodos, transistores, etc. Para ello hay que descri
 describir el circuito y luego elegir el tipo de simulación (temporal, en frecuencia, en continua,
 paramétrico, Montecarlo, etc.).
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Aplicaciones Principales
 * Pspice
 * Capture
 * Layout
 * Express/Capture
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Spice
 Simulación de circuitos analógicos, digitales y mixtos (analógico + digital).
 
@@ -98,30 +100,30 @@ Simulación de circuitos analógicos, digitales y mixtos (analógico + digital).
 
 * **Salida:** Ficheros **.out** (información sobre la simulación y posibles errores) y **.dat** (se almacenan los valores de todas las variables del circuito.)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Schematic o Capture
 Descripción gráfica del diseño **.sch**, que puede ser realizada mediante esquema eléctrico o con el lenguaje de descripción hardware VHDL.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Layout
 Realización de placas de circuito impreso.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Express/Capture
 Diseño de circuitos digitales con dispositivos lógicos programables y memorias
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Otras librerias
 * **Libreria de Simbolos (.slb):** Almacena la descripción de los símbolos correspondientes a los diferentes componentes electrónicos.
 
 * **Lista de Nodos (.net):** Descripción del circuito (componentes y cómo se disponen)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejercicio: FiltroRC Pasa Bajo
 [PartSim](http://www.partsim.com/simulator)
 ![Pasa Bajo](images/pspice/RC_pasaBajo.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejemplo: RC filter Transient
 <pre><code>
     *RC Filter Transient example
@@ -136,17 +138,22 @@ Diseño de circuitos digitales con dispositivos lógicos programables y memorias
 
 ![Filtro](images/pspice/RC_filter_Transient.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## Ejemplo: RC filter Transient
 ![Plot Filtro](images/pspice/plot_filterRC.png)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
-</script></section></div>
+
+          </textarea>
+        </section>
+      </div>
     </div>
 
     <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
 
     <script src="./plugin/markdown/markdown.js"></script>
     <script src="./plugin/highlight/highlight.js"></script>
@@ -175,6 +182,9 @@ Diseño de circuitos digitales con dispositivos lógicos programables y memorias
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
         plugins: [
           RevealMarkdown,
           RevealHighlight,
@@ -187,7 +197,7 @@ Diseño de circuitos digitales con dispositivos lógicos programables y memorias
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -195,6 +205,20 @@ Diseño de circuitos digitales con dispositivos lógicos programables y memorias
 
     <script>
       Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
     </script>
   </body>
 </html>

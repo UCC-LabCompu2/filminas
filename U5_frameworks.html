@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,17 +12,19 @@
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
 
     <link rel="stylesheet" href="./_assets/slides/css/filminas.css" />
-
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">
+      <div class="slides">
+        <section data-markdown data-separator="^---" data-separator-vertical="^\r?\n----\r?\n$">
+          <textarea data-template>
+            
 
 # Frameworks
 Created by <i class="fab fa-telegram"></i> 
 [edme88]("https://t.me/edme88")
 
-</script></section><section  data-markdown><script type="text/template">
+---
 <style>
 .grid-container2 {
     display: grid;
@@ -54,12 +56,12 @@ Created by <i class="fab fa-telegram"></i>
 </div>
 </div>
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Framework: Definición
 Es un entorno de trabajo que posee ciertas herramientas y características útiles que agilizan el 
 desarrollo de un proyecto de programación.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Frameworks
 Entre los frameworks más usados para desarrollo web encontramos:
 * Angular
@@ -67,7 +69,7 @@ Entre los frameworks más usados para desarrollo web encontramos:
 * React
 Nota: (React es una librería que suele considerarse como un framework)
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### [Angular](https://docs.angular.lat/)
 Fue desarrollado por Google, y presentado en el 2010.
 Angular se emplea para crear aplicaciones de una sola página y aplicaciones web progresivas, 
@@ -77,7 +79,7 @@ Su objetivo es simplificar tanto el desarrollo como la prueba de dichas aplicaci
 proporcionar un marco para las arquitecturas del lado del cliente, 
 modelo-vista-controlador (MVC) y modelo-vista-modelo de vista (MVVM).
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Angular: Características
 * Está respaldado y desarrollado por Google.
 * Utiliza un DOM (Document Object Model) para representar el proyecto desde nodos.
@@ -85,7 +87,7 @@ modelo-vista-controlador (MVC) y modelo-vista-modelo de vista (MVVM).
 * Tiene excelente experiencia de desarrollo gracias a TypeScript y a herramientas de detección de errores y autocompletado de código propias de Angular.
 * Posee una gran comunidad
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Angular: Ventajas
 * **Fácil de usar:** Es fácil de usar y comprender. Tiene una sintaxis simple y es fácil de aprender.
 * **Modular:** Permite dividir en componentes más pequeños que se pueden reutilizar y combinar para crear aplicaciones más grandes.
@@ -93,14 +95,14 @@ modelo-vista-controlador (MVC) y modelo-vista-modelo de vista (MVVM).
 * Posee una gran comunidad 
 * Arquitectura MVC: que facilita el desarrollo y mantenimiento de aplicaciones grandes.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Angular: Desventajas
 * **Complejidad:** Puede ser difícil de aprender para los desarrolladores que son nuevos en los marcos de JavaScript.
 * **Rendimiento:**  las aplicaciones pueden ser lentas en comparación con otros marcos como React o Vue.
 * **Documentación deficiente**
 * **Curva de aprendizaje pronunciada:** Requiere que los desarrolladores tengan una buena comprensión de TypeScript, HTML y CSS.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### [React](https://es.reactjs.org/)
 Es una librería de Js desarrollada por **Facebook** en el 2013 para construir interfaces de usuario.
 
@@ -109,7 +111,7 @@ que luego se aplican al verdadero DOM, acelerando la ejecución de aplicaciones.
 Se puede utilizar tanto para crear sitios de web dinámicos de una sola página, 
 como para paneles de control o grandes plataformas web.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### React: Ventajas
 * **DOM virtual:** Genera el DOM de forma dinámica, primero aplica los cambios en un DOM Virtual y luego al DOM real.
 * **Isomorfismo:** El código se ejecuta en servidor y cliente, reduciendo así la carga de trabajo.
@@ -119,35 +121,40 @@ como para paneles de control o grandes plataformas web.
 * **Multiplataforma:** Llevar la aplicación a **React Native** es sencillo.
 * **Aprendizaje:** Curva de aprendizaje reducida.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### React: Desventajas
 * **Documentación deficiente**
 * No hay un patrón de desarrollo
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### [VueJS](https://vuejs.org/)
 Es es un framework Js para desarrollo frontend lanzado en el 2014.
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Vue: Ventajas
 * Fácil de aprender y utilizar.
 * Liviano y flexible
 * Sigue los estándares de HTML+CSS+Js
 * Es un framework progresivo que permite migrar facilmente proyectose existentes
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ### Vue: Desventajas
 * Mucha documentación útil esta en chino (por ser ampliamente usado por Alibaba y Xiaomi).
 * Complejidad de la reactividad
 * Exceso de flexibilidad
 
-</script></section><section  data-markdown><script type="text/template">
+---
 ## ¿Dudas, Preguntas, Comentarios?
 ![DUDAS](images/pregunta.gif)
-</script></section></div>
+
+          </textarea>
+        </section>
+      </div>
     </div>
 
     <script src="./dist/reveal.js"></script>
+
+    <script src="./mermaid/dist/mermaid.min.js"></script>
 
     <script src="./plugin/markdown/markdown.js"></script>
     <script src="./plugin/highlight/highlight.js"></script>
@@ -176,6 +183,9 @@ Es es un framework Js para desarrollo frontend lanzado en el 2014.
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         slideNumber: true,
+        highlight: {
+          highlightOnLoad: false
+        },
         plugins: [
           RevealMarkdown,
           RevealHighlight,
@@ -188,7 +198,7 @@ Es es un framework Js para desarrollo frontend lanzado en el 2014.
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":true,"_":["slides"],"static":"public"}, queryOptions);
     </script>
 
     <script src="./_assets/slides/js/pruebas.js"></script>
@@ -196,6 +206,20 @@ Es es un framework Js para desarrollo frontend lanzado en el 2014.
 
     <script>
       Reveal.initialize(options);
+      Reveal.addEventListener('ready', function (event) {
+        const blocks = Reveal.getRevealElement().querySelectorAll('pre code:not(.mermaid)');
+        const hlp = Reveal.getPlugin('highlight');
+        blocks.forEach(hlp.highlightBlock);
+      });
+    </script>
+
+    <script>
+      const mermaidOptions = extend({ startOnLoad: false }, {});
+      mermaid.startOnLoad = false;
+      mermaid.initialize(mermaidOptions);
+      const cb = function (event) { mermaid.init(mermaidOptions, '.stack.present>.present pre code.mermaid'); };
+      Reveal.addEventListener('ready', cb);
+      Reveal.addEventListener('slidetransitionend', cb);
     </script>
   </body>
 </html>
