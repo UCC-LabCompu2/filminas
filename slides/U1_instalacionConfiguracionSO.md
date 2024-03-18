@@ -73,7 +73,7 @@ Created by <i class="fab fa-telegram"></i>
 * MBR vs GTP
 [Ejercicio: Rufus](U1_instalacionConfiguracionSO.html#/40)
 * Particionado de Discos
-* Pasos de Instalción de un SO
+* Pasos de Instalación de un SO
 </div>
 </div>
 
@@ -617,7 +617,7 @@ También Puede controlar la frecuencia de la RAM, de la tarjeta gráfica, las re
 ## Basic Input/Output System
 Está integrado en un chip en la placa madre, y el firmware puede ser actualizado y grabado en la memoria flash que posee integrada.
 
-Sólo puede ser modificado por una actualización del fabricante,. Su memoria es de solo lectura.
+Sólo puede ser modificado por una actualización del fabricante. Su memoria es de solo lectura.
 
 ---
 ## Basic Input/Output System
