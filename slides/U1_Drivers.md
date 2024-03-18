@@ -32,7 +32,7 @@ Created by <i class="fab fa-telegram"></i>
 
 ---
 ## Driver o Controlador de Dispositivo
-Es un programa que permite al SO interaccionar con un periférico (impresora, scaner, etc) o dispositivo hardware (tarjeta gráfica, tarjeta de sonido, modem, etc), haciendo una abstracción del mismo y proporcionando una interfaz para poder utilizarlo. <br><br>
+Es un programa que permite al SO interacturar con un periférico (impresora, scaner, etc) o dispositivo hardware (tarjeta gráfica, tarjeta de sonido, modem, etc), haciendo una abstracción del mismo y proporcionando una interfaz para poder utilizarlo. <br><br>
 
 Le indica al SO como controlar y comunicarse con un dispositivo particular.
 
