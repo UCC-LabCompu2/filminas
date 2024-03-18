@@ -91,7 +91,7 @@ Created by <i class="fab fa-telegram"></i>
 ### Instalar git en Windows
 1. Ingresar a [https://git-scm.com/download/win](https://git-scm.com/download/win)
 2. Descargar la versión **Standalone**
-3. Durante la instalación dejar todas las opciones por defecto, excepto en el paso que se debe seleccionar:
+3. Durante la instalación dejar las opciones por defecto, excepto en el paso:
    * Git from the command line and also from 3rd-party software
    * Use Windows' default console windows
 4. Abrir el **Cmd** o **Consola** o **Simbolos del Sistema** y escribir
@@ -386,7 +386,7 @@ Para sentirse como **Hackerman** xD
 Aprendiendo **Git** por linea de comandos no dependeras de ningun software, y podras realizar TODAS las acciones.
 
 ---
-## Esto de la lina de comandos sigue sin convencerme...
+## Esto de la linea de comandos sigue sin convencerme...
 En la siguiente diapositiva tienes algunas opciones de software para VCS. Puedes probar y usar cualquiera :D
 Depende de ti! (pero en clase solo veremos linea de comandos)
 
@@ -473,10 +473,9 @@ Permite el trabajo colaborativo, gestión de issues, code reviews, feedback, etc
 ## Cursos de Git
 * [TAU - Source Control for Test Automation with Git](https://testautomationu.applitools.com/git-tutorial/) 
 * [Learn Git Branching](https://learngitbranching.js.org/)
-* [try.github](https://try.github.io)
 * [Codecademy](https://www.codecademy.com/learn/learn-git)
-* [Acamica](https://www.acamica.com/cursos/29/git)
-* [CodeSchool](https://www.codeschool.com/learn/git)
+* [Digital House](https://www.digitalhouse.com/ar)
+* [Dev-talles](https://cursos.devtalles.com/courses/git-github-control-versiones)
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
