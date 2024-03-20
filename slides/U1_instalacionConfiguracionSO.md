@@ -564,6 +564,7 @@ Habitualmente se usa para ejecutar sistemas operativos y "probarlos".
 * Virtual Box
 * Qemu
 * Parallels
+* Citrix Hipervisor
 
 ---
 ## Ejercicio: Windows-Máquina Virtual
