@@ -163,9 +163,13 @@ La palabra **global** puede ser reemplazada por local, worktree, portable o syst
 ---
 <!-- .slide: data-background="images/herramientas/servidoresGIT.png" -->
 ## Git: Servidores
-* Github
-* Bitbucket
-* GitLab
+* [Github](https://github.com/)
+* [Bitbucket](https://bitbucket.org/)
+* [GitLab](https://about.gitlab.com/)
+* [GiTea](https://about.gitea.com/)
+* [GitBucket](https://github.com/gitbucket/gitbucket)
+* [GitPrep](https://github.com/yuki-kimoto/gitprep)
+* [GNU Savannah](https://savannah.nongnu.org/projects/administration)
 
 ---
 ## Git: Servidores
