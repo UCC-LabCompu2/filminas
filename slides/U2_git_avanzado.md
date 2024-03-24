@@ -116,10 +116,11 @@ pause
 
 ---
 ### Pasos para autenticación de 2 Factores
+Esta configuración es obligatoria desde agosto/2023
 1. En **gitHub** entrar a la sección de Setting
 2. En el menú de la izquierda ingresar a **Password and authentication**
 3. Click en **Enable two-factor authentication**
-4. Para configurarlo con mensaje desde el celular, click en "Set up using SMS"
+4. Para configurarlo con mensaje desde el celular (o google authenticator, o microsoft authenticadtor), click en "Set up using SMS"
 
 
 ---
@@ -165,7 +166,7 @@ more id_rsa.pub
 Seguramente te estes preguntando: qué es ese readme.md que se autogeneró? 
 Es un archivo que deberian tener todos los proyectos de Soft. El mismo se supone que sea una:
 * Guía rápida de la aplicación o librería y de cómo empezar a usarla.
-* Instrucciones de configuración, instalación, operación, manifiesto de archivos, información sobre licencia y el desarrollador, bug conocidos, solución a problemas, créditos y agradecimientos, registro de cambios o versiones, sección de noticias, etc.
+* Instrucciones de configuración, instalación, operación, manifiesto de archivos, información sobre licencia y el desarrollador, bug conocidos, solución a problemas, créditos y agradecimientos, registro de cambios o versiones (ChangeLog), sección de noticias, etc.
 
 <!--https://jesuslc.com/2016/07/12/como-escribir-un-readme-que-mole/-->
 
