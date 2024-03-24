@@ -124,7 +124,7 @@ El depurador permite detener el programa en un punto determinado o en un momento
 
 ---
 ## Compilador
-Traduce del lenguaje de programación al lenguaje maquina, código intermedio o texto.
+Traduce del lenguaje de programación al lenguaje máquina, código intermedio o texto.
 
 * **Lenguajes compilados:** C, C++, Fortran, Pascal, Visual Basic.
 * **Lenguajes interpretados:** Python, JavaScript, HTML, Ruby, PHP.
@@ -234,8 +234,8 @@ Permite:
 
 ---
 ## Documentación...A tener en cuenta
-* No uses solo una linea, divídela en párrafos para que sea mas legible
-* Tabular los comentarios de lineas consecutivas
+* No uses solo una línea, divídela en párrafos para que sea mas legible
+* Tabular los comentarios de líneas consecutivas
 * No comentar obviedades
 * Se profesional (No insultes o coloques frases fuera de contexto)
 * Revisa la ortografía
@@ -321,7 +321,7 @@ Para asegurar una buena calidad en los proyectos de dimension considerable es im
 
 ---
 ## Integración Continua
-Es una buena practica generar tests para verificar el correcto funcionamiento de las partes del software.
+Es una buena práctica generar tests para verificar el correcto funcionamiento de las partes del software.
 Estos test pueden ser manuales (los realiza una persona según un documento) o automáticos (código que prueba otro código).
 En el caso de los test automatizados, se recurre muchas veces a servidores que corran los test, para poder correrlos en distintos ambientes. A estos servidores se les llama de Integración Continua.
 
@@ -338,7 +338,7 @@ En el caso de los test automatizados, se recurre muchas veces a servidores que c
 * CircleCI
 
 ---
-[Ejemplo de Construccion con Travis de las filminas](https://travis-ci.org/UCC-LabCompu2/filminas)
+[Ejemplo de Construcción con GitHub Actions de las filminas](https://github.com/UCC-LabCompu2/filminas/actions)
 
 ---
 ![ci-flujo](images/herramientas/ci-flujo.png)
@@ -359,9 +359,6 @@ En el caso de los test automatizados, se recurre muchas veces a servidores que c
 **Empresa:** JetBrains
 
 Pago pero gratuito para Alumnos
-
----
-[![StackOverflow](images/herramientas/stackoverflow.png)](http://stackoverflow.com)
 
 ---
 ## ¿Dudas, Preguntas, Comentarios?
