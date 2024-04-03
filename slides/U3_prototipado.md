@@ -120,6 +120,8 @@ Reunirse con los usuarios para entender mejor sus necesidades, motivaciones, cul
 
 ## <!--http://www.nosolousabilidad.com/articulos/diagramacion.htm-->
 
+---
+
 ## Tipos de diagramas
 
 - **Planos:** Blueprints, architecture map <br>
