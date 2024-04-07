@@ -389,11 +389,25 @@ Medición cualitativa de la facilidad y eficiencia con la que un humano emplea l
 
 ## Atributos de Usabilidad
 
+1. Facilidad de aprendizaje
+2. Eficiencia
+3. Memorabilidad
+4. Errores
+5. Satisfacción del usuario
+6. Accesibilidad
+7. Utilidad
+8. Integridad
+9. Consistencia
+
+----
+
+## Atributos de Usabilidad
+
 - **Facilidad de aprendizaje:** cuánto esfuerzo se necesita para que un usuario aprenda a utilizar la interfaz.
 - **Eficiencia:** rapidez con la que los usuarios pueden realizar tareas en una interfaz de usuario.
 - **Memorabilidad:** facilidad con la que los usuarios pueden recordar cómo utilizar una interfaz después de un período de tiempo sin usarla.
 
----
+----
 
 ## Atributos de Usabilidad
 
@@ -402,7 +416,7 @@ Medición cualitativa de la facilidad y eficiencia con la que un humano emplea l
 - **Accesibilidad:** capacidad de la interfaz para ser utilizada por personas con discapacidades, como problemas de visión o audición.
 - **Utilidad:** capacidad de la interfaz para cumplir con los objetivos y necesidades del usuario.
 
----
+----
 
 ## Atributos de Usabilidad
 
