@@ -183,6 +183,19 @@ Se utilizan para crear interfaces que sean fáciles de usar y que permitan a los
 
 ## Principios de Diseño
 
+1. Visibilidad
+2. Consistencia
+3. Retroalimentación
+4. Flexibilidad y Eficiencia de Uso
+5. Jerarquía Visual
+6. Estética y Diseño
+7. Tolerancia a errores
+8. Ayuda y Documentación
+
+----
+
+## Principios de Diseño
+
 <!-- .slide: style="font-size: 0.85em" -->
 
 - **Visibilidad:** los usuarios deben poder ver las opciones y controles que necesitan para realizar sus tareas de manera
@@ -192,7 +205,7 @@ Se utilizan para crear interfaces que sean fáciles de usar y que permitan a los
 - **Retroalimentación:** los usuarios deben recibir una respuesta clara y oportuna después de realizar una acción en la
   interfaz de usuario para comprender que su acción tuvo efecto.
 
----
+----
 
 ## Principios de Diseño
 
@@ -204,7 +217,7 @@ Se utilizan para crear interfaces que sean fáciles de usar y que permitan a los
   primer lugar para que los usuarios puedan encontrarlos fácilmente.
 - **Estética y diseño:** el diseño debe ser atractivo y estéticamente agradable, además de funcional.
 
----
+----
 
 ## Principios de Diseño
 
