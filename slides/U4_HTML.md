@@ -107,7 +107,7 @@ Repositorio base para realizar todos los ejercicios que veremos en clase:
 ## Ejercicio: Primer HTML
 * Crear un archivo HTML
 * Incluir la etiqueta &lt;head&gt;
-* Incluir datos del autor, descripcion y palabras principales
+* Incluir datos del autor, descripción y palabras principales
 
 ---
 ## Ejercicio: Primer HTML
@@ -398,12 +398,12 @@ Agrege comentarios a la página web de tablas.
 
 ---
 ## DIV
-* [**&lt;div&gt;:**](https://www.w3schools.com/tags/tag_div.asp) Define un bloque de contenido o sección de la página, para poder aplicarle diferentes estilos o para realizar operaciones sobre ese bloque específico.
+* [div:](https://www.w3schools.com/tags/tag_div.asp) Define un bloque de contenido o sección de la página, para poder aplicarle diferentes estilos o para realizar operaciones sobre ese bloque específico.
         
 ![3Divs](images/html/3divs.png)
 
 ---
-## Buenas Practicas
+## Buenas Prácticas
 * Cerrar las etiquetas
 * Nombre de las etiquetas siempre en minúscula
 * Poner comillas a todos los atributos
