@@ -238,6 +238,7 @@ Representa un campo para la entrada de texto multilínea.
 ````html
 <textarea name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea>
 ````
+
 <textarea name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea>
 
 ---
@@ -246,6 +247,7 @@ Atributo de elementos input y textarea para representar una indicación que ayud
 ````html
 <input name="nombre" placeholder="Ingrese nombre">
 ````
+
 <input name="nombre" placeholder="Ingrese nombre">
 
 ---
