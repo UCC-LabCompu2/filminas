@@ -56,7 +56,7 @@ Created by <i class="fab fa-telegram"></i>
 
 * Modelo de cajas: Margin, border, padding
 * Unidades de medida
-* Fondos
+* Fondos y Gradientes
 * Favicon
 
 [Ejercicio: CV](U4_CSS.html#/35)
