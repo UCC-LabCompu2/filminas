@@ -185,11 +185,11 @@ El objetivo es mostrar el contenido de las páginas, mostrando los elementos que
 
 <!-- .slide: style="font-size: 0.85em" -->
 
-- Baja Fidelidad: Conjunto de dibujos que representan cómo estarán organizados los elementos en las páginas en aspectos generales, sin entrar en detalle.
+- **Baja Fidelidad:** Conjunto de dibujos que representan cómo estarán organizados los elementos en las páginas en aspectos generales, sin entrar en detalle.
   - Sketch
   - Wireframe
   - StoryBoard
-- Alta Fidelidad: Se representan aspectos más precisos. Sirven para detallar el proceso interactivo de una o varias tareas.
+- **Alta Fidelidad:** Se representan aspectos más precisos. Sirven para detallar el proceso interactivo de una o varias tareas.
   - Mockup
   - Prototipo
 
@@ -233,17 +233,17 @@ Secuencia de Sketchs que muestran cómo se realiza una tarea.
 
 <!-- .slide: data-background="images/interfazUsuario/sketch-fondo.jpg" style="font-size: 0.85em" -->
 
-Realice Sketchs formando un 'Thumbnail Skeths' de la interfaz de usuario del sistema en papel.
+Realice Sketchs formando un 'Thumbnail Sketch' de la interfaz de usuario del sistema en papel.
 Debe tener en cuenta:
 
 - ¿Qué opciones debe ofrecer al usuario?
 - ¿Qué campos hay para ingresar datos?
 - ¿Hay ejercicios de ejemplo?
-- ¿Hay una introducción teorica?
+- ¿Hay una introducción teórica?
 - [Sistemas similares](images/interfazUsuario/tiroOblicuo.jpg)
-- ¿Qué acciones le permiten al usuario realizar?
-- Mensajes de Error
-- Conversión de unidades
+- ¿Qué acciones puede realizar el usuario?
+- ¿Qué mensajes de Error se visualizan y cuando?
+- Física: ¿Hay conversión de unidades?
 
 ---
 

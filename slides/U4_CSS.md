@@ -38,8 +38,6 @@ Created by <i class="fab fa-telegram"></i>
 * Propiedades tipográficas
 * Colores
 * Estilo: Tag, #ID, .clase
-* Caption
-* Consejos de accesibilidad
 
 [Ejercicio: Propiedades tipográficas](U4_CSS.html#/16)
 
@@ -49,7 +47,6 @@ Created by <i class="fab fa-telegram"></i>
 <div class="grid-item">
 
 * Descendientes
-* Multimedia (video, audio)
 
 [Ejercicio: Estilos con descendientes](U4_CSS.html#/21)
 
@@ -104,12 +101,12 @@ comandos más empleados.
 
 ---
 ## Formas de Agregar Estilos
-* Estilo en Linea
+* Estilo en Línea
 * Incrustando una Hoja de Estilo
 * Enlazando una hoja de Estilo Externa
 
 ---
-## Estilo en Linea
+## Estilo en Línea
 * Se usa el atributo "style" para definir como la etiqueta debe mostrarse.
 * Ejemplo:
 ````html
@@ -117,7 +114,7 @@ comandos más empleados.
 ````
 
 ---
-## Estilo en Linea: Desventajas
+## Estilo en Línea: Desventajas
 * Difícil de mantener
 * Solución poco elegante
 * Código duplicado para que varios elementos posean el mismo estilo visual
@@ -168,7 +165,7 @@ margin-left: 15px;
 * **line-height:** tamaño del renglon (altura de línea)
 * **text-align:** right, left, center
 * **text-decoration:** underline, line-through, none
-* **text-indent:** sangria
+* **text-indent:** sangría
 * **text-transform:** uppercase, lowercase
 
 ---
@@ -182,7 +179,6 @@ margin-left: 15px;
 ---
 ##  ¿Como Escribir un Estilo? 
 <!-- .slide: style="font-size: 0.90em" -->
-Obviamente, con el teclado xD. Bue, hablando en serio, hay 3 formas:
 
 1. **por Tag** (se aplica a TODOS los selectores)
 ````html
@@ -452,7 +448,7 @@ lineas */
 
 ---
 ## CCS3
-Buenas Practicas:
+Buenas Prácticas:
 * Comprobar el diseño en varios navegadores
 * Depuración (Ej. firebug)
 * Comentar el código
@@ -463,7 +459,7 @@ Buenas Practicas:
 * Ordenar los elementos según pertenezcan a cabecera, contenido principal o pie de página
 
 ---
-# Bibliografia xD
+# Bibliografía xD
 [![W3School](images/html/logo_w3schoolscom.png)](http://www.w3schools.com/css)
 
 [![MDN](images/html/logo_MDN.png)](https://developer.mozilla.org/es/docs/Web/CSS)

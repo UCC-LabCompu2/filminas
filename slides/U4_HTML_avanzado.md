@@ -56,7 +56,7 @@ Created by <i class="fab fa-telegram"></i>
 * Canvas
 * Multimedia (video, audio)
 
-[Ejercicio: Multimedia](U4_HTML.html#/32)
+[Ejercicio: Multimedia](U4_HTML_avanzado.html#/32)
 
 </div>
 </div>
