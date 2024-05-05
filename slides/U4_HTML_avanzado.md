@@ -233,8 +233,10 @@ Atributos:
 * form, etc, ect
 
 ---
+
 ## Textarea
 Representa un campo para la entrada de texto multilínea.
+
 ````html
 <textarea name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea>
 ````
