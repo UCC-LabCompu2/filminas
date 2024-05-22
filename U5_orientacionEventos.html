@@ -186,7 +186,7 @@ active en ese elemento DOM.
 
 ---
 ## Listeners en Javascript
-Por ejemplo, este código está creando una lista de nombres, y cada ancla de eliminación en cada fila está escuchando el evento "click" solo para esa fila.
+Por ejemplo, este código muestra un alerta solo en el primer click.
 ````javascript
 <!– myClickHandler is a javascript function that will handle the event –>
 <!DOCTYPE html>
@@ -260,21 +260,6 @@ documento - cuando el evento de ratón fue provocado.
 Se pueden eliminar los **listener** empleando:
 ````javascript
 element.removeEventListener(type, eventHandlerFunction);
-````
-
----
-### Eliminar los Listeners: Ejemplo
-En este código, se añade un detector de eventos para el evento click, pero luego, la primera vez que el detector de 
-click se llama a la función de controlador, elimina el detector de eventos desde el botón. 
-La segunda vez que se hace clic en el botón, no pasa nada.
-````javascript
-var listenerFunction = function(){
-    alert("First click");
-    document.getElementById("onTimeButton").removeEventListener("click",listenerFunction);
-}
-function inicialize(){
-    document.getElementById("onTimeButton").addEventListener("click",listenerFunction);
-}
 ````
 
 ---
