@@ -284,7 +284,7 @@ function dibujo2() {
    const canvas = document.getElementById("canvas2");
    const ctx = canvas.getContext("2d");
    //Dibuja lineas horizontales
-   for(var i=0; i<300;){
+   for(let i=0; i<300;){
        ctx.moveTo(0,i);
        ctx.lineTo(600,i);
        ctx.strokeStyle = "#D8D8D8";
@@ -292,7 +292,7 @@ function dibujo2() {
        i=i+20;
    }
    //Dibuja lineas verticales
-   for(var i=0; i<600;){
+   for(let i=0; i<600;){
        ctx.moveTo(i,0);
        ctx.lineTo(i,600);
        ctx.strokeStyle = "#D8D8D8";
@@ -380,8 +380,8 @@ let dibujarImagen = (posX, posY) => {
 
 
     img.onload = function (){
-        var width = this.naturalWidth;
-        var height = this.naturalHeight;
+        const width = this.naturalWidth;
+        const height = this.naturalHeight;
         console.log(width, height);
 
         if(posY<0 || posX<0){
@@ -398,8 +398,8 @@ let dibujarImagen = (posX, posY) => {
 ---
 ## Escribir texto en canvas Canvas
 ````javascript
-var canvas = document.getElementById("myCanvas");
-var ctx = canvas.getContext("2d");
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
 ctx.font="10pt Verdana";
 ctx.fillStyle = "blue";
 ctx.fillText( "Hola Mundo!!!", canvas.width/2, canvas.height/2);
