@@ -240,7 +240,7 @@ ctx.clearRect(x, y, width, height);
 * Utilizar el evento onmousemove para disparar la función de dibujo
 * En la función, obtener la posición x e y del ratón y dibujar un punto en el canvas
 * Agregar una variable "bandera" que indique si el botón del ratón se presionó (onmousedown, onmouseup)
-* Cree un boton para limpiar (borrar) el canvas
+* Cree un botón para limpiar (borrar) el canvas
 
 ---
 ## Ejercicio: Mini-Paint
@@ -322,7 +322,7 @@ function dibujoArcT() {
 ---
 ## Ejercicio: Dibujar imagen
 * Crear 2 inputs para que el usuario ingrese X e Y
-* Crear un boton que llame una función y le pase los parametros X e Y
+* Crear un botón que llame una función y le pase los parametros X e Y
 * Crear una función JS que dibuje una imagen (drawImage) en la posición especificada
 
 ---
