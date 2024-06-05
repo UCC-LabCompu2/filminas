@@ -115,7 +115,7 @@ Algunos de los más usados son:
 * **strokeRect(x, y, w, h)** <br>
   Dibuja las líneas de un rectángulo usando el color/estilo de el atributo strokeStyle.
 * **clearRect(x, y, w, h)** <br>
-  Limpia un area rectangular.
+  Limpia un área rectangular.
 * **rect(x, y, w, h)** <br>
   Crea un rectángulo.
 
@@ -132,7 +132,7 @@ Una **propiedad** es una variable adjunta a un objeto, como el color, color de b
 * **lineJoin = bevel|round|miter**
   El estilo de las esquinas de las líneas.
 * **lineWidth = number**
-  El grosor de las lineasThe width of the drawing stroke.
+  El grosor de las lineas.
 
 ---
 ## Canvas: Ejemplo
@@ -144,8 +144,8 @@ Una **propiedad** es una variable adjunta a un objeto, como el color, color de b
 ## [Canvas](http://www.w3schools.com/tags/ref_canvas.asp)
 ````javascript
 function dibujo() {
-   var canvas = document.getElementById("canvasEJ1");
-   var ctx = canvas.getContext("2d");
+   const canvas = document.getElementById("canvasEJ1");
+   const ctx = canvas.getContext("2d");
    ctx.fillStyle = "#000";
 
    //fillRect(x, y, width, height)
@@ -172,8 +172,8 @@ function dibujo() {
 ## Canvas: Arco
 ````javascript
 function dibujoArco() {
-   var canvas = document.getElementById("canvas3");
-   var ctx = canvas.getContext("2d");
+   const canvas = document.getElementById("canvas3");
+   const ctx = canvas.getContext("2d");
 
    ctx.beginPath();
    //ctx.arc(X, Y, radio, angulo inicial, angulo final);
@@ -265,8 +265,8 @@ ctx.clearRect(x, y, width, height);
 ## Canvas: Cuadriculado
 ````javascript
 function dibujo2() {
-   var canvas = document.getElementById("canvas2");
-   var ctx = canvas.getContext("2d");
+   const canvas = document.getElementById("canvas2");
+   const ctx = canvas.getContext("2d");
    //Dibuja lineas horizontales
    for(var i=0; i<300;){
        ctx.moveTo(0,i);
@@ -308,8 +308,8 @@ function dibujo2() {
 ## Canvas: arcTo()
 ````javascript
 function dibujoArcT() {
-   var c = document.getElementById("canvas4");
-   var ctx = c.getContext("2d");
+   const c = document.getElementById("canvas4");
+   const ctx = c.getContext("2d");
    ctx.beginPath();
    ctx.moveTo(20, 120);
    ctx.lineTo(100, 40);
