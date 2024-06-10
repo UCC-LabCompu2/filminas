@@ -170,7 +170,7 @@ active en ese elemento DOM.
 
 ---
 ## Listeners en Javascript
-Por ejemplo, este código permite mostrar un alert solo la primera vez que se le hace click al botón.
+Por ejemplo, este código muestra un alerta solo en el primer click.
 ````javascript
 <body onload="inicialize();">
     <button id="onTimeButton">First time only</button>
@@ -192,6 +192,7 @@ function inicialize(){
 <!-- .slide: style="font-size: 0.90em" -->
 Los controladores de eventos pueden tener un parámetro opcional en la declaración de la función, que se llena con un 
 objeto "Evento" que contiene información sobre el **evento que se activó** para obtener esta función llamada.
+
 
 * **Objetivo**: Devuelve el objeto DOM que ha activado el evento.
 * **Tipo**: El tipo de evento: haga clic en, al pasar el ratón, carga, etc .
@@ -237,21 +238,6 @@ documento - cuando el evento de ratón fue provocado.
 Se pueden eliminar los **listener** empleando:
 ````javascript
 element.removeEventListener(type, eventHandlerFunction);
-````
-
----
-### Eliminar los Listeners: Ejemplo
-En este código, se añade un detector de eventos para el evento click, pero luego, la primera vez que el detector de 
-click se llama a la función de controlador, elimina el detector de eventos desde el botón. 
-La segunda vez que se hace clic en el botón, no pasa nada.
-````javascript
-var listenerFunction = function(){
-    alert("First click");
-    document.getElementById("onTimeButton").removeEventListener("click",listenerFunction);
-}
-function inicialize(){
-    document.getElementById("onTimeButton").addEventListener("click",listenerFunction);
-}
 ````
 
 ---
