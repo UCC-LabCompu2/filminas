@@ -247,14 +247,14 @@ switch(nombre){
 ## Bucles
 ````javascript
 for(var i=0; i<20;i++){
-   console.log("El valor es " + i);
+   console.log(`El valor es ${i}`);
 }
 ````
 
 ````javascript
 var i = 0;
 while(i < 20){
-   console.log("El valor es " + i);
+   console.log(`El valor es ${i}`);
    i++;
 }
 ````

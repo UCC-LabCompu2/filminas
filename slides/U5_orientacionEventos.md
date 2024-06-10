@@ -69,7 +69,7 @@ Todo aquello que puede ser detectado y que pueda producir una reacción.
 Ej. Hacer click en un botón, mover el puntero sobre un enlace, seleccionar un elemento de una lista desplegable, etc.
 
 ---
-## [Tipos de Eventos](https://content.breatheco.de/es/lesson/event-driven-programming#%C2%BFpero-qui%C3%A9n-desencadena-estos-eventos)
+## Tipos de Eventos
 * Eventos de Usuario
   * Eventos del mouse
   * Eventos del teclado
@@ -170,18 +170,11 @@ active en ese elemento DOM.
 
 ---
 ## Listeners en Javascript
-Por ejemplo, este código está creando una lista de nombres, y cada ancla de eliminación en cada fila está escuchando el evento "click" solo para esa fila.
+Por ejemplo, este código permite mostrar un alert solo la primera vez que se le hace click al botón.
 ````javascript
-<!– myClickHandler is a javascript function that will handle the event –>
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>repl.it</title>
-    </head>
-    <body onload="inicialize();">
-        <button id="onTimeButton">First time only</button>
-    </body>
-</html>
+<body onload="inicialize();">
+    <button id="onTimeButton">First time only</button>
+</body>
  
 <script>
 var listenerFunction = function(){
