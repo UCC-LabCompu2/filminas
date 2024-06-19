@@ -129,7 +129,7 @@ Es el más empleado. En la definición de los estilos se emplea @media con la co
     }
 }
 ````
-Cuando la sentencia entre paréntesis se evalúe como verdadera, se aplicarán todos los estilos definidos ente llaves. 
+Cuando la sentencia entre paréntesis se evalúe como verdadera, se aplicarán todos los estilos definidos entre llaves. 
 
 ---
 ### Operadores lógicos para Media Query
@@ -231,7 +231,7 @@ Prueba como se ve la página Ejercicios-CSS/ej_cv.html con F12 SIN la etiqueta d
 ---
 ## Ejercicio: Responsive
 Empleando Ejercicios-CSS el template ej_instagram, el contenido debe visualizarse:
-* Se deben mostrar 3 columnas las imagenes si la pantalla si la pantalla tiene un minimo de 601px
+* Se deben mostrar 3 columnas las imagenes si la pantalla si la pantalla tiene un mínimo de 601px
 * Se debe mostrar 1 columna si la pantalla tiene como máximo 600px
 * Las imagenes deben ocupar el 100% de su columna
 
@@ -247,19 +247,8 @@ Empleando Ejercicios-CSS el template ej_instagram, el contenido debe visualizars
 * Permite compartir los contenidos de una forma más rápida y natural.
 
 ---
-## [Tu página está correctamente optimizada para móviles?](https://search.google.com/test/mobile-friendly?utm_source=mft&utm_medium=redirect&utm_campaign=mft-redirect)
-Deja que google te ayude a averiguarlo...
-
-![Pagina mobile](images/appWeb/pagina_mobile.jpg)
-
----
-## Tu página está correctamente optimizada para móviles?
-Por ejemplo, podemos ingresar
-https://ucc-labcompu2.github.io/filminas/Proyecto.html#/5
-
----
-### [Tu página está correctamente optimizada para móviles?](https://search.google.com/test/mobile-friendly?utm_source=mft&utm_medium=redirect&utm_campaign=mft-redirect)
-![Resultado](images/appWeb/GoogleAdaptacionMobile.png)
+### Tu página está correctamente optimizada para móviles?
+Algunos plugins como **Lighthouse** te pueden ayudar a verificarlo. (además de revisar otros aspectos como performance, accesbilidad, SEO)
 
 ---
 ## Ejercicio: Diseño Responsivo
